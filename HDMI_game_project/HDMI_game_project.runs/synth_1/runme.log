@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log HDMI_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_test.tcl
+    with args -log Testing_HDMI_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Testing_HDMI_wrapper.tcl
 
 
 ****** Vivado v2018.3 (64-bit)
@@ -8,29 +8,29 @@
   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
-source HDMI_test.tcl -notrace
-Command: synth_design -top HDMI_test -part xc7z020clg400-1
+source Testing_HDMI_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top Testing_HDMI_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15436 
+INFO: Helper process launched with PID 25744 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 363.250 ; gain = 101.457
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 394.633 ; gain = 96.766
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'HDMI_test' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:126]
-INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder' (1#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:126]
-INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
-INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
-	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (3#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
-INFO: [Synth 8-6155] done synthesizing module 'HDMI_test' (4#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_wrapper' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_HDMI_test_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-22192-DESKTOP-6RNCOV7/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_HDMI_test_0_0' (1#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-22192-DESKTOP-6RNCOV7/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clk_wiz_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-22192-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clk_wiz_0_0' (2#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-22192-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI' (3#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_wrapper' (4#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 419.730 ; gain = 157.938
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.594 ; gain = 152.727
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -43,61 +43,79 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 419.730 ; gain = 157.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.594 ; gain = 152.727
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 419.730 ; gain = 157.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 450.594 ; gain = 152.727
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
 Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:9]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sys_clk]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:9]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
 WARNING: [Vivado 12-584] No ports matched 'LED_4_Port'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
 Finished Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_test_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.379 ; gain = 0.000
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Testing_HDMI_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.047 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 773.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 773.379 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 773.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.047 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 735.047 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 735.047 ; gain = 437.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 735.047 ; gain = 437.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Testing_HDMI_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Testing_HDMI_i/HDMI_test_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Testing_HDMI_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 735.047 ; gain = 437.180
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:143]
-INFO: [Synth 8-5546] ROM "CounterY" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 735.047 ; gain = 437.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -109,28 +127,6 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-	   8 Input      4 Bit       Adders := 6     
-	   7 Input      4 Bit       Adders := 3     
-	   3 Input      4 Bit       Adders := 3     
-	   6 Input      4 Bit       Adders := 3     
-	   2 Input      4 Bit       Adders := 1     
-	   3 Input      3 Bit       Adders := 3     
-+---XORs : 
-	   2 Input      8 Bit         XORs := 3     
-	   3 Input      7 Bit         XORs := 3     
-	   2 Input      1 Bit         XORs := 3     
-+---Registers : 
-	               10 Bit    Registers := 8     
-	                8 Bit    Registers := 3     
-	                4 Bit    Registers := 4     
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   5 Input     10 Bit        Muxes := 3     
-	   2 Input     10 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 7     
-	   2 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -138,39 +134,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module HDMI_test 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 1     
-+---Registers : 
-	               10 Bit    Registers := 5     
-	                8 Bit    Registers := 3     
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
-+---Muxes : 
-	   2 Input     10 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module TMDS_encoder 
-Detailed RTL Component Info : 
-+---Adders : 
-	   8 Input      4 Bit       Adders := 2     
-	   7 Input      4 Bit       Adders := 1     
-	   3 Input      4 Bit       Adders := 1     
-	   6 Input      4 Bit       Adders := 1     
-	   3 Input      3 Bit       Adders := 1     
-+---XORs : 
-	   2 Input      8 Bit         XORs := 1     
-	   3 Input      7 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 1     
-+---Registers : 
-	               10 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-+---Muxes : 
-	   5 Input     10 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -187,48 +150,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "CounterY" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'blue_reg[7]' (FD) to 'blue_reg[6]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[6]' (FD) to 'blue_reg[5]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[4]' (FD) to 'blue_reg[5]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[5]' (FD) to 'blue_reg[3]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[3]' (FD) to 'blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[1]' (FD) to 'blue_reg[2]'
-INFO: [Synth 8-3886] merging instance 'blue_reg[2]' (FD) to 'blue_reg[0]'
-INFO: [Synth 8-3886] merging instance 'green_reg[7]' (FD) to 'green_reg[6]'
-INFO: [Synth 8-3886] merging instance 'green_reg[6]' (FD) to 'green_reg[5]'
-INFO: [Synth 8-3886] merging instance 'green_reg[4]' (FD) to 'green_reg[5]'
-INFO: [Synth 8-3886] merging instance 'green_reg[5]' (FD) to 'green_reg[3]'
-INFO: [Synth 8-3886] merging instance 'green_reg[3]' (FD) to 'green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'green_reg[1]' (FD) to 'green_reg[2]'
-INFO: [Synth 8-3886] merging instance 'green_reg[2]' (FD) to 'green_reg[0]'
-INFO: [Synth 8-3886] merging instance 'red_reg[7]' (FD) to 'red_reg[6]'
-INFO: [Synth 8-3886] merging instance 'red_reg[6]' (FD) to 'red_reg[5]'
-INFO: [Synth 8-3886] merging instance 'red_reg[4]' (FD) to 'red_reg[5]'
-INFO: [Synth 8-3886] merging instance 'red_reg[5]' (FD) to 'red_reg[3]'
-INFO: [Synth 8-3886] merging instance 'red_reg[3]' (FD) to 'red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'red_reg[1]' (FD) to 'red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'red_reg[2]' (FD) to 'red_reg[0]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[7]' (FD) to 'encode_B/TMDS_reg[5]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[7]' (FD) to 'encode_G/TMDS_reg[5]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[7]' (FD) to 'encode_R/TMDS_reg[5]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[6]' (FD) to 'encode_B/TMDS_reg[4]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[6]' (FD) to 'encode_G/TMDS_reg[4]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[6]' (FD) to 'encode_R/TMDS_reg[4]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[5]' (FD) to 'encode_B/TMDS_reg[3]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[5]' (FD) to 'encode_G/TMDS_reg[3]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[5]' (FD) to 'encode_R/TMDS_reg[3]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[4]' (FD) to 'encode_B/TMDS_reg[2]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[4]' (FD) to 'encode_G/TMDS_reg[2]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[4]' (FD) to 'encode_R/TMDS_reg[2]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[3]' (FD) to 'encode_B/TMDS_reg[1]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[3]' (FD) to 'encode_G/TMDS_reg[1]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[3]' (FD) to 'encode_R/TMDS_reg[1]'
-INFO: [Synth 8-3886] merging instance 'encode_B/TMDS_reg[1]' (FD) to 'encode_B/TMDS_reg[0]'
-INFO: [Synth 8-3886] merging instance 'encode_G/TMDS_reg[1]' (FD) to 'encode_G/TMDS_reg[0]'
-INFO: [Synth 8-3886] merging instance 'encode_R/TMDS_reg[1]' (FD) to 'encode_R/TMDS_reg[0]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 735.047 ; gain = 437.180
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -239,14 +162,17 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Testing_HDMI_i/clk_wiz_0/clk_out1' to pin 'Testing_HDMI_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Testing_HDMI_i/clk_wiz_0/clk_out2' to pin 'Testing_HDMI_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 795.523 ; gain = 497.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 773.379 ; gain = 511.586
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 795.523 ; gain = 497.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -258,7 +184,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,7 +208,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -295,7 +221,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -307,86 +233,75 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |Testing_HDMI_HDMI_test_0_0 |         1|
+|2     |Testing_HDMI_clk_wiz_0_0   |         1|
++------+---------------------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |LUT1   |     4|
-|3     |LUT2   |    14|
-|4     |LUT3   |    36|
-|5     |LUT4   |    13|
-|6     |LUT5   |    15|
-|7     |LUT6   |     9|
-|8     |FDRE   |    82|
-|9     |FDSE   |     3|
-|10    |IBUF   |     6|
-|11    |OBUF   |    21|
-|12    |OBUFDS |     4|
-+------+-------+------+
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |Testing_HDMI_HDMI_test_0_0 |     1|
+|2     |Testing_HDMI_clk_wiz_0_0   |     1|
+|3     |IBUF                       |     5|
+|4     |OBUF                       |     1|
++------+---------------------------+------+
 
 Report Instance Areas: 
-+------+-----------+---------------+------+
-|      |Instance   |Module         |Cells |
-+------+-----------+---------------+------+
-|1     |top        |               |   209|
-|2     |  encode_B |TMDS_encoder   |    26|
-|3     |  encode_G |TMDS_encoder_0 |    26|
-|4     |  encode_R |TMDS_encoder_1 |    26|
-+------+-----------+---------------+------+
++------+-----------------+-------------+------+
+|      |Instance         |Module       |Cells |
++------+-----------------+-------------+------+
+|1     |top              |             |    18|
+|2     |  Testing_HDMI_i |Testing_HDMI |    12|
++------+-----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 788.676 ; gain = 173.234
-Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 788.676 ; gain = 526.883
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 805.125 ; gain = 222.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 805.125 ; gain = 507.258
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 818.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
-  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 3 Warnings, 3 Critical Warnings and 0 Errors encountered.
+24 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 791.949 ; gain = 539.820
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.949 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 818.051 ; gain = 529.496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 818.051 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/HDMI_test.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file HDMI_test_utilization_synth.rpt -pb HDMI_test_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 11 13:57:45 2019...
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Testing_HDMI_wrapper_utilization_synth.rpt -pb Testing_HDMI_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 16 14:31:49 2019...

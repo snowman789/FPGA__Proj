@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log HDMI_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_test.tcl" );
+         "-log Testing_HDMI_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Testing_HDMI_wrapper.tcl" );
 
 
 

@@ -1,22 +1,20 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xEDB44277E2EE850E",
       "device": "xc7z020clg400-1",
       "name": "Testing_HDMI",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2018.3"
+      "tool_version": "2018.3",
+      "validated": "true"
     },
     "design_tree": {
-      "HDMI_test_0": "",
-      "clk_wiz_0": ""
+      "clk_wiz_0": "",
+      "HDMI_test_0": ""
     },
     "ports": {
       "sys_clk": {
         "direction": "I"
-      },
-      "LED_4_Port": {
-        "direction": "O"
       },
       "TMDSp": {
         "direction": "O",
@@ -41,13 +39,111 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "btn_3": {
+        "direction": "I"
+      },
+      "hdmi_tx_hpdn": {
+        "direction": "O"
+      },
+      "hdmi_tx_clk_p": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Testing_HDMI_HDMI_test_0_0_TMDSp_clock",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "hdmi_tx_clk_n": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Testing_HDMI_HDMI_test_0_0_TMDSn_clock",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
           }
         }
       }
     },
     "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "Testing_HDMI_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "80.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "165.419"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "25"
+          },
+          "CLKOUT1_USED": {
+            "value": "true"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "104.759"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "96.948"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "250"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "40.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "4"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "125"
+          }
+        }
+      },
       "HDMI_test_0": {
         "vlnv": "xilinx.com:module_ref:HDMI_test:1.0",
         "xci_name": "Testing_HDMI_HDMI_test_0_0",
@@ -66,21 +162,52 @@
             "direction": "O"
           },
           "pixclk": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "25000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "DCM_TMDS_CLKFX": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "250000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "HPD": {
             "direction": "I"
           },
-          "XY_Red": {
+          "btn0": {
             "direction": "I"
           },
-          "XY_Green": {
+          "btn1": {
             "direction": "I"
           },
-          "XY_Blue": {
+          "btn2": {
+            "direction": "I"
+          },
+          "btn3": {
             "direction": "I"
           },
           "TMDSp": {
@@ -95,61 +222,6 @@
           },
           "hdmi_hpd_tri_o": {
             "direction": "O"
-          },
-          "x_value": {
-            "direction": "O",
-            "left": "9",
-            "right": "0"
-          },
-          "y_value": {
-            "direction": "O",
-            "left": "9",
-            "right": "0"
-          }
-        }
-      },
-      "clk_wiz_0": {
-        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "Testing_HDMI_clk_wiz_0_0",
-        "parameters": {
-          "CLKOUT1_JITTER": {
-            "value": "175.402"
-          },
-          "CLKOUT1_PHASE_ERROR": {
-            "value": "98.575"
-          },
-          "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "25"
-          },
-          "CLKOUT1_USED": {
-            "value": "true"
-          },
-          "CLKOUT2_JITTER": {
-            "value": "110.209"
-          },
-          "CLKOUT2_PHASE_ERROR": {
-            "value": "98.575"
-          },
-          "CLKOUT2_REQUESTED_OUT_FREQ": {
-            "value": "250"
-          },
-          "CLKOUT2_USED": {
-            "value": "true"
-          },
-          "MMCM_CLKFBOUT_MULT_F": {
-            "value": "10.000"
-          },
-          "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "40.000"
-          },
-          "MMCM_CLKOUT1_DIVIDE": {
-            "value": "4"
-          },
-          "MMCM_DIVCLK_DIVIDE": {
-            "value": "1"
-          },
-          "NUM_OUT_CLKS": {
-            "value": "2"
           }
         }
       }
@@ -194,25 +266,49 @@
       "btn_0_1": {
         "ports": [
           "btn_0",
-          "HDMI_test_0/XY_Red"
+          "HDMI_test_0/btn0"
         ]
       },
       "btn_1_1": {
         "ports": [
           "btn_1",
-          "HDMI_test_0/XY_Green"
+          "HDMI_test_0/btn1"
         ]
       },
       "btn_2_1": {
         "ports": [
           "btn_2",
-          "HDMI_test_0/XY_Blue"
+          "HDMI_test_0/btn2"
         ]
       },
       "reset_rtl_1": {
         "ports": [
           "reset_rtl",
           "clk_wiz_0/reset"
+        ]
+      },
+      "btn_3_1": {
+        "ports": [
+          "btn_3",
+          "HDMI_test_0/btn3"
+        ]
+      },
+      "HDMI_test_0_hdmi_hpd_tri_o": {
+        "ports": [
+          "HDMI_test_0/hdmi_hpd_tri_o",
+          "hdmi_tx_hpdn"
+        ]
+      },
+      "HDMI_test_0_TMDSp_clock": {
+        "ports": [
+          "HDMI_test_0/TMDSp_clock",
+          "hdmi_tx_clk_p"
+        ]
+      },
+      "HDMI_test_0_TMDSn_clock": {
+        "ports": [
+          "HDMI_test_0/TMDSn_clock",
+          "hdmi_tx_clk_n"
         ]
       }
     }
