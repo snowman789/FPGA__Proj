@@ -1,0 +1,267 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 18 12:36:23 2019
+# Process ID: 19376
+# Current directory: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20616 D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\HDMI_game_project\HDMI_game_project.xpr
+# Log file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/vivado.log
+# Journal file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 702.434 ; gain = 122.617
+update_compile_order -fileset sources_1
+open_bd_design {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:HDMI_test:1.0 - HDMI_test_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /HDMI_test_0/pixclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /HDMI_test_0/DCM_TMDS_CLKFX(undef)
+Successfully read diagram <Testing_HDMI> from BD file <D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd>
+open_bd_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 897.160 ; gain = 0.000
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 897.160 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6DF1EA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1824.484 ; gain = 927.324
+set_property PROGRAM.FILE {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Apr 18 12:49:56 2019] Launched synth_1...
+Run output will be captured here: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/runme.log
+[Thu Apr 18 12:49:56 2019] Launched impl_1...
+Run output will be captured here: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'Testing_HDMI_i/HDMI_test_0/pixclk' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2754.539 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2754.539 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2754.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:30 . Memory (MB): peak = 2892.402 ; gain = 999.867
+close_design
+update_module_reference Testing_HDMI_HDMI_test_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'TMDSn_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'TMDSp_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'TMDSn_clock': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'TMDSn_clock': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'TMDSp_clock': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'TMDSp_clock': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_HDMI_test_0_0_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded Testing_HDMI_HDMI_test_0_0 from HDMI_test_v1_0 1.0 to HDMI_test_v1_0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /HDMI_test_0_upgraded_ipi/pixclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /HDMI_test_0_upgraded_ipi/DCM_TMDS_CLKFX(undef)
+Wrote  : <D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\HDMI_game_project\HDMI_game_project.srcs\sources_1\bd\Testing_HDMI\Testing_HDMI.bd> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-927] Following properties on pin /HDMI_test_0/TMDSp_clock have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=Testing_HDMI_HDMI_test_0_0_TMDSp_clock 
+WARNING: [BD 41-927] Following properties on pin /HDMI_test_0/TMDSn_clock have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=Testing_HDMI_HDMI_test_0_0_TMDSn_clock 
+Wrote  : <D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\HDMI_game_project\HDMI_game_project.srcs\sources_1\bd\Testing_HDMI\Testing_HDMI.bd> 
+VHDL Output written to : D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v
+VHDL Output written to : D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/sim/Testing_HDMI.v
+VHDL Output written to : D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hw_handoff/Testing_HDMI.hwh
+Generated Block Design Tcl file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hw_handoff/Testing_HDMI_bd.tcl
+Generated Hardware Definition File D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.hwdef
+[Thu Apr 18 12:53:46 2019] Launched Testing_HDMI_HDMI_test_0_0_synth_1, synth_1...
+Run output will be captured here:
+Testing_HDMI_HDMI_test_0_0_synth_1: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_HDMI_test_0_0_synth_1/runme.log
+synth_1: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/runme.log
+[Thu Apr 18 12:53:46 2019] Launched impl_1...
+Run output will be captured here: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2981.039 ; gain = 31.879
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'Testing_HDMI_i/HDMI_test_0/pixclk' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3087.871 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3087.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3087.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/003017A6DF1EA
+set_property PROGRAM.FILE {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_bd_design {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+open_bd_design {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+open_bd_design {D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+update_module_reference Testing_HDMI_HDMI_test_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'TMDSn_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'TMDSp_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'TMDSn_clock': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'TMDSn_clock': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3153] Bus Interface 'TMDSp_clock': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'TMDSp_clock': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_HDMI_test_0_0_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded Testing_HDMI_HDMI_test_0_0 from HDMI_test_v1_0 1.0 to HDMI_test_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'XY_Blue'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'XY_Green'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'XY_Red'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'x_value'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'y_value'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'Testing_HDMI_HDMI_test_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /HDMI_test_0_upgraded_ipi/pixclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /HDMI_test_0_upgraded_ipi/DCM_TMDS_CLKFX(undef)
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'Testing_HDMI_HDMI_test_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\HDMI_game_project\HDMI_game_project.srcs\sources_1\bd\Testing_HDMI\Testing_HDMI.bd> 
+Wrote  : <D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ui/bd_96043947.ui> 
+set_property  ip_repo_paths  D:/FPGA_WORKSPACES/FPGA_Final_Project/Interface [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface'.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/imports/Downloads/HDMI.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  D:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  d:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  D:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  D:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'.
+set_property  ip_repo_paths  {d:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip D:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl'.
+set_property  ip_repo_paths  d:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl'.
+regenerate_bd_layout
+set_property  ip_repo_paths  {d:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl D:/FPGA_WORKSPACES/Vivado_HLS/hls_multiplier/solution1/impl/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/Vivado_HLS/hls_multiplier/solution1/impl/ip'.
+save_bd_design
+Wrote  : <D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ui/bd_96043947.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 13:56:48 2019...

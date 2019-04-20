@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# HDMI_test
+# HDMI_test, clean_button, clean_button, clean_button, clean_button
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -191,6 +191,56 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: Interface_0, and set properties
+  set Interface_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Interface:1.0 Interface_0 ]
+
+  # Create instance: TicTacToe_0, and set properties
+  set TicTacToe_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:TicTacToe:1.0 TicTacToe_0 ]
+
+  # Create instance: clean_button_0, and set properties
+  set block_name clean_button
+  set block_cell_name clean_button_0
+  if { [catch {set clean_button_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $clean_button_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: clean_button_1, and set properties
+  set block_name clean_button
+  set block_cell_name clean_button_1
+  if { [catch {set clean_button_1 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $clean_button_1 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: clean_button_2, and set properties
+  set block_name clean_button
+  set block_cell_name clean_button_2
+  if { [catch {set clean_button_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $clean_button_2 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: clean_button_3, and set properties
+  set block_name clean_button
+  set block_cell_name clean_button_3
+  if { [catch {set clean_button_3 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $clean_button_3 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
@@ -203,14 +253,26 @@ proc create_root_design { parentCell } {
    CONFIG.CLKOUT2_PHASE_ERROR {96.948} \
    CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {250} \
    CONFIG.CLKOUT2_USED {true} \
+   CONFIG.CLKOUT3_JITTER {124.615} \
+   CONFIG.CLKOUT3_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT3_USED {true} \
+   CONFIG.CLKOUT4_JITTER {179.050} \
+   CONFIG.CLKOUT4_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {16.6666} \
+   CONFIG.CLKOUT4_USED {true} \
    CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
    CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
    CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \
    CONFIG.MMCM_CLKOUT1_DIVIDE {4} \
+   CONFIG.MMCM_CLKOUT2_DIVIDE {10} \
+   CONFIG.MMCM_CLKOUT3_DIVIDE {60} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
-   CONFIG.NUM_OUT_CLKS {2} \
+   CONFIG.NUM_OUT_CLKS {4} \
    CONFIG.PRIM_IN_FREQ {125} \
  ] $clk_wiz_0
+
+  # Create instance: rst_clk_wiz_0_25M, and set properties
+  set rst_clk_wiz_0_25M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_0_25M ]
 
   # Create port connections
   connect_bd_net -net HDMI_test_0_TMDSn [get_bd_ports TMPDSn] [get_bd_pins HDMI_test_0/TMDSn]
@@ -218,14 +280,26 @@ proc create_root_design { parentCell } {
   connect_bd_net -net HDMI_test_0_TMDSp [get_bd_ports TMDSp] [get_bd_pins HDMI_test_0/TMDSp]
   connect_bd_net -net HDMI_test_0_TMDSp_clock [get_bd_ports hdmi_tx_clk_p] [get_bd_pins HDMI_test_0/TMDSp_clock]
   connect_bd_net -net HDMI_test_0_hdmi_hpd_tri_o [get_bd_ports hdmi_tx_hpdn] [get_bd_pins HDMI_test_0/hdmi_hpd_tri_o]
-  connect_bd_net -net btn_0_1 [get_bd_ports btn_0] [get_bd_pins HDMI_test_0/btn0]
-  connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins HDMI_test_0/btn1]
-  connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins HDMI_test_0/btn2]
-  connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins HDMI_test_0/btn3]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins clk_wiz_0/clk_out1]
+  connect_bd_net -net HDMI_test_0_x_value [get_bd_pins HDMI_test_0/x_value] [get_bd_pins Interface_0/x_V]
+  connect_bd_net -net HDMI_test_0_y_value [get_bd_pins HDMI_test_0/y_value] [get_bd_pins Interface_0/y_V]
+  connect_bd_net -net Interface_0_XY_Blue_V [get_bd_pins HDMI_test_0/XY_Blue] [get_bd_pins Interface_0/XY_Blue_V]
+  connect_bd_net -net Interface_0_XY_Green_V [get_bd_pins HDMI_test_0/XY_Green] [get_bd_pins Interface_0/XY_Green_V]
+  connect_bd_net -net Interface_0_XY_Red_V [get_bd_pins HDMI_test_0/XY_Red] [get_bd_pins Interface_0/XY_Red_V]
+  connect_bd_net -net btn_0_1 [get_bd_ports btn_0] [get_bd_pins clean_button_0/async_btn]
+  connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
+  connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
+  connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
+  connect_bd_net -net clean_button_0_clean [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
+  connect_bd_net -net clean_button_1_clean [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
+  connect_bd_net -net clean_button_2_clean [get_bd_pins HDMI_test_0/btn2] [get_bd_pins Interface_0/move_up] [get_bd_pins clean_button_2/clean]
+  connect_bd_net -net clean_button_3_clean [get_bd_pins HDMI_test_0/btn3] [get_bd_pins Interface_0/move_down] [get_bd_pins clean_button_3/clean]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins TicTacToe_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rst_clk_wiz_0_25M/slowest_sync_clk]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins HDMI_test_0/DCM_TMDS_CLKFX] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net clk_wiz_0_locked [get_bd_pins HDMI_test_0/HPD] [get_bd_pins clk_wiz_0/locked]
-  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
+  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins clk_wiz_0/clk_out3]
+  connect_bd_net -net clk_wiz_0_clk_out4 [get_bd_pins clean_button_0/clk] [get_bd_pins clean_button_1/clk] [get_bd_pins clean_button_2/clk] [get_bd_pins clean_button_3/clk] [get_bd_pins clk_wiz_0/clk_out4]
+  connect_bd_net -net clk_wiz_0_locked [get_bd_pins HDMI_test_0/HPD] [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_wiz_0_25M/dcm_locked]
+  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_wiz_0_25M/ext_reset_in]
+  connect_bd_net -net rst_clk_wiz_0_25M_peripheral_reset [get_bd_pins TicTacToe_0/ap_rst] [get_bd_pins rst_clk_wiz_0_25M/peripheral_reset]
   connect_bd_net -net sys_clk_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
 
   # Create address segments

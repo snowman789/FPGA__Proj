@@ -1,0 +1,607 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 15:20:31 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201514) to (Rev. 1904201520)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has added interface 'move_down' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'move_up' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'XY_Red_V' out differs from original direction in
+
+-Upgrade has added port 'move_down'
+
+-Upgrade has added port 'move_up'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 15:14:32 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201506) to (Rev. 1904201514)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'XY_Red_V' in differs from original direction out
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 15:06:23 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201453) to (Rev. 1904201506)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has removed interface 'ap_clk'
+
+-Upgrade has removed interface 'ap_rst'
+
+-Upgrade has removed interface 'move_down'
+
+-Upgrade has removed interface 'move_up'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ap_clk'
+
+-Upgrade has removed port 'ap_rst'
+
+-Upgrade has removed port 'move_down'
+
+-Upgrade has removed port 'move_up'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 14:53:53 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201444) to (Rev. 1904201453)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 14:45:05 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201433) to (Rev. 1904201444)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 14:35:47 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201424) to (Rev. 1904201433)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 14:25:18 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201417) to (Rev. 1904201424)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 14:17:38 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201255) to (Rev. 1904201417)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has added interface 'move_down' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'move_up' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'move_down'
+
+-Upgrade has added port 'move_up'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:55:54 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201246) to (Rev. 1904201255)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has added interface 'ap_clk' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'ap_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ap_clk'
+
+-Upgrade has added port 'ap_rst'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:47:33 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201238) to (Rev. 1904201246)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:39:33 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201222) to (Rev. 1904201238)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has removed interface 'ap_clk'
+
+-Upgrade has removed interface 'ap_rst'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ap_clk'
+
+-Upgrade has removed port 'ap_rst'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:23:41 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201201) to (Rev. 1904201222)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:02:18 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201159) to (Rev. 1904201201)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'XY_Blue_V' out differs from original direction in
+
+-Upgraded port 'XY_Red_V' out differs from original direction in
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 12:00:43 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904201147) to (Rev. 1904201159)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has added interface 'ap_clk' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'ap_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'XY_Green_V' out differs from original direction in
+
+-Upgrade has added port 'ap_clk'
+
+-Upgrade has added port 'ap_rst'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 11:55:30 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_Interface_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Testing_HDMI_Interface_0_0 (xilinx.com:hls:Interface:1.0) from (Rev. 1904191817) to (Rev. 1904201147)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Testing_HDMI_Interface_0_0'.
+
+
+-Upgrade has removed interface 'XY_Blue'
+
+-Upgrade has removed interface 'XY_Green'
+
+-Upgrade has removed interface 'XY_Red'
+
+-Upgrade has removed interface 'ap_clk'
+
+-Upgrade has removed interface 'ap_rst'
+
+-Upgrade has removed interface 'boardOut_a_V'
+
+-Upgrade has removed interface 'boardOut_b_V'
+
+-Upgrade has removed interface 'boardOut_c_V'
+
+-Upgrade has removed interface 'boardOut_d_V'
+
+-Upgrade has removed interface 'boardOut_e_V'
+
+-Upgrade has removed interface 'boardOut_f_V'
+
+-Upgrade has removed interface 'boardOut_g_V'
+
+-Upgrade has removed interface 'boardOut_h_V'
+
+-Upgrade has removed interface 'boardOut_i_V'
+
+-Upgrade has removed interface 'player1_win'
+
+-Upgrade has removed interface 'player2_win'
+
+-Upgrade has removed interface 'sel_V'
+
+-Upgrade has added interface 'XY_Blue_V' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'XY_Green_V' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'XY_Red_V' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Testing_HDMI_Interface_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'XY_Blue'
+
+-Upgrade has removed port 'XY_Green'
+
+-Upgrade has removed port 'XY_Red'
+
+-Upgrade has removed port 'ap_clk'
+
+-Upgrade has removed port 'ap_rst'
+
+-Upgrade has removed port 'boardOut_a_V'
+
+-Upgrade has removed port 'boardOut_b_V'
+
+-Upgrade has removed port 'boardOut_c_V'
+
+-Upgrade has removed port 'boardOut_d_V'
+
+-Upgrade has removed port 'boardOut_e_V'
+
+-Upgrade has removed port 'boardOut_f_V'
+
+-Upgrade has removed port 'boardOut_g_V'
+
+-Upgrade has removed port 'boardOut_h_V'
+
+-Upgrade has removed port 'boardOut_i_V'
+
+-Upgrade has removed port 'player1_win'
+
+-Upgrade has removed port 'player2_win'
+
+-Upgrade has removed port 'sel_V'
+
+-Upgrade has added port 'XY_Blue_V'
+
+-Upgrade has added port 'XY_Green_V'
+
+-Upgrade has added port 'XY_Red_V'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Apr 20 11:55:30 2019
+| Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Testing_HDMI_HDMI_test_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of Testing_HDMI_HDMI_test_0_0 (xilinx.com:module_ref:HDMI_test:1.0 (Rev. 1)) to Vivado generation flows.
+

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Apr 16 14:31:49 2019
+| Date         : Sat Apr 20 15:22:38 2019
 | Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Testing_HDMI_wrapper_utilization_synth.rpt -pb Testing_HDMI_wrapper_utilization_synth.pb
 | Design       : Testing_HDMI_wrapper
@@ -154,12 +154,19 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------------------------+------+
-|          Ref Name          | Used |
-+----------------------------+------+
-| Testing_HDMI_clk_wiz_0_0   |    1 |
-| Testing_HDMI_HDMI_test_0_0 |    1 |
-+----------------------------+------+
++----------------------------------+------+
+|             Ref Name             | Used |
++----------------------------------+------+
+| Testing_HDMI_rst_clk_wiz_0_25M_0 |    1 |
+| Testing_HDMI_clk_wiz_0_0         |    1 |
+| Testing_HDMI_clean_button_1_1    |    1 |
+| Testing_HDMI_clean_button_1_0    |    1 |
+| Testing_HDMI_clean_button_0_1    |    1 |
+| Testing_HDMI_clean_button_0_0    |    1 |
+| Testing_HDMI_TicTacToe_0_0       |    1 |
+| Testing_HDMI_Interface_0_0       |    1 |
+| Testing_HDMI_HDMI_test_0_0       |    1 |
++----------------------------------+------+
 
 
 9. Instantiated Netlists

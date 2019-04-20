@@ -59,6 +59,9 @@ module Testing_HDMI_HDMI_test_0_0 (
   pixclk,
   DCM_TMDS_CLKFX,
   HPD,
+  XY_Red,
+  XY_Green,
+  XY_Blue,
   btn0,
   btn1,
   btn2,
@@ -66,6 +69,8 @@ module Testing_HDMI_HDMI_test_0_0 (
   TMDSp,
   TMDSn,
   hdmi_hpd_tri_o,
+  x_value,
+  y_value,
   TMDSp_clock,
   TMDSn_clock
 );
@@ -73,6 +78,9 @@ module Testing_HDMI_HDMI_test_0_0 (
 input wire pixclk;
 input wire DCM_TMDS_CLKFX;
 input wire HPD;
+input wire [7 : 0] XY_Red;
+input wire [7 : 0] XY_Green;
+input wire [7 : 0] XY_Blue;
 input wire btn0;
 input wire btn1;
 input wire btn2;
@@ -80,6 +88,8 @@ input wire btn3;
 output wire [2 : 0] TMDSp;
 output wire [2 : 0] TMDSn;
 output wire hdmi_hpd_tri_o;
+output wire [9 : 0] x_value;
+output wire [9 : 0] y_value;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME TMDSp_clock, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN Testing_HDMI_HDMI_test_0_0_TMDSp_clock, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 TMDSp_clock CLK" *)
 output wire TMDSp_clock;
@@ -91,6 +101,9 @@ output wire TMDSn_clock;
     .pixclk(pixclk),
     .DCM_TMDS_CLKFX(DCM_TMDS_CLKFX),
     .HPD(HPD),
+    .XY_Red(XY_Red),
+    .XY_Green(XY_Green),
+    .XY_Blue(XY_Blue),
     .btn0(btn0),
     .btn1(btn1),
     .btn2(btn2),
@@ -98,6 +111,8 @@ output wire TMDSn_clock;
     .TMDSp(TMDSp),
     .TMDSn(TMDSn),
     .hdmi_hpd_tri_o(hdmi_hpd_tri_o),
+    .x_value(x_value),
+    .y_value(y_value),
     .TMDSp_clock(TMDSp_clock),
     .TMDSn_clock(TMDSn_clock)
   );

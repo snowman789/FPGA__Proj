@@ -4,11 +4,11 @@
 module HDMI_test(
 	input pixclk, DCM_TMDS_CLKFX,  // 25MHz
 	input HPD,
-//	input XY_Red, XY_Green, XY_Blue,
+	input [7:0] XY_Red, XY_Green, XY_Blue,
     input btn0, btn1, btn2, btn3,
 	output [2:0] TMDSp, TMDSn, 
 	output hdmi_hpd_tri_o,
-//	output [9:0] x_value,y_value,
+	output [9:0] x_value,y_value,
 	output TMDSp_clock, TMDSn_clock 
 );
 
@@ -46,8 +46,8 @@ always @(posedge pixclk) hSync <= (CounterX>=656) && (CounterX<752);
 always @(posedge pixclk) vSync <= (CounterY>=490) && (CounterY<492);
 
 
-//assign x_value = CounterX;
-//assign y_value = CounterY;
+assign x_value = CounterX;
+assign y_value = CounterY;
 
 //Actually screen size is 640x480 due to off screen pixels used for house keeping
 //Bigger screen resolutions require higher frequencies which go beyond ability of FPGA
@@ -56,29 +56,32 @@ always @(posedge pixclk) vSync <= (CounterY>=490) && (CounterY<492);
 reg [7:0] red, green, blue;
 always @(posedge pixclk)
 begin
-    if(btn0) begin
-        red <= 8'hff;
-        blue <= 8'h00;
-        green <= 8'h00;
-        end
-    if(btn1)
-    begin
-        green <= 8'hff;
-        blue <= 8'h00;
-        red <= 8'h00;
-        end
-    if(btn2)
-      begin
-        blue <= 8'hff;
-        green <= 8'h00;
-        red <= 8'h00;
-        end
-    if(btn3)
-        begin
-        red <= 8'h00;
-        green <= 8'h00;
-        blue <= 8'h00;
-        end
+    red <= XY_Red;
+    green <= XY_Green;
+    blue <= XY_Blue;
+
+//    if(btn0) begin
+//    8'h80;
+//        green <= 8'h80;
+//        end
+//    if(btn1)
+//    begin
+//        green <= 8'hff;
+//        blue <= 8'h00;
+//        red <= 8'h00;
+//        end
+//    if(btn2)
+//      begin
+//        blue <= 8'hff;
+//        green <= 8'h00;
+//        red <= 8'h00;
+//        end
+//    if(btn3)
+//        begin
+//        red <= 8'h00;
+//        green <= 8'h00;
+//        blue <= 8'h00;
+//        end
 end
 
 ////////////////////////////////////////////////////////////////////////
