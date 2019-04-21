@@ -1,0 +1,2144 @@
+
+
+================================================================
+== Vivado HLS Report for 'Game_logic'
+================================================================
+* Date:           Sun Apr 21 17:01:52 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Game_logic
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.881|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    ?|    ?|  3 ~ 69  |          -|          -|  inf |    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 0
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 70
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (newRound_load)
+	70  / (!newRound_load)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+	55  / true
+55 --> 
+	56  / true
+56 --> 
+	57  / true
+57 --> 
+	58  / true
+58 --> 
+	59  / true
+59 --> 
+	60  / true
+60 --> 
+	61  / true
+61 --> 
+	62  / true
+62 --> 
+	63  / true
+63 --> 
+	64  / true
+64 --> 
+	65  / true
+65 --> 
+	66  / true
+66 --> 
+	67  / true
+67 --> 
+	68  / true
+68 --> 
+	69  / true
+69 --> 
+	70  / true
+70 --> 
+	2  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %rst), !map !154"   --->   Operation 71 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn1), !map !160"   --->   Operation 72 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn2), !map !164"   --->   Operation 73 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn3), !map !168"   --->   Operation 74 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %slow_clk), !map !172"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %lose), !map !176"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10* %time_remaining_out_V), !map !180"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %time_remaining_in_V), !map !184"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %verify1_out), !map !188"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %verify2_out), !map !192"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %verify3_out), !map !196"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Game_logic_str) nounwind"   --->   Operation 82 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%time_remaining_in_V_s = call i10 @_ssdm_op_Read.ap_none.i10(i10 %time_remaining_in_V)" [Game_logic/Game_logic.cpp:75]   --->   Operation 83 'read' 'time_remaining_in_V_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%slow_clk_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %slow_clk)" [Game_logic/Game_logic.cpp:75]   --->   Operation 84 'read' 'slow_clk_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%btn3_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn3)" [Game_logic/Game_logic.cpp:75]   --->   Operation 85 'read' 'btn3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%btn2_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn2)" [Game_logic/Game_logic.cpp:75]   --->   Operation 86 'read' 'btn2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%btn1_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn1)" [Game_logic/Game_logic.cpp:75]   --->   Operation 87 'read' 'btn1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%rst_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %rst)" [Game_logic/Game_logic.cpp:75]   --->   Operation 88 'read' 'rst_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %rst, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:77]   --->   Operation 89 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:78]   --->   Operation 90 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:79]   --->   Operation 91 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn3, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:80]   --->   Operation 92 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %slow_clk, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:81]   --->   Operation 93 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %lose, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:82]   --->   Operation 94 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %verify1_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:83]   --->   Operation 95 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %verify2_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:84]   --->   Operation 96 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %verify3_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:85]   --->   Operation 97 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10* %time_remaining_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:87]   --->   Operation 98 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %time_remaining_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [Game_logic/Game_logic.cpp:88]   --->   Operation 99 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "br label %1" [Game_logic/Game_logic.cpp:93]   --->   Operation 100 'br' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.81>
+ST_2 : Operation 101 [1/1] (0.00ns)   --->   "br i1 %rst_read, label %2, label %._crit_edge" [Game_logic/Game_logic.cpp:95]   --->   Operation 101 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 102 [1/1] (1.76ns)   --->   "store i32 1, i32* @decrement_value, align 4" [Game_logic/Game_logic.cpp:29->Game_logic/Game_logic.cpp:96]   --->   Operation 102 'store' <Predicate = (rst_read)> <Delay = 1.76>
+ST_2 : Operation 103 [1/1] (1.81ns)   --->   "store i1 true, i1* @newRound, align 1" [Game_logic/Game_logic.cpp:32->Game_logic/Game_logic.cpp:96]   --->   Operation 103 'store' <Predicate = (rst_read)> <Delay = 1.81>
+ST_2 : Operation 104 [1/1] (1.76ns)   --->   "store i1 false, i1* @btn1_verify, align 1" [Game_logic/Game_logic.cpp:33->Game_logic/Game_logic.cpp:96]   --->   Operation 104 'store' <Predicate = (rst_read)> <Delay = 1.76>
+ST_2 : Operation 105 [1/1] (1.76ns)   --->   "store i1 false, i1* @btn2_verify, align 1" [Game_logic/Game_logic.cpp:34->Game_logic/Game_logic.cpp:96]   --->   Operation 105 'store' <Predicate = (rst_read)> <Delay = 1.76>
+ST_2 : Operation 106 [1/1] (1.76ns)   --->   "store i1 false, i1* @btn3_verify, align 1" [Game_logic/Game_logic.cpp:35->Game_logic/Game_logic.cpp:96]   --->   Operation 106 'store' <Predicate = (rst_read)> <Delay = 1.76>
+ST_2 : Operation 107 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i10P(i10* %time_remaining_out_V, i10 -384)" [Game_logic/Game_logic.cpp:96]   --->   Operation 107 'write' <Predicate = (rst_read)> <Delay = 0.00>
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %lose, i1 false)" [Game_logic/Game_logic.cpp:96]   --->   Operation 108 'write' <Predicate = (rst_read)> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "br label %._crit_edge" [Game_logic/Game_logic.cpp:97]   --->   Operation 109 'br' <Predicate = (rst_read)> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (0.00ns)   --->   "br i1 %slow_clk_read, label %3, label %._crit_edge1" [Game_logic/Game_logic.cpp:99]   --->   Operation 110 'br' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 8.51>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%decrement_value_load_1 = load i32* @decrement_value, align 4" [Game_logic/Game_logic.cpp:42->Game_logic/Game_logic.cpp:100]   --->   Operation 111 'load' 'decrement_value_load_1' <Predicate = (slow_clk_read)> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%tmp_2 = trunc i32 %decrement_value_load_1 to i10" [Game_logic/Game_logic.cpp:42->Game_logic/Game_logic.cpp:100]   --->   Operation 112 'trunc' 'tmp_2' <Predicate = (slow_clk_read)> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (1.73ns)   --->   "%ssdm_int_V_write_ass = sub i10 %time_remaining_in_V_s, %tmp_2" [Game_logic/Game_logic.cpp:42->Game_logic/Game_logic.cpp:100]   --->   Operation 113 'sub' 'ssdm_int_V_write_ass' <Predicate = (slow_clk_read)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i10P(i10* %time_remaining_out_V, i10 %ssdm_int_V_write_ass)" [Game_logic/Game_logic.cpp:100]   --->   Operation 114 'write' <Predicate = (slow_clk_read)> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "br label %._crit_edge1" [Game_logic/Game_logic.cpp:101]   --->   Operation 115 'br' <Predicate = (slow_clk_read)> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%newRound_load = load i1* @newRound, align 1" [Game_logic/Game_logic.cpp:103]   --->   Operation 116 'load' 'newRound_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.00ns)   --->   "br i1 %newRound_load, label %4, label %._crit_edge2" [Game_logic/Game_logic.cpp:103]   --->   Operation 117 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%RandSeed_load = load i32* @RandSeed, align 4" [Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 118 'load' 'RandSeed_load' <Predicate = (newRound_load)> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (8.51ns)   --->   "%tmp_i_i = mul i32 13, %RandSeed_load" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 119 'mul' 'tmp_i_i' <Predicate = (newRound_load)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 120 [1/1] (1.81ns)   --->   "store i1 false, i1* @newRound, align 1" [Game_logic/Game_logic.cpp:108]   --->   Operation 120 'store' <Predicate = (newRound_load)> <Delay = 1.81>
+
+State 4 <SV = 3> <Delay = 6.68>
+ST_4 : Operation 121 [1/1] (2.55ns)   --->   "%tmp_1_i_i = add i32 100, %tmp_i_i" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 121 'add' 'tmp_1_i_i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 122 [36/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 122 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.13>
+ST_5 : Operation 123 [35/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 123 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 4.13>
+ST_6 : Operation 124 [34/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 124 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 4.13>
+ST_7 : Operation 125 [33/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 125 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 4.13>
+ST_8 : Operation 126 [32/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 126 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 4.13>
+ST_9 : Operation 127 [31/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 127 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 4.13>
+ST_10 : Operation 128 [30/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 128 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.13>
+ST_11 : Operation 129 [29/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 129 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 4.13>
+ST_12 : Operation 130 [28/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 130 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.13>
+ST_13 : Operation 131 [27/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 131 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.13>
+ST_14 : Operation 132 [26/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 132 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 4.13>
+ST_15 : Operation 133 [25/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 133 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 4.13>
+ST_16 : Operation 134 [24/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 134 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 4.13>
+ST_17 : Operation 135 [23/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 135 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 4.13>
+ST_18 : Operation 136 [22/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 136 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 4.13>
+ST_19 : Operation 137 [21/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 137 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 4.13>
+ST_20 : Operation 138 [20/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 138 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 4.13>
+ST_21 : Operation 139 [19/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 139 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 4.13>
+ST_22 : Operation 140 [18/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 140 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 4.13>
+ST_23 : Operation 141 [17/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 141 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 4.13>
+ST_24 : Operation 142 [16/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 142 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 4.13>
+ST_25 : Operation 143 [15/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 143 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 4.13>
+ST_26 : Operation 144 [14/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 144 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 4.13>
+ST_27 : Operation 145 [13/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 145 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 4.13>
+ST_28 : Operation 146 [12/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 146 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 4.13>
+ST_29 : Operation 147 [11/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 147 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 4.13>
+ST_30 : Operation 148 [10/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 148 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 4.13>
+ST_31 : Operation 149 [9/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 149 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 4.13>
+ST_32 : Operation 150 [8/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 150 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 4.13>
+ST_33 : Operation 151 [7/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 151 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 4.13>
+ST_34 : Operation 152 [6/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 152 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 4.13>
+ST_35 : Operation 153 [5/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 153 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 4.13>
+ST_36 : Operation 154 [4/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 154 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 4.13>
+ST_37 : Operation 155 [3/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 155 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 4.13>
+ST_38 : Operation 156 [2/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 156 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 7.39>
+ST_39 : Operation 157 [1/36] (4.13ns)   --->   "%last_num_assign_1 = urem i32 %tmp_1_i_i, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:104]   --->   Operation 157 'urem' 'last_num_assign_1' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 158 [1/1] (0.00ns)   --->   "%tmp_4 = trunc i32 %last_num_assign_1 to i7" [Game_logic/Game_logic.cpp:55->Game_logic/Game_logic.cpp:104]   --->   Operation 158 'trunc' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 159 [1/1] (1.48ns)   --->   "%tmp_3_i = icmp ugt i7 %tmp_4, 50" [Game_logic/Game_logic.cpp:55->Game_logic/Game_logic.cpp:104]   --->   Operation 159 'icmp' 'tmp_3_i' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 160 [1/1] (1.76ns)   --->   "store i1 %tmp_3_i, i1* @btn1_verify, align 1" [Game_logic/Game_logic.cpp:104]   --->   Operation 160 'store' <Predicate = true> <Delay = 1.76>
+
+State 40 <SV = 39> <Delay = 9.88>
+ST_40 : Operation 161 [1/1] (0.00ns)   --->   "%tmp_3 = trunc i32 %last_num_assign_1 to i11" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 161 'trunc' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_40 : Operation 162 [1/1] (3.36ns) (grouped into DSP with root node tmp_1_i_i4)   --->   "%tmp_i_i3 = mul i11 13, %tmp_3" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 162 'mul' 'tmp_i_i3' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_40 : Operation 163 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp_1_i_i4 = add i11 100, %tmp_i_i3" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 163 'add' 'tmp_1_i_i4' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_40 : Operation 164 [15/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 164 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 3.50>
+ST_41 : Operation 165 [14/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 165 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 3.50>
+ST_42 : Operation 166 [13/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 166 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 3.50>
+ST_43 : Operation 167 [12/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 167 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 3.50>
+ST_44 : Operation 168 [11/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 168 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 3.50>
+ST_45 : Operation 169 [10/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 169 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 3.50>
+ST_46 : Operation 170 [9/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 170 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 3.50>
+ST_47 : Operation 171 [8/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 171 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 3.50>
+ST_48 : Operation 172 [7/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 172 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 3.50>
+ST_49 : Operation 173 [6/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 173 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 3.50>
+ST_50 : Operation 174 [5/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 174 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 3.50>
+ST_51 : Operation 175 [4/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 175 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 3.50>
+ST_52 : Operation 176 [3/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 176 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 52> <Delay = 3.50>
+ST_53 : Operation 177 [2/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 177 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 6.75>
+ST_54 : Operation 178 [1/15] (3.50ns)   --->   "%last_num_assign_2 = urem i11 %tmp_1_i_i4, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 178 'urem' 'last_num_assign_2' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 179 [1/1] (0.00ns)   --->   "%tmp_5 = trunc i11 %last_num_assign_2 to i7" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105]   --->   Operation 179 'trunc' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_54 : Operation 180 [1/1] (1.48ns)   --->   "%tmp_3_i6 = icmp ugt i7 %tmp_5, 50" [Game_logic/Game_logic.cpp:55->Game_logic/Game_logic.cpp:105]   --->   Operation 180 'icmp' 'tmp_3_i6' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 181 [1/1] (1.76ns)   --->   "store i1 %tmp_3_i6, i1* @btn2_verify, align 1" [Game_logic/Game_logic.cpp:105]   --->   Operation 181 'store' <Predicate = true> <Delay = 1.76>
+
+State 55 <SV = 54> <Delay = 9.88>
+ST_55 : Operation 182 [1/1] (3.36ns) (grouped into DSP with root node tmp_1_i_i9)   --->   "%tmp_i_i8 = mul i11 13, %last_num_assign_2" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 182 'mul' 'tmp_i_i8' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_55 : Operation 183 [1/1] (3.02ns) (root node of the DSP)   --->   "%tmp_1_i_i9 = add i11 100, %tmp_i_i8" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 183 'add' 'tmp_1_i_i9' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_55 : Operation 184 [15/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 184 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 3.50>
+ST_56 : Operation 185 [14/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 185 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 3.50>
+ST_57 : Operation 186 [13/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 186 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 3.50>
+ST_58 : Operation 187 [12/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 187 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 3.50>
+ST_59 : Operation 188 [11/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 188 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 59> <Delay = 3.50>
+ST_60 : Operation 189 [10/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 189 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 3.50>
+ST_61 : Operation 190 [9/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 190 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 3.50>
+ST_62 : Operation 191 [8/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 191 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 3.50>
+ST_63 : Operation 192 [7/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 192 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 3.50>
+ST_64 : Operation 193 [6/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 193 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 3.50>
+ST_65 : Operation 194 [5/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 194 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 3.50>
+ST_66 : Operation 195 [4/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 195 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 3.50>
+ST_67 : Operation 196 [3/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 196 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 3.50>
+ST_68 : Operation 197 [2/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 197 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 6.75>
+ST_69 : Operation 198 [1/15] (3.50ns)   --->   "%tmp_2_i_i = urem i11 %tmp_1_i_i9, 100" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 198 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 3.50> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 14> <II = 11> <Delay = 3.50> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 199 [1/1] (0.00ns)   --->   "%tmp_6 = trunc i11 %tmp_2_i_i to i7" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 199 'trunc' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 200 [1/1] (0.00ns)   --->   "%tmp_2_i_i_cast = zext i11 %tmp_2_i_i to i32" [Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 200 'zext' 'tmp_2_i_i_cast' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 201 [1/1] (0.00ns)   --->   "store i32 %tmp_2_i_i_cast, i32* @RandSeed, align 4" [Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:106]   --->   Operation 201 'store' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 202 [1/1] (1.48ns)   --->   "%tmp_3_i1 = icmp ugt i7 %tmp_6, 50" [Game_logic/Game_logic.cpp:55->Game_logic/Game_logic.cpp:106]   --->   Operation 202 'icmp' 'tmp_3_i1' <Predicate = true> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 203 [1/1] (1.76ns)   --->   "store i1 %tmp_3_i1, i1* @btn3_verify, align 1" [Game_logic/Game_logic.cpp:106]   --->   Operation 203 'store' <Predicate = true> <Delay = 1.76>
+ST_69 : Operation 204 [1/1] (0.00ns)   --->   "%decrement_value_load = load i32* @decrement_value, align 4" [Game_logic/Game_logic.cpp:107]   --->   Operation 204 'load' 'decrement_value_load' <Predicate = true> <Delay = 0.00>
+ST_69 : Operation 205 [1/1] (2.55ns)   --->   "%tmp_1 = add i32 2, %decrement_value_load" [Game_logic/Game_logic.cpp:107]   --->   Operation 205 'add' 'tmp_1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 206 [1/1] (1.76ns)   --->   "store i32 %tmp_1, i32* @decrement_value, align 4" [Game_logic/Game_logic.cpp:107]   --->   Operation 206 'store' <Predicate = true> <Delay = 1.76>
+ST_69 : Operation 207 [1/1] (0.00ns)   --->   "br label %._crit_edge2" [Game_logic/Game_logic.cpp:109]   --->   Operation 207 'br' <Predicate = true> <Delay = 0.00>
+
+State 70 <SV = 69> <Delay = 2.79>
+ST_70 : Operation 208 [1/1] (0.00ns)   --->   "%btn1_verify_load = load i1* @btn1_verify, align 1" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 208 'load' 'btn1_verify_load' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 209 [1/1] (0.00ns) (grouped into LUT with out node not_or_cond3_i)   --->   "%tmp_i1 = xor i1 %btn1_verify_load, %btn1_read" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 209 'xor' 'tmp_i1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 210 [1/1] (0.00ns)   --->   "%btn2_verify_load = load i1* @btn2_verify, align 1" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 210 'load' 'btn2_verify_load' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 211 [1/1] (0.00ns) (grouped into LUT with out node not_or_cond3_i)   --->   "%tmp1_i = xor i1 %btn2_verify_load, %btn2_read" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 211 'xor' 'tmp1_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 212 [1/1] (0.00ns)   --->   "%btn3_verify_load = load i1* @btn3_verify, align 1" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 212 'load' 'btn3_verify_load' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 213 [1/1] (0.00ns) (grouped into LUT with out node not_or_cond3_i)   --->   "%tmp2_i = xor i1 %btn3_verify_load, %btn3_read" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 213 'xor' 'tmp2_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 214 [1/1] (0.00ns) (grouped into LUT with out node not_or_cond3_i)   --->   "%tmp = or i1 %tmp1_i, %tmp2_i" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 214 'or' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 215 [1/1] (0.00ns) (grouped into LUT with out node not_or_cond3_i)   --->   "%or_cond3_i = or i1 %tmp, %tmp_i1" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 215 'or' 'or_cond3_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 216 [1/1] (0.97ns) (out node of the LUT)   --->   "%not_or_cond3_i = xor i1 %or_cond3_i, true" [Game_logic/Game_logic.cpp:62->Game_logic/Game_logic.cpp:111]   --->   Operation 216 'xor' 'not_or_cond3_i' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 217 [1/1] (1.81ns)   --->   "store i1 %not_or_cond3_i, i1* @newRound, align 1" [Game_logic/Game_logic.cpp:111]   --->   Operation 217 'store' <Predicate = true> <Delay = 1.81>
+ST_70 : Operation 218 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %lose, i1 false)" [Game_logic/Game_logic.cpp:113]   --->   Operation 218 'write' <Predicate = true> <Delay = 0.00>
+ST_70 : Operation 219 [1/1] (0.00ns)   --->   "br label %1" [Game_logic/Game_logic.cpp:122]   --->   Operation 219 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ rst]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ btn1]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ btn2]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ btn3]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ slow_clk]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ lose]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ time_remaining_out_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ time_remaining_in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ verify1_out]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ verify2_out]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ verify3_out]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ decrement_value]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ newRound]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ btn1_verify]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ btn2_verify]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ btn3_verify]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ RandSeed]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=0; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=0; visibility=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_71            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_72            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_73            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_74            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_75            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_76            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_77            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_78            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_79            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_80            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_81            (specbitsmap  ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_82            (spectopmodule) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+time_remaining_in_V_s  (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+slow_clk_read          (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+btn3_read              (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+btn2_read              (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+btn1_read              (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+rst_read               (read         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+StgValue_89            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_90            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_91            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_92            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_93            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_94            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_95            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_96            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_97            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_98            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_99            (specinterface) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_100           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_101           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_102           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_103           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_104           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_105           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_106           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_107           (write        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_108           (write        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_109           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_110           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+decrement_value_load_1 (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_2                  (trunc        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+ssdm_int_V_write_ass   (sub          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_114           (write        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_115           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+newRound_load          (load         ) [ 00111111111111111111111111111111111111111111111111111111111111111111111]
+StgValue_117           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+RandSeed_load          (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_i_i                (mul          ) [ 00001000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_120           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_1_i_i              (add          ) [ 00000111111111111111111111111111111111110000000000000000000000000000000]
+last_num_assign_1      (urem         ) [ 00000000000000000000000000000000000000001000000000000000000000000000000]
+tmp_4                  (trunc        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_3_i                (icmp         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_160           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_3                  (trunc        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_i_i3               (mul          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_1_i_i4             (add          ) [ 00000000000000000000000000000000000000000111111111111110000000000000000]
+last_num_assign_2      (urem         ) [ 00000000000000000000000000000000000000000000000000000001000000000000000]
+tmp_5                  (trunc        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_3_i6               (icmp         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_181           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_i_i8               (mul          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_1_i_i9             (add          ) [ 00000000000000000000000000000000000000000000000000000000111111111111110]
+tmp_2_i_i              (urem         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_6                  (trunc        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_2_i_i_cast         (zext         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_201           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_3_i1               (icmp         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_203           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+decrement_value_load   (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_1                  (add          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_206           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_207           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+btn1_verify_load       (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_i1                 (xor          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+btn2_verify_load       (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp1_i                 (xor          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+btn3_verify_load       (load         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp2_i                 (xor          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+tmp                    (or           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+or_cond3_i             (or           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+not_or_cond3_i         (xor          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_217           (store        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_218           (write        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+StgValue_219           (br           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="rst">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="rst"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="btn1">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="btn2">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="btn3">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="slow_clk">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="slow_clk"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="lose">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="lose"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="time_remaining_out_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="time_remaining_out_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="time_remaining_in_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="time_remaining_in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="verify1_out">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="verify1_out"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="verify2_out">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="verify2_out"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="verify3_out">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="verify3_out"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="decrement_value">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="decrement_value"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="newRound">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="newRound"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="btn1_verify">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn1_verify"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="btn2_verify">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn2_verify"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="btn3_verify">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="btn3_verify"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="RandSeed">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="RandSeed"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Game_logic_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.i10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_none.i10P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_none.i1P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="time_remaining_in_V_s_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="10" slack="0"/>
+<pin id="78" dir="0" index="1" bw="10" slack="0"/>
+<pin id="79" dir="1" index="2" bw="10" slack="2"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="time_remaining_in_V_s/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="slow_clk_read_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="1" slack="0"/>
+<pin id="84" dir="0" index="1" bw="1" slack="0"/>
+<pin id="85" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="slow_clk_read/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="btn3_read_read_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="1" slack="0"/>
+<pin id="90" dir="0" index="1" bw="1" slack="0"/>
+<pin id="91" dir="1" index="2" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="btn3_read/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="btn2_read_read_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="1" slack="0"/>
+<pin id="96" dir="0" index="1" bw="1" slack="0"/>
+<pin id="97" dir="1" index="2" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="btn2_read/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="btn1_read_read_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="1" slack="0"/>
+<pin id="102" dir="0" index="1" bw="1" slack="0"/>
+<pin id="103" dir="1" index="2" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="btn1_read/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="rst_read_read_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="1" slack="0"/>
+<pin id="108" dir="0" index="1" bw="1" slack="0"/>
+<pin id="109" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="rst_read/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="grp_write_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="0" slack="0"/>
+<pin id="114" dir="0" index="1" bw="10" slack="0"/>
+<pin id="115" dir="0" index="2" bw="10" slack="0"/>
+<pin id="116" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_107/2 StgValue_114/3 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="grp_write_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="0" slack="0"/>
+<pin id="122" dir="0" index="1" bw="1" slack="0"/>
+<pin id="123" dir="0" index="2" bw="1" slack="0"/>
+<pin id="124" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_108/2 StgValue_218/70 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1004" name="grp_load_fu_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="32" slack="0"/>
+<pin id="130" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="decrement_value_load_1/3 decrement_value_load/69 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="StgValue_102_store_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="1" slack="0"/>
+<pin id="134" dir="0" index="1" bw="32" slack="0"/>
+<pin id="135" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_102/2 "/>
+</bind>
+</comp>
+
+<comp id="138" class="1004" name="StgValue_103_store_fu_138">
+<pin_list>
+<pin id="139" dir="0" index="0" bw="1" slack="0"/>
+<pin id="140" dir="0" index="1" bw="1" slack="0"/>
+<pin id="141" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_103/2 "/>
+</bind>
+</comp>
+
+<comp id="144" class="1004" name="StgValue_104_store_fu_144">
+<pin_list>
+<pin id="145" dir="0" index="0" bw="1" slack="0"/>
+<pin id="146" dir="0" index="1" bw="1" slack="0"/>
+<pin id="147" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_104/2 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="StgValue_105_store_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="1" slack="0"/>
+<pin id="152" dir="0" index="1" bw="1" slack="0"/>
+<pin id="153" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_105/2 "/>
+</bind>
+</comp>
+
+<comp id="156" class="1004" name="StgValue_106_store_fu_156">
+<pin_list>
+<pin id="157" dir="0" index="0" bw="1" slack="0"/>
+<pin id="158" dir="0" index="1" bw="1" slack="0"/>
+<pin id="159" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_106/2 "/>
+</bind>
+</comp>
+
+<comp id="162" class="1004" name="tmp_2_fu_162">
+<pin_list>
+<pin id="163" dir="0" index="0" bw="32" slack="0"/>
+<pin id="164" dir="1" index="1" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_2/3 "/>
+</bind>
+</comp>
+
+<comp id="166" class="1004" name="ssdm_int_V_write_ass_fu_166">
+<pin_list>
+<pin id="167" dir="0" index="0" bw="10" slack="2"/>
+<pin id="168" dir="0" index="1" bw="10" slack="0"/>
+<pin id="169" dir="1" index="2" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sub(10) " fcode="sub"/>
+<opset="ssdm_int_V_write_ass/3 "/>
+</bind>
+</comp>
+
+<comp id="172" class="1004" name="newRound_load_load_fu_172">
+<pin_list>
+<pin id="173" dir="0" index="0" bw="1" slack="0"/>
+<pin id="174" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="newRound_load/3 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="RandSeed_load_load_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="32" slack="0"/>
+<pin id="178" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="RandSeed_load/3 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="tmp_i_i_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="5" slack="0"/>
+<pin id="182" dir="0" index="1" bw="32" slack="0"/>
+<pin id="183" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="tmp_i_i/3 "/>
+</bind>
+</comp>
+
+<comp id="186" class="1004" name="StgValue_120_store_fu_186">
+<pin_list>
+<pin id="187" dir="0" index="0" bw="1" slack="0"/>
+<pin id="188" dir="0" index="1" bw="1" slack="0"/>
+<pin id="189" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_120/3 "/>
+</bind>
+</comp>
+
+<comp id="192" class="1004" name="tmp_1_i_i_fu_192">
+<pin_list>
+<pin id="193" dir="0" index="0" bw="8" slack="0"/>
+<pin id="194" dir="0" index="1" bw="32" slack="1"/>
+<pin id="195" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="tmp_1_i_i/4 "/>
+</bind>
+</comp>
+
+<comp id="197" class="1004" name="grp_fu_197">
+<pin_list>
+<pin id="198" dir="0" index="0" bw="32" slack="0"/>
+<pin id="199" dir="0" index="1" bw="8" slack="0"/>
+<pin id="200" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="urem(17) " fcode="urem"/>
+<opset="last_num_assign_1/4 "/>
+</bind>
+</comp>
+
+<comp id="203" class="1004" name="tmp_4_fu_203">
+<pin_list>
+<pin id="204" dir="0" index="0" bw="8" slack="0"/>
+<pin id="205" dir="1" index="1" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_4/39 "/>
+</bind>
+</comp>
+
+<comp id="207" class="1004" name="tmp_3_i_fu_207">
+<pin_list>
+<pin id="208" dir="0" index="0" bw="7" slack="0"/>
+<pin id="209" dir="0" index="1" bw="7" slack="0"/>
+<pin id="210" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_3_i/39 "/>
+</bind>
+</comp>
+
+<comp id="213" class="1004" name="StgValue_160_store_fu_213">
+<pin_list>
+<pin id="214" dir="0" index="0" bw="1" slack="0"/>
+<pin id="215" dir="0" index="1" bw="1" slack="0"/>
+<pin id="216" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_160/39 "/>
+</bind>
+</comp>
+
+<comp id="219" class="1004" name="tmp_3_fu_219">
+<pin_list>
+<pin id="220" dir="0" index="0" bw="8" slack="1"/>
+<pin id="221" dir="1" index="1" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_3/40 "/>
+</bind>
+</comp>
+
+<comp id="222" class="1004" name="grp_fu_222">
+<pin_list>
+<pin id="223" dir="0" index="0" bw="11" slack="0"/>
+<pin id="224" dir="0" index="1" bw="8" slack="0"/>
+<pin id="225" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="urem(17) " fcode="urem"/>
+<opset="last_num_assign_2/40 "/>
+</bind>
+</comp>
+
+<comp id="227" class="1004" name="tmp_5_fu_227">
+<pin_list>
+<pin id="228" dir="0" index="0" bw="8" slack="0"/>
+<pin id="229" dir="1" index="1" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_5/54 "/>
+</bind>
+</comp>
+
+<comp id="231" class="1004" name="tmp_3_i6_fu_231">
+<pin_list>
+<pin id="232" dir="0" index="0" bw="7" slack="0"/>
+<pin id="233" dir="0" index="1" bw="7" slack="0"/>
+<pin id="234" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_3_i6/54 "/>
+</bind>
+</comp>
+
+<comp id="237" class="1004" name="StgValue_181_store_fu_237">
+<pin_list>
+<pin id="238" dir="0" index="0" bw="1" slack="0"/>
+<pin id="239" dir="0" index="1" bw="1" slack="0"/>
+<pin id="240" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_181/54 "/>
+</bind>
+</comp>
+
+<comp id="243" class="1004" name="grp_fu_243">
+<pin_list>
+<pin id="244" dir="0" index="0" bw="11" slack="0"/>
+<pin id="245" dir="0" index="1" bw="8" slack="0"/>
+<pin id="246" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="urem(17) " fcode="urem"/>
+<opset="tmp_2_i_i/55 "/>
+</bind>
+</comp>
+
+<comp id="248" class="1004" name="tmp_6_fu_248">
+<pin_list>
+<pin id="249" dir="0" index="0" bw="8" slack="0"/>
+<pin id="250" dir="1" index="1" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_6/69 "/>
+</bind>
+</comp>
+
+<comp id="252" class="1004" name="tmp_2_i_i_cast_fu_252">
+<pin_list>
+<pin id="253" dir="0" index="0" bw="8" slack="0"/>
+<pin id="254" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp_2_i_i_cast/69 "/>
+</bind>
+</comp>
+
+<comp id="256" class="1004" name="StgValue_201_store_fu_256">
+<pin_list>
+<pin id="257" dir="0" index="0" bw="8" slack="0"/>
+<pin id="258" dir="0" index="1" bw="32" slack="0"/>
+<pin id="259" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_201/69 "/>
+</bind>
+</comp>
+
+<comp id="262" class="1004" name="tmp_3_i1_fu_262">
+<pin_list>
+<pin id="263" dir="0" index="0" bw="7" slack="0"/>
+<pin id="264" dir="0" index="1" bw="7" slack="0"/>
+<pin id="265" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="tmp_3_i1/69 "/>
+</bind>
+</comp>
+
+<comp id="268" class="1004" name="StgValue_203_store_fu_268">
+<pin_list>
+<pin id="269" dir="0" index="0" bw="1" slack="0"/>
+<pin id="270" dir="0" index="1" bw="1" slack="0"/>
+<pin id="271" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_203/69 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="tmp_1_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="3" slack="0"/>
+<pin id="276" dir="0" index="1" bw="32" slack="0"/>
+<pin id="277" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="tmp_1/69 "/>
+</bind>
+</comp>
+
+<comp id="280" class="1004" name="StgValue_206_store_fu_280">
+<pin_list>
+<pin id="281" dir="0" index="0" bw="32" slack="0"/>
+<pin id="282" dir="0" index="1" bw="32" slack="0"/>
+<pin id="283" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_206/69 "/>
+</bind>
+</comp>
+
+<comp id="286" class="1004" name="btn1_verify_load_load_fu_286">
+<pin_list>
+<pin id="287" dir="0" index="0" bw="1" slack="0"/>
+<pin id="288" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="btn1_verify_load/70 "/>
+</bind>
+</comp>
+
+<comp id="290" class="1004" name="tmp_i1_fu_290">
+<pin_list>
+<pin id="291" dir="0" index="0" bw="1" slack="0"/>
+<pin id="292" dir="0" index="1" bw="1" slack="69"/>
+<pin id="293" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="tmp_i1/70 "/>
+</bind>
+</comp>
+
+<comp id="295" class="1004" name="btn2_verify_load_load_fu_295">
+<pin_list>
+<pin id="296" dir="0" index="0" bw="1" slack="0"/>
+<pin id="297" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="btn2_verify_load/70 "/>
+</bind>
+</comp>
+
+<comp id="299" class="1004" name="tmp1_i_fu_299">
+<pin_list>
+<pin id="300" dir="0" index="0" bw="1" slack="0"/>
+<pin id="301" dir="0" index="1" bw="1" slack="69"/>
+<pin id="302" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="tmp1_i/70 "/>
+</bind>
+</comp>
+
+<comp id="304" class="1004" name="btn3_verify_load_load_fu_304">
+<pin_list>
+<pin id="305" dir="0" index="0" bw="1" slack="0"/>
+<pin id="306" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="btn3_verify_load/70 "/>
+</bind>
+</comp>
+
+<comp id="308" class="1004" name="tmp2_i_fu_308">
+<pin_list>
+<pin id="309" dir="0" index="0" bw="1" slack="0"/>
+<pin id="310" dir="0" index="1" bw="1" slack="69"/>
+<pin id="311" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="tmp2_i/70 "/>
+</bind>
+</comp>
+
+<comp id="313" class="1004" name="tmp_fu_313">
+<pin_list>
+<pin id="314" dir="0" index="0" bw="1" slack="0"/>
+<pin id="315" dir="0" index="1" bw="1" slack="0"/>
+<pin id="316" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="tmp/70 "/>
+</bind>
+</comp>
+
+<comp id="319" class="1004" name="or_cond3_i_fu_319">
+<pin_list>
+<pin id="320" dir="0" index="0" bw="1" slack="0"/>
+<pin id="321" dir="0" index="1" bw="1" slack="0"/>
+<pin id="322" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="or_cond3_i/70 "/>
+</bind>
+</comp>
+
+<comp id="325" class="1004" name="not_or_cond3_i_fu_325">
+<pin_list>
+<pin id="326" dir="0" index="0" bw="1" slack="0"/>
+<pin id="327" dir="0" index="1" bw="1" slack="0"/>
+<pin id="328" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="not_or_cond3_i/70 "/>
+</bind>
+</comp>
+
+<comp id="331" class="1004" name="StgValue_217_store_fu_331">
+<pin_list>
+<pin id="332" dir="0" index="0" bw="1" slack="0"/>
+<pin id="333" dir="0" index="1" bw="1" slack="0"/>
+<pin id="334" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_217/70 "/>
+</bind>
+</comp>
+
+<comp id="337" class="1007" name="grp_fu_337">
+<pin_list>
+<pin id="338" dir="0" index="0" bw="11" slack="0"/>
+<pin id="339" dir="0" index="1" bw="11" slack="0"/>
+<pin id="340" dir="0" index="2" bw="11" slack="0"/>
+<pin id="341" dir="1" index="3" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="muladd(1172) " fcode="muladd"/>
+<opset="tmp_i_i3/40 tmp_1_i_i4/40 "/>
+</bind>
+</comp>
+
+<comp id="346" class="1007" name="grp_fu_346">
+<pin_list>
+<pin id="347" dir="0" index="0" bw="11" slack="0"/>
+<pin id="348" dir="0" index="1" bw="8" slack="1"/>
+<pin id="349" dir="0" index="2" bw="11" slack="0"/>
+<pin id="350" dir="1" index="3" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="muladd(1172) " fcode="muladd"/>
+<opset="tmp_i_i8/55 tmp_1_i_i9/55 "/>
+</bind>
+</comp>
+
+<comp id="354" class="1005" name="time_remaining_in_V_s_reg_354">
+<pin_list>
+<pin id="355" dir="0" index="0" bw="10" slack="2"/>
+<pin id="356" dir="1" index="1" bw="10" slack="2"/>
+</pin_list>
+<bind>
+<opset="time_remaining_in_V_s "/>
+</bind>
+</comp>
+
+<comp id="359" class="1005" name="slow_clk_read_reg_359">
+<pin_list>
+<pin id="360" dir="0" index="0" bw="1" slack="1"/>
+<pin id="361" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="slow_clk_read "/>
+</bind>
+</comp>
+
+<comp id="363" class="1005" name="btn3_read_reg_363">
+<pin_list>
+<pin id="364" dir="0" index="0" bw="1" slack="69"/>
+<pin id="365" dir="1" index="1" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opset="btn3_read "/>
+</bind>
+</comp>
+
+<comp id="368" class="1005" name="btn2_read_reg_368">
+<pin_list>
+<pin id="369" dir="0" index="0" bw="1" slack="69"/>
+<pin id="370" dir="1" index="1" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opset="btn2_read "/>
+</bind>
+</comp>
+
+<comp id="373" class="1005" name="btn1_read_reg_373">
+<pin_list>
+<pin id="374" dir="0" index="0" bw="1" slack="69"/>
+<pin id="375" dir="1" index="1" bw="1" slack="69"/>
+</pin_list>
+<bind>
+<opset="btn1_read "/>
+</bind>
+</comp>
+
+<comp id="378" class="1005" name="rst_read_reg_378">
+<pin_list>
+<pin id="379" dir="0" index="0" bw="1" slack="1"/>
+<pin id="380" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="rst_read "/>
+</bind>
+</comp>
+
+<comp id="385" class="1005" name="tmp_i_i_reg_385">
+<pin_list>
+<pin id="386" dir="0" index="0" bw="32" slack="1"/>
+<pin id="387" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_i_i "/>
+</bind>
+</comp>
+
+<comp id="390" class="1005" name="tmp_1_i_i_reg_390">
+<pin_list>
+<pin id="391" dir="0" index="0" bw="32" slack="1"/>
+<pin id="392" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_1_i_i "/>
+</bind>
+</comp>
+
+<comp id="395" class="1005" name="last_num_assign_1_reg_395">
+<pin_list>
+<pin id="396" dir="0" index="0" bw="11" slack="1"/>
+<pin id="397" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="last_num_assign_1 "/>
+</bind>
+</comp>
+
+<comp id="400" class="1005" name="tmp_1_i_i4_reg_400">
+<pin_list>
+<pin id="401" dir="0" index="0" bw="11" slack="1"/>
+<pin id="402" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_1_i_i4 "/>
+</bind>
+</comp>
+
+<comp id="405" class="1005" name="last_num_assign_2_reg_405">
+<pin_list>
+<pin id="406" dir="0" index="0" bw="11" slack="1"/>
+<pin id="407" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="last_num_assign_2 "/>
+</bind>
+</comp>
+
+<comp id="410" class="1005" name="tmp_1_i_i9_reg_410">
+<pin_list>
+<pin id="411" dir="0" index="0" bw="11" slack="1"/>
+<pin id="412" dir="1" index="1" bw="11" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_1_i_i9 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="80"><net_src comp="40" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="14" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="42" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="8" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="42" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="6" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="98"><net_src comp="42" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="99"><net_src comp="4" pin="0"/><net_sink comp="94" pin=1"/></net>
+
+<net id="104"><net_src comp="42" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="105"><net_src comp="2" pin="0"/><net_sink comp="100" pin=1"/></net>
+
+<net id="110"><net_src comp="42" pin="0"/><net_sink comp="106" pin=0"/></net>
+
+<net id="111"><net_src comp="0" pin="0"/><net_sink comp="106" pin=1"/></net>
+
+<net id="117"><net_src comp="58" pin="0"/><net_sink comp="112" pin=0"/></net>
+
+<net id="118"><net_src comp="12" pin="0"/><net_sink comp="112" pin=1"/></net>
+
+<net id="119"><net_src comp="60" pin="0"/><net_sink comp="112" pin=2"/></net>
+
+<net id="125"><net_src comp="62" pin="0"/><net_sink comp="120" pin=0"/></net>
+
+<net id="126"><net_src comp="10" pin="0"/><net_sink comp="120" pin=1"/></net>
+
+<net id="127"><net_src comp="56" pin="0"/><net_sink comp="120" pin=2"/></net>
+
+<net id="131"><net_src comp="22" pin="0"/><net_sink comp="128" pin=0"/></net>
+
+<net id="136"><net_src comp="52" pin="0"/><net_sink comp="132" pin=0"/></net>
+
+<net id="137"><net_src comp="22" pin="0"/><net_sink comp="132" pin=1"/></net>
+
+<net id="142"><net_src comp="54" pin="0"/><net_sink comp="138" pin=0"/></net>
+
+<net id="143"><net_src comp="24" pin="0"/><net_sink comp="138" pin=1"/></net>
+
+<net id="148"><net_src comp="56" pin="0"/><net_sink comp="144" pin=0"/></net>
+
+<net id="149"><net_src comp="26" pin="0"/><net_sink comp="144" pin=1"/></net>
+
+<net id="154"><net_src comp="56" pin="0"/><net_sink comp="150" pin=0"/></net>
+
+<net id="155"><net_src comp="28" pin="0"/><net_sink comp="150" pin=1"/></net>
+
+<net id="160"><net_src comp="56" pin="0"/><net_sink comp="156" pin=0"/></net>
+
+<net id="161"><net_src comp="30" pin="0"/><net_sink comp="156" pin=1"/></net>
+
+<net id="165"><net_src comp="128" pin="1"/><net_sink comp="162" pin=0"/></net>
+
+<net id="170"><net_src comp="162" pin="1"/><net_sink comp="166" pin=1"/></net>
+
+<net id="171"><net_src comp="166" pin="2"/><net_sink comp="112" pin=2"/></net>
+
+<net id="175"><net_src comp="24" pin="0"/><net_sink comp="172" pin=0"/></net>
+
+<net id="179"><net_src comp="32" pin="0"/><net_sink comp="176" pin=0"/></net>
+
+<net id="184"><net_src comp="64" pin="0"/><net_sink comp="180" pin=0"/></net>
+
+<net id="185"><net_src comp="176" pin="1"/><net_sink comp="180" pin=1"/></net>
+
+<net id="190"><net_src comp="56" pin="0"/><net_sink comp="186" pin=0"/></net>
+
+<net id="191"><net_src comp="24" pin="0"/><net_sink comp="186" pin=1"/></net>
+
+<net id="196"><net_src comp="66" pin="0"/><net_sink comp="192" pin=0"/></net>
+
+<net id="201"><net_src comp="192" pin="2"/><net_sink comp="197" pin=0"/></net>
+
+<net id="202"><net_src comp="66" pin="0"/><net_sink comp="197" pin=1"/></net>
+
+<net id="206"><net_src comp="197" pin="2"/><net_sink comp="203" pin=0"/></net>
+
+<net id="211"><net_src comp="203" pin="1"/><net_sink comp="207" pin=0"/></net>
+
+<net id="212"><net_src comp="68" pin="0"/><net_sink comp="207" pin=1"/></net>
+
+<net id="217"><net_src comp="207" pin="2"/><net_sink comp="213" pin=0"/></net>
+
+<net id="218"><net_src comp="26" pin="0"/><net_sink comp="213" pin=1"/></net>
+
+<net id="226"><net_src comp="72" pin="0"/><net_sink comp="222" pin=1"/></net>
+
+<net id="230"><net_src comp="222" pin="2"/><net_sink comp="227" pin=0"/></net>
+
+<net id="235"><net_src comp="227" pin="1"/><net_sink comp="231" pin=0"/></net>
+
+<net id="236"><net_src comp="68" pin="0"/><net_sink comp="231" pin=1"/></net>
+
+<net id="241"><net_src comp="231" pin="2"/><net_sink comp="237" pin=0"/></net>
+
+<net id="242"><net_src comp="28" pin="0"/><net_sink comp="237" pin=1"/></net>
+
+<net id="247"><net_src comp="72" pin="0"/><net_sink comp="243" pin=1"/></net>
+
+<net id="251"><net_src comp="243" pin="2"/><net_sink comp="248" pin=0"/></net>
+
+<net id="255"><net_src comp="243" pin="2"/><net_sink comp="252" pin=0"/></net>
+
+<net id="260"><net_src comp="252" pin="1"/><net_sink comp="256" pin=0"/></net>
+
+<net id="261"><net_src comp="32" pin="0"/><net_sink comp="256" pin=1"/></net>
+
+<net id="266"><net_src comp="248" pin="1"/><net_sink comp="262" pin=0"/></net>
+
+<net id="267"><net_src comp="68" pin="0"/><net_sink comp="262" pin=1"/></net>
+
+<net id="272"><net_src comp="262" pin="2"/><net_sink comp="268" pin=0"/></net>
+
+<net id="273"><net_src comp="30" pin="0"/><net_sink comp="268" pin=1"/></net>
+
+<net id="278"><net_src comp="74" pin="0"/><net_sink comp="274" pin=0"/></net>
+
+<net id="279"><net_src comp="128" pin="1"/><net_sink comp="274" pin=1"/></net>
+
+<net id="284"><net_src comp="274" pin="2"/><net_sink comp="280" pin=0"/></net>
+
+<net id="285"><net_src comp="22" pin="0"/><net_sink comp="280" pin=1"/></net>
+
+<net id="289"><net_src comp="26" pin="0"/><net_sink comp="286" pin=0"/></net>
+
+<net id="294"><net_src comp="286" pin="1"/><net_sink comp="290" pin=0"/></net>
+
+<net id="298"><net_src comp="28" pin="0"/><net_sink comp="295" pin=0"/></net>
+
+<net id="303"><net_src comp="295" pin="1"/><net_sink comp="299" pin=0"/></net>
+
+<net id="307"><net_src comp="30" pin="0"/><net_sink comp="304" pin=0"/></net>
+
+<net id="312"><net_src comp="304" pin="1"/><net_sink comp="308" pin=0"/></net>
+
+<net id="317"><net_src comp="299" pin="2"/><net_sink comp="313" pin=0"/></net>
+
+<net id="318"><net_src comp="308" pin="2"/><net_sink comp="313" pin=1"/></net>
+
+<net id="323"><net_src comp="313" pin="2"/><net_sink comp="319" pin=0"/></net>
+
+<net id="324"><net_src comp="290" pin="2"/><net_sink comp="319" pin=1"/></net>
+
+<net id="329"><net_src comp="319" pin="2"/><net_sink comp="325" pin=0"/></net>
+
+<net id="330"><net_src comp="54" pin="0"/><net_sink comp="325" pin=1"/></net>
+
+<net id="335"><net_src comp="325" pin="2"/><net_sink comp="331" pin=0"/></net>
+
+<net id="336"><net_src comp="24" pin="0"/><net_sink comp="331" pin=1"/></net>
+
+<net id="342"><net_src comp="70" pin="0"/><net_sink comp="337" pin=0"/></net>
+
+<net id="343"><net_src comp="219" pin="1"/><net_sink comp="337" pin=1"/></net>
+
+<net id="344"><net_src comp="72" pin="0"/><net_sink comp="337" pin=2"/></net>
+
+<net id="345"><net_src comp="337" pin="3"/><net_sink comp="222" pin=0"/></net>
+
+<net id="351"><net_src comp="70" pin="0"/><net_sink comp="346" pin=0"/></net>
+
+<net id="352"><net_src comp="72" pin="0"/><net_sink comp="346" pin=2"/></net>
+
+<net id="353"><net_src comp="346" pin="3"/><net_sink comp="243" pin=0"/></net>
+
+<net id="357"><net_src comp="76" pin="2"/><net_sink comp="354" pin=0"/></net>
+
+<net id="358"><net_src comp="354" pin="1"/><net_sink comp="166" pin=0"/></net>
+
+<net id="362"><net_src comp="82" pin="2"/><net_sink comp="359" pin=0"/></net>
+
+<net id="366"><net_src comp="88" pin="2"/><net_sink comp="363" pin=0"/></net>
+
+<net id="367"><net_src comp="363" pin="1"/><net_sink comp="308" pin=1"/></net>
+
+<net id="371"><net_src comp="94" pin="2"/><net_sink comp="368" pin=0"/></net>
+
+<net id="372"><net_src comp="368" pin="1"/><net_sink comp="299" pin=1"/></net>
+
+<net id="376"><net_src comp="100" pin="2"/><net_sink comp="373" pin=0"/></net>
+
+<net id="377"><net_src comp="373" pin="1"/><net_sink comp="290" pin=1"/></net>
+
+<net id="381"><net_src comp="106" pin="2"/><net_sink comp="378" pin=0"/></net>
+
+<net id="388"><net_src comp="180" pin="2"/><net_sink comp="385" pin=0"/></net>
+
+<net id="389"><net_src comp="385" pin="1"/><net_sink comp="192" pin=1"/></net>
+
+<net id="393"><net_src comp="192" pin="2"/><net_sink comp="390" pin=0"/></net>
+
+<net id="394"><net_src comp="390" pin="1"/><net_sink comp="197" pin=0"/></net>
+
+<net id="398"><net_src comp="197" pin="2"/><net_sink comp="395" pin=0"/></net>
+
+<net id="399"><net_src comp="395" pin="1"/><net_sink comp="219" pin=0"/></net>
+
+<net id="403"><net_src comp="337" pin="3"/><net_sink comp="400" pin=0"/></net>
+
+<net id="404"><net_src comp="400" pin="1"/><net_sink comp="222" pin=0"/></net>
+
+<net id="408"><net_src comp="222" pin="2"/><net_sink comp="405" pin=0"/></net>
+
+<net id="409"><net_src comp="405" pin="1"/><net_sink comp="346" pin=1"/></net>
+
+<net id="413"><net_src comp="346" pin="3"/><net_sink comp="410" pin=0"/></net>
+
+<net id="414"><net_src comp="410" pin="1"/><net_sink comp="243" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: lose | {2 70 }
+	Port: time_remaining_out_V | {2 3 }
+	Port: decrement_value | {2 69 }
+	Port: newRound | {2 3 70 }
+	Port: btn1_verify | {2 39 }
+	Port: btn2_verify | {2 54 }
+	Port: btn3_verify | {2 69 }
+	Port: RandSeed | {69 }
+ - Input state : 
+	Port: Game_logic : rst | {1 }
+	Port: Game_logic : btn1 | {1 }
+	Port: Game_logic : btn2 | {1 }
+	Port: Game_logic : btn3 | {1 }
+	Port: Game_logic : slow_clk | {1 }
+	Port: Game_logic : time_remaining_in_V | {1 }
+	Port: Game_logic : decrement_value | {3 69 }
+	Port: Game_logic : newRound | {3 }
+	Port: Game_logic : btn1_verify | {70 }
+	Port: Game_logic : btn2_verify | {70 }
+	Port: Game_logic : btn3_verify | {70 }
+	Port: Game_logic : RandSeed | {3 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+		tmp_2 : 1
+		ssdm_int_V_write_ass : 2
+		StgValue_114 : 3
+		StgValue_117 : 1
+		tmp_i_i : 1
+	State 4
+		last_num_assign_1 : 1
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+		tmp_4 : 1
+		tmp_3_i : 2
+		StgValue_160 : 3
+	State 40
+		tmp_i_i3 : 1
+		tmp_1_i_i4 : 2
+		last_num_assign_2 : 3
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+		tmp_5 : 1
+		tmp_3_i6 : 2
+		StgValue_181 : 3
+	State 55
+		tmp_1_i_i9 : 1
+		tmp_2_i_i : 2
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+		tmp_6 : 1
+		tmp_2_i_i_cast : 1
+		StgValue_201 : 2
+		tmp_3_i1 : 2
+		StgValue_203 : 3
+		tmp_1 : 1
+		StgValue_206 : 2
+	State 70
+		tmp_i1 : 1
+		tmp1_i : 1
+		tmp2_i : 1
+		tmp : 1
+		or_cond3_i : 1
+		not_or_cond3_i : 1
+		StgValue_217 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------|---------|---------|---------|
+| Operation|          Functional Unit         |  DSP48E |    FF   |   LUT   |
+|----------|----------------------------------|---------|---------|---------|
+|          |            grp_fu_197            |    0    |   394   |   238   |
+|   urem   |            grp_fu_222            |    0    |   142   |    78   |
+|          |            grp_fu_243            |    0    |   142   |    78   |
+|----------|----------------------------------|---------|---------|---------|
+|    add   |         tmp_1_i_i_fu_192         |    0    |    0    |    39   |
+|          |           tmp_1_fu_274           |    0    |    0    |    39   |
+|----------|----------------------------------|---------|---------|---------|
+|          |          tmp_3_i_fu_207          |    0    |    0    |    11   |
+|   icmp   |          tmp_3_i6_fu_231         |    0    |    0    |    11   |
+|          |          tmp_3_i1_fu_262         |    0    |    0    |    11   |
+|----------|----------------------------------|---------|---------|---------|
+|    mul   |          tmp_i_i_fu_180          |    2    |    0    |    20   |
+|----------|----------------------------------|---------|---------|---------|
+|    sub   |    ssdm_int_V_write_ass_fu_166   |    0    |    0    |    14   |
+|----------|----------------------------------|---------|---------|---------|
+|          |           tmp_i1_fu_290          |    0    |    0    |    2    |
+|    xor   |           tmp1_i_fu_299          |    0    |    0    |    2    |
+|          |           tmp2_i_fu_308          |    0    |    0    |    2    |
+|          |       not_or_cond3_i_fu_325      |    0    |    0    |    2    |
+|----------|----------------------------------|---------|---------|---------|
+|    or    |            tmp_fu_313            |    0    |    0    |    2    |
+|          |         or_cond3_i_fu_319        |    0    |    0    |    2    |
+|----------|----------------------------------|---------|---------|---------|
+|  muladd  |            grp_fu_337            |    1    |    0    |    0    |
+|          |            grp_fu_346            |    1    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|
+|          | time_remaining_in_V_s_read_fu_76 |    0    |    0    |    0    |
+|          |     slow_clk_read_read_fu_82     |    0    |    0    |    0    |
+|   read   |       btn3_read_read_fu_88       |    0    |    0    |    0    |
+|          |       btn2_read_read_fu_94       |    0    |    0    |    0    |
+|          |       btn1_read_read_fu_100      |    0    |    0    |    0    |
+|          |       rst_read_read_fu_106       |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|
+|   write  |         grp_write_fu_112         |    0    |    0    |    0    |
+|          |         grp_write_fu_120         |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|
+|          |           tmp_2_fu_162           |    0    |    0    |    0    |
+|          |           tmp_4_fu_203           |    0    |    0    |    0    |
+|   trunc  |           tmp_3_fu_219           |    0    |    0    |    0    |
+|          |           tmp_5_fu_227           |    0    |    0    |    0    |
+|          |           tmp_6_fu_248           |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|
+|   zext   |       tmp_2_i_i_cast_fu_252      |    0    |    0    |    0    |
+|----------|----------------------------------|---------|---------|---------|
+|   Total  |                                  |    4    |   678   |   551   |
+|----------|----------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------------------+--------+
+|                             |   FF   |
++-----------------------------+--------+
+|      btn1_read_reg_373      |    1   |
+|      btn2_read_reg_368      |    1   |
+|      btn3_read_reg_363      |    1   |
+|  last_num_assign_1_reg_395  |   11   |
+|  last_num_assign_2_reg_405  |   11   |
+|       rst_read_reg_378      |    1   |
+|    slow_clk_read_reg_359    |    1   |
+|time_remaining_in_V_s_reg_354|   10   |
+|      tmp_1_i_i4_reg_400     |   11   |
+|      tmp_1_i_i9_reg_410     |   11   |
+|      tmp_1_i_i_reg_390      |   32   |
+|       tmp_i_i_reg_385       |   32   |
++-----------------------------+--------+
+|            Total            |   123  |
++-----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------------|------|------|------|--------||---------||---------|
+|       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|------------------|------|------|------|--------||---------||---------|
+| grp_write_fu_112 |  p2  |   2  |  10  |   20   ||    9    |
+|    grp_fu_197    |  p0  |   2  |  32  |   64   ||    9    |
+|    grp_fu_222    |  p0  |   2  |  11  |   22   ||    9    |
+|    grp_fu_243    |  p0  |   2  |  11  |   22   ||    9    |
+|------------------|------|------|------|--------||---------||---------|
+|       Total      |      |      |      |   128  ||  7.076  ||    36   |
+|------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           | DSP48E |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    4   |    -   |   678  |   551  |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    7   |    -   |   36   |
+|  Register |    -   |    -   |   123  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    4   |    7   |   801  |   587  |
++-----------+--------+--------+--------+--------+

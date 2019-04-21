@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1555788072">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1555873071">
   <File Type="PA-TCL" Name="Testing_HDMI_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Testing_HDMI_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Testing_HDMI_wrapper_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/HDMI.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/isaac/Downloads/HDMI.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../isaac/Downloads/HDMI.v"/>
         <Attr Name="ImportTime" Val="1555003434"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -52,7 +52,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="C:/Users/isaac/Downloads/PYNQ-Z1_C.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../isaac/Downloads/PYNQ-Z1_C.xdc"/>
         <Attr Name="ImportTime" Val="1555003440"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -77,10 +77,8 @@
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_HDMI_test_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_Interface_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_rst_clk_wiz_0_25M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_TicTacToe_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_Interface_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_1_1"/>
 </GenRun>

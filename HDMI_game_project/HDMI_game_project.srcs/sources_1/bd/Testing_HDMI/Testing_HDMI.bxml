@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="Testing_HDMI" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1555788062"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1555788062"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1555788062"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1555788062"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1555873069"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1555873069"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1555873069"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1555873069"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\Testing_HDMI_HDMI_test_0_0\Testing_HDMI_HDMI_test_0_0.xci" Type="IP">
         <Instance HierarchyPath="HDMI_test_0"/>
@@ -32,14 +32,6 @@
       <File Name="sim\Testing_HDMI.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\Testing_HDMI_Interface_0_0\Testing_HDMI_Interface_0_0.xci" Type="IP">
-        <Instance HierarchyPath="Interface_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\Testing_HDMI_clean_button_0_0\Testing_HDMI_clean_button_0_0.xci" Type="IP">
@@ -74,16 +66,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\Testing_HDMI_TicTacToe_0_0\Testing_HDMI_TicTacToe_0_0.xci" Type="IP">
-        <Instance HierarchyPath="TicTacToe_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\Testing_HDMI_rst_clk_wiz_0_25M_0\Testing_HDMI_rst_clk_wiz_0_25M_0.xci" Type="IP">
-        <Instance HierarchyPath="rst_clk_wiz_0_25M"/>
+      <File Name="ip\Testing_HDMI_Interface_0_1\Testing_HDMI_Interface_0_1.xci" Type="IP">
+        <Instance HierarchyPath="Interface_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

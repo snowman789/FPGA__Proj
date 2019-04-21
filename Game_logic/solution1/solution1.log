@@ -1,0 +1,256 @@
+==============================================================
+File generated on Sun Apr 21 16:45:08 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Game_logic/Game_logic.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Game_logic/Game_logic.cpp:1:
+Game_logic/Game_logic.cpp:61:9: error: use of undeclared identifier 'selection'
+ switch(selection) {
+        ^
+Game_logic/Game_logic.cpp:110:2: error: use of undeclared identifier 'selection'
+ selection = 0;
+ ^
+Game_logic/Game_logic.cpp:121:3: error: use of undeclared identifier 'boardw'; did you mean 'boardre'?
+  boardw(1);
+  ^~~~~~
+  boardre
+Game_logic/Game_logic.cpp:84:12: note: 'boardre' declared here
+ap_uint<2> boardre(int sel) {
+           ^
+Game_logic/Game_logic.cpp:125:3: error: use of undeclared identifier 'boardw'; did you mean 'boardre'?
+  boardw(2);
+  ^~~~~~
+  boardre
+Game_logic/Game_logic.cpp:84:12: note: 'boardre' declared here
+ap_uint<2> boardre(int sel) {
+           ^
+4 errors generated.
+==============================================================
+File generated on Sun Apr 21 16:45:44 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Game_logic/Game_logic.cpp' ... 
+ERROR: [HLS 214-124] use of undeclared identifier 'win': C:\Users\itr9fc\Desktop\FPGA__Proj\Game_logic\Game_logic.cpp:81
+==============================================================
+File generated on Sun Apr 21 16:46:36 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Game_logic/Game_logic.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.676 ; gain = 17.836
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.676 ; gain = 17.836
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 110.453 ; gain = 25.613
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Game_logic/Game_logic.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'InitializeGame' into 'Game_logic' (Game_logic/Game_logic.cpp:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'DecrementTimer' into 'Game_logic' (Game_logic/Game_logic.cpp:97) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Game_logic' (Game_logic/Game_logic.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'CheckUserInput' into 'Game_logic' (Game_logic/Game_logic.cpp:108) automatically.
+INFO: [XFORM 203-602] Inlining function 'UserLost' into 'Game_logic' (Game_logic/Game_logic.cpp:110) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 114.910 ; gain = 30.070
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Game_logic/Game_logic.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'InitializeGame' into 'Game_logic' (Game_logic/Game_logic.cpp:93) automatically.
+INFO: [XFORM 203-602] Inlining function 'DecrementTimer' into 'Game_logic' (Game_logic/Game_logic.cpp:97) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Game_logic' (Game_logic/Game_logic.cpp:101) automatically.
+INFO: [XFORM 203-602] Inlining function 'CheckUserInput' into 'Game_logic' (Game_logic/Game_logic.cpp:108) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.984 ; gain = 55.145
+WARNING: [XFORM 203-561] 'Loop-1' (Game_logic/Game_logic.cpp:92:2) in function 'Game_logic' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 141.035 ; gain = 56.195
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Game_logic' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Game_logic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (9.88087ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'Game_logic' consists of the following:
+	'mul' operation of DSP[74] ('tmp_i_i3', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:102) [73]  (3.36 ns)
+	'add' operation of DSP[74] ('tmp_1_i_i4', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:102) [74]  (3.02 ns)
+	'urem' operation ('last_num', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:102) [75]  (3.5 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.924 seconds; current allocated memory: 91.999 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.165 seconds; current allocated memory: 92.501 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Game_logic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/rst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/slow_clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/lose' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'lose' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/you_lost_boi' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'you_lost_boi' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/time_remaining_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'time_remaining_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/time_remaining_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Game_logic' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'decrement_value' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'newRound' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn1_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn2_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn3_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+INFO: [SYN 201-210] Renamed object name 'Game_logic_urem_32ns_8ns_11_36_seq_1' to 'Game_logic_urem_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_urem_11s_8ns_11_15_seq_1' to 'Game_logic_urem_1cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_mac_muladd_5ns_11s_8ns_11_1_1' to 'Game_logic_mac_mudEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_mac_muladd_5ns_8s_8ns_11_1_1' to 'Game_logic_mac_mueOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_mac_mudEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_mac_mueOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_urem_1cud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Game_logic'.
+INFO: [HLS 200-111]  Elapsed time: 0.376 seconds; current allocated memory: 93.421 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Game_logic_urem_3bkb_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'Game_logic_urem_1cud_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 143.746 ; gain = 58.906
+INFO: [SYSC 207-301] Generating SystemC RTL for Game_logic.
+INFO: [VHDL 208-304] Generating VHDL RTL for Game_logic.
+INFO: [VLOG 209-307] Generating Verilog RTL for Game_logic.
+INFO: [HLS 200-112] Total elapsed time: 14.132 seconds; peak allocated memory: 93.421 MB.
+==============================================================
+File generated on Sun Apr 21 16:47:02 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Sun Apr 21 17:01:41 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Game_logic/Game_logic.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 102.625 ; gain = 17.984
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 102.625 ; gain = 17.984
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 109.914 ; gain = 25.273
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Game_logic/Game_logic.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'InitializeGame' into 'Game_logic' (Game_logic/Game_logic.cpp:96) automatically.
+INFO: [XFORM 203-602] Inlining function 'DecrementTimer' into 'Game_logic' (Game_logic/Game_logic.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Game_logic' (Game_logic/Game_logic.cpp:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'CheckUserInput' into 'Game_logic' (Game_logic/Game_logic.cpp:111) automatically.
+INFO: [XFORM 203-602] Inlining function 'UserLost' into 'Game_logic' (Game_logic/Game_logic.cpp:113) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 114.520 ; gain = 29.879
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Game_logic/Game_logic.cpp:54) automatically.
+INFO: [XFORM 203-602] Inlining function 'InitializeGame' into 'Game_logic' (Game_logic/Game_logic.cpp:96) automatically.
+INFO: [XFORM 203-602] Inlining function 'DecrementTimer' into 'Game_logic' (Game_logic/Game_logic.cpp:100) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Game_logic' (Game_logic/Game_logic.cpp:104) automatically.
+INFO: [XFORM 203-602] Inlining function 'CheckUserInput' into 'Game_logic' (Game_logic/Game_logic.cpp:111) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 140.574 ; gain = 55.934
+WARNING: [XFORM 203-561] 'Loop-1' (Game_logic/Game_logic.cpp:95:2) in function 'Game_logic' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 141.621 ; gain = 56.980
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Game_logic' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Game_logic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-21] Estimated clock period (9.88087ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'Game_logic' consists of the following:
+	'mul' operation of DSP[80] ('tmp_i_i3', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105) [79]  (3.36 ns)
+	'add' operation of DSP[80] ('tmp_1_i_i4', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105) [80]  (3.02 ns)
+	'urem' operation ('last_num', Game_logic/Game_logic.cpp:49->Game_logic/Game_logic.cpp:54->Game_logic/Game_logic.cpp:105) [81]  (3.5 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.165 seconds; current allocated memory: 92.037 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.157 seconds; current allocated memory: 92.549 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Game_logic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/rst' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/slow_clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/lose' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'lose' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/time_remaining_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'time_remaining_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/time_remaining_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/verify1_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/verify2_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Game_logic/verify3_out' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Game_logic' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'decrement_value' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'newRound' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn1_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn2_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'btn3_verify' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+INFO: [SYN 201-210] Renamed object name 'Game_logic_urem_32ns_8ns_11_36_seq_1' to 'Game_logic_urem_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_urem_11s_8ns_11_15_seq_1' to 'Game_logic_urem_1cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_mac_muladd_5ns_11s_8ns_11_1_1' to 'Game_logic_mac_mudEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Game_logic_mac_muladd_5ns_8s_8ns_11_1_1' to 'Game_logic_mac_mueOg' due to the length limit 20
+WARNING: [RTGEN 206-101] Port 'Game_logic/verify1_out' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Game_logic/verify2_out' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Game_logic/verify3_out' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_mac_mudEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_mac_mueOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_urem_1cud': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Game_logic_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Game_logic'.
+INFO: [HLS 200-111]  Elapsed time: 0.377 seconds; current allocated memory: 93.489 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Game_logic_urem_3bkb_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'Game_logic_urem_1cud_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 143.977 ; gain = 59.336
+INFO: [SYSC 207-301] Generating SystemC RTL for Game_logic.
+INFO: [VHDL 208-304] Generating VHDL RTL for Game_logic.
+INFO: [VLOG 209-307] Generating Verilog RTL for Game_logic.
+INFO: [HLS 200-112] Total elapsed time: 16.372 seconds; peak allocated memory: 93.489 MB.
+==============================================================
+File generated on Sun Apr 21 17:02:05 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

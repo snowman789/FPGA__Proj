@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Game_logic.cpp" path="C:\Users\itr9fc\Desktop\FPGA__Proj\Game_logic\Game_logic.cpp"/>
+    <originFiles name="Game_logicInit.h" path="C:\Users\itr9fc\Desktop\FPGA__Proj\Game_logic\Game_logicInit.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

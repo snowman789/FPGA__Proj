@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1'
+HD_PWD='C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

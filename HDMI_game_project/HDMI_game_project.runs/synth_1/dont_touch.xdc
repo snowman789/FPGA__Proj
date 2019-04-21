@@ -12,9 +12,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_HD
 # IP: bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_clk_wiz_0_0 || ORIG_REF_NAME==Testing_HDMI_clk_wiz_0_0} -quiet] -quiet
 
-# IP: bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_0/Testing_HDMI_Interface_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_Interface_0_0 || ORIG_REF_NAME==Testing_HDMI_Interface_0_0} -quiet] -quiet
-
 # IP: bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_clean_button_0_0 || ORIG_REF_NAME==Testing_HDMI_clean_button_0_0} -quiet] -quiet
 
@@ -27,10 +24,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_cl
 # IP: bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_clean_button_1_1 || ORIG_REF_NAME==Testing_HDMI_clean_button_1_1} -quiet] -quiet
 
-# IP: bd/Testing_HDMI/ip/Testing_HDMI_TicTacToe_0_0/Testing_HDMI_TicTacToe_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_TicTacToe_0_0 || ORIG_REF_NAME==Testing_HDMI_TicTacToe_0_0} -quiet] -quiet
-
-# IP: bd/Testing_HDMI/ip/Testing_HDMI_rst_clk_wiz_0_25M_0/Testing_HDMI_rst_clk_wiz_0_25M_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_rst_clk_wiz_0_25M_0 || ORIG_REF_NAME==Testing_HDMI_rst_clk_wiz_0_25M_0} -quiet] -quiet
+# IP: bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_1/Testing_HDMI_Interface_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_Interface_0_1 || ORIG_REF_NAME==Testing_HDMI_Interface_0_1} -quiet] -quiet
 
 # XDC: bd/Testing_HDMI/Testing_HDMI_ooc.xdc

@@ -1,0 +1,112 @@
+
+
+================================================================
+== Vivado HLS Report for 'Interface'
+================================================================
+* Date:           Sun Apr 21 17:01:49 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Interface
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      -|
+|Register         |        -|      -|       -|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|       0|      0|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++------------------+-----+-----+------------+------------------+--------------+
+|ap_start          |  in |    1| ap_ctrl_hs |     Interface    | return value |
+|ap_done           | out |    1| ap_ctrl_hs |     Interface    | return value |
+|ap_idle           | out |    1| ap_ctrl_hs |     Interface    | return value |
+|ap_ready          | out |    1| ap_ctrl_hs |     Interface    | return value |
+|x_V               |  in |   10|   ap_none  |        x_V       |    scalar    |
+|y_V               |  in |   10|   ap_none  |        y_V       |    scalar    |
+|XY_Red_V          | out |    8|   ap_none  |     XY_Red_V     |    pointer   |
+|XY_Green_V        | out |    8|   ap_none  |    XY_Green_V    |    pointer   |
+|XY_Blue_V         | out |    8|   ap_none  |     XY_Blue_V    |    pointer   |
+|lose              |  in |    1|   ap_none  |       lose       |    scalar    |
+|time_remaining_V  |  in |   10|   ap_none  | time_remaining_V |    scalar    |
+|verify1           |  in |    1|   ap_none  |      verify1     |    scalar    |
+|verify2           |  in |    1|   ap_none  |      verify2     |    scalar    |
+|verify3           |  in |    1|   ap_none  |      verify3     |    scalar    |
++------------------+-----+-----+------------+------------------+--------------+
+
