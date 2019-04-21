@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sun Apr 21 14:58:23 2019
+// Date        : Sun Apr 21 18:10:33 2019
 // Host        : EmbSys18 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_1/Testing_HDMI_Interface_0_1_sim_netlist.v
@@ -20,8 +20,6 @@ module Testing_HDMI_Interface_0_1
     ap_done,
     ap_idle,
     ap_ready,
-    move_up,
-    move_down,
     x_V,
     y_V,
     XY_Red_V,
@@ -31,8 +29,6 @@ module Testing_HDMI_Interface_0_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl done" *) output ap_done;
   (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl idle" *) output ap_idle;
   (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_ctrl, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *) output ap_ready;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 move_up DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME move_up, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *) input move_up;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 move_down DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME move_down, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *) input move_down;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 x_V DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME x_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}" *) input [9:0]x_V;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 y_V DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME y_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}" *) input [9:0]y_V;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 XY_Red_V DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME XY_Red_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}" *) output [7:0]XY_Red_V;
@@ -46,8 +42,6 @@ module Testing_HDMI_Interface_0_1
   wire ap_idle;
   wire ap_ready;
   wire ap_start;
-  wire move_down;
-  wire move_up;
   wire [9:0]x_V;
   wire [9:0]y_V;
 
@@ -59,20 +53,16 @@ module Testing_HDMI_Interface_0_1
         .ap_idle(ap_idle),
         .ap_ready(ap_ready),
         .ap_start(ap_start),
-        .move_down(move_down),
-        .move_up(move_up),
         .x_V(x_V),
         .y_V(y_V));
 endmodule
 
-(* ORIG_REF_NAME = "Interface" *) 
+(* ORIG_REF_NAME = "Interface" *) (* hls_module = "yes" *) 
 module Testing_HDMI_Interface_0_1_Interface
    (ap_start,
     ap_done,
     ap_idle,
     ap_ready,
-    move_up,
-    move_down,
     x_V,
     y_V,
     XY_Red_V,
@@ -82,49 +72,78 @@ module Testing_HDMI_Interface_0_1_Interface
   output ap_done;
   output ap_idle;
   output ap_ready;
-  input move_up;
-  input move_down;
   input [9:0]x_V;
   input [9:0]y_V;
   output [7:0]XY_Red_V;
   output [7:0]XY_Green_V;
   output [7:0]XY_Blue_V;
 
-  wire \<const0> ;
   wire \<const1> ;
+  wire [7:7]\^XY_Blue_V ;
+  wire [7:7]\^XY_Red_V ;
+  wire \XY_Red_V[0]_INST_0_i_1_n_0 ;
   wire ap_start;
+  wire [9:0]x_V;
 
-  assign XY_Blue_V[7] = \<const1> ;
-  assign XY_Blue_V[6] = \<const1> ;
-  assign XY_Blue_V[5] = \<const1> ;
-  assign XY_Blue_V[4] = \<const1> ;
-  assign XY_Blue_V[3] = \<const1> ;
-  assign XY_Blue_V[2] = \<const1> ;
-  assign XY_Blue_V[1] = \<const1> ;
-  assign XY_Blue_V[0] = \<const1> ;
-  assign XY_Green_V[7] = \<const1> ;
-  assign XY_Green_V[6] = \<const1> ;
-  assign XY_Green_V[5] = \<const1> ;
-  assign XY_Green_V[4] = \<const1> ;
-  assign XY_Green_V[3] = \<const1> ;
-  assign XY_Green_V[2] = \<const1> ;
-  assign XY_Green_V[1] = \<const1> ;
-  assign XY_Green_V[0] = \<const1> ;
-  assign XY_Red_V[7] = \<const0> ;
-  assign XY_Red_V[6] = \<const0> ;
-  assign XY_Red_V[5] = \<const0> ;
-  assign XY_Red_V[4] = \<const0> ;
-  assign XY_Red_V[3] = \<const0> ;
-  assign XY_Red_V[2] = \<const0> ;
-  assign XY_Red_V[1] = \<const0> ;
-  assign XY_Red_V[0] = \<const0> ;
+  assign XY_Blue_V[7] = \^XY_Blue_V [7];
+  assign XY_Blue_V[6] = \^XY_Blue_V [7];
+  assign XY_Blue_V[5] = \^XY_Blue_V [7];
+  assign XY_Blue_V[4] = \^XY_Blue_V [7];
+  assign XY_Blue_V[3] = \^XY_Blue_V [7];
+  assign XY_Blue_V[2] = \^XY_Blue_V [7];
+  assign XY_Blue_V[1] = \^XY_Blue_V [7];
+  assign XY_Blue_V[0] = \^XY_Blue_V [7];
+  assign XY_Green_V[7] = \^XY_Blue_V [7];
+  assign XY_Green_V[6] = \^XY_Blue_V [7];
+  assign XY_Green_V[5] = \^XY_Blue_V [7];
+  assign XY_Green_V[4] = \^XY_Blue_V [7];
+  assign XY_Green_V[3] = \^XY_Blue_V [7];
+  assign XY_Green_V[2] = \^XY_Blue_V [7];
+  assign XY_Green_V[1] = \^XY_Blue_V [7];
+  assign XY_Green_V[0] = \^XY_Blue_V [7];
+  assign XY_Red_V[7] = \^XY_Red_V [7];
+  assign XY_Red_V[6] = \^XY_Red_V [7];
+  assign XY_Red_V[5] = \^XY_Red_V [7];
+  assign XY_Red_V[4] = \^XY_Red_V [7];
+  assign XY_Red_V[3] = \^XY_Red_V [7];
+  assign XY_Red_V[2] = \^XY_Red_V [7];
+  assign XY_Red_V[1] = \^XY_Red_V [7];
+  assign XY_Red_V[0] = \^XY_Red_V [7];
   assign ap_done = ap_start;
   assign ap_idle = \<const1> ;
   assign ap_ready = ap_start;
-  GND GND
-       (.G(\<const0> ));
   VCC VCC
        (.P(\<const1> ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'hFFFFEAAA)) 
+    \XY_Blue_V[0]_INST_0 
+       (.I0(x_V[8]),
+        .I1(x_V[6]),
+        .I2(\XY_Red_V[0]_INST_0_i_1_n_0 ),
+        .I3(x_V[7]),
+        .I4(x_V[9]),
+        .O(\^XY_Blue_V ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h00001555)) 
+    \XY_Red_V[0]_INST_0 
+       (.I0(x_V[9]),
+        .I1(x_V[7]),
+        .I2(\XY_Red_V[0]_INST_0_i_1_n_0 ),
+        .I3(x_V[6]),
+        .I4(x_V[8]),
+        .O(\^XY_Red_V ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFEEEEEEEA)) 
+    \XY_Red_V[0]_INST_0_i_1 
+       (.I0(x_V[4]),
+        .I1(x_V[3]),
+        .I2(x_V[2]),
+        .I3(x_V[0]),
+        .I4(x_V[1]),
+        .I5(x_V[5]),
+        .O(\XY_Red_V[0]_INST_0_i_1_n_0 ));
 endmodule
 `ifndef GLBL
 `define GLBL

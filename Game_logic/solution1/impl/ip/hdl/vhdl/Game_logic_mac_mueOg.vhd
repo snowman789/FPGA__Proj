@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Sun Apr 21 17:01:54 -0400 2019
+-- File generated on Sun Apr 21 17:44:18 -0400 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -9,19 +9,19 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity Game_logic_mac_mueOg_DSP48_1 is
+entity Game_logic_mac_mueOg_DSP48_0 is
 port (
     in0:  in  std_logic_vector(5 - 1 downto 0);
-    in1:  in  std_logic_vector(8 - 1 downto 0);
+    in1:  in  std_logic_vector(11 - 1 downto 0);
     in2:  in  std_logic_vector(8 - 1 downto 0);
     dout: out std_logic_vector(11 - 1 downto 0));
 
     attribute use_dsp : string;
-    attribute use_dsp of Game_logic_mac_mueOg_DSP48_1 : entity is "yes";
+    attribute use_dsp of Game_logic_mac_mueOg_DSP48_0 : entity is "yes";
 
 end entity;
 
-architecture behav of Game_logic_mac_mueOg_DSP48_1 is
+architecture behav of Game_logic_mac_mueOg_DSP48_0 is
     signal a       : signed(25-1 downto 0);
     signal b       : signed(18-1 downto 0);
     signal c       : signed(48-1 downto 0);
@@ -57,7 +57,7 @@ entity Game_logic_mac_mueOg is
 end entity;
 
 architecture arch of Game_logic_mac_mueOg is
-    component Game_logic_mac_mueOg_DSP48_1 is
+    component Game_logic_mac_mueOg_DSP48_0 is
         port (
             in0 : IN STD_LOGIC_VECTOR;
             in1 : IN STD_LOGIC_VECTOR;
@@ -68,7 +68,7 @@ architecture arch of Game_logic_mac_mueOg is
 
 
 begin
-    Game_logic_mac_mueOg_DSP48_1_U :  component Game_logic_mac_mueOg_DSP48_1
+    Game_logic_mac_mueOg_DSP48_0_U :  component Game_logic_mac_mueOg_DSP48_0
     port map (
         in0 => din0,
         in1 => din1,

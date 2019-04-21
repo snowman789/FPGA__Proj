@@ -13,8 +13,8 @@ using namespace std;
 namespace ap_rtl {
 
 const sc_logic Interface::ap_const_logic_1 = sc_dt::Log_1;
-const sc_lv<8> Interface::ap_const_lv8_FF = "11111111";
 const sc_lv<8> Interface::ap_const_lv8_0 = "00000000";
+const sc_lv<8> Interface::ap_const_lv8_FF = "11111111";
 const sc_logic Interface::ap_const_logic_0 = sc_dt::Log_0;
 const bool Interface::ap_const_boolean_1 = true;
 
@@ -57,11 +57,6 @@ Interface::Interface(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, XY_Red_V, "(port)XY_Red_V");
     sc_trace(mVcdFile, XY_Green_V, "(port)XY_Green_V");
     sc_trace(mVcdFile, XY_Blue_V, "(port)XY_Blue_V");
-    sc_trace(mVcdFile, lose, "(port)lose");
-    sc_trace(mVcdFile, time_remaining_V, "(port)time_remaining_V");
-    sc_trace(mVcdFile, verify1, "(port)verify1");
-    sc_trace(mVcdFile, verify2, "(port)verify2");
-    sc_trace(mVcdFile, verify3, "(port)verify3");
 #endif
 
     }
@@ -80,15 +75,15 @@ Interface::~Interface() {
 }
 
 void Interface::thread_XY_Blue_V() {
-    XY_Blue_V = ap_const_lv8_FF;
+    XY_Blue_V = ap_const_lv8_0;
 }
 
 void Interface::thread_XY_Green_V() {
-    XY_Green_V = ap_const_lv8_FF;
+    XY_Green_V = ap_const_lv8_0;
 }
 
 void Interface::thread_XY_Red_V() {
-    XY_Red_V = ap_const_lv8_0;
+    XY_Red_V = ap_const_lv8_FF;
 }
 
 void Interface::thread_ap_done() {
@@ -124,11 +119,6 @@ void Interface::thread_hdltv_gen() {
         mHdltvoutHandle << " , " <<  " \"XY_Red_V\" :  \"" << XY_Red_V.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"XY_Green_V\" :  \"" << XY_Green_V.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"XY_Blue_V\" :  \"" << XY_Blue_V.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"lose\" :  \"" << lose.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"time_remaining_V\" :  \"" << time_remaining_V.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"verify1\" :  \"" << verify1.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"verify2\" :  \"" << verify2.read() << "\" ";
-        mHdltvinHandle << " , " <<  " \"verify3\" :  \"" << verify3.read() << "\" ";
         mHdltvinHandle << "}" << std::endl;
         mHdltvoutHandle << "}" << std::endl;
         ap_cycleNo++;

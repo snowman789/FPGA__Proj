@@ -39,17 +39,19 @@
   "Files": {
     "CSource": ["..\/Game_logic.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/Game_logic_mac_mudEe.vhd",
       "impl\/vhdl\/Game_logic_mac_mueOg.vhd",
-      "impl\/vhdl\/Game_logic_urem_1cud.vhd",
+      "impl\/vhdl\/Game_logic_mac_mufYi.vhd",
+      "impl\/vhdl\/Game_logic_urem_1dEe.vhd",
       "impl\/vhdl\/Game_logic_urem_3bkb.vhd",
+      "impl\/vhdl\/Game_logic_urem_3cud.vhd",
       "impl\/vhdl\/Game_logic.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/Game_logic_mac_mudEe.v",
       "impl\/verilog\/Game_logic_mac_mueOg.v",
-      "impl\/verilog\/Game_logic_urem_1cud.v",
+      "impl\/verilog\/Game_logic_mac_mufYi.v",
+      "impl\/verilog\/Game_logic_urem_1dEe.v",
       "impl\/verilog\/Game_logic_urem_3bkb.v",
+      "impl\/verilog\/Game_logic_urem_3cud.v",
       "impl\/verilog\/Game_logic.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
@@ -126,15 +128,6 @@
           "Width": "1"
         }}
     },
-    "slow_clk": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
     "time_remaining_in_V": {
       "type": "data",
       "dir": "in",
@@ -155,7 +148,7 @@
     },
     "verify1_out": {
       "type": "data",
-      "dir": "in",
+      "dir": "out",
       "width": "1",
       "ctype": {"DATA": {
           "Type": "null",
@@ -164,7 +157,7 @@
     },
     "verify2_out": {
       "type": "data",
-      "dir": "in",
+      "dir": "out",
       "width": "1",
       "ctype": {"DATA": {
           "Type": "null",
@@ -173,7 +166,7 @@
     },
     "verify3_out": {
       "type": "data",
-      "dir": "in",
+      "dir": "out",
       "width": "1",
       "ctype": {"DATA": {
           "Type": "null",
@@ -222,10 +215,6 @@
       "dir": "in",
       "width": "1"
     },
-    "slow_clk": {
-      "dir": "in",
-      "width": "1"
-    },
     "lose": {
       "dir": "out",
       "width": "1"
@@ -239,15 +228,15 @@
       "width": "10"
     },
     "verify1_out": {
-      "dir": "in",
+      "dir": "out",
       "width": "1"
     },
     "verify2_out": {
-      "dir": "in",
+      "dir": "out",
       "width": "1"
     },
     "verify3_out": {
-      "dir": "in",
+      "dir": "out",
       "width": "1"
     }
   },
@@ -280,12 +269,6 @@
       "dataWidth": "1",
       "handshakeRef": "ap_none"
     },
-    "slow_clk": {
-      "interfaceRef": "slow_clk",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
     "lose": {
       "interfaceRef": "lose",
       "dir": "out",
@@ -308,21 +291,24 @@
     },
     "verify1_out": {
       "interfaceRef": "verify1_out",
-      "dir": "in",
+      "dir": "out",
       "dataWidth": "1",
-      "handshakeRef": "ap_none"
+      "handshakeRef": "ap_none",
+      "firstOutLatency": "1"
     },
     "verify2_out": {
       "interfaceRef": "verify2_out",
-      "dir": "in",
+      "dir": "out",
       "dataWidth": "1",
-      "handshakeRef": "ap_none"
+      "handshakeRef": "ap_none",
+      "firstOutLatency": "1"
     },
     "verify3_out": {
       "interfaceRef": "verify3_out",
-      "dir": "in",
+      "dir": "out",
       "dataWidth": "1",
-      "handshakeRef": "ap_none"
+      "handshakeRef": "ap_none",
+      "firstOutLatency": "1"
     }
   },
   "ModuleInfo": {
@@ -346,14 +332,14 @@
             "TripCount": "inf",
             "Latency": "",
             "PipelineII": "",
-            "PipelineDepthMin": "3",
-            "PipelineDepthMax": "69",
-            "PipelineDepth": "3 ~ 69"
+            "PipelineDepthMin": "37",
+            "PipelineDepthMax": "103",
+            "PipelineDepth": "37 ~ 103"
           }],
         "Area": {
           "DSP48E": "2",
-          "FF": "859",
-          "LUT": "943",
+          "FF": "1322",
+          "LUT": "1454",
           "BRAM_18K": "0"
         }
       }}
@@ -368,7 +354,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-21 17:01:54 -0400",
+    "Time": "2019-04-21 17:44:19 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

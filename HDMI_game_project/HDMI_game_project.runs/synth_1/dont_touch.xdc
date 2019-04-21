@@ -27,4 +27,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_cl
 # IP: bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_1/Testing_HDMI_Interface_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_Interface_0_1 || ORIG_REF_NAME==Testing_HDMI_Interface_0_1} -quiet] -quiet
 
+# IP: bd/Testing_HDMI/ip/Testing_HDMI_Game_logic_0_0/Testing_HDMI_Game_logic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Testing_HDMI_Game_logic_0_0 || ORIG_REF_NAME==Testing_HDMI_Game_logic_0_0} -quiet] -quiet
+
 # XDC: bd/Testing_HDMI/Testing_HDMI_ooc.xdc

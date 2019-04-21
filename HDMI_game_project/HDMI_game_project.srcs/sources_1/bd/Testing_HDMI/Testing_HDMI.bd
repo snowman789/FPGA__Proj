@@ -15,6 +15,7 @@
       "clean_button_2": "",
       "clean_button_3": "",
       "HDMI_test_0": "",
+      "Game_logic_0": "",
       "Interface_0": ""
     },
     "ports": {
@@ -103,10 +104,10 @@
             "value": "80.0"
           },
           "CLKOUT1_JITTER": {
-            "value": "165.419"
+            "value": "179.952"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "112.379"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
             "value": "25"
@@ -115,10 +116,10 @@
             "value": "true"
           },
           "CLKOUT2_JITTER": {
-            "value": "104.759"
+            "value": "112.962"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "112.379"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
             "value": "250"
@@ -127,19 +128,19 @@
             "value": "true"
           },
           "CLKOUT3_JITTER": {
-            "value": "124.615"
+            "value": "136.634"
           },
           "CLKOUT3_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "112.379"
           },
           "CLKOUT3_USED": {
             "value": "true"
           },
           "CLKOUT4_JITTER": {
-            "value": "179.050"
+            "value": "193.392"
           },
           "CLKOUT4_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "112.379"
           },
           "CLKOUT4_REQUESTED_OUT_FREQ": {
             "value": "16.6666"
@@ -147,29 +148,47 @@
           "CLKOUT4_USED": {
             "value": "true"
           },
+          "CLKOUT5_JITTER": {
+            "value": "237.289"
+          },
+          "CLKOUT5_PHASE_ERROR": {
+            "value": "112.379"
+          },
+          "CLKOUT5_REQUESTED_OUT_FREQ": {
+            "value": "5"
+          },
+          "CLKOUT5_USED": {
+            "value": "true"
+          },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "8.000"
+            "value": "6.000"
           },
           "MMCM_CLKIN1_PERIOD": {
             "value": "8.000"
           },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "40.000"
+            "value": "31.250"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "4"
+            "value": "3"
           },
           "MMCM_CLKOUT2_DIVIDE": {
-            "value": "10"
+            "value": "8"
           },
           "MMCM_CLKOUT3_DIVIDE": {
-            "value": "60"
+            "value": "45"
+          },
+          "MMCM_CLKOUT4_DIVIDE": {
+            "value": "128"
           },
           "MMCM_DIVCLK_DIVIDE": {
             "value": "1"
           },
           "NUM_OUT_CLKS": {
-            "value": "4"
+            "value": "5"
           },
           "PRIM_IN_FREQ": {
             "value": "125"
@@ -341,7 +360,7 @@
                 "value_src": "ip_prop"
               },
               "FREQ_HZ": {
-                "value": "25000000",
+                "value": "24000000",
                 "value_src": "ip_prop"
               },
               "PHASE": {
@@ -377,7 +396,7 @@
             "parameters": {
               "LAYERED_METADATA": {
                 "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
-                "value_src": "const_prop"
+                "value_src": "default_prop"
               }
             }
           },
@@ -388,7 +407,7 @@
             "parameters": {
               "LAYERED_METADATA": {
                 "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
-                "value_src": "const_prop"
+                "value_src": "default_prop"
               }
             }
           },
@@ -399,7 +418,7 @@
             "parameters": {
               "LAYERED_METADATA": {
                 "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
-                "value_src": "const_prop"
+                "value_src": "default_prop"
               }
             }
           },
@@ -439,6 +458,10 @@
             "right": "0"
           }
         }
+      },
+      "Game_logic_0": {
+        "vlnv": "xilinx.com:hls:Game_logic:1.0",
+        "xci_name": "Testing_HDMI_Game_logic_0_0"
       },
       "Interface_0": {
         "vlnv": "xilinx.com:hls:Interface:1.0",
@@ -530,44 +553,41 @@
       "btn_2_1": {
         "ports": [
           "btn_2",
-          "clean_button_2/async_btn",
-          "Interface_0/move_up"
+          "clean_button_2/async_btn"
         ]
       },
       "btn_3_1": {
         "ports": [
           "btn_3",
-          "clean_button_3/async_btn",
-          "Interface_0/move_down"
+          "clean_button_3/async_btn"
         ]
       },
       "clean_button_0_clean": {
         "ports": [
           "clean_button_0/clean",
-          "HDMI_test_0/btn0"
+          "HDMI_test_0/btn0",
+          "Game_logic_0/rst"
         ]
       },
       "clean_button_1_clean": {
         "ports": [
           "clean_button_1/clean",
-          "HDMI_test_0/btn1"
+          "HDMI_test_0/btn1",
+          "Game_logic_0/btn1"
         ]
       },
       "clean_button_2_clean": {
         "ports": [
           "clean_button_2/clean",
-          "HDMI_test_0/btn2"
+          "HDMI_test_0/btn2",
+          "Game_logic_0/btn2"
         ]
       },
       "clean_button_3_clean": {
         "ports": [
           "clean_button_3/clean",
-          "HDMI_test_0/btn3"
-        ]
-      },
-      "clk_wiz_0_clk_out3": {
-        "ports": [
-          "clk_wiz_0/clk_out3"
+          "HDMI_test_0/btn3",
+          "Game_logic_0/btn3"
         ]
       },
       "HDMI_test_0_x_value": {
@@ -598,6 +618,43 @@
         "ports": [
           "Interface_0/XY_Blue_V",
           "HDMI_test_0/XY_Blue"
+        ]
+      },
+      "clk_wiz_0_clk_out5": {
+        "ports": [
+          "clk_wiz_0/clk_out5"
+        ]
+      },
+      "Game_logic_0_lose": {
+        "ports": [
+          "Game_logic_0/lose"
+        ]
+      },
+      "Game_logic_0_time_remaining_out_V": {
+        "ports": [
+          "Game_logic_0/time_remaining_out_V",
+          "Game_logic_0/time_remaining_in_V"
+        ]
+      },
+      "Game_logic_0_verify1_out": {
+        "ports": [
+          "Game_logic_0/verify1_out"
+        ]
+      },
+      "Game_logic_0_verify2_out": {
+        "ports": [
+          "Game_logic_0/verify2_out"
+        ]
+      },
+      "Game_logic_0_verify3_out": {
+        "ports": [
+          "Game_logic_0/verify3_out"
+        ]
+      },
+      "clk_wiz_0_clk_out3": {
+        "ports": [
+          "clk_wiz_0/clk_out3",
+          "Game_logic_0/ap_clk"
         ]
       }
     }

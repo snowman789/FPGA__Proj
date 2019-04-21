@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Interface:1.0
-// IP Revision: 1904211452
+// IP Revision: 1904211809
 
 (* X_CORE_INFO = "Interface,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "Testing_HDMI_Interface_0_1,Interface,{}" *)
-(* CORE_GENERATION_INFO = "Testing_HDMI_Interface_0_1,Interface,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface,x_ipVersion=1.0,x_ipCoreRevision=1904211452,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_Interface_0_1,Interface,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface,x_ipVersion=1.0,x_ipCoreRevision=1904211809,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Interface_0_1 (
@@ -60,8 +60,6 @@ module Testing_HDMI_Interface_0_1 (
   ap_done,
   ap_idle,
   ap_ready,
-  move_up,
-  move_down,
   x_V,
   y_V,
   XY_Red_V,
@@ -80,12 +78,6 @@ output wire ap_idle;
  minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl ready" *)
 output wire ap_ready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME move_up, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 move_up DATA" *)
-input wire move_up;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME move_down, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 move_down DATA" *)
-input wire move_down;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME x_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value fal\
 se}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 x_V DATA" *)
@@ -112,8 +104,6 @@ output wire [7 : 0] XY_Blue_V;
     .ap_done(ap_done),
     .ap_idle(ap_idle),
     .ap_ready(ap_ready),
-    .move_up(move_up),
-    .move_down(move_down),
     .x_V(x_V),
     .y_V(y_V),
     .XY_Red_V(XY_Red_V),

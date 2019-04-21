@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 14:57:48 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 18:10:01 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -32,7 +32,6 @@
     <PORT DIR="I" NAME="btn_2" SIGIS="undef" SIGNAME="External_Ports_btn_2">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clean_button_2" PORT="async_btn"/>
-        <CONNECTION INSTANCE="Interface_0" PORT="move_up"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="reset_rtl" SIGIS="rst" SIGNAME="External_Ports_reset_rtl">
@@ -43,7 +42,6 @@
     <PORT DIR="I" NAME="btn_3" SIGIS="undef" SIGNAME="External_Ports_btn_3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clean_button_3" PORT="async_btn"/>
-        <CONNECTION INSTANCE="Interface_0" PORT="move_down"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="hdmi_tx_hpdn" SIGIS="undef" SIGNAME="HDMI_test_0_hdmi_hpd_tri_o">
@@ -66,6 +64,75 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
+    <MODULE COREREVISION="1904211744" FULLNAME="/Game_logic_0" HWVERSION="1.0" INSTANCE="Game_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Game_logic" VLNV="xilinx.com:hls:Game_logic:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Game_logic_0_0"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="undef"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="93750000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" SIGIS="rst"/>
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="rst" SIGIS="data" SIGNAME="clean_button_0_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_0" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn1" SIGIS="data" SIGNAME="clean_button_1_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_1" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn2" SIGIS="data" SIGNAME="clean_button_2_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_2" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn3" SIGIS="data" SIGNAME="clean_button_3_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="lose" SIGIS="data"/>
+        <PORT DIR="O" LEFT="9" NAME="time_remaining_out_V" RIGHT="0" SIGIS="data" SIGNAME="Game_logic_0_time_remaining_out_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="time_remaining_in_V"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="time_remaining_in_V" RIGHT="0" SIGIS="data" SIGNAME="Game_logic_0_time_remaining_out_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="time_remaining_out_V"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="verify1_out" SIGIS="data"/>
+        <PORT DIR="O" NAME="verify2_out" SIGIS="data"/>
+        <PORT DIR="O" NAME="verify3_out" SIGIS="data"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
+            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
+            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
+            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/HDMI_test_0" HWVERSION="1.0" INSTANCE="HDMI_test_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HDMI_test" VLNV="xilinx.com:module_ref:HDMI_test:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -161,7 +228,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904211452" FULLNAME="/Interface_0" HWVERSION="1.0" INSTANCE="Interface_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface" VLNV="xilinx.com:hls:Interface:1.0">
+    <MODULE COREREVISION="1904211809" FULLNAME="/Interface_0" HWVERSION="1.0" INSTANCE="Interface_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface" VLNV="xilinx.com:hls:Interface:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface_0_1"/>
@@ -177,16 +244,6 @@
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="move_up" SIGIS="data" SIGNAME="External_Ports_btn_2">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="btn_2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="move_down" SIGIS="data" SIGNAME="External_Ports_btn_3">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="btn_3"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="9" NAME="x_V" RIGHT="0" SIGIS="data" SIGNAME="HDMI_test_0_x_value">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="x_value"/>
@@ -245,6 +302,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_0_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn0"/>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -270,6 +328,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_1_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn1"/>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="btn1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -295,6 +354,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_2_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn2"/>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="btn2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -320,6 +380,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_3_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn3"/>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="btn3"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -347,7 +408,7 @@
         <PARAMETER NAME="C_PRECISION" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT3_USED" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT4_USED" VALUE="1"/>
-        <PARAMETER NAME="C_CLKOUT5_USED" VALUE="0"/>
+        <PARAMETER NAME="C_CLKOUT5_USED" VALUE="1"/>
         <PARAMETER NAME="C_CLKOUT6_USED" VALUE="0"/>
         <PARAMETER NAME="C_CLKOUT7_USED" VALUE="0"/>
         <PARAMETER NAME="C_USE_CLKOUT1_BAR" VALUE="0"/>
@@ -389,7 +450,7 @@
         <PARAMETER NAME="C_USE_POWER_DOWN" VALUE="0"/>
         <PARAMETER NAME="C_USE_STATUS" VALUE="0"/>
         <PARAMETER NAME="C_USE_FREEZE" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_OUT_CLKS" VALUE="4"/>
+        <PARAMETER NAME="C_NUM_OUT_CLKS" VALUE="5"/>
         <PARAMETER NAME="C_CLKOUT1_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_CLKOUT2_DRIVES" VALUE="BUFG"/>
         <PARAMETER NAME="C_CLKOUT3_DRIVES" VALUE="BUFG"/>
@@ -402,18 +463,18 @@
         <PARAMETER NAME="C_INCLK_SUM_ROW2" VALUE="no_secondary_input_clock"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0A" VALUE="Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW0B" VALUE="Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1____25.000______0.000______50.0______165.419_____96.948"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="clk_out2___250.000______0.000______50.0______104.759_____96.948"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="clk_out3___100.000______0.000______50.0______124.615_____96.948"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="clk_out4____16.667______0.000______50.0______179.050_____96.948"/>
-        <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="no_CLK_OUT5_output"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW1" VALUE="clk_out1____24.000______0.000______50.0______179.952____112.379"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW2" VALUE="clk_out2___250.000______0.000______50.0______112.962____112.379"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW3" VALUE="clk_out3____93.750______0.000______50.0______136.634____112.379"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW4" VALUE="clk_out4____16.667______0.000______50.0______193.392____112.379"/>
+        <PARAMETER NAME="C_OUTCLK_SUM_ROW5" VALUE="clk_out5_____5.859______0.000______50.0______237.289____112.379"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW6" VALUE="no_CLK_OUT6_output"/>
         <PARAMETER NAME="C_OUTCLK_SUM_ROW7" VALUE="no_CLK_OUT7_output"/>
         <PARAMETER NAME="C_CLKOUT1_REQUESTED_OUT_FREQ" VALUE="25"/>
         <PARAMETER NAME="C_CLKOUT2_REQUESTED_OUT_FREQ" VALUE="250"/>
         <PARAMETER NAME="C_CLKOUT3_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT4_REQUESTED_OUT_FREQ" VALUE="16.6666"/>
-        <PARAMETER NAME="C_CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT5_REQUESTED_OUT_FREQ" VALUE="5"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT1_REQUESTED_PHASE" VALUE="0.000"/>
@@ -430,11 +491,11 @@
         <PARAMETER NAME="C_CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT6_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="25.000"/>
+        <PARAMETER NAME="C_CLKOUT1_OUT_FREQ" VALUE="24.000"/>
         <PARAMETER NAME="C_CLKOUT2_OUT_FREQ" VALUE="250.000"/>
-        <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT3_OUT_FREQ" VALUE="93.750"/>
         <PARAMETER NAME="C_CLKOUT4_OUT_FREQ" VALUE="16.667"/>
-        <PARAMETER NAME="C_CLKOUT5_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT5_OUT_FREQ" VALUE="5.859"/>
         <PARAMETER NAME="C_CLKOUT6_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT7_OUT_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT1_PHASE" VALUE="0.000"/>
@@ -448,7 +509,7 @@
         <PARAMETER NAME="C_CLKOUT2_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT3_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT4_DUTY_CYCLE" VALUE="50.0"/>
-        <PARAMETER NAME="C_CLKOUT5_DUTY_CYCLE" VALUE="50.000"/>
+        <PARAMETER NAME="C_CLKOUT5_DUTY_CYCLE" VALUE="50.0"/>
         <PARAMETER NAME="C_CLKOUT6_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_CLKOUT7_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="C_USE_SAFE_CLOCK_STARTUP" VALUE="0"/>
@@ -462,9 +523,9 @@
         <PARAMETER NAME="C_CLKOUT7_SEQUENCE_NUMBER" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="C_MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="8.000"/>
+        <PARAMETER NAME="C_MMCM_CLKFBOUT_MULT_F" VALUE="6.000"/>
         <PARAMETER NAME="C_MMCM_CLKIN1_PERIOD" VALUE="8.000"/>
-        <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.000"/>
+        <PARAMETER NAME="C_MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
         <PARAMETER NAME="C_MMCM_CLKOUT4_CASCADE" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_CLOCK_HOLD" VALUE="FALSE"/>
         <PARAMETER NAME="C_MMCM_COMPENSATION" VALUE="ZHOLD"/>
@@ -472,11 +533,11 @@
         <PARAMETER NAME="C_MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="C_MMCM_STARTUP_WAIT" VALUE="FALSE"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="40.000"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="4"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="10"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="60"/>
-        <PARAMETER NAME="C_MMCM_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT0_DIVIDE_F" VALUE="31.250"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT1_DIVIDE" VALUE="3"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT2_DIVIDE" VALUE="8"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT3_DIVIDE" VALUE="45"/>
+        <PARAMETER NAME="C_MMCM_CLKOUT4_DIVIDE" VALUE="128"/>
         <PARAMETER NAME="C_MMCM_CLKOUT5_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT6_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="C_MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
@@ -607,7 +668,7 @@
         <PARAMETER NAME="C_DIVIDE2_AUTO" VALUE="0.1"/>
         <PARAMETER NAME="C_DIVIDE3_AUTO" VALUE="0.25"/>
         <PARAMETER NAME="C_DIVIDE4_AUTO" VALUE="1.500006000024"/>
-        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="0.25"/>
+        <PARAMETER NAME="C_DIVIDE5_AUTO" VALUE="5.0"/>
         <PARAMETER NAME="C_DIVIDE6_AUTO" VALUE="0.25"/>
         <PARAMETER NAME="C_DIVIDE7_AUTO" VALUE="0.25"/>
         <PARAMETER NAME="C_PLLBUFGCEDIV" VALUE="false"/>
@@ -630,11 +691,11 @@
         <PARAMETER NAME="C_CLKOUT5_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT6_MATCHED_ROUTING" VALUE="false"/>
         <PARAMETER NAME="C_CLKOUT7_MATCHED_ROUTING" VALUE="false"/>
-        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="25.000"/>
+        <PARAMETER NAME="C_CLKOUT0_ACTUAL_FREQ" VALUE="24.000"/>
         <PARAMETER NAME="C_CLKOUT1_ACTUAL_FREQ" VALUE="250.000"/>
-        <PARAMETER NAME="C_CLKOUT2_ACTUAL_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT2_ACTUAL_FREQ" VALUE="93.750"/>
         <PARAMETER NAME="C_CLKOUT3_ACTUAL_FREQ" VALUE="16.667"/>
-        <PARAMETER NAME="C_CLKOUT4_ACTUAL_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="C_CLKOUT4_ACTUAL_FREQ" VALUE="5.859"/>
         <PARAMETER NAME="C_CLKOUT5_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="C_CLKOUT6_ACTUAL_FREQ" VALUE="100.000"/>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_clk_wiz_0_0"/>
@@ -683,10 +744,10 @@
         <PARAMETER NAME="CLKOUT2_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT3_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT4_USED" VALUE="true"/>
-        <PARAMETER NAME="CLKOUT5_USED" VALUE="false"/>
+        <PARAMETER NAME="CLKOUT5_USED" VALUE="true"/>
         <PARAMETER NAME="CLKOUT6_USED" VALUE="false"/>
         <PARAMETER NAME="CLKOUT7_USED" VALUE="false"/>
-        <PARAMETER NAME="NUM_OUT_CLKS" VALUE="4"/>
+        <PARAMETER NAME="NUM_OUT_CLKS" VALUE="5"/>
         <PARAMETER NAME="CLK_OUT1_USE_FINE_PS_GUI" VALUE="false"/>
         <PARAMETER NAME="CLK_OUT2_USE_FINE_PS_GUI" VALUE="false"/>
         <PARAMETER NAME="CLK_OUT3_USE_FINE_PS_GUI" VALUE="false"/>
@@ -725,7 +786,7 @@
         <PARAMETER NAME="CLKOUT4_REQUESTED_OUT_FREQ" VALUE="16.6666"/>
         <PARAMETER NAME="CLKOUT4_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT4_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
-        <PARAMETER NAME="CLKOUT5_REQUESTED_OUT_FREQ" VALUE="100.000"/>
+        <PARAMETER NAME="CLKOUT5_REQUESTED_OUT_FREQ" VALUE="5"/>
         <PARAMETER NAME="CLKOUT5_REQUESTED_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="CLKOUT5_REQUESTED_DUTY_CYCLE" VALUE="50.000"/>
         <PARAMETER NAME="CLKOUT6_REQUESTED_OUT_FREQ" VALUE="100.000"/>
@@ -785,34 +846,34 @@
         <PARAMETER NAME="MMCM_NOTES" VALUE="None"/>
         <PARAMETER NAME="MMCM_DIVCLK_DIVIDE" VALUE="1"/>
         <PARAMETER NAME="MMCM_BANDWIDTH" VALUE="OPTIMIZED"/>
-        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="8.000"/>
+        <PARAMETER NAME="MMCM_CLKFBOUT_MULT_F" VALUE="6.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKFBOUT_USE_FINE_PS" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLKIN1_PERIOD" VALUE="8.000"/>
-        <PARAMETER NAME="MMCM_CLKIN2_PERIOD" VALUE="10.000"/>
+        <PARAMETER NAME="MMCM_CLKIN2_PERIOD" VALUE="10.0"/>
         <PARAMETER NAME="MMCM_CLKOUT4_CASCADE" VALUE="false"/>
         <PARAMETER NAME="MMCM_CLOCK_HOLD" VALUE="false"/>
         <PARAMETER NAME="MMCM_COMPENSATION" VALUE="ZHOLD"/>
         <PARAMETER NAME="MMCM_REF_JITTER1" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_REF_JITTER2" VALUE="0.010"/>
         <PARAMETER NAME="MMCM_STARTUP_WAIT" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="40.000"/>
+        <PARAMETER NAME="MMCM_CLKOUT0_DIVIDE_F" VALUE="31.250"/>
         <PARAMETER NAME="MMCM_CLKOUT0_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT0_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT0_USE_FINE_PS" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT1_DIVIDE" VALUE="4"/>
+        <PARAMETER NAME="MMCM_CLKOUT1_DIVIDE" VALUE="3"/>
         <PARAMETER NAME="MMCM_CLKOUT1_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT1_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT1_USE_FINE_PS" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT2_DIVIDE" VALUE="10"/>
+        <PARAMETER NAME="MMCM_CLKOUT2_DIVIDE" VALUE="8"/>
         <PARAMETER NAME="MMCM_CLKOUT2_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT2_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT2_USE_FINE_PS" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT3_DIVIDE" VALUE="60"/>
+        <PARAMETER NAME="MMCM_CLKOUT3_DIVIDE" VALUE="45"/>
         <PARAMETER NAME="MMCM_CLKOUT3_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT3_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT3_USE_FINE_PS" VALUE="false"/>
-        <PARAMETER NAME="MMCM_CLKOUT4_DIVIDE" VALUE="1"/>
+        <PARAMETER NAME="MMCM_CLKOUT4_DIVIDE" VALUE="128"/>
         <PARAMETER NAME="MMCM_CLKOUT4_DUTY_CYCLE" VALUE="0.500"/>
         <PARAMETER NAME="MMCM_CLKOUT4_PHASE" VALUE="0.000"/>
         <PARAMETER NAME="MMCM_CLKOUT4_USE_FINE_PS" VALUE="false"/>
@@ -874,16 +935,16 @@
         <PARAMETER NAME="CDDCREQ_PORT" VALUE="cddcreq"/>
         <PARAMETER NAME="ENABLE_CLKOUTPHY" VALUE="false"/>
         <PARAMETER NAME="CLKOUTPHY_REQUESTED_FREQ" VALUE="600.000"/>
-        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="165.419"/>
-        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="96.948"/>
-        <PARAMETER NAME="CLKOUT2_JITTER" VALUE="104.759"/>
-        <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="96.948"/>
-        <PARAMETER NAME="CLKOUT3_JITTER" VALUE="124.615"/>
-        <PARAMETER NAME="CLKOUT3_PHASE_ERROR" VALUE="96.948"/>
-        <PARAMETER NAME="CLKOUT4_JITTER" VALUE="179.050"/>
-        <PARAMETER NAME="CLKOUT4_PHASE_ERROR" VALUE="96.948"/>
-        <PARAMETER NAME="CLKOUT5_JITTER" VALUE="0.0"/>
-        <PARAMETER NAME="CLKOUT5_PHASE_ERROR" VALUE="0.0"/>
+        <PARAMETER NAME="CLKOUT1_JITTER" VALUE="179.952"/>
+        <PARAMETER NAME="CLKOUT1_PHASE_ERROR" VALUE="112.379"/>
+        <PARAMETER NAME="CLKOUT2_JITTER" VALUE="112.962"/>
+        <PARAMETER NAME="CLKOUT2_PHASE_ERROR" VALUE="112.379"/>
+        <PARAMETER NAME="CLKOUT3_JITTER" VALUE="136.634"/>
+        <PARAMETER NAME="CLKOUT3_PHASE_ERROR" VALUE="112.379"/>
+        <PARAMETER NAME="CLKOUT4_JITTER" VALUE="193.392"/>
+        <PARAMETER NAME="CLKOUT4_PHASE_ERROR" VALUE="112.379"/>
+        <PARAMETER NAME="CLKOUT5_JITTER" VALUE="237.289"/>
+        <PARAMETER NAME="CLKOUT5_PHASE_ERROR" VALUE="112.379"/>
         <PARAMETER NAME="CLKOUT6_JITTER" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT6_PHASE_ERROR" VALUE="0.0"/>
         <PARAMETER NAME="CLKOUT7_JITTER" VALUE="0.0"/>
@@ -905,7 +966,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="sys_clk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="25000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
+        <PORT CLKFREQUENCY="24000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="pixclk"/>
           </CONNECTIONS>
@@ -915,7 +976,11 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="DCM_TMDS_CLKFX"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out3" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="93750000" DIR="O" NAME="clk_out3" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Game_logic_0" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="16666666" DIR="O" NAME="clk_out4" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out4">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clean_button_0" PORT="clk"/>
@@ -929,6 +994,7 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="HPD"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="5859375" DIR="O" NAME="clk_out5" SIGIS="clk"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

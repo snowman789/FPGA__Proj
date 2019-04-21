@@ -3,6 +3,21 @@ set moduleName "Game_logic"
 set moduleIsExternC "0"
 set rawDecl ""
 set globalVariable ""
+set PortName10 "slow_down_clock"
+set BitWidth10 "32"
+set ArrayOpt10 ""
+set Const10 "0"
+set Volatile10 "0"
+set Pointer10 "0"
+set Reference10 "0"
+set Initializer10 ""
+set External10 0
+set Dims10 [list 0]
+set Interface10 "wire"
+set NameSpace10 [list ]
+set DataType10 "unsigned int"
+set Port10 [list $PortName10 $Interface10 $DataType10 $Pointer10 $Dims10 $Const10 $Volatile10 $ArrayOpt10 $Initializer10 $External10 $NameSpace10]
+lappend globalVariable $Port10
 set PortName11 "newRound"
 set BitWidth11 "8"
 set ArrayOpt11 ""
@@ -142,19 +157,19 @@ set Interface3 "wire"
 set DataType3 "bool"
 set Port3 [list $PortName3 $Interface3 $DataType3 $Pointer3 $Dims3 $Const3 $Volatile3 $ArrayOpt3]
 lappend PortList $Port3
-set PortName4 "slow_clk"
-set BitWidth4 "8"
+set PortName4 "lose"
+set BitWidth4 "64"
 set ArrayOpt4 ""
 set Const4 "0"
 set Volatile4 "0"
-set Pointer4 "0"
+set Pointer4 "1"
 set Reference4 "0"
 set Dims4 [list 0]
 set Interface4 "wire"
 set DataType4 "bool"
 set Port4 [list $PortName4 $Interface4 $DataType4 $Pointer4 $Dims4 $Const4 $Volatile4 $ArrayOpt4]
 lappend PortList $Port4
-set PortName5 "lose"
+set PortName5 "time_remaining_out"
 set BitWidth5 "64"
 set ArrayOpt5 ""
 set Const5 "0"
@@ -163,34 +178,34 @@ set Pointer5 "1"
 set Reference5 "0"
 set Dims5 [list 0]
 set Interface5 "wire"
-set DataType5 "bool"
+set DataType5 "[list ap_uint 10 ]"
 set Port5 [list $PortName5 $Interface5 $DataType5 $Pointer5 $Dims5 $Const5 $Volatile5 $ArrayOpt5]
 lappend PortList $Port5
-set PortName6 "time_remaining_out"
-set BitWidth6 "64"
+set PortName6 "time_remaining_in"
+set BitWidth6 "16"
 set ArrayOpt6 ""
 set Const6 "0"
 set Volatile6 "0"
-set Pointer6 "1"
+set Pointer6 "0"
 set Reference6 "0"
 set Dims6 [list 0]
 set Interface6 "wire"
 set DataType6 "[list ap_uint 10 ]"
 set Port6 [list $PortName6 $Interface6 $DataType6 $Pointer6 $Dims6 $Const6 $Volatile6 $ArrayOpt6]
 lappend PortList $Port6
-set PortName7 "time_remaining_in"
-set BitWidth7 "16"
+set PortName7 "verify1_out"
+set BitWidth7 "64"
 set ArrayOpt7 ""
 set Const7 "0"
 set Volatile7 "0"
-set Pointer7 "0"
+set Pointer7 "1"
 set Reference7 "0"
 set Dims7 [list 0]
 set Interface7 "wire"
-set DataType7 "[list ap_uint 10 ]"
+set DataType7 "bool"
 set Port7 [list $PortName7 $Interface7 $DataType7 $Pointer7 $Dims7 $Const7 $Volatile7 $ArrayOpt7]
 lappend PortList $Port7
-set PortName8 "verify1_out"
+set PortName8 "verify2_out"
 set BitWidth8 "64"
 set ArrayOpt8 ""
 set Const8 "0"
@@ -202,7 +217,7 @@ set Interface8 "wire"
 set DataType8 "bool"
 set Port8 [list $PortName8 $Interface8 $DataType8 $Pointer8 $Dims8 $Const8 $Volatile8 $ArrayOpt8]
 lappend PortList $Port8
-set PortName9 "verify2_out"
+set PortName9 "verify3_out"
 set BitWidth9 "64"
 set ArrayOpt9 ""
 set Const9 "0"
@@ -214,18 +229,6 @@ set Interface9 "wire"
 set DataType9 "bool"
 set Port9 [list $PortName9 $Interface9 $DataType9 $Pointer9 $Dims9 $Const9 $Volatile9 $ArrayOpt9]
 lappend PortList $Port9
-set PortName10 "verify3_out"
-set BitWidth10 "64"
-set ArrayOpt10 ""
-set Const10 "0"
-set Volatile10 "0"
-set Pointer10 "1"
-set Reference10 "0"
-set Dims10 [list 0]
-set Interface10 "wire"
-set DataType10 "bool"
-set Port10 [list $PortName10 $Interface10 $DataType10 $Pointer10 $Dims10 $Const10 $Volatile10 $ArrayOpt10]
-lappend PortList $Port10
 set globalAPint "" 
 set returnAPInt "" 
 set hasCPPAPInt 1 

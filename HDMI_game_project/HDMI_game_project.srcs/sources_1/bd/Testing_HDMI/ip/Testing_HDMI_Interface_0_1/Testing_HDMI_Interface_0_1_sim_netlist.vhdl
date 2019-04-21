@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Apr 21 14:58:23 2019
+-- Date        : Sun Apr 21 18:10:33 2019
 -- Host        : EmbSys18 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_1/Testing_HDMI_Interface_0_1_sim_netlist.vhdl
@@ -20,8 +20,6 @@ entity Testing_HDMI_Interface_0_1_Interface is
     ap_done : out STD_LOGIC;
     ap_idle : out STD_LOGIC;
     ap_ready : out STD_LOGIC;
-    move_up : in STD_LOGIC;
-    move_down : in STD_LOGIC;
     x_V : in STD_LOGIC_VECTOR ( 9 downto 0 );
     y_V : in STD_LOGIC_VECTOR ( 9 downto 0 );
     XY_Red_V : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -30,48 +28,88 @@ entity Testing_HDMI_Interface_0_1_Interface is
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Testing_HDMI_Interface_0_1_Interface : entity is "Interface";
+  attribute hls_module : string;
+  attribute hls_module of Testing_HDMI_Interface_0_1_Interface : entity is "yes";
 end Testing_HDMI_Interface_0_1_Interface;
 
 architecture STRUCTURE of Testing_HDMI_Interface_0_1_Interface is
-  signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
+  signal \^xy_blue_v\ : STD_LOGIC_VECTOR ( 7 to 7 );
+  signal \^xy_red_v\ : STD_LOGIC_VECTOR ( 7 to 7 );
+  signal \XY_Red_V[0]_INST_0_i_1_n_0\ : STD_LOGIC;
   signal \^ap_start\ : STD_LOGIC;
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \XY_Blue_V[0]_INST_0\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \XY_Red_V[0]_INST_0\ : label is "soft_lutpair0";
 begin
-  XY_Blue_V(7) <= \<const1>\;
-  XY_Blue_V(6) <= \<const1>\;
-  XY_Blue_V(5) <= \<const1>\;
-  XY_Blue_V(4) <= \<const1>\;
-  XY_Blue_V(3) <= \<const1>\;
-  XY_Blue_V(2) <= \<const1>\;
-  XY_Blue_V(1) <= \<const1>\;
-  XY_Blue_V(0) <= \<const1>\;
-  XY_Green_V(7) <= \<const1>\;
-  XY_Green_V(6) <= \<const1>\;
-  XY_Green_V(5) <= \<const1>\;
-  XY_Green_V(4) <= \<const1>\;
-  XY_Green_V(3) <= \<const1>\;
-  XY_Green_V(2) <= \<const1>\;
-  XY_Green_V(1) <= \<const1>\;
-  XY_Green_V(0) <= \<const1>\;
-  XY_Red_V(7) <= \<const0>\;
-  XY_Red_V(6) <= \<const0>\;
-  XY_Red_V(5) <= \<const0>\;
-  XY_Red_V(4) <= \<const0>\;
-  XY_Red_V(3) <= \<const0>\;
-  XY_Red_V(2) <= \<const0>\;
-  XY_Red_V(1) <= \<const0>\;
-  XY_Red_V(0) <= \<const0>\;
+  XY_Blue_V(7) <= \^xy_blue_v\(7);
+  XY_Blue_V(6) <= \^xy_blue_v\(7);
+  XY_Blue_V(5) <= \^xy_blue_v\(7);
+  XY_Blue_V(4) <= \^xy_blue_v\(7);
+  XY_Blue_V(3) <= \^xy_blue_v\(7);
+  XY_Blue_V(2) <= \^xy_blue_v\(7);
+  XY_Blue_V(1) <= \^xy_blue_v\(7);
+  XY_Blue_V(0) <= \^xy_blue_v\(7);
+  XY_Green_V(7) <= \^xy_blue_v\(7);
+  XY_Green_V(6) <= \^xy_blue_v\(7);
+  XY_Green_V(5) <= \^xy_blue_v\(7);
+  XY_Green_V(4) <= \^xy_blue_v\(7);
+  XY_Green_V(3) <= \^xy_blue_v\(7);
+  XY_Green_V(2) <= \^xy_blue_v\(7);
+  XY_Green_V(1) <= \^xy_blue_v\(7);
+  XY_Green_V(0) <= \^xy_blue_v\(7);
+  XY_Red_V(7) <= \^xy_red_v\(7);
+  XY_Red_V(6) <= \^xy_red_v\(7);
+  XY_Red_V(5) <= \^xy_red_v\(7);
+  XY_Red_V(4) <= \^xy_red_v\(7);
+  XY_Red_V(3) <= \^xy_red_v\(7);
+  XY_Red_V(2) <= \^xy_red_v\(7);
+  XY_Red_V(1) <= \^xy_red_v\(7);
+  XY_Red_V(0) <= \^xy_red_v\(7);
   \^ap_start\ <= ap_start;
   ap_done <= \^ap_start\;
   ap_idle <= \<const1>\;
   ap_ready <= \^ap_start\;
-GND: unisim.vcomponents.GND
-     port map (
-      G => \<const0>\
-    );
 VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
+    );
+\XY_Blue_V[0]_INST_0\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFFEAAA"
+    )
+        port map (
+      I0 => x_V(8),
+      I1 => x_V(6),
+      I2 => \XY_Red_V[0]_INST_0_i_1_n_0\,
+      I3 => x_V(7),
+      I4 => x_V(9),
+      O => \^xy_blue_v\(7)
+    );
+\XY_Red_V[0]_INST_0\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"00001555"
+    )
+        port map (
+      I0 => x_V(9),
+      I1 => x_V(7),
+      I2 => \XY_Red_V[0]_INST_0_i_1_n_0\,
+      I3 => x_V(6),
+      I4 => x_V(8),
+      O => \^xy_red_v\(7)
+    );
+\XY_Red_V[0]_INST_0_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFEEEEEEEA"
+    )
+        port map (
+      I0 => x_V(4),
+      I1 => x_V(3),
+      I2 => x_V(2),
+      I3 => x_V(0),
+      I4 => x_V(1),
+      I5 => x_V(5),
+      O => \XY_Red_V[0]_INST_0_i_1_n_0\
     );
 end STRUCTURE;
 library IEEE;
@@ -84,8 +122,6 @@ entity Testing_HDMI_Interface_0_1 is
     ap_done : out STD_LOGIC;
     ap_idle : out STD_LOGIC;
     ap_ready : out STD_LOGIC;
-    move_up : in STD_LOGIC;
-    move_down : in STD_LOGIC;
     x_V : in STD_LOGIC_VECTOR ( 9 downto 0 );
     y_V : in STD_LOGIC_VECTOR ( 9 downto 0 );
     XY_Red_V : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -114,10 +150,6 @@ architecture STRUCTURE of Testing_HDMI_Interface_0_1 is
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of ap_ready : signal is "XIL_INTERFACENAME ap_ctrl, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}";
   attribute X_INTERFACE_INFO of ap_start : signal is "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start";
-  attribute X_INTERFACE_INFO of move_down : signal is "xilinx.com:signal:data:1.0 move_down DATA";
-  attribute X_INTERFACE_PARAMETER of move_down : signal is "XIL_INTERFACENAME move_down, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}";
-  attribute X_INTERFACE_INFO of move_up : signal is "xilinx.com:signal:data:1.0 move_up DATA";
-  attribute X_INTERFACE_PARAMETER of move_up : signal is "XIL_INTERFACENAME move_up, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}";
   attribute X_INTERFACE_INFO of XY_Blue_V : signal is "xilinx.com:signal:data:1.0 XY_Blue_V DATA";
   attribute X_INTERFACE_PARAMETER of XY_Blue_V : signal is "XIL_INTERFACENAME XY_Blue_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}";
   attribute X_INTERFACE_INFO of XY_Green_V : signal is "xilinx.com:signal:data:1.0 XY_Green_V DATA";
@@ -138,8 +170,6 @@ inst: entity work.Testing_HDMI_Interface_0_1_Interface
       ap_idle => ap_idle,
       ap_ready => ap_ready,
       ap_start => ap_start,
-      move_down => move_down,
-      move_up => move_up,
       x_V(9 downto 0) => x_V(9 downto 0),
       y_V(9 downto 0) => y_V(9 downto 0)
     );

@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Apr 21 17:01:54 -0400 2019
+// File generated on Sun Apr 21 17:44:18 -0400 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -7,9 +7,9 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module Game_logic_mac_mueOg_DSP48_1(
+(* use_dsp = "yes" *) module Game_logic_mac_mueOg_DSP48_0(
     input  [5 - 1:0] in0,
-    input  [8 - 1:0] in1,
+    input  [11 - 1:0] in1,
     input  [8 - 1:0] in2,
     output [11 - 1:0]  dout);
 
@@ -49,7 +49,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-Game_logic_mac_mueOg_DSP48_1 Game_logic_mac_mueOg_DSP48_1_U(
+Game_logic_mac_mueOg_DSP48_0 Game_logic_mac_mueOg_DSP48_0_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

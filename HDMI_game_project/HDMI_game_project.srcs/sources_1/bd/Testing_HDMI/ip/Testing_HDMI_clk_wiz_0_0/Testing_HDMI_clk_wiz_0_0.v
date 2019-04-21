@@ -56,10 +56,11 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1____25.000______0.000______50.0______165.419_____96.948
-// clk_out2___250.000______0.000______50.0______104.759_____96.948
-// clk_out3___100.000______0.000______50.0______124.615_____96.948
-// clk_out4____16.667______0.000______50.0______179.050_____96.948
+// clk_out1____24.000______0.000______50.0______179.952____112.379
+// clk_out2___250.000______0.000______50.0______112.962____112.379
+// clk_out3____93.750______0.000______50.0______136.634____112.379
+// clk_out4____16.667______0.000______50.0______193.392____112.379
+// clk_out5_____5.859______0.000______50.0______237.289____112.379
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -68,7 +69,7 @@
 
 `timescale 1ps/1ps
 
-(* CORE_GENERATION_INFO = "Testing_HDMI_clk_wiz_0_0,clk_wiz_v6_0_2_0_0,{component_name=Testing_HDMI_clk_wiz_0_0,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=4,clkin1_period=8.000,clkin2_period=10.000,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_clk_wiz_0_0,clk_wiz_v6_0_2_0_0,{component_name=Testing_HDMI_clk_wiz_0_0,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=5,clkin1_period=8.000,clkin2_period=10.0,use_power_down=false,use_reset=true,use_locked=true,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
 
 module Testing_HDMI_clk_wiz_0_0 
  (
@@ -77,6 +78,7 @@ module Testing_HDMI_clk_wiz_0_0
   output        clk_out2,
   output        clk_out3,
   output        clk_out4,
+  output        clk_out5,
   // Status and control signals
   input         reset,
   output        locked,
@@ -91,6 +93,7 @@ module Testing_HDMI_clk_wiz_0_0
   .clk_out2(clk_out2),
   .clk_out3(clk_out3),
   .clk_out4(clk_out4),
+  .clk_out5(clk_out5),
   // Status and control signals               
   .reset(reset), 
   .locked(locked),

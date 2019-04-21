@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sat Apr 20 11:57:05 2019
-// Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+// Date        : Sun Apr 21 17:31:32 2019
+// Host        : EmbSys18 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_sim_netlist.v
+//               C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_sim_netlist.v
 // Design      : Testing_HDMI_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -18,6 +18,7 @@ module Testing_HDMI_clk_wiz_0_0
     clk_out2,
     clk_out3,
     clk_out4,
+    clk_out5,
     reset,
     locked,
     clk_in1);
@@ -25,6 +26,7 @@ module Testing_HDMI_clk_wiz_0_0
   output clk_out2;
   output clk_out3;
   output clk_out4;
+  output clk_out5;
   input reset;
   output locked;
   input clk_in1;
@@ -34,6 +36,7 @@ module Testing_HDMI_clk_wiz_0_0
   wire clk_out2;
   wire clk_out3;
   wire clk_out4;
+  wire clk_out5;
   wire locked;
   wire reset;
 
@@ -43,6 +46,7 @@ module Testing_HDMI_clk_wiz_0_0
         .clk_out2(clk_out2),
         .clk_out3(clk_out3),
         .clk_out4(clk_out4),
+        .clk_out5(clk_out5),
         .locked(locked),
         .reset(reset));
 endmodule
@@ -53,6 +57,7 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
     clk_out2,
     clk_out3,
     clk_out4,
+    clk_out5,
     reset,
     locked,
     clk_in1);
@@ -60,6 +65,7 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
   output clk_out2;
   output clk_out3;
   output clk_out4;
+  output clk_out5;
   input reset;
   output locked;
   input clk_in1;
@@ -74,6 +80,8 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
   wire clk_out3_Testing_HDMI_clk_wiz_0_0;
   wire clk_out4;
   wire clk_out4_Testing_HDMI_clk_wiz_0_0;
+  wire clk_out5;
+  wire clk_out5_Testing_HDMI_clk_wiz_0_0;
   wire clkfbout_Testing_HDMI_clk_wiz_0_0;
   wire clkfbout_buf_Testing_HDMI_clk_wiz_0_0;
   wire locked;
@@ -85,7 +93,6 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
   wire NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT3B_UNCONNECTED;
-  wire NLW_mmcm_adv_inst_CLKOUT4_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT5_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKOUT6_UNCONNECTED;
   wire NLW_mmcm_adv_inst_DRDY_UNCONNECTED;
@@ -122,31 +129,35 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
        (.I(clk_out4_Testing_HDMI_clk_wiz_0_0),
         .O(clk_out4));
   (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG clkout5_buf
+       (.I(clk_out5_Testing_HDMI_clk_wiz_0_0),
+        .O(clk_out5));
+  (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(8.000000),
+    .CLKFBOUT_MULT_F(6.000000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(8.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(40.000000),
+    .CLKOUT0_DIVIDE_F(31.250000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(4),
+    .CLKOUT1_DIVIDE(3),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
-    .CLKOUT2_DIVIDE(10),
+    .CLKOUT2_DIVIDE(8),
     .CLKOUT2_DUTY_CYCLE(0.500000),
     .CLKOUT2_PHASE(0.000000),
     .CLKOUT2_USE_FINE_PS("FALSE"),
-    .CLKOUT3_DIVIDE(60),
+    .CLKOUT3_DIVIDE(45),
     .CLKOUT3_DUTY_CYCLE(0.500000),
     .CLKOUT3_PHASE(0.000000),
     .CLKOUT3_USE_FINE_PS("FALSE"),
     .CLKOUT4_CASCADE("FALSE"),
-    .CLKOUT4_DIVIDE(1),
+    .CLKOUT4_DIVIDE(128),
     .CLKOUT4_DUTY_CYCLE(0.500000),
     .CLKOUT4_PHASE(0.000000),
     .CLKOUT4_USE_FINE_PS("FALSE"),
@@ -188,7 +199,7 @@ module Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
         .CLKOUT2B(NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED),
         .CLKOUT3(clk_out4_Testing_HDMI_clk_wiz_0_0),
         .CLKOUT3B(NLW_mmcm_adv_inst_CLKOUT3B_UNCONNECTED),
-        .CLKOUT4(NLW_mmcm_adv_inst_CLKOUT4_UNCONNECTED),
+        .CLKOUT4(clk_out5_Testing_HDMI_clk_wiz_0_0),
         .CLKOUT5(NLW_mmcm_adv_inst_CLKOUT5_UNCONNECTED),
         .CLKOUT6(NLW_mmcm_adv_inst_CLKOUT6_UNCONNECTED),
         .DADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),

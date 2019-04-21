@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sat Apr 20 11:57:05 2019
--- Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+-- Date        : Sun Apr 21 17:31:32 2019
+-- Host        : EmbSys18 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_sim_netlist.vhdl
+--               C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_sim_netlist.vhdl
 -- Design      : Testing_HDMI_clk_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,6 +20,7 @@ entity Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz is
     clk_out2 : out STD_LOGIC;
     clk_out3 : out STD_LOGIC;
     clk_out4 : out STD_LOGIC;
+    clk_out5 : out STD_LOGIC;
     reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
@@ -34,6 +35,7 @@ architecture STRUCTURE of Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_
   signal clk_out2_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
   signal clk_out3_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
   signal clk_out4_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
+  signal clk_out5_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
   signal clkfbout_buf_Testing_HDMI_clk_wiz_0_0 : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
@@ -43,7 +45,6 @@ architecture STRUCTURE of Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_
   signal NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKOUT3B_UNCONNECTED : STD_LOGIC;
-  signal NLW_mmcm_adv_inst_CLKOUT4_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKOUT5_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKOUT6_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_DRDY_UNCONNECTED : STD_LOGIC;
@@ -62,6 +63,7 @@ architecture STRUCTURE of Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_
   attribute BOX_TYPE of clkout2_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout3_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout4_buf : label is "PRIMITIVE";
+  attribute BOX_TYPE of clkout5_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of mmcm_adv_inst : label is "PRIMITIVE";
 begin
 clkf_buf: unisim.vcomponents.BUFG
@@ -97,32 +99,37 @@ clkout4_buf: unisim.vcomponents.BUFG
       I => clk_out4_Testing_HDMI_clk_wiz_0_0,
       O => clk_out4
     );
+clkout5_buf: unisim.vcomponents.BUFG
+     port map (
+      I => clk_out5_Testing_HDMI_clk_wiz_0_0,
+      O => clk_out5
+    );
 mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT_F => 8.000000,
+      CLKFBOUT_MULT_F => 6.000000,
       CLKFBOUT_PHASE => 0.000000,
       CLKFBOUT_USE_FINE_PS => false,
       CLKIN1_PERIOD => 8.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE_F => 40.000000,
+      CLKOUT0_DIVIDE_F => 31.250000,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT0_USE_FINE_PS => false,
-      CLKOUT1_DIVIDE => 4,
+      CLKOUT1_DIVIDE => 3,
       CLKOUT1_DUTY_CYCLE => 0.500000,
       CLKOUT1_PHASE => 0.000000,
       CLKOUT1_USE_FINE_PS => false,
-      CLKOUT2_DIVIDE => 10,
+      CLKOUT2_DIVIDE => 8,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
       CLKOUT2_USE_FINE_PS => false,
-      CLKOUT3_DIVIDE => 60,
+      CLKOUT3_DIVIDE => 45,
       CLKOUT3_DUTY_CYCLE => 0.500000,
       CLKOUT3_PHASE => 0.000000,
       CLKOUT3_USE_FINE_PS => false,
       CLKOUT4_CASCADE => false,
-      CLKOUT4_DIVIDE => 1,
+      CLKOUT4_DIVIDE => 128,
       CLKOUT4_DUTY_CYCLE => 0.500000,
       CLKOUT4_PHASE => 0.000000,
       CLKOUT4_USE_FINE_PS => false,
@@ -165,7 +172,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKOUT2B => NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED,
       CLKOUT3 => clk_out4_Testing_HDMI_clk_wiz_0_0,
       CLKOUT3B => NLW_mmcm_adv_inst_CLKOUT3B_UNCONNECTED,
-      CLKOUT4 => NLW_mmcm_adv_inst_CLKOUT4_UNCONNECTED,
+      CLKOUT4 => clk_out5_Testing_HDMI_clk_wiz_0_0,
       CLKOUT5 => NLW_mmcm_adv_inst_CLKOUT5_UNCONNECTED,
       CLKOUT6 => NLW_mmcm_adv_inst_CLKOUT6_UNCONNECTED,
       DADDR(6 downto 0) => B"0000000",
@@ -194,6 +201,7 @@ entity Testing_HDMI_clk_wiz_0_0 is
     clk_out2 : out STD_LOGIC;
     clk_out3 : out STD_LOGIC;
     clk_out4 : out STD_LOGIC;
+    clk_out5 : out STD_LOGIC;
     reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
@@ -211,6 +219,7 @@ inst: entity work.Testing_HDMI_clk_wiz_0_0_Testing_HDMI_clk_wiz_0_0_clk_wiz
       clk_out2 => clk_out2,
       clk_out3 => clk_out3,
       clk_out4 => clk_out4,
+      clk_out5 => clk_out5,
       locked => locked,
       reset => reset
     );

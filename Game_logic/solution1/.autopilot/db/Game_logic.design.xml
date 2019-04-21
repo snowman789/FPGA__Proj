@@ -29,19 +29,19 @@
 <Latency>undef</Latency>
 <IterationLatency>
 <range>
-<min>3</min>
-<max>69</max>
+<min>37</min>
+<max>103</max>
 </range>
 </IterationLatency>
-<PipelineDepth>3 ~ 69</PipelineDepth>
+<PipelineDepth>37 ~ 103</PipelineDepth>
 </Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
 <DSP48E>2</DSP48E>
-<FF>859</FF>
-<LUT>943</LUT>
+<FF>1322</FF>
+<LUT>1454</LUT>
 <BRAM_18K>0</BRAM_18K>
 </Resources>
 </AreaEstimates>
@@ -161,18 +161,6 @@
 <CType>bool</CType>
 </RtlPorts>
 <RtlPorts>
-<name>slow_clk</name>
-<Object>slow_clk</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-<CType>bool</CType>
-</RtlPorts>
-<RtlPorts>
 <name>lose</name>
 <Object>lose</Object>
 <Type>pointer</Type>
@@ -215,7 +203,7 @@
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>in</Dir>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 <CType>bool</CType>
@@ -227,7 +215,7 @@
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>in</Dir>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 <CType>bool</CType>
@@ -239,7 +227,7 @@
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>in</Dir>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>data</Attribute>
 <CType>bool</CType>

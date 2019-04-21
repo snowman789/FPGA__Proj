@@ -180,6 +180,9 @@ proc create_root_design { parentCell } {
  ] $reset_rtl
   set sys_clk [ create_bd_port -dir I sys_clk ]
 
+  # Create instance: Game_logic_0, and set properties
+  set Game_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Game_logic:1.0 Game_logic_0 ]
+
   # Create instance: HDMI_test_0, and set properties
   set block_name HDMI_test
   set block_cell_name HDMI_test_0
@@ -242,33 +245,44 @@ proc create_root_design { parentCell } {
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKIN1_JITTER_PS {80.0} \
-   CONFIG.CLKOUT1_JITTER {165.419} \
-   CONFIG.CLKOUT1_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT1_JITTER {179.952} \
+   CONFIG.CLKOUT1_PHASE_ERROR {112.379} \
    CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} \
    CONFIG.CLKOUT1_USED {true} \
-   CONFIG.CLKOUT2_JITTER {104.759} \
-   CONFIG.CLKOUT2_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT2_JITTER {112.962} \
+   CONFIG.CLKOUT2_PHASE_ERROR {112.379} \
    CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {250} \
    CONFIG.CLKOUT2_USED {true} \
-   CONFIG.CLKOUT3_JITTER {124.615} \
-   CONFIG.CLKOUT3_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT3_JITTER {136.634} \
+   CONFIG.CLKOUT3_PHASE_ERROR {112.379} \
    CONFIG.CLKOUT3_USED {true} \
-   CONFIG.CLKOUT4_JITTER {179.050} \
-   CONFIG.CLKOUT4_PHASE_ERROR {96.948} \
+   CONFIG.CLKOUT4_JITTER {193.392} \
+   CONFIG.CLKOUT4_PHASE_ERROR {112.379} \
    CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {16.6666} \
    CONFIG.CLKOUT4_USED {true} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {8.000} \
+   CONFIG.CLKOUT5_JITTER {237.289} \
+   CONFIG.CLKOUT5_PHASE_ERROR {112.379} \
+   CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {5} \
+   CONFIG.CLKOUT5_USED {true} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {6.000} \
    CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {4} \
-   CONFIG.MMCM_CLKOUT2_DIVIDE {10} \
-   CONFIG.MMCM_CLKOUT3_DIVIDE {60} \
+   CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {31.250} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {3} \
+   CONFIG.MMCM_CLKOUT2_DIVIDE {8} \
+   CONFIG.MMCM_CLKOUT3_DIVIDE {45} \
+   CONFIG.MMCM_CLKOUT4_DIVIDE {128} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
-   CONFIG.NUM_OUT_CLKS {4} \
+   CONFIG.NUM_OUT_CLKS {5} \
    CONFIG.PRIM_IN_FREQ {125} \
  ] $clk_wiz_0
 
   # Create port connections
+  connect_bd_net -net Game_logic_0_lose [get_bd_pins Game_logic_0/lose]
+  connect_bd_net -net Game_logic_0_time_remaining_out_V [get_bd_pins Game_logic_0/time_remaining_in_V] [get_bd_pins Game_logic_0/time_remaining_out_V]
+  connect_bd_net -net Game_logic_0_verify1_out [get_bd_pins Game_logic_0/verify1_out]
+  connect_bd_net -net Game_logic_0_verify2_out [get_bd_pins Game_logic_0/verify2_out]
+  connect_bd_net -net Game_logic_0_verify3_out [get_bd_pins Game_logic_0/verify3_out]
   connect_bd_net -net HDMI_test_0_TMDSn [get_bd_ports TMPDSn] [get_bd_pins HDMI_test_0/TMDSn]
   connect_bd_net -net HDMI_test_0_TMDSn_clock [get_bd_ports hdmi_tx_clk_n] [get_bd_pins HDMI_test_0/TMDSn_clock]
   connect_bd_net -net HDMI_test_0_TMDSp [get_bd_ports TMDSp] [get_bd_pins HDMI_test_0/TMDSp]
@@ -281,16 +295,17 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Interface_0_XY_Red_V [get_bd_pins HDMI_test_0/XY_Red] [get_bd_pins Interface_0/XY_Red_V]
   connect_bd_net -net btn_0_1 [get_bd_ports btn_0] [get_bd_pins clean_button_0/async_btn]
   connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
-  connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins Interface_0/move_up] [get_bd_pins clean_button_2/async_btn]
-  connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins Interface_0/move_down] [get_bd_pins clean_button_3/async_btn]
-  connect_bd_net -net clean_button_0_clean [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
-  connect_bd_net -net clean_button_1_clean [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
-  connect_bd_net -net clean_button_2_clean [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
-  connect_bd_net -net clean_button_3_clean [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
+  connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
+  connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
+  connect_bd_net -net clean_button_0_clean [get_bd_pins Game_logic_0/rst] [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
+  connect_bd_net -net clean_button_1_clean [get_bd_pins Game_logic_0/btn1] [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
+  connect_bd_net -net clean_button_2_clean [get_bd_pins Game_logic_0/btn2] [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
+  connect_bd_net -net clean_button_3_clean [get_bd_pins Game_logic_0/btn3] [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins clk_wiz_0/clk_out1]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins HDMI_test_0/DCM_TMDS_CLKFX] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins clk_wiz_0/clk_out3]
+  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins Game_logic_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out3]
   connect_bd_net -net clk_wiz_0_clk_out4 [get_bd_pins clean_button_0/clk] [get_bd_pins clean_button_1/clk] [get_bd_pins clean_button_2/clk] [get_bd_pins clean_button_3/clk] [get_bd_pins clk_wiz_0/clk_out4]
+  connect_bd_net -net clk_wiz_0_clk_out5 [get_bd_pins clk_wiz_0/clk_out5]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins HDMI_test_0/HPD] [get_bd_pins clk_wiz_0/locked]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net sys_clk_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]

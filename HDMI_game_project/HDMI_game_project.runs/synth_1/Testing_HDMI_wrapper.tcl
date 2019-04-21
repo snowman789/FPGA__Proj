@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,7 +30,10 @@ set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/itr9fc/Desktop/FPGA__Proj/Interface/solution1/impl/ip [current_project]
+set_property ip_repo_paths {
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Interface/solution1/impl/ip
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Game_logic/solution1/impl/ip
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -39,6 +43,7 @@ set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_1/constraints/Interface_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Game_logic_0_0/constraints/Game_logic_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

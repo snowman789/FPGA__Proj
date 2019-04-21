@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Interface'
 ================================================================
-* Date:           Sun Apr 21 17:01:49 2019
+* Date:           Sun Apr 21 18:26:42 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Interface
@@ -91,22 +91,17 @@
 == Interface
 ================================================================
 * Summary: 
-+------------------+-----+-----+------------+------------------+--------------+
-|     RTL Ports    | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+------------------+-----+-----+------------+------------------+--------------+
-|ap_start          |  in |    1| ap_ctrl_hs |     Interface    | return value |
-|ap_done           | out |    1| ap_ctrl_hs |     Interface    | return value |
-|ap_idle           | out |    1| ap_ctrl_hs |     Interface    | return value |
-|ap_ready          | out |    1| ap_ctrl_hs |     Interface    | return value |
-|x_V               |  in |   10|   ap_none  |        x_V       |    scalar    |
-|y_V               |  in |   10|   ap_none  |        y_V       |    scalar    |
-|XY_Red_V          | out |    8|   ap_none  |     XY_Red_V     |    pointer   |
-|XY_Green_V        | out |    8|   ap_none  |    XY_Green_V    |    pointer   |
-|XY_Blue_V         | out |    8|   ap_none  |     XY_Blue_V    |    pointer   |
-|lose              |  in |    1|   ap_none  |       lose       |    scalar    |
-|time_remaining_V  |  in |   10|   ap_none  | time_remaining_V |    scalar    |
-|verify1           |  in |    1|   ap_none  |      verify1     |    scalar    |
-|verify2           |  in |    1|   ap_none  |      verify2     |    scalar    |
-|verify3           |  in |    1|   ap_none  |      verify3     |    scalar    |
-+------------------+-----+-----+------------+------------------+--------------+
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_start    |  in |    1| ap_ctrl_hs |   Interface  | return value |
+|ap_done     | out |    1| ap_ctrl_hs |   Interface  | return value |
+|ap_idle     | out |    1| ap_ctrl_hs |   Interface  | return value |
+|ap_ready    | out |    1| ap_ctrl_hs |   Interface  | return value |
+|x_V         |  in |   10|   ap_none  |      x_V     |    scalar    |
+|y_V         |  in |   10|   ap_none  |      y_V     |    scalar    |
+|XY_Red_V    | out |    8|   ap_none  |   XY_Red_V   |    pointer   |
+|XY_Green_V  | out |    8|   ap_none  |  XY_Green_V  |    pointer   |
+|XY_Blue_V   | out |    8|   ap_none  |   XY_Blue_V  |    pointer   |
++------------+-----+-----+------------+--------------+--------------+
 

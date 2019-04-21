@@ -56,10 +56,11 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1____25.000______0.000______50.0______165.419_____96.948
-// clk_out2___250.000______0.000______50.0______104.759_____96.948
-// clk_out3___100.000______0.000______50.0______124.615_____96.948
-// clk_out4____16.667______0.000______50.0______179.050_____96.948
+// clk_out1____24.000______0.000______50.0______179.952____112.379
+// clk_out2___250.000______0.000______50.0______112.962____112.379
+// clk_out3____93.750______0.000______50.0______136.634____112.379
+// clk_out4____16.667______0.000______50.0______193.392____112.379
+// clk_out5_____5.859______0.000______50.0______237.289____112.379
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -76,6 +77,7 @@ module Testing_HDMI_clk_wiz_0_0_clk_wiz
   output        clk_out2,
   output        clk_out3,
   output        clk_out4,
+  output        clk_out5,
   // Status and control signals
   input         reset,
   output        locked,
@@ -118,7 +120,6 @@ wire clk_in2_Testing_HDMI_clk_wiz_0_0;
    wire clkout1b_unused;
    wire clkout2b_unused;
    wire clkout3b_unused;
-   wire clkout4_unused;
   wire        clkout5_unused;
   wire        clkout6_unused;
   wire        clkfbstopped_unused;
@@ -131,25 +132,29 @@ wire clk_in2_Testing_HDMI_clk_wiz_0_0;
     .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
     .DIVCLK_DIVIDE        (1),
-    .CLKFBOUT_MULT_F      (8.000),
+    .CLKFBOUT_MULT_F      (6.000),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (40.000),
+    .CLKOUT0_DIVIDE_F     (31.250),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
-    .CLKOUT1_DIVIDE       (4),
+    .CLKOUT1_DIVIDE       (3),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
-    .CLKOUT2_DIVIDE       (10),
+    .CLKOUT2_DIVIDE       (8),
     .CLKOUT2_PHASE        (0.000),
     .CLKOUT2_DUTY_CYCLE   (0.500),
     .CLKOUT2_USE_FINE_PS  ("FALSE"),
-    .CLKOUT3_DIVIDE       (60),
+    .CLKOUT3_DIVIDE       (45),
     .CLKOUT3_PHASE        (0.000),
     .CLKOUT3_DUTY_CYCLE   (0.500),
     .CLKOUT3_USE_FINE_PS  ("FALSE"),
+    .CLKOUT4_DIVIDE       (128),
+    .CLKOUT4_PHASE        (0.000),
+    .CLKOUT4_DUTY_CYCLE   (0.500),
+    .CLKOUT4_USE_FINE_PS  ("FALSE"),
     .CLKIN1_PERIOD        (8.000))
   mmcm_adv_inst
     // Output clocks
@@ -164,7 +169,7 @@ wire clk_in2_Testing_HDMI_clk_wiz_0_0;
     .CLKOUT2B            (clkout2b_unused),
     .CLKOUT3             (clk_out4_Testing_HDMI_clk_wiz_0_0),
     .CLKOUT3B            (clkout3b_unused),
-    .CLKOUT4             (clkout4_unused),
+    .CLKOUT4             (clk_out5_Testing_HDMI_clk_wiz_0_0),
     .CLKOUT5             (clkout5_unused),
     .CLKOUT6             (clkout6_unused),
      // Input clock control
@@ -225,6 +230,10 @@ wire clk_in2_Testing_HDMI_clk_wiz_0_0;
   BUFG clkout4_buf
    (.O   (clk_out4),
     .I   (clk_out4_Testing_HDMI_clk_wiz_0_0));
+
+  BUFG clkout5_buf
+   (.O   (clk_out5),
+    .I   (clk_out5_Testing_HDMI_clk_wiz_0_0));
 
 
 

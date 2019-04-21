@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Apr 21 14:57:48 2019
+//Date        : Sun Apr 21 18:10:01 2019
 //Host        : EmbSys18 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI_wrapper.bd
 //Design      : Testing_HDMI_wrapper

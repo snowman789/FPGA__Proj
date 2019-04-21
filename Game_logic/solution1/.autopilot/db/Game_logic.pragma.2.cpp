@@ -22130,6 +22130,7 @@ struct s1_t {
 
 unsigned int decrement_value = 1;
 unsigned int RandSeed = 7;
+unsigned int slow_down_clock = 0;
 
 bool Xturn = 1;
 bool newRound = 0;
@@ -22154,7 +22155,9 @@ bool InitializeGame(ap_uint<10> *time_remaining_out, bool *lose) {
 }
 
 void DecrementTimer( ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in){
- *time_remaining_out = time_remaining_in - decrement_value;
+ slow_down_clock += 1;
+ if(slow_down_clock % 10000000 == 0)
+  *time_remaining_out = time_remaining_in - decrement_value;
 
 
 }
@@ -22187,13 +22190,12 @@ bool UserLost( ap_uint<10> time_remaining_in ){
   return 0;
 }
 
-void Game_logic(bool rst, bool btn1, bool btn2, bool btn3, bool slow_clk, bool *lose, ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in,
+void Game_logic(bool rst, bool btn1, bool btn2, bool btn3, bool *lose, ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in,
   bool *verify1_out, bool *verify2_out, bool *verify3_out) {
 _ssdm_op_SpecInterface(rst, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(btn1, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(btn2, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(btn3, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(slow_clk, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(lose, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(verify1_out, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(verify2_out, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
@@ -22206,19 +22208,24 @@ _ssdm_op_SpecInterface(&time_remaining_in, "ap_none", 0, 0, "", 0, 0, "", "", ""
 
 
 while(1){
+ *verify1_out = btn1_verify;
+ *verify2_out = btn2_verify;
+ *verify3_out = btn3_verify;
 
  if(rst){
   InitializeGame(time_remaining_out, lose );
  }
 
- if(slow_clk){
   DecrementTimer(time_remaining_out, time_remaining_in );
- }
+
 
  if(newRound){
   btn1_verify = Generatebool();
   btn2_verify = Generatebool();
   btn3_verify = Generatebool();
+  *verify1_out = btn1_verify;
+  *verify2_out = btn2_verify;
+  *verify3_out = btn3_verify;
   decrement_value += 2;
   newRound = 0;
  }
@@ -22226,6 +22233,6 @@ while(1){
  newRound = CheckUserInput(btn1, btn2, btn3);
 
  *lose = UserLost(time_remaining_in);
-# 122 "Game_logic/Game_logic.cpp"
+# 129 "Game_logic/Game_logic.cpp"
 }
 }

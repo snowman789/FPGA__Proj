@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Apr 21 15:00:25 2019
+| Date             : Sun Apr 21 18:17:03 2019
 | Host             : EmbSys18 running 64-bit major release  (build 9200)
 | Command          : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 | Design           : Testing_HDMI_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.356        |
+| Total On-Chip Power (W)  | 0.355        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.246        |
+| Dynamic (W)              | 0.245        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 80.9         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |       10 |       --- |             --- |
-| Slice Logic    |    <0.001 |      299 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      118 |     53200 |            0.22 |
-|   Register     |    <0.001 |      116 |    106400 |            0.11 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |    <0.001 |      213 |       --- |             --- |
-| MMCM           |     0.107 |        1 |         4 |           25.00 |
+| Slice Logic    |    <0.001 |      346 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      148 |     53200 |            0.28 |
+|   Register     |    <0.001 |      124 |    106400 |            0.12 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |      254 |       --- |             --- |
+| MMCM           |     0.106 |        1 |         4 |           25.00 |
 | I/O            |     0.135 |       11 |       125 |            8.80 |
 | Static Power   |     0.110 |          |           |                 |
-| Total          |     0.356 |          |           |                 |
+| Total          |     0.355 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -134,8 +134,8 @@ Table of Contents
 +-------------------------------------+-----------------------------------------------------------------+-----------------+
 | Clock                               | Domain                                                          | Constraint (ns) |
 +-------------------------------------+-----------------------------------------------------------------+-----------------+
-| clk_out1_Testing_HDMI_clk_wiz_0_0   | Testing_HDMI_i/clk_wiz_0/inst/clk_out1_Testing_HDMI_clk_wiz_0_0 |            40.0 |
-| clk_out1_Testing_HDMI_clk_wiz_0_0_1 | Testing_HDMI_i/clk_wiz_0/inst/clk_out1_Testing_HDMI_clk_wiz_0_0 |            40.0 |
+| clk_out1_Testing_HDMI_clk_wiz_0_0   | Testing_HDMI_i/clk_wiz_0/inst/clk_out1_Testing_HDMI_clk_wiz_0_0 |            41.7 |
+| clk_out1_Testing_HDMI_clk_wiz_0_0_1 | Testing_HDMI_i/clk_wiz_0/inst/clk_out1_Testing_HDMI_clk_wiz_0_0 |            41.7 |
 | clk_out2_Testing_HDMI_clk_wiz_0_0   | Testing_HDMI_i/clk_wiz_0/inst/clk_out2_Testing_HDMI_clk_wiz_0_0 |             4.0 |
 | clk_out2_Testing_HDMI_clk_wiz_0_0_1 | Testing_HDMI_i/clk_wiz_0/inst/clk_out2_Testing_HDMI_clk_wiz_0_0 |             4.0 |
 | clkfbout_Testing_HDMI_clk_wiz_0_0   | Testing_HDMI_i/clk_wiz_0/inst/clkfbout_Testing_HDMI_clk_wiz_0_0 |             8.0 |
@@ -154,12 +154,12 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Testing_HDMI_wrapper |     0.246 |
-|   Testing_HDMI_i     |     0.246 |
+| Testing_HDMI_wrapper |     0.245 |
+|   Testing_HDMI_i     |     0.245 |
 |     HDMI_test_0      |     0.138 |
 |       inst           |     0.138 |
-|     clk_wiz_0        |     0.108 |
-|       inst           |     0.108 |
+|     clk_wiz_0        |     0.107 |
+|       inst           |     0.107 |
 +----------------------+-----------+
 
 

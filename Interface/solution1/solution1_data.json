@@ -88,51 +88,6 @@
         "ready": {"Type": "bool"}
       }
     },
-    "lose": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "time_remaining_V": {
-      "type": "data",
-      "dir": "in",
-      "width": "10",
-      "ctype": {"DATA": {
-          "Type": "integer unsigned",
-          "Width": "10"
-        }}
-    },
-    "verify1": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "verify2": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "verify3": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
     "x_V": {
       "type": "data",
       "dir": "in",
@@ -188,26 +143,6 @@
     "XY_Blue_V": {
       "dir": "out",
       "width": "8"
-    },
-    "lose": {
-      "dir": "in",
-      "width": "1"
-    },
-    "time_remaining_V": {
-      "dir": "in",
-      "width": "10"
-    },
-    "verify1": {
-      "dir": "in",
-      "width": "1"
-    },
-    "verify2": {
-      "dir": "in",
-      "width": "1"
-    },
-    "verify3": {
-      "dir": "in",
-      "width": "1"
     }
   },
   "CPorts": {
@@ -247,36 +182,6 @@
       "dataWidth": "8",
       "handshakeRef": "ap_none",
       "firstOutLatency": "0"
-    },
-    "lose": {
-      "interfaceRef": "lose",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "time_remaining_V": {
-      "interfaceRef": "time_remaining_V",
-      "dir": "in",
-      "dataWidth": "10",
-      "handshakeRef": "ap_none"
-    },
-    "verify1": {
-      "interfaceRef": "verify1",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "verify2": {
-      "interfaceRef": "verify2",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "verify3": {
-      "interfaceRef": "verify3",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
     }
   },
   "ModuleInfo": {
@@ -313,7 +218,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-21 17:01:50 -0400",
+    "Time": "2019-04-21 18:26:42 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

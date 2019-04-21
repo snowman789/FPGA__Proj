@@ -8,7 +8,7 @@
 		<name>Interface</name>
 		<ret_bitwidth>0</ret_bitwidth>
 		<ports class_id="2" tracking_level="0" version="0">
-			<count>10</count>
+			<count>5</count>
 			<item_version>0</item_version>
 			<item class_id="3" tracking_level="1" version="0" object_id="_1">
 				<Value class_id="4" tracking_level="0" version="0">
@@ -150,181 +150,34 @@
 					<item_version>0</item_version>
 				</bit_vecs>
 			</item>
-			<item class_id_reference="3" object_id="_6">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>6</id>
-						<name>lose</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName>lose</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_7">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>7</id>
-						<name>time_remaining_V</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>10</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_8">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>8</id>
-						<name>verify1</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName>verify1</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_9">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>9</id>
-						<name>verify2</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName>verify2</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
-			<item class_id_reference="3" object_id="_10">
-				<Value>
-					<Obj>
-						<type>1</type>
-						<id>10</id>
-						<name>verify3</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName>verify3</originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>1</bitwidth>
-				</Value>
-				<direction>0</direction>
-				<if_type>0</if_type>
-				<array_size>0</array_size>
-				<bit_vecs>
-					<count>0</count>
-					<item_version>0</item_version>
-				</bit_vecs>
-			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
 			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="9" tracking_level="1" version="0" object_id="_11">
+			<item class_id="9" tracking_level="1" version="0" object_id="_6">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>32</id>
+						<id>17</id>
 						<name></name>
 						<fileName>Interface/Interface.cpp</fileName>
 						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
-						<lineNumber>25</lineNumber>
-						<contextFuncName>retBit</contextFuncName>
+						<lineNumber>47</lineNumber>
+						<contextFuncName>Interface</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
 								<first>C:\Users\itr9fc\Desktop\FPGA__Proj</first>
 								<second class_id="11" tracking_level="0" version="0">
-									<count>2</count>
+									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>Interface/Interface.cpp</first>
 											<second>Interface</second>
 										</first>
-										<second>50</second>
-									</item>
-									<item>
-										<first>
-											<first>Interface/Interface.cpp</first>
-											<second>retBit</second>
-										</first>
-										<second>25</second>
+										<second>47</second>
 									</item>
 								</second>
 							</item>
@@ -338,9 +191,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>38</item>
-					<item>39</item>
-					<item>41</item>
+					<item>23</item>
+					<item>24</item>
+					<item>26</item>
 				</oprand_edges>
 				<opcode>write</opcode>
 				<m_Display>0</m_Display>
@@ -351,129 +204,15 @@
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_12">
+			<item class_id_reference="9" object_id="_7">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>33</id>
+						<id>18</id>
 						<name></name>
 						<fileName>Interface/Interface.cpp</fileName>
 						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
-						<lineNumber>26</lineNumber>
-						<contextFuncName>retBit</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\itr9fc\Desktop\FPGA__Proj</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>Interface/Interface.cpp</first>
-											<second>Interface</second>
-										</first>
-										<second>50</second>
-									</item>
-									<item>
-										<first>
-											<first>Interface/Interface.cpp</first>
-											<second>retBit</second>
-										</first>
-										<second>26</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>42</item>
-					<item>43</item>
-					<item>44</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_13">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>34</id>
-						<name></name>
-						<fileName>Interface/Interface.cpp</fileName>
-						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
-						<lineNumber>27</lineNumber>
-						<contextFuncName>retBit</contextFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\itr9fc\Desktop\FPGA__Proj</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>Interface/Interface.cpp</first>
-											<second>Interface</second>
-										</first>
-										<second>50</second>
-									</item>
-									<item>
-										<first>
-											<first>Interface/Interface.cpp</first>
-											<second>retBit</second>
-										</first>
-										<second>27</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>45</item>
-					<item>46</item>
-					<item>48</item>
-				</oprand_edges>
-				<opcode>write</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>3</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_14">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>35</id>
-						<name></name>
-						<fileName>Interface/Interface.cpp</fileName>
-						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>48</lineNumber>
 						<contextFuncName>Interface</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -488,7 +227,107 @@
 											<first>Interface/Interface.cpp</first>
 											<second>Interface</second>
 										</first>
-										<second>53</second>
+										<second>48</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>27</item>
+					<item>28</item>
+					<item>29</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>19</id>
+						<name></name>
+						<fileName>Interface/Interface.cpp</fileName>
+						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
+						<lineNumber>49</lineNumber>
+						<contextFuncName>Interface</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\itr9fc\Desktop\FPGA__Proj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Interface/Interface.cpp</first>
+											<second>Interface</second>
+										</first>
+										<second>49</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>30</item>
+					<item>31</item>
+					<item>33</item>
+				</oprand_edges>
+				<opcode>write</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>3</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_9">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>20</id>
+						<name></name>
+						<fileName>Interface/Interface.cpp</fileName>
+						<fileDirectory>C:\Users\itr9fc\Desktop\FPGA__Proj</fileDirectory>
+						<lineNumber>51</lineNumber>
+						<contextFuncName>Interface</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\itr9fc\Desktop\FPGA__Proj</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>Interface/Interface.cpp</first>
+											<second>Interface</second>
+										</first>
+										<second>51</second>
 									</item>
 								</second>
 							</item>
@@ -516,34 +355,11 @@
 		<consts class_id="15" tracking_level="0" version="0">
 			<count>2</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_15">
+			<item class_id="16" tracking_level="1" version="0" object_id="_10">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>40</id>
-						<name>empty</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<inlineStackInfo>
-							<count>0</count>
-							<item_version>0</item_version>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<coreName></coreName>
-					</Obj>
-					<bitwidth>8</bitwidth>
-				</Value>
-				<const_type>0</const_type>
-				<content>255</content>
-			</item>
-			<item class_id_reference="16" object_id="_16">
-				<Value>
-					<Obj>
-						<type>2</type>
-						<id>47</id>
+						<id>25</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -562,14 +378,37 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
+			<item class_id_reference="16" object_id="_11">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>32</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>255</content>
+			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_17">
+			<item class_id="18" tracking_level="1" version="0" object_id="_12">
 				<Obj>
 					<type>3</type>
-					<id>36</id>
+					<id>21</id>
 					<name>Interface</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -586,56 +425,56 @@
 				<node_objs>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>32</item>
-					<item>33</item>
-					<item>34</item>
-					<item>35</item>
+					<item>17</item>
+					<item>18</item>
+					<item>19</item>
+					<item>20</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
 			<count>6</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_18">
-				<id>39</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_13">
+				<id>24</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
-				<sink_obj>32</sink_obj>
+				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_19">
-				<id>41</id>
+			<item class_id_reference="20" object_id="_14">
+				<id>26</id>
 				<edge_type>1</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>32</sink_obj>
+				<source_obj>25</source_obj>
+				<sink_obj>17</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_20">
-				<id>43</id>
+			<item class_id_reference="20" object_id="_15">
+				<id>28</id>
 				<edge_type>1</edge_type>
 				<source_obj>5</source_obj>
-				<sink_obj>33</sink_obj>
+				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_21">
-				<id>44</id>
+			<item class_id_reference="20" object_id="_16">
+				<id>29</id>
 				<edge_type>1</edge_type>
-				<source_obj>40</source_obj>
-				<sink_obj>33</sink_obj>
+				<source_obj>25</source_obj>
+				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_22">
-				<id>46</id>
+			<item class_id_reference="20" object_id="_17">
+				<id>31</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
-				<sink_obj>34</sink_obj>
+				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_23">
-				<id>48</id>
+			<item class_id_reference="20" object_id="_18">
+				<id>33</id>
 				<edge_type>1</edge_type>
-				<source_obj>47</source_obj>
-				<sink_obj>34</sink_obj>
+				<source_obj>32</source_obj>
+				<sink_obj>19</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -643,7 +482,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_24">
+		<item class_id="22" tracking_level="1" version="0" object_id="_19">
 			<mId>1</mId>
 			<mTag>Interface</mTag>
 			<mType>0</mType>
@@ -654,7 +493,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>36</item>
+				<item>21</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -672,28 +511,28 @@
 		<count>4</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>32</first>
+			<first>17</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>33</first>
+			<first>18</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>34</first>
+			<first>19</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>35</first>
+			<first>20</first>
 			<second>
 				<first>0</first>
 				<second>0</second>
@@ -704,7 +543,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>36</first>
+			<first>21</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>

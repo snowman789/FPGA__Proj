@@ -15,7 +15,7 @@
 namespace ap_rtl {
 
 struct Interface : public sc_module {
-    // Port declarations 14
+    // Port declarations 9
     sc_in< sc_logic > ap_start;
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_idle;
@@ -25,11 +25,6 @@ struct Interface : public sc_module {
     sc_out< sc_lv<8> > XY_Red_V;
     sc_out< sc_lv<8> > XY_Green_V;
     sc_out< sc_lv<8> > XY_Blue_V;
-    sc_in< sc_logic > lose;
-    sc_in< sc_lv<10> > time_remaining_V;
-    sc_in< sc_logic > verify1;
-    sc_in< sc_logic > verify2;
-    sc_in< sc_logic > verify3;
     // Port declarations for the virtual clock. 
     sc_in_clk ap_virtual_clock;
 
@@ -45,8 +40,8 @@ struct Interface : public sc_module {
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
     static const sc_logic ap_const_logic_1;
-    static const sc_lv<8> ap_const_lv8_FF;
     static const sc_lv<8> ap_const_lv8_0;
+    static const sc_lv<8> ap_const_lv8_FF;
     static const sc_logic ap_const_logic_0;
     static const bool ap_const_boolean_1;
     // Thread declarations

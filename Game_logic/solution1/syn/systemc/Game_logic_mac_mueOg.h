@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Apr 21 17:01:54 -0400 2019
+// File generated on Sun Apr 21 17:44:18 -0400 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -7,7 +7,7 @@
 // ==============================================================
 #ifndef __Game_logic_mac_mueOg__HH__
 #define __Game_logic_mac_mueOg__HH__
-#include "simcore_mac_1.h"
+#include "simcore_mac_0.h"
 #include <systemc>
 
 template<
@@ -25,13 +25,13 @@ SC_MODULE(Game_logic_mac_mueOg) {
 
 
 
-    simcore_mac_1<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_1_U;
+    simcore_mac_0<ID, 1, din0_WIDTH, din1_WIDTH, din2_WIDTH, dout_WIDTH> simcore_mac_0_U;
 
-    SC_CTOR(Game_logic_mac_mueOg):  simcore_mac_1_U ("simcore_mac_1_U") {
-        simcore_mac_1_U.din0(din0);
-        simcore_mac_1_U.din1(din1);
-        simcore_mac_1_U.din2(din2);
-        simcore_mac_1_U.dout(dout);
+    SC_CTOR(Game_logic_mac_mueOg):  simcore_mac_0_U ("simcore_mac_0_U") {
+        simcore_mac_0_U.din0(din0);
+        simcore_mac_0_U.din1(din1);
+        simcore_mac_0_U.din2(din2);
+        simcore_mac_0_U.dout(dout);
 
     }
 

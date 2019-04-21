@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 create_project -in_memory -part xc7z020clg400-1
 
@@ -30,7 +31,10 @@ set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/itr9fc/Desktop/FPGA__Proj/Interface/solution1/impl/ip [current_project]
+set_property ip_repo_paths {
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Interface/solution1/impl/ip
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Game_logic/solution1/impl/ip
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

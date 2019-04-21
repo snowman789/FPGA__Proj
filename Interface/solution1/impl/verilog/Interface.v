@@ -18,12 +18,7 @@ module Interface (
         y_V,
         XY_Red_V,
         XY_Green_V,
-        XY_Blue_V,
-        lose,
-        time_remaining_V,
-        verify1,
-        verify2,
-        verify3
+        XY_Blue_V
 );
 
 
@@ -36,17 +31,12 @@ input  [9:0] y_V;
 output  [7:0] XY_Red_V;
 output  [7:0] XY_Green_V;
 output  [7:0] XY_Blue_V;
-input   lose;
-input  [9:0] time_remaining_V;
-input   verify1;
-input   verify2;
-input   verify3;
 
-assign XY_Blue_V = 8'd255;
+assign XY_Blue_V = 8'd0;
 
-assign XY_Green_V = 8'd255;
+assign XY_Green_V = 8'd0;
 
-assign XY_Red_V = 8'd0;
+assign XY_Red_V = 8'd255;
 
 assign ap_done = ap_start;
 
