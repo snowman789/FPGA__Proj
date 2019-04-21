@@ -1,15 +1,15 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sat Apr 20 15:21:01 2019
-//Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+//Date        : Sun Apr 21 19:48:08 2019
+//Host        : EmbSys18 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Testing_HDMI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Testing_HDMI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Testing_HDMI.hwdef" *) 
+(* CORE_GENERATION_INFO = "Testing_HDMI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Testing_HDMI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Testing_HDMI.hwdef" *) 
 module Testing_HDMI
    (TMDSp,
     TMPDSn,
@@ -41,9 +41,9 @@ module Testing_HDMI
   wire HDMI_test_0_hdmi_hpd_tri_o;
   wire [9:0]HDMI_test_0_x_value;
   wire [9:0]HDMI_test_0_y_value;
-  wire [7:0]Interface_0_XY_Blue_V;
-  wire [7:0]Interface_0_XY_Green_V;
-  wire [7:0]Interface_0_XY_Red_V;
+  wire [7:0]Interface2_0_XY_Blue_V;
+  wire [7:0]Interface2_0_XY_Green_V;
+  wire [7:0]Interface2_0_XY_Red_V;
   wire btn_0_1;
   wire btn_1_1;
   wire btn_2_1;
@@ -58,7 +58,6 @@ module Testing_HDMI
   wire clk_wiz_0_clk_out4;
   wire clk_wiz_0_locked;
   wire reset_rtl_1;
-  wire [0:0]rst_clk_wiz_0_25M_peripheral_reset;
   wire sys_clk_1;
 
   assign TMDSp[2:0] = HDMI_test_0_TMDSp;
@@ -72,6 +71,15 @@ module Testing_HDMI
   assign hdmi_tx_hpdn = HDMI_test_0_hdmi_hpd_tri_o;
   assign reset_rtl_1 = reset_rtl;
   assign sys_clk_1 = sys_clk;
+  Testing_HDMI_Gamelogic2_0_0 Gamelogic2_0
+       (.ap_clk(clk_wiz_0_clk_out3),
+        .ap_rst(1'b0),
+        .ap_start(clk_wiz_0_locked),
+        .btn1(1'b0),
+        .btn2(1'b0),
+        .btn3(1'b0),
+        .rst(1'b0),
+        .time_remaining_in_V({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
   Testing_HDMI_HDMI_test_0_0 HDMI_test_0
        (.DCM_TMDS_CLKFX(clk_wiz_0_clk_out2),
         .HPD(clk_wiz_0_locked),
@@ -79,9 +87,9 @@ module Testing_HDMI
         .TMDSn_clock(HDMI_test_0_TMDSn_clock),
         .TMDSp(HDMI_test_0_TMDSp),
         .TMDSp_clock(HDMI_test_0_TMDSp_clock),
-        .XY_Blue(Interface_0_XY_Blue_V),
-        .XY_Green(Interface_0_XY_Green_V),
-        .XY_Red(Interface_0_XY_Red_V),
+        .XY_Blue(Interface2_0_XY_Blue_V),
+        .XY_Green(Interface2_0_XY_Green_V),
+        .XY_Red(Interface2_0_XY_Red_V),
         .btn0(clean_button_0_clean),
         .btn1(clean_button_1_clean),
         .btn2(clean_button_2_clean),
@@ -90,24 +98,13 @@ module Testing_HDMI
         .pixclk(clk_wiz_0_clk_out1),
         .x_value(HDMI_test_0_x_value),
         .y_value(HDMI_test_0_y_value));
-  Testing_HDMI_Interface_0_0 Interface_0
-       (.XY_Blue_V(Interface_0_XY_Blue_V),
-        .XY_Green_V(Interface_0_XY_Green_V),
-        .XY_Red_V(Interface_0_XY_Red_V),
+  Testing_HDMI_Interface2_0_0 Interface2_0
+       (.XY_Blue_V(Interface2_0_XY_Blue_V),
+        .XY_Green_V(Interface2_0_XY_Green_V),
+        .XY_Red_V(Interface2_0_XY_Red_V),
         .ap_start(1'b0),
-        .move_down(clean_button_3_clean),
-        .move_up(clean_button_2_clean),
         .x_V(HDMI_test_0_x_value),
         .y_V(HDMI_test_0_y_value));
-  Testing_HDMI_TicTacToe_0_0 TicTacToe_0
-       (.ap_clk(clk_wiz_0_clk_out1),
-        .ap_rst(rst_clk_wiz_0_25M_peripheral_reset),
-        .ap_start(1'b0),
-        .left_r(1'b0),
-        .player1(1'b0),
-        .player2(1'b0),
-        .right_r(1'b0),
-        .start(1'b0));
   Testing_HDMI_clean_button_0_0 clean_button_0
        (.async_btn(btn_0_1),
         .clean(clean_button_0_clean),
@@ -132,11 +129,4 @@ module Testing_HDMI
         .clk_out4(clk_wiz_0_clk_out4),
         .locked(clk_wiz_0_locked),
         .reset(reset_rtl_1));
-  Testing_HDMI_rst_clk_wiz_0_25M_0 rst_clk_wiz_0_25M
-       (.aux_reset_in(1'b1),
-        .dcm_locked(clk_wiz_0_locked),
-        .ext_reset_in(reset_rtl_1),
-        .mb_debug_sys_rst(1'b0),
-        .peripheral_reset(rst_clk_wiz_0_25M_peripheral_reset),
-        .slowest_sync_clk(clk_wiz_0_clk_out1));
 endmodule

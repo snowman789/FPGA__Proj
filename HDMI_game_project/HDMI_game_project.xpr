@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b12f7928464443dbbe1efc1a5b61a76a"/>
@@ -21,8 +21,8 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../Interface/solution1/impl/ip"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../Vivado_HLS/Tictactoe/solution1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Interface2/solution1/impl/ip"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../Gamelogic2/solution1/impl/ip"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -64,7 +64,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/Downloads/HDMI.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/isaac/Downloads/HDMI.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../isaac/Downloads/HDMI.v"/>
           <Attr Name="ImportTime" Val="1555003434"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -86,32 +86,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_Interface_0_0/Testing_HDMI_Interface_0_0.xci">
-          <Proxy FileSetName="Testing_HDMI_Interface_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0.xci">
           <Proxy FileSetName="Testing_HDMI_HDMI_test_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xci">
           <Proxy FileSetName="Testing_HDMI_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_TicTacToe_0_0/Testing_HDMI_TicTacToe_0_0.xci">
-          <Proxy FileSetName="Testing_HDMI_TicTacToe_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1.xci">
-          <Proxy FileSetName="Testing_HDMI_clean_button_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_rst_clk_wiz_0_25M_0/Testing_HDMI_rst_clk_wiz_0_25M_0.xci">
-          <Proxy FileSetName="Testing_HDMI_rst_clk_wiz_0_25M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1.xci">
-          <Proxy FileSetName="Testing_HDMI_clean_button_1_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0.xci">
           <Proxy FileSetName="Testing_HDMI_clean_button_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0.xci">
           <Proxy FileSetName="Testing_HDMI_clean_button_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1.xci">
+          <Proxy FileSetName="Testing_HDMI_clean_button_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1.xci">
+          <Proxy FileSetName="Testing_HDMI_clean_button_1_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0.xci">
+          <Proxy FileSetName="Testing_HDMI_Interface2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Testing_HDMI.bd" FileRelPathName="ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0.xci">
+          <Proxy FileSetName="Testing_HDMI_Gamelogic2_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v">
@@ -130,7 +127,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="C:/Users/isaac/Downloads/PYNQ-Z1_C.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../isaac/Downloads/PYNQ-Z1_C.xdc"/>
           <Attr Name="ImportTime" Val="1555003440"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -189,27 +186,21 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Testing_HDMI_TicTacToe_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_TicTacToe_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Testing_HDMI_TicTacToe_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Testing_HDMI_rst_clk_wiz_0_25M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_rst_clk_wiz_0_25M_0">
-      <Config>
-        <Option Name="TopModule" Val="Testing_HDMI_rst_clk_wiz_0_25M_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Testing_HDMI_HDMI_test_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_HDMI_test_0_0">
       <Config>
         <Option Name="TopModule" Val="Testing_HDMI_HDMI_test_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Testing_HDMI_Interface_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_Interface_0_0">
+    <FileSet Name="Testing_HDMI_Gamelogic2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_Gamelogic2_0_0">
       <Config>
-        <Option Name="TopModule" Val="Testing_HDMI_Interface_0_0"/>
+        <Option Name="TopModule" Val="Testing_HDMI_Gamelogic2_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Testing_HDMI_Interface2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Testing_HDMI_Interface2_0_0">
+      <Config>
+        <Option Name="TopModule" Val="Testing_HDMI_Interface2_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -289,24 +280,6 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Testing_HDMI_TicTacToe_0_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_TicTacToe_0_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_TicTacToe_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_TicTacToe_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Testing_HDMI_rst_clk_wiz_0_25M_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_rst_clk_wiz_0_25M_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_rst_clk_wiz_0_25M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_rst_clk_wiz_0_25M_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Testing_HDMI_HDMI_test_0_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_HDMI_test_0_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_HDMI_test_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_HDMI_test_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
@@ -316,7 +289,18 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Testing_HDMI_Interface_0_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_Interface_0_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Interface_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_Interface_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="Testing_HDMI_Gamelogic2_0_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_Gamelogic2_0_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Gamelogic2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_Gamelogic2_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Testing_HDMI_Interface2_0_0_synth_1" Type="Ft3:Synth" SrcSet="Testing_HDMI_Interface2_0_0" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Interface2_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Testing_HDMI_Interface2_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -426,38 +410,6 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Testing_HDMI_TicTacToe_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_TicTacToe_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_TicTacToe_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Testing_HDMI_rst_clk_wiz_0_25M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_rst_clk_wiz_0_25M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_rst_clk_wiz_0_25M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Testing_HDMI_HDMI_test_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_HDMI_test_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_HDMI_test_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
@@ -474,7 +426,25 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Testing_HDMI_Interface_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Interface_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_Interface_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="Testing_HDMI_Gamelogic2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Gamelogic2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_Gamelogic2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Testing_HDMI_Interface2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="Testing_HDMI_Interface2_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="Testing_HDMI_Interface2_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
           <Desc>Default settings for Implementation.</Desc>

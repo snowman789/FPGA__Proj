@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Apr 20 15:21:01 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 19:48:09 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -37,7 +37,6 @@
     <PORT DIR="I" NAME="reset_rtl" SIGIS="rst" SIGNAME="External_Ports_reset_rtl">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="reset"/>
-        <CONNECTION INSTANCE="rst_clk_wiz_0_25M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="btn_3" SIGIS="undef" SIGNAME="External_Ports_btn_3">
@@ -65,6 +64,55 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
+    <MODULE COREREVISION="1904211943" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Gamelogic2_0_0"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="0"/>
+        <PARAMETER NAME="latency" VALUE="undef"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst" SIGIS="rst"/>
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="locked"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="rst" SIGIS="data"/>
+        <PORT DIR="I" NAME="btn1" SIGIS="data"/>
+        <PORT DIR="I" NAME="btn2" SIGIS="data"/>
+        <PORT DIR="I" NAME="btn3" SIGIS="data"/>
+        <PORT DIR="O" NAME="lose" SIGIS="data"/>
+        <PORT DIR="O" LEFT="9" NAME="time_remaining_out_V" RIGHT="0" SIGIS="data"/>
+        <PORT DIR="I" LEFT="9" NAME="time_remaining_in_V" RIGHT="0" SIGIS="data"/>
+        <PORT DIR="O" NAME="verify1_out" SIGIS="data"/>
+        <PORT DIR="O" NAME="verify2_out" SIGIS="data"/>
+        <PORT DIR="O" NAME="verify3_out" SIGIS="data"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
+            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
+            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
+            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/HDMI_test_0" HWVERSION="1.0" INSTANCE="HDMI_test_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="HDMI_test" VLNV="xilinx.com:module_ref:HDMI_test:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -87,19 +135,19 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="locked"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="XY_Red" RIGHT="0" SIGIS="undef" SIGNAME="Interface_0_XY_Red_V">
+        <PORT DIR="I" LEFT="7" NAME="XY_Red" RIGHT="0" SIGIS="undef" SIGNAME="Interface2_0_XY_Red_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface_0" PORT="XY_Red_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="XY_Red_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="XY_Green" RIGHT="0" SIGIS="undef" SIGNAME="Interface_0_XY_Green_V">
+        <PORT DIR="I" LEFT="7" NAME="XY_Green" RIGHT="0" SIGIS="undef" SIGNAME="Interface2_0_XY_Green_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface_0" PORT="XY_Green_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="XY_Green_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="XY_Blue" RIGHT="0" SIGIS="undef" SIGNAME="Interface_0_XY_Blue_V">
+        <PORT DIR="I" LEFT="7" NAME="XY_Blue" RIGHT="0" SIGIS="undef" SIGNAME="Interface2_0_XY_Blue_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface_0" PORT="XY_Blue_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="XY_Blue_V"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="btn0" SIGIS="undef" SIGNAME="clean_button_0_clean">
@@ -139,12 +187,12 @@
         </PORT>
         <PORT DIR="O" LEFT="9" NAME="x_value" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_test_0_x_value">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface_0" PORT="x_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="x_V"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="9" NAME="y_value" RIGHT="0" SIGIS="undef" SIGNAME="HDMI_test_0_y_value">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface_0" PORT="y_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="y_V"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="TMDSp_clock" SIGIS="clk" SIGNAME="HDMI_test_0_TMDSp_clock">
@@ -160,10 +208,10 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904201520" FULLNAME="/Interface_0" HWVERSION="1.0" INSTANCE="Interface_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface" VLNV="xilinx.com:hls:Interface:1.0">
+    <MODULE COREREVISION="1904211945" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface2_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="1"/>
@@ -186,87 +234,21 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="y_value"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="XY_Red_V" RIGHT="0" SIGIS="data" SIGNAME="Interface_0_XY_Red_V">
+        <PORT DIR="O" LEFT="7" NAME="XY_Red_V" RIGHT="0" SIGIS="data" SIGNAME="Interface2_0_XY_Red_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Red"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="XY_Green_V" RIGHT="0" SIGIS="data" SIGNAME="Interface_0_XY_Green_V">
+        <PORT DIR="O" LEFT="7" NAME="XY_Green_V" RIGHT="0" SIGIS="data" SIGNAME="Interface2_0_XY_Green_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Green"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="XY_Blue_V" RIGHT="0" SIGIS="data" SIGNAME="Interface_0_XY_Blue_V">
+        <PORT DIR="O" LEFT="7" NAME="XY_Blue_V" RIGHT="0" SIGIS="data" SIGNAME="Interface2_0_XY_Blue_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Blue"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="move_up" SIGIS="data" SIGNAME="clean_button_2_clean">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clean_button_2" PORT="clean"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="move_down" SIGIS="data" SIGNAME="clean_button_3_clean">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
-          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
-            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
-            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
-            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-      </BUSINTERFACES>
-    </MODULE>
-    <MODULE COREREVISION="1904191828" FULLNAME="/TicTacToe_0" HWVERSION="1.0" INSTANCE="TicTacToe_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="TicTacToe" VLNV="xilinx.com:hls:TicTacToe:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_TicTacToe_0_0"/>
-        <PARAMETER NAME="clk_period" VALUE="10"/>
-        <PARAMETER NAME="machine" VALUE="64"/>
-        <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="3"/>
-        <PARAMETER NAME="II" VALUE="x"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="25000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ap_rst" SIGIS="rst" SIGNAME="rst_clk_wiz_0_25M_peripheral_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_0_25M" PORT="peripheral_reset"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ap_start" SIGIS="undef"/>
-        <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
-        <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
-        <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="O" NAME="player1_win" SIGIS="data"/>
-        <PORT DIR="O" NAME="player2_win" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_a_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_b_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_c_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_d_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_e_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_f_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_g_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_h_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" LEFT="1" NAME="boardOut_i_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="I" NAME="player1" SIGIS="data"/>
-        <PORT DIR="I" NAME="player2" SIGIS="data"/>
-        <PORT DIR="I" NAME="left_r" SIGIS="data"/>
-        <PORT DIR="I" NAME="right_r" SIGIS="data"/>
-        <PORT DIR="I" NAME="start" SIGIS="data"/>
-        <PORT DIR="O" LEFT="3" NAME="sel_V" RIGHT="0" SIGIS="data"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
@@ -350,7 +332,6 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_2_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn2"/>
-            <CONNECTION INSTANCE="Interface_0" PORT="move_up"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -376,7 +357,6 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_3_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn3"/>
-            <CONNECTION INSTANCE="Interface_0" PORT="move_down"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -964,8 +944,6 @@
         </PORT>
         <PORT CLKFREQUENCY="25000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="TicTacToe_0" PORT="ap_clk"/>
-            <CONNECTION INSTANCE="rst_clk_wiz_0_25M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="pixclk"/>
           </CONNECTIONS>
         </PORT>
@@ -974,7 +952,11 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="DCM_TMDS_CLKFX"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out3" SIGIS="clk"/>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out3" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="16666666" DIR="O" NAME="clk_out4" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out4">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clean_button_0" PORT="clk"/>
@@ -985,59 +967,10 @@
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_clk_wiz_0_25M" PORT="dcm_locked"/>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="HPD"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="ap_start"/>
           </CONNECTIONS>
         </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE COREREVISION="13" FULLNAME="/rst_clk_wiz_0_25M" HWVERSION="5.0" INSTANCE="rst_clk_wiz_0_25M" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset" VLNV="xilinx.com:ip:proc_sys_reset:5.0">
-      <DOCUMENTS>
-        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v5_0;d=pg164-proc-sys-reset.pdf"/>
-      </DOCUMENTS>
-      <PARAMETERS>
-        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
-        <PARAMETER NAME="C_EXT_RST_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_AUX_RST_WIDTH" VALUE="4"/>
-        <PARAMETER NAME="C_EXT_RESET_HIGH" VALUE="1"/>
-        <PARAMETER NAME="C_AUX_RESET_HIGH" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_BUS_RST" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_PERP_RST" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_INTERCONNECT_ARESETN" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_PERP_ARESETN" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_rst_clk_wiz_0_25M_0"/>
-        <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
-        <PARAMETER NAME="RESET_BOARD_INTERFACE" VALUE="Custom"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="25000000" DIR="I" NAME="slowest_sync_clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="ext_reset_in" SIGIS="rst" SIGNAME="External_Ports_reset_rtl">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="reset_rtl"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="aux_reset_in" SIGIS="rst"/>
-        <PORT DIR="I" NAME="mb_debug_sys_rst" SIGIS="rst"/>
-        <PORT DIR="I" NAME="dcm_locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clk_wiz_0" PORT="locked"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="mb_reset" SIGIS="rst"/>
-        <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" RIGHT="0" SIGIS="rst"/>
-        <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst" SIGNAME="rst_clk_wiz_0_25M_peripheral_reset">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="TicTacToe_0" PORT="ap_rst"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst"/>
-        <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="18" filename="Interface2/Interface2.cpp" linenumber="18" name="tmp" contextFuncName="retBit" moduleName="Interface2" rtlName="tmp_fu_65_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="C:\Users\itr9fc\Desktop\FPGA__Proj"><\/item>
+<item  id="19" filename="Interface2/Interface2.cpp" linenumber="18" name="storemerge2" contextFuncName="retBit" moduleName="Interface2" rtlName="XY_Red_V" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\itr9fc\Desktop\FPGA__Proj"><\/item>
+<item  id="20" filename="Interface2/Interface2.cpp" linenumber="18" name="storemerge1_cast_cas" contextFuncName="retBit" moduleName="Interface2" rtlName="XY_Blue_V" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="7" fileDirectory="C:\Users\itr9fc\Desktop\FPGA__Proj"><\/item>
+<item  id="21" filename="Interface2/Interface2.cpp" linenumber="18" name="not_tmp" contextFuncName="retBit" moduleName="Interface2" rtlName="not_tmp_fu_89_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\itr9fc\Desktop\FPGA__Proj"><\/item>
+<item  id="22" filename="Interface2/Interface2.cpp" linenumber="18" name="storemerge_cast" contextFuncName="retBit" moduleName="Interface2" rtlName="XY_Green_V" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\itr9fc\Desktop\FPGA__Proj"><\/item>
+<\/annotationInfo>
+</annotationInfo>

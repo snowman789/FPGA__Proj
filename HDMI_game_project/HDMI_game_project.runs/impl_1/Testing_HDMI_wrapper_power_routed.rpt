@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Apr 20 15:24:16 2019
-| Host             : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Date             : Sun Apr 21 19:50:53 2019
+| Host             : EmbSys18 running 64-bit major release  (build 9200)
 | Command          : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 | Design           : Testing_HDMI_wrapper
 | Device           : xc7z020clg400-1
@@ -53,11 +53,11 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |       10 |       --- |             --- |
-| Slice Logic    |    <0.001 |      262 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      100 |     53200 |            0.19 |
-|   Register     |    <0.001 |      108 |    106400 |            0.10 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |    <0.001 |      179 |       --- |             --- |
+| Slice Logic    |    <0.001 |      326 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      138 |     53200 |            0.26 |
+|   Register     |    <0.001 |      119 |    106400 |            0.11 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |      234 |       --- |             --- |
 | MMCM           |     0.107 |        1 |         4 |           25.00 |
 | I/O            |     0.135 |       11 |       125 |            8.80 |
 | Static Power   |     0.110 |          |           |                 |

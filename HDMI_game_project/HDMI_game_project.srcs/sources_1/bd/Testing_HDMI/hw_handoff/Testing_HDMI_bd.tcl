@@ -180,6 +180,9 @@ proc create_root_design { parentCell } {
  ] $reset_rtl
   set sys_clk [ create_bd_port -dir I sys_clk ]
 
+  # Create instance: Gamelogic2_0, and set properties
+  set Gamelogic2_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Gamelogic2:1.0 Gamelogic2_0 ]
+
   # Create instance: HDMI_test_0, and set properties
   set block_name HDMI_test
   set block_cell_name HDMI_test_0
@@ -191,11 +194,8 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: Interface_0, and set properties
-  set Interface_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Interface:1.0 Interface_0 ]
-
-  # Create instance: TicTacToe_0, and set properties
-  set TicTacToe_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:TicTacToe:1.0 TicTacToe_0 ]
+  # Create instance: Interface2_0, and set properties
+  set Interface2_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:Interface2:1.0 Interface2_0 ]
 
   # Create instance: clean_button_0, and set properties
   set block_name clean_button
@@ -271,35 +271,31 @@ proc create_root_design { parentCell } {
    CONFIG.PRIM_IN_FREQ {125} \
  ] $clk_wiz_0
 
-  # Create instance: rst_clk_wiz_0_25M, and set properties
-  set rst_clk_wiz_0_25M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_0_25M ]
-
   # Create port connections
   connect_bd_net -net HDMI_test_0_TMDSn [get_bd_ports TMPDSn] [get_bd_pins HDMI_test_0/TMDSn]
   connect_bd_net -net HDMI_test_0_TMDSn_clock [get_bd_ports hdmi_tx_clk_n] [get_bd_pins HDMI_test_0/TMDSn_clock]
   connect_bd_net -net HDMI_test_0_TMDSp [get_bd_ports TMDSp] [get_bd_pins HDMI_test_0/TMDSp]
   connect_bd_net -net HDMI_test_0_TMDSp_clock [get_bd_ports hdmi_tx_clk_p] [get_bd_pins HDMI_test_0/TMDSp_clock]
   connect_bd_net -net HDMI_test_0_hdmi_hpd_tri_o [get_bd_ports hdmi_tx_hpdn] [get_bd_pins HDMI_test_0/hdmi_hpd_tri_o]
-  connect_bd_net -net HDMI_test_0_x_value [get_bd_pins HDMI_test_0/x_value] [get_bd_pins Interface_0/x_V]
-  connect_bd_net -net HDMI_test_0_y_value [get_bd_pins HDMI_test_0/y_value] [get_bd_pins Interface_0/y_V]
-  connect_bd_net -net Interface_0_XY_Blue_V [get_bd_pins HDMI_test_0/XY_Blue] [get_bd_pins Interface_0/XY_Blue_V]
-  connect_bd_net -net Interface_0_XY_Green_V [get_bd_pins HDMI_test_0/XY_Green] [get_bd_pins Interface_0/XY_Green_V]
-  connect_bd_net -net Interface_0_XY_Red_V [get_bd_pins HDMI_test_0/XY_Red] [get_bd_pins Interface_0/XY_Red_V]
+  connect_bd_net -net HDMI_test_0_x_value [get_bd_pins HDMI_test_0/x_value] [get_bd_pins Interface2_0/x_V]
+  connect_bd_net -net HDMI_test_0_y_value [get_bd_pins HDMI_test_0/y_value] [get_bd_pins Interface2_0/y_V]
+  connect_bd_net -net Interface2_0_XY_Blue_V [get_bd_pins HDMI_test_0/XY_Blue] [get_bd_pins Interface2_0/XY_Blue_V]
+  connect_bd_net -net Interface2_0_XY_Green_V [get_bd_pins HDMI_test_0/XY_Green] [get_bd_pins Interface2_0/XY_Green_V]
+  connect_bd_net -net Interface2_0_XY_Red_V [get_bd_pins HDMI_test_0/XY_Red] [get_bd_pins Interface2_0/XY_Red_V]
   connect_bd_net -net btn_0_1 [get_bd_ports btn_0] [get_bd_pins clean_button_0/async_btn]
   connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
   connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
   connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
   connect_bd_net -net clean_button_0_clean [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
   connect_bd_net -net clean_button_1_clean [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
-  connect_bd_net -net clean_button_2_clean [get_bd_pins HDMI_test_0/btn2] [get_bd_pins Interface_0/move_up] [get_bd_pins clean_button_2/clean]
-  connect_bd_net -net clean_button_3_clean [get_bd_pins HDMI_test_0/btn3] [get_bd_pins Interface_0/move_down] [get_bd_pins clean_button_3/clean]
-  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins TicTacToe_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rst_clk_wiz_0_25M/slowest_sync_clk]
+  connect_bd_net -net clean_button_2_clean [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
+  connect_bd_net -net clean_button_3_clean [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
+  connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins clk_wiz_0/clk_out1]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins HDMI_test_0/DCM_TMDS_CLKFX] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins clk_wiz_0/clk_out3]
+  connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins Gamelogic2_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out3]
   connect_bd_net -net clk_wiz_0_clk_out4 [get_bd_pins clean_button_0/clk] [get_bd_pins clean_button_1/clk] [get_bd_pins clean_button_2/clk] [get_bd_pins clean_button_3/clk] [get_bd_pins clk_wiz_0/clk_out4]
-  connect_bd_net -net clk_wiz_0_locked [get_bd_pins HDMI_test_0/HPD] [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_clk_wiz_0_25M/dcm_locked]
-  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset] [get_bd_pins rst_clk_wiz_0_25M/ext_reset_in]
-  connect_bd_net -net rst_clk_wiz_0_25M_peripheral_reset [get_bd_pins TicTacToe_0/ap_rst] [get_bd_pins rst_clk_wiz_0_25M/peripheral_reset]
+  connect_bd_net -net clk_wiz_0_locked [get_bd_pins Gamelogic2_0/ap_start] [get_bd_pins HDMI_test_0/HPD] [get_bd_pins clk_wiz_0/locked]
+  connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
   connect_bd_net -net sys_clk_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
 
   # Create address segments

@@ -24,30 +24,27 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/wt [current_project]
-set_property parent.project_path D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/wt [current_project]
+set_property parent.project_path C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  d:/FPGA_WORKSPACES/FPGA_Final_Project/Interface/solution1/impl/ip
-  d:/FPGA_WORKSPACES/Vivado_HLS/Tictactoe/solution1/impl/ip
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/ip
+  c:/Users/itr9fc/Desktop/FPGA__Proj/Gamelogic2/solution1/impl/ip
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v
-add_files D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface_0_0/constraints/Interface_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_TicTacToe_0_0/constraints/TicTacToe_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_rst_clk_wiz_0_25M_0/Testing_HDMI_rst_clk_wiz_0_25M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_rst_clk_wiz_0_25M_0/Testing_HDMI_rst_clk_wiz_0_25M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_rst_clk_wiz_0_25M_0/Testing_HDMI_rst_clk_wiz_0_25M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v
+add_files C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/constraints/Interface2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/constraints/Gamelogic2_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,8 +54,8 @@ set_property used_in_implementation false [get_files -all D:/FPGA_WORKSPACES/FPG
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc
-set_property used_in_implementation false [get_files D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
+read_xdc C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc
+set_property used_in_implementation false [get_files C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
