@@ -19,7 +19,12 @@ port (
     y_V : IN STD_LOGIC_VECTOR (9 downto 0);
     XY_Red_V : OUT STD_LOGIC_VECTOR (7 downto 0);
     XY_Green_V : OUT STD_LOGIC_VECTOR (7 downto 0);
-    XY_Blue_V : OUT STD_LOGIC_VECTOR (7 downto 0) );
+    XY_Blue_V : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lose : IN STD_LOGIC;
+    time_remaining_V : IN STD_LOGIC_VECTOR (9 downto 0);
+    verify1 : IN STD_LOGIC;
+    verify2 : IN STD_LOGIC;
+    verify3 : IN STD_LOGIC );
 end;
 
 
@@ -36,8 +41,8 @@ architecture behav of Interface2 is
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_boolean_1 : BOOLEAN := true;
 
-    signal tmp_fu_65_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal not_tmp_fu_89_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_fu_75_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal not_tmp_fu_99_p2 : STD_LOGIC_VECTOR (0 downto 0);
 
 
 begin
@@ -45,17 +50,17 @@ begin
 
 
     XY_Blue_V <= 
-        ap_const_lv8_0 when (tmp_fu_65_p2(0) = '1') else 
+        ap_const_lv8_0 when (tmp_fu_75_p2(0) = '1') else 
         ap_const_lv8_C8;
     XY_Green_V <= 
-        ap_const_lv8_FF when (not_tmp_fu_89_p2(0) = '1') else 
+        ap_const_lv8_FF when (not_tmp_fu_99_p2(0) = '1') else 
         ap_const_lv8_0;
     XY_Red_V <= 
-        ap_const_lv8_FF when (tmp_fu_65_p2(0) = '1') else 
+        ap_const_lv8_FF when (tmp_fu_75_p2(0) = '1') else 
         ap_const_lv8_0;
     ap_done <= ap_start;
     ap_idle <= ap_const_logic_1;
     ap_ready <= ap_start;
-    not_tmp_fu_89_p2 <= (tmp_fu_65_p2 xor ap_const_lv1_1);
-    tmp_fu_65_p2 <= "1" when (unsigned(x_V) > unsigned(ap_const_lv10_C8)) else "0";
+    not_tmp_fu_99_p2 <= (tmp_fu_75_p2 xor ap_const_lv1_1);
+    tmp_fu_75_p2 <= "1" when (unsigned(x_V) > unsigned(ap_const_lv10_C8)) else "0";
 end behav;

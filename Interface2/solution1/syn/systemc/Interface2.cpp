@@ -25,15 +25,15 @@ Interface2::Interface2(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_XY_Blue_V);
     sensitive << ( ap_start );
-    sensitive << ( tmp_fu_65_p2 );
+    sensitive << ( tmp_fu_75_p2 );
 
     SC_METHOD(thread_XY_Green_V);
     sensitive << ( ap_start );
-    sensitive << ( not_tmp_fu_89_p2 );
+    sensitive << ( not_tmp_fu_99_p2 );
 
     SC_METHOD(thread_XY_Red_V);
     sensitive << ( ap_start );
-    sensitive << ( tmp_fu_65_p2 );
+    sensitive << ( tmp_fu_75_p2 );
 
     SC_METHOD(thread_ap_done);
     sensitive << ( ap_start );
@@ -43,10 +43,10 @@ Interface2::Interface2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_ready);
     sensitive << ( ap_start );
 
-    SC_METHOD(thread_not_tmp_fu_89_p2);
-    sensitive << ( tmp_fu_65_p2 );
+    SC_METHOD(thread_not_tmp_fu_99_p2);
+    sensitive << ( tmp_fu_75_p2 );
 
-    SC_METHOD(thread_tmp_fu_65_p2);
+    SC_METHOD(thread_tmp_fu_75_p2);
     sensitive << ( ap_start );
     sensitive << ( x_V );
 
@@ -70,10 +70,15 @@ Interface2::Interface2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, XY_Red_V, "(port)XY_Red_V");
     sc_trace(mVcdFile, XY_Green_V, "(port)XY_Green_V");
     sc_trace(mVcdFile, XY_Blue_V, "(port)XY_Blue_V");
+    sc_trace(mVcdFile, lose, "(port)lose");
+    sc_trace(mVcdFile, time_remaining_V, "(port)time_remaining_V");
+    sc_trace(mVcdFile, verify1, "(port)verify1");
+    sc_trace(mVcdFile, verify2, "(port)verify2");
+    sc_trace(mVcdFile, verify3, "(port)verify3");
 #endif
 #ifdef __HLS_TRACE_LEVEL_INT__
-    sc_trace(mVcdFile, tmp_fu_65_p2, "tmp_fu_65_p2");
-    sc_trace(mVcdFile, not_tmp_fu_89_p2, "not_tmp_fu_89_p2");
+    sc_trace(mVcdFile, tmp_fu_75_p2, "tmp_fu_75_p2");
+    sc_trace(mVcdFile, not_tmp_fu_99_p2, "not_tmp_fu_99_p2");
 #endif
 
     }
@@ -92,15 +97,15 @@ Interface2::~Interface2() {
 }
 
 void Interface2::thread_XY_Blue_V() {
-    XY_Blue_V = (!tmp_fu_65_p2.read()[0].is_01())? sc_lv<8>(): ((tmp_fu_65_p2.read()[0].to_bool())? ap_const_lv8_0: ap_const_lv8_C8);
+    XY_Blue_V = (!tmp_fu_75_p2.read()[0].is_01())? sc_lv<8>(): ((tmp_fu_75_p2.read()[0].to_bool())? ap_const_lv8_0: ap_const_lv8_C8);
 }
 
 void Interface2::thread_XY_Green_V() {
-    XY_Green_V = (!not_tmp_fu_89_p2.read()[0].is_01())? sc_lv<8>(): ((not_tmp_fu_89_p2.read()[0].to_bool())? ap_const_lv8_FF: ap_const_lv8_0);
+    XY_Green_V = (!not_tmp_fu_99_p2.read()[0].is_01())? sc_lv<8>(): ((not_tmp_fu_99_p2.read()[0].to_bool())? ap_const_lv8_FF: ap_const_lv8_0);
 }
 
 void Interface2::thread_XY_Red_V() {
-    XY_Red_V = (!tmp_fu_65_p2.read()[0].is_01())? sc_lv<8>(): ((tmp_fu_65_p2.read()[0].to_bool())? ap_const_lv8_FF: ap_const_lv8_0);
+    XY_Red_V = (!tmp_fu_75_p2.read()[0].is_01())? sc_lv<8>(): ((tmp_fu_75_p2.read()[0].to_bool())? ap_const_lv8_FF: ap_const_lv8_0);
 }
 
 void Interface2::thread_ap_done() {
@@ -115,12 +120,12 @@ void Interface2::thread_ap_ready() {
     ap_ready = ap_start.read();
 }
 
-void Interface2::thread_not_tmp_fu_89_p2() {
-    not_tmp_fu_89_p2 = (tmp_fu_65_p2.read() ^ ap_const_lv1_1);
+void Interface2::thread_not_tmp_fu_99_p2() {
+    not_tmp_fu_99_p2 = (tmp_fu_75_p2.read() ^ ap_const_lv1_1);
 }
 
-void Interface2::thread_tmp_fu_65_p2() {
-    tmp_fu_65_p2 = (!x_V.read().is_01() || !ap_const_lv10_C8.is_01())? sc_lv<1>(): (sc_biguint<10>(x_V.read()) > sc_biguint<10>(ap_const_lv10_C8));
+void Interface2::thread_tmp_fu_75_p2() {
+    tmp_fu_75_p2 = (!x_V.read().is_01() || !ap_const_lv10_C8.is_01())? sc_lv<1>(): (sc_biguint<10>(x_V.read()) > sc_biguint<10>(ap_const_lv10_C8));
 }
 
 void Interface2::thread_hdltv_gen() {
@@ -144,6 +149,11 @@ void Interface2::thread_hdltv_gen() {
         mHdltvoutHandle << " , " <<  " \"XY_Red_V\" :  \"" << XY_Red_V.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"XY_Green_V\" :  \"" << XY_Green_V.read() << "\" ";
         mHdltvoutHandle << " , " <<  " \"XY_Blue_V\" :  \"" << XY_Blue_V.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"lose\" :  \"" << lose.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"time_remaining_V\" :  \"" << time_remaining_V.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"verify1\" :  \"" << verify1.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"verify2\" :  \"" << verify2.read() << "\" ";
+        mHdltvinHandle << " , " <<  " \"verify3\" :  \"" << verify3.read() << "\" ";
         mHdltvinHandle << "}" << std::endl;
         mHdltvoutHandle << "}" << std::endl;
         ap_cycleNo++;

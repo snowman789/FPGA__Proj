@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Apr 21 19:28:28 2019
+//Date        : Sun Apr 21 19:58:19 2019
 //Host        : EmbSys18 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Testing_HDMI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Testing_HDMI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Testing_HDMI.hwdef" *) 
+(* CORE_GENERATION_INFO = "Testing_HDMI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Testing_HDMI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Testing_HDMI.hwdef" *) 
 module Testing_HDMI
    (TMDSp,
     TMPDSn,
@@ -34,6 +34,11 @@ module Testing_HDMI
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
   input sys_clk;
 
+  wire Gamelogic2_0_lose;
+  wire [9:0]Gamelogic2_0_time_remaining_out_V;
+  wire Gamelogic2_0_verify1_out;
+  wire Gamelogic2_0_verify2_out;
+  wire Gamelogic2_0_verify3_out;
   wire [2:0]HDMI_test_0_TMDSn;
   wire HDMI_test_0_TMDSn_clock;
   wire [2:0]HDMI_test_0_TMDSp;
@@ -71,6 +76,20 @@ module Testing_HDMI
   assign hdmi_tx_hpdn = HDMI_test_0_hdmi_hpd_tri_o;
   assign reset_rtl_1 = reset_rtl;
   assign sys_clk_1 = sys_clk;
+  Testing_HDMI_Gamelogic2_0_0 Gamelogic2_0
+       (.ap_clk(clk_wiz_0_clk_out3),
+        .ap_rst(1'b0),
+        .ap_start(clk_wiz_0_locked),
+        .btn1(1'b0),
+        .btn2(1'b0),
+        .btn3(1'b0),
+        .lose(Gamelogic2_0_lose),
+        .rst(1'b0),
+        .time_remaining_in_V(Gamelogic2_0_time_remaining_out_V),
+        .time_remaining_out_V(Gamelogic2_0_time_remaining_out_V),
+        .verify1_out(Gamelogic2_0_verify1_out),
+        .verify2_out(Gamelogic2_0_verify2_out),
+        .verify3_out(Gamelogic2_0_verify3_out));
   Testing_HDMI_HDMI_test_0_0 HDMI_test_0
        (.DCM_TMDS_CLKFX(clk_wiz_0_clk_out2),
         .HPD(clk_wiz_0_locked),
@@ -94,18 +113,11 @@ module Testing_HDMI
         .XY_Green_V(Interface2_0_XY_Green_V),
         .XY_Red_V(Interface2_0_XY_Red_V),
         .ap_start(1'b0),
-        .boardOut_a_V({1'b0,1'b0}),
-        .boardOut_b_V({1'b0,1'b0}),
-        .boardOut_c_V({1'b0,1'b0}),
-        .boardOut_d_V({1'b0,1'b0}),
-        .boardOut_e_V({1'b0,1'b0}),
-        .boardOut_f_V({1'b0,1'b0}),
-        .boardOut_g_V({1'b0,1'b0}),
-        .boardOut_h_V({1'b0,1'b0}),
-        .boardOut_i_V({1'b0,1'b0}),
-        .player1_win(1'b0),
-        .player2_win(1'b0),
-        .sel_V({1'b0,1'b0,1'b0,1'b0}),
+        .lose(Gamelogic2_0_lose),
+        .time_remaining_V(Gamelogic2_0_time_remaining_out_V[8:0]),
+        .verify1(Gamelogic2_0_verify1_out),
+        .verify2(Gamelogic2_0_verify2_out),
+        .verify3(Gamelogic2_0_verify3_out),
         .x_V(HDMI_test_0_x_value),
         .y_V(HDMI_test_0_y_value));
   Testing_HDMI_clean_button_0_0 clean_button_0

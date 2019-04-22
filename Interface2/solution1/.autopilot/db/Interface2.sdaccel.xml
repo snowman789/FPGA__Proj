@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Interface2'" level="0">
-<item name = "Date">Sun Apr 21 19:45:36 2019
+<item name = "Date">Sun Apr 21 19:59:18 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Interface2</item>
@@ -75,11 +75,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp_fu_65_p2">icmp, 0, 0, 13, 10, 8</column>
+<column name="tmp_fu_75_p2">icmp, 0, 0, 13, 10, 8</column>
 <column name="XY_Blue_V">select, 0, 0, 7, 1, 1</column>
 <column name="XY_Green_V">select, 0, 0, 2, 1, 2</column>
 <column name="XY_Red_V">select, 0, 0, 2, 1, 2</column>
-<column name="not_tmp_fu_89_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="not_tmp_fu_99_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -106,6 +106,11 @@
 <column name="XY_Red_V">out, 8, ap_none, XY_Red_V, pointer</column>
 <column name="XY_Green_V">out, 8, ap_none, XY_Green_V, pointer</column>
 <column name="XY_Blue_V">out, 8, ap_none, XY_Blue_V, pointer</column>
+<column name="lose">in, 1, ap_none, lose, scalar</column>
+<column name="time_remaining_V">in, 10, ap_none, time_remaining_V, scalar</column>
+<column name="verify1">in, 1, ap_none, verify1, scalar</column>
+<column name="verify2">in, 1, ap_none, verify2, scalar</column>
+<column name="verify3">in, 1, ap_none, verify3, scalar</column>
 </table>
 </item>
 </section>
@@ -114,9 +119,9 @@
 <item name = "Max Delay">2.76</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'x_V_read', Interface2/Interface2.cpp:31">read, 0.00, 0.00, -, -, -, wire, read, &apos;x_V&apos;, -, -, -, -, -</column>
-<column name="'tmp', Interface2/Interface2.cpp:18->Interface2/Interface2.cpp:39">icmp, 1.77, 1.77, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'storemerge2', Interface2/Interface2.cpp:18->Interface2/Interface2.cpp:39">select, 0.99, 2.76, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'x_V_read', Interface2/Interface2.cpp:32">read, 0.00, 0.00, -, -, -, wire, read, &apos;x_V&apos;, -, -, -, -, -</column>
+<column name="'tmp', Interface2/Interface2.cpp:19->Interface2/Interface2.cpp:41">icmp, 1.77, 1.77, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'storemerge2', Interface2/Interface2.cpp:19->Interface2/Interface2.cpp:41">select, 0.99, 2.76, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

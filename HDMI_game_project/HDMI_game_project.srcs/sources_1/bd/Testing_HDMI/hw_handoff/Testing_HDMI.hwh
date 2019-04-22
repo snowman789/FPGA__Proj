@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 19:48:09 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 20:01:10 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -90,16 +90,57 @@
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="rst" SIGIS="data"/>
-        <PORT DIR="I" NAME="btn1" SIGIS="data"/>
-        <PORT DIR="I" NAME="btn2" SIGIS="data"/>
-        <PORT DIR="I" NAME="btn3" SIGIS="data"/>
-        <PORT DIR="O" NAME="lose" SIGIS="data"/>
-        <PORT DIR="O" LEFT="9" NAME="time_remaining_out_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="I" LEFT="9" NAME="time_remaining_in_V" RIGHT="0" SIGIS="data"/>
-        <PORT DIR="O" NAME="verify1_out" SIGIS="data"/>
-        <PORT DIR="O" NAME="verify2_out" SIGIS="data"/>
-        <PORT DIR="O" NAME="verify3_out" SIGIS="data"/>
+        <PORT DIR="I" NAME="rst" SIGIS="data" SIGNAME="clean_button_0_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_0" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn1" SIGIS="data" SIGNAME="clean_button_1_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_1" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn2" SIGIS="data" SIGNAME="clean_button_2_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_2" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn3" SIGIS="data" SIGNAME="clean_button_3_clean">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="lose" SIGIS="data" SIGNAME="Gamelogic2_0_lose">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="lose"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="time_remaining_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_in_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="time_remaining_V"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="time_remaining_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_out_V"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="verify1_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify1_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="verify1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="verify2_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify2_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="verify2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="verify3_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify3_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="verify3"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
@@ -208,7 +249,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904211945" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
+    <MODULE COREREVISION="1904212000" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface2_0_0"/>
@@ -249,6 +290,31 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Blue"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="lose" SIGIS="data" SIGNAME="Gamelogic2_0_lose">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="lose"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="time_remaining_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_out_V"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="verify1" SIGIS="data" SIGNAME="Gamelogic2_0_verify1_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify1_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="verify2" SIGIS="data" SIGNAME="Gamelogic2_0_verify2_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify2_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="verify3" SIGIS="data" SIGNAME="Gamelogic2_0_verify3_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify3_out"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
@@ -282,6 +348,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_0_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn0"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -307,6 +374,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_1_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn1"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -332,6 +400,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_2_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn2"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn2"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -357,6 +426,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_3_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn3"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn3"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

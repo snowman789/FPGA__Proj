@@ -22436,7 +22436,8 @@ struct s1_t {
  ap_uint<2> i;
 } board;
 
-void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue) {
+void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
+  bool lose, ap_uint<9> time_remaining, bool verify1, bool verify2, bool verify3 ) {
 _ssdm_InlineSelf(0, "");
  if(x> 200)
  {
@@ -22451,7 +22452,8 @@ _ssdm_InlineSelf(0, "");
  }
 }
 
-void Interface2( ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue) {
+void Interface2( ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
+  bool lose, ap_uint<10> time_remaining, bool verify1, bool verify2, bool verify3) {
 
 _ssdm_op_SpecInterface(&x, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&y, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
@@ -22459,7 +22461,7 @@ _ssdm_op_SpecInterface(&y, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, ""
 _ssdm_op_SpecInterface(XY_Red, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(XY_Green, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(XY_Blue, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
- retBit(x, y, XY_Red, XY_Green, XY_Blue);
+ retBit(x, y, XY_Red, XY_Green, XY_Blue, lose, time_remaining, verify1, verify2, verify3);
 
 
 }

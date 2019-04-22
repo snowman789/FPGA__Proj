@@ -15,7 +15,7 @@
 namespace ap_rtl {
 
 struct Interface2 : public sc_module {
-    // Port declarations 9
+    // Port declarations 14
     sc_in< sc_logic > ap_start;
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_idle;
@@ -25,6 +25,11 @@ struct Interface2 : public sc_module {
     sc_out< sc_lv<8> > XY_Red_V;
     sc_out< sc_lv<8> > XY_Green_V;
     sc_out< sc_lv<8> > XY_Blue_V;
+    sc_in< sc_logic > lose;
+    sc_in< sc_lv<10> > time_remaining_V;
+    sc_in< sc_logic > verify1;
+    sc_in< sc_logic > verify2;
+    sc_in< sc_logic > verify3;
     // Port declarations for the virtual clock. 
     sc_in_clk ap_virtual_clock;
 
@@ -39,8 +44,8 @@ struct Interface2 : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    sc_signal< sc_lv<1> > tmp_fu_65_p2;
-    sc_signal< sc_lv<1> > not_tmp_fu_89_p2;
+    sc_signal< sc_lv<1> > tmp_fu_75_p2;
+    sc_signal< sc_lv<1> > not_tmp_fu_99_p2;
     static const sc_logic ap_const_logic_1;
     static const sc_lv<10> ap_const_lv10_C8;
     static const sc_lv<8> ap_const_lv8_FF;
@@ -56,8 +61,8 @@ struct Interface2 : public sc_module {
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_not_tmp_fu_89_p2();
-    void thread_tmp_fu_65_p2();
+    void thread_not_tmp_fu_99_p2();
+    void thread_tmp_fu_75_p2();
     void thread_hdltv_gen();
 };
 

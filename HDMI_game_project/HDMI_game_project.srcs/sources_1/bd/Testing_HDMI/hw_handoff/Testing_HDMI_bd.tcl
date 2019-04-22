@@ -272,6 +272,11 @@ proc create_root_design { parentCell } {
  ] $clk_wiz_0
 
   # Create port connections
+  connect_bd_net -net Gamelogic2_0_lose [get_bd_pins Gamelogic2_0/lose] [get_bd_pins Interface2_0/lose]
+  connect_bd_net -net Gamelogic2_0_time_remaining_out_V [get_bd_pins Gamelogic2_0/time_remaining_in_V] [get_bd_pins Gamelogic2_0/time_remaining_out_V] [get_bd_pins Interface2_0/time_remaining_V]
+  connect_bd_net -net Gamelogic2_0_verify1_out [get_bd_pins Gamelogic2_0/verify1_out] [get_bd_pins Interface2_0/verify1]
+  connect_bd_net -net Gamelogic2_0_verify2_out [get_bd_pins Gamelogic2_0/verify2_out] [get_bd_pins Interface2_0/verify2]
+  connect_bd_net -net Gamelogic2_0_verify3_out [get_bd_pins Gamelogic2_0/verify3_out] [get_bd_pins Interface2_0/verify3]
   connect_bd_net -net HDMI_test_0_TMDSn [get_bd_ports TMPDSn] [get_bd_pins HDMI_test_0/TMDSn]
   connect_bd_net -net HDMI_test_0_TMDSn_clock [get_bd_ports hdmi_tx_clk_n] [get_bd_pins HDMI_test_0/TMDSn_clock]
   connect_bd_net -net HDMI_test_0_TMDSp [get_bd_ports TMDSp] [get_bd_pins HDMI_test_0/TMDSp]
@@ -286,10 +291,10 @@ proc create_root_design { parentCell } {
   connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
   connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
   connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
-  connect_bd_net -net clean_button_0_clean [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
-  connect_bd_net -net clean_button_1_clean [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
-  connect_bd_net -net clean_button_2_clean [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
-  connect_bd_net -net clean_button_3_clean [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
+  connect_bd_net -net clean_button_0_clean [get_bd_pins Gamelogic2_0/rst] [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
+  connect_bd_net -net clean_button_1_clean [get_bd_pins Gamelogic2_0/btn1] [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
+  connect_bd_net -net clean_button_2_clean [get_bd_pins Gamelogic2_0/btn2] [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
+  connect_bd_net -net clean_button_3_clean [get_bd_pins Gamelogic2_0/btn3] [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins HDMI_test_0/pixclk] [get_bd_pins clk_wiz_0/clk_out1]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins HDMI_test_0/DCM_TMDS_CLKFX] [get_bd_pins clk_wiz_0/clk_out2]
   connect_bd_net -net clk_wiz_0_clk_out3 [get_bd_pins Gamelogic2_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out3]

@@ -18,7 +18,12 @@ module Interface2 (
         y_V,
         XY_Red_V,
         XY_Green_V,
-        XY_Blue_V
+        XY_Blue_V,
+        lose,
+        time_remaining_V,
+        verify1,
+        verify2,
+        verify3
 );
 
 
@@ -31,15 +36,20 @@ input  [9:0] y_V;
 output  [7:0] XY_Red_V;
 output  [7:0] XY_Green_V;
 output  [7:0] XY_Blue_V;
+input   lose;
+input  [9:0] time_remaining_V;
+input   verify1;
+input   verify2;
+input   verify3;
 
-wire   [0:0] tmp_fu_65_p2;
-wire   [0:0] not_tmp_fu_89_p2;
+wire   [0:0] tmp_fu_75_p2;
+wire   [0:0] not_tmp_fu_99_p2;
 
-assign XY_Blue_V = ((tmp_fu_65_p2[0:0] === 1'b1) ? 8'd0 : 8'd200);
+assign XY_Blue_V = ((tmp_fu_75_p2[0:0] === 1'b1) ? 8'd0 : 8'd200);
 
-assign XY_Green_V = ((not_tmp_fu_89_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign XY_Green_V = ((not_tmp_fu_99_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign XY_Red_V = ((tmp_fu_65_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign XY_Red_V = ((tmp_fu_75_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
 assign ap_done = ap_start;
 
@@ -47,8 +57,8 @@ assign ap_idle = 1'b1;
 
 assign ap_ready = ap_start;
 
-assign not_tmp_fu_89_p2 = (tmp_fu_65_p2 ^ 1'd1);
+assign not_tmp_fu_99_p2 = (tmp_fu_75_p2 ^ 1'd1);
 
-assign tmp_fu_65_p2 = ((x_V > 10'd200) ? 1'b1 : 1'b0);
+assign tmp_fu_75_p2 = ((x_V > 10'd200) ? 1'b1 : 1'b0);
 
 endmodule //Interface2

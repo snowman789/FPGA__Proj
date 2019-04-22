@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr 21 19:48:14 2019
-# Process ID: 15708
+# Start of session at: Sun Apr 21 20:01:14 2019
+# Process ID: 11928
 # Current directory: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1
 # Command line: vivado.exe -log Testing_HDMI_Interface2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Testing_HDMI_Interface2_0_0.tcl
 # Log file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1/Testing_HDMI_Interface2_0_0.vds
@@ -19,16 +19,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19524 
+INFO: Helper process launched with PID 10900 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 392.910 ; gain = 96.023
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 392.602 ; gain = 97.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_Interface2_0_0' [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/synth/Testing_HDMI_Interface2_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'Interface2' [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/0601/hdl/verilog/Interface2.v:12]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/0601/hdl/verilog/Interface2.v:38]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/0601/hdl/verilog/Interface2.v:40]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/0601/hdl/verilog/Interface2.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'Interface2' (1#1) [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/0601/hdl/verilog/Interface2.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Interface2' [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/5400/hdl/verilog/Interface2.v:12]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/5400/hdl/verilog/Interface2.v:48]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/5400/hdl/verilog/Interface2.v:50]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/5400/hdl/verilog/Interface2.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'Interface2' (1#1) [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ipshared/5400/hdl/verilog/Interface2.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_Interface2_0_0' (2#1) [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/synth/Testing_HDMI_Interface2_0_0.v:58]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[9]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[8]
@@ -40,8 +40,22 @@ WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[3]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[2]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[1]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[0]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port lose
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[9]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[8]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[7]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[6]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[5]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[4]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[3]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[2]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[1]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[0]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify1
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify2
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify3
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 449.168 ; gain = 152.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 448.551 ; gain = 152.969
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,10 +68,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 449.168 ; gain = 152.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 448.551 ; gain = 152.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 449.168 ; gain = 152.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 448.551 ; gain = 152.969
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -70,31 +84,31 @@ Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game
 Finished Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 717.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 717.844 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 717.855 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 718.422 ; gain = 0.566
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 717.844 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 718.230 ; gain = 0.387
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.422 ; gain = 421.535
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.230 ; gain = 422.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.422 ; gain = 421.535
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.230 ; gain = 422.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.422 ; gain = 421.535
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 718.230 ; gain = 422.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 718.422 ; gain = 421.535
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 718.230 ; gain = 422.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -149,8 +163,22 @@ WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[3]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[2]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[1]
 WARNING: [Synth 8-3331] design Interface2 has unconnected port y_V[0]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port lose
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[9]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[8]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[7]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[6]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[5]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[4]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[3]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[2]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[1]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port time_remaining_V[0]
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify1
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify2
+WARNING: [Synth 8-3331] design Interface2 has unconnected port verify3
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 718.422 ; gain = 421.535
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 718.230 ; gain = 422.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -162,13 +190,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 798.750 ; gain = 501.863
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.141 ; gain = 501.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 798.750 ; gain = 501.863
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 797.141 ; gain = 501.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,7 +208,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,7 +232,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -217,7 +245,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -229,25 +257,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -275,30 +303,30 @@ Report Instance Areas:
 |2     |  inst   |Interface2 |     3|
 +------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 808.348 ; gain = 242.207
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 808.348 ; gain = 511.461
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 806.676 ; gain = 241.414
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 806.676 ; gain = 511.094
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 822.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.520 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-17 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 51 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 822.281 ; gain = 534.609
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 822.281 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 819.520 ; gain = 531.922
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.520 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1/Testing_HDMI_Interface2_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Testing_HDMI_Interface2_0_0, cache-ID = 92a2ccd86baa768a
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 822.281 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Testing_HDMI_Interface2_0_0, cache-ID = d0395b247b5f4d20
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 819.520 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/Testing_HDMI_Interface2_0_0_synth_1/Testing_HDMI_Interface2_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Testing_HDMI_Interface2_0_0_utilization_synth.rpt -pb Testing_HDMI_Interface2_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 19:48:43 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 20:01:43 2019...
