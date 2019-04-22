@@ -550,7 +550,7 @@
         "ports": [
           "clean_button_0/clean",
           "HDMI_test_0/btn0",
-          "Gamelogic2_0/rst"
+          "Gamelogic2_0/btn0"
         ]
       },
       "clean_button_1_clean": {
@@ -611,35 +611,18 @@
           "Interface2_0/y_V"
         ]
       },
-      "Gamelogic2_0_lose": {
+      "Gamelogic2_0_right_r": {
         "ports": [
-          "Gamelogic2_0/lose",
-          "Interface2_0/lose"
+          "Gamelogic2_0/right_out",
+          "Gamelogic2_0/right_in",
+          "Interface2_0/right_r"
         ]
       },
-      "Gamelogic2_0_time_remaining_out_V": {
+      "Gamelogic2_0_center_line_out_V": {
         "ports": [
-          "Gamelogic2_0/time_remaining_out_V",
-          "Gamelogic2_0/time_remaining_in_V",
-          "Interface2_0/time_remaining_V"
-        ]
-      },
-      "Gamelogic2_0_verify1_out": {
-        "ports": [
-          "Gamelogic2_0/verify1_out",
-          "Interface2_0/verify1"
-        ]
-      },
-      "Gamelogic2_0_verify2_out": {
-        "ports": [
-          "Gamelogic2_0/verify2_out",
-          "Interface2_0/verify2"
-        ]
-      },
-      "Gamelogic2_0_verify3_out": {
-        "ports": [
-          "Gamelogic2_0/verify3_out",
-          "Interface2_0/verify3"
+          "Gamelogic2_0/center_line_out_V",
+          "Gamelogic2_0/center_line_in_V",
+          "Interface2_0/center_line_V"
         ]
       }
     }

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Interface2'
 ================================================================
-* Date:           Sun Apr 21 20:24:54 2019
+* Date:           Mon Apr 22 17:42:39 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Interface2
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     2.764|        1.25|
+    |ap_clk  |  10.00|     2.748|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |    1|    1|    1|    1|   none  |
+    |    3|    5|    3|    5|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -49,14 +49,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
 |DSP              |        -|      -|       -|      -|
-|Expression       |        -|      -|       0|     54|
+|Expression       |        -|      -|       0|     92|
 |FIFO             |        -|      -|       -|      -|
 |Instance         |        -|      -|       -|      -|
 |Memory           |        -|      -|       -|      -|
-|Multiplexer      |        -|      -|       -|     60|
-|Register         |        -|      -|      22|      -|
+|Multiplexer      |        -|      -|       -|    110|
+|Register         |        -|      -|      57|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      0|      22|    114|
+|Total            |        0|      0|      57|    202|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -77,45 +77,63 @@
     N/A
 
     * Expression: 
-    +--------------------------------+----------+-------+---+----+------------+------------+
-    |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +--------------------------------+----------+-------+---+----+------------+------------+
-    |or_cond_fu_153_p2               |    and   |      0|  0|   2|           1|           1|
-    |tmp_1_fu_98_p2                  |   icmp   |      0|  0|  13|          10|           8|
-    |tmp_4_fu_141_p2                 |   icmp   |      0|  0|  13|          10|          10|
-    |tmp_5_fu_147_p2                 |   icmp   |      0|  0|  13|          10|           7|
-    |storemerge1_cast_cas_fu_113_p3  |  select  |      0|  0|   7|           1|           1|
-    |storemerge2_fu_104_p3           |  select  |      0|  0|   2|           1|           2|
-    |storemerge_cast_fu_128_p3       |  select  |      0|  0|   2|           1|           2|
-    |not_tmp_1_fu_122_p2             |    xor   |      0|  0|   2|           1|           2|
-    +--------------------------------+----------+-------+---+----+------------+------------+
-    |Total                           |          |      0|  0|  54|          35|          33|
-    +--------------------------------+----------+-------+---+----+------------+------------+
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |or_cond_fu_164_p2         |    and   |      0|  0|   2|           1|           1|
+    |grp_fu_97_p2              |   icmp   |      0|  0|  13|          10|           6|
+    |tmp_1_fu_107_p2           |   icmp   |      0|  0|  13|          10|           9|
+    |tmp_2_fu_131_p2           |   icmp   |      0|  0|  13|          10|           9|
+    |tmp_6_fu_154_p2           |   icmp   |      0|  0|  13|          10|          10|
+    |tmp_7_fu_159_p2           |   icmp   |      0|  0|  13|          10|          10|
+    |tmp_8_fu_170_p2           |   icmp   |      0|  0|  13|          10|          10|
+    |brmerge247_i_fu_125_p2    |    or    |      0|  0|   2|           1|           1|
+    |brmerge250_i_fu_141_p2    |    or    |      0|  0|   2|           1|           1|
+    |brmerge252_i_fu_147_p2    |    or    |      0|  0|   2|           1|           1|
+    |brmerge_i_fu_113_p2       |    or    |      0|  0|   2|           1|           1|
+    |right_not249_i_fu_136_p2  |    xor   |      0|  0|   2|           1|           2|
+    |right_not_i_fu_119_p2     |    xor   |      0|  0|   2|           1|           2|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |Total                     |          |      0|  0|  92|          67|          63|
+    +--------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +------------+----+-----------+-----+-----------+
-    |    Name    | LUT| Input Size| Bits| Total Bits|
-    +------------+----+-----------+-----+-----------+
-    |XY_Blue_V   |  15|          3|    8|         24|
-    |XY_Green_V  |  15|          3|    8|         24|
-    |XY_Red_V    |  15|          3|    8|         24|
-    |ap_NS_fsm   |  15|          3|    1|          3|
-    +------------+----+-----------+-----+-----------+
-    |Total       |  60|         12|   25|         75|
-    +------------+----+-----------+-----+-----------+
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |XY_Blue_V        |  15|          3|    8|         24|
+    |XY_Blue_V_preg   |   9|          2|    8|         16|
+    |XY_Green_V       |  15|          3|    8|         24|
+    |XY_Green_V_preg  |   9|          2|    8|         16|
+    |XY_Red_V         |  15|          3|    8|         24|
+    |XY_Red_V_preg    |   9|          2|    8|         16|
+    |ap_NS_fsm        |  38|          7|    1|          7|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            | 110|         22|   49|        127|
+    +-----------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-----------------+---+----+-----+-----------+
-    |       Name      | FF| LUT| Bits| Const Bits|
-    +-----------------+---+----+-----+-----------+
-    |XY_Blue_V_preg   |  3|   0|    8|          5|
-    |XY_Green_V_preg  |  8|   0|    8|          0|
-    |XY_Red_V_preg    |  8|   0|    8|          0|
-    |ap_CS_fsm        |  2|   0|    2|          0|
-    |or_cond_reg_159  |  1|   0|    1|          0|
-    +-----------------+---+----+-----+-----------+
-    |Total            | 22|   0|   27|          5|
-    +-----------------+---+----+-----+-----------+
+    +----------------------+---+----+-----+-----------+
+    |         Name         | FF| LUT| Bits| Const Bits|
+    +----------------------+---+----+-----+-----------+
+    |XY_Blue_V_preg        |  8|   0|    8|          0|
+    |XY_Green_V_preg       |  8|   0|    8|          0|
+    |XY_Red_V_preg         |  8|   0|    8|          0|
+    |ap_CS_fsm             |  6|   0|    6|          0|
+    |brmerge247_i_reg_205  |  1|   0|    1|          0|
+    |brmerge250_i_reg_218  |  1|   0|    1|          0|
+    |brmerge252_i_reg_222  |  1|   0|    1|          0|
+    |or_cond_reg_235       |  1|   0|    1|          0|
+    |p_not248_i_reg_213    |  1|   0|    1|          0|
+    |tmp_1_reg_198         |  1|   0|    1|          0|
+    |tmp_2_reg_209         |  1|   0|    1|          0|
+    |tmp_3_reg_226         |  1|   0|    1|          0|
+    |tmp_5_cast_reg_230    |  9|   0|   10|          1|
+    |tmp_8_reg_239         |  1|   0|    1|          0|
+    |tmp_reg_193           |  9|   0|    9|          0|
+    +----------------------+---+----+-----+-----------+
+    |Total                 | 57|   0|   58|          1|
+    +----------------------+---+----+-----+-----------+
 
 
 
@@ -123,24 +141,21 @@
 == Interface
 ================================================================
 * Summary: 
-+------------------+-----+-----+------------+------------------+--------------+
-|     RTL Ports    | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+------------------+-----+-----+------------+------------------+--------------+
-|ap_clk            |  in |    1| ap_ctrl_hs |    Interface2    | return value |
-|ap_rst            |  in |    1| ap_ctrl_hs |    Interface2    | return value |
-|ap_start          |  in |    1| ap_ctrl_hs |    Interface2    | return value |
-|ap_done           | out |    1| ap_ctrl_hs |    Interface2    | return value |
-|ap_idle           | out |    1| ap_ctrl_hs |    Interface2    | return value |
-|ap_ready          | out |    1| ap_ctrl_hs |    Interface2    | return value |
-|x_V               |  in |   10|   ap_none  |        x_V       |    scalar    |
-|y_V               |  in |   10|   ap_none  |        y_V       |    scalar    |
-|XY_Red_V          | out |    8|   ap_none  |     XY_Red_V     |    pointer   |
-|XY_Green_V        | out |    8|   ap_none  |    XY_Green_V    |    pointer   |
-|XY_Blue_V         | out |    8|   ap_none  |     XY_Blue_V    |    pointer   |
-|lose              |  in |    1|   ap_none  |       lose       |    scalar    |
-|time_remaining_V  |  in |   10|   ap_none  | time_remaining_V |    scalar    |
-|verify1           |  in |    1|   ap_none  |      verify1     |    scalar    |
-|verify2           |  in |    1|   ap_none  |      verify2     |    scalar    |
-|verify3           |  in |    1|   ap_none  |      verify3     |    scalar    |
-+------------------+-----+-----+------------+------------------+--------------+
++---------------+-----+-----+------------+---------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  | Source Object |    C Type    |
++---------------+-----+-----+------------+---------------+--------------+
+|ap_clk         |  in |    1| ap_ctrl_hs |   Interface2  | return value |
+|ap_rst         |  in |    1| ap_ctrl_hs |   Interface2  | return value |
+|ap_start       |  in |    1| ap_ctrl_hs |   Interface2  | return value |
+|ap_done        | out |    1| ap_ctrl_hs |   Interface2  | return value |
+|ap_idle        | out |    1| ap_ctrl_hs |   Interface2  | return value |
+|ap_ready       | out |    1| ap_ctrl_hs |   Interface2  | return value |
+|x_V            |  in |   10|   ap_none  |      x_V      |    scalar    |
+|y_V            |  in |   10|   ap_none  |      y_V      |    scalar    |
+|XY_Red_V       | out |    8|   ap_none  |    XY_Red_V   |    pointer   |
+|XY_Green_V     | out |    8|   ap_none  |   XY_Green_V  |    pointer   |
+|XY_Blue_V      | out |    8|   ap_none  |   XY_Blue_V   |    pointer   |
+|center_line_V  |  in |   10|   ap_none  | center_line_V |    scalar    |
+|right_r        |  in |    1|   ap_none  |    right_r    |    scalar    |
++---------------+-----+-----+------------+---------------+--------------+
 

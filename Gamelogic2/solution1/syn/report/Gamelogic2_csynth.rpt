@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Gamelogic2'
 ================================================================
-* Date:           Sun Apr 21 20:24:57 2019
+* Date:           Mon Apr 22 17:17:53 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Gamelogic2
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     9.881|        1.25|
+    |ap_clk  |  10.00|     8.577|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |    ?|    ?|    ?|    ?|   none  |
+    |    1|   36|    1|   36|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -37,12 +37,7 @@
         N/A
 
         * Loop: 
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
-        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1  |    ?|    ?| 37 ~ 103 |          -|          -|  inf |    no    |
-        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        N/A
 
 
 
@@ -53,19 +48,19 @@
 +-----------------+---------+-------+--------+-------+
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
-|DSP              |        -|      2|       -|      -|
-|Expression       |        -|      0|       0|    214|
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      0|       0|    228|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        -|      -|    1072|    632|
+|Instance         |        -|      -|     394|    238|
 |Memory           |        -|      -|       -|      -|
-|Multiplexer      |        -|      -|       -|    608|
-|Register         |        -|      -|     250|      -|
+|Multiplexer      |        -|      -|       -|    169|
+|Register         |        -|      -|     112|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      2|    1322|   1454|
+|Total            |        0|      0|     506|    635|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
-|Utilization (%)  |        0|   ~0  |       1|      2|
+|Utilization (%)  |        0|      0|   ~0   |      1|
 +-----------------+---------+-------+--------+-------+
 
 + Detail: 
@@ -73,21 +68,13 @@
     +-------------------------+----------------------+---------+-------+-----+-----+
     |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT |
     +-------------------------+----------------------+---------+-------+-----+-----+
-    |Gamelogic2_urem_1dEe_U3  |Gamelogic2_urem_1dEe  |        0|      0|  142|   78|
-    |Gamelogic2_urem_1dEe_U4  |Gamelogic2_urem_1dEe  |        0|      0|  142|   78|
     |Gamelogic2_urem_3bkb_U1  |Gamelogic2_urem_3bkb  |        0|      0|  394|  238|
-    |Gamelogic2_urem_3cud_U2  |Gamelogic2_urem_3cud  |        0|      0|  394|  238|
     +-------------------------+----------------------+---------+-------+-----+-----+
-    |Total                    |                      |        0|      0| 1072|  632|
+    |Total                    |                      |        0|      0|  394|  238|
     +-------------------------+----------------------+---------+-------+-----+-----+
 
     * DSP48: 
-    +-------------------------+----------------------+--------------+
-    |         Instance        |        Module        |  Expression  |
-    +-------------------------+----------------------+--------------+
-    |Gamelogic2_mac_mueOg_U5  |Gamelogic2_mac_mueOg  | i0 + i1 * i2 |
-    |Gamelogic2_mac_mufYi_U6  |Gamelogic2_mac_mufYi  | i0 + i1 * i2 |
-    +-------------------------+----------------------+--------------+
+    N/A
 
     * Memory: 
     N/A
@@ -96,73 +83,68 @@
     N/A
 
     * Expression: 
-    +--------------------------+----------+-------+---+----+------------+------------+
-    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +--------------------------+----------+-------+---+----+------------+------------+
-    |tmp_i_i_fu_246_p2         |     *    |      0|  0|  20|           4|          32|
-    |grp_fu_212_p0             |     +    |      0|  0|  39|           1|          32|
-    |grp_fu_263_p0             |     +    |      0|  0|  39|           7|          32|
-    |tmp_s_fu_343_p2           |     +    |      0|  0|  39|           2|          32|
-    |tmp_3_i_fu_232_p2         |     -    |      0|  0|  14|          10|          10|
-    |tmp_3_i1_fu_273_p2        |   icmp   |      0|  0|  11|           7|           6|
-    |tmp_3_i2_fu_330_p2        |   icmp   |      0|  0|  11|           7|           6|
-    |tmp_3_i6_fu_298_p2        |   icmp   |      0|  0|  11|           7|           6|
-    |tmp_i_2_fu_222_p2         |   icmp   |      0|  0|  18|          21|           1|
-    |or_cond3_i_fu_376_p2      |    or    |      0|  0|   2|           1|           1|
-    |tmp_fu_370_p2             |    or    |      0|  0|   2|           1|           1|
-    |not_or_cond3_i_fu_382_p2  |    xor   |      0|  0|   2|           1|           2|
-    |tmp1_i_fu_360_p2          |    xor   |      0|  0|   2|           1|           1|
-    |tmp2_i_fu_365_p2          |    xor   |      0|  0|   2|           1|           1|
-    |tmp_i1_fu_355_p2          |    xor   |      0|  0|   2|           1|           1|
-    +--------------------------+----------+-------+---+----+------------+------------+
-    |Total                     |          |      0|  0| 214|          72|         164|
-    +--------------------------+----------+-------+---+----+------------+------------+
+    +------------------------------+----------+-------+---+----+------------+------------+
+    |         Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------+----------+-------+---+----+------------+------------+
+    |tmp_i_i_fu_310_p2             |     *    |      0|  0|  20|           4|          32|
+    |grp_fu_321_p0                 |     +    |      0|  0|  39|           7|          32|
+    |tmp_8_fu_102_p2               |     +    |      0|  0|  14|          10|           5|
+    |tmp_9_fu_108_p2               |     +    |      0|  0|  14|          10|           4|
+    |sel_tmp11_fu_202_p2           |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp14_fu_222_p2           |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp17_fu_248_p2           |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp20_fu_274_p2           |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp3_fu_150_p2            |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp4_fu_156_p2            |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp6_fu_182_p2            |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp9_fu_176_p2            |    and   |      0|  0|   2|           1|           1|
+    |sel_tmp_fu_130_p2             |    and   |      0|  0|   2|           1|           1|
+    |right_out                     |   icmp   |      0|  0|  11|           7|           6|
+    |brmerge2_fu_300_p2            |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp24_demorgan_fu_236_p2  |    or    |      0|  0|   2|           1|           1|
+    |sel_tmp31_demorgan_fu_262_p2  |    or    |      0|  0|   2|           1|           1|
+    |tmp1_fu_294_p2                |    or    |      0|  0|   2|           1|           1|
+    |tmp_fu_288_p2                 |    or    |      0|  0|   2|           1|           1|
+    |p_9_fu_122_p3                 |  select  |      0|  0|  10|           1|          10|
+    |p_s_fu_114_p3                 |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp12_fu_208_p3           |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp15_fu_228_p3           |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp18_fu_254_p3           |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp1_fu_136_p3            |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp5_fu_162_p3            |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp7_fu_188_p3            |  select  |      0|  0|  10|           1|          10|
+    |to_add_8_fu_280_p3            |  select  |      0|  0|  10|           1|          10|
+    |sel_tmp10_fu_196_p2           |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp13_fu_216_p2           |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp16_fu_242_p2           |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp19_fu_268_p2           |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp2_fu_144_p2            |    xor   |      0|  0|   2|           1|           2|
+    |sel_tmp8_fu_170_p2            |    xor   |      0|  0|   2|           1|           2|
+    +------------------------------+----------+-------+---+----+------------+------------+
+    |Total                         |          |      0|  0| 228|          67|         195|
+    +------------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +---------------------------+-----+-----------+-----+-----------+
-    |            Name           | LUT | Input Size| Bits| Total Bits|
-    +---------------------------+-----+-----------+-----+-----------+
-    |ap_NS_fsm                  |  461|        105|    1|        105|
-    |btn1_verify                |    9|          2|    1|          2|
-    |btn2_verify                |    9|          2|    1|          2|
-    |btn3_verify                |    9|          2|    1|          2|
-    |decrement_value            |    9|          2|   32|         64|
-    |newRound                   |   15|          3|    1|          3|
-    |time_remaining_out_V       |   15|          3|   10|         30|
-    |time_remaining_out_V_preg  |    9|          2|   10|         20|
-    |verify1_out                |   15|          3|    1|          3|
-    |verify1_out_preg           |    9|          2|    1|          2|
-    |verify2_out                |   15|          3|    1|          3|
-    |verify2_out_preg           |    9|          2|    1|          2|
-    |verify3_out                |   15|          3|    1|          3|
-    |verify3_out_preg           |    9|          2|    1|          2|
-    +---------------------------+-----+-----------+-----+-----------+
-    |Total                      |  608|        136|   63|        243|
-    +---------------------------+-----+-----------+-----+-----------+
+    +-----------+-----+-----------+-----+-----------+
+    |    Name   | LUT | Input Size| Bits| Total Bits|
+    +-----------+-----+-----------+-----+-----------+
+    |ap_NS_fsm  |  169|         38|    1|         38|
+    +-----------+-----+-----------+-----+-----------+
+    |Total      |  169|         38|    1|         38|
+    +-----------+-----+-----------+-----+-----------+
 
     * Register: 
-    +---------------------------+-----+----+-----+-----------+
-    |            Name           |  FF | LUT| Bits| Const Bits|
-    +---------------------------+-----+----+-----+-----------+
-    |RandSeed                   |   11|   0|   32|         21|
-    |ap_CS_fsm                  |  104|   0|  104|          0|
-    |btn1_verify                |    1|   0|    1|          0|
-    |btn2_verify                |    1|   0|    1|          0|
-    |btn3_verify                |    1|   0|    1|          0|
-    |decrement_value            |   32|   0|   32|          0|
-    |last_num_assign_1_reg_456  |   11|   0|   11|          0|
-    |last_num_assign_2_reg_466  |   11|   0|   11|          0|
-    |lose_preg                  |    0|   0|    1|          1|
-    |newRound                   |    1|   0|    1|          0|
-    |slow_down_clock            |   32|   0|   32|          0|
-    |time_remaining_out_V_preg  |   10|   0|   10|          0|
-    |tmp_i_i_reg_446            |   32|   0|   32|          0|
-    |verify1_out_preg           |    1|   0|    1|          0|
-    |verify2_out_preg           |    1|   0|    1|          0|
-    |verify3_out_preg           |    1|   0|    1|          0|
-    +---------------------------+-----+----+-----+-----------+
-    |Total                      |  250|   0|  272|         22|
-    +---------------------------+-----+----+-----+-----------+
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |RandSeed          |  32|   0|   32|          0|
+    |ap_CS_fsm         |  37|   0|   37|          0|
+    |brmerge2_reg_349  |   1|   0|    1|          0|
+    |tmp_i_i_reg_353   |  32|   0|   32|          0|
+    |to_add_8_reg_344  |  10|   0|   10|          0|
+    +------------------+----+----+-----+-----------+
+    |Total             | 112|   0|  112|          0|
+    +------------------+----+----+-----+-----------+
 
 
 
@@ -170,24 +152,22 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------------+-----+-----+------------+----------------------+--------------+
-|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
-+----------------------+-----+-----+------------+----------------------+--------------+
-|ap_clk                |  in |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|ap_rst                |  in |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|ap_start              |  in |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|ap_done               | out |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|ap_idle               | out |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|ap_ready              | out |    1| ap_ctrl_hs |      Gamelogic2      | return value |
-|rst                   |  in |    1|   ap_none  |          rst         |    scalar    |
-|btn1                  |  in |    1|   ap_none  |         btn1         |    scalar    |
-|btn2                  |  in |    1|   ap_none  |         btn2         |    scalar    |
-|btn3                  |  in |    1|   ap_none  |         btn3         |    scalar    |
-|lose                  | out |    1|   ap_none  |         lose         |    pointer   |
-|time_remaining_out_V  | out |   10|   ap_none  | time_remaining_out_V |    pointer   |
-|time_remaining_in_V   |  in |   10|   ap_none  |  time_remaining_in_V |    scalar    |
-|verify1_out           | out |    1|   ap_none  |      verify1_out     |    pointer   |
-|verify2_out           | out |    1|   ap_none  |      verify2_out     |    pointer   |
-|verify3_out           | out |    1|   ap_none  |      verify3_out     |    pointer   |
-+----------------------+-----+-----+------------+----------------------+--------------+
++-------------------+-----+-----+------------+-------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|ap_done            | out |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |     Gamelogic2    | return value |
+|btn0               |  in |    1|   ap_none  |        btn0       |    scalar    |
+|btn1               |  in |    1|   ap_none  |        btn1       |    scalar    |
+|btn2               |  in |    1|   ap_none  |        btn2       |    scalar    |
+|btn3               |  in |    1|   ap_none  |        btn3       |    scalar    |
+|center_line_out_V  | out |   10|   ap_none  | center_line_out_V |    pointer   |
+|center_line_in_V   |  in |   10|   ap_none  |  center_line_in_V |    scalar    |
+|right_out          | out |    1|   ap_none  |     right_out     |    pointer   |
+|right_in           |  in |    1|   ap_none  |      right_in     |    scalar    |
++-------------------+-----+-----+------------+-------------------+--------------+
 

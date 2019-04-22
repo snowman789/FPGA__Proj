@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1 opened at Sun Apr 21 20:24:42 -0400 2019
+INFO-FLOW: Workspace D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1 opened at Mon Apr 22 17:42:27 -0400 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -46,12 +46,12 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.115 sec.
+Command           ap_source done; 0.114 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.159 sec.
+Command         ap_source done; 0.171 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.162 sec.
-Command     ap_source done; 0.162 sec.
+Command       ap_source done; 0.174 sec.
+Command     ap_source done; 0.175 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -83,7 +83,7 @@ Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {F
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.295 sec.
+Command   open_solution done; 0.316 sec.
 Execute   set_part xc7z020clg400-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
 Execute       get_default_platform 
@@ -124,81 +124,81 @@ Execute       is_encrypted Interface2/Interface2.cpp
 Execute       get_default_platform 
 INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Interface2/Interface2.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Interface2/Interface2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp
-Command       clang done; 1.04 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.596 sec.
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "Interface2/Interface2.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E Interface2/Interface2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp
+Command       clang done; 0.988 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.606 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp"  -o "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/useless.bc
-Command       clang done; 1.416 sec.
-INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+Execute       clang -syntaxcheck -src D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp"  -o "D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.391 sec.
+INFO-FLOW: Done: GCC PP time: 3 seconds per iteration
 Execute       list_core -type functional_unit 
-Execute       tidy_31 xilinx-systemc-detector C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 -directive=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.554 sec.
+Execute       tidy_31 xilinx-systemc-detector D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 -directive=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.565 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
-Execute       tidy_31 xilinx-directive2pragma C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 -directive=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/all.directive.json 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.541 sec.
+Execute       tidy_31 xilinx-directive2pragma D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 -directive=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/all.directive.json -quiet -fix-errors D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.58 sec.
 Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.diag.yml C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.out.log 2> C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.err.log 
-Command       ap_eval done; 0.496 sec.
-Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 
-Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.out.log 2> C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.err.log 
-Command         ap_eval done; 0.786 sec.
-Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-legacy-rewriter.Interface2.pp.0.cpp.out.log 2> C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-legacy-rewriter.Interface2.pp.0.cpp.err.log 
-Command         ap_eval done; 0.538 sec.
-Command       tidy_31 done; 1.331 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.4 seconds per iteration
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.diag.yml D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.out.log 2> D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-dataflow-lawyer.Interface2.pp.0.cpp.err.log 
+Command       ap_eval done; 0.522 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.out.log 2> D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/tidy-3.1.Interface2.pp.0.cpp.err.log 
+Command         ap_eval done; 0.693 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-legacy-rewriter.Interface2.pp.0.cpp.out.log 2> D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/xilinx-legacy-rewriter.Interface2.pp.0.cpp.err.log 
+Command         ap_eval done; 0.521 sec.
+Command       tidy_31 done; 1.217 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.3 seconds per iteration
 INFO-FLOW: Pragma Handling...
-Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.1.cpp std=gnu++98 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 1.378 sec.
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.473 sec.
 Execute       get_default_platform 
 INFO-FLOW: Processing labels
-Execute       clang -src C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bc" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bc
-Command       clang done; 1.476 sec.
+Execute       clang -src D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bc
+Command       clang done; 1.546 sec.
 INFO-FLOW: Linking Debug ...
-Execute       llvm-ld C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.g.bc -hls-opt -except-internalize Interface2 -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.081 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.652 ; gain = 17.164
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.652 ; gain = 17.164
+Execute       llvm-ld D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.g.bc -hls-opt -except-internalize Interface2 -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.997 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.504 ; gain = 17.605
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.504 ; gain = 17.605
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.0.bc -f 
-Execute         llvm-ld C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 0.529 sec.
+Execute         transform -promote-dbg-pointer D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.505 sec.
 INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top Interface2 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.0.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:48).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 111.777 ; gain = 26.289
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top Interface2 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.0.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:72).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 112.242 ; gain = 27.344
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
-Execute         transform -syn-check C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 117.184 ; gain = 31.695
+Execute         transform -syn-check D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.prechk.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 117.207 ; gain = 32.309
 INFO-FLOW: Compiler optimizing ...
-INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc to C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.g.1.bc to D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
-Execute         transform -hls -tmp C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-Command         transform done; 0.109 sec.
-INFO-FLOW: Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 142.852 ; gain = 57.363
-INFO-FLOW: Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.2.bc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Execute         transform -hls -tmp D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 Command         transform done; 0.136 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 144.688 ; gain = 59.199
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.1.tmp.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 143.770 ; gain = 58.871
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.2.bc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 0.159 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 145.344 ; gain = 60.445
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.119 sec.
-Command     elaborate done; 11.405 sec.
+Command       opt_and_import_c done; 1.136 sec.
+Command     elaborate done; 11.363 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -216,6 +216,7 @@ INFO-FLOW: Preprocessing Module: Interface2 ...
 Execute       set_default_model Interface2 
 Execute       cdfg_preprocess -model Interface2 
 Execute       rtl_gen_preprocess Interface2 
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
 INFO-FLOW: Model list for synthesis: Interface2
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Interface2' 
@@ -224,9 +225,9 @@ Execute       set_default_model Interface2
 Execute       schedule -model Interface2 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 12.471 seconds; current allocated memory: 93.981 MB.
-Execute       report -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.sched.rpt -verbose -f 
-Execute       db_write -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.sched.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 12.504 seconds; current allocated memory: 94.517 MB.
+Execute       report -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.sched.rpt -verbose -f 
+Execute       db_write -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.sched.adb -f 
 INFO-FLOW: Finish scheduling Interface2.
 Execute       set_default_model Interface2 
 Execute       bind -model Interface2 
@@ -238,9 +239,9 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.062 seconds; current allocated memory: 94.150 MB.
-Execute       report -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.bind.rpt -verbose -f 
-Execute       db_write -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bind.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.098 seconds; current allocated memory: 94.785 MB.
+Execute       report -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.bind.rpt -verbose -f 
+Execute       db_write -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.bind.adb -f 
 INFO-FLOW: Finish binding Interface2.
 Execute       get_model_list Interface2 -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
@@ -251,7 +252,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'Interface2'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute       get_config_rtl -prefix 
 Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model Interface2 -vendor xilinx -mg_file C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute       create_rtl_model Interface2 -vendor xilinx -mg_file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
 INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
@@ -260,40 +261,29 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 
 WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
 INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
 WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
-INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/lose' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/time_remaining_V' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/verify1' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/verify2' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/verify3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
-WARNING: [RTGEN 206-101] Port 'Interface2/lose' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Port 'Interface2/verify1' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Port 'Interface2/verify2' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Port 'Interface2/verify3' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
-INFO: [HLS 200-111]  Elapsed time: 0.158 seconds; current allocated memory: 94.369 MB.
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute       gen_rtl Interface2 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/syn/systemc/Interface2 -synmodules Interface2 
-Execute       gen_rtl Interface2 -istop -style xilinx -f -lang vhdl -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/syn/vhdl/Interface2 
-Execute       gen_rtl Interface2 -istop -style xilinx -f -lang vlog -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/syn/verilog/Interface2 
-Execute       export_constraint_db -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl -f -tool general 
-Execute       report -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.design.xml -verbose -f -dv 
-Execute       report -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.sdaccel.xml -verbose -f -sdaccel 
-Execute       gen_tb_info Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2 -p C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db 
-Execute       report -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/syn/report/Interface2_csynth.rpt -f 
-Execute       report -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/syn/report/Interface2_csynth.xml -f -x 
-Execute       report -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.rpt -verbose -f 
-Execute       db_write -model Interface2 -o C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.adb -f 
+INFO: [HLS 200-111]  Elapsed time: 0.185 seconds; current allocated memory: 95.099 MB.
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Interface2 -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/syn/systemc/Interface2 -synmodules Interface2 
+Execute       gen_rtl Interface2 -istop -style xilinx -f -lang vhdl -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/syn/vhdl/Interface2 
+Execute       gen_rtl Interface2 -istop -style xilinx -f -lang vlog -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/syn/verilog/Interface2 
+Execute       export_constraint_db -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl -f -tool general 
+Execute       report -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.design.xml -verbose -f -dv 
+Execute       report -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2 -p D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db 
+Execute       report -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/syn/report/Interface2_csynth.rpt -f 
+Execute       report -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/syn/report/Interface2_csynth.xml -f -x 
+Execute       report -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.verbose.rpt -verbose -f 
+Execute       db_write -model Interface2 -o D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.adb -f 
 Execute       sc_get_clocks Interface2 
 Execute       get_config_export -vivado_clock 
 Execute       sc_get_portdomain Interface2 
 INFO-FLOW: Model list for RTL component generation: Interface2
 INFO-FLOW: Handling components in module [Interface2] ... 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
 INFO-FLOW: Append model Interface2
 INFO-FLOW: Generating RTL model list ...
 INFO-FLOW: All models in this session: Interface2
@@ -305,15 +295,15 @@ INFO-FLOW: RTL Generation done.
 INFO-FLOW: CAS Generation done.
 INFO-FLOW: CBC Generation done.
 INFO-FLOW: DBG:CMD: auto_generate_csynth_design
-INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -328,29 +318,28 @@ Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/inte
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.103 sec.
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Command           ap_source done; 0.145 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.147 sec.
+Command         ap_source done; 0.148 sec.
 Command       ap_source done; 0.148 sec.
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
-INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -365,65 +354,65 @@ Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/inte
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.103 sec.
+Command             ap_source done; 0.112 sec.
 Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source done; 0.143 sec.
+Command           ap_source done; 0.155 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.145 sec.
-Command       ap_source done; 0.146 sec.
+Command         ap_source done; 0.158 sec.
+Command       ap_source done; 0.158 sec.
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=Interface2 xml_exists=0
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       export_impl_rtl
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=14
-INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=10
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=1 #gSsdmPorts=14
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=16
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=7
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=1 #gSsdmPorts=16
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_export -xo 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
 Execute       sc_get_clocks Interface2 
-Execute       source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute       get_config_sdx -target 
 Execute       get_config_sdx -profile 
 Execute       ::config_rtl 
-INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 144.688 ; gain = 59.199
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 145.344 ; gain = 60.445
 INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
 INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
 INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
-Command     autosyn done; 1.261 sec.
+Command     autosyn done; 1.432 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 12.684 sec.
-Command ap_source done; 13.057 sec.
+Command   csynth_design done; 12.811 sec.
+Command ap_source done; 13.201 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1 opened at Sun Apr 21 20:25:08 -0400 2019
+INFO-FLOW: Workspace D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1 opened at Mon Apr 22 17:42:53 -0400 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -471,12 +460,12 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.109 sec.
+Command           ap_source done; 0.106 sec.
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.15 sec.
+Command         ap_source done; 0.155 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.152 sec.
-Command     ap_source done; 0.153 sec.
+Command       ap_source done; 0.159 sec.
+Command     ap_source done; 0.16 sec.
 Execute     open_platform DefaultPlatform 
 Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
@@ -508,7 +497,7 @@ Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {F
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.28 sec.
+Command   open_solution done; 0.292 sec.
 Execute   export_design -rtl verilog -format ip_catalog 
 Execute     get_config_export -acc 
 Execute     get_config_export -clock_margin 
@@ -530,21 +519,21 @@ Execute     get_config_export -version
 Execute     get_config_export -xo 
 Execute     config_export -format=ip_catalog -rtl=verilog 
 INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute     get_config_export -vivado_clock 
 Execute     get_top 
 Execute     get_config_sdx -target 
 Execute     get_config_rtl -auto_prefix 
 Execute     get_config_sdx -target 
 INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
@@ -559,7 +548,398 @@ Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interf
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.104 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.144 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.148 sec.
+Command     ap_source done; 0.148 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.147 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+Command     ap_source done; 0.15 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=Interface2 xml_exists=1
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=16
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=16
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.118 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.168 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.171 sec.
+Command     ap_source done; 0.172 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/impl/ip/pack.bat
+Command   export_design done; 8.732 sec.
+Command ap_source done; 9.028 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1 opened at Mon Apr 22 17:43:17 -0400 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.14 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.201 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.206 sec.
+Command     ap_source done; 0.206 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.363 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.14 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.202 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.206 sec.
+Command     ap_source done; 0.206 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.116 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.167 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.17 sec.
+Command     ap_source done; 0.17 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=Interface2 xml_exists=1
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=16
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=16
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
 Command         ap_source done; 0.145 sec.
 Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
@@ -567,130 +947,7 @@ Command       ap_source done; 0.148 sec.
 Command     ap_source done; 0.148 sec.
 Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
-INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.105 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.144 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.147 sec.
-Command     ap_source done; 0.147 sec.
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=Interface2 xml_exists=1
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       export_impl_rtl
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.compgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=14
-INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=14
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_sdx -target 
-INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_top_info
-INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=Interface2
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
-INFO-FLOW: DBG:CMD:       generate_ipi_example_script
-INFO-FLOW: DBG:CMD:       generate_syn_sh
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD:       generate_imp_constraints
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.constraint.tcl 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/Interface2.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
-INFO-FLOW: DBG:CMD:       copy-tb-data-files
-INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source done; 0.104 sec.
-Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.145 sec.
-Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.147 sec.
-Command     ap_source done; 0.148 sec.
-Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-INFO-FLOW: DBG:CMD:     exec C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/ip/pack.bat
-Command   export_design done; 7.167 sec.
-Command ap_source done; 7.453 sec.
+INFO-FLOW: DBG:CMD:     exec D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/impl/ip/pack.bat
+Command   export_design done; 8.884 sec.
+Command ap_source done; 9.251 sec.
 Execute cleanup_all 

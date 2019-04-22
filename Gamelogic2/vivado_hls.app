@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="Gamelogic2" name="Gamelogic2">
+<project xmlns="com.autoesl.autopilot.project" name="Gamelogic2" top="Gamelogic2">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

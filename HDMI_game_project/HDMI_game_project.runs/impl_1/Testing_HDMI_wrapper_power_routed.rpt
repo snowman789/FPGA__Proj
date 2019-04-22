@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Apr 21 20:29:50 2019
-| Host             : EmbSys18 running 64-bit major release  (build 9200)
+| Date             : Mon Apr 22 17:47:37 2019
+| Host             : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 | Command          : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 | Design           : Testing_HDMI_wrapper
 | Device           : xc7z020clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.365        |
+| Total On-Chip Power (W)  | 0.359        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.255        |
+| Dynamic (W)              | 0.249        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 80.8         |
-| Junction Temperature (C) | 29.2         |
+| Max Ambient (C)          | 80.9         |
+| Junction Temperature (C) | 29.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -49,23 +49,21 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+-------------------------+-----------+----------+-----------+-----------------+
-| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
-+-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.007 |       14 |       --- |             --- |
-| Slice Logic             |     0.002 |     1605 |       --- |             --- |
-|   LUT as Logic          |     0.002 |      564 |     53200 |            1.06 |
-|   Register              |    <0.001 |      777 |    106400 |            0.73 |
-|   CARRY4                |    <0.001 |       76 |     13300 |            0.57 |
-|   Others                |     0.000 |       40 |       --- |             --- |
-|   LUT as Shift Register |     0.000 |        4 |     17400 |            0.02 |
-| Signals                 |     0.002 |     1171 |       --- |             --- |
-| MMCM                    |     0.107 |        1 |         4 |           25.00 |
-| DSPs                    |     0.002 |        2 |       220 |            0.91 |
-| I/O                     |     0.135 |       15 |       125 |           12.00 |
-| Static Power            |     0.110 |          |           |                 |
-| Total                   |     0.365 |          |           |                 |
-+-------------------------+-----------+----------+-----------+-----------------+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.006 |       14 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1200 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      457 |     53200 |            0.86 |
+|   Register     |    <0.001 |      547 |    106400 |            0.51 |
+|   CARRY4       |    <0.001 |       53 |     13300 |            0.40 |
+|   Others       |     0.000 |       26 |       --- |             --- |
+| Signals        |    <0.001 |      861 |       --- |             --- |
+| MMCM           |     0.107 |        1 |         4 |           25.00 |
+| I/O            |     0.135 |       15 |       125 |           12.00 |
+| Static Power   |     0.110 |          |           |                 |
+| Total          |     0.359 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -74,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.014 |      0.008 |
+| Vccint    |       1.000 |     0.016 |       0.008 |      0.008 |
 | Vccaux    |       1.800 |     0.070 |       0.059 |      0.011 |
 | Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -161,10 +159,10 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Testing_HDMI_wrapper |     0.255 |
-|   Testing_HDMI_i     |     0.255 |
-|     Gamelogic2_0     |     0.006 |
-|       inst           |     0.006 |
+| Testing_HDMI_wrapper |     0.249 |
+|   Testing_HDMI_i     |     0.249 |
+|     Gamelogic2_0     |     0.002 |
+|       inst           |     0.002 |
 |     HDMI_test_0      |     0.139 |
 |       inst           |     0.139 |
 |     clk_wiz_0        |     0.108 |

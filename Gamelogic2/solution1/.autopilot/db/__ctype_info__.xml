@@ -1,6 +1,6 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>rst</name>
+<name>btn0</name>
 <CType>
 <TypeName>bool</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -40,17 +40,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>lose</name>
-<CType>
-<TypeName>bool</TypeName>
-<TypeWidth>1</TypeWidth>
-<PhysicalWidth>1</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>time_remaining_out_V</name>
+<name>center_line_out_V</name>
 <CType>
 <TypeName>ap_uint 10</TypeName>
 <TypeWidth>10</TypeWidth>
@@ -60,7 +50,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>time_remaining_in_V</name>
+<name>center_line_in_V</name>
 <CType>
 <TypeName>ap_uint 10</TypeName>
 <TypeWidth>10</TypeWidth>
@@ -70,7 +60,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>verify1_out</name>
+<name>right_out</name>
 <CType>
 <TypeName>bool</TypeName>
 <TypeWidth>1</TypeWidth>
@@ -80,17 +70,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>verify2_out</name>
-<CType>
-<TypeName>bool</TypeName>
-<TypeWidth>1</TypeWidth>
-<PhysicalWidth>1</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>verify3_out</name>
+<name>right_in</name>
 <CType>
 <TypeName>bool</TypeName>
 <TypeWidth>1</TypeWidth>

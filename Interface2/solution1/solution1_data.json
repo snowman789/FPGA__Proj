@@ -21,7 +21,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "1",
+    "Latency": "3",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -41,7 +41,7 @@
     "Vhdl": ["impl\/vhdl\/Interface2.vhd"],
     "Verilog": ["impl\/verilog\/Interface2.v"],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "C:\/Users\/itr9fc\/Desktop\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
+    "DesignXml": "D:\/FPGA_WORKSPACES\/FPGA_Final_Project\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -96,16 +96,7 @@
       "polarity": "ACTIVE_HIGH",
       "ctype": {"RST": {"Type": "bool"}}
     },
-    "lose": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "time_remaining_V": {
+    "center_line_V": {
       "type": "data",
       "dir": "in",
       "width": "10",
@@ -114,25 +105,7 @@
           "Width": "10"
         }}
     },
-    "verify1": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "verify2": {
-      "type": "data",
-      "dir": "in",
-      "width": "1",
-      "ctype": {"DATA": {
-          "Type": "null",
-          "Width": "1"
-        }}
-    },
-    "verify3": {
+    "right_r": {
       "type": "data",
       "dir": "in",
       "width": "1",
@@ -205,23 +178,11 @@
       "dir": "out",
       "width": "8"
     },
-    "lose": {
-      "dir": "in",
-      "width": "1"
-    },
-    "time_remaining_V": {
+    "center_line_V": {
       "dir": "in",
       "width": "10"
     },
-    "verify1": {
-      "dir": "in",
-      "width": "1"
-    },
-    "verify2": {
-      "dir": "in",
-      "width": "1"
-    },
-    "verify3": {
+    "right_r": {
       "dir": "in",
       "width": "1"
     }
@@ -264,32 +225,14 @@
       "handshakeRef": "ap_none",
       "firstOutLatency": "0"
     },
-    "lose": {
-      "interfaceRef": "lose",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "time_remaining_V": {
-      "interfaceRef": "time_remaining_V",
+    "center_line_V": {
+      "interfaceRef": "center_line_V",
       "dir": "in",
       "dataWidth": "10",
       "handshakeRef": "ap_none"
     },
-    "verify1": {
-      "interfaceRef": "verify1",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "verify2": {
-      "interfaceRef": "verify2",
-      "dir": "in",
-      "dataWidth": "1",
-      "handshakeRef": "ap_none"
-    },
-    "verify3": {
-      "interfaceRef": "verify3",
+    "right_r": {
+      "interfaceRef": "right_r",
       "dir": "in",
       "dataWidth": "1",
       "handshakeRef": "ap_none"
@@ -299,21 +242,23 @@
     "Hierarchy": {"ModuleName": "Interface2"},
     "Metrics": {"Interface2": {
         "Latency": {
-          "LatencyBest": "1",
-          "LatencyAvg": "1",
-          "LatencyWorst": "1",
-          "PipelineII": "2",
+          "LatencyBest": "3",
+          "LatencyAvg": "5",
+          "LatencyWorst": "5",
+          "PipelineIIMin": "4",
+          "PipelineIIMax": "6",
+          "PipelineII": "4 ~ 6",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "2.764"
+          "Estimate": "2.748"
         },
         "Area": {
-          "FF": "22",
-          "LUT": "114",
+          "FF": "57",
+          "LUT": "202",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
@@ -329,7 +274,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-21 20:24:55 -0400",
+    "Time": "2019-04-22 17:42:40 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

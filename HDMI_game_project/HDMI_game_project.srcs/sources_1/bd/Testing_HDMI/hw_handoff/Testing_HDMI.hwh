@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 21 20:27:04 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 22 17:43:41 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -64,14 +64,14 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1904212025" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
+    <MODULE COREREVISION="1904221719" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Gamelogic2_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="undef"/>
+        <PARAMETER NAME="latency" VALUE="1"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -90,7 +90,7 @@
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="rst" SIGIS="data" SIGNAME="clean_button_0_clean">
+        <PORT DIR="I" NAME="btn0" SIGIS="data" SIGNAME="clean_button_0_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clean_button_0" PORT="clean"/>
           </CONNECTIONS>
@@ -110,35 +110,26 @@
             <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="lose" SIGIS="data" SIGNAME="Gamelogic2_0_lose">
+        <PORT DIR="O" LEFT="9" NAME="center_line_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface2_0" PORT="lose"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_in_V"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="center_line_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="time_remaining_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+        <PORT DIR="I" LEFT="9" NAME="center_line_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_in_V"/>
-            <CONNECTION INSTANCE="Interface2_0" PORT="time_remaining_V"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_out_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="time_remaining_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+        <PORT DIR="O" NAME="right_out" SIGIS="data" SIGNAME="Gamelogic2_0_right_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_out_V"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_in"/>
+            <CONNECTION INSTANCE="Interface2_0" PORT="right_r"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="verify1_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify1_out">
+        <PORT DIR="I" NAME="right_in" SIGIS="data" SIGNAME="Gamelogic2_0_right_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface2_0" PORT="verify1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="verify2_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify2_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface2_0" PORT="verify2"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="verify3_out" SIGIS="data" SIGNAME="Gamelogic2_0_verify3_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Interface2_0" PORT="verify3"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_out"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -249,14 +240,14 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904212025" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
+    <MODULE COREREVISION="1904221743" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface2_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="1"/>
+        <PARAMETER NAME="latency" VALUE="3"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -300,29 +291,14 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Blue"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="lose" SIGIS="data" SIGNAME="Gamelogic2_0_lose">
+        <PORT DIR="I" LEFT="9" NAME="center_line_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="lose"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_out_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="time_remaining_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_time_remaining_out_V">
+        <PORT DIR="I" NAME="right_r" SIGIS="data" SIGNAME="Gamelogic2_0_right_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="time_remaining_out_V"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="verify1" SIGIS="data" SIGNAME="Gamelogic2_0_verify1_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify1_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="verify2" SIGIS="data" SIGNAME="Gamelogic2_0_verify2_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify2_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="verify3" SIGIS="data" SIGNAME="Gamelogic2_0_verify3_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="verify3_out"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_out"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -358,7 +334,7 @@
         <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_0_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="btn0"/>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="rst"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

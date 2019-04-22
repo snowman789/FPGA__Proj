@@ -22437,30 +22437,53 @@ struct s1_t {
 } board;
 
 void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
-  bool lose, ap_uint<9> time_remaining, bool verify1, bool verify2, bool verify3 ) {
+   ap_uint<9> center_line, bool right ) {
 #pragma HLS inline
 
- if(x> 200)
- {
+ if( x < 320 && y < 40 && !right ){
   *XY_Red = 255;
+  *XY_Blue = 255;
+  *XY_Green = 255;
+ }
+
+ if( x < 320 && y < 40 && right ){
+  *XY_Red = 0;
   *XY_Blue = 0;
   *XY_Green = 0;
  }
- else{
+
+
+ if( x > 320 && y < 40 && right ){
+  *XY_Red = 255;
+  *XY_Blue = 255;
+  *XY_Green = 255;
+ }
+ if( x > 320 && y < 40 && !right ){
   *XY_Red = 0;
-    *XY_Blue = 200;
-    *XY_Green = 255;
+  *XY_Blue = 0;
+  *XY_Green = 0;
  }
 
- if(x < time_remaining && y < 100){
-     *XY_Red = 0;
-     *XY_Blue = 255;
-     *XY_Green = 0;
- }
+
+
+
+ if( y >= 40 && x > center_line && x < 640){
+   *XY_Red = 255;
+   *XY_Blue = 0;
+   *XY_Green = 0;
+
+  }
+ if( y >= 40 && x < center_line){
+    *XY_Red = 0;
+    *XY_Blue = 0;
+    *XY_Green = 255;
+
+   }
+
 }
 
 void Interface2( ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
-  bool lose, ap_uint<10> time_remaining, bool verify1, bool verify2, bool verify3) {
+   ap_uint<10> center_line, bool right) {
 
 #pragma HLS INTERFACE ap_none port=&x
 #pragma HLS INTERFACE ap_none port=&y
@@ -22468,7 +22491,8 @@ void Interface2( ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *X
 #pragma HLS INTERFACE ap_none port=&XY_Red
 #pragma HLS INTERFACE ap_none port=&XY_Green
 #pragma HLS INTERFACE ap_none port=&XY_Blue
- retBit(x, y, XY_Red, XY_Green, XY_Blue, lose, time_remaining, verify1, verify2, verify3);
+#pragma HLS INTERFACE ap_none port=&center_line
+ retBit(x, y, XY_Red, XY_Green, XY_Blue, center_line, right);
 
 
 }

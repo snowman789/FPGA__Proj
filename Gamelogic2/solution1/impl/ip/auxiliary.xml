@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Gamelogic2" xd:componentRef="Gamelogic2" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Gamelogic2" xd:componentRef="Gamelogic2" xd:initiationInterval="37" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
-  <xd:arg xd:name="rst" xd:originalName="rst" xd:direction="in" xd:interfaceRef="rst" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="btn0" xd:originalName="btn0" xd:direction="in" xd:interfaceRef="btn0" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn1" xd:originalName="btn1" xd:direction="in" xd:interfaceRef="btn1" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn2" xd:originalName="btn2" xd:direction="in" xd:interfaceRef="btn2" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn3" xd:originalName="btn3" xd:direction="in" xd:interfaceRef="btn3" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
-  <xd:arg xd:name="*(lose)" xd:originalName="lose" xd:direction="out" xd:interfaceRef="lose" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="1"/>
-  <xd:arg xd:name="*(time_remaining_out)" xd:originalName="time_remaining_out" xd:direction="out" xd:interfaceRef="time_remaining_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="1"/>
-  <xd:arg xd:name="time_remaining_in" xd:originalName="time_remaining_in" xd:direction="in" xd:interfaceRef="time_remaining_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="1"/>
-  <xd:arg xd:name="*(verify1_out)" xd:originalName="verify1_out" xd:direction="out" xd:interfaceRef="verify1_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="1"/>
-  <xd:arg xd:name="*(verify2_out)" xd:originalName="verify2_out" xd:direction="out" xd:interfaceRef="verify2_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="1"/>
-  <xd:arg xd:name="*(verify3_out)" xd:originalName="verify3_out" xd:direction="out" xd:interfaceRef="verify3_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="1"/>
-  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="1454" xd:FF="1322" xd:BRAM="0" xd:DSP="2"/>
+  <xd:arg xd:name="*(center_line_out)" xd:originalName="center_line_out" xd:direction="out" xd:interfaceRef="center_line_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="36"/>
+  <xd:arg xd:name="center_line_in" xd:originalName="center_line_in" xd:direction="in" xd:interfaceRef="center_line_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="36"/>
+  <xd:arg xd:name="*(right_out)" xd:originalName="right_out" xd:direction="out" xd:interfaceRef="right_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
+  <xd:arg xd:name="right_in" xd:originalName="right_in" xd:direction="in" xd:interfaceRef="right_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="36" xd:average-case="19"/>
+  <xd:resourceEstimates xd:LUT="635" xd:FF="506" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

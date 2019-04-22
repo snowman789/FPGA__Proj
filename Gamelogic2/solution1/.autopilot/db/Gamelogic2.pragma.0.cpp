@@ -22116,30 +22116,17 @@ inline bool operator!=(
 # 350 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\ap_int.h" 2
 # 3 "Gamelogic2/Gamelogic2.cpp" 2
 
-struct s1_t {
- ap_uint<2> a;
- ap_uint<2> b;
- ap_uint<2> c;
- ap_uint<2> d;
- ap_uint<2> e;
- ap_uint<2> f;
- ap_uint<2> g;
- ap_uint<2> h;
- ap_uint<2> i;
-} board;
 
-unsigned int decrement_value = 1;
-unsigned int RandSeed = 7;
-unsigned int slow_down_clock = 0;
 
 bool Xturn = 1;
 bool newRound = 0;
 bool btn1_verify;
 bool btn2_verify;
 bool btn3_verify;
-
-
-
+unsigned int RandSeed = 7;
+unsigned int decrement_value = 1;
+unsigned int slow_down_clock = 0;
+int time_remaining = 640;
 
 bool InitializeGame(ap_uint<10> *time_remaining_out, bool *lose) {
  decrement_value = 1;
@@ -22153,16 +22140,7 @@ bool InitializeGame(ap_uint<10> *time_remaining_out, bool *lose) {
  return 1;
 
 }
-
-void DecrementTimer( ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in){
- slow_down_clock += 1;
- if(slow_down_clock % 1000000 == 0)
-  *time_remaining_out = time_remaining_in - decrement_value;
-
-
-}
-
-
+# 39 "Gamelogic2/Gamelogic2.cpp"
 unsigned int RandNumGenerator(unsigned int last_num){
  return ((13*last_num + 100) % 100) ;
 }
@@ -22183,56 +22161,44 @@ bool CheckUserInput(bool btn1, bool btn2, bool btn3){
   return 0;
 }
 
-bool UserLost( ap_uint<10> time_remaining_in ){
- if(time_remaining_in < 0 )
-  return 1;
- else
-  return 0;
-}
 
-void Gamelogic2(bool rst, bool btn1, bool btn2, bool btn3, bool *lose, ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in,
-  bool *verify1_out, bool *verify2_out, bool *verify3_out) {
-#pragma HLS INTERFACE ap_none port=&rst
+void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, ap_uint<10> *center_line_out, ap_uint<10> center_line_in, bool *right_out, bool right_in) {
+#pragma HLS INTERFACE ap_none port=&btn0
 #pragma HLS INTERFACE ap_none port=&btn1
 #pragma HLS INTERFACE ap_none port=&btn2
 #pragma HLS INTERFACE ap_none port=&btn3
-#pragma HLS INTERFACE ap_none port=&lose
-#pragma HLS INTERFACE ap_none port=&verify1_out
-#pragma HLS INTERFACE ap_none port=&verify2_out
-#pragma HLS INTERFACE ap_none port=&verify3_out
+#pragma HLS INTERFACE ap_none port=&right_out
+#pragma HLS INTERFACE ap_none port=&right_in
+#pragma HLS INTERFACE ap_none port=&center_line_out
+#pragma HLS INTERFACE ap_none port=&center_line_in
 
-#pragma HLS INTERFACE ap_none port=&time_remaining_out
-#pragma HLS INTERFACE ap_none port=&time_remaining_in
+ int to_add = center_line_in;
 
+ if(right_in){
+  if(btn0)
+   to_add -= 10;
+  else if(btn2)
+   to_add += 10;
+  else if(btn1)
+   to_add += 10;
+  else if(btn3)
+   to_add -= 10;
 
+ }
+ else {
+  if(btn0)
+   to_add += 10;
+  else if(btn2)
+   to_add -= 10;
+  else if(btn1)
+   to_add -= 10;
+  else if(btn3)
+   to_add += 10;
 
-
-while(1){
- *verify1_out = btn1_verify;
- *verify2_out = btn2_verify;
- *verify3_out = btn3_verify;
-
- if(rst){
-  InitializeGame(time_remaining_out, lose );
  }
 
-  DecrementTimer(time_remaining_out, time_remaining_in );
+ if(btn0 || btn1 || btn2 || btn3)
+   *right_out = Generatebool();
+ *center_line_out = to_add;
 
-
- if(newRound){
-  btn1_verify = Generatebool();
-  btn2_verify = Generatebool();
-  btn3_verify = Generatebool();
-  *verify1_out = btn1_verify;
-  *verify2_out = btn2_verify;
-  *verify3_out = btn3_verify;
-  decrement_value += 2;
-  newRound = 0;
- }
-
- newRound = CheckUserInput(btn1, btn2, btn3);
-
- *lose = UserLost(time_remaining_in);
-# 129 "Gamelogic2/Gamelogic2.cpp"
-}
 }

@@ -86,14 +86,29 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 6 \
-    name time_remaining_V \
+    name center_line_V \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_time_remaining_V \
+    corename dc_center_line_V \
     op interface \
-    ports { time_remaining_V { I 10 vector } } \
+    ports { center_line_V { I 10 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 7 \
+    name right_r \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_right_r \
+    op interface \
+    ports { right_r { I 1 bit } } \
 } "
 }
 

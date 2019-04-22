@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Interface2:1.0
-// IP Revision: 1904212025
+// IP Revision: 1904221743
 
 (* X_CORE_INFO = "Interface2,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "Testing_HDMI_Interface2_0_0,Interface2,{}" *)
-(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904212025,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904221743,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Interface2_0_0 (
@@ -67,11 +67,8 @@ module Testing_HDMI_Interface2_0_0 (
   XY_Red_V,
   XY_Green_V,
   XY_Blue_V,
-  lose,
-  time_remaining_V,
-  verify1,
-  verify2,
-  verify3
+  center_line_V,
+  right_r
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
@@ -111,22 +108,13 @@ output wire [7 : 0] XY_Green_V;
 e false}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 XY_Blue_V DATA" *)
 output wire [7 : 0] XY_Blue_V;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME lose, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 lose DATA" *)
-input wire lose;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME time_remaining_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum \
-{}} value false}}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 time_remaining_V DATA" *)
-input wire [9 : 0] time_remaining_V;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME verify1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 verify1 DATA" *)
-input wire verify1;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME verify2, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 verify2 DATA" *)
-input wire verify2;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME verify3, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 verify3 DATA" *)
-input wire verify3;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME center_line_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}}\
+ value false}}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 center_line_V DATA" *)
+input wire [9 : 0] center_line_V;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME right_r, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 right_r DATA" *)
+input wire right_r;
 
   Interface2 inst (
     .ap_clk(ap_clk),
@@ -140,10 +128,7 @@ input wire verify3;
     .XY_Red_V(XY_Red_V),
     .XY_Green_V(XY_Green_V),
     .XY_Blue_V(XY_Blue_V),
-    .lose(lose),
-    .time_remaining_V(time_remaining_V),
-    .verify1(verify1),
-    .verify2(verify2),
-    .verify3(verify3)
+    .center_line_V(center_line_V),
+    .right_r(right_r)
   );
 endmodule

@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,22 +71,22 @@ set rc [catch {
   set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/wt [current_project]
-  set_property parent.project_path C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr [current_project]
+  set_property webtalk.parent_dir D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/wt [current_project]
+  set_property parent.project_path D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/ip
-  C:/Users/itr9fc/Desktop/FPGA__Proj/Gamelogic2/solution1/impl/ip
+  D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/impl/ip
+  D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Gamelogic2/solution1/impl/ip
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
+  set_property ip_output_repo D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.dcp
+  add_files -quiet D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd
+  add_files D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd
   set_param project.isImplRun false
-  read_xdc C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc
+  read_xdc D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc
   set_param project.isImplRun true
   link_design -top Testing_HDMI_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false
