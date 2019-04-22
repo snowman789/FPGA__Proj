@@ -14,9 +14,12 @@ struct s1_t {
 } board;
 
 void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red,  ap_uint<8> *XY_Green,  ap_uint<8> *XY_Blue,
-		 ap_uint<9> center_line, bool right ) {
+		 ap_uint<10> center_line, bool right ) {
 #pragma HLS inline
 	// left
+		*XY_Red = 0;
+		*XY_Blue = 0;
+		*XY_Green = 0;
 	if( x < 320 && y < 40 && !right  ){
 		*XY_Red = 255;
 		*XY_Blue = 255;

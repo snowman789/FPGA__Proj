@@ -243,11 +243,11 @@
     "Metrics": {"Interface2": {
         "Latency": {
           "LatencyBest": "3",
-          "LatencyAvg": "5",
-          "LatencyWorst": "5",
+          "LatencyAvg": "6",
+          "LatencyWorst": "6",
           "PipelineIIMin": "4",
-          "PipelineIIMax": "6",
-          "PipelineII": "4 ~ 6",
+          "PipelineIIMax": "7",
+          "PipelineII": "4 ~ 7",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -257,8 +257,8 @@
           "Estimate": "2.748"
         },
         "Area": {
-          "FF": "57",
-          "LUT": "202",
+          "FF": "42",
+          "LUT": "205",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
@@ -274,7 +274,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-22 17:42:40 -0400",
+    "Time": "2019-04-22 17:55:16 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

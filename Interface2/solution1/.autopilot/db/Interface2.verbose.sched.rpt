@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Interface2'
 ================================================================
-* Date:           Mon Apr 22 17:42:38 2019
+* Date:           Mon Apr 22 17:55:15 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Interface2
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |    3|    5|    3|    5|   none  |
+    |    3|    6|    3|    6|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -65,107 +65,113 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 6
+* Number of FSM states : 7
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 
-	2  / true
+	3  / (!tmp)
+	2  / (tmp)
 2 --> 
-	4  / (!tmp_2)
-	3  / (tmp_2)
+	3  / true
 3 --> 
-	4  / true
+	5  / (!tmp_1)
+	4  / (tmp_1)
 4 --> 
-	6  / (!tmp_3)
-	5  / (tmp_3)
+	5  / true
 5 --> 
-	6  / true
+	7  / (!tmp_2)
+	6  / (tmp_2)
 6 --> 
+	7  / true
+7 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.74>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %x_V), !map !108"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %y_V), !map !114"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Red_V), !map !118"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Green_V), !map !122"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Blue_V), !map !126"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %center_line_V), !map !130"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_r), !map !134"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Interface2_str) nounwind"   --->   Operation 14 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%right_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %right_r)" [Interface2/Interface2.cpp:62]   --->   Operation 15 'read' 'right_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%center_line_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %center_line_V)" [Interface2/Interface2.cpp:62]   --->   Operation 16 'read' 'center_line_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%y_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %y_V)" [Interface2/Interface2.cpp:62]   --->   Operation 17 'read' 'y_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%x_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %x_V)" [Interface2/Interface2.cpp:62]   --->   Operation 18 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %x_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:65]   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %y_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:66]   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Red_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:68]   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Green_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:69]   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Blue_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:70]   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %center_line_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:71]   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp = trunc i10 %center_line_V_read to i9" [Interface2/Interface2.cpp:72]   --->   Operation 25 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (1.77ns)   --->   "%tmp_1 = icmp ult i10 %x_V_read, 320" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72]   --->   Operation 26 'icmp' 'tmp_1' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "br i1 %tmp_1, label %1, label %._crit_edge255.i" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72]   --->   Operation 27 'br' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (1.77ns)   --->   "%p_not_i = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72]   --->   Operation 28 'icmp' 'p_not_i' <Predicate = (tmp_1)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 29 [1/1] (0.97ns)   --->   "%brmerge_i = or i1 %p_not_i, %right_read" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72]   --->   Operation 29 'or' 'brmerge_i' <Predicate = (tmp_1)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %brmerge_i, label %._crit_edge.i, label %2" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72]   --->   Operation 30 'br' <Predicate = (tmp_1)> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:21->Interface2/Interface2.cpp:72]   --->   Operation 31 'write' <Predicate = (tmp_1 & !brmerge_i)> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 -1)" [Interface2/Interface2.cpp:22->Interface2/Interface2.cpp:72]   --->   Operation 32 'write' <Predicate = (tmp_1 & !brmerge_i)> <Delay = 0.00>
-ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:72]   --->   Operation 33 'write' <Predicate = (tmp_1 & !brmerge_i)> <Delay = 0.00>
-ST_1 : Operation 34 [1/1] (0.00ns)   --->   "br label %._crit_edge.i" [Interface2/Interface2.cpp:24->Interface2/Interface2.cpp:72]   --->   Operation 34 'br' <Predicate = (tmp_1 & !brmerge_i)> <Delay = 0.00>
-ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node brmerge247_i)   --->   "%right_not_i = xor i1 %right_read, true" [Interface2/Interface2.cpp:26->Interface2/Interface2.cpp:72]   --->   Operation 35 'xor' 'right_not_i' <Predicate = (tmp_1)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 36 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge247_i = or i1 %p_not_i, %right_not_i" [Interface2/Interface2.cpp:26->Interface2/Interface2.cpp:72]   --->   Operation 36 'or' 'brmerge247_i' <Predicate = (tmp_1)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 37 [1/1] (0.00ns)   --->   "br i1 %brmerge247_i, label %._crit_edge255.i, label %3" [Interface2/Interface2.cpp:26->Interface2/Interface2.cpp:72]   --->   Operation 37 'br' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %x_V), !map !104"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %y_V), !map !110"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Red_V), !map !114"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Green_V), !map !118"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %XY_Blue_V), !map !122"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i10 %center_line_V), !map !126"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_r), !map !130"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Interface2_str) nounwind"   --->   Operation 15 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%right_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %right_r)" [Interface2/Interface2.cpp:65]   --->   Operation 16 'read' 'right_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%center_line_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %center_line_V)" [Interface2/Interface2.cpp:65]   --->   Operation 17 'read' 'center_line_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%y_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %y_V)" [Interface2/Interface2.cpp:65]   --->   Operation 18 'read' 'y_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%x_V_read = call i10 @_ssdm_op_Read.ap_none.i10(i10 %x_V)" [Interface2/Interface2.cpp:65]   --->   Operation 19 'read' 'x_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %x_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:68]   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %y_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:69]   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Red_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:71]   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Green_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:72]   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %XY_Blue_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:73]   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i10 %center_line_V, [8 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind" [Interface2/Interface2.cpp:74]   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:75]   --->   Operation 26 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:21->Interface2/Interface2.cpp:75]   --->   Operation 27 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:22->Interface2/Interface2.cpp:75]   --->   Operation 28 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (1.77ns)   --->   "%tmp = icmp ult i10 %x_V_read, 320" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75]   --->   Operation 29 'icmp' 'tmp' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %tmp, label %1, label %._crit_edge281.i" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (1.77ns)   --->   "%p_not_i = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75]   --->   Operation 31 'icmp' 'p_not_i' <Predicate = (tmp)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.97ns)   --->   "%brmerge_i = or i1 %p_not_i, %right_read" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75]   --->   Operation 32 'or' 'brmerge_i' <Predicate = (tmp)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %brmerge_i, label %._crit_edge.i, label %2" [Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75]   --->   Operation 33 'br' <Predicate = (tmp)> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 2.74>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:27->Interface2/Interface2.cpp:72]   --->   Operation 38 'write' <Predicate = (tmp_1 & !brmerge247_i)> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:28->Interface2/Interface2.cpp:72]   --->   Operation 39 'write' <Predicate = (tmp_1 & !brmerge247_i)> <Delay = 0.00>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:72]   --->   Operation 40 'write' <Predicate = (tmp_1 & !brmerge247_i)> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "br label %._crit_edge255.i" [Interface2/Interface2.cpp:30->Interface2/Interface2.cpp:72]   --->   Operation 41 'br' <Predicate = (tmp_1 & !brmerge247_i)> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (1.77ns)   --->   "%tmp_2 = icmp ugt i10 %x_V_read, 320" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 42 'icmp' 'tmp_2' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %4, label %._crit_edge259.i" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 43 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (1.77ns)   --->   "%p_not248_i = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 44 'icmp' 'p_not248_i' <Predicate = (tmp_2)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node brmerge250_i)   --->   "%right_not249_i = xor i1 %right_read, true" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 45 'xor' 'right_not249_i' <Predicate = (tmp_2)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 46 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge250_i = or i1 %p_not248_i, %right_not249_i" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 46 'or' 'brmerge250_i' <Predicate = (tmp_2)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "br i1 %brmerge250_i, label %._crit_edge256.i, label %5" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72]   --->   Operation 47 'br' <Predicate = (tmp_2)> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 0.97>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:24->Interface2/Interface2.cpp:75]   --->   Operation 34 'write' <Predicate = (!brmerge_i)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 -1)" [Interface2/Interface2.cpp:25->Interface2/Interface2.cpp:75]   --->   Operation 35 'write' <Predicate = (!brmerge_i)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:26->Interface2/Interface2.cpp:75]   --->   Operation 36 'write' <Predicate = (!brmerge_i)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "br label %._crit_edge.i" [Interface2/Interface2.cpp:27->Interface2/Interface2.cpp:75]   --->   Operation 37 'br' <Predicate = (!brmerge_i)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node brmerge273_i)   --->   "%right_not_i = xor i1 %right_read, true" [Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:75]   --->   Operation 38 'xor' 'right_not_i' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge273_i = or i1 %p_not_i, %right_not_i" [Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:75]   --->   Operation 39 'or' 'brmerge273_i' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "br i1 %brmerge273_i, label %._crit_edge281.i, label %3" [Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:75]   --->   Operation 40 'br' <Predicate = true> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 0.97>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:34->Interface2/Interface2.cpp:72]   --->   Operation 48 'write' <Predicate = (!brmerge250_i)> <Delay = 0.00>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 -1)" [Interface2/Interface2.cpp:35->Interface2/Interface2.cpp:72]   --->   Operation 49 'write' <Predicate = (!brmerge250_i)> <Delay = 0.00>
-ST_3 : Operation 50 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:72]   --->   Operation 50 'write' <Predicate = (!brmerge250_i)> <Delay = 0.00>
-ST_3 : Operation 51 [1/1] (0.00ns)   --->   "br label %._crit_edge256.i" [Interface2/Interface2.cpp:37->Interface2/Interface2.cpp:72]   --->   Operation 51 'br' <Predicate = (!brmerge250_i)> <Delay = 0.00>
-ST_3 : Operation 52 [1/1] (0.97ns)   --->   "%brmerge252_i = or i1 %p_not248_i, %right_read" [Interface2/Interface2.cpp:38->Interface2/Interface2.cpp:72]   --->   Operation 52 'or' 'brmerge252_i' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 53 [1/1] (0.00ns)   --->   "br i1 %brmerge252_i, label %._crit_edge259.i, label %6" [Interface2/Interface2.cpp:38->Interface2/Interface2.cpp:72]   --->   Operation 53 'br' <Predicate = true> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 2.74>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:30->Interface2/Interface2.cpp:75]   --->   Operation 41 'write' <Predicate = (tmp & !brmerge273_i)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:31->Interface2/Interface2.cpp:75]   --->   Operation 42 'write' <Predicate = (tmp & !brmerge273_i)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:32->Interface2/Interface2.cpp:75]   --->   Operation 43 'write' <Predicate = (tmp & !brmerge273_i)> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "br label %._crit_edge281.i" [Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:75]   --->   Operation 44 'br' <Predicate = (tmp & !brmerge273_i)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.77ns)   --->   "%tmp_1 = icmp ugt i10 %x_V_read, 320" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 45 'icmp' 'tmp_1' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "br i1 %tmp_1, label %4, label %._crit_edge285.i" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 46 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (1.77ns)   --->   "%p_not274_i = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 47 'icmp' 'p_not274_i' <Predicate = (tmp_1)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node brmerge276_i)   --->   "%right_not275_i = xor i1 %right_read, true" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 48 'xor' 'right_not275_i' <Predicate = (tmp_1)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge276_i = or i1 %p_not274_i, %right_not275_i" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 49 'or' 'brmerge276_i' <Predicate = (tmp_1)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "br i1 %brmerge276_i, label %._crit_edge282.i, label %5" [Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75]   --->   Operation 50 'br' <Predicate = (tmp_1)> <Delay = 0.00>
 
-State 4 <SV = 3> <Delay = 2.74>
-ST_4 : Operation 54 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:39->Interface2/Interface2.cpp:72]   --->   Operation 54 'write' <Predicate = (tmp_2 & !brmerge252_i)> <Delay = 0.00>
-ST_4 : Operation 55 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:40->Interface2/Interface2.cpp:72]   --->   Operation 55 'write' <Predicate = (tmp_2 & !brmerge252_i)> <Delay = 0.00>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:41->Interface2/Interface2.cpp:72]   --->   Operation 56 'write' <Predicate = (tmp_2 & !brmerge252_i)> <Delay = 0.00>
-ST_4 : Operation 57 [1/1] (0.00ns)   --->   "br label %._crit_edge259.i" [Interface2/Interface2.cpp:42->Interface2/Interface2.cpp:72]   --->   Operation 57 'br' <Predicate = (tmp_2 & !brmerge252_i)> <Delay = 0.00>
-ST_4 : Operation 58 [1/1] (1.77ns)   --->   "%tmp_3 = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 58 'icmp' 'tmp_3' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 59 [1/1] (0.00ns)   --->   "br i1 %tmp_3, label %7, label %retBit.exit" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 59 'br' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_5_cast = zext i9 %tmp to i10" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 60 'zext' 'tmp_5_cast' <Predicate = (tmp_3)> <Delay = 0.00>
-ST_4 : Operation 61 [1/1] (1.77ns)   --->   "%tmp_6 = icmp ult i10 %tmp_5_cast, %x_V_read" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 61 'icmp' 'tmp_6' <Predicate = (tmp_3)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 62 [1/1] (1.77ns)   --->   "%tmp_7 = icmp ult i10 %x_V_read, -384" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 62 'icmp' 'tmp_7' <Predicate = (tmp_3)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 63 [1/1] (0.97ns)   --->   "%or_cond = and i1 %tmp_6, %tmp_7" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 63 'and' 'or_cond' <Predicate = (tmp_3)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 64 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %8, label %._crit_edge260.i" [Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72]   --->   Operation 64 'br' <Predicate = (tmp_3)> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 0.97>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:37->Interface2/Interface2.cpp:75]   --->   Operation 51 'write' <Predicate = (!brmerge276_i)> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 -1)" [Interface2/Interface2.cpp:38->Interface2/Interface2.cpp:75]   --->   Operation 52 'write' <Predicate = (!brmerge276_i)> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:39->Interface2/Interface2.cpp:75]   --->   Operation 53 'write' <Predicate = (!brmerge276_i)> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "br label %._crit_edge282.i" [Interface2/Interface2.cpp:40->Interface2/Interface2.cpp:75]   --->   Operation 54 'br' <Predicate = (!brmerge276_i)> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (0.97ns)   --->   "%brmerge278_i = or i1 %p_not274_i, %right_read" [Interface2/Interface2.cpp:41->Interface2/Interface2.cpp:75]   --->   Operation 55 'or' 'brmerge278_i' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %brmerge278_i, label %._crit_edge285.i, label %6" [Interface2/Interface2.cpp:41->Interface2/Interface2.cpp:75]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
 
-State 5 <SV = 4> <Delay = 1.77>
-ST_5 : Operation 65 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:48->Interface2/Interface2.cpp:72]   --->   Operation 65 'write' <Predicate = (or_cond)> <Delay = 0.00>
-ST_5 : Operation 66 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:49->Interface2/Interface2.cpp:72]   --->   Operation 66 'write' <Predicate = (or_cond)> <Delay = 0.00>
-ST_5 : Operation 67 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:72]   --->   Operation 67 'write' <Predicate = (or_cond)> <Delay = 0.00>
-ST_5 : Operation 68 [1/1] (0.00ns)   --->   "br label %._crit_edge260.i" [Interface2/Interface2.cpp:52->Interface2/Interface2.cpp:72]   --->   Operation 68 'br' <Predicate = (or_cond)> <Delay = 0.00>
-ST_5 : Operation 69 [1/1] (1.77ns)   --->   "%tmp_8 = icmp ugt i10 %tmp_5_cast, %x_V_read" [Interface2/Interface2.cpp:53->Interface2/Interface2.cpp:72]   --->   Operation 69 'icmp' 'tmp_8' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 70 [1/1] (0.00ns)   --->   "br i1 %tmp_8, label %9, label %retBit.exit" [Interface2/Interface2.cpp:53->Interface2/Interface2.cpp:72]   --->   Operation 70 'br' <Predicate = true> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 2.74>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:42->Interface2/Interface2.cpp:75]   --->   Operation 57 'write' <Predicate = (tmp_1 & !brmerge278_i)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:43->Interface2/Interface2.cpp:75]   --->   Operation 58 'write' <Predicate = (tmp_1 & !brmerge278_i)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:44->Interface2/Interface2.cpp:75]   --->   Operation 59 'write' <Predicate = (tmp_1 & !brmerge278_i)> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "br label %._crit_edge285.i" [Interface2/Interface2.cpp:45->Interface2/Interface2.cpp:75]   --->   Operation 60 'br' <Predicate = (tmp_1 & !brmerge278_i)> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (1.77ns)   --->   "%tmp_2 = icmp ugt i10 %y_V_read, 39" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 61 'icmp' 'tmp_2' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %7, label %retBit.exit" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (1.77ns)   --->   "%tmp_3 = icmp ugt i10 %x_V_read, %center_line_V_read" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 63 'icmp' 'tmp_3' <Predicate = (tmp_2)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (1.77ns)   --->   "%tmp_4 = icmp ult i10 %x_V_read, -384" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 64 'icmp' 'tmp_4' <Predicate = (tmp_2)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 65 [1/1] (0.97ns)   --->   "%or_cond = and i1 %tmp_3, %tmp_4" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 65 'and' 'or_cond' <Predicate = (tmp_2)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %8, label %._crit_edge286.i" [Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75]   --->   Operation 66 'br' <Predicate = (tmp_2)> <Delay = 0.00>
 
-State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 71 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:54->Interface2/Interface2.cpp:72]   --->   Operation 71 'write' <Predicate = (tmp_3 & tmp_8)> <Delay = 0.00>
-ST_6 : Operation 72 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:55->Interface2/Interface2.cpp:72]   --->   Operation 72 'write' <Predicate = (tmp_3 & tmp_8)> <Delay = 0.00>
-ST_6 : Operation 73 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:56->Interface2/Interface2.cpp:72]   --->   Operation 73 'write' <Predicate = (tmp_3 & tmp_8)> <Delay = 0.00>
-ST_6 : Operation 74 [1/1] (0.00ns)   --->   "br label %retBit.exit" [Interface2/Interface2.cpp:58->Interface2/Interface2.cpp:72]   --->   Operation 74 'br' <Predicate = (tmp_3 & tmp_8)> <Delay = 0.00>
-ST_6 : Operation 75 [1/1] (0.00ns)   --->   "ret void" [Interface2/Interface2.cpp:75]   --->   Operation 75 'ret' <Predicate = true> <Delay = 0.00>
+State 6 <SV = 5> <Delay = 1.77>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 -1)" [Interface2/Interface2.cpp:51->Interface2/Interface2.cpp:75]   --->   Operation 67 'write' <Predicate = (or_cond)> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:52->Interface2/Interface2.cpp:75]   --->   Operation 68 'write' <Predicate = (or_cond)> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 0)" [Interface2/Interface2.cpp:53->Interface2/Interface2.cpp:75]   --->   Operation 69 'write' <Predicate = (or_cond)> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "br label %._crit_edge286.i" [Interface2/Interface2.cpp:55->Interface2/Interface2.cpp:75]   --->   Operation 70 'br' <Predicate = (or_cond)> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (1.77ns)   --->   "%tmp_5 = icmp ult i10 %x_V_read, %center_line_V_read" [Interface2/Interface2.cpp:56->Interface2/Interface2.cpp:75]   --->   Operation 71 'icmp' 'tmp_5' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "br i1 %tmp_5, label %9, label %retBit.exit" [Interface2/Interface2.cpp:56->Interface2/Interface2.cpp:75]   --->   Operation 72 'br' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Red_V, i8 0)" [Interface2/Interface2.cpp:57->Interface2/Interface2.cpp:75]   --->   Operation 73 'write' <Predicate = (tmp_2 & tmp_5)> <Delay = 0.00>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Blue_V, i8 0)" [Interface2/Interface2.cpp:58->Interface2/Interface2.cpp:75]   --->   Operation 74 'write' <Predicate = (tmp_2 & tmp_5)> <Delay = 0.00>
+ST_7 : Operation 75 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i8P(i8* %XY_Green_V, i8 -1)" [Interface2/Interface2.cpp:59->Interface2/Interface2.cpp:75]   --->   Operation 75 'write' <Predicate = (tmp_2 & tmp_5)> <Delay = 0.00>
+ST_7 : Operation 76 [1/1] (0.00ns)   --->   "br label %retBit.exit" [Interface2/Interface2.cpp:61->Interface2/Interface2.cpp:75]   --->   Operation 76 'br' <Predicate = (tmp_2 & tmp_5)> <Delay = 0.00>
+ST_7 : Operation 77 [1/1] (0.00ns)   --->   "ret void" [Interface2/Interface2.cpp:78]   --->   Operation 77 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -175,29 +181,34 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 2.75ns
 The critical path consists of the following:
-	wire read on port 'y_V' (Interface2/Interface2.cpp:62) [18]  (0 ns)
-	'icmp' operation ('p_not_i', Interface2/Interface2.cpp:20->Interface2/Interface2.cpp:72) [30]  (1.77 ns)
-	'or' operation ('brmerge247_i', Interface2/Interface2.cpp:26->Interface2/Interface2.cpp:72) [40]  (0.978 ns)
+	wire read on port 'y_V' (Interface2/Interface2.cpp:65) [18]  (0 ns)
+	'icmp' operation ('p_not_i', Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75) [32]  (1.77 ns)
+	'or' operation ('brmerge_i', Interface2/Interface2.cpp:23->Interface2/Interface2.cpp:75) [33]  (0.978 ns)
 
- <State 2>: 2.75ns
+ <State 2>: 0.978ns
 The critical path consists of the following:
-	'icmp' operation ('p_not248_i', Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72) [51]  (1.77 ns)
-	'or' operation ('brmerge250_i', Interface2/Interface2.cpp:33->Interface2/Interface2.cpp:72) [53]  (0.978 ns)
+	'xor' operation ('right_not_i', Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:75) [41]  (0 ns)
+	'or' operation ('brmerge273_i', Interface2/Interface2.cpp:29->Interface2/Interface2.cpp:75) [42]  (0.978 ns)
 
- <State 3>: 0.978ns
+ <State 3>: 2.75ns
 The critical path consists of the following:
-	'or' operation ('brmerge252_i', Interface2/Interface2.cpp:38->Interface2/Interface2.cpp:72) [61]  (0.978 ns)
+	'icmp' operation ('p_not274_i', Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75) [53]  (1.77 ns)
+	'or' operation ('brmerge276_i', Interface2/Interface2.cpp:36->Interface2/Interface2.cpp:75) [55]  (0.978 ns)
 
- <State 4>: 2.75ns
+ <State 4>: 0.978ns
 The critical path consists of the following:
-	'icmp' operation ('tmp_6', Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72) [73]  (1.77 ns)
-	'and' operation ('or_cond', Interface2/Interface2.cpp:47->Interface2/Interface2.cpp:72) [75]  (0.978 ns)
+	'or' operation ('brmerge278_i', Interface2/Interface2.cpp:41->Interface2/Interface2.cpp:75) [63]  (0.978 ns)
 
- <State 5>: 1.77ns
+ <State 5>: 2.75ns
 The critical path consists of the following:
-	'icmp' operation ('tmp_8', Interface2/Interface2.cpp:53->Interface2/Interface2.cpp:72) [83]  (1.77 ns)
+	'icmp' operation ('tmp_3', Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75) [74]  (1.77 ns)
+	'and' operation ('or_cond', Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:75) [76]  (0.978 ns)
 
- <State 6>: 0ns
+ <State 6>: 1.77ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_5', Interface2/Interface2.cpp:56->Interface2/Interface2.cpp:75) [84]  (1.77 ns)
+
+ <State 7>: 0ns
 The critical path consists of the following:
 
 
@@ -215,6 +226,7 @@ N/A
 	State 4
 	State 5
 	State 6
+	State 7
 
 
 ============================================================

@@ -274,7 +274,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>397fcdbd</spirit:value>
+            <spirit:value>aae86e13</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -290,7 +290,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c9ea1365</spirit:value>
+            <spirit:value>c61450e2</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -306,7 +306,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5a339307</spirit:value>
+            <spirit:value>4b6390d3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -322,7 +322,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dabbbb77</spirit:value>
+            <spirit:value>60ffd0c4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -604,7 +604,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       <spirit:file>
         <spirit:name>hdl/vhdl/Interface2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_dabbbb77</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_60ffd0c4</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -684,13 +684,13 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       </xilinx:taxonomies>
       <xilinx:displayName>Interface2</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904221743</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-22T21:43:26Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904221755</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-22T21:55:36Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2cd0111e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a053cd4e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b385ff5f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="da8858f8"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4949ff55"/>
     </xilinx:packagingInfo>

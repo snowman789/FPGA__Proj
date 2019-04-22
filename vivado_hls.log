@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'isaac' on host 'desktop-6rncov7' (Windows NT_amd64 version 6.2) on Mon Apr 22 17:43:17 -0400 2019
+INFO: [HLS 200-10] For user 'isaac' on host 'desktop-6rncov7' (Windows NT_amd64 version 6.2) on Mon Apr 22 17:55:27 -0400 2019
 INFO: [HLS 200-10] In directory 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj'
 INFO: [HLS 200-10] Opening project 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2'.
 INFO: [HLS 200-10] Opening solution 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1'.
@@ -16,4 +16,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 17:43:27 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 17:55:36 2019...
