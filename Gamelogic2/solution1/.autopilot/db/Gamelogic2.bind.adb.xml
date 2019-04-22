@@ -1335,9 +1335,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1353,9 +1353,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1371,9 +1371,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1389,9 +1389,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1407,9 +1407,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1425,9 +1425,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1443,9 +1443,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1461,9 +1461,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1479,9 +1479,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1497,9 +1497,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1515,9 +1515,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1533,9 +1533,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1551,9 +1551,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1569,9 +1569,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1587,9 +1587,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1605,9 +1605,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1623,9 +1623,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1641,9 +1641,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1659,9 +1659,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1677,9 +1677,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1695,9 +1695,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1713,9 +1713,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1731,9 +1731,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1749,9 +1749,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1767,9 +1767,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1785,9 +1785,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1803,9 +1803,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1821,9 +1821,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1839,9 +1839,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1857,9 +1857,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1875,9 +1875,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1893,9 +1893,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1911,9 +1911,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1929,9 +1929,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1947,9 +1947,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1965,9 +1965,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="25" op_0_bw="32" op_1_bw="32">
+<Node id="66" bw="21" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 10000000
+._crit_edge:3  %tmp_i = urem i32 %slow_down_clock_assi, 1000000
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -1980,9 +1980,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="67" bw="25" op_0_bw="25">
+<Node id="67" bw="21" op_0_bw="21">
 <![CDATA[
-._crit_edge:4  %tmp_1 = trunc i32 %tmp_i to i25
+._crit_edge:4  %tmp_1 = trunc i32 %tmp_i to i21
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -1995,9 +1995,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="1" op_0_bw="25" op_1_bw="25">
+<Node id="68" bw="1" op_0_bw="21" op_1_bw="21">
 <![CDATA[
-._crit_edge:5  %tmp_i_2 = icmp eq i25 %tmp_1, 0
+._crit_edge:5  %tmp_i_2 = icmp eq i21 %tmp_1, 0
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i_2"/></StgValue>

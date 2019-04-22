@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Sun Apr 21 19:48:51 2019
+// Date        : Sun Apr 21 20:27:45 2019
 // Host        : EmbSys18 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_sim_netlist.v
@@ -539,8 +539,8 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire \time_remaining_out_V[7]_INST_0_i_3_n_0 ;
   wire \time_remaining_out_V[7]_INST_0_i_4_n_0 ;
   wire \time_remaining_out_V[7]_INST_0_i_5_n_0 ;
-  wire \time_remaining_out_V[9]_INST_0_i_10_n_0 ;
   wire \time_remaining_out_V[9]_INST_0_i_2_n_3 ;
+  wire \time_remaining_out_V[9]_INST_0_i_8_n_0 ;
   wire \time_remaining_out_V[9]_INST_0_i_9_n_0 ;
   wire [9:0]time_remaining_out_V_preg;
   wire [9:0]tmp_3_i_fu_232_p2;
@@ -2470,24 +2470,24 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
        (.I0(time_remaining_in_V[4]),
         .I1(decrement_value_reg[4]),
         .O(\time_remaining_out_V[7]_INST_0_i_5_n_0 ));
-  LUT2 #(
-    .INIT(4'h9)) 
-    \time_remaining_out_V[9]_INST_0_i_10 
-       (.I0(time_remaining_in_V[8]),
-        .I1(decrement_value_reg[8]),
-        .O(\time_remaining_out_V[9]_INST_0_i_10_n_0 ));
   CARRY4 \time_remaining_out_V[9]_INST_0_i_2 
        (.CI(\time_remaining_out_V[7]_INST_0_i_1_n_0 ),
         .CO({\NLW_time_remaining_out_V[9]_INST_0_i_2_CO_UNCONNECTED [3:1],\time_remaining_out_V[9]_INST_0_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,time_remaining_in_V[8]}),
         .O({\NLW_time_remaining_out_V[9]_INST_0_i_2_O_UNCONNECTED [3:2],tmp_3_i_fu_232_p2[9:8]}),
-        .S({1'b0,1'b0,\time_remaining_out_V[9]_INST_0_i_9_n_0 ,\time_remaining_out_V[9]_INST_0_i_10_n_0 }));
+        .S({1'b0,1'b0,\time_remaining_out_V[9]_INST_0_i_8_n_0 ,\time_remaining_out_V[9]_INST_0_i_9_n_0 }));
+  LUT2 #(
+    .INIT(4'h9)) 
+    \time_remaining_out_V[9]_INST_0_i_8 
+       (.I0(time_remaining_in_V[9]),
+        .I1(decrement_value_reg[9]),
+        .O(\time_remaining_out_V[9]_INST_0_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
     \time_remaining_out_V[9]_INST_0_i_9 
-       (.I0(time_remaining_in_V[9]),
-        .I1(decrement_value_reg[9]),
+       (.I0(time_remaining_in_V[8]),
+        .I1(decrement_value_reg[8]),
         .O(\time_remaining_out_V[9]_INST_0_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -3505,7 +3505,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
   wire ap_rst;
   wire cal_tmp_carry__0_i_1_n_0;
   wire cal_tmp_carry__0_i_2_n_0;
-  wire cal_tmp_carry__0_i_3__2_n_0;
+  wire cal_tmp_carry__0_i_3__1_n_0;
   wire cal_tmp_carry__0_i_4_n_0;
   wire cal_tmp_carry__0_i_5_n_0;
   wire cal_tmp_carry__0_i_6__1_n_0;
@@ -3518,7 +3518,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
   wire cal_tmp_carry__0_n_6;
   wire cal_tmp_carry__0_n_7;
   wire cal_tmp_carry__1_i_1__0_n_0;
-  wire cal_tmp_carry__1_i_2__1_n_0;
+  wire cal_tmp_carry__1_i_2__2_n_0;
   wire cal_tmp_carry__1_i_3__2_n_0;
   wire cal_tmp_carry__1_n_2;
   wire cal_tmp_carry__1_n_3;
@@ -3604,7 +3604,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
         .CYINIT(1'b0),
         .DI({1'b1,cal_tmp_carry__0_i_1_n_0,cal_tmp_carry__0_i_2_n_0,1'b1}),
         .O({cal_tmp_carry__0_n_4,cal_tmp_carry__0_n_5,cal_tmp_carry__0_n_6,cal_tmp_carry__0_n_7}),
-        .S({cal_tmp_carry__0_i_3__2_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6__1_n_0}));
+        .S({cal_tmp_carry__0_i_3__1_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6__1_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_1
@@ -3619,10 +3619,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
         .O(cal_tmp_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__0_i_3__2
+    cal_tmp_carry__0_i_3__1
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(Q[6]),
-        .O(cal_tmp_carry__0_i_3__2_n_0));
+        .O(cal_tmp_carry__0_i_3__1_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_4
@@ -3647,7 +3647,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
         .CYINIT(1'b0),
         .DI({1'b0,1'b1,1'b1,1'b1}),
         .O({p_0_in,cal_tmp_carry__1_n_5,cal_tmp_carry__1_n_6,cal_tmp_carry__1_n_7}),
-        .S({1'b1,cal_tmp_carry__1_i_1__0_n_0,cal_tmp_carry__1_i_2__1_n_0,cal_tmp_carry__1_i_3__2_n_0}));
+        .S({1'b1,cal_tmp_carry__1_i_1__0_n_0,cal_tmp_carry__1_i_2__2_n_0,cal_tmp_carry__1_i_3__2_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_1__0
@@ -3656,10 +3656,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
         .O(cal_tmp_carry__1_i_1__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__1_i_2__1
+    cal_tmp_carry__1_i_2__2
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(Q[8]),
-        .O(cal_tmp_carry__1_i_2__1_n_0));
+        .O(cal_tmp_carry__1_i_2__2_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_3__2
@@ -4124,7 +4124,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
   wire ap_rst;
   wire cal_tmp_carry__0_i_1_n_0;
   wire cal_tmp_carry__0_i_2_n_0;
-  wire cal_tmp_carry__0_i_3__1_n_0;
+  wire cal_tmp_carry__0_i_3__0_n_0;
   wire cal_tmp_carry__0_i_4_n_0;
   wire cal_tmp_carry__0_i_5_n_0;
   wire cal_tmp_carry__0_i_6__0_n_0;
@@ -4137,7 +4137,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
   wire cal_tmp_carry__0_n_6;
   wire cal_tmp_carry__0_n_7;
   wire cal_tmp_carry__1_i_1__1_n_0;
-  wire cal_tmp_carry__1_i_2__0_n_0;
+  wire cal_tmp_carry__1_i_2__1_n_0;
   wire cal_tmp_carry__1_i_3__1_n_0;
   wire cal_tmp_carry__1_n_2;
   wire cal_tmp_carry__1_n_3;
@@ -4225,7 +4225,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
         .CYINIT(1'b0),
         .DI({1'b1,cal_tmp_carry__0_i_1_n_0,cal_tmp_carry__0_i_2_n_0,1'b1}),
         .O({cal_tmp_carry__0_n_4,cal_tmp_carry__0_n_5,cal_tmp_carry__0_n_6,cal_tmp_carry__0_n_7}),
-        .S({cal_tmp_carry__0_i_3__1_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6__0_n_0}));
+        .S({cal_tmp_carry__0_i_3__0_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6__0_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_1
@@ -4240,10 +4240,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
         .O(cal_tmp_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__0_i_3__1
+    cal_tmp_carry__0_i_3__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg[7]_0 [6]),
-        .O(cal_tmp_carry__0_i_3__1_n_0));
+        .O(cal_tmp_carry__0_i_3__0_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_4
@@ -4268,7 +4268,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
         .CYINIT(1'b0),
         .DI({1'b0,1'b1,1'b1,1'b1}),
         .O({p_0_in,NLW_cal_tmp_carry__1_O_UNCONNECTED[2],cal_tmp_carry__1_n_6,cal_tmp_carry__1_n_7}),
-        .S({1'b1,cal_tmp_carry__1_i_1__1_n_0,cal_tmp_carry__1_i_2__0_n_0,cal_tmp_carry__1_i_3__1_n_0}));
+        .S({1'b1,cal_tmp_carry__1_i_1__1_n_0,cal_tmp_carry__1_i_2__1_n_0,cal_tmp_carry__1_i_3__1_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_1__1
@@ -4277,10 +4277,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2
         .O(cal_tmp_carry__1_i_1__1_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__1_i_2__0
+    cal_tmp_carry__1_i_2__1
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[8] ),
-        .O(cal_tmp_carry__1_i_2__0_n_0));
+        .O(cal_tmp_carry__1_i_2__1_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_3__1
@@ -4848,8 +4848,8 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
   wire [31:0]out;
   wire r_stage_reg_r_29;
   wire r_stage_reg_r_8;
-  wire [24:0]remd;
-  wire [24:0]remd_tmp;
+  wire [20:0]remd;
+  wire [20:0]remd_tmp;
   wire rst;
   wire start0;
   wire [9:0]time_remaining_out_V;
@@ -4859,7 +4859,6 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
   wire \time_remaining_out_V[9]_INST_0_i_5_n_0 ;
   wire \time_remaining_out_V[9]_INST_0_i_6_n_0 ;
   wire \time_remaining_out_V[9]_INST_0_i_7_n_0 ;
-  wire \time_remaining_out_V[9]_INST_0_i_8_n_0 ;
   wire [9:0]\time_remaining_out_V_preg_reg[9] ;
   wire [9:0]tmp_3_i_fu_232_p2;
   wire [3:2]\NLW_dividend0_reg[31]_i_1_CO_UNCONNECTED ;
@@ -5205,30 +5204,6 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .D(remd_tmp[20]),
         .Q(remd[20]),
         .R(1'b0));
-  FDRE \remd_reg[21] 
-       (.C(ap_clk),
-        .CE(done0),
-        .D(remd_tmp[21]),
-        .Q(remd[21]),
-        .R(1'b0));
-  FDRE \remd_reg[22] 
-       (.C(ap_clk),
-        .CE(done0),
-        .D(remd_tmp[22]),
-        .Q(remd[22]),
-        .R(1'b0));
-  FDRE \remd_reg[23] 
-       (.C(ap_clk),
-        .CE(done0),
-        .D(remd_tmp[23]),
-        .Q(remd[23]),
-        .R(1'b0));
-  FDRE \remd_reg[24] 
-       (.C(ap_clk),
-        .CE(done0),
-        .D(remd_tmp[24]),
-        .Q(remd[24]),
-        .R(1'b0));
   FDRE \remd_reg[2] 
        (.C(ap_clk),
         .CE(done0),
@@ -5375,47 +5350,48 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .I3(\time_remaining_out_V[9]_INST_0_i_1_n_0 ),
         .I4(tmp_3_i_fu_232_p2[9]),
         .O(time_remaining_out_V[9]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     \time_remaining_out_V[9]_INST_0_i_1 
        (.I0(\time_remaining_out_V[9]_INST_0_i_3_n_0 ),
         .I1(\time_remaining_out_V[9]_INST_0_i_4_n_0 ),
         .I2(\time_remaining_out_V[9]_INST_0_i_5_n_0 ),
         .I3(\time_remaining_out_V[9]_INST_0_i_6_n_0 ),
         .I4(\time_remaining_out_V[9]_INST_0_i_7_n_0 ),
-        .I5(\time_remaining_out_V[9]_INST_0_i_8_n_0 ),
         .O(\time_remaining_out_V[9]_INST_0_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFB)) 
     \time_remaining_out_V[9]_INST_0_i_3 
-       (.I0(remd[15]),
-        .I1(remd[14]),
-        .I2(remd[17]),
-        .I3(remd[16]),
+       (.I0(remd[20]),
+        .I1(Q[1]),
+        .I2(remd[18]),
+        .I3(remd[19]),
+        .I4(remd[1]),
+        .I5(remd[0]),
         .O(\time_remaining_out_V[9]_INST_0_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
     \time_remaining_out_V[9]_INST_0_i_4 
-       (.I0(remd[19]),
-        .I1(remd[18]),
-        .I2(remd[21]),
-        .I3(remd[20]),
-        .O(\time_remaining_out_V[9]_INST_0_i_4_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \time_remaining_out_V[9]_INST_0_i_5 
-       (.I0(remd[7]),
-        .I1(remd[6]),
-        .I2(remd[9]),
-        .I3(remd[8]),
-        .O(\time_remaining_out_V[9]_INST_0_i_5_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \time_remaining_out_V[9]_INST_0_i_6 
        (.I0(remd[11]),
         .I1(remd[10]),
         .I2(remd[13]),
         .I3(remd[12]),
+        .O(\time_remaining_out_V[9]_INST_0_i_4_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \time_remaining_out_V[9]_INST_0_i_5 
+       (.I0(remd[15]),
+        .I1(remd[14]),
+        .I2(remd[17]),
+        .I3(remd[16]),
+        .O(\time_remaining_out_V[9]_INST_0_i_5_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \time_remaining_out_V[9]_INST_0_i_6 
+       (.I0(remd[7]),
+        .I1(remd[6]),
+        .I2(remd[9]),
+        .I3(remd[8]),
         .O(\time_remaining_out_V[9]_INST_0_i_6_n_0 ));
   LUT4 #(
     .INIT(16'hFFFE)) 
@@ -5425,16 +5401,6 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .I2(remd[5]),
         .I3(remd[4]),
         .O(\time_remaining_out_V[9]_INST_0_i_7_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFB)) 
-    \time_remaining_out_V[9]_INST_0_i_8 
-       (.I0(remd[24]),
-        .I1(Q[1]),
-        .I2(remd[22]),
-        .I3(remd[23]),
-        .I4(remd[1]),
-        .I5(remd[0]),
-        .O(\time_remaining_out_V[9]_INST_0_i_8_n_0 ));
 endmodule
 
 (* ORIG_REF_NAME = "Gamelogic2_urem_3bkb_div_u" *) 
@@ -5450,14 +5416,14 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   output r_stage_reg_r_8_0;
   output r_stage_reg_r_29_0;
   output [0:0]\r_stage_reg[32]_0 ;
-  output [24:0]Q;
+  output [20:0]Q;
   input ap_rst;
   input [0:0]E;
   input ap_clk;
   input [31:0]\dividend0_reg[31]_0 ;
 
   wire [0:0]E;
-  wire [24:0]Q;
+  wire [20:0]Q;
   wire ap_clk;
   wire ap_rst;
   wire cal_tmp_carry__0_i_2_n_0;
@@ -5472,10 +5438,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire cal_tmp_carry__0_n_5;
   wire cal_tmp_carry__0_n_6;
   wire cal_tmp_carry__0_n_7;
+  wire cal_tmp_carry__1_i_2_n_0;
   wire cal_tmp_carry__1_i_3_n_0;
   wire cal_tmp_carry__1_i_4_n_0;
   wire cal_tmp_carry__1_i_5_n_0;
-  wire cal_tmp_carry__1_i_6_n_0;
   wire cal_tmp_carry__1_n_0;
   wire cal_tmp_carry__1_n_1;
   wire cal_tmp_carry__1_n_2;
@@ -5484,10 +5450,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire cal_tmp_carry__1_n_5;
   wire cal_tmp_carry__1_n_6;
   wire cal_tmp_carry__1_n_7;
+  wire cal_tmp_carry__2_i_2_n_0;
   wire cal_tmp_carry__2_i_3_n_0;
   wire cal_tmp_carry__2_i_4_n_0;
   wire cal_tmp_carry__2_i_5_n_0;
-  wire cal_tmp_carry__2_i_6_n_0;
   wire cal_tmp_carry__2_n_0;
   wire cal_tmp_carry__2_n_1;
   wire cal_tmp_carry__2_n_2;
@@ -5496,10 +5462,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire cal_tmp_carry__2_n_5;
   wire cal_tmp_carry__2_n_6;
   wire cal_tmp_carry__2_n_7;
-  wire cal_tmp_carry__3_i_2_n_0;
-  wire cal_tmp_carry__3_i_3_n_0;
-  wire cal_tmp_carry__3_i_4_n_0;
   wire cal_tmp_carry__3_i_5_n_0;
+  wire cal_tmp_carry__3_i_6_n_0;
+  wire cal_tmp_carry__3_i_7_n_0;
+  wire cal_tmp_carry__3_i_8_n_0;
   wire cal_tmp_carry__3_n_0;
   wire cal_tmp_carry__3_n_1;
   wire cal_tmp_carry__3_n_2;
@@ -5508,10 +5474,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire cal_tmp_carry__3_n_5;
   wire cal_tmp_carry__3_n_6;
   wire cal_tmp_carry__3_n_7;
+  wire cal_tmp_carry__4_i_1_n_0;
+  wire cal_tmp_carry__4_i_2_n_0;
   wire cal_tmp_carry__4_i_3_n_0;
   wire cal_tmp_carry__4_i_4_n_0;
-  wire cal_tmp_carry__4_i_5_n_0;
-  wire cal_tmp_carry__4_i_6_n_0;
   wire cal_tmp_carry__4_n_0;
   wire cal_tmp_carry__4_n_1;
   wire cal_tmp_carry__4_n_2;
@@ -5626,7 +5592,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire r_stage_reg_r_8_0;
   wire r_stage_reg_r_9_n_0;
   wire r_stage_reg_r_n_0;
-  wire [30:25]remd_tmp;
+  wire [30:21]remd_tmp;
   wire \remd_tmp[0]_i_1_n_0 ;
   wire \remd_tmp[10]_i_1_n_0 ;
   wire \remd_tmp[11]_i_1_n_0 ;
@@ -5658,7 +5624,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   wire \remd_tmp[7]_i_1_n_0 ;
   wire \remd_tmp[8]_i_1_n_0 ;
   wire \remd_tmp[9]_i_1_n_0 ;
-  wire [22:6]remd_tmp_mux;
+  wire [18:5]remd_tmp_mux;
   wire [3:3]NLW_cal_tmp_carry__6_O_UNCONNECTED;
   wire [3:0]NLW_cal_tmp_carry__7_CO_UNCONNECTED;
   wire [3:1]NLW_cal_tmp_carry__7_O_UNCONNECTED;
@@ -5675,26 +5641,26 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
        (.CI(cal_tmp_carry_n_0),
         .CO({cal_tmp_carry__0_n_0,cal_tmp_carry__0_n_1,cal_tmp_carry__0_n_2,cal_tmp_carry__0_n_3}),
         .CYINIT(1'b0),
-        .DI({remd_tmp_mux[6],1'b1,1'b1,1'b1}),
+        .DI({1'b1,remd_tmp_mux[5],1'b1,1'b1}),
         .O({cal_tmp_carry__0_n_4,cal_tmp_carry__0_n_5,cal_tmp_carry__0_n_6,cal_tmp_carry__0_n_7}),
         .S({cal_tmp_carry__0_i_2_n_0,cal_tmp_carry__0_i_3_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_1
-       (.I0(Q[6]),
+       (.I0(Q[5]),
         .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[6]));
-  LUT2 #(
-    .INIT(4'h2)) 
-    cal_tmp_carry__0_i_2
-       (.I0(Q[6]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(cal_tmp_carry__0_i_2_n_0));
+        .O(remd_tmp_mux[5]));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__0_i_3
+    cal_tmp_carry__0_i_2
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[5]),
+        .I1(Q[6]),
+        .O(cal_tmp_carry__0_i_2_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__0_i_3
+       (.I0(Q[5]),
+        .I1(\r_stage_reg_n_0_[0] ),
         .O(cal_tmp_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'hB)) 
@@ -5712,95 +5678,83 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
        (.CI(cal_tmp_carry__0_n_0),
         .CO({cal_tmp_carry__1_n_0,cal_tmp_carry__1_n_1,cal_tmp_carry__1_n_2,cal_tmp_carry__1_n_3}),
         .CYINIT(1'b0),
-        .DI({1'b1,remd_tmp_mux[9:8],1'b1}),
+        .DI({1'b1,1'b1,remd_tmp_mux[8],1'b1}),
         .O({cal_tmp_carry__1_n_4,cal_tmp_carry__1_n_5,cal_tmp_carry__1_n_6,cal_tmp_carry__1_n_7}),
-        .S({cal_tmp_carry__1_i_3_n_0,cal_tmp_carry__1_i_4_n_0,cal_tmp_carry__1_i_5_n_0,cal_tmp_carry__1_i_6_n_0}));
+        .S({cal_tmp_carry__1_i_2_n_0,cal_tmp_carry__1_i_3_n_0,cal_tmp_carry__1_i_4_n_0,cal_tmp_carry__1_i_5_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__1_i_1
-       (.I0(Q[9]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[9]));
-  LUT2 #(
-    .INIT(4'h2)) 
-    cal_tmp_carry__1_i_2
        (.I0(Q[8]),
         .I1(\r_stage_reg_n_0_[0] ),
         .O(remd_tmp_mux[8]));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__1_i_3
+    cal_tmp_carry__1_i_2
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(Q[10]),
+        .O(cal_tmp_carry__1_i_2_n_0));
+  LUT2 #(
+    .INIT(4'hB)) 
+    cal_tmp_carry__1_i_3
+       (.I0(\r_stage_reg_n_0_[0] ),
+        .I1(Q[9]),
         .O(cal_tmp_carry__1_i_3_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__1_i_4
-       (.I0(Q[9]),
+       (.I0(Q[8]),
         .I1(\r_stage_reg_n_0_[0] ),
         .O(cal_tmp_carry__1_i_4_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
-    cal_tmp_carry__1_i_5
-       (.I0(Q[8]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(cal_tmp_carry__1_i_5_n_0));
-  LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__1_i_6
+    cal_tmp_carry__1_i_5
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(Q[7]),
-        .O(cal_tmp_carry__1_i_6_n_0));
+        .O(cal_tmp_carry__1_i_5_n_0));
   CARRY4 cal_tmp_carry__2
        (.CI(cal_tmp_carry__1_n_0),
         .CO({cal_tmp_carry__2_n_0,cal_tmp_carry__2_n_1,cal_tmp_carry__2_n_2,cal_tmp_carry__2_n_3}),
         .CYINIT(1'b0),
-        .DI({remd_tmp_mux[14],1'b1,1'b1,remd_tmp_mux[11]}),
+        .DI({1'b1,remd_tmp_mux[13],1'b1,1'b1}),
         .O({cal_tmp_carry__2_n_4,cal_tmp_carry__2_n_5,cal_tmp_carry__2_n_6,cal_tmp_carry__2_n_7}),
-        .S({cal_tmp_carry__2_i_3_n_0,cal_tmp_carry__2_i_4_n_0,cal_tmp_carry__2_i_5_n_0,cal_tmp_carry__2_i_6_n_0}));
+        .S({cal_tmp_carry__2_i_2_n_0,cal_tmp_carry__2_i_3_n_0,cal_tmp_carry__2_i_4_n_0,cal_tmp_carry__2_i_5_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__2_i_1
-       (.I0(Q[14]),
+       (.I0(Q[13]),
         .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[14]));
+        .O(remd_tmp_mux[13]));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'hB)) 
     cal_tmp_carry__2_i_2
-       (.I0(Q[11]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[11]));
+       (.I0(\r_stage_reg_n_0_[0] ),
+        .I1(Q[14]),
+        .O(cal_tmp_carry__2_i_2_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__2_i_3
-       (.I0(Q[14]),
+       (.I0(Q[13]),
         .I1(\r_stage_reg_n_0_[0] ),
         .O(cal_tmp_carry__2_i_3_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__2_i_4
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[13]),
+        .I1(Q[12]),
         .O(cal_tmp_carry__2_i_4_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__2_i_5
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[12]),
+        .I1(Q[11]),
         .O(cal_tmp_carry__2_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    cal_tmp_carry__2_i_6
-       (.I0(Q[11]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(cal_tmp_carry__2_i_6_n_0));
   CARRY4 cal_tmp_carry__3
        (.CI(cal_tmp_carry__2_n_0),
         .CO({cal_tmp_carry__3_n_0,cal_tmp_carry__3_n_1,cal_tmp_carry__3_n_2,cal_tmp_carry__3_n_3}),
         .CYINIT(1'b0),
-        .DI({remd_tmp_mux[18],1'b1,1'b1,1'b1}),
+        .DI(remd_tmp_mux[18:15]),
         .O({cal_tmp_carry__3_n_4,cal_tmp_carry__3_n_5,cal_tmp_carry__3_n_6,cal_tmp_carry__3_n_7}),
-        .S({cal_tmp_carry__3_i_2_n_0,cal_tmp_carry__3_i_3_n_0,cal_tmp_carry__3_i_4_n_0,cal_tmp_carry__3_i_5_n_0}));
+        .S({cal_tmp_carry__3_i_5_n_0,cal_tmp_carry__3_i_6_n_0,cal_tmp_carry__3_i_7_n_0,cal_tmp_carry__3_i_8_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__3_i_1
@@ -5810,70 +5764,76 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__3_i_2
+       (.I0(Q[17]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(remd_tmp_mux[17]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_3
+       (.I0(Q[16]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(remd_tmp_mux[16]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_4
+       (.I0(Q[15]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(remd_tmp_mux[15]));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_5
        (.I0(Q[18]),
         .I1(\r_stage_reg_n_0_[0] ),
-        .O(cal_tmp_carry__3_i_2_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    cal_tmp_carry__3_i_3
-       (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[17]),
-        .O(cal_tmp_carry__3_i_3_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    cal_tmp_carry__3_i_4
-       (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[16]),
-        .O(cal_tmp_carry__3_i_4_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    cal_tmp_carry__3_i_5
-       (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[15]),
         .O(cal_tmp_carry__3_i_5_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_6
+       (.I0(Q[17]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(cal_tmp_carry__3_i_6_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_7
+       (.I0(Q[16]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(cal_tmp_carry__3_i_7_n_0));
+  LUT2 #(
+    .INIT(4'h2)) 
+    cal_tmp_carry__3_i_8
+       (.I0(Q[15]),
+        .I1(\r_stage_reg_n_0_[0] ),
+        .O(cal_tmp_carry__3_i_8_n_0));
   CARRY4 cal_tmp_carry__4
        (.CI(cal_tmp_carry__3_n_0),
         .CO({cal_tmp_carry__4_n_0,cal_tmp_carry__4_n_1,cal_tmp_carry__4_n_2,cal_tmp_carry__4_n_3}),
         .CYINIT(1'b0),
-        .DI({remd_tmp_mux[22],1'b1,1'b1,remd_tmp_mux[19]}),
+        .DI({1'b1,1'b1,1'b1,1'b1}),
         .O({cal_tmp_carry__4_n_4,cal_tmp_carry__4_n_5,cal_tmp_carry__4_n_6,cal_tmp_carry__4_n_7}),
-        .S({cal_tmp_carry__4_i_3_n_0,cal_tmp_carry__4_i_4_n_0,cal_tmp_carry__4_i_5_n_0,cal_tmp_carry__4_i_6_n_0}));
+        .S({cal_tmp_carry__4_i_1_n_0,cal_tmp_carry__4_i_2_n_0,cal_tmp_carry__4_i_3_n_0,cal_tmp_carry__4_i_4_n_0}));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'hB)) 
     cal_tmp_carry__4_i_1
-       (.I0(Q[22]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[22]));
+       (.I0(\r_stage_reg_n_0_[0] ),
+        .I1(remd_tmp[22]),
+        .O(cal_tmp_carry__4_i_1_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'hB)) 
     cal_tmp_carry__4_i_2
-       (.I0(Q[19]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(remd_tmp_mux[19]));
+       (.I0(\r_stage_reg_n_0_[0] ),
+        .I1(remd_tmp[21]),
+        .O(cal_tmp_carry__4_i_2_n_0));
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'hB)) 
     cal_tmp_carry__4_i_3
-       (.I0(Q[22]),
-        .I1(\r_stage_reg_n_0_[0] ),
+       (.I0(\r_stage_reg_n_0_[0] ),
+        .I1(Q[20]),
         .O(cal_tmp_carry__4_i_3_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__4_i_4
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[21]),
+        .I1(Q[19]),
         .O(cal_tmp_carry__4_i_4_n_0));
-  LUT2 #(
-    .INIT(4'hB)) 
-    cal_tmp_carry__4_i_5
-       (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[20]),
-        .O(cal_tmp_carry__4_i_5_n_0));
-  LUT2 #(
-    .INIT(4'h2)) 
-    cal_tmp_carry__4_i_6
-       (.I0(Q[19]),
-        .I1(\r_stage_reg_n_0_[0] ),
-        .O(cal_tmp_carry__4_i_6_n_0));
   CARRY4 cal_tmp_carry__5
        (.CI(cal_tmp_carry__4_n_0),
         .CO({cal_tmp_carry__5_n_0,cal_tmp_carry__5_n_1,cal_tmp_carry__5_n_2,cal_tmp_carry__5_n_3}),
@@ -5897,13 +5857,13 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
     .INIT(4'hB)) 
     cal_tmp_carry__5_i_3
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[24]),
+        .I1(remd_tmp[24]),
         .O(cal_tmp_carry__5_i_3_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__5_i_4
        (.I0(\r_stage_reg_n_0_[0] ),
-        .I1(Q[23]),
+        .I1(remd_tmp[23]),
         .O(cal_tmp_carry__5_i_4_n_0));
   CARRY4 cal_tmp_carry__6
        (.CI(cal_tmp_carry__5_n_0),
@@ -6934,7 +6894,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   LUT4 #(
     .INIT(16'h2F20)) 
     \remd_tmp[22]_i_1 
-       (.I0(Q[21]),
+       (.I0(remd_tmp[21]),
         .I1(\r_stage_reg_n_0_[0] ),
         .I2(p_0_in),
         .I3(cal_tmp_carry__4_n_5),
@@ -6942,7 +6902,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   LUT4 #(
     .INIT(16'h2F20)) 
     \remd_tmp[23]_i_1 
-       (.I0(Q[22]),
+       (.I0(remd_tmp[22]),
         .I1(\r_stage_reg_n_0_[0] ),
         .I2(p_0_in),
         .I3(cal_tmp_carry__4_n_4),
@@ -6950,7 +6910,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   LUT4 #(
     .INIT(16'h2F20)) 
     \remd_tmp[24]_i_1 
-       (.I0(Q[23]),
+       (.I0(remd_tmp[23]),
         .I1(\r_stage_reg_n_0_[0] ),
         .I2(p_0_in),
         .I3(cal_tmp_carry__5_n_7),
@@ -6958,7 +6918,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   LUT4 #(
     .INIT(16'h2F20)) 
     \remd_tmp[25]_i_1 
-       (.I0(Q[24]),
+       (.I0(remd_tmp[24]),
         .I1(\r_stage_reg_n_0_[0] ),
         .I2(p_0_in),
         .I3(cal_tmp_carry__5_n_6),
@@ -7149,25 +7109,25 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
        (.C(ap_clk),
         .CE(1'b1),
         .D(\remd_tmp[21]_i_1_n_0 ),
-        .Q(Q[21]),
+        .Q(remd_tmp[21]),
         .R(1'b0));
   FDRE \remd_tmp_reg[22] 
        (.C(ap_clk),
         .CE(1'b1),
         .D(\remd_tmp[22]_i_1_n_0 ),
-        .Q(Q[22]),
+        .Q(remd_tmp[22]),
         .R(1'b0));
   FDRE \remd_tmp_reg[23] 
        (.C(ap_clk),
         .CE(1'b1),
         .D(\remd_tmp[23]_i_1_n_0 ),
-        .Q(Q[23]),
+        .Q(remd_tmp[23]),
         .R(1'b0));
   FDRE \remd_tmp_reg[24] 
        (.C(ap_clk),
         .CE(1'b1),
         .D(\remd_tmp[24]_i_1_n_0 ),
-        .Q(Q[24]),
+        .Q(remd_tmp[24]),
         .R(1'b0));
   FDRE \remd_tmp_reg[25] 
        (.C(ap_clk),
@@ -7646,7 +7606,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   wire ap_rst;
   wire cal_tmp_carry__0_i_1_n_0;
   wire cal_tmp_carry__0_i_2_n_0;
-  wire cal_tmp_carry__0_i_3__0_n_0;
+  wire cal_tmp_carry__0_i_3_n_0;
   wire cal_tmp_carry__0_i_4_n_0;
   wire cal_tmp_carry__0_i_5_n_0;
   wire cal_tmp_carry__0_i_6_n_0;
@@ -7659,7 +7619,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   wire cal_tmp_carry__0_n_6;
   wire cal_tmp_carry__0_n_7;
   wire cal_tmp_carry__1_i_1_n_0;
-  wire cal_tmp_carry__1_i_2_n_0;
+  wire cal_tmp_carry__1_i_2__0_n_0;
   wire cal_tmp_carry__1_i_3__0_n_0;
   wire cal_tmp_carry__1_i_4_n_0;
   wire cal_tmp_carry__1_n_0;
@@ -7671,7 +7631,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   wire cal_tmp_carry__1_n_6;
   wire cal_tmp_carry__1_n_7;
   wire cal_tmp_carry__2_i_1_n_0;
-  wire cal_tmp_carry__2_i_2_n_0;
+  wire cal_tmp_carry__2_i_2__0_n_0;
   wire cal_tmp_carry__2_i_3_n_0;
   wire cal_tmp_carry__2_i_4__0_n_0;
   wire cal_tmp_carry__2_n_0;
@@ -7684,8 +7644,8 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   wire cal_tmp_carry__2_n_7;
   wire cal_tmp_carry__3_i_1_n_0;
   wire cal_tmp_carry__3_i_2_n_0;
-  wire cal_tmp_carry__3_i_3__0_n_0;
-  wire cal_tmp_carry__3_i_4__0_n_0;
+  wire cal_tmp_carry__3_i_3_n_0;
+  wire cal_tmp_carry__3_i_4_n_0;
   wire cal_tmp_carry__3_n_0;
   wire cal_tmp_carry__3_n_1;
   wire cal_tmp_carry__3_n_2;
@@ -7694,9 +7654,9 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   wire cal_tmp_carry__3_n_5;
   wire cal_tmp_carry__3_n_6;
   wire cal_tmp_carry__3_n_7;
-  wire cal_tmp_carry__4_i_1_n_0;
-  wire cal_tmp_carry__4_i_2_n_0;
-  wire cal_tmp_carry__4_i_3_n_0;
+  wire cal_tmp_carry__4_i_1__0_n_0;
+  wire cal_tmp_carry__4_i_2__0_n_0;
+  wire cal_tmp_carry__4_i_3__0_n_0;
   wire cal_tmp_carry__4_i_4__0_n_0;
   wire cal_tmp_carry__4_n_0;
   wire cal_tmp_carry__4_n_1;
@@ -7899,7 +7859,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .CYINIT(1'b0),
         .DI({1'b1,cal_tmp_carry__0_i_1_n_0,cal_tmp_carry__0_i_2_n_0,1'b1}),
         .O({cal_tmp_carry__0_n_4,cal_tmp_carry__0_n_5,cal_tmp_carry__0_n_6,cal_tmp_carry__0_n_7}),
-        .S({cal_tmp_carry__0_i_3__0_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6_n_0}));
+        .S({cal_tmp_carry__0_i_3_n_0,cal_tmp_carry__0_i_4_n_0,cal_tmp_carry__0_i_5_n_0,cal_tmp_carry__0_i_6_n_0}));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_1
@@ -7914,10 +7874,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .O(cal_tmp_carry__0_i_2_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__0_i_3__0
+    cal_tmp_carry__0_i_3
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg[10]_0 [6]),
-        .O(cal_tmp_carry__0_i_3__0_n_0));
+        .O(cal_tmp_carry__0_i_3_n_0));
   LUT2 #(
     .INIT(4'h2)) 
     cal_tmp_carry__0_i_4
@@ -7942,7 +7902,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .CYINIT(1'b0),
         .DI({1'b1,1'b1,1'b1,1'b1}),
         .O({cal_tmp_carry__1_n_4,cal_tmp_carry__1_n_5,cal_tmp_carry__1_n_6,cal_tmp_carry__1_n_7}),
-        .S({cal_tmp_carry__1_i_1_n_0,cal_tmp_carry__1_i_2_n_0,cal_tmp_carry__1_i_3__0_n_0,cal_tmp_carry__1_i_4_n_0}));
+        .S({cal_tmp_carry__1_i_1_n_0,cal_tmp_carry__1_i_2__0_n_0,cal_tmp_carry__1_i_3__0_n_0,cal_tmp_carry__1_i_4_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_1
@@ -7951,10 +7911,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .O(cal_tmp_carry__1_i_1_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__1_i_2
+    cal_tmp_carry__1_i_2__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg[10]_0 [9]),
-        .O(cal_tmp_carry__1_i_2_n_0));
+        .O(cal_tmp_carry__1_i_2__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__1_i_3__0
@@ -7973,7 +7933,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .CYINIT(1'b0),
         .DI({1'b1,1'b1,1'b1,1'b1}),
         .O({cal_tmp_carry__2_n_4,cal_tmp_carry__2_n_5,cal_tmp_carry__2_n_6,cal_tmp_carry__2_n_7}),
-        .S({cal_tmp_carry__2_i_1_n_0,cal_tmp_carry__2_i_2_n_0,cal_tmp_carry__2_i_3_n_0,cal_tmp_carry__2_i_4__0_n_0}));
+        .S({cal_tmp_carry__2_i_1_n_0,cal_tmp_carry__2_i_2__0_n_0,cal_tmp_carry__2_i_3_n_0,cal_tmp_carry__2_i_4__0_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__2_i_1
@@ -7982,10 +7942,10 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .O(cal_tmp_carry__2_i_1_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__2_i_2
+    cal_tmp_carry__2_i_2__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[13] ),
-        .O(cal_tmp_carry__2_i_2_n_0));
+        .O(cal_tmp_carry__2_i_2__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__2_i_3
@@ -8004,7 +7964,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .CYINIT(1'b0),
         .DI({1'b1,1'b1,1'b1,1'b1}),
         .O({cal_tmp_carry__3_n_4,cal_tmp_carry__3_n_5,cal_tmp_carry__3_n_6,cal_tmp_carry__3_n_7}),
-        .S({cal_tmp_carry__3_i_1_n_0,cal_tmp_carry__3_i_2_n_0,cal_tmp_carry__3_i_3__0_n_0,cal_tmp_carry__3_i_4__0_n_0}));
+        .S({cal_tmp_carry__3_i_1_n_0,cal_tmp_carry__3_i_2_n_0,cal_tmp_carry__3_i_3_n_0,cal_tmp_carry__3_i_4_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__3_i_1
@@ -8019,41 +7979,41 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
         .O(cal_tmp_carry__3_i_2_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__3_i_3__0
+    cal_tmp_carry__3_i_3
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[16] ),
-        .O(cal_tmp_carry__3_i_3__0_n_0));
+        .O(cal_tmp_carry__3_i_3_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__3_i_4__0
+    cal_tmp_carry__3_i_4
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[15] ),
-        .O(cal_tmp_carry__3_i_4__0_n_0));
+        .O(cal_tmp_carry__3_i_4_n_0));
   CARRY4 cal_tmp_carry__4
        (.CI(cal_tmp_carry__3_n_0),
         .CO({cal_tmp_carry__4_n_0,cal_tmp_carry__4_n_1,cal_tmp_carry__4_n_2,cal_tmp_carry__4_n_3}),
         .CYINIT(1'b0),
         .DI({1'b1,1'b1,1'b1,1'b1}),
         .O({cal_tmp_carry__4_n_4,cal_tmp_carry__4_n_5,cal_tmp_carry__4_n_6,cal_tmp_carry__4_n_7}),
-        .S({cal_tmp_carry__4_i_1_n_0,cal_tmp_carry__4_i_2_n_0,cal_tmp_carry__4_i_3_n_0,cal_tmp_carry__4_i_4__0_n_0}));
+        .S({cal_tmp_carry__4_i_1__0_n_0,cal_tmp_carry__4_i_2__0_n_0,cal_tmp_carry__4_i_3__0_n_0,cal_tmp_carry__4_i_4__0_n_0}));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__4_i_1
+    cal_tmp_carry__4_i_1__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[22] ),
-        .O(cal_tmp_carry__4_i_1_n_0));
+        .O(cal_tmp_carry__4_i_1__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__4_i_2
+    cal_tmp_carry__4_i_2__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[21] ),
-        .O(cal_tmp_carry__4_i_2_n_0));
+        .O(cal_tmp_carry__4_i_2__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
-    cal_tmp_carry__4_i_3
+    cal_tmp_carry__4_i_3__0
        (.I0(\r_stage_reg_n_0_[0] ),
         .I1(\remd_tmp_reg_n_0_[20] ),
-        .O(cal_tmp_carry__4_i_3_n_0));
+        .O(cal_tmp_carry__4_i_3__0_n_0));
   LUT2 #(
     .INIT(4'hB)) 
     cal_tmp_carry__4_i_4__0

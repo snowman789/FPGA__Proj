@@ -10,6 +10,7 @@ add_files Gamelogic2/Gamelogic2.cpp
 open_solution "solution1"
 set_part {xc7z020clg400-1} -tool vivado
 create_clock -period 10 -name default
+config_export -format ip_catalog -rtl verilog
 #source "./Gamelogic2/solution1/directives.tcl"
 #csim_design
 csynth_design

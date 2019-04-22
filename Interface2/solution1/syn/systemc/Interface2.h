@@ -15,7 +15,9 @@
 namespace ap_rtl {
 
 struct Interface2 : public sc_module {
-    // Port declarations 14
+    // Port declarations 16
+    sc_in_clk ap_clk;
+    sc_in< sc_logic > ap_rst;
     sc_in< sc_logic > ap_start;
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_idle;
@@ -30,8 +32,6 @@ struct Interface2 : public sc_module {
     sc_in< sc_logic > verify1;
     sc_in< sc_logic > verify2;
     sc_in< sc_logic > verify3;
-    // Port declarations for the virtual clock. 
-    sc_in_clk ap_virtual_clock;
 
 
     // Module declarations
@@ -44,25 +44,58 @@ struct Interface2 : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    sc_signal< sc_lv<1> > tmp_fu_75_p2;
-    sc_signal< sc_lv<1> > not_tmp_fu_99_p2;
+    sc_signal< sc_lv<2> > ap_CS_fsm;
+    sc_signal< sc_logic > ap_CS_fsm_state1;
+    sc_signal< sc_lv<1> > or_cond_fu_153_p2;
+    sc_signal< sc_lv<1> > or_cond_reg_159;
+    sc_signal< sc_lv<8> > storemerge2_fu_104_p3;
+    sc_signal< sc_lv<8> > XY_Red_V_preg;
+    sc_signal< sc_logic > ap_CS_fsm_state2;
+    sc_signal< sc_lv<8> > storemerge1_cast_cas_fu_113_p3;
+    sc_signal< sc_lv<8> > XY_Blue_V_preg;
+    sc_signal< sc_lv<8> > storemerge_cast_fu_128_p3;
+    sc_signal< sc_lv<8> > XY_Green_V_preg;
+    sc_signal< sc_lv<1> > tmp_1_fu_98_p2;
+    sc_signal< sc_lv<1> > not_tmp_1_fu_122_p2;
+    sc_signal< sc_lv<9> > tmp_fu_94_p1;
+    sc_signal< sc_lv<10> > tmp_3_cast_fu_137_p1;
+    sc_signal< sc_lv<1> > tmp_4_fu_141_p2;
+    sc_signal< sc_lv<1> > tmp_5_fu_147_p2;
+    sc_signal< sc_lv<2> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
-    static const sc_lv<10> ap_const_lv10_C8;
-    static const sc_lv<8> ap_const_lv8_FF;
-    static const sc_lv<8> ap_const_lv8_0;
-    static const sc_lv<8> ap_const_lv8_C8;
-    static const sc_lv<1> ap_const_lv1_1;
     static const sc_logic ap_const_logic_0;
+    static const sc_lv<2> ap_ST_fsm_state1;
+    static const sc_lv<2> ap_ST_fsm_state2;
+    static const sc_lv<32> ap_const_lv32_0;
+    static const sc_lv<8> ap_const_lv8_0;
+    static const sc_lv<32> ap_const_lv32_1;
+    static const sc_lv<1> ap_const_lv1_1;
+    static const sc_lv<8> ap_const_lv8_FF;
+    static const sc_lv<10> ap_const_lv10_C8;
+    static const sc_lv<8> ap_const_lv8_C8;
+    static const sc_lv<10> ap_const_lv10_64;
     static const bool ap_const_boolean_1;
     // Thread declarations
+    void thread_ap_clk_no_reset_();
     void thread_XY_Blue_V();
     void thread_XY_Green_V();
     void thread_XY_Red_V();
+    void thread_ap_CS_fsm_state1();
+    void thread_ap_CS_fsm_state2();
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_not_tmp_fu_99_p2();
-    void thread_tmp_fu_75_p2();
+    void thread_not_tmp_1_fu_122_p2();
+    void thread_or_cond_fu_153_p2();
+    void thread_storemerge1_cast_cas_fu_113_p3();
+    void thread_storemerge2_fu_104_p3();
+    void thread_storemerge_cast_fu_128_p3();
+    void thread_tmp_1_fu_98_p2();
+    void thread_tmp_3_cast_fu_137_p1();
+    void thread_tmp_4_fu_141_p2();
+    void thread_tmp_5_fu_147_p2();
+    void thread_tmp_fu_94_p1();
+    void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };
 

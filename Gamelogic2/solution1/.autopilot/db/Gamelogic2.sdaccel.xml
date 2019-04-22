@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Gamelogic2'" level="0">
-<item name = "Date">Sun Apr 21 19:43:14 2019
+<item name = "Date">Sun Apr 21 20:24:57 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Gamelogic2</item>
@@ -90,7 +90,7 @@
 <column name="tmp_3_i1_fu_273_p2">icmp, 0, 0, 11, 7, 6</column>
 <column name="tmp_3_i2_fu_330_p2">icmp, 0, 0, 11, 7, 6</column>
 <column name="tmp_3_i6_fu_298_p2">icmp, 0, 0, 11, 7, 6</column>
-<column name="tmp_i_2_fu_222_p2">icmp, 0, 0, 18, 25, 1</column>
+<column name="tmp_i_2_fu_222_p2">icmp, 0, 0, 18, 21, 1</column>
 <column name="or_cond3_i_fu_376_p2">or, 0, 0, 2, 1, 1</column>
 <column name="tmp_fu_370_p2">or, 0, 0, 2, 1, 1</column>
 <column name="not_or_cond3_i_fu_382_p2">xor, 0, 0, 2, 1, 2</column>

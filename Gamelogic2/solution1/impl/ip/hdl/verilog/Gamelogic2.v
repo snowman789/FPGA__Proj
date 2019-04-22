@@ -200,9 +200,9 @@ reg   [9:0] time_remaining_out_V_preg;
 wire   [9:0] tmp_3_i_fu_232_p2;
 reg    lose_preg;
 wire   [31:0] grp_fu_212_p0;
-wire   [24:0] grp_fu_212_p1;
-wire   [24:0] grp_fu_212_p2;
-wire   [24:0] tmp_1_fu_218_p1;
+wire   [20:0] grp_fu_212_p1;
+wire   [20:0] grp_fu_212_p2;
+wire   [20:0] tmp_1_fu_218_p1;
 wire   [9:0] tmp_2_fu_228_p1;
 wire  signed [31:0] tmp_i_i_fu_246_p1;
 wire   [31:0] grp_fu_263_p0;
@@ -258,8 +258,8 @@ Gamelogic2_urem_3bkb #(
     .ID( 1 ),
     .NUM_STAGE( 36 ),
     .din0_WIDTH( 32 ),
-    .din1_WIDTH( 25 ),
-    .dout_WIDTH( 25 ))
+    .din1_WIDTH( 21 ),
+    .dout_WIDTH( 21 ))
 Gamelogic2_urem_3bkb_U1(
     .clk(ap_clk),
     .reset(ap_rst),
@@ -920,7 +920,7 @@ assign ap_ready = 1'b0;
 
 assign grp_fu_212_p0 = (32'd1 + slow_down_clock);
 
-assign grp_fu_212_p1 = 32'd10000000;
+assign grp_fu_212_p1 = 32'd1000000;
 
 assign grp_fu_263_p0 = (32'd100 + tmp_i_i_reg_446);
 
@@ -960,7 +960,7 @@ assign tmp2_i_fu_365_p1 = btn3;
 
 assign tmp2_i_fu_365_p2 = (tmp2_i_fu_365_p1 ^ btn3_verify);
 
-assign tmp_1_fu_218_p1 = grp_fu_212_p2[24:0];
+assign tmp_1_fu_218_p1 = grp_fu_212_p2[20:0];
 
 assign tmp_2_fu_228_p1 = decrement_value[9:0];
 
@@ -986,7 +986,7 @@ assign tmp_i1_fu_355_p1 = btn1;
 
 assign tmp_i1_fu_355_p2 = (tmp_i1_fu_355_p1 ^ btn1_verify);
 
-assign tmp_i_2_fu_222_p2 = ((tmp_1_fu_218_p1 == 25'd0) ? 1'b1 : 1'b0);
+assign tmp_i_2_fu_222_p2 = ((tmp_1_fu_218_p1 == 21'd0) ? 1'b1 : 1'b0);
 
 assign tmp_i_i_fu_246_p1 = RandSeed;
 

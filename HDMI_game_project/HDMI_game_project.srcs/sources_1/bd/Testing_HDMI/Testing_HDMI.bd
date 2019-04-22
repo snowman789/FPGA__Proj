@@ -485,7 +485,8 @@
         "ports": [
           "clk_wiz_0/locked",
           "HDMI_test_0/HPD",
-          "Gamelogic2_0/ap_start"
+          "Gamelogic2_0/ap_start",
+          "Interface2_0/ap_start"
         ]
       },
       "reset_rtl_1": {
@@ -576,7 +577,8 @@
       "clk_wiz_0_clk_out3": {
         "ports": [
           "clk_wiz_0/clk_out3",
-          "Gamelogic2_0/ap_clk"
+          "Gamelogic2_0/ap_clk",
+          "Interface2_0/ap_clk"
         ]
       },
       "Interface2_0_XY_Red_V": {

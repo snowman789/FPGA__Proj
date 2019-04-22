@@ -154,8 +154,8 @@ architecture behav of Gamelogic2 is
     constant ap_const_lv32_66 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001100110";
     constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv32_989680 : STD_LOGIC_VECTOR (31 downto 0) := "00000000100110001001011010000000";
-    constant ap_const_lv25_0 : STD_LOGIC_VECTOR (24 downto 0) := "0000000000000000000000000";
+    constant ap_const_lv32_F4240 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000011110100001001000000";
+    constant ap_const_lv21_0 : STD_LOGIC_VECTOR (20 downto 0) := "000000000000000000000";
     constant ap_const_lv32_D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001101";
     constant ap_const_lv32_64 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001100100";
     constant ap_const_lv7_32 : STD_LOGIC_VECTOR (6 downto 0) := "0110010";
@@ -219,9 +219,9 @@ architecture behav of Gamelogic2 is
     signal tmp_3_i_fu_232_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal lose_preg : STD_LOGIC := '0';
     signal grp_fu_212_p0 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_212_p1 : STD_LOGIC_VECTOR (24 downto 0);
-    signal grp_fu_212_p2 : STD_LOGIC_VECTOR (24 downto 0);
-    signal tmp_1_fu_218_p1 : STD_LOGIC_VECTOR (24 downto 0);
+    signal grp_fu_212_p1 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_fu_212_p2 : STD_LOGIC_VECTOR (20 downto 0);
+    signal tmp_1_fu_218_p1 : STD_LOGIC_VECTOR (20 downto 0);
     signal tmp_2_fu_228_p1 : STD_LOGIC_VECTOR (9 downto 0);
     signal tmp_i_i_fu_246_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_263_p0 : STD_LOGIC_VECTOR (31 downto 0);
@@ -269,9 +269,9 @@ architecture behav of Gamelogic2 is
         start : IN STD_LOGIC;
         done : OUT STD_LOGIC;
         din0 : IN STD_LOGIC_VECTOR (31 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (24 downto 0);
+        din1 : IN STD_LOGIC_VECTOR (20 downto 0);
         ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (24 downto 0) );
+        dout : OUT STD_LOGIC_VECTOR (20 downto 0) );
     end component;
 
 
@@ -352,8 +352,8 @@ begin
         ID => 1,
         NUM_STAGE => 36,
         din0_WIDTH => 32,
-        din1_WIDTH => 25,
-        dout_WIDTH => 25)
+        din1_WIDTH => 21,
+        dout_WIDTH => 21)
     port map (
         clk => ap_clk,
         reset => ap_rst,
@@ -889,7 +889,7 @@ begin
     end process;
 
     grp_fu_212_p0 <= std_logic_vector(unsigned(ap_const_lv32_1) + unsigned(slow_down_clock));
-    grp_fu_212_p1 <= ap_const_lv32_989680(25 - 1 downto 0);
+    grp_fu_212_p1 <= ap_const_lv32_F4240(21 - 1 downto 0);
 
     grp_fu_263_ap_start_assign_proc : process(ap_CS_fsm_state38)
     begin
@@ -961,7 +961,7 @@ begin
     tmp1_i_fu_360_p2 <= (tmp1_i_fu_360_p1 xor btn2_verify);
     tmp2_i_fu_365_p1 <= (0=>btn3, others=>'-');
     tmp2_i_fu_365_p2 <= (tmp2_i_fu_365_p1 xor btn3_verify);
-    tmp_1_fu_218_p1 <= grp_fu_212_p2(25 - 1 downto 0);
+    tmp_1_fu_218_p1 <= grp_fu_212_p2(21 - 1 downto 0);
     tmp_2_fu_228_p1 <= decrement_value(10 - 1 downto 0);
     tmp_2_i_i_cast_fu_320_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_311_p2),32));
     tmp_3_i1_fu_273_p2 <= "1" when (unsigned(tmp_4_fu_269_p1) > unsigned(ap_const_lv7_32)) else "0";
@@ -974,7 +974,7 @@ begin
     tmp_fu_370_p2 <= (tmp2_i_fu_365_p2 or tmp1_i_fu_360_p2);
     tmp_i1_fu_355_p1 <= (0=>btn1, others=>'-');
     tmp_i1_fu_355_p2 <= (tmp_i1_fu_355_p1 xor btn1_verify);
-    tmp_i_2_fu_222_p2 <= "1" when (tmp_1_fu_218_p1 = ap_const_lv25_0) else "0";
+    tmp_i_2_fu_222_p2 <= "1" when (tmp_1_fu_218_p1 = ap_const_lv21_0) else "0";
     tmp_i_i_fu_246_p1 <= RandSeed;
     tmp_i_i_fu_246_p2 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(signed('0' &ap_const_lv32_D) * signed(tmp_i_i_fu_246_p1))), 32));
     tmp_s_fu_343_p2 <= std_logic_vector(unsigned(ap_const_lv32_2) + unsigned(decrement_value));

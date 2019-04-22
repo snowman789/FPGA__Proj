@@ -16,11 +16,11 @@ set start_signed 0
 set done_width 1
 set in0_width 32
 set in0_signed 0
-set in1_width 25
+set in1_width 21
 set in1_signed 0
 set ce_width 1
 set ce_signed 0
-set out_width 25
+set out_width 21
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
 eval "ap_gen_simcore_urem { \

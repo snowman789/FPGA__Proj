@@ -22439,6 +22439,7 @@ struct s1_t {
 void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
   bool lose, ap_uint<9> time_remaining, bool verify1, bool verify2, bool verify3 ) {
 _ssdm_InlineSelf(0, "");
+
  if(x> 200)
  {
   *XY_Red = 255;
@@ -22449,6 +22450,12 @@ _ssdm_InlineSelf(0, "");
   *XY_Red = 0;
     *XY_Blue = 200;
     *XY_Green = 255;
+ }
+
+ if(x < time_remaining && y < 100){
+     *XY_Red = 0;
+     *XY_Blue = 255;
+     *XY_Green = 0;
  }
 }
 

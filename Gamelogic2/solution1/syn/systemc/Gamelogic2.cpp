@@ -132,8 +132,8 @@ const sc_lv<32> Gamelogic2::ap_const_lv32_67 = "1100111";
 const sc_lv<32> Gamelogic2::ap_const_lv32_66 = "1100110";
 const sc_lv<10> Gamelogic2::ap_const_lv10_280 = "1010000000";
 const sc_lv<10> Gamelogic2::ap_const_lv10_0 = "0000000000";
-const sc_lv<32> Gamelogic2::ap_const_lv32_989680 = "100110001001011010000000";
-const sc_lv<25> Gamelogic2::ap_const_lv25_0 = "0000000000000000000000000";
+const sc_lv<32> Gamelogic2::ap_const_lv32_F4240 = "11110100001001000000";
+const sc_lv<21> Gamelogic2::ap_const_lv21_0 = "000000000000000000000";
 const sc_lv<32> Gamelogic2::ap_const_lv32_D = "1101";
 const sc_lv<32> Gamelogic2::ap_const_lv32_64 = "1100100";
 const sc_lv<7> Gamelogic2::ap_const_lv7_32 = "110010";
@@ -143,7 +143,7 @@ const sc_lv<11> Gamelogic2::ap_const_lv11_D = "1101";
 const bool Gamelogic2::ap_const_boolean_1 = true;
 
 Gamelogic2::Gamelogic2(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    Gamelogic2_urem_3bkb_U1 = new Gamelogic2_urem_3bkb<1,36,32,25,25>("Gamelogic2_urem_3bkb_U1");
+    Gamelogic2_urem_3bkb_U1 = new Gamelogic2_urem_3bkb<1,36,32,21,21>("Gamelogic2_urem_3bkb_U1");
     Gamelogic2_urem_3bkb_U1->clk(ap_clk);
     Gamelogic2_urem_3bkb_U1->reset(ap_rst);
     Gamelogic2_urem_3bkb_U1->start(grp_fu_212_ap_start);
@@ -744,7 +744,7 @@ void Gamelogic2::thread_grp_fu_212_p0() {
 }
 
 void Gamelogic2::thread_grp_fu_212_p1() {
-    grp_fu_212_p1 =  (sc_lv<25>) (ap_const_lv32_989680);
+    grp_fu_212_p1 =  (sc_lv<21>) (ap_const_lv32_F4240);
 }
 
 void Gamelogic2::thread_grp_fu_263_ap_start() {
@@ -870,7 +870,7 @@ void Gamelogic2::thread_tmp2_i_fu_365_p2() {
 }
 
 void Gamelogic2::thread_tmp_1_fu_218_p1() {
-    tmp_1_fu_218_p1 = grp_fu_212_p2.read().range(25-1, 0);
+    tmp_1_fu_218_p1 = grp_fu_212_p2.read().range(21-1, 0);
 }
 
 void Gamelogic2::thread_tmp_2_fu_228_p1() {
@@ -922,7 +922,7 @@ void Gamelogic2::thread_tmp_i1_fu_355_p2() {
 }
 
 void Gamelogic2::thread_tmp_i_2_fu_222_p2() {
-    tmp_i_2_fu_222_p2 = (!tmp_1_fu_218_p1.read().is_01() || !ap_const_lv25_0.is_01())? sc_lv<1>(): sc_lv<1>(tmp_1_fu_218_p1.read() == ap_const_lv25_0);
+    tmp_i_2_fu_222_p2 = (!tmp_1_fu_218_p1.read().is_01() || !ap_const_lv21_0.is_01())? sc_lv<1>(): sc_lv<1>(tmp_1_fu_218_p1.read() == ap_const_lv21_0);
 }
 
 void Gamelogic2::thread_tmp_i_i_fu_246_p1() {

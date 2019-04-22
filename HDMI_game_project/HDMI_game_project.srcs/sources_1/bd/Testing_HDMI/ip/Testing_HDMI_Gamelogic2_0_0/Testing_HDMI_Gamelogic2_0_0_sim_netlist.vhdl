@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Apr 21 19:48:51 2019
+-- Date        : Sun Apr 21 20:27:45 2019
 -- Host        : EmbSys18 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_sim_netlist.vhdl
@@ -32,7 +32,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
   signal \^q\ : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal \cal_tmp_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__0_i_3__2_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__0_i_3__1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_5_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_6__1_n_0\ : STD_LOGIC;
@@ -45,7 +45,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
   signal \cal_tmp_carry__0_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__0_n_7\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_1__0_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__1_i_2__1_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__1_i_2__2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_3__2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_2\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_3\ : STD_LOGIC;
@@ -168,7 +168,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(2) => \cal_tmp_carry__0_n_5\,
       O(1) => \cal_tmp_carry__0_n_6\,
       O(0) => \cal_tmp_carry__0_n_7\,
-      S(3) => \cal_tmp_carry__0_i_3__2_n_0\,
+      S(3) => \cal_tmp_carry__0_i_3__1_n_0\,
       S(2) => \cal_tmp_carry__0_i_4_n_0\,
       S(1) => \cal_tmp_carry__0_i_5_n_0\,
       S(0) => \cal_tmp_carry__0_i_6__1_n_0\
@@ -191,14 +191,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__0_i_2_n_0\
     );
-\cal_tmp_carry__0_i_3__2\: unisim.vcomponents.LUT2
+\cal_tmp_carry__0_i_3__1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^q\(6),
-      O => \cal_tmp_carry__0_i_3__2_n_0\
+      O => \cal_tmp_carry__0_i_3__1_n_0\
     );
 \cal_tmp_carry__0_i_4\: unisim.vcomponents.LUT2
     generic map(
@@ -242,7 +242,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(0) => \cal_tmp_carry__1_n_7\,
       S(3) => '1',
       S(2) => \cal_tmp_carry__1_i_1__0_n_0\,
-      S(1) => \cal_tmp_carry__1_i_2__1_n_0\,
+      S(1) => \cal_tmp_carry__1_i_2__2_n_0\,
       S(0) => \cal_tmp_carry__1_i_3__2_n_0\
     );
 \cal_tmp_carry__1_i_1__0\: unisim.vcomponents.LUT2
@@ -254,14 +254,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \^q\(9),
       O => \cal_tmp_carry__1_i_1__0_n_0\
     );
-\cal_tmp_carry__1_i_2__1\: unisim.vcomponents.LUT2
+\cal_tmp_carry__1_i_2__2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^q\(8),
-      O => \cal_tmp_carry__1_i_2__1_n_0\
+      O => \cal_tmp_carry__1_i_2__2_n_0\
     );
 \cal_tmp_carry__1_i_3__2\: unisim.vcomponents.LUT2
     generic map(
@@ -870,7 +870,7 @@ end Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2;
 architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u_2 is
   signal \cal_tmp_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__0_i_3__1_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__0_i_3__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_5_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_6__0_n_0\ : STD_LOGIC;
@@ -883,7 +883,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_1dEe_div_u
   signal \cal_tmp_carry__0_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__0_n_7\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_1__1_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__1_i_2__0_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__1_i_2__1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_3__1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_2\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_3\ : STD_LOGIC;
@@ -1008,7 +1008,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(2) => \cal_tmp_carry__0_n_5\,
       O(1) => \cal_tmp_carry__0_n_6\,
       O(0) => \cal_tmp_carry__0_n_7\,
-      S(3) => \cal_tmp_carry__0_i_3__1_n_0\,
+      S(3) => \cal_tmp_carry__0_i_3__0_n_0\,
       S(2) => \cal_tmp_carry__0_i_4_n_0\,
       S(1) => \cal_tmp_carry__0_i_5_n_0\,
       S(0) => \cal_tmp_carry__0_i_6__0_n_0\
@@ -1031,14 +1031,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__0_i_2_n_0\
     );
-\cal_tmp_carry__0_i_3__1\: unisim.vcomponents.LUT2
+\cal_tmp_carry__0_i_3__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^remd_tmp_reg[7]_0\(6),
-      O => \cal_tmp_carry__0_i_3__1_n_0\
+      O => \cal_tmp_carry__0_i_3__0_n_0\
     );
 \cal_tmp_carry__0_i_4\: unisim.vcomponents.LUT2
     generic map(
@@ -1082,7 +1082,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(0) => \cal_tmp_carry__1_n_7\,
       S(3) => '1',
       S(2) => \cal_tmp_carry__1_i_1__1_n_0\,
-      S(1) => \cal_tmp_carry__1_i_2__0_n_0\,
+      S(1) => \cal_tmp_carry__1_i_2__1_n_0\,
       S(0) => \cal_tmp_carry__1_i_3__1_n_0\
     );
 \cal_tmp_carry__1_i_1__1\: unisim.vcomponents.LUT2
@@ -1094,14 +1094,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \remd_tmp_reg_n_0_[9]\,
       O => \cal_tmp_carry__1_i_1__1_n_0\
     );
-\cal_tmp_carry__1_i_2__0\: unisim.vcomponents.LUT2
+\cal_tmp_carry__1_i_2__1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[8]\,
-      O => \cal_tmp_carry__1_i_2__0_n_0\
+      O => \cal_tmp_carry__1_i_2__1_n_0\
     );
 \cal_tmp_carry__1_i_3__1\: unisim.vcomponents.LUT2
     generic map(
@@ -1679,7 +1679,7 @@ entity Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u is
     r_stage_reg_r_8_0 : out STD_LOGIC;
     r_stage_reg_r_29_0 : out STD_LOGIC;
     \r_stage_reg[32]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    Q : out STD_LOGIC_VECTOR ( 24 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 20 downto 0 );
     ap_rst : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     ap_clk : in STD_LOGIC;
@@ -1690,7 +1690,7 @@ entity Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u is
 end Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u;
 
 architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u is
-  signal \^q\ : STD_LOGIC_VECTOR ( 24 downto 0 );
+  signal \^q\ : STD_LOGIC_VECTOR ( 20 downto 0 );
   signal \cal_tmp_carry__0_i_2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_4_n_0\ : STD_LOGIC;
@@ -1703,10 +1703,10 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \cal_tmp_carry__0_n_5\ : STD_LOGIC;
   signal \cal_tmp_carry__0_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__0_n_7\ : STD_LOGIC;
+  signal \cal_tmp_carry__1_i_2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_5_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__1_i_6_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_1\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_2\ : STD_LOGIC;
@@ -1715,10 +1715,10 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \cal_tmp_carry__1_n_5\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_7\ : STD_LOGIC;
+  signal \cal_tmp_carry__2_i_2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_5_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__2_i_6_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_1\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_2\ : STD_LOGIC;
@@ -1727,10 +1727,10 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \cal_tmp_carry__2_n_5\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_7\ : STD_LOGIC;
-  signal \cal_tmp_carry__3_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__3_i_3_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__3_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_i_5_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__3_i_6_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__3_i_7_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__3_i_8_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_1\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_2\ : STD_LOGIC;
@@ -1739,10 +1739,10 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \cal_tmp_carry__3_n_5\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_7\ : STD_LOGIC;
+  signal \cal_tmp_carry__4_i_1_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__4_i_2_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_i_4_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__4_i_5_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__4_i_6_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_n_1\ : STD_LOGIC;
   signal \cal_tmp_carry__4_n_2\ : STD_LOGIC;
@@ -1855,7 +1855,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \^r_stage_reg_r_8_0\ : STD_LOGIC;
   signal r_stage_reg_r_9_n_0 : STD_LOGIC;
   signal r_stage_reg_r_n_0 : STD_LOGIC;
-  signal remd_tmp : STD_LOGIC_VECTOR ( 30 downto 25 );
+  signal remd_tmp : STD_LOGIC_VECTOR ( 30 downto 21 );
   signal \remd_tmp[0]_i_1_n_0\ : STD_LOGIC;
   signal \remd_tmp[10]_i_1_n_0\ : STD_LOGIC;
   signal \remd_tmp[11]_i_1_n_0\ : STD_LOGIC;
@@ -1887,7 +1887,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   signal \remd_tmp[7]_i_1_n_0\ : STD_LOGIC;
   signal \remd_tmp[8]_i_1_n_0\ : STD_LOGIC;
   signal \remd_tmp[9]_i_1_n_0\ : STD_LOGIC;
-  signal remd_tmp_mux : STD_LOGIC_VECTOR ( 22 downto 6 );
+  signal remd_tmp_mux : STD_LOGIC_VECTOR ( 18 downto 5 );
   signal \NLW_cal_tmp_carry__6_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   signal \NLW_cal_tmp_carry__7_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_cal_tmp_carry__7_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
@@ -1928,7 +1928,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
   attribute srl_name : string;
   attribute srl_name of \r_stage_reg[30]_srl30___Gamelogic2_urem_3bkb_U1_Gamelogic2_urem_3bkb_div_U_Gamelogic2_urem_3bkb_div_u_0_r_stage_reg_r_28\ : label is "inst/\Gamelogic2_urem_3bkb_U1/Gamelogic2_urem_3bkb_div_U/Gamelogic2_urem_3bkb_div_u_0/r_stage_reg[30]_srl30___Gamelogic2_urem_3bkb_U1_Gamelogic2_urem_3bkb_div_U_Gamelogic2_urem_3bkb_div_u_0_r_stage_reg_r_28 ";
 begin
-  Q(24 downto 0) <= \^q\(24 downto 0);
+  Q(20 downto 0) <= \^q\(20 downto 0);
   r_stage_reg_r_29_0 <= \^r_stage_reg_r_29_0\;
   r_stage_reg_r_8_0 <= \^r_stage_reg_r_8_0\;
 cal_tmp_carry: unisim.vcomponents.CARRY4
@@ -1957,8 +1957,9 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       CO(1) => \cal_tmp_carry__0_n_2\,
       CO(0) => \cal_tmp_carry__0_n_3\,
       CYINIT => '0',
-      DI(3) => remd_tmp_mux(6),
-      DI(2 downto 0) => B"111",
+      DI(3) => '1',
+      DI(2) => remd_tmp_mux(5),
+      DI(1 downto 0) => B"11",
       O(3) => \cal_tmp_carry__0_n_4\,
       O(2) => \cal_tmp_carry__0_n_5\,
       O(1) => \cal_tmp_carry__0_n_6\,
@@ -1973,26 +1974,26 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       INIT => X"2"
     )
         port map (
-      I0 => \^q\(6),
+      I0 => \^q\(5),
       I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(6)
+      O => remd_tmp_mux(5)
     );
 \cal_tmp_carry__0_i_2\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^q\(6),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => \cal_tmp_carry__0_i_2_n_0\
-    );
-\cal_tmp_carry__0_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(5),
+      I1 => \^q\(6),
+      O => \cal_tmp_carry__0_i_2_n_0\
+    );
+\cal_tmp_carry__0_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \^q\(5),
+      I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__0_i_3_n_0\
     );
 \cal_tmp_carry__0_i_4\: unisim.vcomponents.LUT2
@@ -2021,28 +2022,19 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       CO(1) => \cal_tmp_carry__1_n_2\,
       CO(0) => \cal_tmp_carry__1_n_3\,
       CYINIT => '0',
-      DI(3) => '1',
-      DI(2 downto 1) => remd_tmp_mux(9 downto 8),
+      DI(3 downto 2) => B"11",
+      DI(1) => remd_tmp_mux(8),
       DI(0) => '1',
       O(3) => \cal_tmp_carry__1_n_4\,
       O(2) => \cal_tmp_carry__1_n_5\,
       O(1) => \cal_tmp_carry__1_n_6\,
       O(0) => \cal_tmp_carry__1_n_7\,
-      S(3) => \cal_tmp_carry__1_i_3_n_0\,
-      S(2) => \cal_tmp_carry__1_i_4_n_0\,
-      S(1) => \cal_tmp_carry__1_i_5_n_0\,
-      S(0) => \cal_tmp_carry__1_i_6_n_0\
+      S(3) => \cal_tmp_carry__1_i_2_n_0\,
+      S(2) => \cal_tmp_carry__1_i_3_n_0\,
+      S(1) => \cal_tmp_carry__1_i_4_n_0\,
+      S(0) => \cal_tmp_carry__1_i_5_n_0\
     );
 \cal_tmp_carry__1_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^q\(9),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(9)
-    );
-\cal_tmp_carry__1_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
@@ -2051,13 +2043,22 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \r_stage_reg_n_0_[0]\,
       O => remd_tmp_mux(8)
     );
-\cal_tmp_carry__1_i_3\: unisim.vcomponents.LUT2
+\cal_tmp_carry__1_i_2\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^q\(10),
+      O => \cal_tmp_carry__1_i_2_n_0\
+    );
+\cal_tmp_carry__1_i_3\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"B"
+    )
+        port map (
+      I0 => \r_stage_reg_n_0_[0]\,
+      I1 => \^q\(9),
       O => \cal_tmp_carry__1_i_3_n_0\
     );
 \cal_tmp_carry__1_i_4\: unisim.vcomponents.LUT2
@@ -2065,27 +2066,18 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       INIT => X"2"
     )
         port map (
-      I0 => \^q\(9),
+      I0 => \^q\(8),
       I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__1_i_4_n_0\
     );
 \cal_tmp_carry__1_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^q\(8),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => \cal_tmp_carry__1_i_5_n_0\
-    );
-\cal_tmp_carry__1_i_6\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^q\(7),
-      O => \cal_tmp_carry__1_i_6_n_0\
+      O => \cal_tmp_carry__1_i_5_n_0\
     );
 \cal_tmp_carry__2\: unisim.vcomponents.CARRY4
      port map (
@@ -2095,42 +2087,42 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       CO(1) => \cal_tmp_carry__2_n_2\,
       CO(0) => \cal_tmp_carry__2_n_3\,
       CYINIT => '0',
-      DI(3) => remd_tmp_mux(14),
-      DI(2 downto 1) => B"11",
-      DI(0) => remd_tmp_mux(11),
+      DI(3) => '1',
+      DI(2) => remd_tmp_mux(13),
+      DI(1 downto 0) => B"11",
       O(3) => \cal_tmp_carry__2_n_4\,
       O(2) => \cal_tmp_carry__2_n_5\,
       O(1) => \cal_tmp_carry__2_n_6\,
       O(0) => \cal_tmp_carry__2_n_7\,
-      S(3) => \cal_tmp_carry__2_i_3_n_0\,
-      S(2) => \cal_tmp_carry__2_i_4_n_0\,
-      S(1) => \cal_tmp_carry__2_i_5_n_0\,
-      S(0) => \cal_tmp_carry__2_i_6_n_0\
+      S(3) => \cal_tmp_carry__2_i_2_n_0\,
+      S(2) => \cal_tmp_carry__2_i_3_n_0\,
+      S(1) => \cal_tmp_carry__2_i_4_n_0\,
+      S(0) => \cal_tmp_carry__2_i_5_n_0\
     );
 \cal_tmp_carry__2_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
-      I0 => \^q\(14),
+      I0 => \^q\(13),
       I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(14)
+      O => remd_tmp_mux(13)
     );
 \cal_tmp_carry__2_i_2\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"2"
+      INIT => X"B"
     )
         port map (
-      I0 => \^q\(11),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(11)
+      I0 => \r_stage_reg_n_0_[0]\,
+      I1 => \^q\(14),
+      O => \cal_tmp_carry__2_i_2_n_0\
     );
 \cal_tmp_carry__2_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"2"
     )
         port map (
-      I0 => \^q\(14),
+      I0 => \^q\(13),
       I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__2_i_3_n_0\
     );
@@ -2140,7 +2132,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(13),
+      I1 => \^q\(12),
       O => \cal_tmp_carry__2_i_4_n_0\
     );
 \cal_tmp_carry__2_i_5\: unisim.vcomponents.LUT2
@@ -2149,17 +2141,8 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(12),
+      I1 => \^q\(11),
       O => \cal_tmp_carry__2_i_5_n_0\
-    );
-\cal_tmp_carry__2_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^q\(11),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => \cal_tmp_carry__2_i_6_n_0\
     );
 \cal_tmp_carry__3\: unisim.vcomponents.CARRY4
      port map (
@@ -2169,16 +2152,15 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       CO(1) => \cal_tmp_carry__3_n_2\,
       CO(0) => \cal_tmp_carry__3_n_3\,
       CYINIT => '0',
-      DI(3) => remd_tmp_mux(18),
-      DI(2 downto 0) => B"111",
+      DI(3 downto 0) => remd_tmp_mux(18 downto 15),
       O(3) => \cal_tmp_carry__3_n_4\,
       O(2) => \cal_tmp_carry__3_n_5\,
       O(1) => \cal_tmp_carry__3_n_6\,
       O(0) => \cal_tmp_carry__3_n_7\,
-      S(3) => \cal_tmp_carry__3_i_2_n_0\,
-      S(2) => \cal_tmp_carry__3_i_3_n_0\,
-      S(1) => \cal_tmp_carry__3_i_4_n_0\,
-      S(0) => \cal_tmp_carry__3_i_5_n_0\
+      S(3) => \cal_tmp_carry__3_i_5_n_0\,
+      S(2) => \cal_tmp_carry__3_i_6_n_0\,
+      S(1) => \cal_tmp_carry__3_i_7_n_0\,
+      S(0) => \cal_tmp_carry__3_i_8_n_0\
     );
 \cal_tmp_carry__3_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -2194,36 +2176,63 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       INIT => X"2"
     )
         port map (
-      I0 => \^q\(18),
+      I0 => \^q\(17),
       I1 => \r_stage_reg_n_0_[0]\,
-      O => \cal_tmp_carry__3_i_2_n_0\
+      O => remd_tmp_mux(17)
     );
 \cal_tmp_carry__3_i_3\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"B"
+      INIT => X"2"
     )
         port map (
-      I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(17),
-      O => \cal_tmp_carry__3_i_3_n_0\
+      I0 => \^q\(16),
+      I1 => \r_stage_reg_n_0_[0]\,
+      O => remd_tmp_mux(16)
     );
 \cal_tmp_carry__3_i_4\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"B"
+      INIT => X"2"
     )
         port map (
-      I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(16),
-      O => \cal_tmp_carry__3_i_4_n_0\
+      I0 => \^q\(15),
+      I1 => \r_stage_reg_n_0_[0]\,
+      O => remd_tmp_mux(15)
     );
 \cal_tmp_carry__3_i_5\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"B"
+      INIT => X"2"
     )
         port map (
-      I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(15),
+      I0 => \^q\(18),
+      I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__3_i_5_n_0\
+    );
+\cal_tmp_carry__3_i_6\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \^q\(17),
+      I1 => \r_stage_reg_n_0_[0]\,
+      O => \cal_tmp_carry__3_i_6_n_0\
+    );
+\cal_tmp_carry__3_i_7\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \^q\(16),
+      I1 => \r_stage_reg_n_0_[0]\,
+      O => \cal_tmp_carry__3_i_7_n_0\
+    );
+\cal_tmp_carry__3_i_8\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \^q\(15),
+      I1 => \r_stage_reg_n_0_[0]\,
+      O => \cal_tmp_carry__3_i_8_n_0\
     );
 \cal_tmp_carry__4\: unisim.vcomponents.CARRY4
      port map (
@@ -2233,43 +2242,41 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       CO(1) => \cal_tmp_carry__4_n_2\,
       CO(0) => \cal_tmp_carry__4_n_3\,
       CYINIT => '0',
-      DI(3) => remd_tmp_mux(22),
-      DI(2 downto 1) => B"11",
-      DI(0) => remd_tmp_mux(19),
+      DI(3 downto 0) => B"1111",
       O(3) => \cal_tmp_carry__4_n_4\,
       O(2) => \cal_tmp_carry__4_n_5\,
       O(1) => \cal_tmp_carry__4_n_6\,
       O(0) => \cal_tmp_carry__4_n_7\,
-      S(3) => \cal_tmp_carry__4_i_3_n_0\,
-      S(2) => \cal_tmp_carry__4_i_4_n_0\,
-      S(1) => \cal_tmp_carry__4_i_5_n_0\,
-      S(0) => \cal_tmp_carry__4_i_6_n_0\
+      S(3) => \cal_tmp_carry__4_i_1_n_0\,
+      S(2) => \cal_tmp_carry__4_i_2_n_0\,
+      S(1) => \cal_tmp_carry__4_i_3_n_0\,
+      S(0) => \cal_tmp_carry__4_i_4_n_0\
     );
 \cal_tmp_carry__4_i_1\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"2"
+      INIT => X"B"
     )
         port map (
-      I0 => \^q\(22),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(22)
+      I0 => \r_stage_reg_n_0_[0]\,
+      I1 => remd_tmp(22),
+      O => \cal_tmp_carry__4_i_1_n_0\
     );
 \cal_tmp_carry__4_i_2\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"2"
+      INIT => X"B"
     )
         port map (
-      I0 => \^q\(19),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => remd_tmp_mux(19)
+      I0 => \r_stage_reg_n_0_[0]\,
+      I1 => remd_tmp(21),
+      O => \cal_tmp_carry__4_i_2_n_0\
     );
 \cal_tmp_carry__4_i_3\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"2"
+      INIT => X"B"
     )
         port map (
-      I0 => \^q\(22),
-      I1 => \r_stage_reg_n_0_[0]\,
+      I0 => \r_stage_reg_n_0_[0]\,
+      I1 => \^q\(20),
       O => \cal_tmp_carry__4_i_3_n_0\
     );
 \cal_tmp_carry__4_i_4\: unisim.vcomponents.LUT2
@@ -2278,26 +2285,8 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(21),
+      I1 => \^q\(19),
       O => \cal_tmp_carry__4_i_4_n_0\
-    );
-\cal_tmp_carry__4_i_5\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"B"
-    )
-        port map (
-      I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(20),
-      O => \cal_tmp_carry__4_i_5_n_0\
-    );
-\cal_tmp_carry__4_i_6\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => \^q\(19),
-      I1 => \r_stage_reg_n_0_[0]\,
-      O => \cal_tmp_carry__4_i_6_n_0\
     );
 \cal_tmp_carry__5\: unisim.vcomponents.CARRY4
      port map (
@@ -2341,7 +2330,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(24),
+      I1 => remd_tmp(24),
       O => \cal_tmp_carry__5_i_3_n_0\
     );
 \cal_tmp_carry__5_i_4\: unisim.vcomponents.LUT2
@@ -2350,7 +2339,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
-      I1 => \^q\(23),
+      I1 => remd_tmp(23),
       O => \cal_tmp_carry__5_i_4_n_0\
     );
 \cal_tmp_carry__6\: unisim.vcomponents.CARRY4
@@ -3726,7 +3715,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       INIT => X"2F20"
     )
         port map (
-      I0 => \^q\(21),
+      I0 => remd_tmp(21),
       I1 => \r_stage_reg_n_0_[0]\,
       I2 => p_0_in,
       I3 => \cal_tmp_carry__4_n_5\,
@@ -3737,7 +3726,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       INIT => X"2F20"
     )
         port map (
-      I0 => \^q\(22),
+      I0 => remd_tmp(22),
       I1 => \r_stage_reg_n_0_[0]\,
       I2 => p_0_in,
       I3 => \cal_tmp_carry__4_n_4\,
@@ -3748,7 +3737,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       INIT => X"2F20"
     )
         port map (
-      I0 => \^q\(23),
+      I0 => remd_tmp(23),
       I1 => \r_stage_reg_n_0_[0]\,
       I2 => p_0_in,
       I3 => \cal_tmp_carry__5_n_7\,
@@ -3759,7 +3748,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       INIT => X"2F20"
     )
         port map (
-      I0 => \^q\(24),
+      I0 => remd_tmp(24),
       I1 => \r_stage_reg_n_0_[0]\,
       I2 => p_0_in,
       I3 => \cal_tmp_carry__5_n_6\,
@@ -4017,7 +4006,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       C => ap_clk,
       CE => '1',
       D => \remd_tmp[21]_i_1_n_0\,
-      Q => \^q\(21),
+      Q => remd_tmp(21),
       R => '0'
     );
 \remd_tmp_reg[22]\: unisim.vcomponents.FDRE
@@ -4025,7 +4014,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       C => ap_clk,
       CE => '1',
       D => \remd_tmp[22]_i_1_n_0\,
-      Q => \^q\(22),
+      Q => remd_tmp(22),
       R => '0'
     );
 \remd_tmp_reg[23]\: unisim.vcomponents.FDRE
@@ -4033,7 +4022,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       C => ap_clk,
       CE => '1',
       D => \remd_tmp[23]_i_1_n_0\,
-      Q => \^q\(23),
+      Q => remd_tmp(23),
       R => '0'
     );
 \remd_tmp_reg[24]\: unisim.vcomponents.FDRE
@@ -4041,7 +4030,7 @@ r_stage_reg_r_9: unisim.vcomponents.FDRE
       C => ap_clk,
       CE => '1',
       D => \remd_tmp[24]_i_1_n_0\,
-      Q => \^q\(24),
+      Q => remd_tmp(24),
       R => '0'
     );
 \remd_tmp_reg[25]\: unisim.vcomponents.FDRE
@@ -4178,7 +4167,7 @@ end Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u;
 architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u is
   signal \cal_tmp_carry__0_i_1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__0_i_3__0_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__0_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_5_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__0_i_6_n_0\ : STD_LOGIC;
@@ -4191,7 +4180,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   signal \cal_tmp_carry__0_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__0_n_7\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_1_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__1_i_2_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__1_i_2__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_3__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_0\ : STD_LOGIC;
@@ -4203,7 +4192,7 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   signal \cal_tmp_carry__1_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__1_n_7\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_1_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__2_i_2_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__2_i_2__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_i_4__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__2_n_0\ : STD_LOGIC;
@@ -4216,8 +4205,8 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   signal \cal_tmp_carry__2_n_7\ : STD_LOGIC;
   signal \cal_tmp_carry__3_i_1_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__3_i_3__0_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__3_i_4__0_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__3_i_3_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__3_i_4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_1\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_2\ : STD_LOGIC;
@@ -4226,9 +4215,9 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3cud_div_u
   signal \cal_tmp_carry__3_n_5\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_6\ : STD_LOGIC;
   signal \cal_tmp_carry__3_n_7\ : STD_LOGIC;
-  signal \cal_tmp_carry__4_i_1_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__4_i_2_n_0\ : STD_LOGIC;
-  signal \cal_tmp_carry__4_i_3_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__4_i_1__0_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__4_i_2__0_n_0\ : STD_LOGIC;
+  signal \cal_tmp_carry__4_i_3__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_i_4__0_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_n_0\ : STD_LOGIC;
   signal \cal_tmp_carry__4_n_1\ : STD_LOGIC;
@@ -4505,7 +4494,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(2) => \cal_tmp_carry__0_n_5\,
       O(1) => \cal_tmp_carry__0_n_6\,
       O(0) => \cal_tmp_carry__0_n_7\,
-      S(3) => \cal_tmp_carry__0_i_3__0_n_0\,
+      S(3) => \cal_tmp_carry__0_i_3_n_0\,
       S(2) => \cal_tmp_carry__0_i_4_n_0\,
       S(1) => \cal_tmp_carry__0_i_5_n_0\,
       S(0) => \cal_tmp_carry__0_i_6_n_0\
@@ -4528,14 +4517,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \r_stage_reg_n_0_[0]\,
       O => \cal_tmp_carry__0_i_2_n_0\
     );
-\cal_tmp_carry__0_i_3__0\: unisim.vcomponents.LUT2
+\cal_tmp_carry__0_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^remd_tmp_reg[10]_0\(6),
-      O => \cal_tmp_carry__0_i_3__0_n_0\
+      O => \cal_tmp_carry__0_i_3_n_0\
     );
 \cal_tmp_carry__0_i_4\: unisim.vcomponents.LUT2
     generic map(
@@ -4578,7 +4567,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(1) => \cal_tmp_carry__1_n_6\,
       O(0) => \cal_tmp_carry__1_n_7\,
       S(3) => \cal_tmp_carry__1_i_1_n_0\,
-      S(2) => \cal_tmp_carry__1_i_2_n_0\,
+      S(2) => \cal_tmp_carry__1_i_2__0_n_0\,
       S(1) => \cal_tmp_carry__1_i_3__0_n_0\,
       S(0) => \cal_tmp_carry__1_i_4_n_0\
     );
@@ -4591,14 +4580,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \^remd_tmp_reg[10]_0\(10),
       O => \cal_tmp_carry__1_i_1_n_0\
     );
-\cal_tmp_carry__1_i_2\: unisim.vcomponents.LUT2
+\cal_tmp_carry__1_i_2__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \^remd_tmp_reg[10]_0\(9),
-      O => \cal_tmp_carry__1_i_2_n_0\
+      O => \cal_tmp_carry__1_i_2__0_n_0\
     );
 \cal_tmp_carry__1_i_3__0\: unisim.vcomponents.LUT2
     generic map(
@@ -4632,7 +4621,7 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(1) => \cal_tmp_carry__2_n_6\,
       O(0) => \cal_tmp_carry__2_n_7\,
       S(3) => \cal_tmp_carry__2_i_1_n_0\,
-      S(2) => \cal_tmp_carry__2_i_2_n_0\,
+      S(2) => \cal_tmp_carry__2_i_2__0_n_0\,
       S(1) => \cal_tmp_carry__2_i_3_n_0\,
       S(0) => \cal_tmp_carry__2_i_4__0_n_0\
     );
@@ -4645,14 +4634,14 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \remd_tmp_reg_n_0_[14]\,
       O => \cal_tmp_carry__2_i_1_n_0\
     );
-\cal_tmp_carry__2_i_2\: unisim.vcomponents.LUT2
+\cal_tmp_carry__2_i_2__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[13]\,
-      O => \cal_tmp_carry__2_i_2_n_0\
+      O => \cal_tmp_carry__2_i_2__0_n_0\
     );
 \cal_tmp_carry__2_i_3\: unisim.vcomponents.LUT2
     generic map(
@@ -4687,8 +4676,8 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(0) => \cal_tmp_carry__3_n_7\,
       S(3) => \cal_tmp_carry__3_i_1_n_0\,
       S(2) => \cal_tmp_carry__3_i_2_n_0\,
-      S(1) => \cal_tmp_carry__3_i_3__0_n_0\,
-      S(0) => \cal_tmp_carry__3_i_4__0_n_0\
+      S(1) => \cal_tmp_carry__3_i_3_n_0\,
+      S(0) => \cal_tmp_carry__3_i_4_n_0\
     );
 \cal_tmp_carry__3_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -4708,23 +4697,23 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       I1 => \remd_tmp_reg_n_0_[17]\,
       O => \cal_tmp_carry__3_i_2_n_0\
     );
-\cal_tmp_carry__3_i_3__0\: unisim.vcomponents.LUT2
+\cal_tmp_carry__3_i_3\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[16]\,
-      O => \cal_tmp_carry__3_i_3__0_n_0\
+      O => \cal_tmp_carry__3_i_3_n_0\
     );
-\cal_tmp_carry__3_i_4__0\: unisim.vcomponents.LUT2
+\cal_tmp_carry__3_i_4\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[15]\,
-      O => \cal_tmp_carry__3_i_4__0_n_0\
+      O => \cal_tmp_carry__3_i_4_n_0\
     );
 \cal_tmp_carry__4\: unisim.vcomponents.CARRY4
      port map (
@@ -4739,37 +4728,37 @@ cal_tmp_carry: unisim.vcomponents.CARRY4
       O(2) => \cal_tmp_carry__4_n_5\,
       O(1) => \cal_tmp_carry__4_n_6\,
       O(0) => \cal_tmp_carry__4_n_7\,
-      S(3) => \cal_tmp_carry__4_i_1_n_0\,
-      S(2) => \cal_tmp_carry__4_i_2_n_0\,
-      S(1) => \cal_tmp_carry__4_i_3_n_0\,
+      S(3) => \cal_tmp_carry__4_i_1__0_n_0\,
+      S(2) => \cal_tmp_carry__4_i_2__0_n_0\,
+      S(1) => \cal_tmp_carry__4_i_3__0_n_0\,
       S(0) => \cal_tmp_carry__4_i_4__0_n_0\
     );
-\cal_tmp_carry__4_i_1\: unisim.vcomponents.LUT2
+\cal_tmp_carry__4_i_1__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[22]\,
-      O => \cal_tmp_carry__4_i_1_n_0\
+      O => \cal_tmp_carry__4_i_1__0_n_0\
     );
-\cal_tmp_carry__4_i_2\: unisim.vcomponents.LUT2
+\cal_tmp_carry__4_i_2__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[21]\,
-      O => \cal_tmp_carry__4_i_2_n_0\
+      O => \cal_tmp_carry__4_i_2__0_n_0\
     );
-\cal_tmp_carry__4_i_3\: unisim.vcomponents.LUT2
+\cal_tmp_carry__4_i_3__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"B"
     )
         port map (
       I0 => \r_stage_reg_n_0_[0]\,
       I1 => \remd_tmp_reg_n_0_[20]\,
-      O => \cal_tmp_carry__4_i_3_n_0\
+      O => \cal_tmp_carry__4_i_3__0_n_0\
     );
 \cal_tmp_carry__4_i_4__0\: unisim.vcomponents.LUT2
     generic map(
@@ -6990,8 +6979,8 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div i
   signal \dividend0_reg_n_0_[9]\ : STD_LOGIC;
   signal done0 : STD_LOGIC;
   signal grp_fu_212_p0 : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal remd : STD_LOGIC_VECTOR ( 24 downto 0 );
-  signal remd_tmp : STD_LOGIC_VECTOR ( 24 downto 0 );
+  signal remd : STD_LOGIC_VECTOR ( 20 downto 0 );
+  signal remd_tmp : STD_LOGIC_VECTOR ( 20 downto 0 );
   signal start0 : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_1_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_3_n_0\ : STD_LOGIC;
@@ -6999,14 +6988,13 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div i
   signal \time_remaining_out_V[9]_INST_0_i_5_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_6_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_7_n_0\ : STD_LOGIC;
-  signal \time_remaining_out_V[9]_INST_0_i_8_n_0\ : STD_LOGIC;
   signal \NLW_dividend0_reg[31]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \NLW_dividend0_reg[31]_i_1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
 begin
 Gamelogic2_urem_3bkb_div_u_0: entity work.Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div_u
      port map (
       E(0) => start0,
-      Q(24 downto 0) => remd_tmp(24 downto 0),
+      Q(20 downto 0) => remd_tmp(20 downto 0),
       ap_clk => ap_clk,
       ap_rst => ap_rst,
       \dividend0_reg[31]_0\(31) => \dividend0_reg_n_0_[31]\,
@@ -7510,38 +7498,6 @@ Gamelogic2_urem_3bkb_div_u_0: entity work.Testing_HDMI_Gamelogic2_0_0_Gamelogic2
       Q => remd(20),
       R => '0'
     );
-\remd_reg[21]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => done0,
-      D => remd_tmp(21),
-      Q => remd(21),
-      R => '0'
-    );
-\remd_reg[22]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => done0,
-      D => remd_tmp(22),
-      Q => remd(22),
-      R => '0'
-    );
-\remd_reg[23]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => done0,
-      D => remd_tmp(23),
-      Q => remd(23),
-      R => '0'
-    );
-\remd_reg[24]\: unisim.vcomponents.FDRE
-     port map (
-      C => ap_clk,
-      CE => done0,
-      D => remd_tmp(24),
-      Q => remd(24),
-      R => '0'
-    );
 \remd_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => ap_clk,
@@ -7737,9 +7693,9 @@ start0_reg: unisim.vcomponents.FDRE
       I4 => tmp_3_i_fu_232_p2(9),
       O => time_remaining_out_V(9)
     );
-\time_remaining_out_V[9]_INST_0_i_1\: unisim.vcomponents.LUT6
+\time_remaining_out_V[9]_INST_0_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
+      INIT => X"FFFFFFFE"
     )
         port map (
       I0 => \time_remaining_out_V[9]_INST_0_i_3_n_0\,
@@ -7747,43 +7703,22 @@ start0_reg: unisim.vcomponents.FDRE
       I2 => \time_remaining_out_V[9]_INST_0_i_5_n_0\,
       I3 => \time_remaining_out_V[9]_INST_0_i_6_n_0\,
       I4 => \time_remaining_out_V[9]_INST_0_i_7_n_0\,
-      I5 => \time_remaining_out_V[9]_INST_0_i_8_n_0\,
       O => \time_remaining_out_V[9]_INST_0_i_1_n_0\
     );
-\time_remaining_out_V[9]_INST_0_i_3\: unisim.vcomponents.LUT4
+\time_remaining_out_V[9]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFE"
+      INIT => X"FFFFFFFFFFFFFFFB"
     )
         port map (
-      I0 => remd(15),
-      I1 => remd(14),
-      I2 => remd(17),
-      I3 => remd(16),
+      I0 => remd(20),
+      I1 => Q(1),
+      I2 => remd(18),
+      I3 => remd(19),
+      I4 => remd(1),
+      I5 => remd(0),
       O => \time_remaining_out_V[9]_INST_0_i_3_n_0\
     );
 \time_remaining_out_V[9]_INST_0_i_4\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => remd(19),
-      I1 => remd(18),
-      I2 => remd(21),
-      I3 => remd(20),
-      O => \time_remaining_out_V[9]_INST_0_i_4_n_0\
-    );
-\time_remaining_out_V[9]_INST_0_i_5\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => remd(7),
-      I1 => remd(6),
-      I2 => remd(9),
-      I3 => remd(8),
-      O => \time_remaining_out_V[9]_INST_0_i_5_n_0\
-    );
-\time_remaining_out_V[9]_INST_0_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"FFFE"
     )
@@ -7792,6 +7727,28 @@ start0_reg: unisim.vcomponents.FDRE
       I1 => remd(10),
       I2 => remd(13),
       I3 => remd(12),
+      O => \time_remaining_out_V[9]_INST_0_i_4_n_0\
+    );
+\time_remaining_out_V[9]_INST_0_i_5\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => remd(15),
+      I1 => remd(14),
+      I2 => remd(17),
+      I3 => remd(16),
+      O => \time_remaining_out_V[9]_INST_0_i_5_n_0\
+    );
+\time_remaining_out_V[9]_INST_0_i_6\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => remd(7),
+      I1 => remd(6),
+      I2 => remd(9),
+      I3 => remd(8),
       O => \time_remaining_out_V[9]_INST_0_i_6_n_0\
     );
 \time_remaining_out_V[9]_INST_0_i_7\: unisim.vcomponents.LUT4
@@ -7804,19 +7761,6 @@ start0_reg: unisim.vcomponents.FDRE
       I2 => remd(5),
       I3 => remd(4),
       O => \time_remaining_out_V[9]_INST_0_i_7_n_0\
-    );
-\time_remaining_out_V[9]_INST_0_i_8\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFB"
-    )
-        port map (
-      I0 => remd(24),
-      I1 => Q(1),
-      I2 => remd(22),
-      I3 => remd(23),
-      I4 => remd(1),
-      I5 => remd(0),
-      O => \time_remaining_out_V[9]_INST_0_i_8_n_0\
     );
 end STRUCTURE;
 library IEEE;
@@ -8904,8 +8848,8 @@ architecture STRUCTURE of Testing_HDMI_Gamelogic2_0_0_Gamelogic2 is
   signal \time_remaining_out_V[7]_INST_0_i_3_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[7]_INST_0_i_4_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[7]_INST_0_i_5_n_0\ : STD_LOGIC;
-  signal \time_remaining_out_V[9]_INST_0_i_10_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_2_n_3\ : STD_LOGIC;
+  signal \time_remaining_out_V[9]_INST_0_i_8_n_0\ : STD_LOGIC;
   signal \time_remaining_out_V[9]_INST_0_i_9_n_0\ : STD_LOGIC;
   signal time_remaining_out_V_preg : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal tmp_3_i_fu_232_p2 : STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -11600,15 +11544,6 @@ ap_idle_INST_0: unisim.vcomponents.LUT2
       I1 => decrement_value_reg(4),
       O => \time_remaining_out_V[7]_INST_0_i_5_n_0\
     );
-\time_remaining_out_V[9]_INST_0_i_10\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"9"
-    )
-        port map (
-      I0 => time_remaining_in_V(8),
-      I1 => decrement_value_reg(8),
-      O => \time_remaining_out_V[9]_INST_0_i_10_n_0\
-    );
 \time_remaining_out_V[9]_INST_0_i_2\: unisim.vcomponents.CARRY4
      port map (
       CI => \time_remaining_out_V[7]_INST_0_i_1_n_0\,
@@ -11620,16 +11555,25 @@ ap_idle_INST_0: unisim.vcomponents.LUT2
       O(3 downto 2) => \NLW_time_remaining_out_V[9]_INST_0_i_2_O_UNCONNECTED\(3 downto 2),
       O(1 downto 0) => tmp_3_i_fu_232_p2(9 downto 8),
       S(3 downto 2) => B"00",
-      S(1) => \time_remaining_out_V[9]_INST_0_i_9_n_0\,
-      S(0) => \time_remaining_out_V[9]_INST_0_i_10_n_0\
+      S(1) => \time_remaining_out_V[9]_INST_0_i_8_n_0\,
+      S(0) => \time_remaining_out_V[9]_INST_0_i_9_n_0\
     );
-\time_remaining_out_V[9]_INST_0_i_9\: unisim.vcomponents.LUT2
+\time_remaining_out_V[9]_INST_0_i_8\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
       I0 => time_remaining_in_V(9),
       I1 => decrement_value_reg(9),
+      O => \time_remaining_out_V[9]_INST_0_i_8_n_0\
+    );
+\time_remaining_out_V[9]_INST_0_i_9\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"9"
+    )
+        port map (
+      I0 => time_remaining_in_V(8),
+      I1 => decrement_value_reg(8),
       O => \time_remaining_out_V[9]_INST_0_i_9_n_0\
     );
 \time_remaining_out_V_preg_reg[0]\: unisim.vcomponents.FDRE

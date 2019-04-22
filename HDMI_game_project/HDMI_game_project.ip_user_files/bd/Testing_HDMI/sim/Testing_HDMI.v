@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Sun Apr 21 19:58:19 2019
+//Date        : Sun Apr 21 20:17:38 2019
 //Host        : EmbSys18 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
@@ -80,11 +80,11 @@ module Testing_HDMI
        (.ap_clk(clk_wiz_0_clk_out3),
         .ap_rst(1'b0),
         .ap_start(clk_wiz_0_locked),
-        .btn1(1'b0),
-        .btn2(1'b0),
-        .btn3(1'b0),
+        .btn1(clean_button_1_clean),
+        .btn2(clean_button_2_clean),
+        .btn3(clean_button_3_clean),
         .lose(Gamelogic2_0_lose),
-        .rst(1'b0),
+        .rst(clean_button_0_clean),
         .time_remaining_in_V(Gamelogic2_0_time_remaining_out_V),
         .time_remaining_out_V(Gamelogic2_0_time_remaining_out_V),
         .verify1_out(Gamelogic2_0_verify1_out),
@@ -112,9 +112,11 @@ module Testing_HDMI
        (.XY_Blue_V(Interface2_0_XY_Blue_V),
         .XY_Green_V(Interface2_0_XY_Green_V),
         .XY_Red_V(Interface2_0_XY_Red_V),
-        .ap_start(1'b0),
+        .ap_clk(clk_wiz_0_clk_out3),
+        .ap_rst(1'b0),
+        .ap_start(clk_wiz_0_locked),
         .lose(Gamelogic2_0_lose),
-        .time_remaining_V(Gamelogic2_0_time_remaining_out_V[8:0]),
+        .time_remaining_V(Gamelogic2_0_time_remaining_out_V),
         .verify1(Gamelogic2_0_verify1_out),
         .verify2(Gamelogic2_0_verify2_out),
         .verify3(Gamelogic2_0_verify3_out),

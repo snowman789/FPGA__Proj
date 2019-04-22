@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Interface2'" level="0">
-<item name = "Date">Sun Apr 21 19:59:18 2019
+<item name = "Date">Sun Apr 21 20:24:54 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Interface2</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">0, 0, 0, 0, none</column>
+<column name="">1, 1, 1, 1, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,14 +47,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 26</column>
+<column name="Expression">-, -, 0, 54</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, -</column>
-<column name="Register">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 60</column>
+<column name="Register">-, -, 22, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 0, ~0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -77,19 +77,31 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp_fu_75_p2">icmp, 0, 0, 13, 10, 8</column>
-<column name="XY_Blue_V">select, 0, 0, 7, 1, 1</column>
-<column name="XY_Green_V">select, 0, 0, 2, 1, 2</column>
-<column name="XY_Red_V">select, 0, 0, 2, 1, 2</column>
-<column name="not_tmp_fu_99_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="or_cond_fu_153_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_1_fu_98_p2">icmp, 0, 0, 13, 10, 8</column>
+<column name="tmp_4_fu_141_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="tmp_5_fu_147_p2">icmp, 0, 0, 13, 10, 7</column>
+<column name="storemerge1_cast_cas_fu_113_p3">select, 0, 0, 7, 1, 1</column>
+<column name="storemerge2_fu_104_p3">select, 0, 0, 2, 1, 2</column>
+<column name="storemerge_cast_fu_128_p3">select, 0, 0, 2, 1, 2</column>
+<column name="not_tmp_1_fu_122_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="XY_Blue_V">15, 3, 8, 24</column>
+<column name="XY_Green_V">15, 3, 8, 24</column>
+<column name="XY_Red_V">15, 3, 8, 24</column>
+<column name="ap_NS_fsm">15, 3, 1, 3</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="XY_Blue_V_preg">3, 0, 8, 5</column>
+<column name="XY_Green_V_preg">8, 0, 8, 0</column>
+<column name="XY_Red_V_preg">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="or_cond_reg_159">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -99,6 +111,8 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Interface2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Interface2, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, Interface2, return value</column>
 <column name="ap_done">out, 1, ap_ctrl_hs, Interface2, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, Interface2, return value</column>

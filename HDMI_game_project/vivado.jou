@@ -89,3 +89,93 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
 set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:Interface2:1.0 [get_ips  Testing_HDMI_Interface2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Testing_HDMI_Interface2_0_0] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins Gamelogic2_0/lose] [get_bd_pins Interface2_0/lose]
+connect_bd_net [get_bd_pins Gamelogic2_0/time_remaining_out_V] [get_bd_pins Interface2_0/time_remaining_V]
+connect_bd_net [get_bd_pins Gamelogic2_0/verify1_out] [get_bd_pins Interface2_0/verify1]
+connect_bd_net [get_bd_pins Gamelogic2_0/verify2_out] [get_bd_pins Interface2_0/verify2]
+connect_bd_net [get_bd_pins Gamelogic2_0/verify3_out] [get_bd_pins Interface2_0/verify3]
+connect_bd_net [get_bd_pins Gamelogic2_0/time_remaining_in_V] [get_bd_pins Gamelogic2_0/time_remaining_out_V]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+reset_run Testing_HDMI_Interface2_0_0_synth_1
+connect_bd_net [get_bd_pins Gamelogic2_0/rst] [get_bd_pins clean_button_0/clean]
+connect_bd_net [get_bd_pins Gamelogic2_0/btn1] [get_bd_pins clean_button_1/clean]
+connect_bd_net [get_bd_pins Gamelogic2_0/btn2] [get_bd_pins clean_button_2/clean]
+connect_bd_net [get_bd_pins Gamelogic2_0/btn3] [get_bd_pins clean_button_3/clean]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:Interface2:1.0 [get_ips  Testing_HDMI_Interface2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Testing_HDMI_Interface2_0_0] -no_script -sync -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:Interface2:1.0 [get_ips  Testing_HDMI_Interface2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Testing_HDMI_Interface2_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+connect_bd_net [get_bd_pins Interface2_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out3]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+reset_run Testing_HDMI_Interface2_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:Interface2:1.0 [get_ips  Testing_HDMI_Interface2_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Testing_HDMI_Interface2_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+reset_run synth_1
+reset_run Testing_HDMI_Interface2_0_0_synth_1
+connect_bd_net [get_bd_pins clk_wiz_0/locked] [get_bd_pins Interface2_0/ap_start]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/Testing_HDMI.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  {Testing_HDMI_Interface2_0_0 Testing_HDMI_Gamelogic2_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {Testing_HDMI_Interface2_0_0 Testing_HDMI_Gamelogic2_0_0}] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

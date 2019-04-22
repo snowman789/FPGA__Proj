@@ -12,9 +12,10 @@
     "Package": "clg400",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
@@ -353,7 +354,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-21 19:43:16 -0400",
+    "Time": "2019-04-21 20:24:58 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Sun Apr 21 20:01:43 2019
+-- Date        : Sun Apr 21 20:27:39 2019
 -- Host        : EmbSys18 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_stub.vhdl
@@ -14,6 +14,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Testing_HDMI_Interface2_0_0 is
   Port ( 
+    ap_clk : in STD_LOGIC;
+    ap_rst : in STD_LOGIC;
     ap_start : in STD_LOGIC;
     ap_done : out STD_LOGIC;
     ap_idle : out STD_LOGIC;
@@ -36,7 +38,7 @@ architecture stub of Testing_HDMI_Interface2_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "ap_start,ap_done,ap_idle,ap_ready,x_V[9:0],y_V[9:0],XY_Red_V[7:0],XY_Green_V[7:0],XY_Blue_V[7:0],lose,time_remaining_V[9:0],verify1,verify2,verify3";
+attribute black_box_pad_pin of stub : architecture is "ap_clk,ap_rst,ap_start,ap_done,ap_idle,ap_ready,x_V[9:0],y_V[9:0],XY_Red_V[7:0],XY_Green_V[7:0],XY_Blue_V[7:0],lose,time_remaining_V[9:0],verify1,verify2,verify3";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "Interface2,Vivado 2018.3";
 begin

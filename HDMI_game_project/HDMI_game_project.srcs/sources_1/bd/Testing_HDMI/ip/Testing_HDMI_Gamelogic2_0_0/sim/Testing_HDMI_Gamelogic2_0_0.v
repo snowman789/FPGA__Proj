@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:Gamelogic2:1.0
-// IP Revision: 1904211943
+// IP Revision: 1904212025
 
 `timescale 1ns/1ps
 

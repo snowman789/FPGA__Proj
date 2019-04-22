@@ -50,7 +50,7 @@ struct Gamelogic2 : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    Gamelogic2_urem_3bkb<1,36,32,25,25>* Gamelogic2_urem_3bkb_U1;
+    Gamelogic2_urem_3bkb<1,36,32,21,21>* Gamelogic2_urem_3bkb_U1;
     Gamelogic2_urem_3cud<1,36,32,8,11>* Gamelogic2_urem_3cud_U2;
     Gamelogic2_urem_1dEe<1,15,11,8,11>* Gamelogic2_urem_1dEe_U3;
     Gamelogic2_urem_1dEe<1,15,11,8,11>* Gamelogic2_urem_1dEe_U4;
@@ -99,9 +99,9 @@ struct Gamelogic2 : public sc_module {
     sc_signal< sc_lv<10> > tmp_3_i_fu_232_p2;
     sc_signal< sc_logic > lose_preg;
     sc_signal< sc_lv<32> > grp_fu_212_p0;
-    sc_signal< sc_lv<25> > grp_fu_212_p1;
-    sc_signal< sc_lv<25> > grp_fu_212_p2;
-    sc_signal< sc_lv<25> > tmp_1_fu_218_p1;
+    sc_signal< sc_lv<21> > grp_fu_212_p1;
+    sc_signal< sc_lv<21> > grp_fu_212_p2;
+    sc_signal< sc_lv<21> > tmp_1_fu_218_p1;
     sc_signal< sc_lv<10> > tmp_2_fu_228_p1;
     sc_signal< sc_lv<32> > tmp_i_i_fu_246_p1;
     sc_signal< sc_lv<32> > grp_fu_263_p0;
@@ -255,8 +255,8 @@ struct Gamelogic2 : public sc_module {
     static const sc_lv<32> ap_const_lv32_66;
     static const sc_lv<10> ap_const_lv10_280;
     static const sc_lv<10> ap_const_lv10_0;
-    static const sc_lv<32> ap_const_lv32_989680;
-    static const sc_lv<25> ap_const_lv25_0;
+    static const sc_lv<32> ap_const_lv32_F4240;
+    static const sc_lv<21> ap_const_lv21_0;
     static const sc_lv<32> ap_const_lv32_D;
     static const sc_lv<32> ap_const_lv32_64;
     static const sc_lv<7> ap_const_lv7_32;
