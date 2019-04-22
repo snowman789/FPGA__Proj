@@ -41,6 +41,7 @@ bool InitializeGame(ap_uint<10> *time_remaining_out,  bool *lose) {
 
 void DecrementTimer( ap_uint<10> *time_remaining_out, ap_uint<10> time_remaining_in){
 	slow_down_clock += 1;
+
 	if(slow_down_clock % 1000000 == 0)
 		*time_remaining_out = time_remaining_in - decrement_value;
 
