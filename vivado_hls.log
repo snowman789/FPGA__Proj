@@ -1,10 +1,19 @@
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'isaac' on host 'desktop-6rncov7' (Windows NT_amd64 version 6.2) on Mon Apr 22 17:55:27 -0400 2019
-INFO: [HLS 200-10] In directory 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj'
-INFO: [HLS 200-10] Opening project 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2'.
-INFO: [HLS 200-10] Opening solution 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'itr9fc' on host 'embsys11' (Windows NT_amd64 version 6.2) on Tue Apr 23 14:08:26 -0400 2019
+INFO: [HLS 200-10] In directory 'C:/Users/itr9fc/Desktop/FPGA__Proj'
+INFO: [HLS 200-10] Opening project 'C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 40ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_bind -effort=medium
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_sdx -optimization_level=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 5ns.
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
 ****** Vivado v2018.3 (64-bit)
@@ -15,5 +24,5 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 17:55:36 2019...
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 14:08:34 2019...

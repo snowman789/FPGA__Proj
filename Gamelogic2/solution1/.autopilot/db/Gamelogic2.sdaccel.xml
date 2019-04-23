@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Gamelogic2'" level="0">
-<item name = "Date">Mon Apr 22 17:17:53 2019
+<item name = "Date">Tue Apr 23 13:34:03 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Gamelogic2</item>
@@ -22,7 +22,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">1, 36, 1, 36, none</column>
+<column name="">3, 38, 3, 38, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -45,12 +45,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, 0, 0, 228</column>
+<column name="Expression">-, 0, 0, 530</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, 394, 238</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 169</column>
-<column name="Register">-, -, 112, -</column>
+<column name="Multiplexer">-, -, -, 213</column>
+<column name="Register">-, -, 243, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
 </table>
@@ -76,54 +76,72 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="tmp_i_i_fu_310_p2">*, 0, 0, 20, 4, 32</column>
-<column name="grp_fu_321_p0">+, 0, 0, 39, 7, 32</column>
-<column name="tmp_8_fu_102_p2">+, 0, 0, 14, 10, 5</column>
-<column name="tmp_9_fu_108_p2">+, 0, 0, 14, 10, 4</column>
-<column name="sel_tmp11_fu_202_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp14_fu_222_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp17_fu_248_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp20_fu_274_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp3_fu_150_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp4_fu_156_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp6_fu_182_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp9_fu_176_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp_fu_130_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_i_i_fu_384_p2">*, 0, 0, 20, 4, 32</column>
+<column name="grp_fu_395_p0">+, 0, 0, 39, 7, 32</column>
+<column name="tmp_1_fu_172_p2">+, 0, 0, 39, 32, 1</column>
+<column name="tmp_2_fu_199_p2">+, 0, 0, 14, 10, 5</column>
+<column name="tmp_3_fu_205_p2">+, 0, 0, 14, 10, 4</column>
+<column name="tmp_8_fu_132_p2">+, 0, 0, 39, 32, 1</column>
+<column name="tmp_9_fu_146_p2">+, 0, 0, 39, 32, 1</column>
+<column name="tmp_s_fu_158_p2">+, 0, 0, 39, 32, 1</column>
+<column name="sel_tmp11_fu_293_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp14_fu_313_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp17_fu_337_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp20_fu_361_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp3_fu_245_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp4_fu_251_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp6_fu_275_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp9_fu_269_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp_fu_227_p2">and, 0, 0, 2, 1, 1</column>
 <column name="right_out">icmp, 0, 0, 11, 7, 6</column>
-<column name="brmerge2_fu_300_p2">or, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp24_demorgan_fu_236_p2">or, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp31_demorgan_fu_262_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp1_fu_294_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_fu_288_p2">or, 0, 0, 2, 1, 1</column>
-<column name="p_9_fu_122_p3">select, 0, 0, 10, 1, 10</column>
-<column name="p_s_fu_114_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp12_fu_208_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp15_fu_228_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp18_fu_254_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp1_fu_136_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp5_fu_162_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp7_fu_188_p3">select, 0, 0, 10, 1, 10</column>
-<column name="to_add_8_fu_280_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp10_fu_196_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="sel_tmp13_fu_216_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="sel_tmp16_fu_242_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="sel_tmp19_fu_268_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="sel_tmp2_fu_144_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="sel_tmp8_fu_170_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_4_fu_374_p2">icmp, 0, 0, 18, 32, 4</column>
+<column name="p_btn_count_flag_2_fu_186_p2">or, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp24_demorgan_fu_326_p2">or, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp31_demorgan_fu_350_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp1_fu_181_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_fu_177_p2">or, 0, 0, 2, 1, 1</column>
+<column name="btn_count_loc_fu_138_p3">select, 0, 0, 32, 1, 32</column>
+<column name="btn_count_new_2_fu_164_p3">select, 0, 0, 32, 1, 32</column>
+<column name="p_9_fu_219_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_s_fu_211_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp12_fu_299_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp15_fu_318_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp18_fu_342_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp1_fu_232_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp5_fu_256_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp7_fu_280_p3">select, 0, 0, 10, 1, 10</column>
+<column name="tmp_1_btn_count_new_2_fu_192_p3">select, 0, 0, 32, 1, 32</column>
+<column name="tmp_9_btn_count_loc_fu_151_p3">select, 0, 0, 32, 1, 32</column>
+<column name="to_add_8_fu_366_p3">select, 0, 0, 10, 1, 10</column>
+<column name="sel_tmp10_fu_288_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sel_tmp13_fu_307_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sel_tmp16_fu_331_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sel_tmp19_fu_355_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sel_tmp2_fu_240_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="sel_tmp8_fu_264_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">169, 38, 1, 38</column>
+<column name="ap_NS_fsm">177, 40, 1, 40</column>
+<column name="ap_phi_mux_btn_count_flag_4_phi_fu_111_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_btn_count_new_4_phi_fu_121_p4">9, 2, 32, 64</column>
+<column name="btn_count_flag_4_reg_108">9, 2, 1, 2</column>
+<column name="btn_count_new_4_reg_118">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="RandSeed">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">37, 0, 37, 0</column>
-<column name="brmerge2_reg_349">1, 0, 1, 0</column>
-<column name="tmp_i_i_reg_353">32, 0, 32, 0</column>
-<column name="to_add_8_reg_344">10, 0, 10, 0</column>
+<column name="ap_CS_fsm">39, 0, 39, 0</column>
+<column name="btn_count">32, 0, 32, 0</column>
+<column name="btn_count_flag_4_reg_108">1, 0, 1, 0</column>
+<column name="btn_count_loc_reg_433">32, 0, 32, 0</column>
+<column name="btn_count_new_2_reg_456">32, 0, 32, 0</column>
+<column name="btn_count_new_4_reg_118">32, 0, 32, 0</column>
+<column name="tmp_4_reg_477">1, 0, 1, 0</column>
+<column name="tmp_i_i_reg_481">32, 0, 32, 0</column>
+<column name="to_add_8_reg_472">10, 0, 10, 0</column>
 </table>
 </item>
 </section>
@@ -155,16 +173,15 @@
 <item name = "Max Delay">8.58</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'center_line_in_V_rea', Gamelogic2/Gamelogic2.cpp:60">read, 0.00, 0.00, -, -, -, wire, read, &apos;center_line_in_V&apos;, -, -, -, -, -</column>
-<column name="'tmp_9', Gamelogic2/Gamelogic2.cpp:97">add, 1.73, 1.73, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'p_9', Gamelogic2/Gamelogic2.cpp:90">select, 0.00, 1.73, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp1', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 2.71, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp5', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 3.69, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp7', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 4.66, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp12', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 5.64, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp15', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 6.62, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'sel_tmp18', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 7.60, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'to_add_8', Gamelogic2/Gamelogic2.cpp:90">select, 0.98, 8.58, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'center_line_in_V_rea', Gamelogic2/Gamelogic2.cpp:61">read, 0.00, 0.00, -, -, -, wire, read, &apos;center_line_in_V&apos;, -, -, -, -, -</column>
+<column name="'tmp_2', Gamelogic2/Gamelogic2.cpp:109">add, 1.73, 1.73, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp1', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 2.71, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp5', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 3.69, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp7', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 4.66, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp12', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 5.64, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp15', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 6.62, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'sel_tmp18', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 7.60, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'to_add_8', Gamelogic2/Gamelogic2.cpp:99">select, 0.98, 8.58, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

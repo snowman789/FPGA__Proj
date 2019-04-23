@@ -2,68 +2,66 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr 22 18:05:00 2019
-# Process ID: 4556
-# Current directory: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1
+# Start of session at: Tue Apr 23 14:10:59 2019
+# Process ID: 17500
+# Current directory: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1
 # Command line: vivado.exe -log Testing_HDMI_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Testing_HDMI_wrapper.tcl -notrace
-# Log file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.vdi
-# Journal file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1\vivado.jou
+# Log file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper.vdi
+# Journal file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Testing_HDMI_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Gamelogic2/solution1/impl/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip 
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 289.969 ; gain = 8.223
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/itr9fc/Desktop/FPGA__Proj/Gamelogic2/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 290.594 ; gain = 8.406
 Command: link_design -top Testing_HDMI_wrapper -part xc7z020clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0.dcp' for cell 'Testing_HDMI_i/Gamelogic2_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0.dcp' for cell 'Testing_HDMI_i/HDMI_test_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0.dcp' for cell 'Testing_HDMI_i/Interface2_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0.dcp' for cell 'Testing_HDMI_i/clean_button_0'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1.dcp' for cell 'Testing_HDMI_i/clean_button_1'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0.dcp' for cell 'Testing_HDMI_i/clean_button_2'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1.dcp' for cell 'Testing_HDMI_i/clean_button_3'
-INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.dcp' for cell 'Testing_HDMI_i/clk_wiz_0'
-INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0.dcp' for cell 'Testing_HDMI_i/Gamelogic2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0.dcp' for cell 'Testing_HDMI_i/HDMI_test_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0.dcp' for cell 'Testing_HDMI_i/Interface2_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0.dcp' for cell 'Testing_HDMI_i/clean_button_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1.dcp' for cell 'Testing_HDMI_i/clean_button_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0.dcp' for cell 'Testing_HDMI_i/clean_button_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1.dcp' for cell 'Testing_HDMI_i/clean_button_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.dcp' for cell 'Testing_HDMI_i/clk_wiz_0'
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.3
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'Testing_HDMI_i/HDMI_test_0/pixclk' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
-Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
-Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
-Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1222.102 ; gain = 565.762
-Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
-Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LED_4_Port'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
+Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_board.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.219 ; gain = 566.172
+Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0.xdc] for cell 'Testing_HDMI_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED_4_Port'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
+Finished Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1222.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1221.219 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   OBUFDS => OBUFDS: 4 instances
 
-21 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+21 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1222.102 ; gain = 932.133
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1221.219 ; gain = 930.625
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -74,37 +72,37 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.812 . Memory (MB): peak = 1222.102 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.640 . Memory (MB): peak = 1221.219 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-2] Deriving generated clocks
-Ending Cache Timing Information Task | Checksum: 26e8d998a
+Ending Cache Timing Information Task | Checksum: 239e37572
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1237.922 ; gain = 15.820
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1236.465 ; gain = 15.246
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1ca102c46
+Phase 1 Retarget | Checksum: 215020a30
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1325.438 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 2 cells
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1320.891 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 2 cells and removed 4 cells
 INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 16436f9dd
+Phase 2 Constant propagation | Checksum: 1b05f9c31
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 18cde168b
+Phase 3 Sweep | Checksum: 13f00accd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2 cells
 
 Phase 4 BUFG optimization
@@ -114,21 +112,21 @@ INFO: [Opt 31-194] Inserted BUFG Testing_HDMI_i/clk_wiz_0/inst/clk_out3_Testing_
 INFO: [Opt 31-194] Inserted BUFG Testing_HDMI_i/clk_wiz_0/inst/clk_out4_Testing_HDMI_clk_wiz_0_0_BUFG_inst to drive 0 load(s) on clock net Testing_HDMI_i/clk_wiz_0/inst/clk_out4_Testing_HDMI_clk_wiz_0_0_BUFG
 INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
 INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
-Phase 4 BUFG optimization | Checksum: 140bbb9f8
+Phase 4 BUFG optimization | Checksum: 1e42c3927
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 2141e8853
+Phase 5 Shift Register Optimization | Checksum: 2085f0173
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.280 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.292 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 12bcac73a
+Phase 6 Post Processing Netlist | Checksum: 221a8d8b9
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.300 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -137,7 +135,7 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               0  |               2  |                                              1  |
+|  Retarget                     |               2  |               4  |                                              1  |
 |  Constant propagation         |               0  |               0  |                                              0  |
 |  Sweep                        |               0  |               2  |                                              0  |
 |  BUFG optimization            |               0  |               1  |                                              0  |
@@ -149,44 +147,44 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 13349aee1
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 20927f120
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.306 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 13349aee1
+Ending Power Optimization Task | Checksum: 20927f120
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 13349aee1
+Ending Final Cleanup Task | Checksum: 20927f120
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 13349aee1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 20927f120
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-45 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+45 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.268 . Memory (MB): peak = 1325.438 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file Testing_HDMI_wrapper_drc_opted.rpt -pb Testing_HDMI_wrapper_drc_opted.pb -rpx Testing_HDMI_wrapper_drc_opted.rpx
 Command: report_drc -file Testing_HDMI_wrapper_drc_opted.rpt -pb Testing_HDMI_wrapper_drc_opted.pb -rpx Testing_HDMI_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
@@ -205,37 +203,37 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 11d8b2bca
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a35f7329
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1336fff95
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: da870391
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.605 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 153c7757c
+Phase 1.3 Build Placer Netlist Model | Checksum: 14516e9ca
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.911 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.923 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 153c7757c
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14516e9ca
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 153c7757c
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.927 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 14516e9ca
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.918 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.929 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 17baf565c
+Phase 2.1 Floorplanning | Checksum: 177f7707b
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 2.2 Physical Synthesis In Placer
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
@@ -246,7 +244,7 @@ INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization wa
 INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -264,52 +262,52 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2 Physical Synthesis In Placer | Checksum: 2249f6081
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1663b8e73
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 19e57327e
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 100681083
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 19e57327e
+Phase 3.1 Commit Multi Column Macros | Checksum: 100681083
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 202670854
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 128dbc939
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 13ba805a2
+Phase 3.3 Area Swap Optimization | Checksum: 1522bf863
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 181da52ca
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b09f9c68
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: d32d0b43
+Phase 3.5 Small Shape Detail Placement | Checksum: 22e5c6767
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1671beb57
+Phase 3.6 Re-assign LUT pins | Checksum: 222876892
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 193d26225
+Phase 3.7 Pipeline Register Optimization | Checksum: 161325cf7
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 193d26225
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 161325cf7
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -317,59 +315,59 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 283da9b06
+Post Placement Optimization Initialization | Checksum: 1dbbec5ef
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
-Phase 4.1.1.1 BUFG Insertion | Checksum: 283da9b06
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1dbbec5ef
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=1.592. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 262f5bfdd
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.580. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1560c2e77
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 262f5bfdd
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1560c2e77
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 262f5bfdd
+Phase 4.2 Post Placement Cleanup | Checksum: 1560c2e77
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 262f5bfdd
+Phase 4.3 Placer Reporting | Checksum: 1560c2e77
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 4.4 Final Placement Cleanup | Checksum: 1de31dfd8
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 16841944d
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1de31dfd8
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 16841944d
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
-Ending Placer Task | Checksum: 1080ea09d
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
+Ending Placer Task | Checksum: 13c290afe
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-72 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+72 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1320.891 ; gain = 0.000
 Writing XDEF routing.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1325.438 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1325.438 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1320.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file Testing_HDMI_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1325.438 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1320.891 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file Testing_HDMI_wrapper_utilization_placed.rpt -pb Testing_HDMI_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file Testing_HDMI_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1325.438 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1320.891 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -381,98 +379,98 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 96f44ece ConstDB: 0 ShapeSum: 711a51cf RouteDB: 0
+Checksum: PlaceDB: eaab9f49 ConstDB: 0 ShapeSum: 517d6bb5 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 779676c8
+Phase 1 Build RT Design | Checksum: d7ac8cbc
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:30 . Memory (MB): peak = 1456.816 ; gain = 131.379
-Post Restoration Checksum: NetGraph: 514cfe99 NumContArr: 2649782f Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1461.492 ; gain = 140.602
+Post Restoration Checksum: NetGraph: 3bda603b NumContArr: 9bd22c81 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 779676c8
+Phase 2.1 Create Timer | Checksum: d7ac8cbc
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1489.098 ; gain = 163.660
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1493.590 ; gain = 172.699
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 779676c8
+Phase 2.2 Fix Topology Constraints | Checksum: d7ac8cbc
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1495.785 ; gain = 170.348
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1500.277 ; gain = 179.387
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 779676c8
+Phase 2.3 Pre Route Cleanup | Checksum: d7ac8cbc
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 1495.785 ; gain = 170.348
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1500.277 ; gain = 179.387
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1855e08b6
+Phase 2.4 Update Timing | Checksum: 1e22582da
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.482  | TNS=0.000  | WHS=-0.415 | THS=-59.479|
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1521.133 ; gain = 200.242
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.453  | TNS=0.000  | WHS=-0.363 | THS=-63.210|
 
-Phase 2 Router Initialization | Checksum: 2538c8bbd
+Phase 2 Router Initialization | Checksum: 19be78a97
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: e818e481
+Phase 3 Initial Routing | Checksum: 2243403c2
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 78
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.257  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.120  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: d4b844b1
+Phase 4.1 Global Iteration 0 | Checksum: dafabec4
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
-Phase 4 Rip-up And Reroute | Checksum: d4b844b1
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
+Phase 4 Rip-up And Reroute | Checksum: dafabec4
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: d4b844b1
+Phase 5.1 Delay CleanUp | Checksum: dafabec4
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: d4b844b1
+Phase 5.2 Clock Skew Optimization | Checksum: dafabec4
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
-Phase 5 Delay and Skew Optimization | Checksum: d4b844b1
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
+Phase 5 Delay and Skew Optimization | Checksum: dafabec4
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 108bf8f64
+Phase 6.1.1 Update Timing | Checksum: 12cca639c
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.257  | TNS=0.000  | WHS=0.047  | THS=0.000  |
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.120  | TNS=0.000  | WHS=0.037  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 11a2cb869
+Phase 6.1 Hold Fix Iter | Checksum: 116ec70bd
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
-Phase 6 Post Hold Fix | Checksum: 11a2cb869
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
+Phase 6 Post Hold Fix | Checksum: 116ec70bd
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.101895 %
-  Global Horizontal Routing Utilization  = 0.111224 %
+  Global Vertical Routing Utilization    = 0.111991 %
+  Global Horizontal Routing Utilization  = 0.134973 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -481,58 +479,58 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 13cd4f3ee
+Phase 7 Route finalize | Checksum: b1c8caa2
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 13cd4f3ee
+Phase 8 Verifying routed nets | Checksum: b1c8caa2
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1bcb54835
+Phase 9 Depositing Routes | Checksum: c39f6ca6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.257  | TNS=0.000  | WHS=0.047  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.120  | TNS=0.000  | WHS=0.037  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1bcb54835
+Phase 10 Post Router Timing | Checksum: c39f6ca6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 1516.602 ; gain = 191.164
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1521.133 ; gain = 200.242
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-89 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+89 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 1516.602 ; gain = 191.164
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1516.602 ; gain = 0.000
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1521.133 ; gain = 200.242
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1521.133 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1516.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1521.133 ; gain = 0.000
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1516.602 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1521.133 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file Testing_HDMI_wrapper_drc_routed.rpt -pb Testing_HDMI_wrapper_drc_routed.pb -rpx Testing_HDMI_wrapper_drc_routed.rpx
 Command: report_drc -file Testing_HDMI_wrapper_drc_routed.rpt -pb Testing_HDMI_wrapper_drc_routed.pb -rpx Testing_HDMI_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file Testing_HDMI_wrapper_methodology_drc_routed.rpt -pb Testing_HDMI_wrapper_methodology_drc_routed.pb -rpx Testing_HDMI_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file Testing_HDMI_wrapper_methodology_drc_routed.rpt -pb Testing_HDMI_wrapper_methodology_drc_routed.pb -rpx Testing_HDMI_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/impl_1/Testing_HDMI_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 Command: report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
@@ -540,7 +538,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-101 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
+101 Infos, 5 Warnings, 4 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file Testing_HDMI_wrapper_route_status.rpt -pb Testing_HDMI_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Testing_HDMI_wrapper_timing_summary_routed.rpt -pb Testing_HDMI_wrapper_timing_summary_routed.pb -rpx Testing_HDMI_wrapper_timing_summary_routed.rpx -warn_on_violation 
@@ -572,7 +570,7 @@ Writing bitstream ./Testing_HDMI_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-120 Infos, 7 Warnings, 4 Critical Warnings and 0 Errors encountered.
+120 Infos, 6 Warnings, 4 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:44 . Memory (MB): peak = 1953.281 ; gain = 413.203
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 18:07:38 2019...
+write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1981.105 ; gain = 430.246
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 14:12:24 2019...

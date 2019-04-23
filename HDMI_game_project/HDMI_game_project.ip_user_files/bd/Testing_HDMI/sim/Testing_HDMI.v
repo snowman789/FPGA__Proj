@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Apr 22 17:43:40 2019
-//Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+//Date        : Tue Apr 23 13:50:21 2019
+//Host        : EmbSys11 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
 //Purpose     : IP block netlist
@@ -107,8 +107,6 @@ module Testing_HDMI
        (.XY_Blue_V(Interface2_0_XY_Blue_V),
         .XY_Green_V(Interface2_0_XY_Green_V),
         .XY_Red_V(Interface2_0_XY_Red_V),
-        .ap_clk(clk_wiz_0_clk_out3),
-        .ap_rst(1'b0),
         .ap_start(clk_wiz_0_locked),
         .center_line_V(Gamelogic2_0_center_line_out_V),
         .right_r(Gamelogic2_0_right_r),

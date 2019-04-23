@@ -14,65 +14,70 @@ namespace ap_rtl {
 
 const sc_logic Gamelogic2::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic Gamelogic2::ap_const_logic_0 = sc_dt::Log_0;
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state1 = "1";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state2 = "10";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state3 = "100";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state4 = "1000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state5 = "10000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state6 = "100000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state7 = "1000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state8 = "10000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state9 = "100000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state10 = "1000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state11 = "10000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state12 = "100000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state13 = "1000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state14 = "10000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state15 = "100000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state16 = "1000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state17 = "10000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state18 = "100000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state19 = "1000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state20 = "10000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state21 = "100000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state22 = "1000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state23 = "10000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state24 = "100000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state25 = "1000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state26 = "10000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state27 = "100000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state28 = "1000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state29 = "10000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state30 = "100000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state31 = "1000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state32 = "10000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state33 = "100000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state34 = "1000000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state35 = "10000000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state36 = "100000000000000000000000000000000000";
-const sc_lv<37> Gamelogic2::ap_ST_fsm_state37 = "1000000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state1 = "1";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state2 = "10";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state3 = "100";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state4 = "1000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state5 = "10000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state6 = "100000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state7 = "1000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state8 = "10000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state9 = "100000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state10 = "1000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state11 = "10000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state12 = "100000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state13 = "1000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state14 = "10000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state15 = "100000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state16 = "1000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state17 = "10000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state18 = "100000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state19 = "1000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state20 = "10000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state21 = "100000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state22 = "1000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state23 = "10000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state24 = "100000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state25 = "1000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state26 = "10000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state27 = "100000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state28 = "1000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state29 = "10000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state30 = "100000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state31 = "1000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state32 = "10000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state33 = "100000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state34 = "1000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state35 = "10000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state36 = "100000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state37 = "1000000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state38 = "10000000000000000000000000000000000000";
+const sc_lv<39> Gamelogic2::ap_ST_fsm_state39 = "100000000000000000000000000000000000000";
 const sc_lv<32> Gamelogic2::ap_const_lv32_0 = "00000000000000000000000000000000";
-const sc_lv<1> Gamelogic2::ap_const_lv1_1 = "1";
 const sc_lv<32> Gamelogic2::ap_const_lv32_1 = "1";
-const sc_lv<32> Gamelogic2::ap_const_lv32_24 = "100100";
+const sc_lv<32> Gamelogic2::ap_const_lv32_2 = "10";
+const sc_lv<1> Gamelogic2::ap_const_lv1_1 = "1";
+const sc_lv<32> Gamelogic2::ap_const_lv32_3 = "11";
+const sc_lv<32> Gamelogic2::ap_const_lv32_26 = "100110";
+const sc_lv<1> Gamelogic2::ap_const_lv1_0 = "0";
 const sc_lv<10> Gamelogic2::ap_const_lv10_3F6 = "1111110110";
 const sc_lv<10> Gamelogic2::ap_const_lv10_A = "1010";
+const sc_lv<32> Gamelogic2::ap_const_lv32_A = "1010";
 const sc_lv<32> Gamelogic2::ap_const_lv32_D = "1101";
 const sc_lv<32> Gamelogic2::ap_const_lv32_64 = "1100100";
 const sc_lv<7> Gamelogic2::ap_const_lv7_32 = "110010";
-const sc_lv<1> Gamelogic2::ap_const_lv1_0 = "0";
 const bool Gamelogic2::ap_const_boolean_1 = true;
 
 Gamelogic2::Gamelogic2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     Gamelogic2_urem_3bkb_U1 = new Gamelogic2_urem_3bkb<1,36,32,8,32>("Gamelogic2_urem_3bkb_U1");
     Gamelogic2_urem_3bkb_U1->clk(ap_clk);
     Gamelogic2_urem_3bkb_U1->reset(ap_rst);
-    Gamelogic2_urem_3bkb_U1->start(grp_fu_321_ap_start);
-    Gamelogic2_urem_3bkb_U1->done(grp_fu_321_ap_done);
-    Gamelogic2_urem_3bkb_U1->din0(grp_fu_321_p0);
-    Gamelogic2_urem_3bkb_U1->din1(grp_fu_321_p1);
+    Gamelogic2_urem_3bkb_U1->start(grp_fu_395_ap_start);
+    Gamelogic2_urem_3bkb_U1->done(grp_fu_395_ap_done);
+    Gamelogic2_urem_3bkb_U1->din0(grp_fu_395_p0);
+    Gamelogic2_urem_3bkb_U1->din1(grp_fu_395_p1);
     Gamelogic2_urem_3bkb_U1->ce(ap_var_for_const0);
-    Gamelogic2_urem_3bkb_U1->dout(grp_fu_321_p2);
+    Gamelogic2_urem_3bkb_U1->dout(grp_fu_395_p2);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -84,269 +89,339 @@ Gamelogic2::Gamelogic2(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_ap_CS_fsm_state2);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_CS_fsm_state37);
+    SC_METHOD(thread_ap_CS_fsm_state3);
+    sensitive << ( ap_CS_fsm );
+
+    SC_METHOD(thread_ap_CS_fsm_state39);
+    sensitive << ( ap_CS_fsm );
+
+    SC_METHOD(thread_ap_CS_fsm_state4);
     sensitive << ( ap_CS_fsm );
 
     SC_METHOD(thread_ap_done);
-    sensitive << ( ap_CS_fsm_state37 );
+    sensitive << ( ap_CS_fsm_state39 );
 
     SC_METHOD(thread_ap_idle);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm_state1 );
 
-    SC_METHOD(thread_ap_ready);
-    sensitive << ( ap_CS_fsm_state37 );
+    SC_METHOD(thread_ap_phi_mux_btn_count_flag_4_phi_fu_111_p4);
+    sensitive << ( tmp_4_reg_477 );
+    sensitive << ( btn_count_flag_4_reg_108 );
+    sensitive << ( ap_CS_fsm_state39 );
 
-    SC_METHOD(thread_brmerge2_fu_300_p2);
-    sensitive << ( tmp1_fu_294_p2 );
-    sensitive << ( tmp_fu_288_p2 );
+    SC_METHOD(thread_ap_phi_mux_btn_count_new_4_phi_fu_121_p4);
+    sensitive << ( tmp_4_reg_477 );
+    sensitive << ( ap_CS_fsm_state39 );
+    sensitive << ( btn_count_new_4_reg_118 );
+
+    SC_METHOD(thread_ap_ready);
+    sensitive << ( ap_CS_fsm_state39 );
+
+    SC_METHOD(thread_btn_count_loc_fu_138_p0);
+    sensitive << ( ap_CS_fsm_state1 );
+    sensitive << ( btn0 );
+
+    SC_METHOD(thread_btn_count_loc_fu_138_p3);
+    sensitive << ( btn_count );
+    sensitive << ( btn_count_loc_fu_138_p0 );
+    sensitive << ( tmp_8_fu_132_p2 );
+
+    SC_METHOD(thread_btn_count_new_2_fu_164_p0);
+    sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state2 );
+
+    SC_METHOD(thread_btn_count_new_2_fu_164_p3);
+    sensitive << ( tmp_9_btn_count_loc_fu_151_p3 );
+    sensitive << ( btn_count_new_2_fu_164_p0 );
+    sensitive << ( tmp_s_fu_158_p2 );
 
     SC_METHOD(thread_center_line_out_V);
-    sensitive << ( to_add_8_reg_344 );
-    sensitive << ( ap_CS_fsm_state37 );
+    sensitive << ( to_add_8_reg_472 );
+    sensitive << ( ap_CS_fsm_state39 );
 
-    SC_METHOD(thread_grp_fu_321_ap_start);
-    sensitive << ( ap_CS_fsm_state2 );
+    SC_METHOD(thread_grp_fu_395_ap_start);
+    sensitive << ( ap_CS_fsm_state4 );
 
-    SC_METHOD(thread_grp_fu_321_p0);
-    sensitive << ( tmp_i_i_reg_353 );
-    sensitive << ( ap_CS_fsm_state2 );
+    SC_METHOD(thread_grp_fu_395_p0);
+    sensitive << ( tmp_i_i_reg_481 );
+    sensitive << ( ap_CS_fsm_state4 );
 
-    SC_METHOD(thread_grp_fu_321_p1);
-    sensitive << ( ap_CS_fsm_state2 );
+    SC_METHOD(thread_grp_fu_395_p1);
+    sensitive << ( ap_CS_fsm_state4 );
 
-    SC_METHOD(thread_p_9_fu_122_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_p_9_fu_219_p0);
     sensitive << ( btn3 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_p_9_fu_122_p3);
+    SC_METHOD(thread_p_9_fu_219_p3);
     sensitive << ( center_line_in_V );
-    sensitive << ( p_9_fu_122_p0 );
-    sensitive << ( tmp_9_fu_108_p2 );
+    sensitive << ( p_9_fu_219_p0 );
+    sensitive << ( tmp_3_fu_205_p2 );
 
-    SC_METHOD(thread_p_s_fu_114_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_p_btn_count_flag_2_fu_186_p2);
+    sensitive << ( tmp1_fu_181_p2 );
+    sensitive << ( tmp_fu_177_p2 );
+
+    SC_METHOD(thread_p_s_fu_211_p0);
     sensitive << ( btn3 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_p_s_fu_114_p3);
+    SC_METHOD(thread_p_s_fu_211_p3);
     sensitive << ( center_line_in_V );
-    sensitive << ( p_s_fu_114_p0 );
-    sensitive << ( tmp_8_fu_102_p2 );
+    sensitive << ( p_s_fu_211_p0 );
+    sensitive << ( tmp_2_fu_199_p2 );
 
     SC_METHOD(thread_right_out);
-    sensitive << ( brmerge2_reg_349 );
-    sensitive << ( ap_CS_fsm_state37 );
-    sensitive << ( tmp_1_fu_327_p1 );
+    sensitive << ( tmp_4_reg_477 );
+    sensitive << ( ap_CS_fsm_state39 );
+    sensitive << ( tmp_5_fu_401_p1 );
 
-    SC_METHOD(thread_sel_tmp10_fu_196_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp10_fu_288_p0);
     sensitive << ( btn1 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp10_fu_196_p2);
-    sensitive << ( sel_tmp10_fu_196_p0 );
+    SC_METHOD(thread_sel_tmp10_fu_288_p2);
+    sensitive << ( sel_tmp10_fu_288_p0 );
 
-    SC_METHOD(thread_sel_tmp11_fu_202_p2);
-    sensitive << ( sel_tmp9_fu_176_p2 );
-    sensitive << ( sel_tmp10_fu_196_p2 );
+    SC_METHOD(thread_sel_tmp11_fu_293_p2);
+    sensitive << ( sel_tmp9_fu_269_p2 );
+    sensitive << ( sel_tmp10_fu_288_p2 );
 
-    SC_METHOD(thread_sel_tmp12_fu_208_p3);
-    sensitive << ( sel_tmp11_fu_202_p2 );
-    sensitive << ( p_s_fu_114_p3 );
-    sensitive << ( sel_tmp7_fu_188_p3 );
+    SC_METHOD(thread_sel_tmp12_fu_299_p3);
+    sensitive << ( sel_tmp11_fu_293_p2 );
+    sensitive << ( p_s_fu_211_p3 );
+    sensitive << ( sel_tmp7_fu_280_p3 );
 
-    SC_METHOD(thread_sel_tmp13_fu_216_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp13_fu_307_p0);
     sensitive << ( right_in );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp13_fu_216_p2);
-    sensitive << ( sel_tmp13_fu_216_p0 );
+    SC_METHOD(thread_sel_tmp13_fu_307_p2);
+    sensitive << ( sel_tmp13_fu_307_p0 );
 
-    SC_METHOD(thread_sel_tmp14_fu_222_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp14_fu_313_p0);
     sensitive << ( btn0 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp14_fu_222_p2);
-    sensitive << ( sel_tmp14_fu_222_p0 );
-    sensitive << ( sel_tmp13_fu_216_p2 );
+    SC_METHOD(thread_sel_tmp14_fu_313_p2);
+    sensitive << ( sel_tmp14_fu_313_p0 );
+    sensitive << ( sel_tmp13_fu_307_p2 );
 
-    SC_METHOD(thread_sel_tmp15_fu_228_p3);
-    sensitive << ( tmp_9_fu_108_p2 );
-    sensitive << ( sel_tmp14_fu_222_p2 );
-    sensitive << ( sel_tmp12_fu_208_p3 );
+    SC_METHOD(thread_sel_tmp15_fu_318_p3);
+    sensitive << ( tmp_3_fu_205_p2 );
+    sensitive << ( sel_tmp14_fu_313_p2 );
+    sensitive << ( sel_tmp12_fu_299_p3 );
 
-    SC_METHOD(thread_sel_tmp16_fu_242_p2);
-    sensitive << ( sel_tmp24_demorgan_fu_236_p2 );
+    SC_METHOD(thread_sel_tmp16_fu_331_p2);
+    sensitive << ( sel_tmp24_demorgan_fu_326_p2 );
 
-    SC_METHOD(thread_sel_tmp17_fu_248_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp17_fu_337_p0);
     sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp17_fu_248_p2);
-    sensitive << ( sel_tmp17_fu_248_p0 );
-    sensitive << ( sel_tmp16_fu_242_p2 );
+    SC_METHOD(thread_sel_tmp17_fu_337_p2);
+    sensitive << ( sel_tmp17_fu_337_p0 );
+    sensitive << ( sel_tmp16_fu_331_p2 );
 
-    SC_METHOD(thread_sel_tmp18_fu_254_p3);
-    sensitive << ( tmp_8_fu_102_p2 );
-    sensitive << ( sel_tmp17_fu_248_p2 );
-    sensitive << ( sel_tmp15_fu_228_p3 );
+    SC_METHOD(thread_sel_tmp18_fu_342_p3);
+    sensitive << ( tmp_2_fu_199_p2 );
+    sensitive << ( sel_tmp17_fu_337_p2 );
+    sensitive << ( sel_tmp15_fu_318_p3 );
 
-    SC_METHOD(thread_sel_tmp19_fu_268_p2);
-    sensitive << ( sel_tmp31_demorgan_fu_262_p2 );
+    SC_METHOD(thread_sel_tmp19_fu_355_p2);
+    sensitive << ( sel_tmp31_demorgan_fu_350_p2 );
 
-    SC_METHOD(thread_sel_tmp1_fu_136_p3);
-    sensitive << ( tmp_8_fu_102_p2 );
-    sensitive << ( sel_tmp_fu_130_p2 );
-    sensitive << ( p_9_fu_122_p3 );
+    SC_METHOD(thread_sel_tmp1_fu_232_p3);
+    sensitive << ( tmp_2_fu_199_p2 );
+    sensitive << ( sel_tmp_fu_227_p2 );
+    sensitive << ( p_9_fu_219_p3 );
 
-    SC_METHOD(thread_sel_tmp20_fu_274_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp20_fu_361_p0);
     sensitive << ( btn1 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp20_fu_274_p2);
-    sensitive << ( sel_tmp20_fu_274_p0 );
-    sensitive << ( sel_tmp19_fu_268_p2 );
+    SC_METHOD(thread_sel_tmp20_fu_361_p2);
+    sensitive << ( sel_tmp20_fu_361_p0 );
+    sensitive << ( sel_tmp19_fu_355_p2 );
 
-    SC_METHOD(thread_sel_tmp24_demorgan_fu_236_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp24_demorgan_fu_326_p0);
     sensitive << ( right_in );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp24_demorgan_fu_236_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp24_demorgan_fu_326_p1);
     sensitive << ( btn0 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp24_demorgan_fu_236_p2);
-    sensitive << ( sel_tmp24_demorgan_fu_236_p0 );
-    sensitive << ( sel_tmp24_demorgan_fu_236_p1 );
+    SC_METHOD(thread_sel_tmp24_demorgan_fu_326_p2);
+    sensitive << ( sel_tmp24_demorgan_fu_326_p0 );
+    sensitive << ( sel_tmp24_demorgan_fu_326_p1 );
 
-    SC_METHOD(thread_sel_tmp2_fu_144_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp2_fu_240_p0);
     sensitive << ( btn0 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp2_fu_144_p2);
-    sensitive << ( sel_tmp2_fu_144_p0 );
+    SC_METHOD(thread_sel_tmp2_fu_240_p2);
+    sensitive << ( sel_tmp2_fu_240_p0 );
 
-    SC_METHOD(thread_sel_tmp31_demorgan_fu_262_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp31_demorgan_fu_350_p1);
     sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp31_demorgan_fu_262_p2);
-    sensitive << ( sel_tmp24_demorgan_fu_236_p2 );
-    sensitive << ( sel_tmp31_demorgan_fu_262_p1 );
+    SC_METHOD(thread_sel_tmp31_demorgan_fu_350_p2);
+    sensitive << ( sel_tmp24_demorgan_fu_326_p2 );
+    sensitive << ( sel_tmp31_demorgan_fu_350_p1 );
 
-    SC_METHOD(thread_sel_tmp3_fu_150_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp3_fu_245_p0);
     sensitive << ( right_in );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp3_fu_150_p2);
-    sensitive << ( sel_tmp3_fu_150_p0 );
-    sensitive << ( sel_tmp2_fu_144_p2 );
+    SC_METHOD(thread_sel_tmp3_fu_245_p2);
+    sensitive << ( sel_tmp3_fu_245_p0 );
+    sensitive << ( sel_tmp2_fu_240_p2 );
 
-    SC_METHOD(thread_sel_tmp4_fu_156_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp4_fu_251_p1);
     sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp4_fu_156_p2);
-    sensitive << ( sel_tmp3_fu_150_p2 );
-    sensitive << ( sel_tmp4_fu_156_p1 );
+    SC_METHOD(thread_sel_tmp4_fu_251_p2);
+    sensitive << ( sel_tmp3_fu_245_p2 );
+    sensitive << ( sel_tmp4_fu_251_p1 );
 
-    SC_METHOD(thread_sel_tmp5_fu_162_p3);
-    sensitive << ( tmp_9_fu_108_p2 );
-    sensitive << ( sel_tmp4_fu_156_p2 );
-    sensitive << ( sel_tmp1_fu_136_p3 );
+    SC_METHOD(thread_sel_tmp5_fu_256_p3);
+    sensitive << ( tmp_3_fu_205_p2 );
+    sensitive << ( sel_tmp4_fu_251_p2 );
+    sensitive << ( sel_tmp1_fu_232_p3 );
 
-    SC_METHOD(thread_sel_tmp6_fu_182_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp6_fu_275_p1);
     sensitive << ( btn1 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp6_fu_182_p2);
-    sensitive << ( sel_tmp9_fu_176_p2 );
-    sensitive << ( sel_tmp6_fu_182_p1 );
+    SC_METHOD(thread_sel_tmp6_fu_275_p2);
+    sensitive << ( sel_tmp9_fu_269_p2 );
+    sensitive << ( sel_tmp6_fu_275_p1 );
 
-    SC_METHOD(thread_sel_tmp7_fu_188_p3);
-    sensitive << ( tmp_9_fu_108_p2 );
-    sensitive << ( sel_tmp6_fu_182_p2 );
-    sensitive << ( sel_tmp5_fu_162_p3 );
+    SC_METHOD(thread_sel_tmp7_fu_280_p3);
+    sensitive << ( tmp_3_fu_205_p2 );
+    sensitive << ( sel_tmp6_fu_275_p2 );
+    sensitive << ( sel_tmp5_fu_256_p3 );
 
-    SC_METHOD(thread_sel_tmp8_fu_170_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp8_fu_264_p0);
     sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp8_fu_170_p2);
-    sensitive << ( sel_tmp8_fu_170_p0 );
+    SC_METHOD(thread_sel_tmp8_fu_264_p2);
+    sensitive << ( sel_tmp8_fu_264_p0 );
 
-    SC_METHOD(thread_sel_tmp9_fu_176_p2);
-    sensitive << ( sel_tmp3_fu_150_p2 );
-    sensitive << ( sel_tmp8_fu_170_p2 );
+    SC_METHOD(thread_sel_tmp9_fu_269_p2);
+    sensitive << ( sel_tmp3_fu_245_p2 );
+    sensitive << ( sel_tmp8_fu_264_p2 );
 
-    SC_METHOD(thread_sel_tmp_fu_130_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp_fu_227_p0);
     sensitive << ( right_in );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp_fu_130_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_sel_tmp_fu_227_p1);
     sensitive << ( btn0 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_sel_tmp_fu_130_p2);
-    sensitive << ( sel_tmp_fu_130_p0 );
-    sensitive << ( sel_tmp_fu_130_p1 );
+    SC_METHOD(thread_sel_tmp_fu_227_p2);
+    sensitive << ( sel_tmp_fu_227_p0 );
+    sensitive << ( sel_tmp_fu_227_p1 );
 
-    SC_METHOD(thread_tmp1_fu_294_p0);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_tmp1_fu_181_p0);
     sensitive << ( btn2 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_tmp1_fu_294_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_tmp1_fu_181_p1);
     sensitive << ( btn3 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_tmp1_fu_294_p2);
-    sensitive << ( tmp1_fu_294_p0 );
-    sensitive << ( tmp1_fu_294_p1 );
+    SC_METHOD(thread_tmp1_fu_181_p2);
+    sensitive << ( tmp1_fu_181_p0 );
+    sensitive << ( tmp1_fu_181_p1 );
 
-    SC_METHOD(thread_tmp_1_fu_327_p1);
-    sensitive << ( grp_fu_321_p2 );
+    SC_METHOD(thread_tmp_1_btn_count_new_2_fu_192_p0);
+    sensitive << ( btn3 );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_tmp_8_fu_102_p2);
+    SC_METHOD(thread_tmp_1_btn_count_new_2_fu_192_p3);
+    sensitive << ( btn_count_new_2_reg_456 );
+    sensitive << ( tmp_1_btn_count_new_2_fu_192_p0 );
+    sensitive << ( tmp_1_fu_172_p2 );
+
+    SC_METHOD(thread_tmp_1_fu_172_p2);
+    sensitive << ( btn_count_new_2_reg_456 );
+
+    SC_METHOD(thread_tmp_2_fu_199_p2);
     sensitive << ( center_line_in_V );
 
-    SC_METHOD(thread_tmp_9_fu_108_p2);
+    SC_METHOD(thread_tmp_3_fu_205_p2);
     sensitive << ( center_line_in_V );
 
-    SC_METHOD(thread_tmp_fu_288_p0);
-    sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( btn0 );
+    SC_METHOD(thread_tmp_4_fu_374_p2);
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_1_btn_count_new_2_fu_192_p3 );
 
-    SC_METHOD(thread_tmp_fu_288_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_tmp_5_fu_401_p1);
+    sensitive << ( grp_fu_395_p2 );
+
+    SC_METHOD(thread_tmp_8_fu_132_p2);
+    sensitive << ( btn_count );
+
+    SC_METHOD(thread_tmp_9_btn_count_loc_fu_151_p0);
     sensitive << ( btn1 );
+    sensitive << ( ap_CS_fsm_state2 );
 
-    SC_METHOD(thread_tmp_fu_288_p2);
-    sensitive << ( tmp_fu_288_p0 );
-    sensitive << ( tmp_fu_288_p1 );
+    SC_METHOD(thread_tmp_9_btn_count_loc_fu_151_p3);
+    sensitive << ( btn_count_loc_reg_433 );
+    sensitive << ( tmp_9_btn_count_loc_fu_151_p0 );
+    sensitive << ( tmp_9_fu_146_p2 );
 
-    SC_METHOD(thread_tmp_i_i_fu_310_p1);
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_tmp_9_fu_146_p2);
+    sensitive << ( btn_count_loc_reg_433 );
+
+    SC_METHOD(thread_tmp_fu_177_p0);
+    sensitive << ( btn1 );
+    sensitive << ( ap_CS_fsm_state3 );
+
+    SC_METHOD(thread_tmp_fu_177_p1);
+    sensitive << ( btn0 );
+    sensitive << ( ap_CS_fsm_state3 );
+
+    SC_METHOD(thread_tmp_fu_177_p2);
+    sensitive << ( tmp_fu_177_p0 );
+    sensitive << ( tmp_fu_177_p1 );
+
+    SC_METHOD(thread_tmp_i_i_fu_384_p1);
     sensitive << ( RandSeed );
+    sensitive << ( ap_CS_fsm_state3 );
 
-    SC_METHOD(thread_tmp_i_i_fu_310_p2);
-    sensitive << ( tmp_i_i_fu_310_p1 );
+    SC_METHOD(thread_tmp_i_i_fu_384_p2);
+    sensitive << ( tmp_i_i_fu_384_p1 );
 
-    SC_METHOD(thread_to_add_8_fu_280_p3);
-    sensitive << ( tmp_8_fu_102_p2 );
-    sensitive << ( sel_tmp20_fu_274_p2 );
-    sensitive << ( sel_tmp18_fu_254_p3 );
+    SC_METHOD(thread_tmp_s_fu_158_p2);
+    sensitive << ( tmp_9_btn_count_loc_fu_151_p3 );
+
+    SC_METHOD(thread_to_add_8_fu_366_p3);
+    sensitive << ( tmp_2_fu_199_p2 );
+    sensitive << ( sel_tmp20_fu_361_p2 );
+    sensitive << ( sel_tmp18_fu_342_p3 );
 
     SC_METHOD(thread_ap_NS_fsm);
     sensitive << ( ap_start );
     sensitive << ( ap_CS_fsm );
     sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( brmerge2_fu_300_p2 );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_4_fu_374_p2 );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_clk.pos() );
 
     SC_THREAD(thread_ap_var_for_const0);
 
-    ap_CS_fsm = "0000000000000000000000000000000000001";
+    ap_CS_fsm = "000000000000000000000000000000000000001";
+    btn_count = "00000000000000000000000000000000";
     RandSeed = "00000000000000000000000000000111";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
@@ -374,72 +449,94 @@ Gamelogic2::Gamelogic2(sc_module_name name) : sc_module(name), mVcdFile(0) {
 #ifdef __HLS_TRACE_LEVEL_INT__
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
     sc_trace(mVcdFile, ap_CS_fsm_state1, "ap_CS_fsm_state1");
+    sc_trace(mVcdFile, btn_count, "btn_count");
     sc_trace(mVcdFile, RandSeed, "RandSeed");
-    sc_trace(mVcdFile, to_add_8_fu_280_p3, "to_add_8_fu_280_p3");
-    sc_trace(mVcdFile, to_add_8_reg_344, "to_add_8_reg_344");
-    sc_trace(mVcdFile, brmerge2_fu_300_p2, "brmerge2_fu_300_p2");
-    sc_trace(mVcdFile, brmerge2_reg_349, "brmerge2_reg_349");
-    sc_trace(mVcdFile, tmp_i_i_fu_310_p2, "tmp_i_i_fu_310_p2");
-    sc_trace(mVcdFile, tmp_i_i_reg_353, "tmp_i_i_reg_353");
+    sc_trace(mVcdFile, btn_count_loc_fu_138_p3, "btn_count_loc_fu_138_p3");
+    sc_trace(mVcdFile, btn_count_loc_reg_433, "btn_count_loc_reg_433");
     sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
-    sc_trace(mVcdFile, grp_fu_321_p2, "grp_fu_321_p2");
-    sc_trace(mVcdFile, ap_CS_fsm_state37, "ap_CS_fsm_state37");
-    sc_trace(mVcdFile, p_s_fu_114_p0, "p_s_fu_114_p0");
-    sc_trace(mVcdFile, tmp_8_fu_102_p2, "tmp_8_fu_102_p2");
-    sc_trace(mVcdFile, p_9_fu_122_p0, "p_9_fu_122_p0");
-    sc_trace(mVcdFile, tmp_9_fu_108_p2, "tmp_9_fu_108_p2");
-    sc_trace(mVcdFile, sel_tmp_fu_130_p0, "sel_tmp_fu_130_p0");
-    sc_trace(mVcdFile, sel_tmp_fu_130_p1, "sel_tmp_fu_130_p1");
-    sc_trace(mVcdFile, sel_tmp_fu_130_p2, "sel_tmp_fu_130_p2");
-    sc_trace(mVcdFile, p_9_fu_122_p3, "p_9_fu_122_p3");
-    sc_trace(mVcdFile, sel_tmp2_fu_144_p0, "sel_tmp2_fu_144_p0");
-    sc_trace(mVcdFile, sel_tmp3_fu_150_p0, "sel_tmp3_fu_150_p0");
-    sc_trace(mVcdFile, sel_tmp2_fu_144_p2, "sel_tmp2_fu_144_p2");
-    sc_trace(mVcdFile, sel_tmp3_fu_150_p2, "sel_tmp3_fu_150_p2");
-    sc_trace(mVcdFile, sel_tmp4_fu_156_p1, "sel_tmp4_fu_156_p1");
-    sc_trace(mVcdFile, sel_tmp4_fu_156_p2, "sel_tmp4_fu_156_p2");
-    sc_trace(mVcdFile, sel_tmp1_fu_136_p3, "sel_tmp1_fu_136_p3");
-    sc_trace(mVcdFile, sel_tmp8_fu_170_p0, "sel_tmp8_fu_170_p0");
-    sc_trace(mVcdFile, sel_tmp8_fu_170_p2, "sel_tmp8_fu_170_p2");
-    sc_trace(mVcdFile, sel_tmp9_fu_176_p2, "sel_tmp9_fu_176_p2");
-    sc_trace(mVcdFile, sel_tmp6_fu_182_p1, "sel_tmp6_fu_182_p1");
-    sc_trace(mVcdFile, sel_tmp6_fu_182_p2, "sel_tmp6_fu_182_p2");
-    sc_trace(mVcdFile, sel_tmp5_fu_162_p3, "sel_tmp5_fu_162_p3");
-    sc_trace(mVcdFile, sel_tmp10_fu_196_p0, "sel_tmp10_fu_196_p0");
-    sc_trace(mVcdFile, sel_tmp10_fu_196_p2, "sel_tmp10_fu_196_p2");
-    sc_trace(mVcdFile, sel_tmp11_fu_202_p2, "sel_tmp11_fu_202_p2");
-    sc_trace(mVcdFile, p_s_fu_114_p3, "p_s_fu_114_p3");
-    sc_trace(mVcdFile, sel_tmp7_fu_188_p3, "sel_tmp7_fu_188_p3");
-    sc_trace(mVcdFile, sel_tmp13_fu_216_p0, "sel_tmp13_fu_216_p0");
-    sc_trace(mVcdFile, sel_tmp14_fu_222_p0, "sel_tmp14_fu_222_p0");
-    sc_trace(mVcdFile, sel_tmp13_fu_216_p2, "sel_tmp13_fu_216_p2");
-    sc_trace(mVcdFile, sel_tmp14_fu_222_p2, "sel_tmp14_fu_222_p2");
-    sc_trace(mVcdFile, sel_tmp12_fu_208_p3, "sel_tmp12_fu_208_p3");
-    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_236_p0, "sel_tmp24_demorgan_fu_236_p0");
-    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_236_p1, "sel_tmp24_demorgan_fu_236_p1");
-    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_236_p2, "sel_tmp24_demorgan_fu_236_p2");
-    sc_trace(mVcdFile, sel_tmp17_fu_248_p0, "sel_tmp17_fu_248_p0");
-    sc_trace(mVcdFile, sel_tmp16_fu_242_p2, "sel_tmp16_fu_242_p2");
-    sc_trace(mVcdFile, sel_tmp17_fu_248_p2, "sel_tmp17_fu_248_p2");
-    sc_trace(mVcdFile, sel_tmp15_fu_228_p3, "sel_tmp15_fu_228_p3");
-    sc_trace(mVcdFile, sel_tmp31_demorgan_fu_262_p1, "sel_tmp31_demorgan_fu_262_p1");
-    sc_trace(mVcdFile, sel_tmp31_demorgan_fu_262_p2, "sel_tmp31_demorgan_fu_262_p2");
-    sc_trace(mVcdFile, sel_tmp20_fu_274_p0, "sel_tmp20_fu_274_p0");
-    sc_trace(mVcdFile, sel_tmp19_fu_268_p2, "sel_tmp19_fu_268_p2");
-    sc_trace(mVcdFile, sel_tmp20_fu_274_p2, "sel_tmp20_fu_274_p2");
-    sc_trace(mVcdFile, sel_tmp18_fu_254_p3, "sel_tmp18_fu_254_p3");
-    sc_trace(mVcdFile, tmp_fu_288_p0, "tmp_fu_288_p0");
-    sc_trace(mVcdFile, tmp_fu_288_p1, "tmp_fu_288_p1");
-    sc_trace(mVcdFile, tmp1_fu_294_p0, "tmp1_fu_294_p0");
-    sc_trace(mVcdFile, tmp1_fu_294_p1, "tmp1_fu_294_p1");
-    sc_trace(mVcdFile, tmp1_fu_294_p2, "tmp1_fu_294_p2");
-    sc_trace(mVcdFile, tmp_fu_288_p2, "tmp_fu_288_p2");
-    sc_trace(mVcdFile, tmp_i_i_fu_310_p1, "tmp_i_i_fu_310_p1");
-    sc_trace(mVcdFile, grp_fu_321_p0, "grp_fu_321_p0");
-    sc_trace(mVcdFile, grp_fu_321_p1, "grp_fu_321_p1");
-    sc_trace(mVcdFile, tmp_1_fu_327_p1, "tmp_1_fu_327_p1");
-    sc_trace(mVcdFile, grp_fu_321_ap_start, "grp_fu_321_ap_start");
-    sc_trace(mVcdFile, grp_fu_321_ap_done, "grp_fu_321_ap_done");
+    sc_trace(mVcdFile, btn_count_new_2_fu_164_p3, "btn_count_new_2_fu_164_p3");
+    sc_trace(mVcdFile, btn_count_new_2_reg_456, "btn_count_new_2_reg_456");
+    sc_trace(mVcdFile, p_btn_count_flag_2_fu_186_p2, "p_btn_count_flag_2_fu_186_p2");
+    sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
+    sc_trace(mVcdFile, tmp_1_btn_count_new_2_fu_192_p3, "tmp_1_btn_count_new_2_fu_192_p3");
+    sc_trace(mVcdFile, to_add_8_fu_366_p3, "to_add_8_fu_366_p3");
+    sc_trace(mVcdFile, to_add_8_reg_472, "to_add_8_reg_472");
+    sc_trace(mVcdFile, tmp_4_fu_374_p2, "tmp_4_fu_374_p2");
+    sc_trace(mVcdFile, tmp_4_reg_477, "tmp_4_reg_477");
+    sc_trace(mVcdFile, tmp_i_i_fu_384_p2, "tmp_i_i_fu_384_p2");
+    sc_trace(mVcdFile, tmp_i_i_reg_481, "tmp_i_i_reg_481");
+    sc_trace(mVcdFile, ap_CS_fsm_state4, "ap_CS_fsm_state4");
+    sc_trace(mVcdFile, ap_phi_mux_btn_count_flag_4_phi_fu_111_p4, "ap_phi_mux_btn_count_flag_4_phi_fu_111_p4");
+    sc_trace(mVcdFile, btn_count_flag_4_reg_108, "btn_count_flag_4_reg_108");
+    sc_trace(mVcdFile, ap_CS_fsm_state39, "ap_CS_fsm_state39");
+    sc_trace(mVcdFile, ap_phi_mux_btn_count_new_4_phi_fu_121_p4, "ap_phi_mux_btn_count_new_4_phi_fu_121_p4");
+    sc_trace(mVcdFile, btn_count_new_4_reg_118, "btn_count_new_4_reg_118");
+    sc_trace(mVcdFile, grp_fu_395_p2, "grp_fu_395_p2");
+    sc_trace(mVcdFile, btn_count_loc_fu_138_p0, "btn_count_loc_fu_138_p0");
+    sc_trace(mVcdFile, tmp_8_fu_132_p2, "tmp_8_fu_132_p2");
+    sc_trace(mVcdFile, tmp_9_btn_count_loc_fu_151_p0, "tmp_9_btn_count_loc_fu_151_p0");
+    sc_trace(mVcdFile, tmp_9_fu_146_p2, "tmp_9_fu_146_p2");
+    sc_trace(mVcdFile, tmp_9_btn_count_loc_fu_151_p3, "tmp_9_btn_count_loc_fu_151_p3");
+    sc_trace(mVcdFile, btn_count_new_2_fu_164_p0, "btn_count_new_2_fu_164_p0");
+    sc_trace(mVcdFile, tmp_s_fu_158_p2, "tmp_s_fu_158_p2");
+    sc_trace(mVcdFile, tmp_fu_177_p0, "tmp_fu_177_p0");
+    sc_trace(mVcdFile, tmp_fu_177_p1, "tmp_fu_177_p1");
+    sc_trace(mVcdFile, tmp1_fu_181_p0, "tmp1_fu_181_p0");
+    sc_trace(mVcdFile, tmp1_fu_181_p1, "tmp1_fu_181_p1");
+    sc_trace(mVcdFile, tmp1_fu_181_p2, "tmp1_fu_181_p2");
+    sc_trace(mVcdFile, tmp_fu_177_p2, "tmp_fu_177_p2");
+    sc_trace(mVcdFile, tmp_1_btn_count_new_2_fu_192_p0, "tmp_1_btn_count_new_2_fu_192_p0");
+    sc_trace(mVcdFile, tmp_1_fu_172_p2, "tmp_1_fu_172_p2");
+    sc_trace(mVcdFile, p_s_fu_211_p0, "p_s_fu_211_p0");
+    sc_trace(mVcdFile, tmp_2_fu_199_p2, "tmp_2_fu_199_p2");
+    sc_trace(mVcdFile, p_9_fu_219_p0, "p_9_fu_219_p0");
+    sc_trace(mVcdFile, tmp_3_fu_205_p2, "tmp_3_fu_205_p2");
+    sc_trace(mVcdFile, sel_tmp_fu_227_p0, "sel_tmp_fu_227_p0");
+    sc_trace(mVcdFile, sel_tmp_fu_227_p1, "sel_tmp_fu_227_p1");
+    sc_trace(mVcdFile, sel_tmp_fu_227_p2, "sel_tmp_fu_227_p2");
+    sc_trace(mVcdFile, p_9_fu_219_p3, "p_9_fu_219_p3");
+    sc_trace(mVcdFile, sel_tmp2_fu_240_p0, "sel_tmp2_fu_240_p0");
+    sc_trace(mVcdFile, sel_tmp3_fu_245_p0, "sel_tmp3_fu_245_p0");
+    sc_trace(mVcdFile, sel_tmp2_fu_240_p2, "sel_tmp2_fu_240_p2");
+    sc_trace(mVcdFile, sel_tmp3_fu_245_p2, "sel_tmp3_fu_245_p2");
+    sc_trace(mVcdFile, sel_tmp4_fu_251_p1, "sel_tmp4_fu_251_p1");
+    sc_trace(mVcdFile, sel_tmp4_fu_251_p2, "sel_tmp4_fu_251_p2");
+    sc_trace(mVcdFile, sel_tmp1_fu_232_p3, "sel_tmp1_fu_232_p3");
+    sc_trace(mVcdFile, sel_tmp8_fu_264_p0, "sel_tmp8_fu_264_p0");
+    sc_trace(mVcdFile, sel_tmp8_fu_264_p2, "sel_tmp8_fu_264_p2");
+    sc_trace(mVcdFile, sel_tmp9_fu_269_p2, "sel_tmp9_fu_269_p2");
+    sc_trace(mVcdFile, sel_tmp6_fu_275_p1, "sel_tmp6_fu_275_p1");
+    sc_trace(mVcdFile, sel_tmp6_fu_275_p2, "sel_tmp6_fu_275_p2");
+    sc_trace(mVcdFile, sel_tmp5_fu_256_p3, "sel_tmp5_fu_256_p3");
+    sc_trace(mVcdFile, sel_tmp10_fu_288_p0, "sel_tmp10_fu_288_p0");
+    sc_trace(mVcdFile, sel_tmp10_fu_288_p2, "sel_tmp10_fu_288_p2");
+    sc_trace(mVcdFile, sel_tmp11_fu_293_p2, "sel_tmp11_fu_293_p2");
+    sc_trace(mVcdFile, p_s_fu_211_p3, "p_s_fu_211_p3");
+    sc_trace(mVcdFile, sel_tmp7_fu_280_p3, "sel_tmp7_fu_280_p3");
+    sc_trace(mVcdFile, sel_tmp13_fu_307_p0, "sel_tmp13_fu_307_p0");
+    sc_trace(mVcdFile, sel_tmp14_fu_313_p0, "sel_tmp14_fu_313_p0");
+    sc_trace(mVcdFile, sel_tmp13_fu_307_p2, "sel_tmp13_fu_307_p2");
+    sc_trace(mVcdFile, sel_tmp14_fu_313_p2, "sel_tmp14_fu_313_p2");
+    sc_trace(mVcdFile, sel_tmp12_fu_299_p3, "sel_tmp12_fu_299_p3");
+    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_326_p0, "sel_tmp24_demorgan_fu_326_p0");
+    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_326_p1, "sel_tmp24_demorgan_fu_326_p1");
+    sc_trace(mVcdFile, sel_tmp24_demorgan_fu_326_p2, "sel_tmp24_demorgan_fu_326_p2");
+    sc_trace(mVcdFile, sel_tmp17_fu_337_p0, "sel_tmp17_fu_337_p0");
+    sc_trace(mVcdFile, sel_tmp16_fu_331_p2, "sel_tmp16_fu_331_p2");
+    sc_trace(mVcdFile, sel_tmp17_fu_337_p2, "sel_tmp17_fu_337_p2");
+    sc_trace(mVcdFile, sel_tmp15_fu_318_p3, "sel_tmp15_fu_318_p3");
+    sc_trace(mVcdFile, sel_tmp31_demorgan_fu_350_p1, "sel_tmp31_demorgan_fu_350_p1");
+    sc_trace(mVcdFile, sel_tmp31_demorgan_fu_350_p2, "sel_tmp31_demorgan_fu_350_p2");
+    sc_trace(mVcdFile, sel_tmp20_fu_361_p0, "sel_tmp20_fu_361_p0");
+    sc_trace(mVcdFile, sel_tmp19_fu_355_p2, "sel_tmp19_fu_355_p2");
+    sc_trace(mVcdFile, sel_tmp20_fu_361_p2, "sel_tmp20_fu_361_p2");
+    sc_trace(mVcdFile, sel_tmp18_fu_342_p3, "sel_tmp18_fu_342_p3");
+    sc_trace(mVcdFile, tmp_i_i_fu_384_p1, "tmp_i_i_fu_384_p1");
+    sc_trace(mVcdFile, grp_fu_395_p0, "grp_fu_395_p0");
+    sc_trace(mVcdFile, grp_fu_395_p1, "grp_fu_395_p1");
+    sc_trace(mVcdFile, tmp_5_fu_401_p1, "tmp_5_fu_401_p1");
+    sc_trace(mVcdFile, grp_fu_395_ap_start, "grp_fu_395_ap_start");
+    sc_trace(mVcdFile, grp_fu_395_ap_done, "grp_fu_395_ap_done");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
 #endif
 
@@ -469,15 +566,38 @@ void Gamelogic2::thread_ap_clk_no_reset_() {
     } else {
         ap_CS_fsm = ap_NS_fsm.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state37.read()) && esl_seteq<1,1,1>(brmerge2_reg_349.read(), ap_const_lv1_1))) {
-        RandSeed = grp_fu_321_p2.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(tmp_4_fu_374_p2.read(), ap_const_lv1_0))) {
+        btn_count_flag_4_reg_108 = p_btn_count_flag_2_fu_186_p2.read();
+    } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && 
+                esl_seteq<1,1,1>(tmp_4_reg_477.read(), ap_const_lv1_1))) {
+        btn_count_flag_4_reg_108 = ap_const_lv1_1;
+    }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(tmp_4_fu_374_p2.read(), ap_const_lv1_0))) {
+        btn_count_new_4_reg_118 = tmp_1_btn_count_new_2_fu_192_p3.read();
+    } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && 
+                esl_seteq<1,1,1>(tmp_4_reg_477.read(), ap_const_lv1_1))) {
+        btn_count_new_4_reg_118 = ap_const_lv32_0;
+    }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && esl_seteq<1,1,1>(tmp_4_reg_477.read(), ap_const_lv1_1))) {
+        RandSeed = grp_fu_395_p2.read();
+    }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && esl_seteq<1,1,1>(ap_const_lv1_1, ap_phi_mux_btn_count_flag_4_phi_fu_111_p4.read()))) {
+        btn_count = ap_phi_mux_btn_count_new_4_phi_fu_121_p4.read();
     }
     if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        brmerge2_reg_349 = brmerge2_fu_300_p2.read();
-        to_add_8_reg_344 = to_add_8_fu_280_p3.read();
+        btn_count_loc_reg_433 = btn_count_loc_fu_138_p3.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1) && esl_seteq<1,1,1>(brmerge2_fu_300_p2.read(), ap_const_lv1_1))) {
-        tmp_i_i_reg_353 = tmp_i_i_fu_310_p2.read();
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
+        btn_count_new_2_reg_456 = btn_count_new_2_fu_164_p3.read();
+    }
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read())) {
+        tmp_4_reg_477 = tmp_4_fu_374_p2.read();
+        to_add_8_reg_472 = to_add_8_fu_366_p3.read();
+    }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(tmp_4_fu_374_p2.read(), ap_const_lv1_1))) {
+        tmp_i_i_reg_481 = tmp_i_i_fu_384_p2.read();
     }
 }
 
@@ -489,12 +609,20 @@ void Gamelogic2::thread_ap_CS_fsm_state2() {
     ap_CS_fsm_state2 = ap_CS_fsm.read()[1];
 }
 
-void Gamelogic2::thread_ap_CS_fsm_state37() {
-    ap_CS_fsm_state37 = ap_CS_fsm.read()[36];
+void Gamelogic2::thread_ap_CS_fsm_state3() {
+    ap_CS_fsm_state3 = ap_CS_fsm.read()[2];
+}
+
+void Gamelogic2::thread_ap_CS_fsm_state39() {
+    ap_CS_fsm_state39 = ap_CS_fsm.read()[38];
+}
+
+void Gamelogic2::thread_ap_CS_fsm_state4() {
+    ap_CS_fsm_state4 = ap_CS_fsm.read()[3];
 }
 
 void Gamelogic2::thread_ap_done() {
-    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state37.read())) {
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read())) {
         ap_done = ap_const_logic_1;
     } else {
         ap_done = ap_const_logic_0;
@@ -510,264 +638,332 @@ void Gamelogic2::thread_ap_idle() {
     }
 }
 
+void Gamelogic2::thread_ap_phi_mux_btn_count_flag_4_phi_fu_111_p4() {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && 
+         esl_seteq<1,1,1>(tmp_4_reg_477.read(), ap_const_lv1_1))) {
+        ap_phi_mux_btn_count_flag_4_phi_fu_111_p4 = ap_const_lv1_1;
+    } else {
+        ap_phi_mux_btn_count_flag_4_phi_fu_111_p4 = btn_count_flag_4_reg_108.read();
+    }
+}
+
+void Gamelogic2::thread_ap_phi_mux_btn_count_new_4_phi_fu_121_p4() {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read()) && 
+         esl_seteq<1,1,1>(tmp_4_reg_477.read(), ap_const_lv1_1))) {
+        ap_phi_mux_btn_count_new_4_phi_fu_121_p4 = ap_const_lv32_0;
+    } else {
+        ap_phi_mux_btn_count_new_4_phi_fu_121_p4 = btn_count_new_4_reg_118.read();
+    }
+}
+
 void Gamelogic2::thread_ap_ready() {
-    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state37.read())) {
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state39.read())) {
         ap_ready = ap_const_logic_1;
     } else {
         ap_ready = ap_const_logic_0;
     }
 }
 
-void Gamelogic2::thread_brmerge2_fu_300_p2() {
-    brmerge2_fu_300_p2 = (tmp1_fu_294_p2.read() | tmp_fu_288_p2.read());
+void Gamelogic2::thread_btn_count_loc_fu_138_p0() {
+    btn_count_loc_fu_138_p0 =  (sc_lv<1>) (btn0.read());
+}
+
+void Gamelogic2::thread_btn_count_loc_fu_138_p3() {
+    btn_count_loc_fu_138_p3 = (!btn_count_loc_fu_138_p0.read()[0].is_01())? sc_lv<32>(): ((btn_count_loc_fu_138_p0.read()[0].to_bool())? tmp_8_fu_132_p2.read(): btn_count.read());
+}
+
+void Gamelogic2::thread_btn_count_new_2_fu_164_p0() {
+    btn_count_new_2_fu_164_p0 =  (sc_lv<1>) (btn2.read());
+}
+
+void Gamelogic2::thread_btn_count_new_2_fu_164_p3() {
+    btn_count_new_2_fu_164_p3 = (!btn_count_new_2_fu_164_p0.read()[0].is_01())? sc_lv<32>(): ((btn_count_new_2_fu_164_p0.read()[0].to_bool())? tmp_s_fu_158_p2.read(): tmp_9_btn_count_loc_fu_151_p3.read());
 }
 
 void Gamelogic2::thread_center_line_out_V() {
-    center_line_out_V = to_add_8_reg_344.read();
+    center_line_out_V = to_add_8_reg_472.read();
 }
 
-void Gamelogic2::thread_grp_fu_321_ap_start() {
-    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read())) {
-        grp_fu_321_ap_start = ap_const_logic_1;
+void Gamelogic2::thread_grp_fu_395_ap_start() {
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read())) {
+        grp_fu_395_ap_start = ap_const_logic_1;
     } else {
-        grp_fu_321_ap_start = ap_const_logic_0;
+        grp_fu_395_ap_start = ap_const_logic_0;
     }
 }
 
-void Gamelogic2::thread_grp_fu_321_p0() {
-    grp_fu_321_p0 = (!ap_const_lv32_64.is_01() || !tmp_i_i_reg_353.read().is_01())? sc_lv<32>(): (sc_biguint<32>(ap_const_lv32_64) + sc_biguint<32>(tmp_i_i_reg_353.read()));
+void Gamelogic2::thread_grp_fu_395_p0() {
+    grp_fu_395_p0 = (!ap_const_lv32_64.is_01() || !tmp_i_i_reg_481.read().is_01())? sc_lv<32>(): (sc_biguint<32>(ap_const_lv32_64) + sc_biguint<32>(tmp_i_i_reg_481.read()));
 }
 
-void Gamelogic2::thread_grp_fu_321_p1() {
-    grp_fu_321_p1 =  (sc_lv<8>) (ap_const_lv32_64);
+void Gamelogic2::thread_grp_fu_395_p1() {
+    grp_fu_395_p1 =  (sc_lv<8>) (ap_const_lv32_64);
 }
 
-void Gamelogic2::thread_p_9_fu_122_p0() {
-    p_9_fu_122_p0 =  (sc_lv<1>) (btn3.read());
+void Gamelogic2::thread_p_9_fu_219_p0() {
+    p_9_fu_219_p0 =  (sc_lv<1>) (btn3.read());
 }
 
-void Gamelogic2::thread_p_9_fu_122_p3() {
-    p_9_fu_122_p3 = (!p_9_fu_122_p0.read()[0].is_01())? sc_lv<10>(): ((p_9_fu_122_p0.read()[0].to_bool())? tmp_9_fu_108_p2.read(): center_line_in_V.read());
+void Gamelogic2::thread_p_9_fu_219_p3() {
+    p_9_fu_219_p3 = (!p_9_fu_219_p0.read()[0].is_01())? sc_lv<10>(): ((p_9_fu_219_p0.read()[0].to_bool())? tmp_3_fu_205_p2.read(): center_line_in_V.read());
 }
 
-void Gamelogic2::thread_p_s_fu_114_p0() {
-    p_s_fu_114_p0 =  (sc_lv<1>) (btn3.read());
+void Gamelogic2::thread_p_btn_count_flag_2_fu_186_p2() {
+    p_btn_count_flag_2_fu_186_p2 = (tmp1_fu_181_p2.read() | tmp_fu_177_p2.read());
 }
 
-void Gamelogic2::thread_p_s_fu_114_p3() {
-    p_s_fu_114_p3 = (!p_s_fu_114_p0.read()[0].is_01())? sc_lv<10>(): ((p_s_fu_114_p0.read()[0].to_bool())? tmp_8_fu_102_p2.read(): center_line_in_V.read());
+void Gamelogic2::thread_p_s_fu_211_p0() {
+    p_s_fu_211_p0 =  (sc_lv<1>) (btn3.read());
+}
+
+void Gamelogic2::thread_p_s_fu_211_p3() {
+    p_s_fu_211_p3 = (!p_s_fu_211_p0.read()[0].is_01())? sc_lv<10>(): ((p_s_fu_211_p0.read()[0].to_bool())? tmp_2_fu_199_p2.read(): center_line_in_V.read());
 }
 
 void Gamelogic2::thread_right_out() {
-    right_out =  (sc_logic) ((!tmp_1_fu_327_p1.read().is_01() || !ap_const_lv7_32.is_01())? sc_lv<1>(): (sc_biguint<7>(tmp_1_fu_327_p1.read()) > sc_biguint<7>(ap_const_lv7_32)))[0];
+    right_out =  (sc_logic) ((!tmp_5_fu_401_p1.read().is_01() || !ap_const_lv7_32.is_01())? sc_lv<1>(): (sc_biguint<7>(tmp_5_fu_401_p1.read()) > sc_biguint<7>(ap_const_lv7_32)))[0];
 }
 
-void Gamelogic2::thread_sel_tmp10_fu_196_p0() {
-    sel_tmp10_fu_196_p0 =  (sc_lv<1>) (btn1.read());
+void Gamelogic2::thread_sel_tmp10_fu_288_p0() {
+    sel_tmp10_fu_288_p0 =  (sc_lv<1>) (btn1.read());
 }
 
-void Gamelogic2::thread_sel_tmp10_fu_196_p2() {
-    sel_tmp10_fu_196_p2 = (sel_tmp10_fu_196_p0.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp10_fu_288_p2() {
+    sel_tmp10_fu_288_p2 = (sel_tmp10_fu_288_p0.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp11_fu_202_p2() {
-    sel_tmp11_fu_202_p2 = (sel_tmp9_fu_176_p2.read() & sel_tmp10_fu_196_p2.read());
+void Gamelogic2::thread_sel_tmp11_fu_293_p2() {
+    sel_tmp11_fu_293_p2 = (sel_tmp9_fu_269_p2.read() & sel_tmp10_fu_288_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp12_fu_208_p3() {
-    sel_tmp12_fu_208_p3 = (!sel_tmp11_fu_202_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp11_fu_202_p2.read()[0].to_bool())? p_s_fu_114_p3.read(): sel_tmp7_fu_188_p3.read());
+void Gamelogic2::thread_sel_tmp12_fu_299_p3() {
+    sel_tmp12_fu_299_p3 = (!sel_tmp11_fu_293_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp11_fu_293_p2.read()[0].to_bool())? p_s_fu_211_p3.read(): sel_tmp7_fu_280_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp13_fu_216_p0() {
-    sel_tmp13_fu_216_p0 =  (sc_lv<1>) (right_in.read());
+void Gamelogic2::thread_sel_tmp13_fu_307_p0() {
+    sel_tmp13_fu_307_p0 =  (sc_lv<1>) (right_in.read());
 }
 
-void Gamelogic2::thread_sel_tmp13_fu_216_p2() {
-    sel_tmp13_fu_216_p2 = (sel_tmp13_fu_216_p0.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp13_fu_307_p2() {
+    sel_tmp13_fu_307_p2 = (sel_tmp13_fu_307_p0.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp14_fu_222_p0() {
-    sel_tmp14_fu_222_p0 =  (sc_lv<1>) (btn0.read());
+void Gamelogic2::thread_sel_tmp14_fu_313_p0() {
+    sel_tmp14_fu_313_p0 =  (sc_lv<1>) (btn0.read());
 }
 
-void Gamelogic2::thread_sel_tmp14_fu_222_p2() {
-    sel_tmp14_fu_222_p2 = (sel_tmp14_fu_222_p0.read() & sel_tmp13_fu_216_p2.read());
+void Gamelogic2::thread_sel_tmp14_fu_313_p2() {
+    sel_tmp14_fu_313_p2 = (sel_tmp14_fu_313_p0.read() & sel_tmp13_fu_307_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp15_fu_228_p3() {
-    sel_tmp15_fu_228_p3 = (!sel_tmp14_fu_222_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp14_fu_222_p2.read()[0].to_bool())? tmp_9_fu_108_p2.read(): sel_tmp12_fu_208_p3.read());
+void Gamelogic2::thread_sel_tmp15_fu_318_p3() {
+    sel_tmp15_fu_318_p3 = (!sel_tmp14_fu_313_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp14_fu_313_p2.read()[0].to_bool())? tmp_3_fu_205_p2.read(): sel_tmp12_fu_299_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp16_fu_242_p2() {
-    sel_tmp16_fu_242_p2 = (sel_tmp24_demorgan_fu_236_p2.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp16_fu_331_p2() {
+    sel_tmp16_fu_331_p2 = (sel_tmp24_demorgan_fu_326_p2.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp17_fu_248_p0() {
-    sel_tmp17_fu_248_p0 =  (sc_lv<1>) (btn2.read());
+void Gamelogic2::thread_sel_tmp17_fu_337_p0() {
+    sel_tmp17_fu_337_p0 =  (sc_lv<1>) (btn2.read());
 }
 
-void Gamelogic2::thread_sel_tmp17_fu_248_p2() {
-    sel_tmp17_fu_248_p2 = (sel_tmp17_fu_248_p0.read() & sel_tmp16_fu_242_p2.read());
+void Gamelogic2::thread_sel_tmp17_fu_337_p2() {
+    sel_tmp17_fu_337_p2 = (sel_tmp17_fu_337_p0.read() & sel_tmp16_fu_331_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp18_fu_254_p3() {
-    sel_tmp18_fu_254_p3 = (!sel_tmp17_fu_248_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp17_fu_248_p2.read()[0].to_bool())? tmp_8_fu_102_p2.read(): sel_tmp15_fu_228_p3.read());
+void Gamelogic2::thread_sel_tmp18_fu_342_p3() {
+    sel_tmp18_fu_342_p3 = (!sel_tmp17_fu_337_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp17_fu_337_p2.read()[0].to_bool())? tmp_2_fu_199_p2.read(): sel_tmp15_fu_318_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp19_fu_268_p2() {
-    sel_tmp19_fu_268_p2 = (sel_tmp31_demorgan_fu_262_p2.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp19_fu_355_p2() {
+    sel_tmp19_fu_355_p2 = (sel_tmp31_demorgan_fu_350_p2.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp1_fu_136_p3() {
-    sel_tmp1_fu_136_p3 = (!sel_tmp_fu_130_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp_fu_130_p2.read()[0].to_bool())? tmp_8_fu_102_p2.read(): p_9_fu_122_p3.read());
+void Gamelogic2::thread_sel_tmp1_fu_232_p3() {
+    sel_tmp1_fu_232_p3 = (!sel_tmp_fu_227_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp_fu_227_p2.read()[0].to_bool())? tmp_2_fu_199_p2.read(): p_9_fu_219_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp20_fu_274_p0() {
-    sel_tmp20_fu_274_p0 =  (sc_lv<1>) (btn1.read());
+void Gamelogic2::thread_sel_tmp20_fu_361_p0() {
+    sel_tmp20_fu_361_p0 =  (sc_lv<1>) (btn1.read());
 }
 
-void Gamelogic2::thread_sel_tmp20_fu_274_p2() {
-    sel_tmp20_fu_274_p2 = (sel_tmp20_fu_274_p0.read() & sel_tmp19_fu_268_p2.read());
+void Gamelogic2::thread_sel_tmp20_fu_361_p2() {
+    sel_tmp20_fu_361_p2 = (sel_tmp20_fu_361_p0.read() & sel_tmp19_fu_355_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp24_demorgan_fu_236_p0() {
-    sel_tmp24_demorgan_fu_236_p0 =  (sc_lv<1>) (right_in.read());
+void Gamelogic2::thread_sel_tmp24_demorgan_fu_326_p0() {
+    sel_tmp24_demorgan_fu_326_p0 =  (sc_lv<1>) (right_in.read());
 }
 
-void Gamelogic2::thread_sel_tmp24_demorgan_fu_236_p1() {
-    sel_tmp24_demorgan_fu_236_p1 =  (sc_lv<1>) (btn0.read());
+void Gamelogic2::thread_sel_tmp24_demorgan_fu_326_p1() {
+    sel_tmp24_demorgan_fu_326_p1 =  (sc_lv<1>) (btn0.read());
 }
 
-void Gamelogic2::thread_sel_tmp24_demorgan_fu_236_p2() {
-    sel_tmp24_demorgan_fu_236_p2 = (sel_tmp24_demorgan_fu_236_p0.read() | sel_tmp24_demorgan_fu_236_p1.read());
+void Gamelogic2::thread_sel_tmp24_demorgan_fu_326_p2() {
+    sel_tmp24_demorgan_fu_326_p2 = (sel_tmp24_demorgan_fu_326_p0.read() | sel_tmp24_demorgan_fu_326_p1.read());
 }
 
-void Gamelogic2::thread_sel_tmp2_fu_144_p0() {
-    sel_tmp2_fu_144_p0 =  (sc_lv<1>) (btn0.read());
+void Gamelogic2::thread_sel_tmp2_fu_240_p0() {
+    sel_tmp2_fu_240_p0 =  (sc_lv<1>) (btn0.read());
 }
 
-void Gamelogic2::thread_sel_tmp2_fu_144_p2() {
-    sel_tmp2_fu_144_p2 = (sel_tmp2_fu_144_p0.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp2_fu_240_p2() {
+    sel_tmp2_fu_240_p2 = (sel_tmp2_fu_240_p0.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp31_demorgan_fu_262_p1() {
-    sel_tmp31_demorgan_fu_262_p1 =  (sc_lv<1>) (btn2.read());
+void Gamelogic2::thread_sel_tmp31_demorgan_fu_350_p1() {
+    sel_tmp31_demorgan_fu_350_p1 =  (sc_lv<1>) (btn2.read());
 }
 
-void Gamelogic2::thread_sel_tmp31_demorgan_fu_262_p2() {
-    sel_tmp31_demorgan_fu_262_p2 = (sel_tmp24_demorgan_fu_236_p2.read() | sel_tmp31_demorgan_fu_262_p1.read());
+void Gamelogic2::thread_sel_tmp31_demorgan_fu_350_p2() {
+    sel_tmp31_demorgan_fu_350_p2 = (sel_tmp24_demorgan_fu_326_p2.read() | sel_tmp31_demorgan_fu_350_p1.read());
 }
 
-void Gamelogic2::thread_sel_tmp3_fu_150_p0() {
-    sel_tmp3_fu_150_p0 =  (sc_lv<1>) (right_in.read());
+void Gamelogic2::thread_sel_tmp3_fu_245_p0() {
+    sel_tmp3_fu_245_p0 =  (sc_lv<1>) (right_in.read());
 }
 
-void Gamelogic2::thread_sel_tmp3_fu_150_p2() {
-    sel_tmp3_fu_150_p2 = (sel_tmp3_fu_150_p0.read() & sel_tmp2_fu_144_p2.read());
+void Gamelogic2::thread_sel_tmp3_fu_245_p2() {
+    sel_tmp3_fu_245_p2 = (sel_tmp3_fu_245_p0.read() & sel_tmp2_fu_240_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp4_fu_156_p1() {
-    sel_tmp4_fu_156_p1 =  (sc_lv<1>) (btn2.read());
+void Gamelogic2::thread_sel_tmp4_fu_251_p1() {
+    sel_tmp4_fu_251_p1 =  (sc_lv<1>) (btn2.read());
 }
 
-void Gamelogic2::thread_sel_tmp4_fu_156_p2() {
-    sel_tmp4_fu_156_p2 = (sel_tmp3_fu_150_p2.read() & sel_tmp4_fu_156_p1.read());
+void Gamelogic2::thread_sel_tmp4_fu_251_p2() {
+    sel_tmp4_fu_251_p2 = (sel_tmp3_fu_245_p2.read() & sel_tmp4_fu_251_p1.read());
 }
 
-void Gamelogic2::thread_sel_tmp5_fu_162_p3() {
-    sel_tmp5_fu_162_p3 = (!sel_tmp4_fu_156_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp4_fu_156_p2.read()[0].to_bool())? tmp_9_fu_108_p2.read(): sel_tmp1_fu_136_p3.read());
+void Gamelogic2::thread_sel_tmp5_fu_256_p3() {
+    sel_tmp5_fu_256_p3 = (!sel_tmp4_fu_251_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp4_fu_251_p2.read()[0].to_bool())? tmp_3_fu_205_p2.read(): sel_tmp1_fu_232_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp6_fu_182_p1() {
-    sel_tmp6_fu_182_p1 =  (sc_lv<1>) (btn1.read());
+void Gamelogic2::thread_sel_tmp6_fu_275_p1() {
+    sel_tmp6_fu_275_p1 =  (sc_lv<1>) (btn1.read());
 }
 
-void Gamelogic2::thread_sel_tmp6_fu_182_p2() {
-    sel_tmp6_fu_182_p2 = (sel_tmp9_fu_176_p2.read() & sel_tmp6_fu_182_p1.read());
+void Gamelogic2::thread_sel_tmp6_fu_275_p2() {
+    sel_tmp6_fu_275_p2 = (sel_tmp9_fu_269_p2.read() & sel_tmp6_fu_275_p1.read());
 }
 
-void Gamelogic2::thread_sel_tmp7_fu_188_p3() {
-    sel_tmp7_fu_188_p3 = (!sel_tmp6_fu_182_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp6_fu_182_p2.read()[0].to_bool())? tmp_9_fu_108_p2.read(): sel_tmp5_fu_162_p3.read());
+void Gamelogic2::thread_sel_tmp7_fu_280_p3() {
+    sel_tmp7_fu_280_p3 = (!sel_tmp6_fu_275_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp6_fu_275_p2.read()[0].to_bool())? tmp_3_fu_205_p2.read(): sel_tmp5_fu_256_p3.read());
 }
 
-void Gamelogic2::thread_sel_tmp8_fu_170_p0() {
-    sel_tmp8_fu_170_p0 =  (sc_lv<1>) (btn2.read());
+void Gamelogic2::thread_sel_tmp8_fu_264_p0() {
+    sel_tmp8_fu_264_p0 =  (sc_lv<1>) (btn2.read());
 }
 
-void Gamelogic2::thread_sel_tmp8_fu_170_p2() {
-    sel_tmp8_fu_170_p2 = (sel_tmp8_fu_170_p0.read() ^ ap_const_lv1_1);
+void Gamelogic2::thread_sel_tmp8_fu_264_p2() {
+    sel_tmp8_fu_264_p2 = (sel_tmp8_fu_264_p0.read() ^ ap_const_lv1_1);
 }
 
-void Gamelogic2::thread_sel_tmp9_fu_176_p2() {
-    sel_tmp9_fu_176_p2 = (sel_tmp3_fu_150_p2.read() & sel_tmp8_fu_170_p2.read());
+void Gamelogic2::thread_sel_tmp9_fu_269_p2() {
+    sel_tmp9_fu_269_p2 = (sel_tmp3_fu_245_p2.read() & sel_tmp8_fu_264_p2.read());
 }
 
-void Gamelogic2::thread_sel_tmp_fu_130_p0() {
-    sel_tmp_fu_130_p0 =  (sc_lv<1>) (right_in.read());
+void Gamelogic2::thread_sel_tmp_fu_227_p0() {
+    sel_tmp_fu_227_p0 =  (sc_lv<1>) (right_in.read());
 }
 
-void Gamelogic2::thread_sel_tmp_fu_130_p1() {
-    sel_tmp_fu_130_p1 =  (sc_lv<1>) (btn0.read());
+void Gamelogic2::thread_sel_tmp_fu_227_p1() {
+    sel_tmp_fu_227_p1 =  (sc_lv<1>) (btn0.read());
 }
 
-void Gamelogic2::thread_sel_tmp_fu_130_p2() {
-    sel_tmp_fu_130_p2 = (sel_tmp_fu_130_p0.read() & sel_tmp_fu_130_p1.read());
+void Gamelogic2::thread_sel_tmp_fu_227_p2() {
+    sel_tmp_fu_227_p2 = (sel_tmp_fu_227_p0.read() & sel_tmp_fu_227_p1.read());
 }
 
-void Gamelogic2::thread_tmp1_fu_294_p0() {
-    tmp1_fu_294_p0 =  (sc_lv<1>) (btn2.read());
+void Gamelogic2::thread_tmp1_fu_181_p0() {
+    tmp1_fu_181_p0 =  (sc_lv<1>) (btn2.read());
 }
 
-void Gamelogic2::thread_tmp1_fu_294_p1() {
-    tmp1_fu_294_p1 =  (sc_lv<1>) (btn3.read());
+void Gamelogic2::thread_tmp1_fu_181_p1() {
+    tmp1_fu_181_p1 =  (sc_lv<1>) (btn3.read());
 }
 
-void Gamelogic2::thread_tmp1_fu_294_p2() {
-    tmp1_fu_294_p2 = (tmp1_fu_294_p0.read() | tmp1_fu_294_p1.read());
+void Gamelogic2::thread_tmp1_fu_181_p2() {
+    tmp1_fu_181_p2 = (tmp1_fu_181_p0.read() | tmp1_fu_181_p1.read());
 }
 
-void Gamelogic2::thread_tmp_1_fu_327_p1() {
-    tmp_1_fu_327_p1 = grp_fu_321_p2.read().range(7-1, 0);
+void Gamelogic2::thread_tmp_1_btn_count_new_2_fu_192_p0() {
+    tmp_1_btn_count_new_2_fu_192_p0 =  (sc_lv<1>) (btn3.read());
 }
 
-void Gamelogic2::thread_tmp_8_fu_102_p2() {
-    tmp_8_fu_102_p2 = (!center_line_in_V.read().is_01() || !ap_const_lv10_3F6.is_01())? sc_lv<10>(): (sc_biguint<10>(center_line_in_V.read()) + sc_bigint<10>(ap_const_lv10_3F6));
+void Gamelogic2::thread_tmp_1_btn_count_new_2_fu_192_p3() {
+    tmp_1_btn_count_new_2_fu_192_p3 = (!tmp_1_btn_count_new_2_fu_192_p0.read()[0].is_01())? sc_lv<32>(): ((tmp_1_btn_count_new_2_fu_192_p0.read()[0].to_bool())? tmp_1_fu_172_p2.read(): btn_count_new_2_reg_456.read());
 }
 
-void Gamelogic2::thread_tmp_9_fu_108_p2() {
-    tmp_9_fu_108_p2 = (!center_line_in_V.read().is_01() || !ap_const_lv10_A.is_01())? sc_lv<10>(): (sc_biguint<10>(center_line_in_V.read()) + sc_biguint<10>(ap_const_lv10_A));
+void Gamelogic2::thread_tmp_1_fu_172_p2() {
+    tmp_1_fu_172_p2 = (!btn_count_new_2_reg_456.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(btn_count_new_2_reg_456.read()) + sc_biguint<32>(ap_const_lv32_1));
 }
 
-void Gamelogic2::thread_tmp_fu_288_p0() {
-    tmp_fu_288_p0 =  (sc_lv<1>) (btn0.read());
+void Gamelogic2::thread_tmp_2_fu_199_p2() {
+    tmp_2_fu_199_p2 = (!center_line_in_V.read().is_01() || !ap_const_lv10_3F6.is_01())? sc_lv<10>(): (sc_biguint<10>(center_line_in_V.read()) + sc_bigint<10>(ap_const_lv10_3F6));
 }
 
-void Gamelogic2::thread_tmp_fu_288_p1() {
-    tmp_fu_288_p1 =  (sc_lv<1>) (btn1.read());
+void Gamelogic2::thread_tmp_3_fu_205_p2() {
+    tmp_3_fu_205_p2 = (!center_line_in_V.read().is_01() || !ap_const_lv10_A.is_01())? sc_lv<10>(): (sc_biguint<10>(center_line_in_V.read()) + sc_biguint<10>(ap_const_lv10_A));
 }
 
-void Gamelogic2::thread_tmp_fu_288_p2() {
-    tmp_fu_288_p2 = (tmp_fu_288_p0.read() | tmp_fu_288_p1.read());
+void Gamelogic2::thread_tmp_4_fu_374_p2() {
+    tmp_4_fu_374_p2 = (!tmp_1_btn_count_new_2_fu_192_p3.read().is_01() || !ap_const_lv32_A.is_01())? sc_lv<1>(): (sc_bigint<32>(tmp_1_btn_count_new_2_fu_192_p3.read()) > sc_bigint<32>(ap_const_lv32_A));
 }
 
-void Gamelogic2::thread_tmp_i_i_fu_310_p1() {
-    tmp_i_i_fu_310_p1 = RandSeed.read();
+void Gamelogic2::thread_tmp_5_fu_401_p1() {
+    tmp_5_fu_401_p1 = grp_fu_395_p2.read().range(7-1, 0);
 }
 
-void Gamelogic2::thread_tmp_i_i_fu_310_p2() {
-    tmp_i_i_fu_310_p2 = (!ap_const_lv32_D.is_01() || !tmp_i_i_fu_310_p1.read().is_01())? sc_lv<32>(): sc_biguint<32>(ap_const_lv32_D) * sc_bigint<32>(tmp_i_i_fu_310_p1.read());
+void Gamelogic2::thread_tmp_8_fu_132_p2() {
+    tmp_8_fu_132_p2 = (!btn_count.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(btn_count.read()) + sc_biguint<32>(ap_const_lv32_1));
 }
 
-void Gamelogic2::thread_to_add_8_fu_280_p3() {
-    to_add_8_fu_280_p3 = (!sel_tmp20_fu_274_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp20_fu_274_p2.read()[0].to_bool())? tmp_8_fu_102_p2.read(): sel_tmp18_fu_254_p3.read());
+void Gamelogic2::thread_tmp_9_btn_count_loc_fu_151_p0() {
+    tmp_9_btn_count_loc_fu_151_p0 =  (sc_lv<1>) (btn1.read());
+}
+
+void Gamelogic2::thread_tmp_9_btn_count_loc_fu_151_p3() {
+    tmp_9_btn_count_loc_fu_151_p3 = (!tmp_9_btn_count_loc_fu_151_p0.read()[0].is_01())? sc_lv<32>(): ((tmp_9_btn_count_loc_fu_151_p0.read()[0].to_bool())? tmp_9_fu_146_p2.read(): btn_count_loc_reg_433.read());
+}
+
+void Gamelogic2::thread_tmp_9_fu_146_p2() {
+    tmp_9_fu_146_p2 = (!btn_count_loc_reg_433.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(btn_count_loc_reg_433.read()) + sc_biguint<32>(ap_const_lv32_1));
+}
+
+void Gamelogic2::thread_tmp_fu_177_p0() {
+    tmp_fu_177_p0 =  (sc_lv<1>) (btn1.read());
+}
+
+void Gamelogic2::thread_tmp_fu_177_p1() {
+    tmp_fu_177_p1 =  (sc_lv<1>) (btn0.read());
+}
+
+void Gamelogic2::thread_tmp_fu_177_p2() {
+    tmp_fu_177_p2 = (tmp_fu_177_p0.read() | tmp_fu_177_p1.read());
+}
+
+void Gamelogic2::thread_tmp_i_i_fu_384_p1() {
+    tmp_i_i_fu_384_p1 = RandSeed.read();
+}
+
+void Gamelogic2::thread_tmp_i_i_fu_384_p2() {
+    tmp_i_i_fu_384_p2 = (!ap_const_lv32_D.is_01() || !tmp_i_i_fu_384_p1.read().is_01())? sc_lv<32>(): sc_biguint<32>(ap_const_lv32_D) * sc_bigint<32>(tmp_i_i_fu_384_p1.read());
+}
+
+void Gamelogic2::thread_tmp_s_fu_158_p2() {
+    tmp_s_fu_158_p2 = (!tmp_9_btn_count_loc_fu_151_p3.read().is_01() || !ap_const_lv32_1.is_01())? sc_lv<32>(): (sc_biguint<32>(tmp_9_btn_count_loc_fu_151_p3.read()) + sc_biguint<32>(ap_const_lv32_1));
+}
+
+void Gamelogic2::thread_to_add_8_fu_366_p3() {
+    to_add_8_fu_366_p3 = (!sel_tmp20_fu_361_p2.read()[0].is_01())? sc_lv<10>(): ((sel_tmp20_fu_361_p2.read()[0].to_bool())? tmp_2_fu_199_p2.read(): sel_tmp18_fu_342_p3.read());
 }
 
 void Gamelogic2::thread_ap_NS_fsm() {
     switch (ap_CS_fsm.read().to_uint64()) {
         case 1 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1) && esl_seteq<1,1,1>(brmerge2_fu_300_p2.read(), ap_const_lv1_0))) {
-                ap_NS_fsm = ap_ST_fsm_state37;
-            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1) && esl_seteq<1,1,1>(brmerge2_fu_300_p2.read(), ap_const_lv1_1))) {
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
                 ap_NS_fsm = ap_ST_fsm_state2;
             } else {
                 ap_NS_fsm = ap_ST_fsm_state1;
@@ -777,7 +973,11 @@ void Gamelogic2::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state3;
             break;
         case 4 : 
-            ap_NS_fsm = ap_ST_fsm_state4;
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(tmp_4_fu_374_p2.read(), ap_const_lv1_0))) {
+                ap_NS_fsm = ap_ST_fsm_state39;
+            } else {
+                ap_NS_fsm = ap_ST_fsm_state4;
+            }
             break;
         case 8 : 
             ap_NS_fsm = ap_ST_fsm_state5;
@@ -879,10 +1079,16 @@ void Gamelogic2::thread_ap_NS_fsm() {
             ap_NS_fsm = ap_ST_fsm_state37;
             break;
         case 68719476736 : 
+            ap_NS_fsm = ap_ST_fsm_state38;
+            break;
+        case 137438953472 : 
+            ap_NS_fsm = ap_ST_fsm_state39;
+            break;
+        case 274877906944 : 
             ap_NS_fsm = ap_ST_fsm_state1;
             break;
         default : 
-            ap_NS_fsm = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+            ap_NS_fsm = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
             break;
     }
 }

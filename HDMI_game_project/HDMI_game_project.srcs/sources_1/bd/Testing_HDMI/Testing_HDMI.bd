@@ -133,6 +133,9 @@
           "CLKOUT3_PHASE_ERROR": {
             "value": "96.948"
           },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "100"
+          },
           "CLKOUT3_USED": {
             "value": "true"
           },
@@ -469,12 +472,6 @@
           "TMPDSn"
         ]
       },
-      "clk_wiz_0_clk_out1": {
-        "ports": [
-          "clk_wiz_0/clk_out1",
-          "HDMI_test_0/pixclk"
-        ]
-      },
       "clk_wiz_0_clk_out2": {
         "ports": [
           "clk_wiz_0/clk_out2",
@@ -574,13 +571,6 @@
           "Gamelogic2_0/btn3"
         ]
       },
-      "clk_wiz_0_clk_out3": {
-        "ports": [
-          "clk_wiz_0/clk_out3",
-          "Gamelogic2_0/ap_clk",
-          "Interface2_0/ap_clk"
-        ]
-      },
       "Interface2_0_XY_Red_V": {
         "ports": [
           "Interface2_0/XY_Red_V",
@@ -623,6 +613,19 @@
           "Gamelogic2_0/center_line_out_V",
           "Gamelogic2_0/center_line_in_V",
           "Interface2_0/center_line_V"
+        ]
+      },
+      "clk_wiz_0_clk_out3": {
+        "ports": [
+          "clk_wiz_0/clk_out3",
+          "Gamelogic2_0/ap_clk",
+          "Interface2_0/ap_clk"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "HDMI_test_0/pixclk"
         ]
       }
     }

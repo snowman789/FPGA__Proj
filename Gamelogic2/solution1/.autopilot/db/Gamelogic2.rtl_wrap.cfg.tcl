@@ -3,7 +3,7 @@ set moduleName "Gamelogic2"
 set moduleIsExternC "0"
 set rawDecl ""
 set globalVariable ""
-set PortName8 "RandSeed"
+set PortName8 "btn_count"
 set BitWidth8 "32"
 set ArrayOpt8 ""
 set Const8 "0"
@@ -15,9 +15,24 @@ set External8 0
 set Dims8 [list 0]
 set Interface8 "wire"
 set NameSpace8 [list ]
-set DataType8 "unsigned int"
+set DataType8 "int"
 set Port8 [list $PortName8 $Interface8 $DataType8 $Pointer8 $Dims8 $Const8 $Volatile8 $ArrayOpt8 $Initializer8 $External8 $NameSpace8]
 lappend globalVariable $Port8
+set PortName9 "RandSeed"
+set BitWidth9 "32"
+set ArrayOpt9 ""
+set Const9 "0"
+set Volatile9 "0"
+set Pointer9 "0"
+set Reference9 "0"
+set Initializer9 ""
+set External9 0
+set Dims9 [list 0]
+set Interface9 "wire"
+set NameSpace9 [list ]
+set DataType9 "unsigned int"
+set Port9 [list $PortName9 $Interface9 $DataType9 $Pointer9 $Dims9 $Const9 $Volatile9 $ArrayOpt9 $Initializer9 $External9 $NameSpace9]
+lappend globalVariable $Port9
 set PortList ""
 set PortName0 "btn0"
 set BitWidth0 "8"

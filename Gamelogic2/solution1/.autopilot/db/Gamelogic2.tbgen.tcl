@@ -71,7 +71,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "36",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "38",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -87,6 +87,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "center_line_in_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "right_out", "Type" : "None", "Direction" : "O"},
 			{"Name" : "right_in", "Type" : "None", "Direction" : "I"},
+			{"Name" : "btn_count", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "RandSeed", "Type" : "OVld", "Direction" : "IO"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Gamelogic2_urem_3bkb_U1", "Parent" : "0"}]}
 
@@ -94,20 +95,21 @@ set RtlHierarchyInfo {[
 set ArgLastReadFirstWriteLatency {
 	Gamelogic2 {
 		btn0 {Type I LastRead 0 FirstWrite -1}
-		btn1 {Type I LastRead 0 FirstWrite -1}
-		btn2 {Type I LastRead 0 FirstWrite -1}
-		btn3 {Type I LastRead 0 FirstWrite -1}
-		center_line_out_V {Type O LastRead -1 FirstWrite 36}
-		center_line_in_V {Type I LastRead 0 FirstWrite -1}
-		right_out {Type O LastRead -1 FirstWrite 36}
-		right_in {Type I LastRead 0 FirstWrite -1}
+		btn1 {Type I LastRead 1 FirstWrite -1}
+		btn2 {Type I LastRead 1 FirstWrite -1}
+		btn3 {Type I LastRead 2 FirstWrite -1}
+		center_line_out_V {Type O LastRead -1 FirstWrite 38}
+		center_line_in_V {Type I LastRead 2 FirstWrite -1}
+		right_out {Type O LastRead -1 FirstWrite 38}
+		right_in {Type I LastRead 2 FirstWrite -1}
+		btn_count {Type IO LastRead -1 FirstWrite -1}
 		RandSeed {Type IO LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "36"}
-	, {"Name" : "Interval", "Min" : "2", "Max" : "37"}
+	{"Name" : "Latency", "Min" : "3", "Max" : "38"}
+	, {"Name" : "Interval", "Min" : "4", "Max" : "39"}
 ]}
 
 set PipelineEnableSignalInfo {[

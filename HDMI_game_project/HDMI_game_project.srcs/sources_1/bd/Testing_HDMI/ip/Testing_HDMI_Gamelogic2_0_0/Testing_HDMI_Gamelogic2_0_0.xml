@@ -350,11 +350,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 22 21:21:07 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 23 17:35:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6cf04952</spirit:value>
+            <spirit:value>9:cf3ecd6f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -370,11 +370,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 22 21:21:07 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 23 17:35:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6cf04952</spirit:value>
+            <spirit:value>9:cf3ecd6f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -390,11 +390,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 22 21:21:07 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 23 17:35:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:013fd837</spirit:value>
+            <spirit:value>9:ab4ab3f8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -410,11 +410,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 22 21:21:07 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 23 17:35:40 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:013fd837</spirit:value>
+            <spirit:value>9:ab4ab3f8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -428,11 +428,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 22 21:22:02 UTC 2019</spirit:value>
+            <spirit:value>Tue Apr 23 17:37:27 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:6cf04952</spirit:value>
+            <spirit:value>9:cf3ecd6f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -639,11 +639,11 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/060f/hdl/verilog/Gamelogic2_urem_3bkb.v</spirit:name>
+        <spirit:name>../../ipshared/6a19/hdl/verilog/Gamelogic2_urem_3bkb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/060f/hdl/verilog/Gamelogic2.v</spirit:name>
+        <spirit:name>../../ipshared/6a19/hdl/verilog/Gamelogic2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -658,12 +658,12 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/060f/hdl/verilog/Gamelogic2_urem_3bkb.v</spirit:name>
+        <spirit:name>../../ipshared/6a19/hdl/verilog/Gamelogic2_urem_3bkb.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/060f/hdl/verilog/Gamelogic2.v</spirit:name>
+        <spirit:name>../../ipshared/6a19/hdl/verilog/Gamelogic2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -754,7 +754,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">1</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -779,7 +779,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
     <xilinx:coreExtensions>
       <xilinx:displayName>Gamelogic2</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904221719</xilinx:coreRevision>
+      <xilinx:coreRevision>1904231335</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
@@ -789,9 +789,9 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="f67905c4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c6e3025a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="50d75ba5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="68af8ee8"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="da8eaab8"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="90c7e5ba"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>
