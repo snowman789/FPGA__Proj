@@ -19,12 +19,14 @@
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
-    "IsCombLogic": "0",
+    "IsCombLogic": "1",
     "II": "x",
-    "Latency": "2",
+    "Latency": "0",
     "Uncertainty": "1.25"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Xdc": {
+    
+  },
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -41,7 +43,7 @@
     "Vhdl": ["impl\/vhdl\/Interface2.vhd"],
     "Verilog": ["impl\/verilog\/Interface2.v"],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "C:\/Users\/itr9fc\/Desktop\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
+    "DesignXml": "D:\/FPGA_WORKSPACES\/FPGA_Final_Project\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -76,11 +78,6 @@
           "Width": "8"
         }}
     },
-    "ap_clk": {
-      "type": "clock",
-      "ctype": {"CLK": {"Type": "bool"}},
-      "reset": "ap_rst"
-    },
     "ap_ctrl": {
       "type": "ap_ctrl",
       "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
@@ -90,11 +87,6 @@
         "idle": {"Type": "bool"},
         "ready": {"Type": "bool"}
       }
-    },
-    "ap_rst": {
-      "type": "reset",
-      "polarity": "ACTIVE_HIGH",
-      "ctype": {"RST": {"Type": "bool"}}
     },
     "center_line_V": {
       "type": "data",
@@ -134,14 +126,6 @@
     }
   },
   "RtlPorts": {
-    "ap_clk": {
-      "dir": "in",
-      "width": "1"
-    },
-    "ap_rst": {
-      "dir": "in",
-      "width": "1"
-    },
     "ap_start": {
       "dir": "in",
       "width": "1"
@@ -242,21 +226,21 @@
     "Hierarchy": {"ModuleName": "Interface2"},
     "Metrics": {"Interface2": {
         "Latency": {
-          "LatencyBest": "2",
-          "LatencyAvg": "2",
-          "LatencyWorst": "2",
-          "PipelineII": "3",
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "1.990"
+          "Estimate": "2.983"
         },
         "Area": {
-          "FF": "31",
-          "LUT": "188",
+          "FF": "0",
+          "LUT": "142",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
@@ -272,7 +256,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-24 13:02:31 -0400",
+    "Time": "2019-04-24 15:13:20 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

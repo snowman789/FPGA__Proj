@@ -15,9 +15,7 @@
 namespace ap_rtl {
 
 struct Interface2 : public sc_module {
-    // Port declarations 13
-    sc_in_clk ap_clk;
-    sc_in< sc_logic > ap_rst;
+    // Port declarations 11
     sc_in< sc_logic > ap_start;
     sc_out< sc_logic > ap_done;
     sc_out< sc_logic > ap_idle;
@@ -29,6 +27,8 @@ struct Interface2 : public sc_module {
     sc_out< sc_lv<8> > XY_Blue_V;
     sc_in< sc_lv<12> > center_line_V;
     sc_in< sc_logic > right_r;
+    // Port declarations for the virtual clock. 
+    sc_in_clk ap_virtual_clock;
 
 
     // Module declarations
@@ -41,72 +41,52 @@ struct Interface2 : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    sc_signal< sc_lv<3> > ap_CS_fsm;
-    sc_signal< sc_logic > ap_CS_fsm_state1;
+    sc_signal< sc_lv<8> > storemerge5_cast_fu_120_p3;
     sc_signal< sc_lv<1> > tmp_fu_92_p2;
-    sc_signal< sc_lv<1> > tmp_reg_192;
-    sc_signal< sc_lv<1> > tmp_2_fu_121_p2;
-    sc_signal< sc_lv<1> > tmp_2_reg_199;
-    sc_signal< sc_lv<1> > tmp_3_fu_137_p2;
-    sc_signal< sc_lv<1> > tmp_3_reg_203;
-    sc_signal< sc_logic > ap_CS_fsm_state2;
-    sc_signal< sc_lv<1> > tmp_6_fu_145_p2;
-    sc_signal< sc_lv<1> > tmp_6_reg_207;
-    sc_signal< sc_lv<8> > storemerge7_cast_fu_110_p3;
-    sc_signal< sc_lv<8> > XY_Red_V_preg;
-    sc_signal< sc_lv<1> > tmp_1_fu_98_p2;
-    sc_signal< sc_lv<8> > storemerge6_fu_127_p3;
-    sc_signal< sc_lv<8> > storemerge5_cast_fu_155_p3;
-    sc_signal< sc_logic > ap_CS_fsm_state3;
-    sc_signal< sc_lv<8> > XY_Blue_V_preg;
-    sc_signal< sc_lv<8> > XY_Green_V_preg;
-    sc_signal< sc_lv<8> > storemerge_fu_164_p3;
-    sc_signal< sc_lv<1> > not_right_fu_104_p0;
-    sc_signal< sc_lv<1> > not_right_fu_104_p2;
-    sc_signal< sc_lv<1> > storemerge6_fu_127_p0;
-    sc_signal< sc_lv<12> > tmp_4_cast_fu_142_p1;
-    sc_signal< sc_lv<1> > not_tmp_6_fu_150_p2;
-    sc_signal< sc_lv<3> > ap_NS_fsm;
+    sc_signal< sc_lv<1> > tmp_2_fu_98_p2;
+    sc_signal< sc_lv<8> > storemerge6_fu_150_p3;
+    sc_signal< sc_lv<1> > tmp_1_fu_138_p2;
+    sc_signal< sc_lv<1> > tmp_3_fu_144_p2;
+    sc_signal< sc_lv<8> > storemerge7_cast_fu_167_p3;
+    sc_signal< sc_lv<8> > storemerge_fu_129_p3;
+    sc_signal< sc_lv<12> > tmp_4_cast_fu_104_p1;
+    sc_signal< sc_lv<1> > tmp_6_fu_108_p2;
+    sc_signal< sc_lv<1> > not_tmp_6_fu_114_p2;
+    sc_signal< sc_lv<1> > storemerge6_fu_150_p0;
+    sc_signal< sc_lv<1> > not_right_fu_161_p0;
+    sc_signal< sc_lv<1> > not_right_fu_161_p2;
+    sc_signal< bool > ap_condition_39;
     static const sc_logic ap_const_logic_1;
-    static const sc_logic ap_const_logic_0;
-    static const sc_lv<3> ap_ST_fsm_state1;
-    static const sc_lv<3> ap_ST_fsm_state2;
-    static const sc_lv<3> ap_ST_fsm_state3;
-    static const sc_lv<32> ap_const_lv32_0;
-    static const sc_lv<1> ap_const_lv1_1;
-    static const sc_lv<32> ap_const_lv32_1;
-    static const sc_lv<8> ap_const_lv8_0;
-    static const sc_lv<32> ap_const_lv32_2;
-    static const sc_lv<10> ap_const_lv10_28;
-    static const sc_lv<10> ap_const_lv10_140;
-    static const sc_lv<8> ap_const_lv8_FF;
     static const bool ap_const_boolean_1;
+    static const sc_lv<1> ap_const_lv1_0;
+    static const sc_lv<1> ap_const_lv1_1;
+    static const sc_lv<8> ap_const_lv8_0;
+    static const sc_lv<10> ap_const_lv10_28;
+    static const sc_lv<8> ap_const_lv8_FF;
+    static const sc_lv<10> ap_const_lv10_140;
+    static const sc_logic ap_const_logic_0;
     // Thread declarations
-    void thread_ap_clk_no_reset_();
     void thread_XY_Blue_V();
     void thread_XY_Green_V();
     void thread_XY_Red_V();
-    void thread_ap_CS_fsm_state1();
-    void thread_ap_CS_fsm_state2();
-    void thread_ap_CS_fsm_state3();
+    void thread_ap_condition_39();
     void thread_ap_done();
     void thread_ap_idle();
     void thread_ap_ready();
-    void thread_not_right_fu_104_p0();
-    void thread_not_right_fu_104_p2();
-    void thread_not_tmp_6_fu_150_p2();
-    void thread_storemerge5_cast_fu_155_p3();
-    void thread_storemerge6_fu_127_p0();
-    void thread_storemerge6_fu_127_p3();
-    void thread_storemerge7_cast_fu_110_p3();
-    void thread_storemerge_fu_164_p3();
-    void thread_tmp_1_fu_98_p2();
-    void thread_tmp_2_fu_121_p2();
-    void thread_tmp_3_fu_137_p2();
-    void thread_tmp_4_cast_fu_142_p1();
-    void thread_tmp_6_fu_145_p2();
+    void thread_not_right_fu_161_p0();
+    void thread_not_right_fu_161_p2();
+    void thread_not_tmp_6_fu_114_p2();
+    void thread_storemerge5_cast_fu_120_p3();
+    void thread_storemerge6_fu_150_p0();
+    void thread_storemerge6_fu_150_p3();
+    void thread_storemerge7_cast_fu_167_p3();
+    void thread_storemerge_fu_129_p3();
+    void thread_tmp_1_fu_138_p2();
+    void thread_tmp_2_fu_98_p2();
+    void thread_tmp_3_fu_144_p2();
+    void thread_tmp_4_cast_fu_104_p1();
+    void thread_tmp_6_fu_108_p2();
     void thread_tmp_fu_92_p2();
-    void thread_ap_NS_fsm();
     void thread_hdltv_gen();
 };
 

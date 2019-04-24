@@ -12,10 +12,10 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T13:02:30.545-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T13:02:30.536-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T13:02:30.526-0400" type="Warning"/>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names." projectName="Interface2" solutionName="solution1" date="2019-04-24T13:02:30.302-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T15:13:19.862-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T15:13:19.847-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Interface2" solutionName="solution1" date="2019-04-24T15:13:19.830-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names." projectName="Interface2" solutionName="solution1" date="2019-04-24T15:13:19.556-0400" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

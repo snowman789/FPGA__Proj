@@ -2,52 +2,54 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Apr 24 13:00:15 2019
-# Process ID: 19468
-# Current directory: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
+# Start of session at: Wed Apr 24 15:15:57 2019
+# Process ID: 9156
+# Current directory: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
 # Command line: vivado.exe -log Testing_HDMI_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Testing_HDMI_wrapper.tcl
-# Log file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.vds
-# Journal file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1\vivado.jou
+# Log file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.vds
+# Journal file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Testing_HDMI_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/ip'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/itr9fc/Desktop/FPGA__Proj/Gamelogic2/solution1/impl/ip'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 288.789 ; gain = 12.230
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Gamelogic2/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.cache/ip 
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 289.672 ; gain = 12.348
 Command: synth_design -top Testing_HDMI_wrapper -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 20280 
+INFO: Helper process launched with PID 17332 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 397.746 ; gain = 101.340
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 397.918 ; gain = 99.605
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_wrapper' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_Gamelogic2_0_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_Gamelogic2_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_Gamelogic2_0_0' (1#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_Gamelogic2_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'Gamelogic2_0' of module 'Testing_HDMI_Gamelogic2_0_0' requires 14 connections, but only 11 given [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:76]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_HDMI_test_0_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_HDMI_test_0_0' (2#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_Interface2_0_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_Interface2_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_Interface2_0_0' (3#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_Interface2_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'Interface2_0' of module 'Testing_HDMI_Interface2_0_0' requires 13 connections, but only 10 given [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:106]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_0_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_0_0' (4#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_0_1' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_0_1' (5#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_1_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_1_0' (6#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_1_1' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_1_1' (7#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clean_button_1_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clk_wiz_0_0' [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clk_wiz_0_0' (8#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-19468-EmbSys11/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI' (9#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_wrapper' (10#1) [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_wrapper' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_Gamelogic2_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_Gamelogic2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_Gamelogic2_0_0' (1#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_Gamelogic2_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Gamelogic2_0' of module 'Testing_HDMI_Gamelogic2_0_0' requires 14 connections, but only 11 given [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:76]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_HDMI_test_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_HDMI_test_0_0' (2#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_HDMI_test_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_Interface2_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_Interface2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_Interface2_0_0' (3#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_Interface2_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Interface2_0' of module 'Testing_HDMI_Interface2_0_0' requires 11 connections, but only 8 given [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:106]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_0_0' (4#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_0_1' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_0_1' (5#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_1_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_1_0' (6#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clean_button_1_1' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clean_button_1_1' (7#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clean_button_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Testing_HDMI_clk_wiz_0_0' [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_clk_wiz_0_0' (8#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/.Xil/Vivado-9156-DESKTOP-6RNCOV7/realtime/Testing_HDMI_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI' (9#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/synth/Testing_HDMI.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Testing_HDMI_wrapper' (10#1) [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/hdl/Testing_HDMI_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 454.750 ; gain = 158.344
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 454.891 ; gain = 156.578
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -60,83 +62,83 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 454.750 ; gain = 158.344
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 454.891 ; gain = 156.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 454.750 ; gain = 158.344
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 454.891 ; gain = 156.578
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_0'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_0'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_1'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_1'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_2'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_2'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_3'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_3'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Interface2_0'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Interface2_0'
-Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Gamelogic2_0'
-Finished Parsing XDC File [c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Gamelogic2_0'
-Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LED_4_Port'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
-WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
-Finished Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc].
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc] for cell 'Testing_HDMI_i/HDMI_test_0'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clk_wiz_0'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0/Testing_HDMI_clean_button_0_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_0'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_1'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1/Testing_HDMI_clean_button_0_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_1'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_2'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0/Testing_HDMI_clean_button_1_0_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_2'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_3'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1/Testing_HDMI_clean_button_1_1_in_context.xdc] for cell 'Testing_HDMI_i/clean_button_3'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Interface2_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Interface2_0'
+Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Gamelogic2_0'
+Finished Parsing XDC File [d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_in_context.xdc] for cell 'Testing_HDMI_i/Gamelogic2_0'
+Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED_4_Port'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[0]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:177]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[1]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:179]
+WARNING: [Vivado 12-584] No ports matched 'TMDSn[2]'. [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc:181]
+Finished Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Testing_HDMI_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Testing_HDMI_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.227 ; gain = 0.000
+Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.633 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.633 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.227 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 751.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.633 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 753.633 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 751.227 ; gain = 454.820
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 753.633 ; gain = 455.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 751.227 ; gain = 454.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 753.633 ; gain = 455.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 1).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 2).
-Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 6).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 7).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 8).
-Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 9).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 10).
-Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 11).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 12).
-Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 13).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 14).
-Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 15).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 16).
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMPDSn[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_n. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[0]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[1]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDSp[2]. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tx_clk_p. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0/Testing_HDMI_HDMI_test_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  d:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0/Testing_HDMI_clk_wiz_0_0_in_context.xdc, line 7).
 Applied set_property DONT_TOUCH = true for Testing_HDMI_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Testing_HDMI_i/HDMI_test_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Testing_HDMI_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
@@ -147,10 +149,10 @@ Applied set_property DONT_TOUCH = true for Testing_HDMI_i/clean_button_3. (const
 Applied set_property DONT_TOUCH = true for Testing_HDMI_i/Interface2_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Testing_HDMI_i/Gamelogic2_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 751.227 ; gain = 454.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 753.633 ; gain = 455.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 751.227 ; gain = 454.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 753.633 ; gain = 455.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,7 +188,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 751.227 ; gain = 454.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 753.633 ; gain = 455.320
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -203,13 +205,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'Testing_HDMI_i/clk_wiz_0/
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Testing_HDMI_i/clk_wiz_0/clk_out4' to pin 'Testing_HDMI_i/clk_wiz_0/bbstub_clk_out4/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 795.430 ; gain = 499.023
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 799.750 ; gain = 501.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 795.430 ; gain = 499.023
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 799.750 ; gain = 501.438
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -221,7 +223,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,7 +247,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -258,7 +260,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -270,25 +272,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -332,25 +334,25 @@ Report Instance Areas:
 |2     |  Testing_HDMI_i |Testing_HDMI |    81|
 +------+-----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 809.789 ; gain = 511.477
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 804.957 ; gain = 212.074
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 804.957 ; gain = 508.551
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 809.789 ; gain = 212.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 809.789 ; gain = 511.477
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 815.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 824.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-39 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 815.520 ; gain = 526.730
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 815.520 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 824.148 ; gain = 534.477
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 824.148 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Testing_HDMI_wrapper_utilization_synth.rpt -pb Testing_HDMI_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 13:00:52 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 15:16:54 2019...

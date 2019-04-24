@@ -7,11 +7,9 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="Interface2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=1.990000,HLS_SYN_LAT=2,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=31,HLS_SYN_LUT=188,HLS_VERSION=2018_3}" *)
+(* CORE_GENERATION_INFO="Interface2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.983000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=142,HLS_VERSION=2018_3}" *)
 
 module Interface2 (
-        ap_clk,
-        ap_rst,
         ap_start,
         ap_done,
         ap_idle,
@@ -25,12 +23,7 @@ module Interface2 (
         right_r
 );
 
-parameter    ap_ST_fsm_state1 = 3'd1;
-parameter    ap_ST_fsm_state2 = 3'd2;
-parameter    ap_ST_fsm_state3 = 3'd4;
 
-input   ap_clk;
-input   ap_rst;
 input   ap_start;
 output   ap_done;
 output   ap_idle;
@@ -43,228 +36,109 @@ output  [7:0] XY_Blue_V;
 input  [11:0] center_line_V;
 input   right_r;
 
-reg ap_done;
-reg ap_idle;
-reg ap_ready;
 reg[7:0] XY_Red_V;
 reg[7:0] XY_Green_V;
 reg[7:0] XY_Blue_V;
 
-(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
-wire    ap_CS_fsm_state1;
+wire   [7:0] storemerge5_cast_fu_120_p3;
 wire   [0:0] tmp_fu_92_p2;
-reg   [0:0] tmp_reg_192;
-wire   [0:0] tmp_2_fu_121_p2;
-reg   [0:0] tmp_2_reg_199;
-wire   [0:0] tmp_3_fu_137_p2;
-reg   [0:0] tmp_3_reg_203;
-wire    ap_CS_fsm_state2;
-wire   [0:0] tmp_6_fu_145_p2;
-reg   [0:0] tmp_6_reg_207;
-wire   [7:0] storemerge7_cast_fu_110_p3;
-reg   [7:0] XY_Red_V_preg;
-wire   [0:0] tmp_1_fu_98_p2;
-wire   [7:0] storemerge6_fu_127_p3;
-wire   [7:0] storemerge5_cast_fu_155_p3;
-wire    ap_CS_fsm_state3;
-reg   [7:0] XY_Blue_V_preg;
-reg   [7:0] XY_Green_V_preg;
-wire   [7:0] storemerge_fu_164_p3;
-wire   [0:0] not_right_fu_104_p0;
-wire   [0:0] not_right_fu_104_p2;
-wire   [0:0] storemerge6_fu_127_p0;
-wire   [11:0] tmp_4_cast_fu_142_p1;
-wire   [0:0] not_tmp_6_fu_150_p2;
-reg   [2:0] ap_NS_fsm;
+wire   [0:0] tmp_2_fu_98_p2;
+wire   [7:0] storemerge6_fu_150_p3;
+wire   [0:0] tmp_1_fu_138_p2;
+wire   [0:0] tmp_3_fu_144_p2;
+wire   [7:0] storemerge7_cast_fu_167_p3;
+wire   [7:0] storemerge_fu_129_p3;
+wire   [11:0] tmp_4_cast_fu_104_p1;
+wire   [0:0] tmp_6_fu_108_p2;
+wire   [0:0] not_tmp_6_fu_114_p2;
+wire   [0:0] storemerge6_fu_150_p0;
+wire   [0:0] not_right_fu_161_p0;
+wire   [0:0] not_right_fu_161_p2;
+reg    ap_condition_39;
 
-// power-on initialization
-initial begin
-#0 ap_CS_fsm = 3'd1;
-#0 XY_Red_V_preg = 8'd0;
-#0 XY_Blue_V_preg = 8'd0;
-#0 XY_Green_V_preg = 8'd0;
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        XY_Blue_V_preg <= 8'd0;
-    end else begin
-        if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-            XY_Blue_V_preg <= storemerge6_fu_127_p3;
-        end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-            XY_Blue_V_preg <= storemerge7_cast_fu_110_p3;
+always @ (*) begin
+    if ((ap_start == 1'b1)) begin
+        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
+            XY_Blue_V = storemerge7_cast_fu_167_p3;
+        end else if ((1'b1 == ap_condition_39)) begin
+            XY_Blue_V = storemerge6_fu_150_p3;
+        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
+            XY_Blue_V = 8'd0;
+        end else begin
+            XY_Blue_V = 'bx;
         end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        XY_Green_V_preg <= 8'd0;
     end else begin
-        if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-            XY_Green_V_preg <= storemerge6_fu_127_p3;
-        end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-            XY_Green_V_preg <= storemerge7_cast_fu_110_p3;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        XY_Red_V_preg <= 8'd0;
-    end else begin
-        if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-            XY_Red_V_preg <= storemerge6_fu_127_p3;
-        end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-            XY_Red_V_preg <= storemerge7_cast_fu_110_p3;
-        end
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (ap_rst == 1'b1) begin
-        ap_CS_fsm <= ap_ST_fsm_state1;
-    end else begin
-        ap_CS_fsm <= ap_NS_fsm;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        tmp_2_reg_199 <= tmp_2_fu_121_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        tmp_3_reg_203 <= tmp_3_fu_137_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((tmp_3_fu_137_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        tmp_6_reg_207 <= tmp_6_fu_145_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        tmp_reg_192 <= tmp_fu_92_p2;
+        XY_Blue_V = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((tmp_3_reg_203 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        XY_Blue_V = 8'd0;
-    end else if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        XY_Blue_V = storemerge6_fu_127_p3;
-    end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        XY_Blue_V = storemerge7_cast_fu_110_p3;
-    end else begin
-        XY_Blue_V = XY_Blue_V_preg;
-    end
-end
-
-always @ (*) begin
-    if (((tmp_3_reg_203 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        XY_Green_V = storemerge_fu_164_p3;
-    end else if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        XY_Green_V = storemerge6_fu_127_p3;
-    end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        XY_Green_V = storemerge7_cast_fu_110_p3;
-    end else begin
-        XY_Green_V = XY_Green_V_preg;
-    end
-end
-
-always @ (*) begin
-    if (((tmp_3_reg_203 == 1'd1) & (1'b1 == ap_CS_fsm_state3))) begin
-        XY_Red_V = storemerge5_cast_fu_155_p3;
-    end else if (((tmp_2_reg_199 == 1'd1) & (tmp_reg_192 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        XY_Red_V = storemerge6_fu_127_p3;
-    end else if (((ap_start == 1'b1) & (tmp_1_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-        XY_Red_V = storemerge7_cast_fu_110_p3;
-    end else begin
-        XY_Red_V = XY_Red_V_preg;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        ap_done = 1'b1;
-    end else begin
-        ap_done = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_idle = 1'b1;
-    end else begin
-        ap_idle = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        ap_ready = 1'b1;
-    end else begin
-        ap_ready = 1'b0;
-    end
-end
-
-always @ (*) begin
-    case (ap_CS_fsm)
-        ap_ST_fsm_state1 : begin
-            if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end
+    if ((ap_start == 1'b1)) begin
+        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
+            XY_Green_V = storemerge7_cast_fu_167_p3;
+        end else if ((1'b1 == ap_condition_39)) begin
+            XY_Green_V = storemerge6_fu_150_p3;
+        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
+            XY_Green_V = storemerge_fu_129_p3;
+        end else begin
+            XY_Green_V = 'bx;
         end
-        ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
-        end
-        ap_ST_fsm_state3 : begin
-            ap_NS_fsm = ap_ST_fsm_state1;
-        end
-        default : begin
-            ap_NS_fsm = 'bx;
-        end
-    endcase
+    end else begin
+        XY_Green_V = 'bx;
+    end
 end
 
-assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
+always @ (*) begin
+    if ((ap_start == 1'b1)) begin
+        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
+            XY_Red_V = storemerge7_cast_fu_167_p3;
+        end else if ((1'b1 == ap_condition_39)) begin
+            XY_Red_V = storemerge6_fu_150_p3;
+        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
+            XY_Red_V = storemerge5_cast_fu_120_p3;
+        end else begin
+            XY_Red_V = 'bx;
+        end
+    end else begin
+        XY_Red_V = 'bx;
+    end
+end
 
-assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
+always @ (*) begin
+    ap_condition_39 = ((tmp_3_fu_144_p2 == 1'd1) & (tmp_1_fu_138_p2 == 1'd0) & (tmp_fu_92_p2 == 1'd1));
+end
 
-assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
+assign ap_done = ap_start;
 
-assign not_right_fu_104_p0 = right_r;
+assign ap_idle = 1'b1;
 
-assign not_right_fu_104_p2 = (not_right_fu_104_p0 ^ 1'd1);
+assign ap_ready = ap_start;
 
-assign not_tmp_6_fu_150_p2 = (tmp_6_reg_207 ^ 1'd1);
+assign not_right_fu_161_p0 = right_r;
 
-assign storemerge5_cast_fu_155_p3 = ((not_tmp_6_fu_150_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign not_right_fu_161_p2 = (not_right_fu_161_p0 ^ 1'd1);
 
-assign storemerge6_fu_127_p0 = right_r;
+assign not_tmp_6_fu_114_p2 = (tmp_6_fu_108_p2 ^ 1'd1);
 
-assign storemerge6_fu_127_p3 = ((storemerge6_fu_127_p0[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge5_cast_fu_120_p3 = ((not_tmp_6_fu_114_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign storemerge7_cast_fu_110_p3 = ((not_right_fu_104_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge6_fu_150_p0 = right_r;
 
-assign storemerge_fu_164_p3 = ((tmp_6_reg_207[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge6_fu_150_p3 = ((storemerge6_fu_150_p0[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign tmp_1_fu_98_p2 = ((x_V < 10'd320) ? 1'b1 : 1'b0);
+assign storemerge7_cast_fu_167_p3 = ((not_right_fu_161_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign tmp_2_fu_121_p2 = ((x_V > 10'd320) ? 1'b1 : 1'b0);
+assign storemerge_fu_129_p3 = ((tmp_6_fu_108_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign tmp_3_fu_137_p2 = ((y_V > 10'd40) ? 1'b1 : 1'b0);
+assign tmp_1_fu_138_p2 = ((x_V < 10'd320) ? 1'b1 : 1'b0);
 
-assign tmp_4_cast_fu_142_p1 = x_V;
+assign tmp_2_fu_98_p2 = ((y_V > 10'd40) ? 1'b1 : 1'b0);
 
-assign tmp_6_fu_145_p2 = ((tmp_4_cast_fu_142_p1 > center_line_V) ? 1'b1 : 1'b0);
+assign tmp_3_fu_144_p2 = ((x_V > 10'd320) ? 1'b1 : 1'b0);
+
+assign tmp_4_cast_fu_104_p1 = x_V;
+
+assign tmp_6_fu_108_p2 = ((tmp_4_cast_fu_104_p1 > center_line_V) ? 1'b1 : 1'b0);
 
 assign tmp_fu_92_p2 = ((y_V < 10'd40) ? 1'b1 : 1'b0);
 

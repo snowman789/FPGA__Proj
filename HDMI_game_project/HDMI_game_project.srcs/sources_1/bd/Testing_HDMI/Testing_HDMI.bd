@@ -577,8 +577,7 @@
       "clk_wiz_0_clk_out3": {
         "ports": [
           "clk_wiz_0/clk_out3",
-          "Gamelogic2_0/ap_clk",
-          "Interface2_0/ap_clk"
+          "Gamelogic2_0/ap_clk"
         ]
       },
       "Interface2_0_XY_Red_V": {

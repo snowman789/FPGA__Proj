@@ -25,31 +25,28 @@ void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red,  ap_uint<8> *XY_Gr
 				*XY_Blue = 255;
 				*XY_Green = 255;
 			}
-
-			if(  right  ){
+			else if(  right  ){
 				*XY_Red = 0;
 				*XY_Blue = 0;
 				*XY_Green = 0;
 			}
 		}
 		//right
-		if(x > 320){
+		else if(x > 320){
 			if( right  ){
 				*XY_Red = 255;
 				*XY_Blue = 255;
 				*XY_Green = 255;
 			}
-			if(!right  ){
+			else if(!right  ){
 				*XY_Red = 0;
 				*XY_Blue = 0;
 				*XY_Green = 0;
 			}
 		}
 	}
-
-
 	// player fighting area
-	if(y > 40){
+	else if(y > 40){
 		if(x > center_line){
 			*XY_Red = 0;
 			*XY_Blue = 0;
@@ -57,8 +54,6 @@ void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red,  ap_uint<8> *XY_Gr
 
 			}
 		else{
-
-
 			*XY_Red = 255;
 			*XY_Blue = 0;
 			*XY_Green = 0;
