@@ -47,7 +47,7 @@
       "impl\/verilog\/Gamelogic2.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "D:\/FPGA_WORKSPACES\/FPGA_Final_Project\/FPGA__Proj\/Gamelogic2\/solution1\/.autopilot\/db\/Gamelogic2.design.xml"
+    "DesignXml": "C:\/Users\/itr9fc\/Desktop\/FPGA__Proj\/Gamelogic2\/solution1\/.autopilot\/db\/Gamelogic2.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -114,19 +114,19 @@
     "center_line_in_V": {
       "type": "data",
       "dir": "in",
-      "width": "10",
+      "width": "12",
       "ctype": {"DATA": {
           "Type": "integer unsigned",
-          "Width": "10"
+          "Width": "12"
         }}
     },
     "center_line_out_V": {
       "type": "data",
       "dir": "out",
-      "width": "10",
+      "width": "12",
       "ctype": {"DATA": {
           "Type": "integer unsigned",
-          "Width": "10"
+          "Width": "12"
         }}
     },
     "right_in": {
@@ -191,11 +191,11 @@
     },
     "center_line_out_V": {
       "dir": "out",
-      "width": "10"
+      "width": "12"
     },
     "center_line_in_V": {
       "dir": "in",
-      "width": "10"
+      "width": "12"
     },
     "right_out": {
       "dir": "out",
@@ -238,14 +238,14 @@
     "center_line_out_V": {
       "interfaceRef": "center_line_out_V",
       "dir": "out",
-      "dataWidth": "10",
+      "dataWidth": "12",
       "handshakeRef": "ap_none",
       "firstOutLatency": "36"
     },
     "center_line_in_V": {
       "interfaceRef": "center_line_in_V",
       "dir": "in",
-      "dataWidth": "10",
+      "dataWidth": "12",
       "handshakeRef": "ap_none"
     },
     "right_out": {
@@ -278,12 +278,12 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.577"
+          "Estimate": "8.510"
         },
         "Area": {
           "DSP48E": "0",
-          "FF": "506",
-          "LUT": "635",
+          "FF": "573",
+          "LUT": "774",
           "BRAM_18K": "0"
         }
       }}
@@ -298,7 +298,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-22 17:17:54 -0400",
+    "Time": "2019-04-24 12:47:51 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

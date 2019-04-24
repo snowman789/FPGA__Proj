@@ -93,7 +93,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_center_line_V \
     op interface \
-    ports { center_line_V { I 10 vector } } \
+    ports { center_line_V { I 12 vector } } \
 } "
 }
 

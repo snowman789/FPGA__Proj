@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Mon Apr 22 17:43:40 2019
-//Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+//Date        : Wed Apr 24 12:55:16 2019
+//Host        : EmbSys11 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
 //Purpose     : IP block netlist
@@ -34,7 +34,7 @@ module Testing_HDMI
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET_RTL RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET_RTL, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input reset_rtl;
   input sys_clk;
 
-  wire [9:0]Gamelogic2_0_center_line_out_V;
+  wire [11:0]Gamelogic2_0_center_line_out_V;
   wire Gamelogic2_0_right_r;
   wire [2:0]HDMI_test_0_TMDSn;
   wire HDMI_test_0_TMDSn_clock;

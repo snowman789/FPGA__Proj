@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr 22 18:03:57 2019
-# Process ID: 16640
-# Current directory: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
+# Start of session at: Wed Apr 24 13:00:15 2019
+# Process ID: 19468
+# Current directory: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1
 # Command line: vivado.exe -log Testing_HDMI_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Testing_HDMI_wrapper.tcl
-# Log file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.vds
-# Journal file: D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1\vivado.jou
+# Log file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1/Testing_HDMI_wrapper.vds
+# Journal file: C:/Users/itr9fc/Desktop/FPGA__Proj/HDMI_game_project/HDMI_game_project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Testing_HDMI_wrapper.tcl -notrace

@@ -5,8 +5,8 @@
 ############################################################
 open_project Interface2
 set_top Interface2
-add_files Interface2/InterfaceInit.h
 add_files Interface2/Interface2.cpp
+add_files Interface2/InterfaceInit.h
 open_solution "solution1"
 set_part {xc7z020clg400-1} -tool vivado
 create_clock -period 10 -name default

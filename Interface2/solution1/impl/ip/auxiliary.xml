@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Interface2" xd:componentRef="Interface2" xd:initiationInterval="7" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Interface2" xd:componentRef="Interface2" xd:initiationInterval="3" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
   <xd:arg xd:name="x" xd:originalName="x" xd:direction="in" xd:interfaceRef="x_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
   <xd:arg xd:name="y" xd:originalName="y" xd:direction="in" xd:interfaceRef="y_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
   <xd:arg xd:name="*(XY_Red)" xd:originalName="XY_Red" xd:direction="out" xd:interfaceRef="XY_Red_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
   <xd:arg xd:name="*(XY_Green)" xd:originalName="XY_Green" xd:direction="out" xd:interfaceRef="XY_Green_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
   <xd:arg xd:name="*(XY_Blue)" xd:originalName="XY_Blue" xd:direction="out" xd:interfaceRef="XY_Blue_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
-  <xd:arg xd:name="center_line" xd:originalName="center_line" xd:direction="in" xd:interfaceRef="center_line_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="0"/>
+  <xd:arg xd:name="center_line" xd:originalName="center_line" xd:direction="in" xd:interfaceRef="center_line_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="0"/>
   <xd:arg xd:name="right" xd:originalName="right" xd:direction="in" xd:interfaceRef="right_r" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
-  <xd:latencyEstimates xd:best-case="3" xd:worst-case="6" xd:average-case="6"/>
-  <xd:resourceEstimates xd:LUT="205" xd:FF="42" xd:BRAM="0" xd:DSP="0"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="2" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="188" xd:FF="31" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

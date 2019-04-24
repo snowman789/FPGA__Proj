@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 22 17:55:49 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 24 12:59:42 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -64,7 +64,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1904221719" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
+    <MODULE COREREVISION="1904241248" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Gamelogic2_0_0"/>
@@ -110,13 +110,13 @@
             <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="9" NAME="center_line_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
+        <PORT DIR="O" LEFT="11" NAME="center_line_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_in_V"/>
             <CONNECTION INSTANCE="Interface2_0" PORT="center_line_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="center_line_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
+        <PORT DIR="I" LEFT="11" NAME="center_line_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_out_V"/>
           </CONNECTIONS>
@@ -240,14 +240,14 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904221755" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
+    <MODULE COREREVISION="1904241258" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface2_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="3"/>
+        <PARAMETER NAME="latency" VALUE="2"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -291,7 +291,7 @@
             <CONNECTION INSTANCE="HDMI_test_0" PORT="XY_Blue"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="center_line_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
+        <PORT DIR="I" LEFT="11" NAME="center_line_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_out_V"/>
           </CONNECTIONS>

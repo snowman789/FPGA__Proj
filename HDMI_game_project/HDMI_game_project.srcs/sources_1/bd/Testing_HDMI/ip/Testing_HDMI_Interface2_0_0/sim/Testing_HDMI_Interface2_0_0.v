@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:Interface2:1.0
-// IP Revision: 1904221755
+// IP Revision: 1904241258
 
 `timescale 1ns/1ps
 
@@ -107,10 +107,10 @@ output wire [7 : 0] XY_Green_V;
 e false}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 XY_Blue_V DATA" *)
 output wire [7 : 0] XY_Blue_V;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME center_line_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 10} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}}\
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME center_line_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}}\
  value false}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 center_line_V DATA" *)
-input wire [9 : 0] center_line_V;
+input wire [11 : 0] center_line_V;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME right_r, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 right_r DATA" *)
 input wire right_r;

@@ -73,7 +73,7 @@ set Pointer5 "0"
 set Reference5 "0"
 set Dims5 [list 0]
 set Interface5 "wire"
-set DataType5 "[list ap_uint 10 ]"
+set DataType5 "[list ap_uint 12 ]"
 set Port5 [list $PortName5 $Interface5 $DataType5 $Pointer5 $Dims5 $Const5 $Volatile5 $ArrayOpt5]
 lappend PortList $Port5
 set PortName6 "right"

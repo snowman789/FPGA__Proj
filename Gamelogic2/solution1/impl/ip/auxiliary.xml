@@ -5,10 +5,10 @@
   <xd:arg xd:name="btn1" xd:originalName="btn1" xd:direction="in" xd:interfaceRef="btn1" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn2" xd:originalName="btn2" xd:direction="in" xd:interfaceRef="btn2" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn3" xd:originalName="btn3" xd:direction="in" xd:interfaceRef="btn3" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
-  <xd:arg xd:name="*(center_line_out)" xd:originalName="center_line_out" xd:direction="out" xd:interfaceRef="center_line_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="36"/>
-  <xd:arg xd:name="center_line_in" xd:originalName="center_line_in" xd:direction="in" xd:interfaceRef="center_line_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10" xd:firstOut="36"/>
+  <xd:arg xd:name="*(center_line_out)" xd:originalName="center_line_out" xd:direction="out" xd:interfaceRef="center_line_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="36"/>
+  <xd:arg xd:name="center_line_in" xd:originalName="center_line_in" xd:direction="in" xd:interfaceRef="center_line_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="36"/>
   <xd:arg xd:name="*(right_out)" xd:originalName="right_out" xd:direction="out" xd:interfaceRef="right_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
   <xd:arg xd:name="right_in" xd:originalName="right_in" xd:direction="in" xd:interfaceRef="right_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="36"/>
   <xd:latencyEstimates xd:best-case="1" xd:worst-case="36" xd:average-case="19"/>
-  <xd:resourceEstimates xd:LUT="635" xd:FF="506" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="774" xd:FF="573" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

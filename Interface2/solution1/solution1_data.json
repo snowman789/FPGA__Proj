@@ -21,7 +21,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "3",
+    "Latency": "2",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -41,7 +41,7 @@
     "Vhdl": ["impl\/vhdl\/Interface2.vhd"],
     "Verilog": ["impl\/verilog\/Interface2.v"],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "D:\/FPGA_WORKSPACES\/FPGA_Final_Project\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
+    "DesignXml": "C:\/Users\/itr9fc\/Desktop\/FPGA__Proj\/Interface2\/solution1\/.autopilot\/db\/Interface2.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -99,10 +99,10 @@
     "center_line_V": {
       "type": "data",
       "dir": "in",
-      "width": "10",
+      "width": "12",
       "ctype": {"DATA": {
           "Type": "integer unsigned",
-          "Width": "10"
+          "Width": "12"
         }}
     },
     "right_r": {
@@ -180,7 +180,7 @@
     },
     "center_line_V": {
       "dir": "in",
-      "width": "10"
+      "width": "12"
     },
     "right_r": {
       "dir": "in",
@@ -228,7 +228,7 @@
     "center_line_V": {
       "interfaceRef": "center_line_V",
       "dir": "in",
-      "dataWidth": "10",
+      "dataWidth": "12",
       "handshakeRef": "ap_none"
     },
     "right_r": {
@@ -242,23 +242,21 @@
     "Hierarchy": {"ModuleName": "Interface2"},
     "Metrics": {"Interface2": {
         "Latency": {
-          "LatencyBest": "3",
-          "LatencyAvg": "6",
-          "LatencyWorst": "6",
-          "PipelineIIMin": "4",
-          "PipelineIIMax": "7",
-          "PipelineII": "4 ~ 7",
+          "LatencyBest": "2",
+          "LatencyAvg": "2",
+          "LatencyWorst": "2",
+          "PipelineII": "3",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "2.748"
+          "Estimate": "1.990"
         },
         "Area": {
-          "FF": "42",
-          "LUT": "205",
+          "FF": "31",
+          "LUT": "188",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
@@ -274,7 +272,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-22 17:55:16 -0400",
+    "Time": "2019-04-24 13:02:31 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

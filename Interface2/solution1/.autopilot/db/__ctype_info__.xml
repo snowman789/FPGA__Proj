@@ -52,9 +52,9 @@
 <RtlPorts>
 <name>center_line_V</name>
 <CType>
-<TypeName>ap_uint 10</TypeName>
-<TypeWidth>10</TypeWidth>
-<PhysicalWidth>10</PhysicalWidth>
+<TypeName>ap_uint 12</TypeName>
+<TypeWidth>12</TypeWidth>
+<PhysicalWidth>12</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>

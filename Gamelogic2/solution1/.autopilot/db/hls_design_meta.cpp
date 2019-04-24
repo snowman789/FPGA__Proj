@@ -10,8 +10,8 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("btn1", 1, hls_in, 1, "ap_none", "in_data", 1),
 	Port_Property("btn2", 1, hls_in, 2, "ap_none", "in_data", 1),
 	Port_Property("btn3", 1, hls_in, 3, "ap_none", "in_data", 1),
-	Port_Property("center_line_out_V", 10, hls_out, 4, "ap_none", "out_data", 1),
-	Port_Property("center_line_in_V", 10, hls_in, 5, "ap_none", "in_data", 1),
+	Port_Property("center_line_out_V", 12, hls_out, 4, "ap_none", "out_data", 1),
+	Port_Property("center_line_in_V", 12, hls_in, 5, "ap_none", "in_data", 1),
 	Port_Property("right_out", 1, hls_out, 6, "ap_none", "out_data", 1),
 	Port_Property("right_in", 1, hls_in, 7, "ap_none", "in_data", 1),
 };

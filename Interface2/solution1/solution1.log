@@ -1442,3 +1442,476 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 12:34:18 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.500 ; gain = 17.176
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.500 ; gain = 17.176
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 110.633 ; gain = 25.309
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 116.328 ; gain = 31.004
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 141.020 ; gain = 55.695
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 142.855 ; gain = 57.531
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.103 seconds; current allocated memory: 92.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.091 seconds; current allocated memory: 93.131 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.159 seconds; current allocated memory: 93.379 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 142.855 ; gain = 57.531
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 12.505 seconds; peak allocated memory: 93.379 MB.
+==============================================================
+File generated on Wed Apr 24 12:34:45 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 12:36:20 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.535 ; gain = 17.734
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.535 ; gain = 17.734
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 111.266 ; gain = 26.465
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 116.566 ; gain = 31.766
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 141.773 ; gain = 56.973
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 143.340 ; gain = 58.539
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.94 seconds; current allocated memory: 92.954 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 93.212 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.132 seconds; current allocated memory: 93.464 MB.
+ERROR: [HLS 200-446] Unexpected problem deleting file from disk: "C:/Users/itr9fc/Desktop/FPGA__Proj/Interface2/solution1/impl/.pcores/vhdl\direct_connection.mpd.frac": permission denied
+INFO: [HLS 200-112] Total elapsed time: 12.085 seconds; peak allocated memory: 93.464 MB.
+==============================================================
+File generated on Wed Apr 24 12:37:18 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 102.844 ; gain = 17.512
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 102.844 ; gain = 17.512
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 111.625 ; gain = 26.293
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 116.145 ; gain = 30.813
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 141.770 ; gain = 56.438
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 143.336 ; gain = 58.004
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.972 seconds; current allocated memory: 92.970 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 93.197 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 93.464 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 143.336 ; gain = 58.004
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 15.254 seconds; peak allocated memory: 93.464 MB.
+==============================================================
+File generated on Wed Apr 24 12:37:42 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 12:39:14 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.570 ; gain = 18.086
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.570 ; gain = 18.086
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 111.125 ; gain = 26.641
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 116.047 ; gain = 31.563
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 141.441 ; gain = 56.957
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 143.008 ; gain = 58.523
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.532 seconds; current allocated memory: 92.823 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 93.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.133 seconds; current allocated memory: 93.335 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 143.008 ; gain = 58.523
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 11.838 seconds; peak allocated memory: 93.335 MB.
+==============================================================
+File generated on Wed Apr 24 12:39:34 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 12:53:45 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from Interface2/Interface2.cpp:1:
+Interface2/Interface2.cpp:59:25: error: expected ';' after expression
+  else( x < center_line){
+                        ^
+                        ;
+1 error generated.
+==============================================================
+File generated on Wed Apr 24 12:54:22 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 102.793 ; gain = 18.164
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 102.793 ; gain = 18.164
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 111.383 ; gain = 26.754
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 116.141 ; gain = 31.512
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 141.367 ; gain = 56.738
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 142.930 ; gain = 58.301
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.667 seconds; current allocated memory: 92.718 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.088 seconds; current allocated memory: 92.927 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.173 seconds; current allocated memory: 93.191 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 142.930 ; gain = 58.301
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 12.011 seconds; peak allocated memory: 93.191 MB.
+==============================================================
+File generated on Wed Apr 24 12:54:44 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 12:57:43 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.586 ; gain = 17.113
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.586 ; gain = 17.113
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:79).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 111.508 ; gain = 26.035
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 116.426 ; gain = 30.953
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Interface2/Interface2.cpp:53:6) to (Interface2/Interface2.cpp:65:2) in function 'Interface2'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 141.328 ; gain = 55.855
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 142.895 ; gain = 57.422
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.627 seconds; current allocated memory: 92.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.073 seconds; current allocated memory: 93.045 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.133 seconds; current allocated memory: 93.310 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 142.895 ; gain = 57.422
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 11.813 seconds; peak allocated memory: 93.310 MB.
+==============================================================
+File generated on Wed Apr 24 12:58:07 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Wed Apr 24 13:02:20 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Interface2/Interface2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.543 ; gain = 17.781
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.543 ; gain = 17.781
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'retBit' into 'Interface2' (Interface2/Interface2.cpp:80).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 111.750 ; gain = 26.988
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 116.461 ; gain = 31.699
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 141.715 ; gain = 56.953
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 143.281 ; gain = 58.520
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Interface2' ...
+WARNING: [SYN 201-107] Renaming port name 'Interface2/right' to 'Interface2/right_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.722 seconds; current allocated memory: 92.703 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 92.942 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Interface2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/x_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/y_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Red_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Red_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Green_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Green_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/XY_Blue_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'XY_Blue_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/center_line_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Interface2/right_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Interface2' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Interface2'.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 93.191 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 143.281 ; gain = 58.520
+INFO: [SYSC 207-301] Generating SystemC RTL for Interface2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Interface2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Interface2.
+INFO: [HLS 200-112] Total elapsed time: 11.898 seconds; peak allocated memory: 93.191 MB.
+==============================================================
+File generated on Wed Apr 24 13:02:39 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

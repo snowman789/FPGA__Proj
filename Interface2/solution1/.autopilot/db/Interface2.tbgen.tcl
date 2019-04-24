@@ -17,7 +17,7 @@ set C_modelArgList {
 	{ XY_Red_V int 8 regular {pointer 1}  }
 	{ XY_Green_V int 8 regular {pointer 1}  }
 	{ XY_Blue_V int 8 regular {pointer 1}  }
-	{ center_line_V int 10 regular  }
+	{ center_line_V int 12 regular  }
 	{ right_r uint 1 regular  }
 }
 set C_modelArgMapList {[ 
@@ -26,7 +26,7 @@ set C_modelArgMapList {[
  	{ "Name" : "XY_Red_V", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "XY_Red.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "XY_Green_V", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "XY_Green.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "XY_Blue_V", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "XY_Blue.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
- 	{ "Name" : "center_line_V", "interface" : "wire", "bitwidth" : 10, "direction" : "READONLY", "bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "center_line.V","cData": "uint10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "center_line_V", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY", "bitSlice":[{"low":0,"up":11,"cElement": [{"cName": "center_line.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "right_r", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "right","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
 set portNum 13
@@ -42,7 +42,7 @@ set portList {
 	{ XY_Red_V sc_out sc_lv 8 signal 2 } 
 	{ XY_Green_V sc_out sc_lv 8 signal 3 } 
 	{ XY_Blue_V sc_out sc_lv 8 signal 4 } 
-	{ center_line_V sc_in sc_lv 10 signal 5 } 
+	{ center_line_V sc_in sc_lv 12 signal 5 } 
 	{ right_r sc_in sc_logic 1 signal 6 } 
 }
 set NewPortList {[ 
@@ -57,7 +57,7 @@ set NewPortList {[
  	{ "name": "XY_Red_V", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "XY_Red_V", "role": "default" }} , 
  	{ "name": "XY_Green_V", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "XY_Green_V", "role": "default" }} , 
  	{ "name": "XY_Blue_V", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "XY_Blue_V", "role": "default" }} , 
- 	{ "name": "center_line_V", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "center_line_V", "role": "default" }} , 
+ 	{ "name": "center_line_V", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "center_line_V", "role": "default" }} , 
  	{ "name": "right_r", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "right_r", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -67,7 +67,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "6",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "2",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -97,8 +97,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3", "Max" : "6"}
-	, {"Name" : "Interval", "Min" : "4", "Max" : "7"}
+	{"Name" : "Latency", "Min" : "2", "Max" : "2"}
+	, {"Name" : "Interval", "Min" : "3", "Max" : "3"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -110,7 +110,7 @@ set Spec2ImplPortList {
 	XY_Red_V { ap_none {  { XY_Red_V out_data 1 8 } } }
 	XY_Green_V { ap_none {  { XY_Green_V out_data 1 8 } } }
 	XY_Blue_V { ap_none {  { XY_Blue_V out_data 1 8 } } }
-	center_line_V { ap_none {  { center_line_V in_data 0 10 } } }
+	center_line_V { ap_none {  { center_line_V in_data 0 12 } } }
 	right_r { ap_none {  { right_r in_data 0 1 } } }
 }
 

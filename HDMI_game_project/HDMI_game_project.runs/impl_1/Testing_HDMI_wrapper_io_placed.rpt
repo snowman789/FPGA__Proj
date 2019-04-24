@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date                      : Mon Apr 22 18:05:55 2019
-| Host                      : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
+| Date                      : Wed Apr 24 13:01:35 2019
+| Host                      : EmbSys11 running 64-bit major release  (build 9200)
 | Command                   : report_io -file Testing_HDMI_wrapper_io_placed.rpt
 | Design                    : Testing_HDMI_wrapper
 | Device                    : xc7z020

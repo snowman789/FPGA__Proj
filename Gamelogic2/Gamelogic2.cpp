@@ -11,7 +11,9 @@ bool btn3_verify;
 unsigned int RandSeed = 7;
 unsigned int decrement_value = 1;
 unsigned int slow_down_clock = 0;
-int time_remaining = 640;
+int time_remaining = 640;\
+int btn_count = 0;
+bool reset = 1;
 
 bool InitializeGame(ap_uint<10> *time_remaining_out,  bool *lose) {
 	decrement_value = 1;
@@ -56,8 +58,12 @@ bool CheckUserInput(bool btn1, bool btn2, bool btn3){
 		return 0;
 }
 
+int InitializeGame(){
+	reset = 0;
+	return 320;
+}
 
-void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<10> *center_line_out, ap_uint<10> center_line_in, bool *right_out, bool right_in) {
+void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<12> *center_line_out, ap_uint<12> center_line_in, bool *right_out, bool right_in) {
 #pragma HLS INTERFACE ap_none port=btn0
 #pragma HLS INTERFACE ap_none port=btn1
 #pragma HLS INTERFACE ap_none port=btn2
@@ -68,7 +74,13 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<10> *center
 #pragma HLS INTERFACE ap_none port=center_line_in
 
 	int to_add = center_line_in;
+
 	//flash right
+	if(btn0 || btn1 || btn2 || btn3)
+		btn_count += 1;
+//	if(reset)
+//		btn_count = InitializeGame();
+
 	if(right_in){
 		if(btn0)
 			to_add -= 10;
@@ -92,8 +104,11 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<10> *center
 
 	}
 
-	if(btn0 || btn1 || btn2 || btn3)
+	if(btn_count > 10){
 			*right_out = Generatebool();
+
+			btn_count = 0;
+	}
 	*center_line_out = to_add;
 
 }

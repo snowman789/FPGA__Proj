@@ -172,7 +172,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_center_line_out_V \
     op interface \
-    ports { center_line_out_V { O 10 vector } } \
+    ports { center_line_out_V { O 12 vector } } \
 } "
 }
 
@@ -187,7 +187,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_center_line_in_V \
     op interface \
-    ports { center_line_in_V { I 10 vector } } \
+    ports { center_line_in_V { I 12 vector } } \
 } "
 }
 
