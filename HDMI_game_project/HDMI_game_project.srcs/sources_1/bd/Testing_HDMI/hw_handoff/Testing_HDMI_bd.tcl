@@ -292,6 +292,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
   connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
   connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
+  connect_bd_net -net clean_button_0_clean [get_bd_pins Gamelogic2_0/btn0] [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
   connect_bd_net -net clean_button_1_clean [get_bd_pins Gamelogic2_0/btn1] [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
   connect_bd_net -net clean_button_2_clean [get_bd_pins Gamelogic2_0/btn2] [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
   connect_bd_net -net clean_button_3_clean [get_bd_pins Gamelogic2_0/btn3] [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]

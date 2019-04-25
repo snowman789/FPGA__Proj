@@ -14,8 +14,8 @@
       "clean_button_2": "",
       "clean_button_3": "",
       "HDMI_test_0": "",
-      "Interface2_0": "",
-      "Gamelogic2_0": ""
+      "Gamelogic2_0": "",
+      "Interface2_0": ""
     },
     "ports": {
       "sys_clk": {
@@ -309,13 +309,13 @@
           }
         }
       },
-      "Interface2_0": {
-        "vlnv": "xilinx.com:hls:Interface2:1.0",
-        "xci_name": "Testing_HDMI_Interface2_0_0"
-      },
       "Gamelogic2_0": {
         "vlnv": "xilinx.com:hls:Gamelogic2:1.0",
         "xci_name": "Testing_HDMI_Gamelogic2_0_0"
+      },
+      "Interface2_0": {
+        "vlnv": "xilinx.com:hls:Interface2:1.0",
+        "xci_name": "Testing_HDMI_Interface2_0_0"
       }
     },
     "nets": {
@@ -353,8 +353,8 @@
         "ports": [
           "clk_wiz_0/locked",
           "HDMI_test_0/HPD",
-          "Interface2_0/ap_start",
-          "Gamelogic2_0/ap_start"
+          "Gamelogic2_0/ap_start",
+          "Interface2_0/ap_start"
         ]
       },
       "HDMI_test_0_hdmi_hpd_tri_o": {
@@ -462,15 +462,15 @@
       "Gamelogic2_0_right_r": {
         "ports": [
           "Gamelogic2_0/right_out",
-          "Interface2_0/right_r",
-          "Gamelogic2_0/right_in"
+          "Gamelogic2_0/right_in",
+          "Interface2_0/right_r"
         ]
       },
       "Gamelogic2_0_center_line_out_V": {
         "ports": [
           "Gamelogic2_0/center_line_out_V",
-          "Interface2_0/center_line_V",
-          "Gamelogic2_0/center_line_in_V"
+          "Gamelogic2_0/center_line_in_V",
+          "Interface2_0/center_line_V"
         ]
       },
       "Gamelogic2_0_reset_game_out": {
@@ -506,8 +506,8 @@
       "clean_button_0_clean": {
         "ports": [
           "clean_button_0/clean",
-          "Gamelogic2_0/btn0",
-          "HDMI_test_0/btn0"
+          "HDMI_test_0/btn0",
+          "Gamelogic2_0/btn0"
         ]
       }
     }

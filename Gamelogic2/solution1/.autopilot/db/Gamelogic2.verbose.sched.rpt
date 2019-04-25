@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Gamelogic2'
 ================================================================
-* Date:           Wed Apr 24 23:07:58 2019
+* Date:           Wed Apr 24 23:53:32 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Gamelogic2
@@ -375,7 +375,8 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
  <State 1>: 8.39ns
 The critical path consists of the following:
 	wire read on port 'center_line_in_V' (Gamelogic2/Gamelogic2.cpp:80) [31]  (0 ns)
-	'add' operation ('tmp_1', Gamelogic2/Gamelogic2.cpp:139) [58]  (1.55 ns)
+	'add' operation ('tmp_2', Gamelogic2/Gamelogic2.cpp:139) [59]  (1.55 ns)
+	'select' operation ('p_1', Gamelogic2/Gamelogic2.cpp:120) [61]  (0 ns)
 	'select' operation ('sel_tmp2', Gamelogic2/Gamelogic2.cpp:120) [63]  (0.978 ns)
 	'select' operation ('sel_tmp6', Gamelogic2/Gamelogic2.cpp:120) [67]  (0.978 ns)
 	'select' operation ('sel_tmp8', Gamelogic2/Gamelogic2.cpp:120) [71]  (0.978 ns)

@@ -2,23 +2,23 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;Gamelogic2/Gamelogic2.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.898 ; gain = 17.762"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.898 ; gain = 17.762"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 102.516 ; gain = 17.527"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 102.516 ; gain = 17.527"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 109.332 ; gain = 24.195"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 109.094 ; gain = 24.105"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;RandNumGenerator&apos; into &apos;Generatebool&apos; (Gamelogic2/Gamelogic2.cpp:48) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;Generatebool&apos; into &apos;Gamelogic2&apos; (Gamelogic2/Gamelogic2.cpp:126) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;win_game&apos; into &apos;Gamelogic2&apos; (Gamelogic2/Gamelogic2.cpp:132) automatically."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.605 ; gain = 28.469"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 113.230 ; gain = 28.242"/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;RandNumGenerator&apos; into &apos;Generatebool&apos; (Gamelogic2/Gamelogic2.cpp:48) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;Generatebool&apos; into &apos;Gamelogic2&apos; (Gamelogic2/Gamelogic2.cpp:126) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;win_game&apos; into &apos;Gamelogic2&apos; (Gamelogic2/Gamelogic2.cpp:132) automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:101:2) in function &apos;Gamelogic2&apos;... converting 3 basic blocks."/>
 	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:102:3) to (Gamelogic2/Gamelogic2.cpp:125:3) in function &apos;Gamelogic2&apos;... converting 16 basic blocks."/>
 	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;Gamelogic2&apos; (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.875 ; gain = 53.738"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.660 ; gain = 54.523"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 138.523 ; gain = 53.535"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 139.047 ; gain = 54.059"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;Gamelogic2&apos; ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
@@ -26,13 +26,13 @@
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 12.453 seconds; current allocated memory: 90.148 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 13.788 seconds; current allocated memory: 90.148 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.138 seconds; current allocated memory: 90.558 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.158 seconds; current allocated memory: 90.558 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;Gamelogic2&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -61,11 +61,11 @@
 	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;Gamelogic2_urem_32ns_8ns_32_36_seq_1&apos; to &apos;Gamelogic2_urem_3bkb&apos; due to the length limit 20"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;Gamelogic2_urem_3bkb&apos;: 1 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;Gamelogic2&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.346 seconds; current allocated memory: 91.350 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.41 seconds; current allocated memory: 91.350 MB."/>
 	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;Gamelogic2_urem_3bkb_div&apos;"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 142.395 ; gain = 57.258"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 141.926 ; gain = 56.938"/>
 	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for Gamelogic2."/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for Gamelogic2."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for Gamelogic2."/>
-	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 14.465 seconds; peak allocated memory: 91.350 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 15.946 seconds; peak allocated memory: 91.350 MB."/>
 </Messages>

@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Wed Apr 24 22:59:05 2019
+//Date        : Wed Apr 24 23:51:35 2019
 //Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
@@ -65,7 +65,6 @@ module Testing_HDMI
   wire clk_wiz_0_clk_out4;
   wire clk_wiz_0_locked;
   wire reset_rtl_1;
-  wire sw1_1;
   wire sys_clk_1;
 
   assign TMDSp[2:0] = HDMI_test_0_TMDSp;
@@ -78,7 +77,6 @@ module Testing_HDMI
   assign hdmi_tx_clk_p = HDMI_test_0_TMDSp_clock;
   assign hdmi_tx_hpdn = HDMI_test_0_hdmi_hpd_tri_o;
   assign reset_rtl_1 = reset_rtl;
-  assign sw1_1 = sw1;
   assign sys_clk_1 = sys_clk;
   Testing_HDMI_Gamelogic2_0_0 Gamelogic2_0
        (.ap_clk(clk_wiz_0_clk_out3),
@@ -91,7 +89,7 @@ module Testing_HDMI
         .center_line_in_V(Gamelogic2_0_center_line_out_V),
         .center_line_out_V(Gamelogic2_0_center_line_out_V),
         .end_game(Gamelogic2_0_end_game),
-        .reset_game_in(sw1_1),
+        .reset_game_in(1'b0),
         .reset_game_out(Gamelogic2_0_reset_game_out),
         .right_in(Gamelogic2_0_right_r),
         .right_out(Gamelogic2_0_right_r),

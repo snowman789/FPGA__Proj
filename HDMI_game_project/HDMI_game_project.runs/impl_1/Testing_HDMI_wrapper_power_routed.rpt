@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Apr 24 23:44:53 2019
+| Date             : Wed Apr 24 23:54:45 2019
 | Host             : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 | Command          : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 | Design           : Testing_HDMI_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.006 |       14 |       --- |             --- |
-| Slice Logic    |     0.001 |     1297 |       --- |             --- |
-|   LUT as Logic |     0.001 |      496 |     53200 |            0.93 |
-|   CARRY4       |    <0.001 |       73 |     13300 |            0.55 |
-|   Register     |    <0.001 |      597 |    106400 |            0.56 |
-|   Others       |     0.000 |       23 |       --- |             --- |
-| Signals        |     0.001 |      939 |       --- |             --- |
+| Slice Logic    |     0.001 |     1342 |       --- |             --- |
+|   LUT as Logic |     0.001 |      517 |     53200 |            0.97 |
+|   CARRY4       |    <0.001 |       77 |     13300 |            0.58 |
+|   Register     |    <0.001 |      614 |    106400 |            0.58 |
+|   Others       |     0.000 |       25 |       --- |             --- |
+| Signals        |     0.001 |      969 |       --- |             --- |
 | MMCM           |     0.107 |        1 |         4 |           25.00 |
-| I/O            |     0.135 |       14 |       125 |           11.20 |
+| I/O            |     0.135 |       15 |       125 |           12.00 |
 | Static Power   |     0.110 |          |           |                 |
 | Total          |     0.360 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+

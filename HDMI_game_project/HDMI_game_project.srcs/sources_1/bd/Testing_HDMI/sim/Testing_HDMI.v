@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Wed Apr 24 23:41:36 2019
+//Date        : Wed Apr 24 23:51:35 2019
 //Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
@@ -55,6 +55,7 @@ module Testing_HDMI
   wire btn_1_1;
   wire btn_2_1;
   wire btn_3_1;
+  wire clean_button_0_clean;
   wire clean_button_1_clean;
   wire clean_button_2_clean;
   wire clean_button_3_clean;
@@ -81,7 +82,7 @@ module Testing_HDMI
        (.ap_clk(clk_wiz_0_clk_out3),
         .ap_rst(1'b0),
         .ap_start(clk_wiz_0_locked),
-        .btn0(1'b0),
+        .btn0(clean_button_0_clean),
         .btn1(clean_button_1_clean),
         .btn2(clean_button_2_clean),
         .btn3(clean_button_3_clean),
@@ -103,7 +104,7 @@ module Testing_HDMI
         .XY_Blue(Interface2_0_XY_Blue_V),
         .XY_Green(Interface2_0_XY_Green_V),
         .XY_Red(Interface2_0_XY_Red_V),
-        .btn0(1'b0),
+        .btn0(clean_button_0_clean),
         .btn1(clean_button_1_clean),
         .btn2(clean_button_2_clean),
         .btn3(clean_button_3_clean),
@@ -125,6 +126,7 @@ module Testing_HDMI
         .y_V(HDMI_test_0_y_value));
   Testing_HDMI_clean_button_0_0 clean_button_0
        (.async_btn(btn_0_1),
+        .clean(clean_button_0_clean),
         .clk(clk_wiz_0_clk_out4));
   Testing_HDMI_clean_button_0_1 clean_button_1
        (.async_btn(btn_1_1),
