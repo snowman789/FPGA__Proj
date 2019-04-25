@@ -301,7 +301,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_wiz_0_clk_out4 [get_bd_pins clean_button_0/clk] [get_bd_pins clean_button_1/clk] [get_bd_pins clean_button_2/clk] [get_bd_pins clean_button_3/clk] [get_bd_pins clk_wiz_0/clk_out4]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins Gamelogic2_0/ap_start] [get_bd_pins HDMI_test_0/HPD] [get_bd_pins Interface2_0/ap_start] [get_bd_pins clk_wiz_0/locked]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
-  connect_bd_net -net sw1_1 [get_bd_ports sw1] [get_bd_pins Gamelogic2_0/btn0]
   connect_bd_net -net sys_clk_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
 
   # Create address segments

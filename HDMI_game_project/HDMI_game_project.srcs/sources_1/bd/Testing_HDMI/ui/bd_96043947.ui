@@ -22,32 +22,32 @@ preplace inst clean_button_3 -pg 1 -lvl 1 -y 480 -defaultsOSRD
 preplace inst Interface2_0 -pg 1 -lvl 2 -y -200 -defaultsOSRD
 preplace inst Gamelogic2_0 -pg 1 -lvl 1 -y -370 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -y -70 -defaultsOSRD
-preplace netloc Gamelogic2_0_center_line_out_V 1 0 2 -150 -210 750
+preplace netloc Gamelogic2_0_center_line_out_V 1 0 2 -140 -210 750
 preplace netloc HDMI_test_0_x_value 1 1 3 770 -350 NJ -350 1530
 preplace netloc Interface2_0_XY_Red_V 1 2 1 1130
-preplace netloc sw1_1 1 0 1 -210
 preplace netloc clk_wiz_0_locked 1 0 3 -200 -190 720 100 N
 preplace netloc HDMI_test_0_TMDSp 1 3 1 1540J
+preplace netloc clean_button_0_clean 1 0 3 -180 550 710 180 N
 preplace netloc Interface2_0_XY_Blue_V 1 2 1 1110
-preplace netloc clean_button_1_clean 1 0 3 -180 550 710J 200 N
+preplace netloc clean_button_1_clean 1 0 3 -170 560 730J 200 N
 preplace netloc HDMI_test_0_TMDSn_clock 1 3 1 NJ
 preplace netloc sys_clk_1 1 0 1 NJ
 preplace netloc Gamelogic2_0_right_wins 1 1 1 740
 preplace netloc btn_2_1 1 0 1 -200
 preplace netloc Gamelogic2_0_end_game 1 1 1 700
 preplace netloc HDMI_test_0_y_value 1 1 3 780 -340 NJ -340 1520
-preplace netloc clean_button_3_clean 1 0 3 -160 570 760J 240 N
-preplace netloc clean_button_2_clean 1 0 3 -170 560 730J 220 N
+preplace netloc clean_button_3_clean 1 0 3 -150 580 770J 240 N
+preplace netloc clean_button_2_clean 1 0 3 -160 570 750J 220 N
 preplace netloc btn_3_1 1 0 1 -210
 preplace netloc btn_1_1 1 0 1 -190
 preplace netloc clk_wiz_0_clk_out1 1 1 2 710 60 N
 preplace netloc clk_wiz_0_clk_out2 1 1 2 700 80 N
 preplace netloc Gamelogic2_0_reset_game_out 1 1 1 760
-preplace netloc clk_wiz_0_clk_out3 1 0 2 -140 -530 690
-preplace netloc Gamelogic2_0_right_r 1 0 2 -140 -200 730
-preplace netloc clk_wiz_0_clk_out4 1 0 2 -140 580 690
-preplace netloc btn_0_1 1 0 1 -210
+preplace netloc clk_wiz_0_clk_out3 1 0 2 -130 -530 690
+preplace netloc Gamelogic2_0_right_r 1 0 2 -130 -200 730
+preplace netloc clk_wiz_0_clk_out4 1 0 2 -130 590 690
 preplace netloc reset_rtl_1 1 0 1 -200
+preplace netloc btn_0_1 1 0 1 -200
 preplace netloc Interface2_0_XY_Green_V 1 2 1 1120
 preplace netloc HDMI_test_0_TMDSp_clock 1 3 1 1530J
 preplace netloc HDMI_test_0_hdmi_hpd_tri_o 1 3 1 1540J
