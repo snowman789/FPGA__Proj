@@ -88,6 +88,42 @@ set Interface6 "wire"
 set DataType6 "bool"
 set Port6 [list $PortName6 $Interface6 $DataType6 $Pointer6 $Dims6 $Const6 $Volatile6 $ArrayOpt6]
 lappend PortList $Port6
+set PortName7 "reset_game"
+set BitWidth7 "8"
+set ArrayOpt7 ""
+set Const7 "0"
+set Volatile7 "0"
+set Pointer7 "0"
+set Reference7 "0"
+set Dims7 [list 0]
+set Interface7 "wire"
+set DataType7 "bool"
+set Port7 [list $PortName7 $Interface7 $DataType7 $Pointer7 $Dims7 $Const7 $Volatile7 $ArrayOpt7]
+lappend PortList $Port7
+set PortName8 "right_wins"
+set BitWidth8 "8"
+set ArrayOpt8 ""
+set Const8 "0"
+set Volatile8 "0"
+set Pointer8 "0"
+set Reference8 "0"
+set Dims8 [list 0]
+set Interface8 "wire"
+set DataType8 "bool"
+set Port8 [list $PortName8 $Interface8 $DataType8 $Pointer8 $Dims8 $Const8 $Volatile8 $ArrayOpt8]
+lappend PortList $Port8
+set PortName9 "end_game"
+set BitWidth9 "8"
+set ArrayOpt9 ""
+set Const9 "0"
+set Volatile9 "0"
+set Pointer9 "0"
+set Reference9 "0"
+set Dims9 [list 0]
+set Interface9 "wire"
+set DataType9 "bool"
+set Port9 [list $PortName9 $Interface9 $DataType9 $Pointer9 $Dims9 $Const9 $Volatile9 $ArrayOpt9]
+lappend PortList $Port9
 set globalAPint "" 
 set returnAPInt "" 
 set hasCPPAPInt 1 

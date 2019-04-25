@@ -165,6 +165,66 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 7 \
+    name reset_game_in \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_reset_game_in \
+    op interface \
+    ports { reset_game_in { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 8 \
+    name reset_game_out \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_reset_game_out \
+    op interface \
+    ports { reset_game_out { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 9 \
+    name right_wins \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_right_wins \
+    op interface \
+    ports { right_wins { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 10 \
+    name end_game \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_end_game \
+    op interface \
+    ports { end_game { O 1 bit } end_game_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 11 \
     name center_line_out_V \
     type other \
     dir O \
@@ -179,7 +239,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 12 \
     name center_line_in_V \
     type other \
     dir I \
@@ -194,7 +254,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 13 \
     name right_out \
     type other \
     dir O \
@@ -209,7 +269,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 14 \
     name right_in \
     type other \
     dir I \

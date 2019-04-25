@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 24 15:14:56 2019" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 24 23:15:43 2019" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="www.digilentinc.com:pynq-z1:part0:1.0" DEVICE="7z020" NAME="Testing_HDMI" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -34,11 +34,6 @@
         <CONNECTION INSTANCE="clean_button_2" PORT="async_btn"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="reset_rtl" SIGIS="rst" SIGNAME="External_Ports_reset_rtl">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_0" PORT="reset"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="I" NAME="btn_3" SIGIS="undef" SIGNAME="External_Ports_btn_3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clean_button_3" PORT="async_btn"/>
@@ -59,12 +54,22 @@
         <CONNECTION INSTANCE="HDMI_test_0" PORT="TMDSn_clock"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="reset_rtl" SIGIS="rst" SIGNAME="External_Ports_reset_rtl">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sw1" SIGIS="undef" SIGNAME="External_Ports_sw1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn0"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1904241248" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
+    <MODULE COREREVISION="1904242308" FULLNAME="/Gamelogic2_0" HWVERSION="1.0" INSTANCE="Gamelogic2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Gamelogic2" VLNV="xilinx.com:hls:Gamelogic2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Gamelogic2_0_0"/>
@@ -76,6 +81,7 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="O" NAME="end_game_ap_vld" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out3"/>
@@ -90,9 +96,9 @@
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="btn0" SIGIS="data" SIGNAME="clean_button_0_clean">
+        <PORT DIR="I" NAME="btn0" SIGIS="data" SIGNAME="External_Ports_sw1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="clean_button_0" PORT="clean"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw1"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="btn1" SIGIS="data" SIGNAME="clean_button_1_clean">
@@ -110,10 +116,26 @@
             <CONNECTION INSTANCE="clean_button_3" PORT="clean"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="reset_game_in" SIGIS="data"/>
+        <PORT DIR="O" NAME="reset_game_out" SIGIS="data" SIGNAME="Gamelogic2_0_reset_game_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="reset_game"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="right_wins" SIGIS="data" SIGNAME="Gamelogic2_0_right_wins">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="right_wins"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="end_game" SIGIS="data" SIGNAME="Gamelogic2_0_end_game">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Interface2_0" PORT="end_game"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="11" NAME="center_line_out_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_in_V"/>
             <CONNECTION INSTANCE="Interface2_0" PORT="center_line_V"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="center_line_in_V"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="center_line_in_V" RIGHT="0" SIGIS="data" SIGNAME="Gamelogic2_0_center_line_out_V">
@@ -123,8 +145,8 @@
         </PORT>
         <PORT DIR="O" NAME="right_out" SIGIS="data" SIGNAME="Gamelogic2_0_right_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_in"/>
             <CONNECTION INSTANCE="Interface2_0" PORT="right_r"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="right_in" SIGIS="data" SIGNAME="Gamelogic2_0_right_out">
@@ -182,11 +204,7 @@
             <CONNECTION INSTANCE="Interface2_0" PORT="XY_Blue_V"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="btn0" SIGIS="undef" SIGNAME="clean_button_0_clean">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="clean_button_0" PORT="clean"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="btn0" SIGIS="undef"/>
         <PORT DIR="I" NAME="btn1" SIGIS="undef" SIGNAME="clean_button_1_clean">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clean_button_1" PORT="clean"/>
@@ -240,7 +258,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1904241513" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
+    <MODULE COREREVISION="1904242257" FULLNAME="/Interface2_0" HWVERSION="1.0" INSTANCE="Interface2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Interface2" VLNV="xilinx.com:hls:Interface2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Testing_HDMI_Interface2_0_0"/>
@@ -295,6 +313,21 @@
             <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_out"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" NAME="reset_game" SIGIS="data" SIGNAME="Gamelogic2_0_reset_game_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="reset_game_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="right_wins" SIGIS="data" SIGNAME="Gamelogic2_0_right_wins">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="right_wins"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="end_game" SIGIS="data" SIGNAME="Gamelogic2_0_end_game">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="end_game"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
@@ -325,12 +358,7 @@
             <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out4"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="clean" SIGIS="undef" SIGNAME="clean_button_0_clean">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="HDMI_test_0" PORT="btn0"/>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="btn0"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="clean" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -1018,8 +1046,8 @@
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
           <CONNECTIONS>
             <CONNECTION INSTANCE="HDMI_test_0" PORT="HPD"/>
-            <CONNECTION INSTANCE="Gamelogic2_0" PORT="ap_start"/>
             <CONNECTION INSTANCE="Interface2_0" PORT="ap_start"/>
+            <CONNECTION INSTANCE="Gamelogic2_0" PORT="ap_start"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

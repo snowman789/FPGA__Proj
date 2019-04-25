@@ -22424,78 +22424,85 @@ inline bool operator!=(
 # 350 "C:/Xilinx/Vivado/2018.3/common/technology/autopilot\\ap_int.h" 2
 # 3 "Interface2/Interface2.cpp" 2
 
-struct s1_t {
- ap_uint<2> a;
- ap_uint<2> b;
- ap_uint<2> c;
- ap_uint<2> d;
- ap_uint<2> e;
- ap_uint<2> f;
- ap_uint<2> g;
- ap_uint<2> h;
- ap_uint<2> i;
-} board;
 
 void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
-   ap_uint<12> center_line, bool right ) {
+   ap_uint<12> center_line, bool right, bool reset_game, bool right_wins, bool end_game ) {
 _ssdm_InlineSelf(0, "");
 
 
- if(y < 40){
-  if(x < 320){
-   if( !right ){
-    *XY_Red = 255;
-    *XY_Blue = 255;
-    *XY_Green = 255;
+ if(end_game){
+   if(right_wins){
+    *XY_Red = 135;
+    *XY_Blue = 206;
+    *XY_Green = 235;
+   }else{
+    *XY_Red = 235;
+    *XY_Blue = 43;
+    *XY_Green = 54;
    }
-   else if( right ){
-    *XY_Red = 0;
-    *XY_Blue = 0;
-    *XY_Green = 0;
+
+  }
+  else if(y < 40){
+   if(x < 320){
+    if( !right ){
+     *XY_Red = 255;
+     *XY_Blue = 255;
+     *XY_Green = 255;
+    }
+    else if( right ){
+     *XY_Red = 0;
+     *XY_Blue = 0;
+     *XY_Green = 0;
+    }
+   }
+
+   else if(x >= 320){
+    if( right ){
+     *XY_Red = 255;
+     *XY_Blue = 255;
+     *XY_Green = 255;
+    }
+    else if(!right ){
+     *XY_Red = 0;
+     *XY_Blue = 0;
+     *XY_Green = 0;
+    }
    }
   }
 
-  else if(x > 320){
-   if( right ){
-    *XY_Red = 255;
-    *XY_Blue = 255;
-    *XY_Green = 255;
-   }
-   else if(!right ){
-    *XY_Red = 0;
-    *XY_Blue = 0;
-    *XY_Green = 0;
-   }
+  else if(y > 40){
+   if(x > center_line){
+    *XY_Red = 135;
+    *XY_Blue = 206;
+    *XY_Green = 235;
+
+    }
+   else{
+    *XY_Red = 235;
+    *XY_Blue = 43;
+    *XY_Green = 54;
+    }
   }
- }
 
- else if(y > 40){
-  if(x > center_line){
-   *XY_Red = 0;
-   *XY_Blue = 0;
-   *XY_Green = 255;
 
-   }
-  else{
-   *XY_Red = 255;
-   *XY_Blue = 0;
-   *XY_Green = 0;
-   }
- }
+
+
 
 }
 
 void Interface2( ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Green, ap_uint<8> *XY_Blue,
-   ap_uint<12> center_line, bool right) {
+   ap_uint<12> center_line, bool right, bool reset_game, bool right_wins, bool end_game) {
 
 _ssdm_op_SpecInterface(&x, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&y, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-
+_ssdm_op_SpecInterface(reset_game, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(right_wins, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(end_game, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(XY_Red, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(XY_Green, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(XY_Blue, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&center_line, "ap_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
- retBit(x, y, XY_Red, XY_Green, XY_Blue, center_line, right);
+ retBit(x, y, XY_Red, XY_Green, XY_Blue, center_line, right, reset_game, right_wins, end_game);
 
 
 }

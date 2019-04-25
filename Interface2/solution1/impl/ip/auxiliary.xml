@@ -8,6 +8,9 @@
   <xd:arg xd:name="*(XY_Blue)" xd:originalName="XY_Blue" xd:direction="out" xd:interfaceRef="XY_Blue_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
   <xd:arg xd:name="center_line" xd:originalName="center_line" xd:direction="in" xd:interfaceRef="center_line_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="0"/>
   <xd:arg xd:name="right" xd:originalName="right" xd:direction="in" xd:interfaceRef="right_r" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="reset_game" xd:originalName="reset_game" xd:direction="in" xd:interfaceRef="reset_game" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="right_wins" xd:originalName="right_wins" xd:direction="in" xd:interfaceRef="right_wins" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="end_game" xd:originalName="end_game" xd:direction="in" xd:interfaceRef="end_game" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
   <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
-  <xd:resourceEstimates xd:LUT="142" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="165" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

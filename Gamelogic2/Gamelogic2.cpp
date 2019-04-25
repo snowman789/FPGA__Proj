@@ -3,7 +3,7 @@
 
 
 
-bool Xturn = 1;
+bool first_run = 1;
 bool newRound = 0;
 bool btn1_verify;
 bool btn2_verify;
@@ -11,9 +11,10 @@ bool btn3_verify;
 unsigned int RandSeed = 7;
 unsigned int decrement_value = 1;
 unsigned int slow_down_clock = 0;
-int time_remaining = 640;\
+int time_remaining = 640;
 int btn_count = 0;
 bool reset = 1;
+bool game_over = 0;
 
 bool InitializeGame(ap_uint<10> *time_remaining_out,  bool *lose) {
 	decrement_value = 1;
@@ -63,11 +64,27 @@ int InitializeGame(){
 	return 320;
 }
 
-void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<12> *center_line_out, ap_uint<12> center_line_in, bool *right_out, bool right_in) {
+bool win_game( ap_uint<12> center_line_in, bool *right_wins){
+	if (center_line_in <= 0){
+		*right_wins = 1;
+		return 1;
+	}
+	else if(center_line_in >= 640) {
+		*right_wins = 0;
+		return 1;
+	}else
+		return 0;
+
+
+}
+void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, bool *reset_game_out, bool *right_wins, bool *end_game, ap_uint<12> *center_line_out, ap_uint<12> center_line_in, bool *right_out, bool right_in) {
 #pragma HLS INTERFACE ap_none port=btn0
 #pragma HLS INTERFACE ap_none port=btn1
 #pragma HLS INTERFACE ap_none port=btn2
 #pragma HLS INTERFACE ap_none port=btn3
+#pragma HLS INTERFACE ap_none port=right_wins
+#pragma HLS INTERFACE ap_none port=reset_game_in
+#pragma HLS INTERFACE ap_none port=reset_game_out
 #pragma HLS INTERFACE ap_none port=right_out
 #pragma HLS INTERFACE ap_none port=right_in
 #pragma HLS INTERFACE ap_none port=center_line_out
@@ -75,41 +92,51 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3,  ap_uint<12> *center
 
 	int to_add = center_line_in;
 
+	*reset_game_out = reset_game_in;
 	//flash right
 	if(btn0 || btn1 || btn2 || btn3)
 		btn_count += 1;
 //	if(reset)
 //		btn_count = InitializeGame();
+	if(!game_over){
+		if(right_in){
+			if(btn0)
+				to_add -= 10;
+			else if(btn2)
+				to_add += 10;
+			else if(btn1)
+				to_add += 10;
+			else if(btn3)
+				to_add -= 10;
 
-	if(right_in){
-		if(btn0)
-			to_add -= 10;
-		else if(btn2)
-			to_add += 10;
-		else if(btn1)
-			to_add += 10;
-		else if(btn3)
-			to_add -= 10;
+		}
+		else {
+			if(btn0)
+				to_add += 10;
+			else if(btn2)
+				to_add -= 10;
+			else if(btn1)
+				to_add -= 10;
+			else if(btn3)
+				to_add += 10;
 
+		}
+
+		if(btn_count > 10){
+				*right_out = Generatebool();
+
+				btn_count = 0;
+		}
 	}
-	else {
-		if(btn0)
-			to_add += 10;
-		else if(btn2)
-			to_add -= 10;
-		else if(btn1)
-			to_add -= 10;
-		else if(btn3)
-			to_add += 10;
-
+	if(!first_run)
+		game_over = win_game( center_line_in, right_wins);
+	else{
+		to_add = 320;
+		first_run = 0;
 	}
+	*end_game = game_over;
 
-	if(btn_count > 10){
-			*right_out = Generatebool();
-
-			btn_count = 0;
-	}
-	*center_line_out = to_add;
+		*center_line_out = to_add;
 
 }
 

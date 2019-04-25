@@ -11,5 +11,8 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("XY_Blue_V", 8, hls_out, 4, "ap_none", "out_data", 1),
 	Port_Property("center_line_V", 12, hls_in, 5, "ap_none", "in_data", 1),
 	Port_Property("right_r", 1, hls_in, 6, "ap_none", "in_data", 1),
+	Port_Property("reset_game", 1, hls_in, 7, "ap_none", "in_data", 1),
+	Port_Property("right_wins", 1, hls_in, 8, "ap_none", "in_data", 1),
+	Port_Property("end_game", 1, hls_in, 9, "ap_none", "in_data", 1),
 };
 const char* HLS_Design_Meta::dut_name = "Interface2";

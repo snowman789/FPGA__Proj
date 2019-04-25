@@ -115,6 +115,36 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
+    id 8 \
+    name right_wins \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_right_wins \
+    op interface \
+    ports { right_wins { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 9 \
+    name end_game \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_end_game \
+    op interface \
+    ports { end_game { I 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
     id -1 \
     name ap_ctrl \
     type ap_ctrl \

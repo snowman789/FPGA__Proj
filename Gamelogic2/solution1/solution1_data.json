@@ -47,7 +47,7 @@
       "impl\/verilog\/Gamelogic2.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "C:\/Users\/itr9fc\/Desktop\/FPGA__Proj\/Gamelogic2\/solution1\/.autopilot\/db\/Gamelogic2.design.xml"
+    "DesignXml": "D:\/FPGA_WORKSPACES\/FPGA_Final_Project\/FPGA__Proj\/Gamelogic2\/solution1\/.autopilot\/db\/Gamelogic2.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -129,6 +129,33 @@
           "Width": "12"
         }}
     },
+    "end_game": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
+    "reset_game_in": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
+    "reset_game_out": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
     "right_in": {
       "type": "data",
       "dir": "in",
@@ -139,6 +166,15 @@
         }}
     },
     "right_out": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
+    "right_wins": {
       "type": "data",
       "dir": "out",
       "width": "1",
@@ -189,6 +225,26 @@
       "dir": "in",
       "width": "1"
     },
+    "reset_game_in": {
+      "dir": "in",
+      "width": "1"
+    },
+    "reset_game_out": {
+      "dir": "out",
+      "width": "1"
+    },
+    "right_wins": {
+      "dir": "out",
+      "width": "1"
+    },
+    "end_game": {
+      "dir": "out",
+      "width": "1"
+    },
+    "end_game_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    },
     "center_line_out_V": {
       "dir": "out",
       "width": "12"
@@ -235,12 +291,39 @@
       "dataWidth": "1",
       "handshakeRef": "ap_none"
     },
+    "reset_game_in": {
+      "interfaceRef": "reset_game_in",
+      "dir": "in",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none"
+    },
+    "reset_game_out": {
+      "interfaceRef": "reset_game_out",
+      "dir": "out",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none",
+      "firstOutLatency": "0"
+    },
+    "right_wins": {
+      "interfaceRef": "right_wins",
+      "dir": "out",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none",
+      "firstOutLatency": "37"
+    },
+    "end_game": {
+      "interfaceRef": "end_game",
+      "dir": "out",
+      "dataWidth": "1",
+      "handshakeRef": "ap_vld",
+      "firstOutLatency": "37"
+    },
     "center_line_out_V": {
       "interfaceRef": "center_line_out_V",
       "dir": "out",
       "dataWidth": "12",
       "handshakeRef": "ap_none",
-      "firstOutLatency": "36"
+      "firstOutLatency": "37"
     },
     "center_line_in_V": {
       "interfaceRef": "center_line_in_V",
@@ -253,7 +336,7 @@
       "dir": "out",
       "dataWidth": "1",
       "handshakeRef": "ap_none",
-      "firstOutLatency": "36"
+      "firstOutLatency": "37"
     },
     "right_in": {
       "interfaceRef": "right_in",
@@ -267,11 +350,11 @@
     "Metrics": {"Gamelogic2": {
         "Latency": {
           "LatencyBest": "1",
-          "LatencyAvg": "19",
-          "LatencyWorst": "36",
+          "LatencyAvg": "13",
+          "LatencyWorst": "37",
           "PipelineIIMin": "2",
-          "PipelineIIMax": "37",
-          "PipelineII": "2 ~ 37",
+          "PipelineIIMax": "38",
+          "PipelineII": "2 ~ 38",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -282,8 +365,8 @@
         },
         "Area": {
           "DSP48E": "0",
-          "FF": "573",
-          "LUT": "774",
+          "FF": "623",
+          "LUT": "903",
           "BRAM_18K": "0"
         }
       }}
@@ -298,7 +381,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-24 12:47:51 -0400",
+    "Time": "2019-04-24 23:08:00 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

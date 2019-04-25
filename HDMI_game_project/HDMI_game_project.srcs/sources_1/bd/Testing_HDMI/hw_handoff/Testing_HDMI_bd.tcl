@@ -178,6 +178,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
  ] $reset_rtl
+  set sw1 [ create_bd_port -dir I sw1 ]
   set sys_clk [ create_bd_port -dir I sys_clk ]
 
   # Create instance: Gamelogic2_0, and set properties
@@ -273,7 +274,10 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net Gamelogic2_0_center_line_out_V [get_bd_pins Gamelogic2_0/center_line_in_V] [get_bd_pins Gamelogic2_0/center_line_out_V] [get_bd_pins Interface2_0/center_line_V]
+  connect_bd_net -net Gamelogic2_0_end_game [get_bd_pins Gamelogic2_0/end_game] [get_bd_pins Interface2_0/end_game]
+  connect_bd_net -net Gamelogic2_0_reset_game_out [get_bd_pins Gamelogic2_0/reset_game_out] [get_bd_pins Interface2_0/reset_game]
   connect_bd_net -net Gamelogic2_0_right_r [get_bd_pins Gamelogic2_0/right_in] [get_bd_pins Gamelogic2_0/right_out] [get_bd_pins Interface2_0/right_r]
+  connect_bd_net -net Gamelogic2_0_right_wins [get_bd_pins Gamelogic2_0/right_wins] [get_bd_pins Interface2_0/right_wins]
   connect_bd_net -net HDMI_test_0_TMDSn [get_bd_ports TMPDSn] [get_bd_pins HDMI_test_0/TMDSn]
   connect_bd_net -net HDMI_test_0_TMDSn_clock [get_bd_ports hdmi_tx_clk_n] [get_bd_pins HDMI_test_0/TMDSn_clock]
   connect_bd_net -net HDMI_test_0_TMDSp [get_bd_ports TMDSp] [get_bd_pins HDMI_test_0/TMDSp]
@@ -288,7 +292,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net btn_1_1 [get_bd_ports btn_1] [get_bd_pins clean_button_1/async_btn]
   connect_bd_net -net btn_2_1 [get_bd_ports btn_2] [get_bd_pins clean_button_2/async_btn]
   connect_bd_net -net btn_3_1 [get_bd_ports btn_3] [get_bd_pins clean_button_3/async_btn]
-  connect_bd_net -net clean_button_0_clean [get_bd_pins Gamelogic2_0/btn0] [get_bd_pins HDMI_test_0/btn0] [get_bd_pins clean_button_0/clean]
   connect_bd_net -net clean_button_1_clean [get_bd_pins Gamelogic2_0/btn1] [get_bd_pins HDMI_test_0/btn1] [get_bd_pins clean_button_1/clean]
   connect_bd_net -net clean_button_2_clean [get_bd_pins Gamelogic2_0/btn2] [get_bd_pins HDMI_test_0/btn2] [get_bd_pins clean_button_2/clean]
   connect_bd_net -net clean_button_3_clean [get_bd_pins Gamelogic2_0/btn3] [get_bd_pins HDMI_test_0/btn3] [get_bd_pins clean_button_3/clean]
@@ -298,6 +301,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_wiz_0_clk_out4 [get_bd_pins clean_button_0/clk] [get_bd_pins clean_button_1/clk] [get_bd_pins clean_button_2/clk] [get_bd_pins clean_button_3/clk] [get_bd_pins clk_wiz_0/clk_out4]
   connect_bd_net -net clk_wiz_0_locked [get_bd_pins Gamelogic2_0/ap_start] [get_bd_pins HDMI_test_0/HPD] [get_bd_pins Interface2_0/ap_start] [get_bd_pins clk_wiz_0/locked]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset_rtl] [get_bd_pins clk_wiz_0/reset]
+  connect_bd_net -net sw1_1 [get_bd_ports sw1] [get_bd_pins Gamelogic2_0/btn0]
   connect_bd_net -net sys_clk_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz_0/clk_in1]
 
   # Create address segments

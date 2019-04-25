@@ -97,7 +97,34 @@
           "Width": "12"
         }}
     },
+    "end_game": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
+    "reset_game": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
     "right_r": {
+      "type": "data",
+      "dir": "in",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }}
+    },
+    "right_wins": {
       "type": "data",
       "dir": "in",
       "width": "1",
@@ -169,6 +196,18 @@
     "right_r": {
       "dir": "in",
       "width": "1"
+    },
+    "reset_game": {
+      "dir": "in",
+      "width": "1"
+    },
+    "right_wins": {
+      "dir": "in",
+      "width": "1"
+    },
+    "end_game": {
+      "dir": "in",
+      "width": "1"
     }
   },
   "CPorts": {
@@ -220,6 +259,24 @@
       "dir": "in",
       "dataWidth": "1",
       "handshakeRef": "ap_none"
+    },
+    "reset_game": {
+      "interfaceRef": "reset_game",
+      "dir": "in",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none"
+    },
+    "right_wins": {
+      "interfaceRef": "right_wins",
+      "dir": "in",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none"
+    },
+    "end_game": {
+      "interfaceRef": "end_game",
+      "dir": "in",
+      "dataWidth": "1",
+      "handshakeRef": "ap_none"
     }
   },
   "ModuleInfo": {
@@ -236,11 +293,11 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "2.983"
+          "Estimate": "3.238"
         },
         "Area": {
           "FF": "0",
-          "LUT": "142",
+          "LUT": "165",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
@@ -256,7 +313,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-24 15:13:20 -0400",
+    "Time": "2019-04-24 22:56:48 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

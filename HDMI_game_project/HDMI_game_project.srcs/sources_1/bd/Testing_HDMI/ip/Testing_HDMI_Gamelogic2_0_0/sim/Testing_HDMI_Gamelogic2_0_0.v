@@ -48,13 +48,14 @@
 
 
 // IP VLNV: xilinx.com:hls:Gamelogic2:1.0
-// IP Revision: 1904241248
+// IP Revision: 1904242308
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Gamelogic2_0_0 (
+  end_game_ap_vld,
   ap_clk,
   ap_rst,
   ap_start,
@@ -65,12 +66,17 @@ module Testing_HDMI_Gamelogic2_0_0 (
   btn1,
   btn2,
   btn3,
+  reset_game_in,
+  reset_game_out,
+  right_wins,
+  end_game,
   center_line_out_V,
   center_line_in_V,
   right_out,
   right_in
 );
 
+output wire end_game_ap_vld;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_RESET ap_rst, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
@@ -100,6 +106,18 @@ input wire btn2;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME btn3, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 btn3 DATA" *)
 input wire btn3;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_game_in, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 reset_game_in DATA" *)
+input wire reset_game_in;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_game_out, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 reset_game_out DATA" *)
+output wire reset_game_out;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME right_wins, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 right_wins DATA" *)
+output wire right_wins;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME end_game, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 end_game DATA" *)
+output wire end_game;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME center_line_out_V, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 12} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum\
  {}} value false}}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 center_line_out_V DATA" *)
@@ -116,6 +134,7 @@ output wire right_out;
 input wire right_in;
 
   Gamelogic2 inst (
+    .end_game_ap_vld(end_game_ap_vld),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .ap_start(ap_start),
@@ -126,6 +145,10 @@ input wire right_in;
     .btn1(btn1),
     .btn2(btn2),
     .btn3(btn3),
+    .reset_game_in(reset_game_in),
+    .reset_game_out(reset_game_out),
+    .right_wins(right_wins),
+    .end_game(end_game),
     .center_line_out_V(center_line_out_V),
     .center_line_in_V(center_line_in_V),
     .right_out(right_out),

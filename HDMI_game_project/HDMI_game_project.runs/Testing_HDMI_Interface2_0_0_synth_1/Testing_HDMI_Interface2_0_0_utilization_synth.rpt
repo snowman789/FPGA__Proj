@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Apr 24 15:15:55 2019
+| Date         : Wed Apr 24 23:00:04 2019
 | Host         : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Testing_HDMI_Interface2_0_0_utilization_synth.rpt -pb Testing_HDMI_Interface2_0_0_utilization_synth.pb
 | Design       : Testing_HDMI_Interface2_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   12 |     0 |     53200 |  0.02 |
-|   LUT as Logic          |   12 |     0 |     53200 |  0.02 |
+| Slice LUTs*             |   11 |     0 |     53200 |  0.02 |
+|   LUT as Logic          |   11 |     0 |     53200 |  0.02 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |    0 |     0 |    106400 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
@@ -146,10 +146,10 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT4     |   14 |                 LUT |
+| LUT4     |   12 |                 LUT |
 | LUT5     |    3 |                 LUT |
+| LUT3     |    2 |                 LUT |
 | CARRY4   |    2 |          CarryLogic |
-| LUT6     |    1 |                 LUT |
 | LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 

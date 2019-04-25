@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Gamelogic2'
 ================================================================
-* Date:           Wed Apr 24 12:47:50 2019
+* Date:           Wed Apr 24 23:07:58 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Gamelogic2
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |    1|   36|    1|   36|   none  |
+    |    1|   37|    1|   37|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -65,16 +65,17 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 37
+* Number of FSM states : 38
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 
-	2  / (tmp_7)
-	37  / (!tmp_7)
+	2  / (!game_over_load)
+	38  / (game_over_load)
 2 --> 
-	3  / true
+	3  / (tmp_9)
+	38  / (!tmp_9)
 3 --> 
 	4  / true
 4 --> 
@@ -144,192 +145,226 @@ IsGatedGlobalClock: 0
 36 --> 
 	37  / true
 37 --> 
+	38  / true
+38 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 8.51>
-ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn0), !map !101"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn1), !map !107"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn2), !map !111"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn3), !map !115"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12* %center_line_out_V), !map !119"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12 %center_line_in_V), !map !123"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_out), !map !127"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_in), !map !131"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Gamelogic2_str) nounwind"   --->   Operation 46 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%right_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %right_in)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 47 'read' 'right_in_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%center_line_in_V_rea = call i12 @_ssdm_op_Read.ap_none.i12(i12 %center_line_in_V)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 48 'read' 'center_line_in_V_rea' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%btn3_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn3)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 49 'read' 'btn3_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%btn2_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn2)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 50 'read' 'btn2_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%btn1_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn1)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 51 'read' 'btn1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%btn0_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn0)" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 52 'read' 'btn0_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn0, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:67]   --->   Operation 53 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:68]   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:69]   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn3, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:70]   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:71]   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %right_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:72]   --->   Operation 58 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %center_line_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:73]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12 %center_line_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:74]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp = or i1 %btn1_read, %btn2_read" [Gamelogic2/Gamelogic2.cpp:79]   --->   Operation 61 'or' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp1 = or i1 %btn0_read, %btn3_read" [Gamelogic2/Gamelogic2.cpp:79]   --->   Operation 62 'or' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 63 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge1 = or i1 %tmp1, %tmp" [Gamelogic2/Gamelogic2.cpp:79]   --->   Operation 63 'or' 'brmerge1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%btn_count_load = load i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 64 'load' 'btn_count_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (2.55ns)   --->   "%tmp_8 = add nsw i32 %btn_count_load, 1" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 65 'add' 'tmp_8' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 66 [1/1] (0.69ns)   --->   "%btn_count_loc = select i1 %brmerge1, i32 %tmp_8, i32 %btn_count_load" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 66 'select' 'btn_count_loc' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 67 [1/1] (1.54ns)   --->   "%tmp_9 = add i12 %center_line_in_V_rea, -10" [Gamelogic2/Gamelogic2.cpp:112]   --->   Operation 67 'add' 'tmp_9' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 68 [1/1] (1.54ns)   --->   "%tmp_s = add i12 %center_line_in_V_rea, 10" [Gamelogic2/Gamelogic2.cpp:112]   --->   Operation 68 'add' 'tmp_s' <Predicate = true> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 69 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%p_s = select i1 %btn3_read, i12 %tmp_9, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:91]   --->   Operation 69 'select' 'p_s' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%p_1 = select i1 %btn3_read, i12 %tmp_s, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 70 'select' 'p_1' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%sel_tmp = and i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 71 'and' 'sel_tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 72 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp1 = select i1 %sel_tmp, i12 %tmp_9, i12 %p_1" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 72 'select' 'sel_tmp1' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp3)   --->   "%sel_tmp2 = xor i1 %btn0_read, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 73 'xor' 'sel_tmp2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 74 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp3 = and i1 %right_in_read, %sel_tmp2" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 74 'and' 'sel_tmp3' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 75 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp5)   --->   "%sel_tmp4 = and i1 %sel_tmp3, %btn2_read" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 75 'and' 'sel_tmp4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 76 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp5 = select i1 %sel_tmp4, i12 %tmp_s, i12 %sel_tmp1" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 76 'select' 'sel_tmp5' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp9)   --->   "%sel_tmp8 = xor i1 %btn2_read, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 77 'xor' 'sel_tmp8' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 78 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp9 = and i1 %sel_tmp3, %sel_tmp8" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 78 'and' 'sel_tmp9' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp7)   --->   "%sel_tmp6 = and i1 %sel_tmp9, %btn1_read" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 79 'and' 'sel_tmp6' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 80 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp7 = select i1 %sel_tmp6, i12 %tmp_s, i12 %sel_tmp5" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 80 'select' 'sel_tmp7' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp10 = xor i1 %btn1_read, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 81 'xor' 'sel_tmp10' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp11 = and i1 %sel_tmp9, %sel_tmp10" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 82 'and' 'sel_tmp11' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 83 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp12 = select i1 %sel_tmp11, i12 %p_s, i12 %sel_tmp7" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 83 'select' 'sel_tmp12' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp13 = xor i1 %right_in_read, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 84 'xor' 'sel_tmp13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp14 = and i1 %btn0_read, %sel_tmp13" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 85 'and' 'sel_tmp14' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 86 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp15 = select i1 %sel_tmp14, i12 %tmp_s, i12 %sel_tmp12" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 86 'select' 'sel_tmp15' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 87 [1/1] (0.97ns)   --->   "%sel_tmp24_demorgan = or i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 87 'or' 'sel_tmp24_demorgan' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 88 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp16 = xor i1 %sel_tmp24_demorgan, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 88 'xor' 'sel_tmp16' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp17 = and i1 %btn2_read, %sel_tmp16" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 89 'and' 'sel_tmp17' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 90 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp18 = select i1 %sel_tmp17, i12 %tmp_9, i12 %sel_tmp15" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 90 'select' 'sel_tmp18' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp31_demorgan = or i1 %sel_tmp24_demorgan, %btn2_read" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 91 'or' 'sel_tmp31_demorgan' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 92 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp19 = xor i1 %sel_tmp31_demorgan, true" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 92 'xor' 'sel_tmp19' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp20 = and i1 %btn1_read, %sel_tmp19" [Gamelogic2/Gamelogic2.cpp:66]   --->   Operation 93 'and' 'sel_tmp20' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 94 [1/1] (0.97ns) (out node of the LUT)   --->   "%to_add_8 = select i1 %sel_tmp20, i12 %tmp_9, i12 %sel_tmp18" [Gamelogic2/Gamelogic2.cpp:102]   --->   Operation 94 'select' 'to_add_8' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 95 [1/1] (2.47ns)   --->   "%tmp_7 = icmp sgt i32 %btn_count_loc, 10" [Gamelogic2/Gamelogic2.cpp:107]   --->   Operation 95 'icmp' 'tmp_7' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 96 [1/1] (1.76ns)   --->   "br i1 %tmp_7, label %0, label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:107]   --->   Operation 96 'br' <Predicate = true> <Delay = 1.76>
-ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%RandSeed_load = load i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 97 'load' 'RandSeed_load' <Predicate = (tmp_7)> <Delay = 0.00>
-ST_1 : Operation 98 [1/1] (8.51ns)   --->   "%tmp_i_i = mul i32 13, %RandSeed_load" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 98 'mul' 'tmp_i_i' <Predicate = (tmp_7)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 8.39>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn0), !map !119"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn1), !map !125"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn2), !map !129"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn3), !map !133"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %reset_game_in), !map !137"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset_game_out), !map !141"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_wins), !map !145"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %end_game), !map !149"   --->   Operation 46 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12* %center_line_out_V), !map !153"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i12 %center_line_in_V), !map !157"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_out), !map !161"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_in), !map !165"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Gamelogic2_str) nounwind"   --->   Operation 51 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%right_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %right_in)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 52 'read' 'right_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%center_line_in_V_rea = call i12 @_ssdm_op_Read.ap_none.i12(i12 %center_line_in_V)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 53 'read' 'center_line_in_V_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%reset_game_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %reset_game_in)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 54 'read' 'reset_game_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%btn3_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn3)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 55 'read' 'btn3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%btn2_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn2)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 56 'read' 'btn2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%btn1_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn1)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 57 'read' 'btn1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%btn0_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn0)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 58 'read' 'btn0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn0, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:81]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:82]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn3, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:84]   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_wins, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:85]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %reset_game_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:86]   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %reset_game_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:87]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:88]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %right_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:89]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %center_line_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:90]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12 %center_line_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:91]   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %reset_game_out, i1 %reset_game_in_read)" [Gamelogic2/Gamelogic2.cpp:95]   --->   Operation 70 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp = or i1 %btn1_read, %btn2_read" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 71 'or' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp1 = or i1 %btn0_read, %btn3_read" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 72 'or' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 73 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge1 = or i1 %tmp1, %tmp" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 73 'or' 'brmerge1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%btn_count_load = load i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 74 'load' 'btn_count_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (2.55ns)   --->   "%tmp_s = add nsw i32 %btn_count_load, 1" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 75 'add' 'tmp_s' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 76 [1/1] (0.69ns)   --->   "%btn_count_loc = select i1 %brmerge1, i32 %tmp_s, i32 %btn_count_load" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 76 'select' 'btn_count_loc' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%game_over_load = load i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 77 'load' 'game_over_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (1.76ns)   --->   "br i1 %game_over_load, label %._crit_edge12, label %_ifconv1" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 78 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 79 [1/1] (1.54ns)   --->   "%tmp_1 = add i12 %center_line_in_V_rea, -10" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 79 'add' 'tmp_1' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 80 [1/1] (1.54ns)   --->   "%tmp_2 = add i12 %center_line_in_V_rea, 10" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 80 'add' 'tmp_2' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%p_s = select i1 %btn3_read, i12 %tmp_1, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:109]   --->   Operation 81 'select' 'p_s' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2)   --->   "%p_1 = select i1 %btn3_read, i12 %tmp_2, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 82 'select' 'p_1' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2)   --->   "%sel_tmp = and i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 83 'and' 'sel_tmp' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 84 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp2 = select i1 %sel_tmp, i12 %tmp_1, i12 %p_1" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 84 'select' 'sel_tmp2' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp4)   --->   "%sel_tmp3 = xor i1 %btn0_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 85 'xor' 'sel_tmp3' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp4 = and i1 %right_in_read, %sel_tmp3" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 86 'and' 'sel_tmp4' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 87 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp6)   --->   "%sel_tmp5 = and i1 %sel_tmp4, %btn2_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 87 'and' 'sel_tmp5' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp6 = select i1 %sel_tmp5, i12 %tmp_2, i12 %sel_tmp2" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 88 'select' 'sel_tmp6' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%sel_tmp9 = xor i1 %btn2_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 89 'xor' 'sel_tmp9' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 90 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp1 = and i1 %sel_tmp4, %sel_tmp9" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 90 'and' 'sel_tmp1' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp8)   --->   "%sel_tmp7 = and i1 %sel_tmp1, %btn1_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 91 'and' 'sel_tmp7' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp8 = select i1 %sel_tmp7, i12 %tmp_2, i12 %sel_tmp6" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 92 'select' 'sel_tmp8' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp10 = xor i1 %btn1_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 93 'xor' 'sel_tmp10' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 94 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp11 = and i1 %sel_tmp1, %sel_tmp10" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 94 'and' 'sel_tmp11' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 95 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp12 = select i1 %sel_tmp11, i12 %p_s, i12 %sel_tmp8" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 95 'select' 'sel_tmp12' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp13 = xor i1 %right_in_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 96 'xor' 'sel_tmp13' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp14 = and i1 %btn0_read, %sel_tmp13" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 97 'and' 'sel_tmp14' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 98 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp15 = select i1 %sel_tmp14, i12 %tmp_2, i12 %sel_tmp12" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 98 'select' 'sel_tmp15' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 99 [1/1] (0.97ns)   --->   "%sel_tmp25_demorgan = or i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 99 'or' 'sel_tmp25_demorgan' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp16 = xor i1 %sel_tmp25_demorgan, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 100 'xor' 'sel_tmp16' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp17 = and i1 %btn2_read, %sel_tmp16" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 101 'and' 'sel_tmp17' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 102 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp18 = select i1 %sel_tmp17, i12 %tmp_1, i12 %sel_tmp15" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 102 'select' 'sel_tmp18' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp32_demorgan = or i1 %sel_tmp25_demorgan, %btn2_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 103 'or' 'sel_tmp32_demorgan' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 104 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp19 = xor i1 %sel_tmp32_demorgan, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 104 'xor' 'sel_tmp19' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp20 = and i1 %btn1_read, %sel_tmp19" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 105 'and' 'sel_tmp20' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 106 [1/1] (0.97ns) (out node of the LUT)   --->   "%to_add_8 = select i1 %sel_tmp20, i12 %tmp_1, i12 %sel_tmp18" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 106 'select' 'to_add_8' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
-State 2 <SV = 1> <Delay = 6.68>
-ST_2 : Operation 99 [1/1] (2.55ns)   --->   "%tmp_1_i_i = add i32 100, %tmp_i_i" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 99 'add' 'tmp_1_i_i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 100 [36/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 100 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 8.51>
+ST_2 : Operation 107 [1/1] (2.47ns)   --->   "%tmp_9 = icmp sgt i32 %btn_count_loc, 10" [Gamelogic2/Gamelogic2.cpp:125]   --->   Operation 107 'icmp' 'tmp_9' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (1.76ns)   --->   "br i1 %tmp_9, label %0, label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:125]   --->   Operation 108 'br' <Predicate = true> <Delay = 1.76>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%RandSeed_load = load i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 109 'load' 'RandSeed_load' <Predicate = (tmp_9)> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (8.51ns)   --->   "%tmp_i_i = mul i32 13, %RandSeed_load" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 110 'mul' 'tmp_i_i' <Predicate = (tmp_9)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
-State 3 <SV = 2> <Delay = 4.13>
-ST_3 : Operation 101 [35/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 101 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+State 3 <SV = 2> <Delay = 6.68>
+ST_3 : Operation 111 [1/1] (2.55ns)   --->   "%tmp_2_i_i = add i32 100, %tmp_i_i" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 111 'add' 'tmp_2_i_i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 112 [36/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 112 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 4.13>
-ST_4 : Operation 102 [34/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 102 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 113 [35/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 113 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 4.13>
-ST_5 : Operation 103 [33/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 103 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 114 [34/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 114 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 4.13>
-ST_6 : Operation 104 [32/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 104 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 115 [33/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 115 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 4.13>
-ST_7 : Operation 105 [31/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 105 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 116 [32/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 116 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 4.13>
-ST_8 : Operation 106 [30/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 106 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 117 [31/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 117 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 4.13>
-ST_9 : Operation 107 [29/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 107 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 118 [30/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 118 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 4.13>
-ST_10 : Operation 108 [28/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 108 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 119 [29/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 119 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 4.13>
-ST_11 : Operation 109 [27/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 109 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 120 [28/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 120 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 4.13>
-ST_12 : Operation 110 [26/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 110 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 121 [27/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 121 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 4.13>
-ST_13 : Operation 111 [25/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 111 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 122 [26/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 122 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 14 <SV = 13> <Delay = 4.13>
-ST_14 : Operation 112 [24/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 112 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 123 [25/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 123 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 15 <SV = 14> <Delay = 4.13>
-ST_15 : Operation 113 [23/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 113 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 124 [24/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 124 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 4.13>
-ST_16 : Operation 114 [22/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 114 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 125 [23/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 125 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 17 <SV = 16> <Delay = 4.13>
-ST_17 : Operation 115 [21/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 115 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 126 [22/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 126 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 17> <Delay = 4.13>
-ST_18 : Operation 116 [20/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 116 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 127 [21/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 127 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 19 <SV = 18> <Delay = 4.13>
-ST_19 : Operation 117 [19/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 117 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 128 [20/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 128 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 20 <SV = 19> <Delay = 4.13>
-ST_20 : Operation 118 [18/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 118 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 129 [19/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 129 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 21 <SV = 20> <Delay = 4.13>
-ST_21 : Operation 119 [17/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 119 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 130 [18/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 130 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 22 <SV = 21> <Delay = 4.13>
-ST_22 : Operation 120 [16/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 120 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 131 [17/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 131 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 23 <SV = 22> <Delay = 4.13>
-ST_23 : Operation 121 [15/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 121 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 132 [16/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 132 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 4.13>
-ST_24 : Operation 122 [14/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 122 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 133 [15/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 133 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 24> <Delay = 4.13>
-ST_25 : Operation 123 [13/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 123 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 134 [14/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 134 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 4.13>
-ST_26 : Operation 124 [12/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 124 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 135 [13/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 135 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 27 <SV = 26> <Delay = 4.13>
-ST_27 : Operation 125 [11/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 125 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 136 [12/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 136 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 27> <Delay = 4.13>
-ST_28 : Operation 126 [10/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 126 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 137 [11/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 137 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 29 <SV = 28> <Delay = 4.13>
-ST_29 : Operation 127 [9/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 127 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 138 [10/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 138 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 4.13>
-ST_30 : Operation 128 [8/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 128 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 139 [9/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 139 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 4.13>
-ST_31 : Operation 129 [7/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 129 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 140 [8/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 140 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 4.13>
-ST_32 : Operation 130 [6/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 130 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 141 [7/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 141 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 4.13>
-ST_33 : Operation 131 [5/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 131 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 142 [6/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 142 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 4.13>
-ST_34 : Operation 132 [4/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 132 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 143 [5/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 143 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 4.13>
-ST_35 : Operation 133 [3/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 133 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 144 [4/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 144 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 4.13>
-ST_36 : Operation 134 [2/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 134 'urem' 'tmp_2_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 145 [3/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 145 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
-State 37 <SV = 36> <Delay = 5.62>
-ST_37 : Operation 135 [1/36] (4.13ns)   --->   "%tmp_2_i_i = urem i32 %tmp_1_i_i, 100" [Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 135 'urem' 'tmp_2_i_i' <Predicate = (tmp_7)> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_1 = trunc i32 %tmp_2_i_i to i7" [Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 136 'trunc' 'tmp_1' <Predicate = (tmp_7)> <Delay = 0.00>
-ST_37 : Operation 137 [1/1] (0.00ns)   --->   "store i32 %tmp_2_i_i, i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 137 'store' <Predicate = (tmp_7)> <Delay = 0.00>
-ST_37 : Operation 138 [1/1] (1.48ns)   --->   "%tmp_3_i = icmp ugt i7 %tmp_1, 50" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 138 'icmp' 'tmp_3_i' <Predicate = (tmp_7)> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.48> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 139 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_out, i1 %tmp_3_i)" [Gamelogic2/Gamelogic2.cpp:108]   --->   Operation 139 'write' <Predicate = (tmp_7)> <Delay = 0.00>
-ST_37 : Operation 140 [1/1] (1.76ns)   --->   "br label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:111]   --->   Operation 140 'br' <Predicate = (tmp_7)> <Delay = 1.76>
-ST_37 : Operation 141 [1/1] (0.00ns)   --->   "%btn_count_flag_1 = phi i1 [ true, %0 ], [ %brmerge1, %_ifconv ]" [Gamelogic2/Gamelogic2.cpp:79]   --->   Operation 141 'phi' 'btn_count_flag_1' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 142 [1/1] (0.00ns)   --->   "%btn_count_new_1 = phi i32 [ 0, %0 ], [ %btn_count_loc, %_ifconv ]" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 142 'phi' 'btn_count_new_1' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 143 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i12P(i12* %center_line_out_V, i12 %to_add_8)" [Gamelogic2/Gamelogic2.cpp:112]   --->   Operation 143 'write' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 144 [1/1] (0.00ns)   --->   "br i1 %btn_count_flag_1, label %mergeST, label %._crit_edge12.new" [Gamelogic2/Gamelogic2.cpp:79]   --->   Operation 144 'br' <Predicate = true> <Delay = 0.00>
-ST_37 : Operation 145 [1/1] (0.00ns)   --->   "store i32 %btn_count_new_1, i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 145 'store' <Predicate = (btn_count_flag_1)> <Delay = 0.00>
-ST_37 : Operation 146 [1/1] (0.00ns)   --->   "br label %._crit_edge12.new"   --->   Operation 146 'br' <Predicate = (btn_count_flag_1)> <Delay = 0.00>
-ST_37 : Operation 147 [1/1] (0.00ns)   --->   "ret void" [Gamelogic2/Gamelogic2.cpp:114]   --->   Operation 147 'ret' <Predicate = true> <Delay = 0.00>
+State 37 <SV = 36> <Delay = 4.13>
+ST_37 : Operation 146 [2/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 146 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 5.62>
+ST_38 : Operation 147 [1/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 147 'urem' 'tmp_3_i_i' <Predicate = (!game_over_load & tmp_9)> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 148 [1/1] (0.00ns)   --->   "%tmp_3 = trunc i32 %tmp_3_i_i to i7" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 148 'trunc' 'tmp_3' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
+ST_38 : Operation 149 [1/1] (0.00ns)   --->   "store i32 %tmp_3_i_i, i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 149 'store' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
+ST_38 : Operation 150 [1/1] (1.48ns)   --->   "%tmp_4_i = icmp ugt i7 %tmp_3, 50" [Gamelogic2/Gamelogic2.cpp:49->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 150 'icmp' 'tmp_4_i' <Predicate = (!game_over_load & tmp_9)> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 151 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_out, i1 %tmp_4_i)" [Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 151 'write' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
+ST_38 : Operation 152 [1/1] (1.76ns)   --->   "br label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 152 'br' <Predicate = (!game_over_load & tmp_9)> <Delay = 1.76>
+ST_38 : Operation 153 [1/1] (0.00ns)   --->   "%btn_count_flag_2 = phi i1 [ %brmerge1, %_ifconv ], [ true, %0 ], [ %brmerge1, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 153 'phi' 'btn_count_flag_2' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 154 [1/1] (0.00ns)   --->   "%btn_count_new_2 = phi i32 [ %btn_count_loc, %_ifconv ], [ 0, %0 ], [ %btn_count_loc, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 154 'phi' 'btn_count_new_2' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 155 [1/1] (0.00ns)   --->   "%to_add_9 = phi i12 [ %center_line_in_V_rea, %_ifconv ], [ %to_add_8, %0 ], [ %to_add_8, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 155 'phi' 'to_add_9' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 156 [1/1] (0.00ns)   --->   "%first_run_load = load i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:131]   --->   Operation 156 'load' 'first_run_load' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 157 [1/1] (0.00ns)   --->   "br i1 %btn_count_flag_2, label %mergeST, label %._crit_edge12.new" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 157 'br' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 158 [1/1] (0.00ns)   --->   "store i32 %btn_count_new_2, i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 158 'store' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
+ST_38 : Operation 159 [1/1] (0.00ns)   --->   "br label %._crit_edge12.new"   --->   Operation 159 'br' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
+ST_38 : Operation 160 [1/1] (0.00ns)   --->   "br i1 %first_run_load, label %5, label %1" [Gamelogic2/Gamelogic2.cpp:131]   --->   Operation 160 'br' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 161 [1/1] (1.99ns)   --->   "%tmp_i = icmp eq i12 %center_line_in_V_rea, 0" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 161 'icmp' 'tmp_i' <Predicate = (!first_run_load)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 162 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %2, label %3" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 162 'br' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 163 [1/1] (1.99ns)   --->   "%tmp_1_i = icmp ugt i12 %center_line_in_V_rea, 639" [Gamelogic2/Gamelogic2.cpp:72->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 163 'icmp' 'tmp_1_i' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 164 [1/1] (1.76ns)   --->   "br i1 %tmp_1_i, label %4, label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:72->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 164 'br' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.76>
+ST_38 : Operation 165 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_wins, i1 false)" [Gamelogic2/Gamelogic2.cpp:73->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 165 'write' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 0.00>
+ST_38 : Operation 166 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:74->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 166 'br' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 1.76>
+ST_38 : Operation 167 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_wins, i1 true)" [Gamelogic2/Gamelogic2.cpp:69->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 167 'write' <Predicate = (!first_run_load & tmp_i)> <Delay = 0.00>
+ST_38 : Operation 168 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:70->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 168 'br' <Predicate = (!first_run_load & tmp_i)> <Delay = 1.76>
+ST_38 : Operation 169 [1/1] (0.00ns)   --->   "%p_i = phi i1 [ true, %2 ], [ true, %4 ], [ false, %3 ]"   --->   Operation 169 'phi' 'p_i' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 170 [1/1] (0.00ns)   --->   "store i1 %p_i, i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 170 'store' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 171 [1/1] (1.76ns)   --->   "br label %6" [Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 171 'br' <Predicate = (!first_run_load)> <Delay = 1.76>
+ST_38 : Operation 172 [1/1] (0.00ns)   --->   "store i1 false, i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 172 'store' <Predicate = (first_run_load)> <Delay = 0.00>
+ST_38 : Operation 173 [1/1] (1.76ns)   --->   "br label %6"   --->   Operation 173 'br' <Predicate = (first_run_load)> <Delay = 1.76>
+ST_38 : Operation 174 [1/1] (0.00ns)   --->   "%game_over_loc = phi i1 [ %game_over_load, %5 ], [ %p_i, %win_game.exit ]" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 174 'phi' 'game_over_loc' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 175 [1/1] (0.00ns)   --->   "%to_add_s = phi i12 [ 320, %5 ], [ %to_add_9, %win_game.exit ]" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 175 'phi' 'to_add_s' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 176 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %end_game, i1 %game_over_loc)" [Gamelogic2/Gamelogic2.cpp:137]   --->   Operation 176 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 177 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i12P(i12* %center_line_out_V, i12 %to_add_s)" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 177 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 178 [1/1] (0.00ns)   --->   "ret void" [Gamelogic2/Gamelogic2.cpp:141]   --->   Operation 178 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -337,156 +372,168 @@ ST_37 : Operation 147 [1/1] (0.00ns)   --->   "ret void" [Gamelogic2/Gamelogic2.
 ============================================================
 Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 8.51ns
+ <State 1>: 8.39ns
 The critical path consists of the following:
-	'load' operation ('last_num', Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) on global variable 'RandSeed' [71]  (0 ns)
-	'mul' operation ('tmp_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [72]  (8.51 ns)
+	wire read on port 'center_line_in_V' (Gamelogic2/Gamelogic2.cpp:80) [31]  (0 ns)
+	'add' operation ('tmp_1', Gamelogic2/Gamelogic2.cpp:139) [58]  (1.55 ns)
+	'select' operation ('sel_tmp2', Gamelogic2/Gamelogic2.cpp:120) [63]  (0.978 ns)
+	'select' operation ('sel_tmp6', Gamelogic2/Gamelogic2.cpp:120) [67]  (0.978 ns)
+	'select' operation ('sel_tmp8', Gamelogic2/Gamelogic2.cpp:120) [71]  (0.978 ns)
+	'select' operation ('sel_tmp12', Gamelogic2/Gamelogic2.cpp:120) [74]  (0.978 ns)
+	'select' operation ('sel_tmp15', Gamelogic2/Gamelogic2.cpp:120) [77]  (0.978 ns)
+	'select' operation ('sel_tmp18', Gamelogic2/Gamelogic2.cpp:120) [81]  (0.978 ns)
+	'select' operation ('to_add_8', Gamelogic2/Gamelogic2.cpp:120) [85]  (0.978 ns)
 
- <State 2>: 6.69ns
+ <State 2>: 8.51ns
 The critical path consists of the following:
-	'add' operation ('tmp_1_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [73]  (2.55 ns)
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'load' operation ('last_num', Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) on global variable 'RandSeed' [89]  (0 ns)
+	'mul' operation ('tmp_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [90]  (8.51 ns)
 
- <State 3>: 4.13ns
+ <State 3>: 6.69ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'add' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [91]  (2.55 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 4>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 5>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 6>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 7>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 8>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 9>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 10>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 11>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 12>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 13>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 14>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 15>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 16>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 17>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 18>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 19>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 20>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 21>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 22>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 23>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 24>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 25>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 26>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 27>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 28>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 29>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 30>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 31>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 32>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 33>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 34>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 35>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
  <State 36>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
 
- <State 37>: 5.62ns
+ <State 37>: 4.13ns
 The critical path consists of the following:
-	'urem' operation ('tmp_2_i_i', Gamelogic2/Gamelogic2.cpp:42->Gamelogic2/Gamelogic2.cpp:47->Gamelogic2/Gamelogic2.cpp:108) [74]  (4.13 ns)
-	'icmp' operation ('tmp_3_i', Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:108) [77]  (1.49 ns)
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
+
+ <State 38>: 5.62ns
+The critical path consists of the following:
+	'urem' operation ('tmp_3_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126) [92]  (4.13 ns)
+	'icmp' operation ('tmp_4_i', Gamelogic2/Gamelogic2.cpp:49->Gamelogic2/Gamelogic2.cpp:126) [95]  (1.49 ns)
 
 
 ============================================================
@@ -534,6 +581,7 @@ N/A
 	State 35
 	State 36
 	State 37
+	State 38
 
 
 ============================================================

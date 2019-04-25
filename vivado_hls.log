@@ -1,8 +1,8 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'isaac' on host 'desktop-6rncov7' (Windows NT_amd64 version 6.2) on Wed Apr 24 15:13:33 -0400 2019
+INFO: [HLS 200-10] For user 'isaac' on host 'desktop-6rncov7' (Windows NT_amd64 version 6.2) on Wed Apr 24 23:08:26 -0400 2019
 INFO: [HLS 200-10] In directory 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj'
-INFO: [HLS 200-10] Opening project 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2'.
-INFO: [HLS 200-10] Opening solution 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Interface2/solution1'.
+INFO: [HLS 200-10] Opening project 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Gamelogic2'.
+INFO: [HLS 200-10] Opening solution 'D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/Gamelogic2/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
@@ -16,4 +16,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 15:13:46 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 23:08:34 2019...

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Interface2:1.0
-// IP Revision: 1904241513
+// IP Revision: 1904242257
 
 (* X_CORE_INFO = "Interface2,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "Testing_HDMI_Interface2_0_0,Interface2,{}" *)
-(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904241513,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904242257,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Interface2_0_0 (
@@ -66,7 +66,10 @@ module Testing_HDMI_Interface2_0_0 (
   XY_Green_V,
   XY_Blue_V,
   center_line_V,
-  right_r
+  right_r,
+  reset_game,
+  right_wins,
+  end_game
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:acc_handshake:1.0 ap_ctrl start" *)
@@ -107,6 +110,15 @@ input wire [11 : 0] center_line_V;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME right_r, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 right_r DATA" *)
 input wire right_r;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME reset_game, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 reset_game DATA" *)
+input wire reset_game;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME right_wins, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 right_wins DATA" *)
+input wire right_wins;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME end_game, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 end_game DATA" *)
+input wire end_game;
 
   Interface2 inst (
     .ap_start(ap_start),
@@ -119,6 +131,9 @@ input wire right_r;
     .XY_Green_V(XY_Green_V),
     .XY_Blue_V(XY_Blue_V),
     .center_line_V(center_line_V),
-    .right_r(right_r)
+    .right_r(right_r),
+    .reset_game(reset_game),
+    .right_wins(right_wins),
+    .end_game(end_game)
   );
 endmodule

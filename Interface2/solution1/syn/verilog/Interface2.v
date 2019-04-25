@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="Interface2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=2.983000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=142,HLS_VERSION=2018_3}" *)
+(* CORE_GENERATION_INFO="Interface2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.238000,HLS_SYN_LAT=0,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=0,HLS_SYN_LUT=165,HLS_VERSION=2018_3}" *)
 
 module Interface2 (
         ap_start,
@@ -20,7 +20,10 @@ module Interface2 (
         XY_Green_V,
         XY_Blue_V,
         center_line_V,
-        right_r
+        right_r,
+        reset_game,
+        right_wins,
+        end_game
 );
 
 
@@ -35,35 +38,44 @@ output  [7:0] XY_Green_V;
 output  [7:0] XY_Blue_V;
 input  [11:0] center_line_V;
 input   right_r;
+input   reset_game;
+input   right_wins;
+input   end_game;
 
 reg[7:0] XY_Red_V;
 reg[7:0] XY_Green_V;
 reg[7:0] XY_Blue_V;
 
-wire   [7:0] storemerge5_cast_fu_120_p3;
-wire   [0:0] tmp_fu_92_p2;
-wire   [0:0] tmp_2_fu_98_p2;
-wire   [7:0] storemerge6_fu_150_p3;
-wire   [0:0] tmp_1_fu_138_p2;
-wire   [0:0] tmp_3_fu_144_p2;
-wire   [7:0] storemerge7_cast_fu_167_p3;
-wire   [7:0] storemerge_fu_129_p3;
-wire   [11:0] tmp_4_cast_fu_104_p1;
-wire   [0:0] tmp_6_fu_108_p2;
-wire   [0:0] not_tmp_6_fu_114_p2;
-wire   [0:0] storemerge6_fu_150_p0;
-wire   [0:0] not_right_fu_161_p0;
-wire   [0:0] not_right_fu_161_p2;
-reg    ap_condition_39;
+wire   [0:0] end_game_read_read_fu_64_p2;
+wire   [7:0] storemerge8_fu_143_p3;
+wire   [0:0] tmp_3_fu_121_p2;
+wire   [0:0] tmp_5_fu_127_p2;
+wire   [7:0] storemerge4_cast_fu_190_p3;
+wire   [7:0] storemerge2_fu_201_p3;
+wire   [7:0] storemerge1_cast_cas_fu_152_p3;
+wire   [7:0] storemerge7_cast_cas_fu_210_p3;
+wire   [7:0] storemerge_cast_cast_fu_161_p3;
+wire   [7:0] storemerge6_cast_cas_fu_219_p3;
+wire   [11:0] tmp_7_cast_fu_133_p1;
+wire   [0:0] tmp_9_fu_137_p2;
+wire   [0:0] not_right_fu_176_p0;
+wire   [0:0] tmp_4_fu_170_p2;
+wire   [0:0] not_right_fu_176_p2;
+wire   [0:0] storemerge4_fu_182_p2;
+wire   [0:0] storemerge4_fu_182_p3;
+wire   [0:0] storemerge2_fu_201_p0;
+wire   [0:0] storemerge7_cast_cas_fu_210_p0;
+wire   [0:0] storemerge6_cast_cas_fu_219_p0;
+reg    ap_condition_37;
 
 always @ (*) begin
     if ((ap_start == 1'b1)) begin
-        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
-            XY_Blue_V = storemerge7_cast_fu_167_p3;
-        end else if ((1'b1 == ap_condition_39)) begin
-            XY_Blue_V = storemerge6_fu_150_p3;
-        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
-            XY_Blue_V = 8'd0;
+        if ((end_game_read_read_fu_64_p2 == 1'd1)) begin
+            XY_Blue_V = storemerge7_cast_cas_fu_210_p3;
+        end else if (((tmp_3_fu_121_p2 == 1'd1) & (end_game_read_read_fu_64_p2 == 1'd0))) begin
+            XY_Blue_V = storemerge4_cast_fu_190_p3;
+        end else if ((1'b1 == ap_condition_37)) begin
+            XY_Blue_V = storemerge1_cast_cas_fu_152_p3;
         end else begin
             XY_Blue_V = 'bx;
         end
@@ -74,12 +86,12 @@ end
 
 always @ (*) begin
     if ((ap_start == 1'b1)) begin
-        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
-            XY_Green_V = storemerge7_cast_fu_167_p3;
-        end else if ((1'b1 == ap_condition_39)) begin
-            XY_Green_V = storemerge6_fu_150_p3;
-        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
-            XY_Green_V = storemerge_fu_129_p3;
+        if ((end_game_read_read_fu_64_p2 == 1'd1)) begin
+            XY_Green_V = storemerge6_cast_cas_fu_219_p3;
+        end else if (((tmp_3_fu_121_p2 == 1'd1) & (end_game_read_read_fu_64_p2 == 1'd0))) begin
+            XY_Green_V = storemerge4_cast_fu_190_p3;
+        end else if ((1'b1 == ap_condition_37)) begin
+            XY_Green_V = storemerge_cast_cast_fu_161_p3;
         end else begin
             XY_Green_V = 'bx;
         end
@@ -90,12 +102,12 @@ end
 
 always @ (*) begin
     if ((ap_start == 1'b1)) begin
-        if (((tmp_1_fu_138_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd1))) begin
-            XY_Red_V = storemerge7_cast_fu_167_p3;
-        end else if ((1'b1 == ap_condition_39)) begin
-            XY_Red_V = storemerge6_fu_150_p3;
-        end else if (((tmp_2_fu_98_p2 == 1'd1) & (tmp_fu_92_p2 == 1'd0))) begin
-            XY_Red_V = storemerge5_cast_fu_120_p3;
+        if ((end_game_read_read_fu_64_p2 == 1'd1)) begin
+            XY_Red_V = storemerge2_fu_201_p3;
+        end else if (((tmp_3_fu_121_p2 == 1'd1) & (end_game_read_read_fu_64_p2 == 1'd0))) begin
+            XY_Red_V = storemerge4_cast_fu_190_p3;
+        end else if ((1'b1 == ap_condition_37)) begin
+            XY_Red_V = storemerge8_fu_143_p3;
         end else begin
             XY_Red_V = 'bx;
         end
@@ -105,7 +117,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_condition_39 = ((tmp_3_fu_144_p2 == 1'd1) & (tmp_1_fu_138_p2 == 1'd0) & (tmp_fu_92_p2 == 1'd1));
+    ap_condition_37 = ((tmp_5_fu_127_p2 == 1'd1) & (tmp_3_fu_121_p2 == 1'd0) & (end_game_read_read_fu_64_p2 == 1'd0));
 end
 
 assign ap_done = ap_start;
@@ -114,32 +126,44 @@ assign ap_idle = 1'b1;
 
 assign ap_ready = ap_start;
 
-assign not_right_fu_161_p0 = right_r;
+assign end_game_read_read_fu_64_p2 = end_game;
 
-assign not_right_fu_161_p2 = (not_right_fu_161_p0 ^ 1'd1);
+assign not_right_fu_176_p0 = right_r;
 
-assign not_tmp_6_fu_114_p2 = (tmp_6_fu_108_p2 ^ 1'd1);
+assign not_right_fu_176_p2 = (not_right_fu_176_p0 ^ 1'd1);
 
-assign storemerge5_cast_fu_120_p3 = ((not_tmp_6_fu_114_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge1_cast_cas_fu_152_p3 = ((tmp_9_fu_137_p2[0:0] === 1'b1) ? 8'd206 : 8'd43);
 
-assign storemerge6_fu_150_p0 = right_r;
+assign storemerge2_fu_201_p0 = right_wins;
 
-assign storemerge6_fu_150_p3 = ((storemerge6_fu_150_p0[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge2_fu_201_p3 = ((storemerge2_fu_201_p0[0:0] === 1'b1) ? 8'd135 : 8'd235);
 
-assign storemerge7_cast_fu_167_p3 = ((not_right_fu_161_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge4_cast_fu_190_p3 = ((storemerge4_fu_182_p3[0:0] === 1'b1) ? 8'd255 : 8'd0);
 
-assign storemerge_fu_129_p3 = ((tmp_6_fu_108_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign storemerge4_fu_182_p2 = right_r;
 
-assign tmp_1_fu_138_p2 = ((x_V < 10'd320) ? 1'b1 : 1'b0);
+assign storemerge4_fu_182_p3 = ((tmp_4_fu_170_p2[0:0] === 1'b1) ? not_right_fu_176_p2 : storemerge4_fu_182_p2);
 
-assign tmp_2_fu_98_p2 = ((y_V > 10'd40) ? 1'b1 : 1'b0);
+assign storemerge6_cast_cas_fu_219_p0 = right_wins;
 
-assign tmp_3_fu_144_p2 = ((x_V > 10'd320) ? 1'b1 : 1'b0);
+assign storemerge6_cast_cas_fu_219_p3 = ((storemerge6_cast_cas_fu_219_p0[0:0] === 1'b1) ? 8'd235 : 8'd54);
 
-assign tmp_4_cast_fu_104_p1 = x_V;
+assign storemerge7_cast_cas_fu_210_p0 = right_wins;
 
-assign tmp_6_fu_108_p2 = ((tmp_4_cast_fu_104_p1 > center_line_V) ? 1'b1 : 1'b0);
+assign storemerge7_cast_cas_fu_210_p3 = ((storemerge7_cast_cas_fu_210_p0[0:0] === 1'b1) ? 8'd206 : 8'd43);
 
-assign tmp_fu_92_p2 = ((y_V < 10'd40) ? 1'b1 : 1'b0);
+assign storemerge8_fu_143_p3 = ((tmp_9_fu_137_p2[0:0] === 1'b1) ? 8'd135 : 8'd235);
+
+assign storemerge_cast_cast_fu_161_p3 = ((tmp_9_fu_137_p2[0:0] === 1'b1) ? 8'd235 : 8'd54);
+
+assign tmp_3_fu_121_p2 = ((y_V < 10'd40) ? 1'b1 : 1'b0);
+
+assign tmp_4_fu_170_p2 = ((x_V < 10'd320) ? 1'b1 : 1'b0);
+
+assign tmp_5_fu_127_p2 = ((y_V > 10'd40) ? 1'b1 : 1'b0);
+
+assign tmp_7_cast_fu_133_p1 = x_V;
+
+assign tmp_9_fu_137_p2 = ((tmp_7_cast_fu_133_p1 > center_line_V) ? 1'b1 : 1'b0);
 
 endmodule //Interface2

@@ -19,6 +19,9 @@ set C_modelArgList {
 	{ XY_Blue_V int 8 regular {pointer 1}  }
 	{ center_line_V int 12 regular  }
 	{ right_r uint 1 regular  }
+	{ reset_game uint 1 unused  }
+	{ right_wins uint 1 regular  }
+	{ end_game uint 1 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "x_V", "interface" : "wire", "bitwidth" : 10, "direction" : "READONLY", "bitSlice":[{"low":0,"up":9,"cElement": [{"cName": "x.V","cData": "uint10","bit_use": { "low": 0,"up": 9},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -27,9 +30,12 @@ set C_modelArgMapList {[
  	{ "Name" : "XY_Green_V", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "XY_Green.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "XY_Blue_V", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "XY_Blue.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "center_line_V", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY", "bitSlice":[{"low":0,"up":11,"cElement": [{"cName": "center_line.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "right_r", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "right","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
+ 	{ "Name" : "right_r", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "right","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "reset_game", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "reset_game","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "right_wins", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "right_wins","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "end_game", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "end_game","cData": "bool","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 11
+set portNum 14
 set portList { 
 	{ ap_start sc_in sc_logic 1 start -1 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
@@ -42,6 +48,9 @@ set portList {
 	{ XY_Blue_V sc_out sc_lv 8 signal 4 } 
 	{ center_line_V sc_in sc_lv 12 signal 5 } 
 	{ right_r sc_in sc_logic 1 signal 6 } 
+	{ reset_game sc_in sc_logic 1 signal 7 } 
+	{ right_wins sc_in sc_logic 1 signal 8 } 
+	{ end_game sc_in sc_logic 1 signal 9 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
@@ -54,7 +63,10 @@ set NewPortList {[
  	{ "name": "XY_Green_V", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "XY_Green_V", "role": "default" }} , 
  	{ "name": "XY_Blue_V", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "XY_Blue_V", "role": "default" }} , 
  	{ "name": "center_line_V", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "center_line_V", "role": "default" }} , 
- 	{ "name": "right_r", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "right_r", "role": "default" }}  ]}
+ 	{ "name": "right_r", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "right_r", "role": "default" }} , 
+ 	{ "name": "reset_game", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "reset_game", "role": "default" }} , 
+ 	{ "name": "right_wins", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "right_wins", "role": "default" }} , 
+ 	{ "name": "end_game", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "end_game", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -77,7 +89,10 @@ set RtlHierarchyInfo {[
 			{"Name" : "XY_Green_V", "Type" : "None", "Direction" : "O"},
 			{"Name" : "XY_Blue_V", "Type" : "None", "Direction" : "O"},
 			{"Name" : "center_line_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "right_r", "Type" : "None", "Direction" : "I"}]}]}
+			{"Name" : "right_r", "Type" : "None", "Direction" : "I"},
+			{"Name" : "reset_game", "Type" : "None", "Direction" : "I"},
+			{"Name" : "right_wins", "Type" : "None", "Direction" : "I"},
+			{"Name" : "end_game", "Type" : "None", "Direction" : "I"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -88,7 +103,10 @@ set ArgLastReadFirstWriteLatency {
 		XY_Green_V {Type O LastRead -1 FirstWrite 0}
 		XY_Blue_V {Type O LastRead -1 FirstWrite 0}
 		center_line_V {Type I LastRead 0 FirstWrite -1}
-		right_r {Type I LastRead 0 FirstWrite -1}}}
+		right_r {Type I LastRead 0 FirstWrite -1}
+		reset_game {Type I LastRead -1 FirstWrite -1}
+		right_wins {Type I LastRead 0 FirstWrite -1}
+		end_game {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -108,6 +126,9 @@ set Spec2ImplPortList {
 	XY_Blue_V { ap_none {  { XY_Blue_V out_data 1 8 } } }
 	center_line_V { ap_none {  { center_line_V in_data 0 12 } } }
 	right_r { ap_none {  { right_r in_data 0 1 } } }
+	reset_game { ap_none {  { reset_game in_data 0 1 } } }
+	right_wins { ap_none {  { right_wins in_data 0 1 } } }
+	end_game { ap_none {  { end_game in_data 0 1 } } }
 }
 
 set busDeadlockParameterList { 
