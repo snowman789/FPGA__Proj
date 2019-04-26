@@ -14,5 +14,5 @@
   <xd:arg xd:name="*(right_out)" xd:originalName="right_out" xd:direction="out" xd:interfaceRef="right_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="37"/>
   <xd:arg xd:name="right_in" xd:originalName="right_in" xd:direction="in" xd:interfaceRef="right_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="37"/>
   <xd:latencyEstimates xd:best-case="1" xd:worst-case="37" xd:average-case="13"/>
-  <xd:resourceEstimates xd:LUT="903" xd:FF="623" xd:BRAM="0" xd:DSP="0"/>
+  <xd:resourceEstimates xd:LUT="926" xd:FF="627" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

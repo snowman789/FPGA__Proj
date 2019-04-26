@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="Gamelogic2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.510000,HLS_SYN_LAT=13,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=623,HLS_SYN_LUT=903,HLS_VERSION=2018_3}" *)
+(* CORE_GENERATION_INFO="Gamelogic2,hls_ip_2018_3,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xc7z020clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=8.510000,HLS_SYN_LAT=13,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=627,HLS_SYN_LUT=926,HLS_VERSION=2018_3}" *)
 
 module Gamelogic2 (
         ap_clk,
@@ -94,7 +94,6 @@ reg ap_done;
 reg ap_idle;
 reg ap_ready;
 reg reset_game_out;
-reg right_wins;
 reg end_game_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [37:0] ap_CS_fsm;
@@ -103,92 +102,100 @@ reg   [31:0] btn_count;
 reg   [0:0] game_over;
 reg   [31:0] RandSeed;
 reg   [0:0] first_run;
-wire   [0:0] brmerge1_fu_244_p2;
-reg   [0:0] brmerge1_reg_540;
-wire   [31:0] btn_count_loc_fu_260_p3;
-reg   [31:0] btn_count_loc_reg_546;
-wire   [0:0] game_over_load_load_fu_268_p1;
-reg   [0:0] game_over_load_reg_553;
-wire   [11:0] to_add_8_fu_450_p3;
-reg   [11:0] to_add_8_reg_558;
-wire   [0:0] tmp_9_fu_458_p2;
-reg   [0:0] tmp_9_reg_564;
+wire   [13:0] new_center_cast1_fu_242_p1;
+wire   [0:0] brmerge1_fu_262_p2;
+reg   [0:0] brmerge1_reg_593;
+wire   [31:0] btn_count_loc_fu_278_p3;
+reg   [31:0] btn_count_loc_reg_599;
+wire   [0:0] game_over_load_load_fu_286_p1;
+reg   [0:0] game_over_load_reg_606;
+wire   [13:0] new_center_8_fu_484_p3;
+reg   [13:0] new_center_8_reg_610;
+wire   [0:0] tmp_1_fu_492_p2;
+reg   [0:0] tmp_1_reg_616;
 wire    ap_CS_fsm_state2;
-wire   [31:0] tmp_i_i_fu_467_p2;
-reg   [31:0] tmp_i_i_reg_568;
+wire   [31:0] tmp_i_i_fu_501_p2;
+reg   [31:0] tmp_i_i_reg_620;
 wire    ap_CS_fsm_state3;
 reg   [0:0] ap_phi_mux_btn_count_flag_2_phi_fu_163_p6;
 reg   [0:0] btn_count_flag_2_reg_160;
 wire    ap_CS_fsm_state38;
 reg   [31:0] ap_phi_mux_btn_count_new_2_phi_fu_175_p6;
 reg   [31:0] btn_count_new_2_reg_172;
-reg   [11:0] ap_phi_mux_to_add_9_phi_fu_187_p6;
-reg   [11:0] to_add_9_reg_184;
-reg   [0:0] ap_phi_mux_p_i_phi_fu_198_p6;
-wire   [0:0] first_run_load_load_fu_501_p1;
-wire   [0:0] tmp_i_fu_511_p2;
-wire   [0:0] tmp_1_i_fu_516_p2;
-reg   [0:0] ap_phi_mux_game_over_loc_phi_fu_212_p4;
-reg   [11:0] ap_phi_mux_to_add_s_phi_fu_223_p4;
-wire   [31:0] grp_fu_478_p2;
+reg   [13:0] ap_phi_mux_new_center_9_phi_fu_187_p6;
+reg   [13:0] new_center_9_reg_184;
+reg   [0:0] ap_phi_mux_right_wins_write_ass_phi_fu_198_p6;
+wire   [0:0] first_run_load_load_fu_535_p1;
+wire   [0:0] tmp_i_fu_545_p2;
+wire   [0:0] tmp_1_i_fu_550_p2;
+reg   [0:0] ap_phi_mux_end_game_write_assig_phi_fu_213_p6;
+reg   [13:0] ap_phi_mux_new_center_s_phi_fu_228_p4;
+wire   [31:0] grp_fu_512_p2;
 reg    reset_game_out_preg;
-wire   [0:0] tmp_fu_232_p0;
-wire   [0:0] tmp_fu_232_p1;
-wire   [0:0] tmp1_fu_238_p0;
-wire   [0:0] tmp1_fu_238_p1;
-wire   [0:0] tmp1_fu_238_p2;
-wire   [0:0] tmp_fu_232_p2;
-wire   [31:0] tmp_s_fu_254_p2;
-wire   [0:0] p_s_fu_284_p0;
-wire   [11:0] tmp_1_fu_272_p2;
-wire   [0:0] p_1_fu_292_p0;
-wire   [11:0] tmp_2_fu_278_p2;
-wire   [0:0] sel_tmp_fu_300_p0;
-wire   [0:0] sel_tmp_fu_300_p1;
-wire   [0:0] sel_tmp_fu_300_p2;
-wire   [11:0] p_1_fu_292_p3;
-wire   [0:0] sel_tmp3_fu_314_p0;
-wire   [0:0] sel_tmp4_fu_320_p0;
-wire   [0:0] sel_tmp3_fu_314_p2;
-wire   [0:0] sel_tmp4_fu_320_p2;
-wire   [0:0] sel_tmp5_fu_326_p1;
-wire   [0:0] sel_tmp5_fu_326_p2;
-wire   [11:0] sel_tmp2_fu_306_p3;
-wire   [0:0] sel_tmp9_fu_340_p0;
-wire   [0:0] sel_tmp9_fu_340_p2;
-wire   [0:0] sel_tmp1_fu_346_p2;
-wire   [0:0] sel_tmp7_fu_352_p1;
-wire   [0:0] sel_tmp7_fu_352_p2;
-wire   [11:0] sel_tmp6_fu_332_p3;
-wire   [0:0] sel_tmp10_fu_366_p0;
-wire   [0:0] sel_tmp10_fu_366_p2;
-wire   [0:0] sel_tmp11_fu_372_p2;
-wire   [11:0] p_s_fu_284_p3;
-wire   [11:0] sel_tmp8_fu_358_p3;
-wire   [0:0] sel_tmp13_fu_386_p0;
-wire   [0:0] sel_tmp14_fu_392_p0;
-wire   [0:0] sel_tmp13_fu_386_p2;
-wire   [0:0] sel_tmp14_fu_392_p2;
-wire   [11:0] sel_tmp12_fu_378_p3;
-wire   [0:0] sel_tmp25_demorgan_fu_406_p0;
-wire   [0:0] sel_tmp25_demorgan_fu_406_p1;
-wire   [0:0] sel_tmp25_demorgan_fu_406_p2;
-wire   [0:0] sel_tmp17_fu_418_p0;
-wire   [0:0] sel_tmp16_fu_412_p2;
-wire   [0:0] sel_tmp17_fu_418_p2;
-wire   [11:0] sel_tmp15_fu_398_p3;
-wire   [0:0] sel_tmp32_demorgan_fu_432_p1;
-wire   [0:0] sel_tmp32_demorgan_fu_432_p2;
-wire   [0:0] sel_tmp20_fu_444_p0;
-wire   [0:0] sel_tmp19_fu_438_p2;
-wire   [0:0] sel_tmp20_fu_444_p2;
-wire   [11:0] sel_tmp18_fu_424_p3;
-wire  signed [31:0] tmp_i_i_fu_467_p1;
-wire   [31:0] grp_fu_478_p0;
-wire   [7:0] grp_fu_478_p1;
-wire   [6:0] tmp_3_fu_484_p1;
-reg    grp_fu_478_ap_start;
-wire    grp_fu_478_ap_done;
+wire   [0:0] tmp_fu_250_p0;
+wire   [0:0] tmp_fu_250_p1;
+wire   [0:0] tmp1_fu_256_p0;
+wire   [0:0] tmp1_fu_256_p1;
+wire   [0:0] tmp1_fu_256_p2;
+wire   [0:0] tmp_fu_250_p2;
+wire   [31:0] tmp_s_fu_272_p2;
+wire   [12:0] new_center_cast_fu_246_p1;
+wire  signed [12:0] new_center_fu_290_p2;
+wire   [12:0] new_center_1_fu_300_p2;
+wire   [0:0] p_s_fu_310_p0;
+wire   [12:0] p_s_fu_310_p3;
+wire   [0:0] p_1_fu_322_p0;
+wire   [12:0] p_1_fu_322_p3;
+wire   [0:0] sel_tmp_fu_334_p0;
+wire   [0:0] sel_tmp_fu_334_p1;
+wire   [0:0] sel_tmp_fu_334_p2;
+wire  signed [13:0] new_center_1_cast_fu_296_p1;
+wire   [13:0] p_1_cast_fu_330_p1;
+wire   [0:0] sel_tmp3_fu_348_p0;
+wire   [0:0] sel_tmp4_fu_354_p0;
+wire   [0:0] sel_tmp3_fu_348_p2;
+wire   [0:0] sel_tmp4_fu_354_p2;
+wire   [0:0] sel_tmp5_fu_360_p1;
+wire   [0:0] sel_tmp5_fu_360_p2;
+wire   [13:0] new_center_2_cast_fu_306_p1;
+wire   [13:0] new_center_2_fu_340_p3;
+wire   [0:0] sel_tmp9_fu_374_p0;
+wire   [0:0] sel_tmp9_fu_374_p2;
+wire   [0:0] sel_tmp1_fu_380_p2;
+wire   [0:0] sel_tmp2_fu_386_p1;
+wire   [0:0] sel_tmp2_fu_386_p2;
+wire   [13:0] new_center_3_fu_366_p3;
+wire   [0:0] sel_tmp7_fu_400_p0;
+wire   [0:0] sel_tmp7_fu_400_p2;
+wire   [0:0] sel_tmp8_fu_406_p2;
+wire  signed [13:0] p_cast_fu_318_p1;
+wire   [13:0] new_center_4_fu_392_p3;
+wire   [0:0] sel_tmp6_fu_420_p0;
+wire   [0:0] sel_tmp10_fu_426_p0;
+wire   [0:0] sel_tmp6_fu_420_p2;
+wire   [0:0] sel_tmp10_fu_426_p2;
+wire   [13:0] new_center_5_fu_412_p3;
+wire   [0:0] sel_tmp25_demorgan_fu_440_p0;
+wire   [0:0] sel_tmp25_demorgan_fu_440_p1;
+wire   [0:0] sel_tmp25_demorgan_fu_440_p2;
+wire   [0:0] sel_tmp12_fu_452_p0;
+wire   [0:0] sel_tmp11_fu_446_p2;
+wire   [0:0] sel_tmp12_fu_452_p2;
+wire   [13:0] new_center_6_fu_432_p3;
+wire   [0:0] sel_tmp32_demorgan_fu_466_p1;
+wire   [0:0] sel_tmp32_demorgan_fu_466_p2;
+wire   [0:0] sel_tmp14_fu_478_p0;
+wire   [0:0] sel_tmp13_fu_472_p2;
+wire   [0:0] sel_tmp14_fu_478_p2;
+wire   [13:0] new_center_7_fu_458_p3;
+wire  signed [31:0] tmp_i_i_fu_501_p1;
+wire   [31:0] grp_fu_512_p0;
+wire   [7:0] grp_fu_512_p1;
+wire   [6:0] tmp_2_fu_518_p1;
+wire   [0:0] tmp_3_fu_561_p3;
+wire   [11:0] tmp_4_fu_569_p1;
+reg    grp_fu_512_ap_start;
+wire    grp_fu_512_ap_done;
 reg   [37:0] ap_NS_fsm;
 
 // power-on initialization
@@ -210,12 +217,12 @@ Gamelogic2_urem_3bkb #(
 Gamelogic2_urem_3bkb_U1(
     .clk(ap_clk),
     .reset(ap_rst),
-    .start(grp_fu_478_ap_start),
-    .done(grp_fu_478_ap_done),
-    .din0(grp_fu_478_p0),
-    .din1(grp_fu_478_p1),
+    .start(grp_fu_512_ap_start),
+    .done(grp_fu_512_ap_done),
+    .din0(grp_fu_512_p0),
+    .din1(grp_fu_512_p1),
     .ce(1'b1),
-    .dout(grp_fu_478_p2)
+    .dout(grp_fu_512_p2)
 );
 
 always @ (posedge ap_clk) begin
@@ -237,44 +244,44 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_9_fu_458_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        btn_count_flag_2_reg_160 <= brmerge1_reg_540;
-    end else if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+    if (((tmp_1_fu_492_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        btn_count_flag_2_reg_160 <= brmerge1_reg_593;
+    end else if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
         btn_count_flag_2_reg_160 <= 1'd1;
-    end else if (((game_over_load_load_fu_268_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        btn_count_flag_2_reg_160 <= brmerge1_fu_244_p2;
+    end else if (((game_over_load_load_fu_286_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+        btn_count_flag_2_reg_160 <= brmerge1_fu_262_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_9_fu_458_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
-        btn_count_new_2_reg_172 <= btn_count_loc_reg_546;
-    end else if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+    if (((tmp_1_fu_492_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+        btn_count_new_2_reg_172 <= btn_count_loc_reg_599;
+    end else if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
         btn_count_new_2_reg_172 <= 32'd0;
-    end else if (((game_over_load_load_fu_268_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        btn_count_new_2_reg_172 <= btn_count_loc_fu_260_p3;
+    end else if (((game_over_load_load_fu_286_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+        btn_count_new_2_reg_172 <= btn_count_loc_fu_278_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((((tmp_9_fu_458_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2)) | ((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38)))) begin
-        to_add_9_reg_184 <= to_add_8_reg_558;
-    end else if (((game_over_load_load_fu_268_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        to_add_9_reg_184 <= center_line_in_V;
+    if ((((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((tmp_1_fu_492_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2)))) begin
+        new_center_9_reg_184 <= new_center_8_reg_610;
+    end else if (((game_over_load_load_fu_286_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+        new_center_9_reg_184 <= new_center_cast1_fu_242_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        RandSeed <= grp_fu_478_p2;
+    if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+        RandSeed <= grp_fu_512_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        brmerge1_reg_540 <= brmerge1_fu_244_p2;
-        btn_count_loc_reg_546 <= btn_count_loc_fu_260_p3;
-        game_over_load_reg_553 <= game_over;
+        brmerge1_reg_593 <= brmerge1_fu_262_p2;
+        btn_count_loc_reg_599 <= btn_count_loc_fu_278_p3;
+        game_over_load_reg_606 <= game_over;
     end
 end
 
@@ -285,32 +292,32 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((first_run_load_load_fu_501_p1 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
+    if (((first_run_load_load_fu_535_p1 == 1'd1) & (1'b1 == ap_CS_fsm_state38))) begin
         first_run <= 1'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((first_run_load_load_fu_501_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        game_over <= ap_phi_mux_p_i_phi_fu_198_p6;
+    if ((((tmp_1_i_fu_550_p2 == 1'd1) & (tmp_i_fu_545_p2 == 1'd0) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((tmp_i_fu_545_p2 == 1'd1) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)))) begin
+        game_over <= 1'd1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((game_over_load_load_fu_286_p1 == 1'd0) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+        new_center_8_reg_610 <= new_center_8_fu_484_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        tmp_9_reg_564 <= tmp_9_fu_458_p2;
+        tmp_1_reg_616 <= tmp_1_fu_492_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((tmp_9_fu_458_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        tmp_i_i_reg_568 <= tmp_i_i_fu_467_p2;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((game_over_load_load_fu_268_p1 == 1'd0) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        to_add_8_reg_558 <= to_add_8_fu_450_p3;
+    if (((tmp_1_fu_492_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+        tmp_i_i_reg_620 <= tmp_i_i_fu_501_p2;
     end
 end
 
@@ -331,7 +338,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+    if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
         ap_phi_mux_btn_count_flag_2_phi_fu_163_p6 = 1'd1;
     end else begin
         ap_phi_mux_btn_count_flag_2_phi_fu_163_p6 = btn_count_flag_2_reg_160;
@@ -339,7 +346,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+    if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
         ap_phi_mux_btn_count_new_2_phi_fu_175_p6 = 32'd0;
     end else begin
         ap_phi_mux_btn_count_new_2_phi_fu_175_p6 = btn_count_new_2_reg_172;
@@ -347,48 +354,44 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state38)) begin
-        if ((first_run_load_load_fu_501_p1 == 1'd0)) begin
-            ap_phi_mux_game_over_loc_phi_fu_212_p4 = ap_phi_mux_p_i_phi_fu_198_p6;
-        end else if ((first_run_load_load_fu_501_p1 == 1'd1)) begin
-            ap_phi_mux_game_over_loc_phi_fu_212_p4 = game_over_load_reg_553;
-        end else begin
-            ap_phi_mux_game_over_loc_phi_fu_212_p4 = 'bx;
-        end
+    if (((tmp_1_i_fu_550_p2 == 1'd0) & (tmp_i_fu_545_p2 == 1'd0) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+        ap_phi_mux_end_game_write_assig_phi_fu_213_p6 = 1'd0;
+    end else if ((((tmp_1_i_fu_550_p2 == 1'd1) & (tmp_i_fu_545_p2 == 1'd0) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((tmp_i_fu_545_p2 == 1'd1) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)))) begin
+        ap_phi_mux_end_game_write_assig_phi_fu_213_p6 = 1'd1;
     end else begin
-        ap_phi_mux_game_over_loc_phi_fu_212_p4 = 'bx;
+        ap_phi_mux_end_game_write_assig_phi_fu_213_p6 = 'bx;
     end
 end
 
 always @ (*) begin
-    if (((tmp_1_i_fu_516_p2 == 1'd0) & (tmp_i_fu_511_p2 == 1'd0) & (first_run_load_load_fu_501_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        ap_phi_mux_p_i_phi_fu_198_p6 = 1'd0;
-    end else if ((((tmp_1_i_fu_516_p2 == 1'd1) & (tmp_i_fu_511_p2 == 1'd0) & (first_run_load_load_fu_501_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((tmp_i_fu_511_p2 == 1'd1) & (first_run_load_load_fu_501_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)))) begin
-        ap_phi_mux_p_i_phi_fu_198_p6 = 1'd1;
+    if (((tmp_1_reg_616 == 1'd1) & (game_over_load_reg_606 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+        ap_phi_mux_new_center_9_phi_fu_187_p6 = new_center_8_reg_610;
     end else begin
-        ap_phi_mux_p_i_phi_fu_198_p6 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if (((tmp_9_reg_564 == 1'd1) & (game_over_load_reg_553 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        ap_phi_mux_to_add_9_phi_fu_187_p6 = to_add_8_reg_558;
-    end else begin
-        ap_phi_mux_to_add_9_phi_fu_187_p6 = to_add_9_reg_184;
+        ap_phi_mux_new_center_9_phi_fu_187_p6 = new_center_9_reg_184;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state38)) begin
-        if ((first_run_load_load_fu_501_p1 == 1'd0)) begin
-            ap_phi_mux_to_add_s_phi_fu_223_p4 = ap_phi_mux_to_add_9_phi_fu_187_p6;
-        end else if ((first_run_load_load_fu_501_p1 == 1'd1)) begin
-            ap_phi_mux_to_add_s_phi_fu_223_p4 = 12'd320;
+        if ((first_run_load_load_fu_535_p1 == 1'd0)) begin
+            ap_phi_mux_new_center_s_phi_fu_228_p4 = ap_phi_mux_new_center_9_phi_fu_187_p6;
+        end else if ((first_run_load_load_fu_535_p1 == 1'd1)) begin
+            ap_phi_mux_new_center_s_phi_fu_228_p4 = 14'd320;
         end else begin
-            ap_phi_mux_to_add_s_phi_fu_223_p4 = 'bx;
+            ap_phi_mux_new_center_s_phi_fu_228_p4 = 'bx;
         end
     end else begin
-        ap_phi_mux_to_add_s_phi_fu_223_p4 = 'bx;
+        ap_phi_mux_new_center_s_phi_fu_228_p4 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((((tmp_1_i_fu_550_p2 == 1'd0) & (tmp_i_fu_545_p2 == 1'd0) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)) | ((tmp_1_i_fu_550_p2 == 1'd1) & (tmp_i_fu_545_p2 == 1'd0) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38)))) begin
+        ap_phi_mux_right_wins_write_ass_phi_fu_198_p6 = 1'd0;
+    end else if (((tmp_i_fu_545_p2 == 1'd1) & (first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
+        ap_phi_mux_right_wins_write_ass_phi_fu_198_p6 = 1'd1;
+    end else begin
+        ap_phi_mux_right_wins_write_ass_phi_fu_198_p6 = 'bx;
     end
 end
 
@@ -401,7 +404,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state38)) begin
+    if (((first_run_load_load_fu_535_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
         end_game_ap_vld = 1'b1;
     end else begin
         end_game_ap_vld = 1'b0;
@@ -410,9 +413,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        grp_fu_478_ap_start = 1'b1;
+        grp_fu_512_ap_start = 1'b1;
     end else begin
-        grp_fu_478_ap_start = 1'b0;
+        grp_fu_512_ap_start = 1'b0;
     end
 end
 
@@ -425,32 +428,18 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((first_run_load_load_fu_501_p1 == 1'd0) & (1'b1 == ap_CS_fsm_state38))) begin
-        if ((tmp_i_fu_511_p2 == 1'd1)) begin
-            right_wins = 1'd1;
-        end else if (((tmp_1_i_fu_516_p2 == 1'd1) & (tmp_i_fu_511_p2 == 1'd0))) begin
-            right_wins = 1'd0;
-        end else begin
-            right_wins = 'bx;
-        end
-    end else begin
-        right_wins = 'bx;
-    end
-end
-
-always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((game_over_load_load_fu_268_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            if (((game_over_load_load_fu_286_p1 == 1'd1) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state38;
-            end else if (((game_over_load_load_fu_268_p1 == 1'd0) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
+            end else if (((game_over_load_load_fu_286_p1 == 1'd0) & (ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((tmp_9_fu_458_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((tmp_1_fu_492_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state38;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -578,138 +567,156 @@ assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
 assign ap_CS_fsm_state38 = ap_CS_fsm[32'd37];
 
-assign brmerge1_fu_244_p2 = (tmp_fu_232_p2 | tmp1_fu_238_p2);
+assign brmerge1_fu_262_p2 = (tmp_fu_250_p2 | tmp1_fu_256_p2);
 
-assign btn_count_loc_fu_260_p3 = ((brmerge1_fu_244_p2[0:0] === 1'b1) ? tmp_s_fu_254_p2 : btn_count);
+assign btn_count_loc_fu_278_p3 = ((brmerge1_fu_262_p2[0:0] === 1'b1) ? tmp_s_fu_272_p2 : btn_count);
 
-assign center_line_out_V = ap_phi_mux_to_add_s_phi_fu_223_p4;
+assign center_line_out_V = ((tmp_3_fu_561_p3[0:0] === 1'b1) ? 12'd0 : tmp_4_fu_569_p1);
 
-assign end_game = ap_phi_mux_game_over_loc_phi_fu_212_p4;
+assign end_game = ap_phi_mux_end_game_write_assig_phi_fu_213_p6;
 
-assign first_run_load_load_fu_501_p1 = first_run;
+assign first_run_load_load_fu_535_p1 = first_run;
 
-assign game_over_load_load_fu_268_p1 = game_over;
+assign game_over_load_load_fu_286_p1 = game_over;
 
-assign grp_fu_478_p0 = (32'd100 + tmp_i_i_reg_568);
+assign grp_fu_512_p0 = (32'd100 + tmp_i_i_reg_620);
 
-assign grp_fu_478_p1 = 32'd100;
+assign grp_fu_512_p1 = 32'd100;
 
-assign p_1_fu_292_p0 = btn3;
+assign new_center_1_cast_fu_296_p1 = new_center_fu_290_p2;
 
-assign p_1_fu_292_p3 = ((p_1_fu_292_p0[0:0] === 1'b1) ? tmp_2_fu_278_p2 : center_line_in_V);
+assign new_center_1_fu_300_p2 = (new_center_cast_fu_246_p1 + 13'd10);
 
-assign p_s_fu_284_p0 = btn3;
+assign new_center_2_cast_fu_306_p1 = new_center_1_fu_300_p2;
 
-assign p_s_fu_284_p3 = ((p_s_fu_284_p0[0:0] === 1'b1) ? tmp_1_fu_272_p2 : center_line_in_V);
+assign new_center_2_fu_340_p3 = ((sel_tmp_fu_334_p2[0:0] === 1'b1) ? new_center_1_cast_fu_296_p1 : p_1_cast_fu_330_p1);
 
-assign right_out = ((tmp_3_fu_484_p1 > 7'd50) ? 1'b1 : 1'b0);
+assign new_center_3_fu_366_p3 = ((sel_tmp5_fu_360_p2[0:0] === 1'b1) ? new_center_2_cast_fu_306_p1 : new_center_2_fu_340_p3);
 
-assign sel_tmp10_fu_366_p0 = btn1;
+assign new_center_4_fu_392_p3 = ((sel_tmp2_fu_386_p2[0:0] === 1'b1) ? new_center_2_cast_fu_306_p1 : new_center_3_fu_366_p3);
 
-assign sel_tmp10_fu_366_p2 = (sel_tmp10_fu_366_p0 ^ 1'd1);
+assign new_center_5_fu_412_p3 = ((sel_tmp8_fu_406_p2[0:0] === 1'b1) ? p_cast_fu_318_p1 : new_center_4_fu_392_p3);
 
-assign sel_tmp11_fu_372_p2 = (sel_tmp1_fu_346_p2 & sel_tmp10_fu_366_p2);
+assign new_center_6_fu_432_p3 = ((sel_tmp10_fu_426_p2[0:0] === 1'b1) ? new_center_2_cast_fu_306_p1 : new_center_5_fu_412_p3);
 
-assign sel_tmp12_fu_378_p3 = ((sel_tmp11_fu_372_p2[0:0] === 1'b1) ? p_s_fu_284_p3 : sel_tmp8_fu_358_p3);
+assign new_center_7_fu_458_p3 = ((sel_tmp12_fu_452_p2[0:0] === 1'b1) ? new_center_1_cast_fu_296_p1 : new_center_6_fu_432_p3);
 
-assign sel_tmp13_fu_386_p0 = right_in;
+assign new_center_8_fu_484_p3 = ((sel_tmp14_fu_478_p2[0:0] === 1'b1) ? new_center_1_cast_fu_296_p1 : new_center_7_fu_458_p3);
 
-assign sel_tmp13_fu_386_p2 = (sel_tmp13_fu_386_p0 ^ 1'd1);
+assign new_center_cast1_fu_242_p1 = center_line_in_V;
 
-assign sel_tmp14_fu_392_p0 = btn0;
+assign new_center_cast_fu_246_p1 = center_line_in_V;
 
-assign sel_tmp14_fu_392_p2 = (sel_tmp14_fu_392_p0 & sel_tmp13_fu_386_p2);
+assign new_center_fu_290_p2 = ($signed(new_center_cast_fu_246_p1) + $signed(13'd8182));
 
-assign sel_tmp15_fu_398_p3 = ((sel_tmp14_fu_392_p2[0:0] === 1'b1) ? tmp_2_fu_278_p2 : sel_tmp12_fu_378_p3);
+assign p_1_cast_fu_330_p1 = p_1_fu_322_p3;
 
-assign sel_tmp16_fu_412_p2 = (sel_tmp25_demorgan_fu_406_p2 ^ 1'd1);
+assign p_1_fu_322_p0 = btn3;
 
-assign sel_tmp17_fu_418_p0 = btn2;
+assign p_1_fu_322_p3 = ((p_1_fu_322_p0[0:0] === 1'b1) ? new_center_1_fu_300_p2 : new_center_cast_fu_246_p1);
 
-assign sel_tmp17_fu_418_p2 = (sel_tmp17_fu_418_p0 & sel_tmp16_fu_412_p2);
+assign p_cast_fu_318_p1 = $signed(p_s_fu_310_p3);
 
-assign sel_tmp18_fu_424_p3 = ((sel_tmp17_fu_418_p2[0:0] === 1'b1) ? tmp_1_fu_272_p2 : sel_tmp15_fu_398_p3);
+assign p_s_fu_310_p0 = btn3;
 
-assign sel_tmp19_fu_438_p2 = (sel_tmp32_demorgan_fu_432_p2 ^ 1'd1);
+assign p_s_fu_310_p3 = ((p_s_fu_310_p0[0:0] === 1'b1) ? new_center_fu_290_p2 : new_center_cast_fu_246_p1);
 
-assign sel_tmp1_fu_346_p2 = (sel_tmp9_fu_340_p2 & sel_tmp4_fu_320_p2);
+assign right_out = ((tmp_2_fu_518_p1 > 7'd50) ? 1'b1 : 1'b0);
 
-assign sel_tmp20_fu_444_p0 = btn1;
+assign right_wins = ap_phi_mux_right_wins_write_ass_phi_fu_198_p6;
 
-assign sel_tmp20_fu_444_p2 = (sel_tmp20_fu_444_p0 & sel_tmp19_fu_438_p2);
+assign sel_tmp10_fu_426_p0 = btn0;
 
-assign sel_tmp25_demorgan_fu_406_p0 = right_in;
+assign sel_tmp10_fu_426_p2 = (sel_tmp6_fu_420_p2 & sel_tmp10_fu_426_p0);
 
-assign sel_tmp25_demorgan_fu_406_p1 = btn0;
+assign sel_tmp11_fu_446_p2 = (sel_tmp25_demorgan_fu_440_p2 ^ 1'd1);
 
-assign sel_tmp25_demorgan_fu_406_p2 = (sel_tmp25_demorgan_fu_406_p1 | sel_tmp25_demorgan_fu_406_p0);
+assign sel_tmp12_fu_452_p0 = btn2;
 
-assign sel_tmp2_fu_306_p3 = ((sel_tmp_fu_300_p2[0:0] === 1'b1) ? tmp_1_fu_272_p2 : p_1_fu_292_p3);
+assign sel_tmp12_fu_452_p2 = (sel_tmp12_fu_452_p0 & sel_tmp11_fu_446_p2);
 
-assign sel_tmp32_demorgan_fu_432_p1 = btn2;
+assign sel_tmp13_fu_472_p2 = (sel_tmp32_demorgan_fu_466_p2 ^ 1'd1);
 
-assign sel_tmp32_demorgan_fu_432_p2 = (sel_tmp32_demorgan_fu_432_p1 | sel_tmp25_demorgan_fu_406_p2);
+assign sel_tmp14_fu_478_p0 = btn1;
 
-assign sel_tmp3_fu_314_p0 = btn0;
+assign sel_tmp14_fu_478_p2 = (sel_tmp14_fu_478_p0 & sel_tmp13_fu_472_p2);
 
-assign sel_tmp3_fu_314_p2 = (sel_tmp3_fu_314_p0 ^ 1'd1);
+assign sel_tmp1_fu_380_p2 = (sel_tmp9_fu_374_p2 & sel_tmp4_fu_354_p2);
 
-assign sel_tmp4_fu_320_p0 = right_in;
+assign sel_tmp25_demorgan_fu_440_p0 = right_in;
 
-assign sel_tmp4_fu_320_p2 = (sel_tmp4_fu_320_p0 & sel_tmp3_fu_314_p2);
+assign sel_tmp25_demorgan_fu_440_p1 = btn0;
 
-assign sel_tmp5_fu_326_p1 = btn2;
+assign sel_tmp25_demorgan_fu_440_p2 = (sel_tmp25_demorgan_fu_440_p1 | sel_tmp25_demorgan_fu_440_p0);
 
-assign sel_tmp5_fu_326_p2 = (sel_tmp5_fu_326_p1 & sel_tmp4_fu_320_p2);
+assign sel_tmp2_fu_386_p1 = btn1;
 
-assign sel_tmp6_fu_332_p3 = ((sel_tmp5_fu_326_p2[0:0] === 1'b1) ? tmp_2_fu_278_p2 : sel_tmp2_fu_306_p3);
+assign sel_tmp2_fu_386_p2 = (sel_tmp2_fu_386_p1 & sel_tmp1_fu_380_p2);
 
-assign sel_tmp7_fu_352_p1 = btn1;
+assign sel_tmp32_demorgan_fu_466_p1 = btn2;
 
-assign sel_tmp7_fu_352_p2 = (sel_tmp7_fu_352_p1 & sel_tmp1_fu_346_p2);
+assign sel_tmp32_demorgan_fu_466_p2 = (sel_tmp32_demorgan_fu_466_p1 | sel_tmp25_demorgan_fu_440_p2);
 
-assign sel_tmp8_fu_358_p3 = ((sel_tmp7_fu_352_p2[0:0] === 1'b1) ? tmp_2_fu_278_p2 : sel_tmp6_fu_332_p3);
+assign sel_tmp3_fu_348_p0 = btn0;
 
-assign sel_tmp9_fu_340_p0 = btn2;
+assign sel_tmp3_fu_348_p2 = (sel_tmp3_fu_348_p0 ^ 1'd1);
 
-assign sel_tmp9_fu_340_p2 = (sel_tmp9_fu_340_p0 ^ 1'd1);
+assign sel_tmp4_fu_354_p0 = right_in;
 
-assign sel_tmp_fu_300_p0 = right_in;
+assign sel_tmp4_fu_354_p2 = (sel_tmp4_fu_354_p0 & sel_tmp3_fu_348_p2);
 
-assign sel_tmp_fu_300_p1 = btn0;
+assign sel_tmp5_fu_360_p1 = btn2;
 
-assign sel_tmp_fu_300_p2 = (sel_tmp_fu_300_p1 & sel_tmp_fu_300_p0);
+assign sel_tmp5_fu_360_p2 = (sel_tmp5_fu_360_p1 & sel_tmp4_fu_354_p2);
 
-assign tmp1_fu_238_p0 = btn0;
+assign sel_tmp6_fu_420_p0 = right_in;
 
-assign tmp1_fu_238_p1 = btn3;
+assign sel_tmp6_fu_420_p2 = (sel_tmp6_fu_420_p0 ^ 1'd1);
 
-assign tmp1_fu_238_p2 = (tmp1_fu_238_p1 | tmp1_fu_238_p0);
+assign sel_tmp7_fu_400_p0 = btn1;
 
-assign tmp_1_fu_272_p2 = ($signed(center_line_in_V) + $signed(12'd4086));
+assign sel_tmp7_fu_400_p2 = (sel_tmp7_fu_400_p0 ^ 1'd1);
 
-assign tmp_1_i_fu_516_p2 = ((center_line_in_V > 12'd639) ? 1'b1 : 1'b0);
+assign sel_tmp8_fu_406_p2 = (sel_tmp7_fu_400_p2 & sel_tmp1_fu_380_p2);
 
-assign tmp_2_fu_278_p2 = (center_line_in_V + 12'd10);
+assign sel_tmp9_fu_374_p0 = btn2;
 
-assign tmp_3_fu_484_p1 = grp_fu_478_p2[6:0];
+assign sel_tmp9_fu_374_p2 = (sel_tmp9_fu_374_p0 ^ 1'd1);
 
-assign tmp_9_fu_458_p2 = (($signed(btn_count_loc_reg_546) > $signed(32'd10)) ? 1'b1 : 1'b0);
+assign sel_tmp_fu_334_p0 = right_in;
 
-assign tmp_fu_232_p0 = btn1;
+assign sel_tmp_fu_334_p1 = btn0;
 
-assign tmp_fu_232_p1 = btn2;
+assign sel_tmp_fu_334_p2 = (sel_tmp_fu_334_p1 & sel_tmp_fu_334_p0);
 
-assign tmp_fu_232_p2 = (tmp_fu_232_p1 | tmp_fu_232_p0);
+assign tmp1_fu_256_p0 = btn0;
 
-assign tmp_i_fu_511_p2 = ((center_line_in_V == 12'd0) ? 1'b1 : 1'b0);
+assign tmp1_fu_256_p1 = btn3;
 
-assign tmp_i_i_fu_467_p1 = RandSeed;
+assign tmp1_fu_256_p2 = (tmp1_fu_256_p1 | tmp1_fu_256_p0);
 
-assign tmp_i_i_fu_467_p2 = ($signed({{1'b0}, {32'd13}}) * $signed(tmp_i_i_fu_467_p1));
+assign tmp_1_fu_492_p2 = (($signed(btn_count_loc_reg_599) > $signed(32'd10)) ? 1'b1 : 1'b0);
 
-assign tmp_s_fu_254_p2 = (btn_count + 32'd1);
+assign tmp_1_i_fu_550_p2 = ((center_line_in_V > 12'd639) ? 1'b1 : 1'b0);
 
-assign to_add_8_fu_450_p3 = ((sel_tmp20_fu_444_p2[0:0] === 1'b1) ? tmp_1_fu_272_p2 : sel_tmp18_fu_424_p3);
+assign tmp_2_fu_518_p1 = grp_fu_512_p2[6:0];
+
+assign tmp_3_fu_561_p3 = ap_phi_mux_new_center_s_phi_fu_228_p4[32'd13];
+
+assign tmp_4_fu_569_p1 = ap_phi_mux_new_center_s_phi_fu_228_p4[11:0];
+
+assign tmp_fu_250_p0 = btn1;
+
+assign tmp_fu_250_p1 = btn2;
+
+assign tmp_fu_250_p2 = (tmp_fu_250_p1 | tmp_fu_250_p0);
+
+assign tmp_i_fu_545_p2 = ((center_line_in_V == 12'd0) ? 1'b1 : 1'b0);
+
+assign tmp_i_i_fu_501_p1 = RandSeed;
+
+assign tmp_i_i_fu_501_p2 = ($signed({{1'b0}, {32'd13}}) * $signed(tmp_i_i_fu_501_p1));
+
+assign tmp_s_fu_272_p2 = (btn_count + 32'd1);
 
 endmodule //Gamelogic2

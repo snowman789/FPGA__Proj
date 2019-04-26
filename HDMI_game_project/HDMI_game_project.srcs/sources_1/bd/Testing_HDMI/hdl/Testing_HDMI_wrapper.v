@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Wed Apr 24 23:41:36 2019
+//Date        : Fri Apr 26 14:18:27 2019
 //Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI_wrapper.bd
 //Design      : Testing_HDMI_wrapper
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module Testing_HDMI_wrapper
-   (TMDSp,
+   (LED_Test,
+    TMDSp,
     TMPDSn,
     btn_0,
     btn_1,
@@ -22,6 +23,7 @@ module Testing_HDMI_wrapper
     reset_rtl,
     sw1,
     sys_clk);
+  output LED_Test;
   output [2:0]TMDSp;
   output [2:0]TMPDSn;
   input btn_0;
@@ -35,6 +37,7 @@ module Testing_HDMI_wrapper
   input sw1;
   input sys_clk;
 
+  wire LED_Test;
   wire [2:0]TMDSp;
   wire [2:0]TMPDSn;
   wire btn_0;
@@ -49,7 +52,8 @@ module Testing_HDMI_wrapper
   wire sys_clk;
 
   Testing_HDMI Testing_HDMI_i
-       (.TMDSp(TMDSp),
+       (.LED_Test(LED_Test),
+        .TMDSp(TMDSp),
         .TMPDSn(TMPDSn),
         .btn_0(btn_0),
         .btn_1(btn_1),

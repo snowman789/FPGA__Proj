@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 -- Date        : Wed Apr 24 23:00:04 2019
 -- Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top Testing_HDMI_Interface2_0_0 -prefix
+--               Testing_HDMI_Interface2_0_0_ Testing_HDMI_Interface2_0_0_sim_netlist.vhdl
 -- Design      : Testing_HDMI_Interface2_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,8 +31,6 @@ entity Testing_HDMI_Interface2_0_0_Interface2 is
     right_wins : in STD_LOGIC;
     end_game : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Testing_HDMI_Interface2_0_0_Interface2 : entity is "Interface2";
   attribute hls_module : string;
   attribute hls_module of Testing_HDMI_Interface2_0_0_Interface2 : entity is "yes";
 end Testing_HDMI_Interface2_0_0_Interface2;

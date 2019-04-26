@@ -711,8 +711,8 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       </xilinx:taxonomies>
       <xilinx:displayName>Interface2</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904242257</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-25T02:57:40Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904261247</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-26T16:47:48Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>

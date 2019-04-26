@@ -22169,17 +22169,20 @@ int InitializeGame(){
  return 320;
 }
 
-bool win_game( ap_uint<12> center_line_in, bool *right_wins){
+void win_game( ap_uint<12> center_line_in, bool *right_wins, bool *end_game){
  if (center_line_in <= 0){
   *right_wins = 1;
-  return 1;
+  game_over = 1;
+  *end_game = 1;
  }
  else if(center_line_in >= 640) {
   *right_wins = 0;
-  return 1;
- }else
-  return 0;
-
+  game_over = 1;
+  *end_game = 1;
+ }else{
+  *right_wins = 0;
+  *end_game = 0;
+ }
 
 }
 void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, bool *reset_game_out, bool *right_wins, bool *end_game, ap_uint<12> *center_line_out, ap_uint<12> center_line_in, bool *right_out, bool right_in) {
@@ -22195,7 +22198,7 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, 
 #pragma HLS INTERFACE ap_none port=&center_line_out
 #pragma HLS INTERFACE ap_none port=&center_line_in
 
- int to_add = center_line_in;
+ int new_center = center_line_in;
 
  *reset_game_out = reset_game_in;
 
@@ -22206,24 +22209,24 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, 
  if(!game_over){
   if(right_in){
    if(btn0)
-    to_add -= 10;
+    new_center -= 10;
    else if(btn2)
-    to_add += 10;
+    new_center += 10;
    else if(btn1)
-    to_add += 10;
+    new_center += 10;
    else if(btn3)
-    to_add -= 10;
+    new_center -= 10;
 
   }
   else {
    if(btn0)
-    to_add += 10;
+    new_center += 10;
    else if(btn2)
-    to_add -= 10;
+    new_center -= 10;
    else if(btn1)
-    to_add -= 10;
+    new_center -= 10;
    else if(btn3)
-    to_add += 10;
+    new_center += 10;
 
   }
 
@@ -22234,13 +22237,15 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, 
   }
  }
  if(!first_run)
-  game_over = win_game( center_line_in, right_wins);
+  win_game( center_line_in, right_wins, end_game);
  else{
-  to_add = 320;
+  new_center = 320;
   first_run = 0;
  }
- *end_game = game_over;
 
-  *center_line_out = to_add;
+ if(new_center < 0)
+  new_center = 0;
+
+ *center_line_out = new_center;
 
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="Game_logicInit.h" path="D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\Gamelogic2\Game_logicInit.h"/>
     <originFiles name="Gamelogic2.cpp" path="D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\Gamelogic2\Gamelogic2.cpp"/>
+    <originFiles name="Game_logicInit.h" path="D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj\Gamelogic2\Game_logicInit.h"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -3052,3 +3052,900 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 12:46:56 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 102.504 ; gain = 17.629
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 102.504 ; gain = 17.629
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 109.168 ; gain = 24.293
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 113.227 ; gain = 28.352
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:101:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:102:3) to (Gamelogic2/Gamelogic2.cpp:125:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 138.758 ; gain = 53.883
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 139.543 ; gain = 54.668
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.524 seconds; current allocated memory: 90.148 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 90.558 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.574 seconds; current allocated memory: 91.350 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 141.328 ; gain = 56.453
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 17.616 seconds; peak allocated memory: 91.350 MB.
+==============================================================
+File generated on Fri Apr 26 12:47:46 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:05:27 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.605 ; gain = 17.914
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.605 ; gain = 17.914
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 108.996 ; gain = 24.305
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.316 ; gain = 28.625
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:102:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:104:4) to (Gamelogic2/Gamelogic2.cpp:126:3) in function 'Gamelogic2'... converting 6 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.992 ; gain = 54.301
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 139.254 ; gain = 54.563
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.718 seconds; current allocated memory: 90.092 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.133 seconds; current allocated memory: 90.524 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.389 seconds; current allocated memory: 91.291 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 141.879 ; gain = 57.188
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 15.579 seconds; peak allocated memory: 91.291 MB.
+==============================================================
+File generated on Fri Apr 26 13:06:23 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:13:58 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 102.895 ; gain = 17.680
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 102.895 ; gain = 17.680
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 109.445 ; gain = 24.230
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 113.457 ; gain = 28.242
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:102:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:104:4) to (Gamelogic2/Gamelogic2.cpp:126:3) in function 'Gamelogic2'... converting 6 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 138.547 ; gain = 53.332
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 139.332 ; gain = 54.117
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.508 seconds; current allocated memory: 90.101 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.144 seconds; current allocated memory: 90.521 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.394 seconds; current allocated memory: 91.281 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 142.145 ; gain = 56.930
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 14.579 seconds; peak allocated memory: 91.281 MB.
+==============================================================
+File generated on Fri Apr 26 13:15:02 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:22:05 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.492 ; gain = 17.941
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.492 ; gain = 17.941
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 109.254 ; gain = 24.703
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.234 ; gain = 28.684
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:101:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:102:3) to (Gamelogic2/Gamelogic2.cpp:125:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 138.375 ; gain = 53.824
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 138.902 ; gain = 54.352
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.038 seconds; current allocated memory: 90.148 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 90.558 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.381 seconds; current allocated memory: 91.350 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 141.949 ; gain = 57.398
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 15.147 seconds; peak allocated memory: 91.350 MB.
+==============================================================
+File generated on Fri Apr 26 13:22:34 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:31:40 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.629 ; gain = 17.539
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.629 ; gain = 17.539
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 109.156 ; gain = 24.066
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 113.215 ; gain = 28.125
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:101:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:103:4) to (Gamelogic2/Gamelogic2.cpp:125:3) in function 'Gamelogic2'... converting 6 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.762 ; gain = 53.672
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.023 ; gain = 53.934
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.053 seconds; current allocated memory: 90.102 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.134 seconds; current allocated memory: 90.522 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 91.281 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 141.605 ; gain = 56.516
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 13.992 seconds; peak allocated memory: 91.281 MB.
+==============================================================
+File generated on Fri Apr 26 13:32:04 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:33:09 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:41:25 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.422 ; gain = 17.492
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.422 ; gain = 17.492
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 109.266 ; gain = 24.336
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 113.285 ; gain = 28.355
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:126) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:132) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:101:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:102:3) to (Gamelogic2/Gamelogic2.cpp:125:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:80)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.410 ; gain = 53.480
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.934 ; gain = 54.004
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.998 seconds; current allocated memory: 90.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.148 seconds; current allocated memory: 90.687 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.372 seconds; current allocated memory: 91.529 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 141.957 ; gain = 57.027
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 14.135 seconds; peak allocated memory: 91.529 MB.
+==============================================================
+File generated on Fri Apr 26 13:42:24 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 13:57:19 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.664 ; gain = 18.180
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.664 ; gain = 18.180
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 109.238 ; gain = 24.754
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.371 ; gain = 28.887
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:127) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:133) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:126:3) in function 'Gamelogic2'... converting 18 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:81)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.484 ; gain = 54.000
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.270 ; gain = 54.785
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.241 seconds; current allocated memory: 90.108 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.378 seconds; current allocated memory: 90.507 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 91.297 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 141.750 ; gain = 57.266
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 14.459 seconds; peak allocated memory: 91.297 MB.
+==============================================================
+File generated on Fri Apr 26 13:57:40 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 14:05:50 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.621 ; gain = 17.699
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.621 ; gain = 17.699
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 109.363 ; gain = 24.441
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.203 ; gain = 28.281
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:104:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:105:3) to (Gamelogic2/Gamelogic2.cpp:128:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:83)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.246 ; gain = 53.324
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.031 ; gain = 54.109
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.326 seconds; current allocated memory: 90.250 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.152 seconds; current allocated memory: 90.689 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.382 seconds; current allocated memory: 91.525 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 141.852 ; gain = 56.930
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 14.399 seconds; peak allocated memory: 91.525 MB.
+==============================================================
+File generated on Fri Apr 26 14:07:11 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.434 ; gain = 17.883
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.434 ; gain = 17.883
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 108.945 ; gain = 24.395
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.270 ; gain = 28.719
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:104:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:105:3) to (Gamelogic2/Gamelogic2.cpp:128:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:83)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.910 ; gain = 54.359
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 139.172 ; gain = 54.621
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.321 seconds; current allocated memory: 90.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.183 seconds; current allocated memory: 90.705 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.345 seconds; current allocated memory: 91.525 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 142.410 ; gain = 57.859
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 14.315 seconds; peak allocated memory: 91.525 MB.
+==============================================================
+File generated on Fri Apr 26 14:07:33 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 14:07:53 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 14:17:18 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'Gamelogic2/Gamelogic2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.609 ; gain = 17.609
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 102.609 ; gain = 17.609
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 109.277 ; gain = 24.277
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 113.176 ; gain = 28.176
+INFO: [XFORM 203-602] Inlining function 'RandNumGenerator' into 'Generatebool' (Gamelogic2/Gamelogic2.cpp:48) automatically.
+INFO: [XFORM 203-602] Inlining function 'Generatebool' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'win_game' into 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:135) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Gamelogic2/Gamelogic2.cpp:104:2) in function 'Gamelogic2'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Gamelogic2/Gamelogic2.cpp:105:3) to (Gamelogic2/Gamelogic2.cpp:128:3) in function 'Gamelogic2'... converting 16 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'Gamelogic2' (Gamelogic2/Gamelogic2.cpp:83)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 138.074 ; gain = 53.074
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 138.859 ; gain = 53.859
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Gamelogic2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.014 seconds; current allocated memory: 90.257 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.147 seconds; current allocated memory: 90.703 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Gamelogic2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/btn3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/reset_game_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'reset_game_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_wins' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_wins' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/end_game' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_out_V' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'center_line_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/center_line_in_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_out' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'right_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Gamelogic2/right_in' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Gamelogic2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'btn_count' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'game_over' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'RandSeed' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'RandSeed' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'first_run' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'Gamelogic2_urem_32ns_8ns_32_36_seq_1' to 'Gamelogic2_urem_3bkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Gamelogic2_urem_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Gamelogic2'.
+INFO: [HLS 200-111]  Elapsed time: 0.375 seconds; current allocated memory: 91.546 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Gamelogic2_urem_3bkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 142.465 ; gain = 57.465
+INFO: [SYSC 207-301] Generating SystemC RTL for Gamelogic2.
+INFO: [VHDL 208-304] Generating VHDL RTL for Gamelogic2.
+INFO: [VLOG 209-307] Generating Verilog RTL for Gamelogic2.
+INFO: [HLS 200-112] Total elapsed time: 15.064 seconds; peak allocated memory: 91.546 MB.
+==============================================================
+File generated on Fri Apr 26 14:17:44 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Fri Apr 26 14:18:05 -0400 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

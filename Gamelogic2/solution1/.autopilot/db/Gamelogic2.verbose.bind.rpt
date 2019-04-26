@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Gamelogic2'
 ================================================================
-* Date:           Wed Apr 24 23:07:58 2019
+* Date:           Fri Apr 26 14:17:31 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        Gamelogic2
@@ -74,8 +74,8 @@ IsGatedGlobalClock: 0
 	2  / (!game_over_load)
 	38  / (game_over_load)
 2 --> 
-	3  / (tmp_9)
-	38  / (!tmp_9)
+	3  / (tmp_1)
+	38  / (!tmp_1)
 3 --> 
 	4  / true
 4 --> 
@@ -164,207 +164,216 @@ ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBits
 ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_out), !map !161"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_in), !map !165"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @Gamelogic2_str) nounwind"   --->   Operation 51 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%right_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %right_in)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 52 'read' 'right_in_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%center_line_in_V_rea = call i12 @_ssdm_op_Read.ap_none.i12(i12 %center_line_in_V)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 53 'read' 'center_line_in_V_rea' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%reset_game_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %reset_game_in)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 54 'read' 'reset_game_in_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%btn3_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn3)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 55 'read' 'btn3_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%btn2_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn2)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 56 'read' 'btn2_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%btn1_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn1)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 57 'read' 'btn1_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%btn0_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn0)" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 58 'read' 'btn0_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn0, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:81]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:82]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn3, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:84]   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_wins, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:85]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %reset_game_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:86]   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %reset_game_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:87]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:88]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %right_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:89]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %center_line_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:90]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12 %center_line_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:91]   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 70 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %reset_game_out, i1 %reset_game_in_read)" [Gamelogic2/Gamelogic2.cpp:95]   --->   Operation 70 'write' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp = or i1 %btn1_read, %btn2_read" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 71 'or' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp1 = or i1 %btn0_read, %btn3_read" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 72 'or' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 73 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge1 = or i1 %tmp1, %tmp" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 73 'or' 'brmerge1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%btn_count_load = load i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 74 'load' 'btn_count_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 75 [1/1] (2.55ns)   --->   "%tmp_s = add nsw i32 %btn_count_load, 1" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 75 'add' 'tmp_s' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 76 [1/1] (0.69ns)   --->   "%btn_count_loc = select i1 %brmerge1, i32 %tmp_s, i32 %btn_count_load" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 76 'select' 'btn_count_loc' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%game_over_load = load i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 77 'load' 'game_over_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 78 [1/1] (1.76ns)   --->   "br i1 %game_over_load, label %._crit_edge12, label %_ifconv1" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 78 'br' <Predicate = true> <Delay = 1.76>
-ST_1 : Operation 79 [1/1] (1.54ns)   --->   "%tmp_1 = add i12 %center_line_in_V_rea, -10" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 79 'add' 'tmp_1' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 80 [1/1] (1.54ns)   --->   "%tmp_2 = add i12 %center_line_in_V_rea, 10" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 80 'add' 'tmp_2' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%p_s = select i1 %btn3_read, i12 %tmp_1, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:109]   --->   Operation 81 'select' 'p_s' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2)   --->   "%p_1 = select i1 %btn3_read, i12 %tmp_2, i12 %center_line_in_V_rea" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 82 'select' 'p_1' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp2)   --->   "%sel_tmp = and i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 83 'and' 'sel_tmp' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 84 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp2 = select i1 %sel_tmp, i12 %tmp_1, i12 %p_1" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 84 'select' 'sel_tmp2' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp4)   --->   "%sel_tmp3 = xor i1 %btn0_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 85 'xor' 'sel_tmp3' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 86 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp4 = and i1 %right_in_read, %sel_tmp3" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 86 'and' 'sel_tmp4' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 87 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp6)   --->   "%sel_tmp5 = and i1 %sel_tmp4, %btn2_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 87 'and' 'sel_tmp5' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 88 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp6 = select i1 %sel_tmp5, i12 %tmp_2, i12 %sel_tmp2" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 88 'select' 'sel_tmp6' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%sel_tmp9 = xor i1 %btn2_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 89 'xor' 'sel_tmp9' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 90 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp1 = and i1 %sel_tmp4, %sel_tmp9" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 90 'and' 'sel_tmp1' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp8)   --->   "%sel_tmp7 = and i1 %sel_tmp1, %btn1_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 91 'and' 'sel_tmp7' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 92 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp8 = select i1 %sel_tmp7, i12 %tmp_2, i12 %sel_tmp6" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 92 'select' 'sel_tmp8' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp10 = xor i1 %btn1_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 93 'xor' 'sel_tmp10' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 94 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp12)   --->   "%sel_tmp11 = and i1 %sel_tmp1, %sel_tmp10" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 94 'and' 'sel_tmp11' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 95 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp12 = select i1 %sel_tmp11, i12 %p_s, i12 %sel_tmp8" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 95 'select' 'sel_tmp12' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp13 = xor i1 %right_in_read, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 96 'xor' 'sel_tmp13' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp15)   --->   "%sel_tmp14 = and i1 %btn0_read, %sel_tmp13" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 97 'and' 'sel_tmp14' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 98 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp15 = select i1 %sel_tmp14, i12 %tmp_2, i12 %sel_tmp12" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 98 'select' 'sel_tmp15' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 99 [1/1] (0.97ns)   --->   "%sel_tmp25_demorgan = or i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 99 'or' 'sel_tmp25_demorgan' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp16 = xor i1 %sel_tmp25_demorgan, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 100 'xor' 'sel_tmp16' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 101 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp18)   --->   "%sel_tmp17 = and i1 %btn2_read, %sel_tmp16" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 101 'and' 'sel_tmp17' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 102 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp18 = select i1 %sel_tmp17, i12 %tmp_1, i12 %sel_tmp15" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 102 'select' 'sel_tmp18' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp32_demorgan = or i1 %sel_tmp25_demorgan, %btn2_read" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 103 'or' 'sel_tmp32_demorgan' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 104 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp19 = xor i1 %sel_tmp32_demorgan, true" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 104 'xor' 'sel_tmp19' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 105 [1/1] (0.00ns) (grouped into LUT with out node to_add_8)   --->   "%sel_tmp20 = and i1 %btn1_read, %sel_tmp19" [Gamelogic2/Gamelogic2.cpp:80]   --->   Operation 105 'and' 'sel_tmp20' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 106 [1/1] (0.97ns) (out node of the LUT)   --->   "%to_add_8 = select i1 %sel_tmp20, i12 %tmp_1, i12 %sel_tmp18" [Gamelogic2/Gamelogic2.cpp:120]   --->   Operation 106 'select' 'to_add_8' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%right_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %right_in)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 52 'read' 'right_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%center_line_in_V_rea = call i12 @_ssdm_op_Read.ap_none.i12(i12 %center_line_in_V)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 53 'read' 'center_line_in_V_rea' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%reset_game_in_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %reset_game_in)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 54 'read' 'reset_game_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%btn3_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn3)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 55 'read' 'btn3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%btn2_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn2)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 56 'read' 'btn2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%btn1_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn1)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 57 'read' 'btn1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%btn0_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %btn0)" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 58 'read' 'btn0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn0, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:84]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn1, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:85]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn2, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:86]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %btn3, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:87]   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_wins, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:88]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %reset_game_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:89]   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %reset_game_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:90]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %right_out, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:91]   --->   Operation 66 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %right_in, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:92]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12* %center_line_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:93]   --->   Operation 68 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i12 %center_line_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [Gamelogic2/Gamelogic2.cpp:94]   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%new_center_cast1 = zext i12 %center_line_in_V_rea to i14" [Gamelogic2/Gamelogic2.cpp:96]   --->   Operation 70 'zext' 'new_center_cast1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%new_center_cast = zext i12 %center_line_in_V_rea to i13" [Gamelogic2/Gamelogic2.cpp:96]   --->   Operation 71 'zext' 'new_center_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %reset_game_out, i1 %reset_game_in_read)" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 72 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp = or i1 %btn1_read, %btn2_read" [Gamelogic2/Gamelogic2.cpp:100]   --->   Operation 73 'or' 'tmp' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node brmerge1)   --->   "%tmp1 = or i1 %btn0_read, %btn3_read" [Gamelogic2/Gamelogic2.cpp:100]   --->   Operation 74 'or' 'tmp1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 75 [1/1] (0.97ns) (out node of the LUT)   --->   "%brmerge1 = or i1 %tmp1, %tmp" [Gamelogic2/Gamelogic2.cpp:100]   --->   Operation 75 'or' 'brmerge1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%btn_count_load = load i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 76 'load' 'btn_count_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (2.55ns)   --->   "%tmp_s = add nsw i32 %btn_count_load, 1" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 77 'add' 'tmp_s' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 78 [1/1] (0.69ns)   --->   "%btn_count_loc = select i1 %brmerge1, i32 %tmp_s, i32 %btn_count_load" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 78 'select' 'btn_count_loc' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%game_over_load = load i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:104]   --->   Operation 79 'load' 'game_over_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (1.76ns)   --->   "br i1 %game_over_load, label %._crit_edge12, label %_ifconv1" [Gamelogic2/Gamelogic2.cpp:104]   --->   Operation 80 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 81 [1/1] (1.54ns)   --->   "%new_center = add i13 %new_center_cast, -10" [Gamelogic2/Gamelogic2.cpp:107]   --->   Operation 81 'add' 'new_center' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%new_center_1_cast = sext i13 %new_center to i14" [Gamelogic2/Gamelogic2.cpp:107]   --->   Operation 82 'sext' 'new_center_1_cast' <Predicate = (!game_over_load)> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (1.54ns)   --->   "%new_center_1 = add i13 %new_center_cast, 10" [Gamelogic2/Gamelogic2.cpp:118]   --->   Operation 83 'add' 'new_center_1' <Predicate = (!game_over_load)> <Delay = 1.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%new_center_2_cast = zext i13 %new_center_1 to i14" [Gamelogic2/Gamelogic2.cpp:118]   --->   Operation 84 'zext' 'new_center_2_cast' <Predicate = (!game_over_load)> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node new_center_5)   --->   "%p_s = select i1 %btn3_read, i13 %new_center, i13 %new_center_cast" [Gamelogic2/Gamelogic2.cpp:112]   --->   Operation 85 'select' 'p_s' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node new_center_5)   --->   "%p_cast = sext i13 %p_s to i14" [Gamelogic2/Gamelogic2.cpp:112]   --->   Operation 86 'sext' 'p_cast' <Predicate = (!game_over_load)> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns) (grouped into LUT with out node new_center_2)   --->   "%p_1 = select i1 %btn3_read, i13 %new_center_1, i13 %new_center_cast" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 87 'select' 'p_1' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (0.00ns) (grouped into LUT with out node new_center_2)   --->   "%p_1_cast = zext i13 %p_1 to i14" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 88 'zext' 'p_1_cast' <Predicate = (!game_over_load)> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns) (grouped into LUT with out node new_center_2)   --->   "%sel_tmp = and i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 89 'and' 'sel_tmp' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 90 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_2 = select i1 %sel_tmp, i14 %new_center_1_cast, i14 %p_1_cast" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 90 'select' 'new_center_2' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp4)   --->   "%sel_tmp3 = xor i1 %btn0_read, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 91 'xor' 'sel_tmp3' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 92 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp4 = and i1 %right_in_read, %sel_tmp3" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 92 'and' 'sel_tmp4' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node new_center_3)   --->   "%sel_tmp5 = and i1 %sel_tmp4, %btn2_read" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 93 'and' 'sel_tmp5' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 94 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_3 = select i1 %sel_tmp5, i14 %new_center_2_cast, i14 %new_center_2" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 94 'select' 'new_center_3' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 95 [1/1] (0.00ns) (grouped into LUT with out node sel_tmp1)   --->   "%sel_tmp9 = xor i1 %btn2_read, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 95 'xor' 'sel_tmp9' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 96 [1/1] (0.97ns) (out node of the LUT)   --->   "%sel_tmp1 = and i1 %sel_tmp4, %sel_tmp9" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 96 'and' 'sel_tmp1' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 97 [1/1] (0.00ns) (grouped into LUT with out node new_center_4)   --->   "%sel_tmp2 = and i1 %sel_tmp1, %btn1_read" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 97 'and' 'sel_tmp2' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 98 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_4 = select i1 %sel_tmp2, i14 %new_center_2_cast, i14 %new_center_3" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 98 'select' 'new_center_4' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node new_center_5)   --->   "%sel_tmp7 = xor i1 %btn1_read, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 99 'xor' 'sel_tmp7' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node new_center_5)   --->   "%sel_tmp8 = and i1 %sel_tmp1, %sel_tmp7" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 100 'and' 'sel_tmp8' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 101 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_5 = select i1 %sel_tmp8, i14 %p_cast, i14 %new_center_4" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 101 'select' 'new_center_5' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 102 [1/1] (0.00ns) (grouped into LUT with out node new_center_6)   --->   "%sel_tmp6 = xor i1 %right_in_read, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 102 'xor' 'sel_tmp6' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 103 [1/1] (0.00ns) (grouped into LUT with out node new_center_6)   --->   "%sel_tmp10 = and i1 %btn0_read, %sel_tmp6" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 103 'and' 'sel_tmp10' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 104 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_6 = select i1 %sel_tmp10, i14 %new_center_2_cast, i14 %new_center_5" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 104 'select' 'new_center_6' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 105 [1/1] (0.97ns)   --->   "%sel_tmp25_demorgan = or i1 %right_in_read, %btn0_read" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 105 'or' 'sel_tmp25_demorgan' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 106 [1/1] (0.00ns) (grouped into LUT with out node new_center_7)   --->   "%sel_tmp11 = xor i1 %sel_tmp25_demorgan, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 106 'xor' 'sel_tmp11' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 107 [1/1] (0.00ns) (grouped into LUT with out node new_center_7)   --->   "%sel_tmp12 = and i1 %btn2_read, %sel_tmp11" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 107 'and' 'sel_tmp12' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 108 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_7 = select i1 %sel_tmp12, i14 %new_center_1_cast, i14 %new_center_6" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 108 'select' 'new_center_7' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 109 [1/1] (0.00ns) (grouped into LUT with out node new_center_8)   --->   "%sel_tmp32_demorgan = or i1 %sel_tmp25_demorgan, %btn2_read" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 109 'or' 'sel_tmp32_demorgan' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 110 [1/1] (0.00ns) (grouped into LUT with out node new_center_8)   --->   "%sel_tmp13 = xor i1 %sel_tmp32_demorgan, true" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 110 'xor' 'sel_tmp13' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node new_center_8)   --->   "%sel_tmp14 = and i1 %btn1_read, %sel_tmp13" [Gamelogic2/Gamelogic2.cpp:83]   --->   Operation 111 'and' 'sel_tmp14' <Predicate = (!game_over_load)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 112 [1/1] (0.97ns) (out node of the LUT)   --->   "%new_center_8 = select i1 %sel_tmp14, i14 %new_center_1_cast, i14 %new_center_7" [Gamelogic2/Gamelogic2.cpp:123]   --->   Operation 112 'select' 'new_center_8' <Predicate = (!game_over_load)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 2 <SV = 1> <Delay = 8.51>
-ST_2 : Operation 107 [1/1] (2.47ns)   --->   "%tmp_9 = icmp sgt i32 %btn_count_loc, 10" [Gamelogic2/Gamelogic2.cpp:125]   --->   Operation 107 'icmp' 'tmp_9' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 108 [1/1] (1.76ns)   --->   "br i1 %tmp_9, label %0, label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:125]   --->   Operation 108 'br' <Predicate = true> <Delay = 1.76>
-ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%RandSeed_load = load i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 109 'load' 'RandSeed_load' <Predicate = (tmp_9)> <Delay = 0.00>
-ST_2 : Operation 110 [1/1] (8.51ns)   --->   "%tmp_i_i = mul i32 13, %RandSeed_load" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 110 'mul' 'tmp_i_i' <Predicate = (tmp_9)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 113 [1/1] (2.47ns)   --->   "%tmp_1 = icmp sgt i32 %btn_count_loc, 10" [Gamelogic2/Gamelogic2.cpp:128]   --->   Operation 113 'icmp' 'tmp_1' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 114 [1/1] (1.76ns)   --->   "br i1 %tmp_1, label %0, label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:128]   --->   Operation 114 'br' <Predicate = true> <Delay = 1.76>
+ST_2 : Operation 115 [1/1] (0.00ns)   --->   "%RandSeed_load = load i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 115 'load' 'RandSeed_load' <Predicate = (tmp_1)> <Delay = 0.00>
+ST_2 : Operation 116 [1/1] (8.51ns)   --->   "%tmp_i_i = mul i32 13, %RandSeed_load" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 116 'mul' 'tmp_i_i' <Predicate = (tmp_1)> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 6.68>
-ST_3 : Operation 111 [1/1] (2.55ns)   --->   "%tmp_2_i_i = add i32 100, %tmp_i_i" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 111 'add' 'tmp_2_i_i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 112 [36/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 112 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 117 [1/1] (2.55ns)   --->   "%tmp_2_i_i = add i32 100, %tmp_i_i" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 117 'add' 'tmp_2_i_i' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 118 [36/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 118 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 4.13>
-ST_4 : Operation 113 [35/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 113 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 119 [35/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 119 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 4.13>
-ST_5 : Operation 114 [34/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 114 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 120 [34/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 120 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 4.13>
-ST_6 : Operation 115 [33/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 115 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 121 [33/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 121 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 4.13>
-ST_7 : Operation 116 [32/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 116 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 122 [32/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 122 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 4.13>
-ST_8 : Operation 117 [31/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 117 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 123 [31/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 123 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 4.13>
-ST_9 : Operation 118 [30/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 118 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 124 [30/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 124 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 4.13>
-ST_10 : Operation 119 [29/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 119 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 125 [29/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 125 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 4.13>
-ST_11 : Operation 120 [28/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 120 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 126 [28/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 126 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 4.13>
-ST_12 : Operation 121 [27/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 121 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 127 [27/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 127 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 4.13>
-ST_13 : Operation 122 [26/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 122 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 128 [26/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 128 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 14 <SV = 13> <Delay = 4.13>
-ST_14 : Operation 123 [25/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 123 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 129 [25/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 129 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 15 <SV = 14> <Delay = 4.13>
-ST_15 : Operation 124 [24/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 124 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 130 [24/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 130 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 4.13>
-ST_16 : Operation 125 [23/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 125 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 131 [23/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 131 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 17 <SV = 16> <Delay = 4.13>
-ST_17 : Operation 126 [22/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 126 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 132 [22/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 132 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 17> <Delay = 4.13>
-ST_18 : Operation 127 [21/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 127 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 133 [21/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 133 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 19 <SV = 18> <Delay = 4.13>
-ST_19 : Operation 128 [20/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 128 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 134 [20/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 134 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 20 <SV = 19> <Delay = 4.13>
-ST_20 : Operation 129 [19/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 129 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 135 [19/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 135 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 21 <SV = 20> <Delay = 4.13>
-ST_21 : Operation 130 [18/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 130 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 136 [18/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 136 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 22 <SV = 21> <Delay = 4.13>
-ST_22 : Operation 131 [17/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 131 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 137 [17/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 137 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 23 <SV = 22> <Delay = 4.13>
-ST_23 : Operation 132 [16/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 132 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 138 [16/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 138 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 4.13>
-ST_24 : Operation 133 [15/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 133 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 139 [15/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 139 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 24> <Delay = 4.13>
-ST_25 : Operation 134 [14/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 134 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 140 [14/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 140 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 4.13>
-ST_26 : Operation 135 [13/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 135 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 141 [13/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 141 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 27 <SV = 26> <Delay = 4.13>
-ST_27 : Operation 136 [12/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 136 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 142 [12/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 142 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 27> <Delay = 4.13>
-ST_28 : Operation 137 [11/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 137 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 143 [11/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 143 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 29 <SV = 28> <Delay = 4.13>
-ST_29 : Operation 138 [10/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 138 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 144 [10/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 144 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 4.13>
-ST_30 : Operation 139 [9/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 139 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 145 [9/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 145 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 4.13>
-ST_31 : Operation 140 [8/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 140 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 146 [8/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 146 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 4.13>
-ST_32 : Operation 141 [7/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 141 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 147 [7/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 147 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 4.13>
-ST_33 : Operation 142 [6/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 142 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 148 [6/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 148 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 4.13>
-ST_34 : Operation 143 [5/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 143 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 149 [5/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 149 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 4.13>
-ST_35 : Operation 144 [4/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 144 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 150 [4/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 150 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 4.13>
-ST_36 : Operation 145 [3/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 145 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 151 [3/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 151 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 37 <SV = 36> <Delay = 4.13>
-ST_37 : Operation 146 [2/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 146 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 152 [2/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 152 'urem' 'tmp_3_i_i' <Predicate = true> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
 
 State 38 <SV = 37> <Delay = 5.62>
-ST_38 : Operation 147 [1/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 147 'urem' 'tmp_3_i_i' <Predicate = (!game_over_load & tmp_9)> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 148 [1/1] (0.00ns)   --->   "%tmp_3 = trunc i32 %tmp_3_i_i to i7" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 148 'trunc' 'tmp_3' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
-ST_38 : Operation 149 [1/1] (0.00ns)   --->   "store i32 %tmp_3_i_i, i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 149 'store' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
-ST_38 : Operation 150 [1/1] (1.48ns)   --->   "%tmp_4_i = icmp ugt i7 %tmp_3, 50" [Gamelogic2/Gamelogic2.cpp:49->Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 150 'icmp' 'tmp_4_i' <Predicate = (!game_over_load & tmp_9)> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 151 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_out, i1 %tmp_4_i)" [Gamelogic2/Gamelogic2.cpp:126]   --->   Operation 151 'write' <Predicate = (!game_over_load & tmp_9)> <Delay = 0.00>
-ST_38 : Operation 152 [1/1] (1.76ns)   --->   "br label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 152 'br' <Predicate = (!game_over_load & tmp_9)> <Delay = 1.76>
-ST_38 : Operation 153 [1/1] (0.00ns)   --->   "%btn_count_flag_2 = phi i1 [ %brmerge1, %_ifconv ], [ true, %0 ], [ %brmerge1, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 153 'phi' 'btn_count_flag_2' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 154 [1/1] (0.00ns)   --->   "%btn_count_new_2 = phi i32 [ %btn_count_loc, %_ifconv ], [ 0, %0 ], [ %btn_count_loc, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 154 'phi' 'btn_count_new_2' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 155 [1/1] (0.00ns)   --->   "%to_add_9 = phi i12 [ %center_line_in_V_rea, %_ifconv ], [ %to_add_8, %0 ], [ %to_add_8, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 155 'phi' 'to_add_9' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 156 [1/1] (0.00ns)   --->   "%first_run_load = load i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:131]   --->   Operation 156 'load' 'first_run_load' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 157 [1/1] (0.00ns)   --->   "br i1 %btn_count_flag_2, label %mergeST, label %._crit_edge12.new" [Gamelogic2/Gamelogic2.cpp:97]   --->   Operation 157 'br' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 158 [1/1] (0.00ns)   --->   "store i32 %btn_count_new_2, i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:98]   --->   Operation 158 'store' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
-ST_38 : Operation 159 [1/1] (0.00ns)   --->   "br label %._crit_edge12.new"   --->   Operation 159 'br' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
-ST_38 : Operation 160 [1/1] (0.00ns)   --->   "br i1 %first_run_load, label %5, label %1" [Gamelogic2/Gamelogic2.cpp:131]   --->   Operation 160 'br' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 161 [1/1] (1.99ns)   --->   "%tmp_i = icmp eq i12 %center_line_in_V_rea, 0" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 161 'icmp' 'tmp_i' <Predicate = (!first_run_load)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 162 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %2, label %3" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 162 'br' <Predicate = (!first_run_load)> <Delay = 0.00>
-ST_38 : Operation 163 [1/1] (1.99ns)   --->   "%tmp_1_i = icmp ugt i12 %center_line_in_V_rea, 639" [Gamelogic2/Gamelogic2.cpp:72->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 163 'icmp' 'tmp_1_i' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 164 [1/1] (1.76ns)   --->   "br i1 %tmp_1_i, label %4, label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:72->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 164 'br' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.76>
-ST_38 : Operation 165 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_wins, i1 false)" [Gamelogic2/Gamelogic2.cpp:73->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 165 'write' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 0.00>
-ST_38 : Operation 166 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:74->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 166 'br' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 1.76>
-ST_38 : Operation 167 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_wins, i1 true)" [Gamelogic2/Gamelogic2.cpp:69->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 167 'write' <Predicate = (!first_run_load & tmp_i)> <Delay = 0.00>
-ST_38 : Operation 168 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:70->Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 168 'br' <Predicate = (!first_run_load & tmp_i)> <Delay = 1.76>
-ST_38 : Operation 169 [1/1] (0.00ns)   --->   "%p_i = phi i1 [ true, %2 ], [ true, %4 ], [ false, %3 ]"   --->   Operation 169 'phi' 'p_i' <Predicate = (!first_run_load)> <Delay = 0.00>
-ST_38 : Operation 170 [1/1] (0.00ns)   --->   "store i1 %p_i, i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 170 'store' <Predicate = (!first_run_load)> <Delay = 0.00>
-ST_38 : Operation 171 [1/1] (1.76ns)   --->   "br label %6" [Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 171 'br' <Predicate = (!first_run_load)> <Delay = 1.76>
-ST_38 : Operation 172 [1/1] (0.00ns)   --->   "store i1 false, i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 172 'store' <Predicate = (first_run_load)> <Delay = 0.00>
-ST_38 : Operation 173 [1/1] (1.76ns)   --->   "br label %6"   --->   Operation 173 'br' <Predicate = (first_run_load)> <Delay = 1.76>
-ST_38 : Operation 174 [1/1] (0.00ns)   --->   "%game_over_loc = phi i1 [ %game_over_load, %5 ], [ %p_i, %win_game.exit ]" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 174 'phi' 'game_over_loc' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 175 [1/1] (0.00ns)   --->   "%to_add_s = phi i12 [ 320, %5 ], [ %to_add_9, %win_game.exit ]" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 175 'phi' 'to_add_s' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 176 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %end_game, i1 %game_over_loc)" [Gamelogic2/Gamelogic2.cpp:137]   --->   Operation 176 'write' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 177 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i12P(i12* %center_line_out_V, i12 %to_add_s)" [Gamelogic2/Gamelogic2.cpp:139]   --->   Operation 177 'write' <Predicate = true> <Delay = 0.00>
-ST_38 : Operation 178 [1/1] (0.00ns)   --->   "ret void" [Gamelogic2/Gamelogic2.cpp:141]   --->   Operation 178 'ret' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 153 [1/36] (4.13ns)   --->   "%tmp_3_i_i = urem i32 %tmp_2_i_i, 100" [Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 153 'urem' 'tmp_3_i_i' <Predicate = (!game_over_load & tmp_1)> <Delay = 4.13> <Core = "DivnS_SEQ">   --->   Core 24 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 4.13> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 154 [1/1] (0.00ns)   --->   "%tmp_2 = trunc i32 %tmp_3_i_i to i7" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 154 'trunc' 'tmp_2' <Predicate = (!game_over_load & tmp_1)> <Delay = 0.00>
+ST_38 : Operation 155 [1/1] (0.00ns)   --->   "store i32 %tmp_3_i_i, i32* @RandSeed, align 4" [Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 155 'store' <Predicate = (!game_over_load & tmp_1)> <Delay = 0.00>
+ST_38 : Operation 156 [1/1] (1.48ns)   --->   "%tmp_4_i = icmp ugt i7 %tmp_2, 50" [Gamelogic2/Gamelogic2.cpp:49->Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 156 'icmp' 'tmp_4_i' <Predicate = (!game_over_load & tmp_1)> <Delay = 1.48> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 157 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_out, i1 %tmp_4_i)" [Gamelogic2/Gamelogic2.cpp:129]   --->   Operation 157 'write' <Predicate = (!game_over_load & tmp_1)> <Delay = 0.00>
+ST_38 : Operation 158 [1/1] (1.76ns)   --->   "br label %._crit_edge12" [Gamelogic2/Gamelogic2.cpp:132]   --->   Operation 158 'br' <Predicate = (!game_over_load & tmp_1)> <Delay = 1.76>
+ST_38 : Operation 159 [1/1] (0.00ns)   --->   "%btn_count_flag_2 = phi i1 [ %brmerge1, %_ifconv ], [ true, %0 ], [ %brmerge1, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:100]   --->   Operation 159 'phi' 'btn_count_flag_2' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 160 [1/1] (0.00ns)   --->   "%btn_count_new_2 = phi i32 [ %btn_count_loc, %_ifconv ], [ 0, %0 ], [ %btn_count_loc, %_ifconv1 ]" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 160 'phi' 'btn_count_new_2' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 161 [1/1] (0.00ns)   --->   "%new_center_9 = phi i14 [ %new_center_cast1, %_ifconv ], [ %new_center_8, %0 ], [ %new_center_8, %_ifconv1 ]"   --->   Operation 161 'phi' 'new_center_9' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 162 [1/1] (0.00ns)   --->   "%first_run_load = load i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:134]   --->   Operation 162 'load' 'first_run_load' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 163 [1/1] (0.00ns)   --->   "br i1 %btn_count_flag_2, label %mergeST, label %._crit_edge12.new" [Gamelogic2/Gamelogic2.cpp:100]   --->   Operation 163 'br' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 164 [1/1] (0.00ns)   --->   "store i32 %btn_count_new_2, i32* @btn_count, align 4" [Gamelogic2/Gamelogic2.cpp:101]   --->   Operation 164 'store' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
+ST_38 : Operation 165 [1/1] (0.00ns)   --->   "br label %._crit_edge12.new"   --->   Operation 165 'br' <Predicate = (btn_count_flag_2)> <Delay = 0.00>
+ST_38 : Operation 166 [1/1] (0.00ns)   --->   "br i1 %first_run_load, label %5, label %1" [Gamelogic2/Gamelogic2.cpp:134]   --->   Operation 166 'br' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 167 [1/1] (1.99ns)   --->   "%tmp_i = icmp eq i12 %center_line_in_V_rea, 0" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 167 'icmp' 'tmp_i' <Predicate = (!first_run_load)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 168 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %2, label %3" [Gamelogic2/Gamelogic2.cpp:68->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 168 'br' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 169 [1/1] (1.99ns)   --->   "%tmp_1_i = icmp ugt i12 %center_line_in_V_rea, 639" [Gamelogic2/Gamelogic2.cpp:73->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 169 'icmp' 'tmp_1_i' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 170 [1/1] (1.76ns)   --->   "br i1 %tmp_1_i, label %4, label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:73->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 170 'br' <Predicate = (!first_run_load & !tmp_i)> <Delay = 1.76>
+ST_38 : Operation 171 [1/1] (0.00ns)   --->   "store i1 true, i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:75->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 171 'store' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 0.00>
+ST_38 : Operation 172 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:77->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 172 'br' <Predicate = (!first_run_load & !tmp_i & tmp_1_i)> <Delay = 1.76>
+ST_38 : Operation 173 [1/1] (0.00ns)   --->   "store i1 true, i1* @game_over, align 1" [Gamelogic2/Gamelogic2.cpp:70->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 173 'store' <Predicate = (!first_run_load & tmp_i)> <Delay = 0.00>
+ST_38 : Operation 174 [1/1] (1.76ns)   --->   "br label %win_game.exit" [Gamelogic2/Gamelogic2.cpp:72->Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 174 'br' <Predicate = (!first_run_load & tmp_i)> <Delay = 1.76>
+ST_38 : Operation 175 [1/1] (0.00ns)   --->   "%right_wins_write_ass = phi i1 [ true, %2 ], [ false, %4 ], [ false, %3 ]"   --->   Operation 175 'phi' 'right_wins_write_ass' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 176 [1/1] (0.00ns)   --->   "%end_game_write_assig = phi i1 [ true, %2 ], [ true, %4 ], [ false, %3 ]"   --->   Operation 176 'phi' 'end_game_write_assig' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 177 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i1P(i1* %right_wins, i1 %right_wins_write_ass)" [Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 177 'write' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 178 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %end_game, i1 %end_game_write_assig)" [Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 178 'write' <Predicate = (!first_run_load)> <Delay = 0.00>
+ST_38 : Operation 179 [1/1] (1.76ns)   --->   "br label %6" [Gamelogic2/Gamelogic2.cpp:135]   --->   Operation 179 'br' <Predicate = (!first_run_load)> <Delay = 1.76>
+ST_38 : Operation 180 [1/1] (0.00ns)   --->   "store i1 false, i1* @first_run, align 1" [Gamelogic2/Gamelogic2.cpp:138]   --->   Operation 180 'store' <Predicate = (first_run_load)> <Delay = 0.00>
+ST_38 : Operation 181 [1/1] (1.76ns)   --->   "br label %6"   --->   Operation 181 'br' <Predicate = (first_run_load)> <Delay = 1.76>
+ST_38 : Operation 182 [1/1] (0.00ns)   --->   "%new_center_s = phi i14 [ 320, %5 ], [ %new_center_9, %win_game.exit ]" [Gamelogic2/Gamelogic2.cpp:96]   --->   Operation 182 'phi' 'new_center_s' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 183 [1/1] (0.00ns)   --->   "%tmp_3 = call i1 @_ssdm_op_BitSelect.i1.i14.i32(i14 %new_center_s, i32 13)" [Gamelogic2/Gamelogic2.cpp:141]   --->   Operation 183 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 184 [1/1] (0.00ns)   --->   "%tmp_4 = trunc i14 %new_center_s to i12" [Gamelogic2/Gamelogic2.cpp:144]   --->   Operation 184 'trunc' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 185 [1/1] (0.69ns)   --->   "%tmp_5 = select i1 %tmp_3, i12 0, i12 %tmp_4" [Gamelogic2/Gamelogic2.cpp:144]   --->   Operation 185 'select' 'tmp_5' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_38 : Operation 186 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.i12P(i12* %center_line_out_V, i12 %tmp_5)" [Gamelogic2/Gamelogic2.cpp:144]   --->   Operation 186 'write' <Predicate = true> <Delay = 0.00>
+ST_38 : Operation 187 [1/1] (0.00ns)   --->   "ret void" [Gamelogic2/Gamelogic2.cpp:146]   --->   Operation 187 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -414,7 +423,7 @@ StgValue_49          (specbitsmap  ) [ 000000000000000000000000000000000000000]
 StgValue_50          (specbitsmap  ) [ 000000000000000000000000000000000000000]
 StgValue_51          (spectopmodule) [ 000000000000000000000000000000000000000]
 right_in_read        (read         ) [ 000000000000000000000000000000000000000]
-center_line_in_V_rea (read         ) [ 011111111111111111111111111111111111111]
+center_line_in_V_rea (read         ) [ 001111111111111111111111111111111111111]
 reset_game_in_read   (read         ) [ 000000000000000000000000000000000000000]
 btn3_read            (read         ) [ 000000000000000000000000000000000000000]
 btn2_read            (read         ) [ 000000000000000000000000000000000000000]
@@ -431,7 +440,9 @@ StgValue_66          (specinterface) [ 000000000000000000000000000000000000000]
 StgValue_67          (specinterface) [ 000000000000000000000000000000000000000]
 StgValue_68          (specinterface) [ 000000000000000000000000000000000000000]
 StgValue_69          (specinterface) [ 000000000000000000000000000000000000000]
-StgValue_70          (write        ) [ 000000000000000000000000000000000000000]
+new_center_cast1     (zext         ) [ 011111111111111111111111111111111111111]
+new_center_cast      (zext         ) [ 000000000000000000000000000000000000000]
+StgValue_72          (write        ) [ 000000000000000000000000000000000000000]
 tmp                  (or           ) [ 000000000000000000000000000000000000000]
 tmp1                 (or           ) [ 000000000000000000000000000000000000000]
 brmerge1             (or           ) [ 011111111111111111111111111111111111111]
@@ -439,72 +450,79 @@ btn_count_load       (load         ) [ 000000000000000000000000000000000000000]
 tmp_s                (add          ) [ 000000000000000000000000000000000000000]
 btn_count_loc        (select       ) [ 011111111111111111111111111111111111111]
 game_over_load       (load         ) [ 011111111111111111111111111111111111111]
-StgValue_78          (br           ) [ 011111111111111111111111111111111111111]
-tmp_1                (add          ) [ 000000000000000000000000000000000000000]
-tmp_2                (add          ) [ 000000000000000000000000000000000000000]
+StgValue_80          (br           ) [ 011111111111111111111111111111111111111]
+new_center           (add          ) [ 000000000000000000000000000000000000000]
+new_center_1_cast    (sext         ) [ 000000000000000000000000000000000000000]
+new_center_1         (add          ) [ 000000000000000000000000000000000000000]
+new_center_2_cast    (zext         ) [ 000000000000000000000000000000000000000]
 p_s                  (select       ) [ 000000000000000000000000000000000000000]
+p_cast               (sext         ) [ 000000000000000000000000000000000000000]
 p_1                  (select       ) [ 000000000000000000000000000000000000000]
+p_1_cast             (zext         ) [ 000000000000000000000000000000000000000]
 sel_tmp              (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp2             (select       ) [ 000000000000000000000000000000000000000]
+new_center_2         (select       ) [ 000000000000000000000000000000000000000]
 sel_tmp3             (xor          ) [ 000000000000000000000000000000000000000]
 sel_tmp4             (and          ) [ 000000000000000000000000000000000000000]
 sel_tmp5             (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp6             (select       ) [ 000000000000000000000000000000000000000]
+new_center_3         (select       ) [ 000000000000000000000000000000000000000]
 sel_tmp9             (xor          ) [ 000000000000000000000000000000000000000]
 sel_tmp1             (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp7             (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp8             (select       ) [ 000000000000000000000000000000000000000]
-sel_tmp10            (xor          ) [ 000000000000000000000000000000000000000]
-sel_tmp11            (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp12            (select       ) [ 000000000000000000000000000000000000000]
+sel_tmp2             (and          ) [ 000000000000000000000000000000000000000]
+new_center_4         (select       ) [ 000000000000000000000000000000000000000]
+sel_tmp7             (xor          ) [ 000000000000000000000000000000000000000]
+sel_tmp8             (and          ) [ 000000000000000000000000000000000000000]
+new_center_5         (select       ) [ 000000000000000000000000000000000000000]
+sel_tmp6             (xor          ) [ 000000000000000000000000000000000000000]
+sel_tmp10            (and          ) [ 000000000000000000000000000000000000000]
+new_center_6         (select       ) [ 000000000000000000000000000000000000000]
+sel_tmp25_demorgan   (or           ) [ 000000000000000000000000000000000000000]
+sel_tmp11            (xor          ) [ 000000000000000000000000000000000000000]
+sel_tmp12            (and          ) [ 000000000000000000000000000000000000000]
+new_center_7         (select       ) [ 000000000000000000000000000000000000000]
+sel_tmp32_demorgan   (or           ) [ 000000000000000000000000000000000000000]
 sel_tmp13            (xor          ) [ 000000000000000000000000000000000000000]
 sel_tmp14            (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp15            (select       ) [ 000000000000000000000000000000000000000]
-sel_tmp25_demorgan   (or           ) [ 000000000000000000000000000000000000000]
-sel_tmp16            (xor          ) [ 000000000000000000000000000000000000000]
-sel_tmp17            (and          ) [ 000000000000000000000000000000000000000]
-sel_tmp18            (select       ) [ 000000000000000000000000000000000000000]
-sel_tmp32_demorgan   (or           ) [ 000000000000000000000000000000000000000]
-sel_tmp19            (xor          ) [ 000000000000000000000000000000000000000]
-sel_tmp20            (and          ) [ 000000000000000000000000000000000000000]
-to_add_8             (select       ) [ 011111111111111111111111111111111111111]
-tmp_9                (icmp         ) [ 001111111111111111111111111111111111111]
-StgValue_108         (br           ) [ 011111111111111111111111111111111111111]
+new_center_8         (select       ) [ 011111111111111111111111111111111111111]
+tmp_1                (icmp         ) [ 001111111111111111111111111111111111111]
+StgValue_114         (br           ) [ 011111111111111111111111111111111111111]
 RandSeed_load        (load         ) [ 000000000000000000000000000000000000000]
 tmp_i_i              (mul          ) [ 000100000000000000000000000000000000000]
 tmp_2_i_i            (add          ) [ 000011111111111111111111111111111111111]
 tmp_3_i_i            (urem         ) [ 000000000000000000000000000000000000000]
-tmp_3                (trunc        ) [ 000000000000000000000000000000000000000]
-StgValue_149         (store        ) [ 000000000000000000000000000000000000000]
+tmp_2                (trunc        ) [ 000000000000000000000000000000000000000]
+StgValue_155         (store        ) [ 000000000000000000000000000000000000000]
 tmp_4_i              (icmp         ) [ 000000000000000000000000000000000000000]
-StgValue_151         (write        ) [ 000000000000000000000000000000000000000]
-StgValue_152         (br           ) [ 000000000000000000000000000000000000000]
+StgValue_157         (write        ) [ 000000000000000000000000000000000000000]
+StgValue_158         (br           ) [ 000000000000000000000000000000000000000]
 btn_count_flag_2     (phi          ) [ 000000000000000000000000000000000000001]
 btn_count_new_2      (phi          ) [ 000000000000000000000000000000000000001]
-to_add_9             (phi          ) [ 000000000000000000000000000000000000001]
+new_center_9         (phi          ) [ 000000000000000000000000000000000000001]
 first_run_load       (load         ) [ 000000000000000000000000000000000000001]
-StgValue_157         (br           ) [ 000000000000000000000000000000000000000]
-StgValue_158         (store        ) [ 000000000000000000000000000000000000000]
-StgValue_159         (br           ) [ 000000000000000000000000000000000000000]
-StgValue_160         (br           ) [ 000000000000000000000000000000000000000]
-tmp_i                (icmp         ) [ 000000000000000000000000000000000000001]
-StgValue_162         (br           ) [ 000000000000000000000000000000000000000]
-tmp_1_i              (icmp         ) [ 000000000000000000000000000000000000001]
-StgValue_164         (br           ) [ 000000000000000000000000000000000000000]
-StgValue_165         (write        ) [ 000000000000000000000000000000000000000]
+StgValue_163         (br           ) [ 000000000000000000000000000000000000000]
+StgValue_164         (store        ) [ 000000000000000000000000000000000000000]
+StgValue_165         (br           ) [ 000000000000000000000000000000000000000]
 StgValue_166         (br           ) [ 000000000000000000000000000000000000000]
-StgValue_167         (write        ) [ 000000000000000000000000000000000000000]
+tmp_i                (icmp         ) [ 000000000000000000000000000000000000001]
 StgValue_168         (br           ) [ 000000000000000000000000000000000000000]
-p_i                  (phi          ) [ 000000000000000000000000000000000000000]
-StgValue_170         (store        ) [ 000000000000000000000000000000000000000]
-StgValue_171         (br           ) [ 000000000000000000000000000000000000000]
-StgValue_172         (store        ) [ 000000000000000000000000000000000000000]
-StgValue_173         (br           ) [ 000000000000000000000000000000000000000]
-game_over_loc        (phi          ) [ 000000000000000000000000000000000000001]
-to_add_s             (phi          ) [ 000000000000000000000000000000000000000]
-StgValue_176         (write        ) [ 000000000000000000000000000000000000000]
+tmp_1_i              (icmp         ) [ 000000000000000000000000000000000000001]
+StgValue_170         (br           ) [ 000000000000000000000000000000000000000]
+StgValue_171         (store        ) [ 000000000000000000000000000000000000000]
+StgValue_172         (br           ) [ 000000000000000000000000000000000000000]
+StgValue_173         (store        ) [ 000000000000000000000000000000000000000]
+StgValue_174         (br           ) [ 000000000000000000000000000000000000000]
+right_wins_write_ass (phi          ) [ 000000000000000000000000000000000000000]
+end_game_write_assig (phi          ) [ 000000000000000000000000000000000000000]
 StgValue_177         (write        ) [ 000000000000000000000000000000000000000]
-StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
+StgValue_178         (write        ) [ 000000000000000000000000000000000000000]
+StgValue_179         (br           ) [ 000000000000000000000000000000000000000]
+StgValue_180         (store        ) [ 000000000000000000000000000000000000000]
+StgValue_181         (br           ) [ 000000000000000000000000000000000000000]
+new_center_s         (phi          ) [ 000000000000000000000000000000000000000]
+tmp_3                (bitselect    ) [ 000000000000000000000000000000000000000]
+tmp_4                (trunc        ) [ 000000000000000000000000000000000000000]
+tmp_5                (select       ) [ 000000000000000000000000000000000000000]
+StgValue_186         (write        ) [ 000000000000000000000000000000000000000]
+StgValue_187         (ret          ) [ 000000000000000000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -848,7 +866,7 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 <pin id="75" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
 </bind>
 </comp>
 
@@ -857,7 +875,7 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 <pin id="77" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -866,15 +884,24 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 <pin id="79" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
+<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i14.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
 <StgValue><ssdm name="_ssdm_op_Write.ap_none.i12P"/></StgValue>
 </bind>
 </comp>
 
-<comp id="80" class="1004" name="right_in_read_read_fu_80">
+<comp id="82" class="1004" name="right_in_read_read_fu_82">
 <pin_list>
-<pin id="81" dir="0" index="0" bw="1" slack="0"/>
-<pin id="82" dir="0" index="1" bw="1" slack="0"/>
-<pin id="83" dir="1" index="2" bw="1" slack="0"/>
+<pin id="83" dir="0" index="0" bw="1" slack="0"/>
+<pin id="84" dir="0" index="1" bw="1" slack="0"/>
+<pin id="85" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -882,11 +909,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="86" class="1004" name="center_line_in_V_rea_read_fu_86">
+<comp id="88" class="1004" name="center_line_in_V_rea_read_fu_88">
 <pin_list>
-<pin id="87" dir="0" index="0" bw="12" slack="0"/>
-<pin id="88" dir="0" index="1" bw="12" slack="0"/>
-<pin id="89" dir="1" index="2" bw="12" slack="0"/>
+<pin id="89" dir="0" index="0" bw="12" slack="0"/>
+<pin id="90" dir="0" index="1" bw="12" slack="0"/>
+<pin id="91" dir="1" index="2" bw="12" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -894,11 +921,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="92" class="1004" name="reset_game_in_read_read_fu_92">
+<comp id="94" class="1004" name="reset_game_in_read_read_fu_94">
 <pin_list>
-<pin id="93" dir="0" index="0" bw="1" slack="0"/>
-<pin id="94" dir="0" index="1" bw="1" slack="0"/>
-<pin id="95" dir="1" index="2" bw="1" slack="0"/>
+<pin id="95" dir="0" index="0" bw="1" slack="0"/>
+<pin id="96" dir="0" index="1" bw="1" slack="0"/>
+<pin id="97" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -906,11 +933,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="98" class="1004" name="btn3_read_read_fu_98">
+<comp id="100" class="1004" name="btn3_read_read_fu_100">
 <pin_list>
-<pin id="99" dir="0" index="0" bw="1" slack="0"/>
-<pin id="100" dir="0" index="1" bw="1" slack="0"/>
-<pin id="101" dir="1" index="2" bw="1" slack="0"/>
+<pin id="101" dir="0" index="0" bw="1" slack="0"/>
+<pin id="102" dir="0" index="1" bw="1" slack="0"/>
+<pin id="103" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -918,11 +945,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="104" class="1004" name="btn2_read_read_fu_104">
+<comp id="106" class="1004" name="btn2_read_read_fu_106">
 <pin_list>
-<pin id="105" dir="0" index="0" bw="1" slack="0"/>
-<pin id="106" dir="0" index="1" bw="1" slack="0"/>
-<pin id="107" dir="1" index="2" bw="1" slack="0"/>
+<pin id="107" dir="0" index="0" bw="1" slack="0"/>
+<pin id="108" dir="0" index="1" bw="1" slack="0"/>
+<pin id="109" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -930,11 +957,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="110" class="1004" name="btn1_read_read_fu_110">
+<comp id="112" class="1004" name="btn1_read_read_fu_112">
 <pin_list>
-<pin id="111" dir="0" index="0" bw="1" slack="0"/>
-<pin id="112" dir="0" index="1" bw="1" slack="0"/>
-<pin id="113" dir="1" index="2" bw="1" slack="0"/>
+<pin id="113" dir="0" index="0" bw="1" slack="0"/>
+<pin id="114" dir="0" index="1" bw="1" slack="0"/>
+<pin id="115" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -942,11 +969,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="116" class="1004" name="btn0_read_read_fu_116">
+<comp id="118" class="1004" name="btn0_read_read_fu_118">
 <pin_list>
-<pin id="117" dir="0" index="0" bw="1" slack="0"/>
-<pin id="118" dir="0" index="1" bw="1" slack="0"/>
-<pin id="119" dir="1" index="2" bw="1" slack="0"/>
+<pin id="119" dir="0" index="0" bw="1" slack="0"/>
+<pin id="120" dir="0" index="1" bw="1" slack="0"/>
+<pin id="121" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -954,46 +981,46 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="122" class="1004" name="StgValue_70_write_fu_122">
+<comp id="124" class="1004" name="StgValue_72_write_fu_124">
 <pin_list>
-<pin id="123" dir="0" index="0" bw="0" slack="0"/>
-<pin id="124" dir="0" index="1" bw="1" slack="0"/>
-<pin id="125" dir="0" index="2" bw="1" slack="0"/>
-<pin id="126" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="125" dir="0" index="0" bw="0" slack="0"/>
+<pin id="126" dir="0" index="1" bw="1" slack="0"/>
+<pin id="127" dir="0" index="2" bw="1" slack="0"/>
+<pin id="128" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="StgValue_70/1 "/>
+<opset="StgValue_72/1 "/>
 </bind>
 </comp>
 
-<comp id="130" class="1004" name="StgValue_151_write_fu_130">
+<comp id="132" class="1004" name="StgValue_157_write_fu_132">
 <pin_list>
-<pin id="131" dir="0" index="0" bw="0" slack="0"/>
-<pin id="132" dir="0" index="1" bw="1" slack="0"/>
-<pin id="133" dir="0" index="2" bw="1" slack="0"/>
-<pin id="134" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="133" dir="0" index="0" bw="0" slack="0"/>
+<pin id="134" dir="0" index="1" bw="1" slack="0"/>
+<pin id="135" dir="0" index="2" bw="1" slack="0"/>
+<pin id="136" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="StgValue_151/38 "/>
+<opset="StgValue_157/38 "/>
 </bind>
 </comp>
 
-<comp id="137" class="1004" name="grp_write_fu_137">
+<comp id="139" class="1004" name="StgValue_177_write_fu_139">
 <pin_list>
-<pin id="138" dir="0" index="0" bw="0" slack="0"/>
-<pin id="139" dir="0" index="1" bw="1" slack="0"/>
-<pin id="140" dir="0" index="2" bw="1" slack="0"/>
-<pin id="141" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="140" dir="0" index="0" bw="0" slack="0"/>
+<pin id="141" dir="0" index="1" bw="1" slack="0"/>
+<pin id="142" dir="0" index="2" bw="1" slack="0"/>
+<pin id="143" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="StgValue_165/38 StgValue_167/38 "/>
+<opset="StgValue_177/38 "/>
 </bind>
 </comp>
 
-<comp id="146" class="1004" name="StgValue_176_write_fu_146">
+<comp id="146" class="1004" name="StgValue_178_write_fu_146">
 <pin_list>
 <pin id="147" dir="0" index="0" bw="0" slack="0"/>
 <pin id="148" dir="0" index="1" bw="1" slack="0"/>
@@ -1002,11 +1029,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="StgValue_176/38 "/>
+<opset="StgValue_178/38 "/>
 </bind>
 </comp>
 
-<comp id="153" class="1004" name="StgValue_177_write_fu_153">
+<comp id="153" class="1004" name="StgValue_186_write_fu_153">
 <pin_list>
 <pin id="154" dir="0" index="0" bw="0" slack="0"/>
 <pin id="155" dir="0" index="1" bw="12" slack="0"/>
@@ -1015,7 +1042,7 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="StgValue_177/38 "/>
+<opset="StgValue_186/38 "/>
 </bind>
 </comp>
 
@@ -1071,43 +1098,43 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="184" class="1005" name="to_add_9_reg_184">
+<comp id="184" class="1005" name="new_center_9_reg_184">
 <pin_list>
-<pin id="185" dir="0" index="0" bw="12" slack="2147483647"/>
-<pin id="186" dir="1" index="1" bw="12" slack="2147483647"/>
+<pin id="185" dir="0" index="0" bw="14" slack="2147483647"/>
+<pin id="186" dir="1" index="1" bw="14" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="to_add_9 (phireg) "/>
+<opset="new_center_9 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="187" class="1004" name="to_add_9_phi_fu_187">
+<comp id="187" class="1004" name="new_center_9_phi_fu_187">
 <pin_list>
 <pin id="188" dir="0" index="0" bw="12" slack="37"/>
 <pin id="189" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="190" dir="0" index="2" bw="12" slack="37"/>
+<pin id="190" dir="0" index="2" bw="14" slack="37"/>
 <pin id="191" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="192" dir="0" index="4" bw="12" slack="37"/>
+<pin id="192" dir="0" index="4" bw="14" slack="37"/>
 <pin id="193" dir="0" index="5" bw="0" slack="2147483647"/>
-<pin id="194" dir="1" index="6" bw="12" slack="0"/>
+<pin id="194" dir="1" index="6" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="to_add_9/38 "/>
+<opset="new_center_9/38 "/>
 </bind>
 </comp>
 
-<comp id="195" class="1005" name="p_i_reg_195">
+<comp id="195" class="1005" name="right_wins_write_ass_reg_195">
 <pin_list>
 <pin id="196" dir="0" index="0" bw="1" slack="2147483647"/>
 <pin id="197" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="p_i (phireg) "/>
+<opset="right_wins_write_ass (phireg) "/>
 </bind>
 </comp>
 
-<comp id="198" class="1004" name="p_i_phi_fu_198">
+<comp id="198" class="1004" name="right_wins_write_ass_phi_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="1" slack="0"/>
 <pin id="200" dir="0" index="1" bw="0" slack="2147483647"/>
@@ -1119,63 +1146,99 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="p_i/38 "/>
+<opset="right_wins_write_ass/38 "/>
 </bind>
 </comp>
 
-<comp id="209" class="1005" name="game_over_loc_reg_209">
+<comp id="210" class="1005" name="end_game_write_assig_reg_210">
 <pin_list>
-<pin id="210" dir="0" index="0" bw="1" slack="2147483647"/>
-<pin id="211" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="211" dir="0" index="0" bw="1" slack="2147483647"/>
+<pin id="212" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="game_over_loc (phireg) "/>
+<opset="end_game_write_assig (phireg) "/>
 </bind>
 </comp>
 
-<comp id="212" class="1004" name="game_over_loc_phi_fu_212">
+<comp id="213" class="1004" name="end_game_write_assig_phi_fu_213">
 <pin_list>
-<pin id="213" dir="0" index="0" bw="1" slack="37"/>
-<pin id="214" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="215" dir="0" index="2" bw="1" slack="0"/>
-<pin id="216" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="217" dir="1" index="4" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="phi(47) " fcode="phi"/>
-<opset="game_over_loc/38 "/>
-</bind>
-</comp>
-
-<comp id="220" class="1005" name="to_add_s_reg_220">
-<pin_list>
-<pin id="221" dir="0" index="0" bw="12" slack="2147483647"/>
-<pin id="222" dir="1" index="1" bw="12" slack="2147483647"/>
-</pin_list>
-<bind>
-<opset="to_add_s (phireg) "/>
-</bind>
-</comp>
-
-<comp id="223" class="1004" name="to_add_s_phi_fu_223">
-<pin_list>
-<pin id="224" dir="0" index="0" bw="10" slack="0"/>
-<pin id="225" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="226" dir="0" index="2" bw="12" slack="0"/>
-<pin id="227" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="228" dir="1" index="4" bw="12" slack="0"/>
+<pin id="214" dir="0" index="0" bw="1" slack="0"/>
+<pin id="215" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="216" dir="0" index="2" bw="1" slack="0"/>
+<pin id="217" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="218" dir="0" index="4" bw="1" slack="0"/>
+<pin id="219" dir="0" index="5" bw="0" slack="2147483647"/>
+<pin id="220" dir="1" index="6" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="to_add_s/38 "/>
+<opset="end_game_write_assig/38 "/>
 </bind>
 </comp>
 
-<comp id="232" class="1004" name="tmp_fu_232">
+<comp id="225" class="1005" name="new_center_s_reg_225">
 <pin_list>
-<pin id="233" dir="0" index="0" bw="1" slack="0"/>
-<pin id="234" dir="0" index="1" bw="1" slack="0"/>
-<pin id="235" dir="1" index="2" bw="1" slack="0"/>
+<pin id="226" dir="0" index="0" bw="14" slack="2147483647"/>
+<pin id="227" dir="1" index="1" bw="14" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="new_center_s (phireg) "/>
+</bind>
+</comp>
+
+<comp id="228" class="1004" name="new_center_s_phi_fu_228">
+<pin_list>
+<pin id="229" dir="0" index="0" bw="10" slack="0"/>
+<pin id="230" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="231" dir="0" index="2" bw="14" slack="0"/>
+<pin id="232" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="233" dir="1" index="4" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="new_center_s/38 "/>
+</bind>
+</comp>
+
+<comp id="236" class="1004" name="grp_store_fu_236">
+<pin_list>
+<pin id="237" dir="0" index="0" bw="1" slack="0"/>
+<pin id="238" dir="0" index="1" bw="1" slack="0"/>
+<pin id="239" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_171/38 StgValue_173/38 "/>
+</bind>
+</comp>
+
+<comp id="242" class="1004" name="new_center_cast1_fu_242">
+<pin_list>
+<pin id="243" dir="0" index="0" bw="12" slack="0"/>
+<pin id="244" dir="1" index="1" bw="14" slack="37"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="new_center_cast1/1 "/>
+</bind>
+</comp>
+
+<comp id="246" class="1004" name="new_center_cast_fu_246">
+<pin_list>
+<pin id="247" dir="0" index="0" bw="12" slack="0"/>
+<pin id="248" dir="1" index="1" bw="13" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="new_center_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1004" name="tmp_fu_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="1" slack="0"/>
+<pin id="252" dir="0" index="1" bw="1" slack="0"/>
+<pin id="253" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
@@ -1183,11 +1246,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="238" class="1004" name="tmp1_fu_238">
+<comp id="256" class="1004" name="tmp1_fu_256">
 <pin_list>
-<pin id="239" dir="0" index="0" bw="1" slack="0"/>
-<pin id="240" dir="0" index="1" bw="1" slack="0"/>
-<pin id="241" dir="1" index="2" bw="1" slack="0"/>
+<pin id="257" dir="0" index="0" bw="1" slack="0"/>
+<pin id="258" dir="0" index="1" bw="1" slack="0"/>
+<pin id="259" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
@@ -1195,11 +1258,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="244" class="1004" name="brmerge1_fu_244">
+<comp id="262" class="1004" name="brmerge1_fu_262">
 <pin_list>
-<pin id="245" dir="0" index="0" bw="1" slack="0"/>
-<pin id="246" dir="0" index="1" bw="1" slack="0"/>
-<pin id="247" dir="1" index="2" bw="1" slack="0"/>
+<pin id="263" dir="0" index="0" bw="1" slack="0"/>
+<pin id="264" dir="0" index="1" bw="1" slack="0"/>
+<pin id="265" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
@@ -1207,10 +1270,10 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="250" class="1004" name="btn_count_load_load_fu_250">
+<comp id="268" class="1004" name="btn_count_load_load_fu_268">
 <pin_list>
-<pin id="251" dir="0" index="0" bw="32" slack="0"/>
-<pin id="252" dir="1" index="1" bw="32" slack="0"/>
+<pin id="269" dir="0" index="0" bw="32" slack="0"/>
+<pin id="270" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -1218,11 +1281,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="254" class="1004" name="tmp_s_fu_254">
+<comp id="272" class="1004" name="tmp_s_fu_272">
 <pin_list>
-<pin id="255" dir="0" index="0" bw="32" slack="0"/>
-<pin id="256" dir="0" index="1" bw="1" slack="0"/>
-<pin id="257" dir="1" index="2" bw="32" slack="0"/>
+<pin id="273" dir="0" index="0" bw="32" slack="0"/>
+<pin id="274" dir="0" index="1" bw="1" slack="0"/>
+<pin id="275" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -1230,12 +1293,12 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="260" class="1004" name="btn_count_loc_fu_260">
+<comp id="278" class="1004" name="btn_count_loc_fu_278">
 <pin_list>
-<pin id="261" dir="0" index="0" bw="1" slack="0"/>
-<pin id="262" dir="0" index="1" bw="32" slack="0"/>
-<pin id="263" dir="0" index="2" bw="32" slack="0"/>
-<pin id="264" dir="1" index="3" bw="32" slack="1"/>
+<pin id="279" dir="0" index="0" bw="1" slack="0"/>
+<pin id="280" dir="0" index="1" bw="32" slack="0"/>
+<pin id="281" dir="0" index="2" bw="32" slack="0"/>
+<pin id="282" dir="1" index="3" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1243,10 +1306,10 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="268" class="1004" name="game_over_load_load_fu_268">
+<comp id="286" class="1004" name="game_over_load_load_fu_286">
 <pin_list>
-<pin id="269" dir="0" index="0" bw="1" slack="0"/>
-<pin id="270" dir="1" index="1" bw="1" slack="37"/>
+<pin id="287" dir="0" index="0" bw="1" slack="0"/>
+<pin id="288" dir="1" index="1" bw="1" slack="37"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -1254,36 +1317,58 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="272" class="1004" name="tmp_1_fu_272">
+<comp id="290" class="1004" name="new_center_fu_290">
 <pin_list>
-<pin id="273" dir="0" index="0" bw="12" slack="0"/>
-<pin id="274" dir="0" index="1" bw="5" slack="0"/>
-<pin id="275" dir="1" index="2" bw="12" slack="0"/>
+<pin id="291" dir="0" index="0" bw="12" slack="0"/>
+<pin id="292" dir="0" index="1" bw="5" slack="0"/>
+<pin id="293" dir="1" index="2" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_1/1 "/>
+<opset="new_center/1 "/>
 </bind>
 </comp>
 
-<comp id="278" class="1004" name="tmp_2_fu_278">
+<comp id="296" class="1004" name="new_center_1_cast_fu_296">
 <pin_list>
-<pin id="279" dir="0" index="0" bw="12" slack="0"/>
-<pin id="280" dir="0" index="1" bw="5" slack="0"/>
-<pin id="281" dir="1" index="2" bw="12" slack="0"/>
+<pin id="297" dir="0" index="0" bw="13" slack="0"/>
+<pin id="298" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="new_center_1_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="300" class="1004" name="new_center_1_fu_300">
+<pin_list>
+<pin id="301" dir="0" index="0" bw="12" slack="0"/>
+<pin id="302" dir="0" index="1" bw="5" slack="0"/>
+<pin id="303" dir="1" index="2" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_2/1 "/>
+<opset="new_center_1/1 "/>
 </bind>
 </comp>
 
-<comp id="284" class="1004" name="p_s_fu_284">
+<comp id="306" class="1004" name="new_center_2_cast_fu_306">
 <pin_list>
-<pin id="285" dir="0" index="0" bw="1" slack="0"/>
-<pin id="286" dir="0" index="1" bw="12" slack="0"/>
-<pin id="287" dir="0" index="2" bw="12" slack="0"/>
-<pin id="288" dir="1" index="3" bw="12" slack="0"/>
+<pin id="307" dir="0" index="0" bw="13" slack="0"/>
+<pin id="308" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="new_center_2_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="310" class="1004" name="p_s_fu_310">
+<pin_list>
+<pin id="311" dir="0" index="0" bw="1" slack="0"/>
+<pin id="312" dir="0" index="1" bw="13" slack="0"/>
+<pin id="313" dir="0" index="2" bw="12" slack="0"/>
+<pin id="314" dir="1" index="3" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1291,12 +1376,23 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="292" class="1004" name="p_1_fu_292">
+<comp id="318" class="1004" name="p_cast_fu_318">
 <pin_list>
-<pin id="293" dir="0" index="0" bw="1" slack="0"/>
-<pin id="294" dir="0" index="1" bw="12" slack="0"/>
-<pin id="295" dir="0" index="2" bw="12" slack="0"/>
-<pin id="296" dir="1" index="3" bw="12" slack="0"/>
+<pin id="319" dir="0" index="0" bw="13" slack="0"/>
+<pin id="320" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="p_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="322" class="1004" name="p_1_fu_322">
+<pin_list>
+<pin id="323" dir="0" index="0" bw="1" slack="0"/>
+<pin id="324" dir="0" index="1" bw="13" slack="0"/>
+<pin id="325" dir="0" index="2" bw="12" slack="0"/>
+<pin id="326" dir="1" index="3" bw="13" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1304,11 +1400,22 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="300" class="1004" name="sel_tmp_fu_300">
+<comp id="330" class="1004" name="p_1_cast_fu_330">
 <pin_list>
-<pin id="301" dir="0" index="0" bw="1" slack="0"/>
-<pin id="302" dir="0" index="1" bw="1" slack="0"/>
-<pin id="303" dir="1" index="2" bw="1" slack="0"/>
+<pin id="331" dir="0" index="0" bw="13" slack="0"/>
+<pin id="332" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="p_1_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="334" class="1004" name="sel_tmp_fu_334">
+<pin_list>
+<pin id="335" dir="0" index="0" bw="1" slack="0"/>
+<pin id="336" dir="0" index="1" bw="1" slack="0"/>
+<pin id="337" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
@@ -1316,24 +1423,24 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="306" class="1004" name="sel_tmp2_fu_306">
+<comp id="340" class="1004" name="new_center_2_fu_340">
 <pin_list>
-<pin id="307" dir="0" index="0" bw="1" slack="0"/>
-<pin id="308" dir="0" index="1" bw="12" slack="0"/>
-<pin id="309" dir="0" index="2" bw="12" slack="0"/>
-<pin id="310" dir="1" index="3" bw="12" slack="0"/>
+<pin id="341" dir="0" index="0" bw="1" slack="0"/>
+<pin id="342" dir="0" index="1" bw="13" slack="0"/>
+<pin id="343" dir="0" index="2" bw="13" slack="0"/>
+<pin id="344" dir="1" index="3" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="sel_tmp2/1 "/>
+<opset="new_center_2/1 "/>
 </bind>
 </comp>
 
-<comp id="314" class="1004" name="sel_tmp3_fu_314">
+<comp id="348" class="1004" name="sel_tmp3_fu_348">
 <pin_list>
-<pin id="315" dir="0" index="0" bw="1" slack="0"/>
-<pin id="316" dir="0" index="1" bw="1" slack="0"/>
-<pin id="317" dir="1" index="2" bw="1" slack="0"/>
+<pin id="349" dir="0" index="0" bw="1" slack="0"/>
+<pin id="350" dir="0" index="1" bw="1" slack="0"/>
+<pin id="351" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
@@ -1341,11 +1448,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="320" class="1004" name="sel_tmp4_fu_320">
+<comp id="354" class="1004" name="sel_tmp4_fu_354">
 <pin_list>
-<pin id="321" dir="0" index="0" bw="1" slack="0"/>
-<pin id="322" dir="0" index="1" bw="1" slack="0"/>
-<pin id="323" dir="1" index="2" bw="1" slack="0"/>
+<pin id="355" dir="0" index="0" bw="1" slack="0"/>
+<pin id="356" dir="0" index="1" bw="1" slack="0"/>
+<pin id="357" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
@@ -1353,11 +1460,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="326" class="1004" name="sel_tmp5_fu_326">
+<comp id="360" class="1004" name="sel_tmp5_fu_360">
 <pin_list>
-<pin id="327" dir="0" index="0" bw="1" slack="0"/>
-<pin id="328" dir="0" index="1" bw="1" slack="0"/>
-<pin id="329" dir="1" index="2" bw="1" slack="0"/>
+<pin id="361" dir="0" index="0" bw="1" slack="0"/>
+<pin id="362" dir="0" index="1" bw="1" slack="0"/>
+<pin id="363" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
@@ -1365,24 +1472,24 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="332" class="1004" name="sel_tmp6_fu_332">
+<comp id="366" class="1004" name="new_center_3_fu_366">
 <pin_list>
-<pin id="333" dir="0" index="0" bw="1" slack="0"/>
-<pin id="334" dir="0" index="1" bw="12" slack="0"/>
-<pin id="335" dir="0" index="2" bw="12" slack="0"/>
-<pin id="336" dir="1" index="3" bw="12" slack="0"/>
+<pin id="367" dir="0" index="0" bw="1" slack="0"/>
+<pin id="368" dir="0" index="1" bw="13" slack="0"/>
+<pin id="369" dir="0" index="2" bw="14" slack="0"/>
+<pin id="370" dir="1" index="3" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="sel_tmp6/1 "/>
+<opset="new_center_3/1 "/>
 </bind>
 </comp>
 
-<comp id="340" class="1004" name="sel_tmp9_fu_340">
+<comp id="374" class="1004" name="sel_tmp9_fu_374">
 <pin_list>
-<pin id="341" dir="0" index="0" bw="1" slack="0"/>
-<pin id="342" dir="0" index="1" bw="1" slack="0"/>
-<pin id="343" dir="1" index="2" bw="1" slack="0"/>
+<pin id="375" dir="0" index="0" bw="1" slack="0"/>
+<pin id="376" dir="0" index="1" bw="1" slack="0"/>
+<pin id="377" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
@@ -1390,11 +1497,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="346" class="1004" name="sel_tmp1_fu_346">
+<comp id="380" class="1004" name="sel_tmp1_fu_380">
 <pin_list>
-<pin id="347" dir="0" index="0" bw="1" slack="0"/>
-<pin id="348" dir="0" index="1" bw="1" slack="0"/>
-<pin id="349" dir="1" index="2" bw="1" slack="0"/>
+<pin id="381" dir="0" index="0" bw="1" slack="0"/>
+<pin id="382" dir="0" index="1" bw="1" slack="0"/>
+<pin id="383" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
@@ -1402,110 +1509,110 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="352" class="1004" name="sel_tmp7_fu_352">
-<pin_list>
-<pin id="353" dir="0" index="0" bw="1" slack="0"/>
-<pin id="354" dir="0" index="1" bw="1" slack="0"/>
-<pin id="355" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="and(23) " fcode="and"/>
-<opset="sel_tmp7/1 "/>
-</bind>
-</comp>
-
-<comp id="358" class="1004" name="sel_tmp8_fu_358">
-<pin_list>
-<pin id="359" dir="0" index="0" bw="1" slack="0"/>
-<pin id="360" dir="0" index="1" bw="12" slack="0"/>
-<pin id="361" dir="0" index="2" bw="12" slack="0"/>
-<pin id="362" dir="1" index="3" bw="12" slack="0"/>
-</pin_list>
-<bind>
-<opcode="select(49) " fcode="select"/>
-<opset="sel_tmp8/1 "/>
-</bind>
-</comp>
-
-<comp id="366" class="1004" name="sel_tmp10_fu_366">
-<pin_list>
-<pin id="367" dir="0" index="0" bw="1" slack="0"/>
-<pin id="368" dir="0" index="1" bw="1" slack="0"/>
-<pin id="369" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="xor(25) " fcode="xor"/>
-<opset="sel_tmp10/1 "/>
-</bind>
-</comp>
-
-<comp id="372" class="1004" name="sel_tmp11_fu_372">
-<pin_list>
-<pin id="373" dir="0" index="0" bw="1" slack="0"/>
-<pin id="374" dir="0" index="1" bw="1" slack="0"/>
-<pin id="375" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="and(23) " fcode="and"/>
-<opset="sel_tmp11/1 "/>
-</bind>
-</comp>
-
-<comp id="378" class="1004" name="sel_tmp12_fu_378">
-<pin_list>
-<pin id="379" dir="0" index="0" bw="1" slack="0"/>
-<pin id="380" dir="0" index="1" bw="12" slack="0"/>
-<pin id="381" dir="0" index="2" bw="12" slack="0"/>
-<pin id="382" dir="1" index="3" bw="12" slack="0"/>
-</pin_list>
-<bind>
-<opcode="select(49) " fcode="select"/>
-<opset="sel_tmp12/1 "/>
-</bind>
-</comp>
-
-<comp id="386" class="1004" name="sel_tmp13_fu_386">
+<comp id="386" class="1004" name="sel_tmp2_fu_386">
 <pin_list>
 <pin id="387" dir="0" index="0" bw="1" slack="0"/>
 <pin id="388" dir="0" index="1" bw="1" slack="0"/>
 <pin id="389" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<opcode="xor(25) " fcode="xor"/>
-<opset="sel_tmp13/1 "/>
+<opcode="and(23) " fcode="and"/>
+<opset="sel_tmp2/1 "/>
 </bind>
 </comp>
 
-<comp id="392" class="1004" name="sel_tmp14_fu_392">
+<comp id="392" class="1004" name="new_center_4_fu_392">
 <pin_list>
 <pin id="393" dir="0" index="0" bw="1" slack="0"/>
-<pin id="394" dir="0" index="1" bw="1" slack="0"/>
-<pin id="395" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="and(23) " fcode="and"/>
-<opset="sel_tmp14/1 "/>
-</bind>
-</comp>
-
-<comp id="398" class="1004" name="sel_tmp15_fu_398">
-<pin_list>
-<pin id="399" dir="0" index="0" bw="1" slack="0"/>
-<pin id="400" dir="0" index="1" bw="12" slack="0"/>
-<pin id="401" dir="0" index="2" bw="12" slack="0"/>
-<pin id="402" dir="1" index="3" bw="12" slack="0"/>
+<pin id="394" dir="0" index="1" bw="13" slack="0"/>
+<pin id="395" dir="0" index="2" bw="14" slack="0"/>
+<pin id="396" dir="1" index="3" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="sel_tmp15/1 "/>
+<opset="new_center_4/1 "/>
 </bind>
 </comp>
 
-<comp id="406" class="1004" name="sel_tmp25_demorgan_fu_406">
+<comp id="400" class="1004" name="sel_tmp7_fu_400">
+<pin_list>
+<pin id="401" dir="0" index="0" bw="1" slack="0"/>
+<pin id="402" dir="0" index="1" bw="1" slack="0"/>
+<pin id="403" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="sel_tmp7/1 "/>
+</bind>
+</comp>
+
+<comp id="406" class="1004" name="sel_tmp8_fu_406">
 <pin_list>
 <pin id="407" dir="0" index="0" bw="1" slack="0"/>
 <pin id="408" dir="0" index="1" bw="1" slack="0"/>
 <pin id="409" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="and(23) " fcode="and"/>
+<opset="sel_tmp8/1 "/>
+</bind>
+</comp>
+
+<comp id="412" class="1004" name="new_center_5_fu_412">
+<pin_list>
+<pin id="413" dir="0" index="0" bw="1" slack="0"/>
+<pin id="414" dir="0" index="1" bw="13" slack="0"/>
+<pin id="415" dir="0" index="2" bw="14" slack="0"/>
+<pin id="416" dir="1" index="3" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="new_center_5/1 "/>
+</bind>
+</comp>
+
+<comp id="420" class="1004" name="sel_tmp6_fu_420">
+<pin_list>
+<pin id="421" dir="0" index="0" bw="1" slack="0"/>
+<pin id="422" dir="0" index="1" bw="1" slack="0"/>
+<pin id="423" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="sel_tmp6/1 "/>
+</bind>
+</comp>
+
+<comp id="426" class="1004" name="sel_tmp10_fu_426">
+<pin_list>
+<pin id="427" dir="0" index="0" bw="1" slack="0"/>
+<pin id="428" dir="0" index="1" bw="1" slack="0"/>
+<pin id="429" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="and(23) " fcode="and"/>
+<opset="sel_tmp10/1 "/>
+</bind>
+</comp>
+
+<comp id="432" class="1004" name="new_center_6_fu_432">
+<pin_list>
+<pin id="433" dir="0" index="0" bw="1" slack="0"/>
+<pin id="434" dir="0" index="1" bw="13" slack="0"/>
+<pin id="435" dir="0" index="2" bw="14" slack="0"/>
+<pin id="436" dir="1" index="3" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="new_center_6/1 "/>
+</bind>
+</comp>
+
+<comp id="440" class="1004" name="sel_tmp25_demorgan_fu_440">
+<pin_list>
+<pin id="441" dir="0" index="0" bw="1" slack="0"/>
+<pin id="442" dir="0" index="1" bw="1" slack="0"/>
+<pin id="443" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
@@ -1513,48 +1620,48 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="412" class="1004" name="sel_tmp16_fu_412">
+<comp id="446" class="1004" name="sel_tmp11_fu_446">
 <pin_list>
-<pin id="413" dir="0" index="0" bw="1" slack="0"/>
-<pin id="414" dir="0" index="1" bw="1" slack="0"/>
-<pin id="415" dir="1" index="2" bw="1" slack="0"/>
+<pin id="447" dir="0" index="0" bw="1" slack="0"/>
+<pin id="448" dir="0" index="1" bw="1" slack="0"/>
+<pin id="449" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="sel_tmp16/1 "/>
+<opset="sel_tmp11/1 "/>
 </bind>
 </comp>
 
-<comp id="418" class="1004" name="sel_tmp17_fu_418">
+<comp id="452" class="1004" name="sel_tmp12_fu_452">
 <pin_list>
-<pin id="419" dir="0" index="0" bw="1" slack="0"/>
-<pin id="420" dir="0" index="1" bw="1" slack="0"/>
-<pin id="421" dir="1" index="2" bw="1" slack="0"/>
+<pin id="453" dir="0" index="0" bw="1" slack="0"/>
+<pin id="454" dir="0" index="1" bw="1" slack="0"/>
+<pin id="455" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="sel_tmp17/1 "/>
+<opset="sel_tmp12/1 "/>
 </bind>
 </comp>
 
-<comp id="424" class="1004" name="sel_tmp18_fu_424">
+<comp id="458" class="1004" name="new_center_7_fu_458">
 <pin_list>
-<pin id="425" dir="0" index="0" bw="1" slack="0"/>
-<pin id="426" dir="0" index="1" bw="12" slack="0"/>
-<pin id="427" dir="0" index="2" bw="12" slack="0"/>
-<pin id="428" dir="1" index="3" bw="12" slack="0"/>
+<pin id="459" dir="0" index="0" bw="1" slack="0"/>
+<pin id="460" dir="0" index="1" bw="13" slack="0"/>
+<pin id="461" dir="0" index="2" bw="14" slack="0"/>
+<pin id="462" dir="1" index="3" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="sel_tmp18/1 "/>
+<opset="new_center_7/1 "/>
 </bind>
 </comp>
 
-<comp id="432" class="1004" name="sel_tmp32_demorgan_fu_432">
+<comp id="466" class="1004" name="sel_tmp32_demorgan_fu_466">
 <pin_list>
-<pin id="433" dir="0" index="0" bw="1" slack="0"/>
-<pin id="434" dir="0" index="1" bw="1" slack="0"/>
-<pin id="435" dir="1" index="2" bw="1" slack="0"/>
+<pin id="467" dir="0" index="0" bw="1" slack="0"/>
+<pin id="468" dir="0" index="1" bw="1" slack="0"/>
+<pin id="469" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
@@ -1562,59 +1669,59 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="438" class="1004" name="sel_tmp19_fu_438">
+<comp id="472" class="1004" name="sel_tmp13_fu_472">
 <pin_list>
-<pin id="439" dir="0" index="0" bw="1" slack="0"/>
-<pin id="440" dir="0" index="1" bw="1" slack="0"/>
-<pin id="441" dir="1" index="2" bw="1" slack="0"/>
+<pin id="473" dir="0" index="0" bw="1" slack="0"/>
+<pin id="474" dir="0" index="1" bw="1" slack="0"/>
+<pin id="475" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="sel_tmp19/1 "/>
+<opset="sel_tmp13/1 "/>
 </bind>
 </comp>
 
-<comp id="444" class="1004" name="sel_tmp20_fu_444">
+<comp id="478" class="1004" name="sel_tmp14_fu_478">
 <pin_list>
-<pin id="445" dir="0" index="0" bw="1" slack="0"/>
-<pin id="446" dir="0" index="1" bw="1" slack="0"/>
-<pin id="447" dir="1" index="2" bw="1" slack="0"/>
+<pin id="479" dir="0" index="0" bw="1" slack="0"/>
+<pin id="480" dir="0" index="1" bw="1" slack="0"/>
+<pin id="481" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="sel_tmp20/1 "/>
+<opset="sel_tmp14/1 "/>
 </bind>
 </comp>
 
-<comp id="450" class="1004" name="to_add_8_fu_450">
+<comp id="484" class="1004" name="new_center_8_fu_484">
 <pin_list>
-<pin id="451" dir="0" index="0" bw="1" slack="0"/>
-<pin id="452" dir="0" index="1" bw="12" slack="0"/>
-<pin id="453" dir="0" index="2" bw="12" slack="0"/>
-<pin id="454" dir="1" index="3" bw="12" slack="37"/>
+<pin id="485" dir="0" index="0" bw="1" slack="0"/>
+<pin id="486" dir="0" index="1" bw="13" slack="0"/>
+<pin id="487" dir="0" index="2" bw="14" slack="0"/>
+<pin id="488" dir="1" index="3" bw="14" slack="37"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="to_add_8/1 "/>
+<opset="new_center_8/1 "/>
 </bind>
 </comp>
 
-<comp id="458" class="1004" name="tmp_9_fu_458">
+<comp id="492" class="1004" name="tmp_1_fu_492">
 <pin_list>
-<pin id="459" dir="0" index="0" bw="32" slack="1"/>
-<pin id="460" dir="0" index="1" bw="5" slack="0"/>
-<pin id="461" dir="1" index="2" bw="1" slack="36"/>
+<pin id="493" dir="0" index="0" bw="32" slack="1"/>
+<pin id="494" dir="0" index="1" bw="5" slack="0"/>
+<pin id="495" dir="1" index="2" bw="1" slack="36"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="tmp_9/2 "/>
+<opset="tmp_1/2 "/>
 </bind>
 </comp>
 
-<comp id="463" class="1004" name="RandSeed_load_load_fu_463">
+<comp id="497" class="1004" name="RandSeed_load_load_fu_497">
 <pin_list>
-<pin id="464" dir="0" index="0" bw="32" slack="0"/>
-<pin id="465" dir="1" index="1" bw="32" slack="0"/>
+<pin id="498" dir="0" index="0" bw="32" slack="0"/>
+<pin id="499" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -1622,11 +1729,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="467" class="1004" name="tmp_i_i_fu_467">
+<comp id="501" class="1004" name="tmp_i_i_fu_501">
 <pin_list>
-<pin id="468" dir="0" index="0" bw="5" slack="0"/>
-<pin id="469" dir="0" index="1" bw="32" slack="0"/>
-<pin id="470" dir="1" index="2" bw="32" slack="1"/>
+<pin id="502" dir="0" index="0" bw="5" slack="0"/>
+<pin id="503" dir="0" index="1" bw="32" slack="0"/>
+<pin id="504" dir="1" index="2" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -1634,11 +1741,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="473" class="1004" name="tmp_2_i_i_fu_473">
+<comp id="507" class="1004" name="tmp_2_i_i_fu_507">
 <pin_list>
-<pin id="474" dir="0" index="0" bw="8" slack="0"/>
-<pin id="475" dir="0" index="1" bw="32" slack="1"/>
-<pin id="476" dir="1" index="2" bw="32" slack="0"/>
+<pin id="508" dir="0" index="0" bw="8" slack="0"/>
+<pin id="509" dir="0" index="1" bw="32" slack="1"/>
+<pin id="510" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -1646,11 +1753,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="478" class="1004" name="grp_fu_478">
+<comp id="512" class="1004" name="grp_fu_512">
 <pin_list>
-<pin id="479" dir="0" index="0" bw="32" slack="0"/>
-<pin id="480" dir="0" index="1" bw="8" slack="0"/>
-<pin id="481" dir="1" index="2" bw="32" slack="0"/>
+<pin id="513" dir="0" index="0" bw="32" slack="0"/>
+<pin id="514" dir="0" index="1" bw="8" slack="0"/>
+<pin id="515" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="urem(17) " fcode="urem"/>
@@ -1658,34 +1765,34 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="484" class="1004" name="tmp_3_fu_484">
+<comp id="518" class="1004" name="tmp_2_fu_518">
 <pin_list>
-<pin id="485" dir="0" index="0" bw="8" slack="0"/>
-<pin id="486" dir="1" index="1" bw="7" slack="0"/>
+<pin id="519" dir="0" index="0" bw="8" slack="0"/>
+<pin id="520" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="tmp_3/38 "/>
+<opset="tmp_2/38 "/>
 </bind>
 </comp>
 
-<comp id="488" class="1004" name="StgValue_149_store_fu_488">
+<comp id="522" class="1004" name="StgValue_155_store_fu_522">
 <pin_list>
-<pin id="489" dir="0" index="0" bw="8" slack="0"/>
-<pin id="490" dir="0" index="1" bw="32" slack="0"/>
-<pin id="491" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="523" dir="0" index="0" bw="8" slack="0"/>
+<pin id="524" dir="0" index="1" bw="32" slack="0"/>
+<pin id="525" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="StgValue_149/38 "/>
+<opset="StgValue_155/38 "/>
 </bind>
 </comp>
 
-<comp id="494" class="1004" name="tmp_4_i_fu_494">
+<comp id="528" class="1004" name="tmp_4_i_fu_528">
 <pin_list>
-<pin id="495" dir="0" index="0" bw="7" slack="0"/>
-<pin id="496" dir="0" index="1" bw="7" slack="0"/>
-<pin id="497" dir="1" index="2" bw="1" slack="0"/>
+<pin id="529" dir="0" index="0" bw="7" slack="0"/>
+<pin id="530" dir="0" index="1" bw="7" slack="0"/>
+<pin id="531" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -1693,10 +1800,10 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="501" class="1004" name="first_run_load_load_fu_501">
+<comp id="535" class="1004" name="first_run_load_load_fu_535">
 <pin_list>
-<pin id="502" dir="0" index="0" bw="1" slack="0"/>
-<pin id="503" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="536" dir="0" index="0" bw="1" slack="0"/>
+<pin id="537" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -1704,23 +1811,23 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="505" class="1004" name="StgValue_158_store_fu_505">
+<comp id="539" class="1004" name="StgValue_164_store_fu_539">
 <pin_list>
-<pin id="506" dir="0" index="0" bw="32" slack="0"/>
-<pin id="507" dir="0" index="1" bw="32" slack="0"/>
-<pin id="508" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="540" dir="0" index="0" bw="32" slack="0"/>
+<pin id="541" dir="0" index="1" bw="32" slack="0"/>
+<pin id="542" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="StgValue_158/38 "/>
+<opset="StgValue_164/38 "/>
 </bind>
 </comp>
 
-<comp id="511" class="1004" name="tmp_i_fu_511">
+<comp id="545" class="1004" name="tmp_i_fu_545">
 <pin_list>
-<pin id="512" dir="0" index="0" bw="12" slack="37"/>
-<pin id="513" dir="0" index="1" bw="1" slack="0"/>
-<pin id="514" dir="1" index="2" bw="1" slack="2147483647"/>
+<pin id="546" dir="0" index="0" bw="12" slack="37"/>
+<pin id="547" dir="0" index="1" bw="1" slack="0"/>
+<pin id="548" dir="1" index="2" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -1728,11 +1835,11 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="516" class="1004" name="tmp_1_i_fu_516">
+<comp id="550" class="1004" name="tmp_1_i_fu_550">
 <pin_list>
-<pin id="517" dir="0" index="0" bw="12" slack="37"/>
-<pin id="518" dir="0" index="1" bw="11" slack="0"/>
-<pin id="519" dir="1" index="2" bw="1" slack="2147483647"/>
+<pin id="551" dir="0" index="0" bw="12" slack="37"/>
+<pin id="552" dir="0" index="1" bw="11" slack="0"/>
+<pin id="553" dir="1" index="2" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -1740,104 +1847,139 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </bind>
 </comp>
 
-<comp id="521" class="1004" name="StgValue_170_store_fu_521">
+<comp id="555" class="1004" name="StgValue_180_store_fu_555">
 <pin_list>
-<pin id="522" dir="0" index="0" bw="1" slack="0"/>
-<pin id="523" dir="0" index="1" bw="1" slack="0"/>
-<pin id="524" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="556" dir="0" index="0" bw="1" slack="0"/>
+<pin id="557" dir="0" index="1" bw="1" slack="0"/>
+<pin id="558" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="StgValue_170/38 "/>
+<opset="StgValue_180/38 "/>
 </bind>
 </comp>
 
-<comp id="527" class="1004" name="StgValue_172_store_fu_527">
+<comp id="561" class="1004" name="tmp_3_fu_561">
 <pin_list>
-<pin id="528" dir="0" index="0" bw="1" slack="0"/>
-<pin id="529" dir="0" index="1" bw="1" slack="0"/>
-<pin id="530" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="562" dir="0" index="0" bw="1" slack="0"/>
+<pin id="563" dir="0" index="1" bw="14" slack="0"/>
+<pin id="564" dir="0" index="2" bw="5" slack="0"/>
+<pin id="565" dir="1" index="3" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<opcode="store(28) " fcode="store"/>
-<opset="StgValue_172/38 "/>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_3/38 "/>
 </bind>
 </comp>
 
-<comp id="533" class="1005" name="center_line_in_V_rea_reg_533">
+<comp id="569" class="1004" name="tmp_4_fu_569">
 <pin_list>
-<pin id="534" dir="0" index="0" bw="12" slack="37"/>
-<pin id="535" dir="1" index="1" bw="12" slack="37"/>
+<pin id="570" dir="0" index="0" bw="14" slack="0"/>
+<pin id="571" dir="1" index="1" bw="12" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="tmp_4/38 "/>
+</bind>
+</comp>
+
+<comp id="573" class="1004" name="tmp_5_fu_573">
+<pin_list>
+<pin id="574" dir="0" index="0" bw="1" slack="0"/>
+<pin id="575" dir="0" index="1" bw="1" slack="0"/>
+<pin id="576" dir="0" index="2" bw="12" slack="0"/>
+<pin id="577" dir="1" index="3" bw="12" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="tmp_5/38 "/>
+</bind>
+</comp>
+
+<comp id="582" class="1005" name="center_line_in_V_rea_reg_582">
+<pin_list>
+<pin id="583" dir="0" index="0" bw="12" slack="37"/>
+<pin id="584" dir="1" index="1" bw="12" slack="37"/>
 </pin_list>
 <bind>
 <opset="center_line_in_V_rea "/>
 </bind>
 </comp>
 
-<comp id="540" class="1005" name="brmerge1_reg_540">
+<comp id="588" class="1005" name="new_center_cast1_reg_588">
 <pin_list>
-<pin id="541" dir="0" index="0" bw="1" slack="37"/>
-<pin id="542" dir="1" index="1" bw="1" slack="37"/>
+<pin id="589" dir="0" index="0" bw="14" slack="37"/>
+<pin id="590" dir="1" index="1" bw="14" slack="37"/>
+</pin_list>
+<bind>
+<opset="new_center_cast1 "/>
+</bind>
+</comp>
+
+<comp id="593" class="1005" name="brmerge1_reg_593">
+<pin_list>
+<pin id="594" dir="0" index="0" bw="1" slack="37"/>
+<pin id="595" dir="1" index="1" bw="1" slack="37"/>
 </pin_list>
 <bind>
 <opset="brmerge1 "/>
 </bind>
 </comp>
 
-<comp id="546" class="1005" name="btn_count_loc_reg_546">
+<comp id="599" class="1005" name="btn_count_loc_reg_599">
 <pin_list>
-<pin id="547" dir="0" index="0" bw="32" slack="1"/>
-<pin id="548" dir="1" index="1" bw="32" slack="1"/>
+<pin id="600" dir="0" index="0" bw="32" slack="1"/>
+<pin id="601" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="btn_count_loc "/>
 </bind>
 </comp>
 
-<comp id="553" class="1005" name="game_over_load_reg_553">
+<comp id="606" class="1005" name="game_over_load_reg_606">
 <pin_list>
-<pin id="554" dir="0" index="0" bw="1" slack="37"/>
-<pin id="555" dir="1" index="1" bw="1" slack="37"/>
+<pin id="607" dir="0" index="0" bw="1" slack="37"/>
+<pin id="608" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="game_over_load "/>
 </bind>
 </comp>
 
-<comp id="558" class="1005" name="to_add_8_reg_558">
+<comp id="610" class="1005" name="new_center_8_reg_610">
 <pin_list>
-<pin id="559" dir="0" index="0" bw="12" slack="37"/>
-<pin id="560" dir="1" index="1" bw="12" slack="37"/>
+<pin id="611" dir="0" index="0" bw="14" slack="37"/>
+<pin id="612" dir="1" index="1" bw="14" slack="37"/>
 </pin_list>
 <bind>
-<opset="to_add_8 "/>
+<opset="new_center_8 "/>
 </bind>
 </comp>
 
-<comp id="564" class="1005" name="tmp_9_reg_564">
+<comp id="616" class="1005" name="tmp_1_reg_616">
 <pin_list>
-<pin id="565" dir="0" index="0" bw="1" slack="36"/>
-<pin id="566" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="617" dir="0" index="0" bw="1" slack="36"/>
+<pin id="618" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="tmp_9 "/>
+<opset="tmp_1 "/>
 </bind>
 </comp>
 
-<comp id="568" class="1005" name="tmp_i_i_reg_568">
+<comp id="620" class="1005" name="tmp_i_i_reg_620">
 <pin_list>
-<pin id="569" dir="0" index="0" bw="32" slack="1"/>
-<pin id="570" dir="1" index="1" bw="32" slack="1"/>
+<pin id="621" dir="0" index="0" bw="32" slack="1"/>
+<pin id="622" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="tmp_i_i "/>
 </bind>
 </comp>
 
-<comp id="573" class="1005" name="tmp_2_i_i_reg_573">
+<comp id="625" class="1005" name="tmp_2_i_i_reg_625">
 <pin_list>
-<pin id="574" dir="0" index="0" bw="32" slack="1"/>
-<pin id="575" dir="1" index="1" bw="32" slack="1"/>
+<pin id="626" dir="0" index="0" bw="32" slack="1"/>
+<pin id="627" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opset="tmp_2_i_i "/>
@@ -1847,57 +1989,53 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 </comp_list>
 
 <net_list>
-<net id="84"><net_src comp="38" pin="0"/><net_sink comp="80" pin=0"/></net>
+<net id="86"><net_src comp="38" pin="0"/><net_sink comp="82" pin=0"/></net>
 
-<net id="85"><net_src comp="22" pin="0"/><net_sink comp="80" pin=1"/></net>
+<net id="87"><net_src comp="22" pin="0"/><net_sink comp="82" pin=1"/></net>
 
-<net id="90"><net_src comp="40" pin="0"/><net_sink comp="86" pin=0"/></net>
+<net id="92"><net_src comp="40" pin="0"/><net_sink comp="88" pin=0"/></net>
 
-<net id="91"><net_src comp="18" pin="0"/><net_sink comp="86" pin=1"/></net>
+<net id="93"><net_src comp="18" pin="0"/><net_sink comp="88" pin=1"/></net>
 
-<net id="96"><net_src comp="38" pin="0"/><net_sink comp="92" pin=0"/></net>
+<net id="98"><net_src comp="38" pin="0"/><net_sink comp="94" pin=0"/></net>
 
-<net id="97"><net_src comp="8" pin="0"/><net_sink comp="92" pin=1"/></net>
+<net id="99"><net_src comp="8" pin="0"/><net_sink comp="94" pin=1"/></net>
 
-<net id="102"><net_src comp="38" pin="0"/><net_sink comp="98" pin=0"/></net>
+<net id="104"><net_src comp="38" pin="0"/><net_sink comp="100" pin=0"/></net>
 
-<net id="103"><net_src comp="6" pin="0"/><net_sink comp="98" pin=1"/></net>
+<net id="105"><net_src comp="6" pin="0"/><net_sink comp="100" pin=1"/></net>
 
-<net id="108"><net_src comp="38" pin="0"/><net_sink comp="104" pin=0"/></net>
+<net id="110"><net_src comp="38" pin="0"/><net_sink comp="106" pin=0"/></net>
 
-<net id="109"><net_src comp="4" pin="0"/><net_sink comp="104" pin=1"/></net>
+<net id="111"><net_src comp="4" pin="0"/><net_sink comp="106" pin=1"/></net>
 
-<net id="114"><net_src comp="38" pin="0"/><net_sink comp="110" pin=0"/></net>
+<net id="116"><net_src comp="38" pin="0"/><net_sink comp="112" pin=0"/></net>
 
-<net id="115"><net_src comp="2" pin="0"/><net_sink comp="110" pin=1"/></net>
+<net id="117"><net_src comp="2" pin="0"/><net_sink comp="112" pin=1"/></net>
 
-<net id="120"><net_src comp="38" pin="0"/><net_sink comp="116" pin=0"/></net>
+<net id="122"><net_src comp="38" pin="0"/><net_sink comp="118" pin=0"/></net>
 
-<net id="121"><net_src comp="0" pin="0"/><net_sink comp="116" pin=1"/></net>
+<net id="123"><net_src comp="0" pin="0"/><net_sink comp="118" pin=1"/></net>
 
-<net id="127"><net_src comp="50" pin="0"/><net_sink comp="122" pin=0"/></net>
+<net id="129"><net_src comp="50" pin="0"/><net_sink comp="124" pin=0"/></net>
 
-<net id="128"><net_src comp="10" pin="0"/><net_sink comp="122" pin=1"/></net>
+<net id="130"><net_src comp="10" pin="0"/><net_sink comp="124" pin=1"/></net>
 
-<net id="129"><net_src comp="92" pin="2"/><net_sink comp="122" pin=2"/></net>
+<net id="131"><net_src comp="94" pin="2"/><net_sink comp="124" pin=2"/></net>
 
-<net id="135"><net_src comp="50" pin="0"/><net_sink comp="130" pin=0"/></net>
+<net id="137"><net_src comp="50" pin="0"/><net_sink comp="132" pin=0"/></net>
 
-<net id="136"><net_src comp="20" pin="0"/><net_sink comp="130" pin=1"/></net>
+<net id="138"><net_src comp="20" pin="0"/><net_sink comp="132" pin=1"/></net>
 
-<net id="142"><net_src comp="50" pin="0"/><net_sink comp="137" pin=0"/></net>
+<net id="144"><net_src comp="50" pin="0"/><net_sink comp="139" pin=0"/></net>
 
-<net id="143"><net_src comp="12" pin="0"/><net_sink comp="137" pin=1"/></net>
+<net id="145"><net_src comp="12" pin="0"/><net_sink comp="139" pin=1"/></net>
 
-<net id="144"><net_src comp="72" pin="0"/><net_sink comp="137" pin=2"/></net>
-
-<net id="145"><net_src comp="58" pin="0"/><net_sink comp="137" pin=2"/></net>
-
-<net id="151"><net_src comp="76" pin="0"/><net_sink comp="146" pin=0"/></net>
+<net id="151"><net_src comp="74" pin="0"/><net_sink comp="146" pin=0"/></net>
 
 <net id="152"><net_src comp="14" pin="0"/><net_sink comp="146" pin=1"/></net>
 
-<net id="158"><net_src comp="78" pin="0"/><net_sink comp="153" pin=0"/></net>
+<net id="158"><net_src comp="80" pin="0"/><net_sink comp="153" pin=0"/></net>
 
 <net id="159"><net_src comp="16" pin="0"/><net_sink comp="153" pin=1"/></net>
 
@@ -1907,261 +2045,293 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 
 <net id="206"><net_src comp="58" pin="0"/><net_sink comp="198" pin=0"/></net>
 
-<net id="207"><net_src comp="58" pin="0"/><net_sink comp="198" pin=2"/></net>
+<net id="207"><net_src comp="72" pin="0"/><net_sink comp="198" pin=2"/></net>
 
 <net id="208"><net_src comp="72" pin="0"/><net_sink comp="198" pin=4"/></net>
 
-<net id="218"><net_src comp="198" pin="6"/><net_sink comp="212" pin=2"/></net>
+<net id="209"><net_src comp="198" pin="6"/><net_sink comp="139" pin=2"/></net>
 
-<net id="219"><net_src comp="212" pin="4"/><net_sink comp="146" pin=2"/></net>
+<net id="221"><net_src comp="58" pin="0"/><net_sink comp="213" pin=0"/></net>
 
-<net id="229"><net_src comp="74" pin="0"/><net_sink comp="223" pin=0"/></net>
+<net id="222"><net_src comp="58" pin="0"/><net_sink comp="213" pin=2"/></net>
 
-<net id="230"><net_src comp="187" pin="6"/><net_sink comp="223" pin=2"/></net>
+<net id="223"><net_src comp="72" pin="0"/><net_sink comp="213" pin=4"/></net>
 
-<net id="231"><net_src comp="223" pin="4"/><net_sink comp="153" pin=2"/></net>
+<net id="224"><net_src comp="213" pin="6"/><net_sink comp="146" pin=2"/></net>
 
-<net id="236"><net_src comp="110" pin="2"/><net_sink comp="232" pin=0"/></net>
+<net id="234"><net_src comp="76" pin="0"/><net_sink comp="228" pin=0"/></net>
 
-<net id="237"><net_src comp="104" pin="2"/><net_sink comp="232" pin=1"/></net>
+<net id="235"><net_src comp="187" pin="6"/><net_sink comp="228" pin=2"/></net>
 
-<net id="242"><net_src comp="116" pin="2"/><net_sink comp="238" pin=0"/></net>
+<net id="240"><net_src comp="58" pin="0"/><net_sink comp="236" pin=0"/></net>
 
-<net id="243"><net_src comp="98" pin="2"/><net_sink comp="238" pin=1"/></net>
+<net id="241"><net_src comp="26" pin="0"/><net_sink comp="236" pin=1"/></net>
 
-<net id="248"><net_src comp="238" pin="2"/><net_sink comp="244" pin=0"/></net>
+<net id="245"><net_src comp="88" pin="2"/><net_sink comp="242" pin=0"/></net>
 
-<net id="249"><net_src comp="232" pin="2"/><net_sink comp="244" pin=1"/></net>
+<net id="249"><net_src comp="88" pin="2"/><net_sink comp="246" pin=0"/></net>
 
-<net id="253"><net_src comp="24" pin="0"/><net_sink comp="250" pin=0"/></net>
+<net id="254"><net_src comp="112" pin="2"/><net_sink comp="250" pin=0"/></net>
 
-<net id="258"><net_src comp="250" pin="1"/><net_sink comp="254" pin=0"/></net>
+<net id="255"><net_src comp="106" pin="2"/><net_sink comp="250" pin=1"/></net>
 
-<net id="259"><net_src comp="52" pin="0"/><net_sink comp="254" pin=1"/></net>
+<net id="260"><net_src comp="118" pin="2"/><net_sink comp="256" pin=0"/></net>
 
-<net id="265"><net_src comp="244" pin="2"/><net_sink comp="260" pin=0"/></net>
+<net id="261"><net_src comp="100" pin="2"/><net_sink comp="256" pin=1"/></net>
 
-<net id="266"><net_src comp="254" pin="2"/><net_sink comp="260" pin=1"/></net>
+<net id="266"><net_src comp="256" pin="2"/><net_sink comp="262" pin=0"/></net>
 
-<net id="267"><net_src comp="250" pin="1"/><net_sink comp="260" pin=2"/></net>
+<net id="267"><net_src comp="250" pin="2"/><net_sink comp="262" pin=1"/></net>
 
-<net id="271"><net_src comp="26" pin="0"/><net_sink comp="268" pin=0"/></net>
+<net id="271"><net_src comp="24" pin="0"/><net_sink comp="268" pin=0"/></net>
 
-<net id="276"><net_src comp="86" pin="2"/><net_sink comp="272" pin=0"/></net>
+<net id="276"><net_src comp="268" pin="1"/><net_sink comp="272" pin=0"/></net>
 
-<net id="277"><net_src comp="54" pin="0"/><net_sink comp="272" pin=1"/></net>
+<net id="277"><net_src comp="52" pin="0"/><net_sink comp="272" pin=1"/></net>
 
-<net id="282"><net_src comp="86" pin="2"/><net_sink comp="278" pin=0"/></net>
+<net id="283"><net_src comp="262" pin="2"/><net_sink comp="278" pin=0"/></net>
 
-<net id="283"><net_src comp="56" pin="0"/><net_sink comp="278" pin=1"/></net>
+<net id="284"><net_src comp="272" pin="2"/><net_sink comp="278" pin=1"/></net>
 
-<net id="289"><net_src comp="98" pin="2"/><net_sink comp="284" pin=0"/></net>
+<net id="285"><net_src comp="268" pin="1"/><net_sink comp="278" pin=2"/></net>
 
-<net id="290"><net_src comp="272" pin="2"/><net_sink comp="284" pin=1"/></net>
+<net id="289"><net_src comp="26" pin="0"/><net_sink comp="286" pin=0"/></net>
 
-<net id="291"><net_src comp="86" pin="2"/><net_sink comp="284" pin=2"/></net>
+<net id="294"><net_src comp="246" pin="1"/><net_sink comp="290" pin=0"/></net>
 
-<net id="297"><net_src comp="98" pin="2"/><net_sink comp="292" pin=0"/></net>
+<net id="295"><net_src comp="54" pin="0"/><net_sink comp="290" pin=1"/></net>
 
-<net id="298"><net_src comp="278" pin="2"/><net_sink comp="292" pin=1"/></net>
+<net id="299"><net_src comp="290" pin="2"/><net_sink comp="296" pin=0"/></net>
 
-<net id="299"><net_src comp="86" pin="2"/><net_sink comp="292" pin=2"/></net>
+<net id="304"><net_src comp="246" pin="1"/><net_sink comp="300" pin=0"/></net>
 
-<net id="304"><net_src comp="80" pin="2"/><net_sink comp="300" pin=0"/></net>
+<net id="305"><net_src comp="56" pin="0"/><net_sink comp="300" pin=1"/></net>
 
-<net id="305"><net_src comp="116" pin="2"/><net_sink comp="300" pin=1"/></net>
+<net id="309"><net_src comp="300" pin="2"/><net_sink comp="306" pin=0"/></net>
 
-<net id="311"><net_src comp="300" pin="2"/><net_sink comp="306" pin=0"/></net>
+<net id="315"><net_src comp="100" pin="2"/><net_sink comp="310" pin=0"/></net>
 
-<net id="312"><net_src comp="272" pin="2"/><net_sink comp="306" pin=1"/></net>
+<net id="316"><net_src comp="290" pin="2"/><net_sink comp="310" pin=1"/></net>
 
-<net id="313"><net_src comp="292" pin="3"/><net_sink comp="306" pin=2"/></net>
+<net id="317"><net_src comp="246" pin="1"/><net_sink comp="310" pin=2"/></net>
 
-<net id="318"><net_src comp="116" pin="2"/><net_sink comp="314" pin=0"/></net>
+<net id="321"><net_src comp="310" pin="3"/><net_sink comp="318" pin=0"/></net>
 
-<net id="319"><net_src comp="58" pin="0"/><net_sink comp="314" pin=1"/></net>
+<net id="327"><net_src comp="100" pin="2"/><net_sink comp="322" pin=0"/></net>
 
-<net id="324"><net_src comp="80" pin="2"/><net_sink comp="320" pin=0"/></net>
+<net id="328"><net_src comp="300" pin="2"/><net_sink comp="322" pin=1"/></net>
 
-<net id="325"><net_src comp="314" pin="2"/><net_sink comp="320" pin=1"/></net>
+<net id="329"><net_src comp="246" pin="1"/><net_sink comp="322" pin=2"/></net>
 
-<net id="330"><net_src comp="320" pin="2"/><net_sink comp="326" pin=0"/></net>
+<net id="333"><net_src comp="322" pin="3"/><net_sink comp="330" pin=0"/></net>
 
-<net id="331"><net_src comp="104" pin="2"/><net_sink comp="326" pin=1"/></net>
+<net id="338"><net_src comp="82" pin="2"/><net_sink comp="334" pin=0"/></net>
 
-<net id="337"><net_src comp="326" pin="2"/><net_sink comp="332" pin=0"/></net>
+<net id="339"><net_src comp="118" pin="2"/><net_sink comp="334" pin=1"/></net>
 
-<net id="338"><net_src comp="278" pin="2"/><net_sink comp="332" pin=1"/></net>
+<net id="345"><net_src comp="334" pin="2"/><net_sink comp="340" pin=0"/></net>
 
-<net id="339"><net_src comp="306" pin="3"/><net_sink comp="332" pin=2"/></net>
+<net id="346"><net_src comp="296" pin="1"/><net_sink comp="340" pin=1"/></net>
 
-<net id="344"><net_src comp="104" pin="2"/><net_sink comp="340" pin=0"/></net>
+<net id="347"><net_src comp="330" pin="1"/><net_sink comp="340" pin=2"/></net>
 
-<net id="345"><net_src comp="58" pin="0"/><net_sink comp="340" pin=1"/></net>
+<net id="352"><net_src comp="118" pin="2"/><net_sink comp="348" pin=0"/></net>
 
-<net id="350"><net_src comp="320" pin="2"/><net_sink comp="346" pin=0"/></net>
+<net id="353"><net_src comp="58" pin="0"/><net_sink comp="348" pin=1"/></net>
 
-<net id="351"><net_src comp="340" pin="2"/><net_sink comp="346" pin=1"/></net>
+<net id="358"><net_src comp="82" pin="2"/><net_sink comp="354" pin=0"/></net>
 
-<net id="356"><net_src comp="346" pin="2"/><net_sink comp="352" pin=0"/></net>
+<net id="359"><net_src comp="348" pin="2"/><net_sink comp="354" pin=1"/></net>
 
-<net id="357"><net_src comp="110" pin="2"/><net_sink comp="352" pin=1"/></net>
+<net id="364"><net_src comp="354" pin="2"/><net_sink comp="360" pin=0"/></net>
 
-<net id="363"><net_src comp="352" pin="2"/><net_sink comp="358" pin=0"/></net>
+<net id="365"><net_src comp="106" pin="2"/><net_sink comp="360" pin=1"/></net>
 
-<net id="364"><net_src comp="278" pin="2"/><net_sink comp="358" pin=1"/></net>
+<net id="371"><net_src comp="360" pin="2"/><net_sink comp="366" pin=0"/></net>
 
-<net id="365"><net_src comp="332" pin="3"/><net_sink comp="358" pin=2"/></net>
+<net id="372"><net_src comp="306" pin="1"/><net_sink comp="366" pin=1"/></net>
 
-<net id="370"><net_src comp="110" pin="2"/><net_sink comp="366" pin=0"/></net>
+<net id="373"><net_src comp="340" pin="3"/><net_sink comp="366" pin=2"/></net>
 
-<net id="371"><net_src comp="58" pin="0"/><net_sink comp="366" pin=1"/></net>
+<net id="378"><net_src comp="106" pin="2"/><net_sink comp="374" pin=0"/></net>
 
-<net id="376"><net_src comp="346" pin="2"/><net_sink comp="372" pin=0"/></net>
+<net id="379"><net_src comp="58" pin="0"/><net_sink comp="374" pin=1"/></net>
 
-<net id="377"><net_src comp="366" pin="2"/><net_sink comp="372" pin=1"/></net>
+<net id="384"><net_src comp="354" pin="2"/><net_sink comp="380" pin=0"/></net>
 
-<net id="383"><net_src comp="372" pin="2"/><net_sink comp="378" pin=0"/></net>
+<net id="385"><net_src comp="374" pin="2"/><net_sink comp="380" pin=1"/></net>
 
-<net id="384"><net_src comp="284" pin="3"/><net_sink comp="378" pin=1"/></net>
+<net id="390"><net_src comp="380" pin="2"/><net_sink comp="386" pin=0"/></net>
 
-<net id="385"><net_src comp="358" pin="3"/><net_sink comp="378" pin=2"/></net>
+<net id="391"><net_src comp="112" pin="2"/><net_sink comp="386" pin=1"/></net>
 
-<net id="390"><net_src comp="80" pin="2"/><net_sink comp="386" pin=0"/></net>
+<net id="397"><net_src comp="386" pin="2"/><net_sink comp="392" pin=0"/></net>
 
-<net id="391"><net_src comp="58" pin="0"/><net_sink comp="386" pin=1"/></net>
+<net id="398"><net_src comp="306" pin="1"/><net_sink comp="392" pin=1"/></net>
 
-<net id="396"><net_src comp="116" pin="2"/><net_sink comp="392" pin=0"/></net>
+<net id="399"><net_src comp="366" pin="3"/><net_sink comp="392" pin=2"/></net>
 
-<net id="397"><net_src comp="386" pin="2"/><net_sink comp="392" pin=1"/></net>
+<net id="404"><net_src comp="112" pin="2"/><net_sink comp="400" pin=0"/></net>
 
-<net id="403"><net_src comp="392" pin="2"/><net_sink comp="398" pin=0"/></net>
+<net id="405"><net_src comp="58" pin="0"/><net_sink comp="400" pin=1"/></net>
 
-<net id="404"><net_src comp="278" pin="2"/><net_sink comp="398" pin=1"/></net>
+<net id="410"><net_src comp="380" pin="2"/><net_sink comp="406" pin=0"/></net>
 
-<net id="405"><net_src comp="378" pin="3"/><net_sink comp="398" pin=2"/></net>
+<net id="411"><net_src comp="400" pin="2"/><net_sink comp="406" pin=1"/></net>
 
-<net id="410"><net_src comp="80" pin="2"/><net_sink comp="406" pin=0"/></net>
+<net id="417"><net_src comp="406" pin="2"/><net_sink comp="412" pin=0"/></net>
 
-<net id="411"><net_src comp="116" pin="2"/><net_sink comp="406" pin=1"/></net>
+<net id="418"><net_src comp="318" pin="1"/><net_sink comp="412" pin=1"/></net>
 
-<net id="416"><net_src comp="406" pin="2"/><net_sink comp="412" pin=0"/></net>
+<net id="419"><net_src comp="392" pin="3"/><net_sink comp="412" pin=2"/></net>
 
-<net id="417"><net_src comp="58" pin="0"/><net_sink comp="412" pin=1"/></net>
+<net id="424"><net_src comp="82" pin="2"/><net_sink comp="420" pin=0"/></net>
 
-<net id="422"><net_src comp="104" pin="2"/><net_sink comp="418" pin=0"/></net>
+<net id="425"><net_src comp="58" pin="0"/><net_sink comp="420" pin=1"/></net>
 
-<net id="423"><net_src comp="412" pin="2"/><net_sink comp="418" pin=1"/></net>
+<net id="430"><net_src comp="118" pin="2"/><net_sink comp="426" pin=0"/></net>
 
-<net id="429"><net_src comp="418" pin="2"/><net_sink comp="424" pin=0"/></net>
+<net id="431"><net_src comp="420" pin="2"/><net_sink comp="426" pin=1"/></net>
 
-<net id="430"><net_src comp="272" pin="2"/><net_sink comp="424" pin=1"/></net>
+<net id="437"><net_src comp="426" pin="2"/><net_sink comp="432" pin=0"/></net>
 
-<net id="431"><net_src comp="398" pin="3"/><net_sink comp="424" pin=2"/></net>
+<net id="438"><net_src comp="306" pin="1"/><net_sink comp="432" pin=1"/></net>
 
-<net id="436"><net_src comp="406" pin="2"/><net_sink comp="432" pin=0"/></net>
+<net id="439"><net_src comp="412" pin="3"/><net_sink comp="432" pin=2"/></net>
 
-<net id="437"><net_src comp="104" pin="2"/><net_sink comp="432" pin=1"/></net>
+<net id="444"><net_src comp="82" pin="2"/><net_sink comp="440" pin=0"/></net>
 
-<net id="442"><net_src comp="432" pin="2"/><net_sink comp="438" pin=0"/></net>
+<net id="445"><net_src comp="118" pin="2"/><net_sink comp="440" pin=1"/></net>
 
-<net id="443"><net_src comp="58" pin="0"/><net_sink comp="438" pin=1"/></net>
+<net id="450"><net_src comp="440" pin="2"/><net_sink comp="446" pin=0"/></net>
 
-<net id="448"><net_src comp="110" pin="2"/><net_sink comp="444" pin=0"/></net>
+<net id="451"><net_src comp="58" pin="0"/><net_sink comp="446" pin=1"/></net>
 
-<net id="449"><net_src comp="438" pin="2"/><net_sink comp="444" pin=1"/></net>
+<net id="456"><net_src comp="106" pin="2"/><net_sink comp="452" pin=0"/></net>
 
-<net id="455"><net_src comp="444" pin="2"/><net_sink comp="450" pin=0"/></net>
+<net id="457"><net_src comp="446" pin="2"/><net_sink comp="452" pin=1"/></net>
 
-<net id="456"><net_src comp="272" pin="2"/><net_sink comp="450" pin=1"/></net>
+<net id="463"><net_src comp="452" pin="2"/><net_sink comp="458" pin=0"/></net>
 
-<net id="457"><net_src comp="424" pin="3"/><net_sink comp="450" pin=2"/></net>
+<net id="464"><net_src comp="296" pin="1"/><net_sink comp="458" pin=1"/></net>
 
-<net id="462"><net_src comp="60" pin="0"/><net_sink comp="458" pin=1"/></net>
+<net id="465"><net_src comp="432" pin="3"/><net_sink comp="458" pin=2"/></net>
 
-<net id="466"><net_src comp="28" pin="0"/><net_sink comp="463" pin=0"/></net>
+<net id="470"><net_src comp="440" pin="2"/><net_sink comp="466" pin=0"/></net>
 
-<net id="471"><net_src comp="62" pin="0"/><net_sink comp="467" pin=0"/></net>
+<net id="471"><net_src comp="106" pin="2"/><net_sink comp="466" pin=1"/></net>
 
-<net id="472"><net_src comp="463" pin="1"/><net_sink comp="467" pin=1"/></net>
+<net id="476"><net_src comp="466" pin="2"/><net_sink comp="472" pin=0"/></net>
 
-<net id="477"><net_src comp="64" pin="0"/><net_sink comp="473" pin=0"/></net>
+<net id="477"><net_src comp="58" pin="0"/><net_sink comp="472" pin=1"/></net>
 
-<net id="482"><net_src comp="473" pin="2"/><net_sink comp="478" pin=0"/></net>
+<net id="482"><net_src comp="112" pin="2"/><net_sink comp="478" pin=0"/></net>
 
-<net id="483"><net_src comp="64" pin="0"/><net_sink comp="478" pin=1"/></net>
+<net id="483"><net_src comp="472" pin="2"/><net_sink comp="478" pin=1"/></net>
 
-<net id="487"><net_src comp="478" pin="2"/><net_sink comp="484" pin=0"/></net>
+<net id="489"><net_src comp="478" pin="2"/><net_sink comp="484" pin=0"/></net>
 
-<net id="492"><net_src comp="478" pin="2"/><net_sink comp="488" pin=0"/></net>
+<net id="490"><net_src comp="296" pin="1"/><net_sink comp="484" pin=1"/></net>
 
-<net id="493"><net_src comp="28" pin="0"/><net_sink comp="488" pin=1"/></net>
+<net id="491"><net_src comp="458" pin="3"/><net_sink comp="484" pin=2"/></net>
 
-<net id="498"><net_src comp="484" pin="1"/><net_sink comp="494" pin=0"/></net>
+<net id="496"><net_src comp="60" pin="0"/><net_sink comp="492" pin=1"/></net>
 
-<net id="499"><net_src comp="66" pin="0"/><net_sink comp="494" pin=1"/></net>
+<net id="500"><net_src comp="28" pin="0"/><net_sink comp="497" pin=0"/></net>
 
-<net id="500"><net_src comp="494" pin="2"/><net_sink comp="130" pin=2"/></net>
+<net id="505"><net_src comp="62" pin="0"/><net_sink comp="501" pin=0"/></net>
 
-<net id="504"><net_src comp="30" pin="0"/><net_sink comp="501" pin=0"/></net>
+<net id="506"><net_src comp="497" pin="1"/><net_sink comp="501" pin=1"/></net>
 
-<net id="509"><net_src comp="175" pin="6"/><net_sink comp="505" pin=0"/></net>
+<net id="511"><net_src comp="64" pin="0"/><net_sink comp="507" pin=0"/></net>
 
-<net id="510"><net_src comp="24" pin="0"/><net_sink comp="505" pin=1"/></net>
+<net id="516"><net_src comp="507" pin="2"/><net_sink comp="512" pin=0"/></net>
 
-<net id="515"><net_src comp="68" pin="0"/><net_sink comp="511" pin=1"/></net>
+<net id="517"><net_src comp="64" pin="0"/><net_sink comp="512" pin=1"/></net>
 
-<net id="520"><net_src comp="70" pin="0"/><net_sink comp="516" pin=1"/></net>
+<net id="521"><net_src comp="512" pin="2"/><net_sink comp="518" pin=0"/></net>
 
-<net id="525"><net_src comp="198" pin="6"/><net_sink comp="521" pin=0"/></net>
+<net id="526"><net_src comp="512" pin="2"/><net_sink comp="522" pin=0"/></net>
 
-<net id="526"><net_src comp="26" pin="0"/><net_sink comp="521" pin=1"/></net>
+<net id="527"><net_src comp="28" pin="0"/><net_sink comp="522" pin=1"/></net>
 
-<net id="531"><net_src comp="72" pin="0"/><net_sink comp="527" pin=0"/></net>
+<net id="532"><net_src comp="518" pin="1"/><net_sink comp="528" pin=0"/></net>
 
-<net id="532"><net_src comp="30" pin="0"/><net_sink comp="527" pin=1"/></net>
+<net id="533"><net_src comp="66" pin="0"/><net_sink comp="528" pin=1"/></net>
 
-<net id="536"><net_src comp="86" pin="2"/><net_sink comp="533" pin=0"/></net>
+<net id="534"><net_src comp="528" pin="2"/><net_sink comp="132" pin=2"/></net>
 
-<net id="537"><net_src comp="533" pin="1"/><net_sink comp="187" pin=0"/></net>
+<net id="538"><net_src comp="30" pin="0"/><net_sink comp="535" pin=0"/></net>
 
-<net id="538"><net_src comp="533" pin="1"/><net_sink comp="511" pin=0"/></net>
+<net id="543"><net_src comp="175" pin="6"/><net_sink comp="539" pin=0"/></net>
 
-<net id="539"><net_src comp="533" pin="1"/><net_sink comp="516" pin=0"/></net>
+<net id="544"><net_src comp="24" pin="0"/><net_sink comp="539" pin=1"/></net>
 
-<net id="543"><net_src comp="244" pin="2"/><net_sink comp="540" pin=0"/></net>
+<net id="549"><net_src comp="68" pin="0"/><net_sink comp="545" pin=1"/></net>
 
-<net id="544"><net_src comp="540" pin="1"/><net_sink comp="163" pin=0"/></net>
+<net id="554"><net_src comp="70" pin="0"/><net_sink comp="550" pin=1"/></net>
 
-<net id="545"><net_src comp="540" pin="1"/><net_sink comp="163" pin=4"/></net>
+<net id="559"><net_src comp="72" pin="0"/><net_sink comp="555" pin=0"/></net>
 
-<net id="549"><net_src comp="260" pin="3"/><net_sink comp="546" pin=0"/></net>
+<net id="560"><net_src comp="30" pin="0"/><net_sink comp="555" pin=1"/></net>
 
-<net id="550"><net_src comp="546" pin="1"/><net_sink comp="458" pin=0"/></net>
+<net id="566"><net_src comp="78" pin="0"/><net_sink comp="561" pin=0"/></net>
 
-<net id="551"><net_src comp="546" pin="1"/><net_sink comp="175" pin=0"/></net>
+<net id="567"><net_src comp="228" pin="4"/><net_sink comp="561" pin=1"/></net>
 
-<net id="552"><net_src comp="546" pin="1"/><net_sink comp="175" pin=4"/></net>
+<net id="568"><net_src comp="62" pin="0"/><net_sink comp="561" pin=2"/></net>
 
-<net id="556"><net_src comp="268" pin="1"/><net_sink comp="553" pin=0"/></net>
+<net id="572"><net_src comp="228" pin="4"/><net_sink comp="569" pin=0"/></net>
 
-<net id="557"><net_src comp="553" pin="1"/><net_sink comp="212" pin=0"/></net>
+<net id="578"><net_src comp="561" pin="3"/><net_sink comp="573" pin=0"/></net>
 
-<net id="561"><net_src comp="450" pin="3"/><net_sink comp="558" pin=0"/></net>
+<net id="579"><net_src comp="68" pin="0"/><net_sink comp="573" pin=1"/></net>
 
-<net id="562"><net_src comp="558" pin="1"/><net_sink comp="187" pin=2"/></net>
+<net id="580"><net_src comp="569" pin="1"/><net_sink comp="573" pin=2"/></net>
 
-<net id="563"><net_src comp="558" pin="1"/><net_sink comp="187" pin=4"/></net>
+<net id="581"><net_src comp="573" pin="3"/><net_sink comp="153" pin=2"/></net>
 
-<net id="567"><net_src comp="458" pin="2"/><net_sink comp="564" pin=0"/></net>
+<net id="585"><net_src comp="88" pin="2"/><net_sink comp="582" pin=0"/></net>
 
-<net id="571"><net_src comp="467" pin="2"/><net_sink comp="568" pin=0"/></net>
+<net id="586"><net_src comp="582" pin="1"/><net_sink comp="545" pin=0"/></net>
 
-<net id="572"><net_src comp="568" pin="1"/><net_sink comp="473" pin=1"/></net>
+<net id="587"><net_src comp="582" pin="1"/><net_sink comp="550" pin=0"/></net>
 
-<net id="576"><net_src comp="473" pin="2"/><net_sink comp="573" pin=0"/></net>
+<net id="591"><net_src comp="242" pin="1"/><net_sink comp="588" pin=0"/></net>
 
-<net id="577"><net_src comp="573" pin="1"/><net_sink comp="478" pin=0"/></net>
+<net id="592"><net_src comp="588" pin="1"/><net_sink comp="187" pin=0"/></net>
+
+<net id="596"><net_src comp="262" pin="2"/><net_sink comp="593" pin=0"/></net>
+
+<net id="597"><net_src comp="593" pin="1"/><net_sink comp="163" pin=0"/></net>
+
+<net id="598"><net_src comp="593" pin="1"/><net_sink comp="163" pin=4"/></net>
+
+<net id="602"><net_src comp="278" pin="3"/><net_sink comp="599" pin=0"/></net>
+
+<net id="603"><net_src comp="599" pin="1"/><net_sink comp="492" pin=0"/></net>
+
+<net id="604"><net_src comp="599" pin="1"/><net_sink comp="175" pin=0"/></net>
+
+<net id="605"><net_src comp="599" pin="1"/><net_sink comp="175" pin=4"/></net>
+
+<net id="609"><net_src comp="286" pin="1"/><net_sink comp="606" pin=0"/></net>
+
+<net id="613"><net_src comp="484" pin="3"/><net_sink comp="610" pin=0"/></net>
+
+<net id="614"><net_src comp="610" pin="1"/><net_sink comp="187" pin=2"/></net>
+
+<net id="615"><net_src comp="610" pin="1"/><net_sink comp="187" pin=4"/></net>
+
+<net id="619"><net_src comp="492" pin="2"/><net_sink comp="616" pin=0"/></net>
+
+<net id="623"><net_src comp="501" pin="2"/><net_sink comp="620" pin=0"/></net>
+
+<net id="624"><net_src comp="620" pin="1"/><net_sink comp="507" pin=1"/></net>
+
+<net id="628"><net_src comp="507" pin="2"/><net_sink comp="625" pin=0"/></net>
+
+<net id="629"><net_src comp="625" pin="1"/><net_sink comp="512" pin=0"/></net>
 
 </net_list>
 
@@ -2194,16 +2364,24 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
   - Chain level:
 	State 1
 		tmp_s : 1
-		StgValue_78 : 1
-		p_s : 1
-		p_1 : 1
-		sel_tmp2 : 2
-		sel_tmp12 : 1
-		sel_tmp15 : 2
-		sel_tmp18 : 3
-		to_add_8 : 4
+		StgValue_80 : 1
+		new_center : 1
+		new_center_1_cast : 2
+		new_center_1 : 1
+		new_center_2_cast : 2
+		p_s : 2
+		p_cast : 3
+		p_1 : 2
+		p_1_cast : 3
+		new_center_2 : 4
+		new_center_3 : 5
+		new_center_4 : 6
+		new_center_5 : 7
+		new_center_6 : 8
+		new_center_7 : 9
+		new_center_8 : 10
 	State 2
-		StgValue_108 : 1
+		StgValue_114 : 1
 		tmp_i_i : 1
 	State 3
 		tmp_3_i_i : 1
@@ -2242,24 +2420,27 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 	State 36
 	State 37
 	State 38
-		tmp_3 : 1
-		StgValue_149 : 1
+		tmp_2 : 1
+		StgValue_155 : 1
 		tmp_4_i : 2
-		StgValue_151 : 3
+		StgValue_157 : 3
 		btn_count_flag_2 : 1
 		btn_count_new_2 : 1
-		to_add_9 : 1
-		StgValue_157 : 2
-		StgValue_158 : 2
-		StgValue_160 : 1
-		StgValue_162 : 1
-		StgValue_164 : 1
-		p_i : 2
-		StgValue_170 : 3
-		game_over_loc : 3
-		to_add_s : 2
-		StgValue_176 : 4
+		new_center_9 : 1
+		StgValue_163 : 2
+		StgValue_164 : 2
+		StgValue_166 : 1
+		StgValue_168 : 1
+		StgValue_170 : 1
+		right_wins_write_ass : 2
+		end_game_write_assig : 2
 		StgValue_177 : 3
+		StgValue_178 : 3
+		new_center_s : 2
+		tmp_3 : 3
+		tmp_4 : 3
+		tmp_5 : 4
+		StgValue_186 : 5
 
 
 ============================================================
@@ -2270,71 +2451,83 @@ StgValue_178         (ret          ) [ 000000000000000000000000000000000000000]
 |----------|---------------------------------|---------|---------|---------|
 | Operation|         Functional Unit         |  DSP48E |    FF   |   LUT   |
 |----------|---------------------------------|---------|---------|---------|
-|   urem   |            grp_fu_478           |    0    |   394   |   238   |
+|   urem   |            grp_fu_512           |    0    |   394   |   238   |
 |----------|---------------------------------|---------|---------|---------|
-|          |       btn_count_loc_fu_260      |    0    |    0    |    32   |
-|          |            p_s_fu_284           |    0    |    0    |    12   |
-|          |            p_1_fu_292           |    0    |    0    |    12   |
-|          |         sel_tmp2_fu_306         |    0    |    0    |    12   |
-|  select  |         sel_tmp6_fu_332         |    0    |    0    |    12   |
-|          |         sel_tmp8_fu_358         |    0    |    0    |    12   |
-|          |         sel_tmp12_fu_378        |    0    |    0    |    12   |
-|          |         sel_tmp15_fu_398        |    0    |    0    |    12   |
-|          |         sel_tmp18_fu_424        |    0    |    0    |    12   |
-|          |         to_add_8_fu_450         |    0    |    0    |    12   |
+|          |       btn_count_loc_fu_278      |    0    |    0    |    32   |
+|          |            p_s_fu_310           |    0    |    0    |    13   |
+|          |            p_1_fu_322           |    0    |    0    |    13   |
+|          |       new_center_2_fu_340       |    0    |    0    |    13   |
+|          |       new_center_3_fu_366       |    0    |    0    |    14   |
+|  select  |       new_center_4_fu_392       |    0    |    0    |    14   |
+|          |       new_center_5_fu_412       |    0    |    0    |    14   |
+|          |       new_center_6_fu_432       |    0    |    0    |    14   |
+|          |       new_center_7_fu_458       |    0    |    0    |    14   |
+|          |       new_center_8_fu_484       |    0    |    0    |    14   |
+|          |           tmp_5_fu_573          |    0    |    0    |    12   |
 |----------|---------------------------------|---------|---------|---------|
-|          |           tmp_s_fu_254          |    0    |    0    |    39   |
-|    add   |           tmp_1_fu_272          |    0    |    0    |    12   |
-|          |           tmp_2_fu_278          |    0    |    0    |    12   |
-|          |         tmp_2_i_i_fu_473        |    0    |    0    |    39   |
+|          |           tmp_s_fu_272          |    0    |    0    |    39   |
+|    add   |        new_center_fu_290        |    0    |    0    |    12   |
+|          |       new_center_1_fu_300       |    0    |    0    |    12   |
+|          |         tmp_2_i_i_fu_507        |    0    |    0    |    39   |
 |----------|---------------------------------|---------|---------|---------|
-|          |           tmp_9_fu_458          |    0    |    0    |    18   |
-|   icmp   |          tmp_4_i_fu_494         |    0    |    0    |    11   |
-|          |           tmp_i_fu_511          |    0    |    0    |    13   |
-|          |          tmp_1_i_fu_516         |    0    |    0    |    13   |
+|          |           tmp_1_fu_492          |    0    |    0    |    18   |
+|   icmp   |          tmp_4_i_fu_528         |    0    |    0    |    11   |
+|          |           tmp_i_fu_545          |    0    |    0    |    13   |
+|          |          tmp_1_i_fu_550         |    0    |    0    |    13   |
 |----------|---------------------------------|---------|---------|---------|
-|    mul   |          tmp_i_i_fu_467         |    2    |    0    |    20   |
+|    mul   |          tmp_i_i_fu_501         |    2    |    0    |    20   |
 |----------|---------------------------------|---------|---------|---------|
-|          |          sel_tmp_fu_300         |    0    |    0    |    2    |
-|          |         sel_tmp4_fu_320         |    0    |    0    |    2    |
-|          |         sel_tmp5_fu_326         |    0    |    0    |    2    |
-|          |         sel_tmp1_fu_346         |    0    |    0    |    2    |
-|    and   |         sel_tmp7_fu_352         |    0    |    0    |    2    |
-|          |         sel_tmp11_fu_372        |    0    |    0    |    2    |
-|          |         sel_tmp14_fu_392        |    0    |    0    |    2    |
-|          |         sel_tmp17_fu_418        |    0    |    0    |    2    |
-|          |         sel_tmp20_fu_444        |    0    |    0    |    2    |
+|          |          sel_tmp_fu_334         |    0    |    0    |    2    |
+|          |         sel_tmp4_fu_354         |    0    |    0    |    2    |
+|          |         sel_tmp5_fu_360         |    0    |    0    |    2    |
+|          |         sel_tmp1_fu_380         |    0    |    0    |    2    |
+|    and   |         sel_tmp2_fu_386         |    0    |    0    |    2    |
+|          |         sel_tmp8_fu_406         |    0    |    0    |    2    |
+|          |         sel_tmp10_fu_426        |    0    |    0    |    2    |
+|          |         sel_tmp12_fu_452        |    0    |    0    |    2    |
+|          |         sel_tmp14_fu_478        |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
-|          |         sel_tmp3_fu_314         |    0    |    0    |    2    |
-|          |         sel_tmp9_fu_340         |    0    |    0    |    2    |
-|    xor   |         sel_tmp10_fu_366        |    0    |    0    |    2    |
-|          |         sel_tmp13_fu_386        |    0    |    0    |    2    |
-|          |         sel_tmp16_fu_412        |    0    |    0    |    2    |
-|          |         sel_tmp19_fu_438        |    0    |    0    |    2    |
+|          |         sel_tmp3_fu_348         |    0    |    0    |    2    |
+|          |         sel_tmp9_fu_374         |    0    |    0    |    2    |
+|    xor   |         sel_tmp7_fu_400         |    0    |    0    |    2    |
+|          |         sel_tmp6_fu_420         |    0    |    0    |    2    |
+|          |         sel_tmp11_fu_446        |    0    |    0    |    2    |
+|          |         sel_tmp13_fu_472        |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
-|          |            tmp_fu_232           |    0    |    0    |    2    |
-|          |           tmp1_fu_238           |    0    |    0    |    2    |
-|    or    |         brmerge1_fu_244         |    0    |    0    |    2    |
-|          |    sel_tmp25_demorgan_fu_406    |    0    |    0    |    2    |
-|          |    sel_tmp32_demorgan_fu_432    |    0    |    0    |    2    |
+|          |            tmp_fu_250           |    0    |    0    |    2    |
+|          |           tmp1_fu_256           |    0    |    0    |    2    |
+|    or    |         brmerge1_fu_262         |    0    |    0    |    2    |
+|          |    sel_tmp25_demorgan_fu_440    |    0    |    0    |    2    |
+|          |    sel_tmp32_demorgan_fu_466    |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
-|          |     right_in_read_read_fu_80    |    0    |    0    |    0    |
-|          | center_line_in_V_rea_read_fu_86 |    0    |    0    |    0    |
-|          |  reset_game_in_read_read_fu_92  |    0    |    0    |    0    |
-|   read   |       btn3_read_read_fu_98      |    0    |    0    |    0    |
-|          |      btn2_read_read_fu_104      |    0    |    0    |    0    |
-|          |      btn1_read_read_fu_110      |    0    |    0    |    0    |
-|          |      btn0_read_read_fu_116      |    0    |    0    |    0    |
+|          |     right_in_read_read_fu_82    |    0    |    0    |    0    |
+|          | center_line_in_V_rea_read_fu_88 |    0    |    0    |    0    |
+|          |  reset_game_in_read_read_fu_94  |    0    |    0    |    0    |
+|   read   |      btn3_read_read_fu_100      |    0    |    0    |    0    |
+|          |      btn2_read_read_fu_106      |    0    |    0    |    0    |
+|          |      btn1_read_read_fu_112      |    0    |    0    |    0    |
+|          |      btn0_read_read_fu_118      |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|
-|          |     StgValue_70_write_fu_122    |    0    |    0    |    0    |
-|          |    StgValue_151_write_fu_130    |    0    |    0    |    0    |
-|   write  |         grp_write_fu_137        |    0    |    0    |    0    |
-|          |    StgValue_176_write_fu_146    |    0    |    0    |    0    |
-|          |    StgValue_177_write_fu_153    |    0    |    0    |    0    |
+|          |     StgValue_72_write_fu_124    |    0    |    0    |    0    |
+|          |    StgValue_157_write_fu_132    |    0    |    0    |    0    |
+|   write  |    StgValue_177_write_fu_139    |    0    |    0    |    0    |
+|          |    StgValue_178_write_fu_146    |    0    |    0    |    0    |
+|          |    StgValue_186_write_fu_153    |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|
-|   trunc  |           tmp_3_fu_484          |    0    |    0    |    0    |
+|          |     new_center_cast1_fu_242     |    0    |    0    |    0    |
+|   zext   |      new_center_cast_fu_246     |    0    |    0    |    0    |
+|          |     new_center_2_cast_fu_306    |    0    |    0    |    0    |
+|          |         p_1_cast_fu_330         |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|
-|   Total  |                                 |    2    |   394   |   595   |
+|   sext   |     new_center_1_cast_fu_296    |    0    |    0    |    0    |
+|          |          p_cast_fu_318          |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|
+|   trunc  |           tmp_2_fu_518          |    0    |    0    |    0    |
+|          |           tmp_4_fu_569          |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|
+| bitselect|           tmp_3_fu_561          |    0    |    0    |    0    |
+|----------|---------------------------------|---------|---------|---------|
+|   Total  |                                 |    2    |   394   |   622   |
 |----------|---------------------------------|---------|---------|---------|
 
 Memories:
@@ -2344,33 +2537,33 @@ N/A
 +----------------------------+--------+
 |                            |   FF   |
 +----------------------------+--------+
-|      brmerge1_reg_540      |    1   |
+|      brmerge1_reg_593      |    1   |
 |  btn_count_flag_2_reg_160  |    1   |
-|    btn_count_loc_reg_546   |   32   |
+|    btn_count_loc_reg_599   |   32   |
 |   btn_count_new_2_reg_172  |   32   |
-|center_line_in_V_rea_reg_533|   12   |
-|   game_over_load_reg_553   |    1   |
-|    game_over_loc_reg_209   |    1   |
-|         p_i_reg_195        |    1   |
-|      tmp_2_i_i_reg_573     |   32   |
-|        tmp_9_reg_564       |    1   |
-|       tmp_i_i_reg_568      |   32   |
-|      to_add_8_reg_558      |   12   |
-|      to_add_9_reg_184      |   12   |
-|      to_add_s_reg_220      |   12   |
+|center_line_in_V_rea_reg_582|   12   |
+|end_game_write_assig_reg_210|    1   |
+|   game_over_load_reg_606   |    1   |
+|    new_center_8_reg_610    |   14   |
+|    new_center_9_reg_184    |   14   |
+|  new_center_cast1_reg_588  |   14   |
+|    new_center_s_reg_225    |   14   |
+|right_wins_write_ass_reg_195|    1   |
+|        tmp_1_reg_616       |    1   |
+|      tmp_2_i_i_reg_625     |   32   |
+|       tmp_i_i_reg_620      |   32   |
 +----------------------------+--------+
-|            Total           |   182  |
+|            Total           |   202  |
 +----------------------------+--------+
 
 * Multiplexer (MUX) list: 
-|------------------|------|------|------|--------||---------||---------|
-|       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
-|------------------|------|------|------|--------||---------||---------|
-| grp_write_fu_137 |  p2  |   2  |   1  |    2   |
-|    grp_fu_478    |  p0  |   2  |  32  |   64   ||    9    |
-|------------------|------|------|------|--------||---------||---------|
-|       Total      |      |      |      |   66   ||  3.538  ||    9    |
-|------------------|------|------|------|--------||---------||---------|
+|------------|------|------|------|--------||---------||---------|
+|    Comp    |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|------------|------|------|------|--------||---------||---------|
+| grp_fu_512 |  p0  |   2  |  32  |   64   ||    9    |
+|------------|------|------|------|--------||---------||---------|
+|    Total   |      |      |      |   64   ||  1.769  ||    9    |
+|------------|------|------|------|--------||---------||---------|
 
 
 
@@ -2378,10 +2571,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |    2   |    -   |   394  |   595  |
+|  Function |    2   |    -   |   394  |   622  |
 |   Memory  |    -   |    -   |    -   |    -   |
-|Multiplexer|    -   |    3   |    -   |    9   |
-|  Register |    -   |    -   |   182  |    -   |
+|Multiplexer|    -   |    1   |    -   |    9   |
+|  Register |    -   |    -   |   202  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |    2   |    3   |   576  |   604  |
+|   Total   |    2   |    1   |   596  |   631  |
 +-----------+--------+--------+--------+--------+

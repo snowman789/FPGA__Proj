@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Apr 24 23:44:53 2019
+| Date             : Fri Apr 26 14:22:46 2019
 | Host             : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 | Command          : report_power -file Testing_HDMI_wrapper_power_routed.rpt -pb Testing_HDMI_wrapper_power_summary_routed.pb -rpx Testing_HDMI_wrapper_power_routed.rpx
 | Design           : Testing_HDMI_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.360        |
+| Total On-Chip Power (W)  | 0.362        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.250        |
+| Dynamic (W)              | 0.252        |
 | Device Static (W)        | 0.110        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 80.9         |
-| Junction Temperature (C) | 29.1         |
+| Max Ambient (C)          | 80.8         |
+| Junction Temperature (C) | 29.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.006 |       14 |       --- |             --- |
-| Slice Logic    |     0.001 |     1297 |       --- |             --- |
-|   LUT as Logic |     0.001 |      496 |     53200 |            0.93 |
-|   CARRY4       |    <0.001 |       73 |     13300 |            0.55 |
-|   Register     |    <0.001 |      597 |    106400 |            0.56 |
-|   Others       |     0.000 |       23 |       --- |             --- |
-| Signals        |     0.001 |      939 |       --- |             --- |
+| Slice Logic    |     0.001 |     1349 |       --- |             --- |
+|   LUT as Logic |     0.001 |      520 |     53200 |            0.98 |
+|   CARRY4       |    <0.001 |       78 |     13300 |            0.59 |
+|   Register     |    <0.001 |      616 |    106400 |            0.58 |
+|   Others       |     0.000 |       25 |       --- |             --- |
+| Signals        |     0.001 |      977 |       --- |             --- |
 | MMCM           |     0.107 |        1 |         4 |           25.00 |
-| I/O            |     0.135 |       14 |       125 |           11.20 |
+| I/O            |     0.137 |       17 |       125 |           13.60 |
 | Static Power   |     0.110 |          |           |                 |
-| Total          |     0.360 |          |           |                 |
+| Total          |     0.362 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.009 |      0.008 |
+| Vccint    |       1.000 |     0.018 |       0.009 |      0.008 |
 | Vccaux    |       1.800 |     0.070 |       0.059 |      0.011 |
 | Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -159,7 +159,7 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Testing_HDMI_wrapper |     0.250 |
+| Testing_HDMI_wrapper |     0.252 |
 |   Testing_HDMI_i     |     0.250 |
 |     Gamelogic2_0     |     0.003 |
 |       inst           |     0.003 |

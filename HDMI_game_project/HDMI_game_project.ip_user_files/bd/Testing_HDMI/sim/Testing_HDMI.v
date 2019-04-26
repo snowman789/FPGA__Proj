@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-//Date        : Wed Apr 24 22:59:05 2019
+//Date        : Fri Apr 26 14:08:16 2019
 //Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 //Command     : generate_target Testing_HDMI.bd
 //Design      : Testing_HDMI
@@ -11,7 +11,8 @@
 
 (* CORE_GENERATION_INFO = "Testing_HDMI,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Testing_HDMI,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,da_board_cnt=1,da_clkrst_cnt=2,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "Testing_HDMI.hwdef" *) 
 module Testing_HDMI
-   (TMDSp,
+   (LED_Test,
+    TMDSp,
     TMPDSn,
     btn_0,
     btn_1,
@@ -23,6 +24,7 @@ module Testing_HDMI
     reset_rtl,
     sw1,
     sys_clk);
+  output LED_Test;
   output [2:0]TMDSp;
   output [2:0]TMPDSn;
   input btn_0;
@@ -68,6 +70,7 @@ module Testing_HDMI
   wire sw1_1;
   wire sys_clk_1;
 
+  assign LED_Test = sw1_1;
   assign TMDSp[2:0] = HDMI_test_0_TMDSp;
   assign TMPDSn[2:0] = HDMI_test_0_TMDSn;
   assign btn_0_1 = btn_0;

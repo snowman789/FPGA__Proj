@@ -384,7 +384,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>114b44e4</spirit:value>
+            <spirit:value>ce969805</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -400,7 +400,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c1a0d8bf</spirit:value>
+            <spirit:value>961c6457</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -416,7 +416,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d914211e</spirit:value>
+            <spirit:value>b3fd1854</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -432,7 +432,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>386f81af</spirit:value>
+            <spirit:value>a88dde21</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -789,7 +789,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       <spirit:file>
         <spirit:name>hdl/vhdl/Gamelogic2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_e40c5d50</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_3b849324</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -874,13 +874,13 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       </xilinx:taxonomies>
       <xilinx:displayName>Gamelogic2</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1904242308</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-04-25T03:08:34Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1904261418</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-04-26T18:18:12Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="ba6706ac"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a712f77b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c0766de2"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="0515f636"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="da8eaab8"/>
     </xilinx:packagingInfo>
