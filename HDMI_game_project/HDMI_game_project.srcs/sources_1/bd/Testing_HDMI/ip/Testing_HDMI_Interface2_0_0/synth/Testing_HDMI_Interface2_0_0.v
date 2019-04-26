@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Interface2:1.0
-// IP Revision: 1904261247
+// IP Revision: 1904261617
 
 (* X_CORE_INFO = "Interface2,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "Testing_HDMI_Interface2_0_0,Interface2,{}" *)
-(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904261247,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_Interface2_0_0,Interface2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Interface2,x_ipVersion=1.0,x_ipCoreRevision=1904261617,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Interface2_0_0 (

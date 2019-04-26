@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Wed Apr 24 23:00:04 2019
+// Date        : Fri Apr 26 16:19:04 2019
 // Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub -rename_top Testing_HDMI_Interface2_0_0 -prefix
-//               Testing_HDMI_Interface2_0_0_ Testing_HDMI_Interface2_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub
+//               D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Interface2_0_0/Testing_HDMI_Interface2_0_0_stub.v
 // Design      : Testing_HDMI_Interface2_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

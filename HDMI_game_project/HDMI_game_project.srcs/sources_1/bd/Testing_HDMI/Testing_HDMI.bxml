@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="Testing_HDMI" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1556304035"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1556304035"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1556304035"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1556304035"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1556309884"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1556309884"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1556309884"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1556309884"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\Testing_HDMI_HDMI_test_0_0\Testing_HDMI_HDMI_test_0_0.xci" Type="IP">
         <Instance HierarchyPath="HDMI_test_0"/>

@@ -22429,7 +22429,6 @@ void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Gre
    ap_uint<12> center_line, bool right, bool reset_game, bool right_wins, bool end_game ) {
 #pragma HLS inline
 
-
  if(end_game){
    if(right_wins){
     *XY_Red = 135;
@@ -22483,10 +22482,6 @@ void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red, ap_uint<8> *XY_Gre
     *XY_Green = 54;
     }
   }
-
-
-
-
 
 }
 

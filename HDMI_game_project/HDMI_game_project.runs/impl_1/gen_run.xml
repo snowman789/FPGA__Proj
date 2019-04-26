@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1556304045">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1556309903">
   <File Type="BITSTR-BMM" Name="Testing_HDMI_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Testing_HDMI_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Testing_HDMI_wrapper_timing_summary_init.rpt"/>
@@ -142,6 +142,7 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_Interface2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_HDMI_test_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Testing_HDMI_clean_button_0_1"/>

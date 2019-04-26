@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Interface2'" level="0">
-<item name = "Date">Fri Apr 26 12:47:15 2019
+<item name = "Date">Fri Apr 26 16:16:54 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Interface2</item>
@@ -131,9 +131,9 @@
 <item name = "Max Delay">3.24</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'center_line_V_read', Interface2/Interface2.cpp:70">read, 0.00, 0.00, -, -, -, wire, read, &apos;center_line_V&apos;, -, -, -, -, -</column>
-<column name="'tmp_9', Interface2/Interface2.cpp:51->Interface2/Interface2.cpp:82">icmp, 1.99, 1.99, -, -, -, -, -, -, -, -, -, -, -</column>
-<column name="'storemerge8', Interface2/Interface2.cpp:51->Interface2/Interface2.cpp:82">select, 1.25, 3.24, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'center_line_V_read', Interface2/Interface2.cpp:65">read, 0.00, 0.00, -, -, -, wire, read, &apos;center_line_V&apos;, -, -, -, -, -</column>
+<column name="'tmp_9', Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:77">icmp, 1.99, 1.99, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'storemerge8', Interface2/Interface2.cpp:50->Interface2/Interface2.cpp:77">select, 1.25, 3.24, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

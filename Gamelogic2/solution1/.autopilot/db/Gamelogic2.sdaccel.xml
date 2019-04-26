@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Gamelogic2'" level="0">
-<item name = "Date">Fri Apr 26 14:40:01 2019
+<item name = "Date">Fri Apr 26 16:15:40 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">Gamelogic2</item>
@@ -193,8 +193,8 @@
 <item name = "Max Delay">8.51</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'last_num', Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:133">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;RandSeed&apos;, -, -</column>
-<column name="'tmp_i_i', Gamelogic2/Gamelogic2.cpp:43->Gamelogic2/Gamelogic2.cpp:48->Gamelogic2/Gamelogic2.cpp:133">mul, 8.51, 8.51, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'last_num', Gamelogic2/Gamelogic2.cpp:22->Gamelogic2/Gamelogic2.cpp:95">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;RandSeed&apos;, -, -</column>
+<column name="'tmp_i_i', Gamelogic2/Gamelogic2.cpp:17->Gamelogic2/Gamelogic2.cpp:22->Gamelogic2/Gamelogic2.cpp:95">mul, 8.51, 8.51, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

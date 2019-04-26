@@ -22119,31 +22119,15 @@ inline bool operator!=(
 
 
 bool first_run = 1;
-bool newRound = 0;
-bool btn1_verify;
-bool btn2_verify;
-bool btn3_verify;
 unsigned int RandSeed = 7;
-unsigned int decrement_value = 1;
-unsigned int slow_down_clock = 0;
-int time_remaining = 640;
 int btn_count = 0;
 bool reset = 1;
 bool game_over = 0;
 
-bool InitializeGame(ap_uint<10> *time_remaining_out, bool *lose) {
- decrement_value = 1;
- *time_remaining_out = 640;
- *lose = 0;
- newRound = 1;
-  btn1_verify = 0;
-  btn2_verify = 0;
-  btn3_verify = 0;
 
- return 1;
 
-}
-# 42 "Gamelogic2/Gamelogic2.cpp"
+
+
 unsigned int RandNumGenerator(unsigned int last_num){
  return ((13*last_num + 100) % 100) ;
 }
@@ -22157,17 +22141,6 @@ bool Generatebool(){
   return 0;
 }
 
-bool CheckUserInput(bool btn1, bool btn2, bool btn3){
- if( (btn1 == btn1_verify) && (btn2 == btn2_verify) && (btn3 == btn3_verify))
-  return 1;
- else
-  return 0;
-}
-
-int InitializeGame(){
- reset = 0;
- return 320;
-}
 
 void win_game( ap_uint<12> center_line_in, bool *right_wins, bool *end_game){
  if (center_line_in <= 0){
@@ -22208,7 +22181,6 @@ _ssdm_op_SpecInterface(&center_line_in, "ap_none", 0, 0, "", 0, 0, "", "", "", 0
  }
  if(btn0 || btn1 || btn2 || btn3)
   btn_count += 1;
-
 
  if(!game_over){
   if(right_in){

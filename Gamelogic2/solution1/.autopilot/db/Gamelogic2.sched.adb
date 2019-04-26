@@ -358,7 +358,7 @@
 						<name>right_in_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -373,7 +373,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -407,7 +407,7 @@
 						<name>center_line_in_V_rea</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -422,7 +422,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -456,7 +456,7 @@
 						<name>reset_game_in_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -471,7 +471,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -505,7 +505,7 @@
 						<name>btn3_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -520,7 +520,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -554,7 +554,7 @@
 						<name>btn2_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -569,7 +569,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -603,7 +603,7 @@
 						<name>btn1_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -618,7 +618,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -652,7 +652,7 @@
 						<name>btn0_read</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -667,7 +667,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -701,7 +701,7 @@
 						<name>new_center_cast1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -716,7 +716,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>96</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -749,7 +749,7 @@
 						<name>new_center_cast</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -764,7 +764,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>96</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -797,7 +797,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>98</lineNumber>
+						<lineNumber>61</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -812,7 +812,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>98</second>
+										<second>61</second>
 									</item>
 								</second>
 							</item>
@@ -847,7 +847,7 @@
 						<name>first_run_load</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -862,7 +862,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>138</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -895,7 +895,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>100</lineNumber>
+						<lineNumber>63</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -910,7 +910,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>100</second>
+										<second>63</second>
 									</item>
 								</second>
 							</item>
@@ -945,7 +945,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>101</lineNumber>
+						<lineNumber>64</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -960,7 +960,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>101</second>
+										<second>64</second>
 									</item>
 								</second>
 							</item>
@@ -994,7 +994,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>103</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1009,7 +1009,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>103</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -1079,7 +1079,7 @@
 						<name>first_run_loc</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1094,7 +1094,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>138</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -1130,7 +1130,7 @@
 						<name>tmp</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1145,7 +1145,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>104</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -1179,7 +1179,7 @@
 						<name>tmp1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1194,7 +1194,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>104</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -1228,7 +1228,7 @@
 						<name>brmerge1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1243,7 +1243,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>104</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -1277,7 +1277,7 @@
 						<name>btn_count_load</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1292,7 +1292,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>105</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -1325,7 +1325,7 @@
 						<name>tmp_s</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1340,7 +1340,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>105</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -1374,7 +1374,7 @@
 						<name>btn_count_loc</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1389,7 +1389,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>105</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -1424,7 +1424,7 @@
 						<name>game_over_load</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1439,7 +1439,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>108</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1473,7 +1473,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>108</lineNumber>
+						<lineNumber>70</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1488,7 +1488,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>108</second>
+										<second>70</second>
 									</item>
 								</second>
 							</item>
@@ -1523,7 +1523,7 @@
 						<name>new_center</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>111</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1538,7 +1538,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>111</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -1572,7 +1572,7 @@
 						<name>new_center_1_cast</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>111</lineNumber>
+						<lineNumber>73</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1587,7 +1587,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>111</second>
+										<second>73</second>
 									</item>
 								</second>
 							</item>
@@ -1620,7 +1620,7 @@
 						<name>new_center_1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>122</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1635,7 +1635,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>122</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -1669,7 +1669,7 @@
 						<name>new_center_2_cast</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>122</lineNumber>
+						<lineNumber>84</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1684,7 +1684,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>122</second>
+										<second>84</second>
 									</item>
 								</second>
 							</item>
@@ -1717,7 +1717,7 @@
 						<name>p_s</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1732,7 +1732,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>116</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -1767,7 +1767,7 @@
 						<name>p_cast</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>116</lineNumber>
+						<lineNumber>78</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1782,7 +1782,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>116</second>
+										<second>78</second>
 									</item>
 								</second>
 							</item>
@@ -1815,7 +1815,7 @@
 						<name>p_1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1830,7 +1830,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -1865,7 +1865,7 @@
 						<name>p_1_cast</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1880,7 +1880,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -1913,7 +1913,7 @@
 						<name>sel_tmp</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1928,7 +1928,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -1962,7 +1962,7 @@
 						<name>new_center_2</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -1977,7 +1977,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2012,7 +2012,7 @@
 						<name>sel_tmp2</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2027,7 +2027,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2061,7 +2061,7 @@
 						<name>sel_tmp3</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2076,7 +2076,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2110,7 +2110,7 @@
 						<name>sel_tmp4</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2125,7 +2125,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2159,7 +2159,7 @@
 						<name>new_center_3</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2174,7 +2174,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2209,7 +2209,7 @@
 						<name>sel_tmp8</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2224,7 +2224,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2258,7 +2258,7 @@
 						<name>sel_tmp9</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2273,7 +2273,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2307,7 +2307,7 @@
 						<name>sel_tmp1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2322,7 +2322,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2356,7 +2356,7 @@
 						<name>new_center_4</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2371,7 +2371,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2406,7 +2406,7 @@
 						<name>sel_tmp6</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2421,7 +2421,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2455,7 +2455,7 @@
 						<name>sel_tmp7</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2470,7 +2470,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2504,7 +2504,7 @@
 						<name>new_center_5</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2519,7 +2519,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2554,7 +2554,7 @@
 						<name>sel_tmp5</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2569,7 +2569,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2603,7 +2603,7 @@
 						<name>sel_tmp10</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2618,7 +2618,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2652,7 +2652,7 @@
 						<name>new_center_6</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2667,7 +2667,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2702,7 +2702,7 @@
 						<name>sel_tmp24_demorgan</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2717,7 +2717,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2751,7 +2751,7 @@
 						<name>sel_tmp11</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2766,7 +2766,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2800,7 +2800,7 @@
 						<name>sel_tmp12</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2815,7 +2815,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2849,7 +2849,7 @@
 						<name>new_center_7</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2864,7 +2864,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -2899,7 +2899,7 @@
 						<name>sel_tmp31_demorgan</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2914,7 +2914,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2948,7 +2948,7 @@
 						<name>sel_tmp13</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -2963,7 +2963,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -2997,7 +2997,7 @@
 						<name>sel_tmp14</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>83</lineNumber>
+						<lineNumber>46</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3012,7 +3012,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>83</second>
+										<second>46</second>
 									</item>
 								</second>
 							</item>
@@ -3046,7 +3046,7 @@
 						<name>new_center_8</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>127</lineNumber>
+						<lineNumber>89</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3061,7 +3061,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>127</second>
+										<second>89</second>
 									</item>
 								</second>
 							</item>
@@ -3096,7 +3096,7 @@
 						<name>tmp_1</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3111,7 +3111,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>132</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -3145,7 +3145,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>132</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3160,7 +3160,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>132</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -3195,7 +3195,7 @@
 						<name>RandSeed_load</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>Generatebool</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3210,14 +3210,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3250,7 +3250,7 @@
 						<name>tmp_i_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>RandNumGenerator</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3265,21 +3265,21 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>RandNumGenerator</second>
 										</first>
-										<second>43</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -3313,7 +3313,7 @@
 						<name>tmp_2_i_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>RandNumGenerator</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3328,21 +3328,21 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>RandNumGenerator</second>
 										</first>
-										<second>43</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -3376,7 +3376,7 @@
 						<name>tmp_3_i_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>43</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>RandNumGenerator</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3391,21 +3391,21 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>RandNumGenerator</second>
 										</first>
-										<second>43</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -3439,7 +3439,7 @@
 						<name>tmp_2</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>Generatebool</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3454,14 +3454,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3494,7 +3494,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>48</lineNumber>
+						<lineNumber>22</lineNumber>
 						<contextFuncName>Generatebool</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3509,14 +3509,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>48</second>
+										<second>22</second>
 									</item>
 								</second>
 							</item>
@@ -3551,7 +3551,7 @@
 						<name>tmp_4_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>49</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>Generatebool</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3566,14 +3566,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Generatebool</second>
 										</first>
-										<second>49</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3607,7 +3607,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>133</lineNumber>
+						<lineNumber>95</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3622,7 +3622,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>133</second>
+										<second>95</second>
 									</item>
 								</second>
 							</item>
@@ -3657,7 +3657,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>136</lineNumber>
+						<lineNumber>98</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3672,7 +3672,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>136</second>
+										<second>98</second>
 									</item>
 								</second>
 							</item>
@@ -3705,7 +3705,7 @@
 						<name>btn_count_flag_2</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3720,7 +3720,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>104</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -3758,7 +3758,7 @@
 						<name>btn_count_new_2</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3773,7 +3773,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>105</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3850,7 +3850,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>104</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3865,7 +3865,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>104</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -3900,7 +3900,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>105</lineNumber>
+						<lineNumber>68</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3915,7 +3915,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>105</second>
+										<second>68</second>
 									</item>
 								</second>
 							</item>
@@ -3984,7 +3984,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>138</lineNumber>
+						<lineNumber>100</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -3999,7 +3999,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>138</second>
+										<second>100</second>
 									</item>
 								</second>
 							</item>
@@ -4034,7 +4034,7 @@
 						<name>tmp_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4049,14 +4049,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>68</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -4090,7 +4090,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>68</lineNumber>
+						<lineNumber>31</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4105,14 +4105,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>68</second>
+										<second>31</second>
 									</item>
 								</second>
 							</item>
@@ -4147,7 +4147,7 @@
 						<name>tmp_1_i</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>73</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4162,14 +4162,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>73</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -4203,7 +4203,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>73</lineNumber>
+						<lineNumber>36</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4218,14 +4218,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>73</second>
+										<second>36</second>
 									</item>
 								</second>
 							</item>
@@ -4260,7 +4260,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>38</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4275,14 +4275,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>75</second>
+										<second>38</second>
 									</item>
 								</second>
 							</item>
@@ -4318,7 +4318,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>77</lineNumber>
+						<lineNumber>40</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4333,14 +4333,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>77</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -4373,7 +4373,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>70</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4388,14 +4388,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>70</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -4431,7 +4431,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>72</lineNumber>
+						<lineNumber>35</lineNumber>
 						<contextFuncName>win_game</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4446,14 +4446,14 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 									<item>
 										<first>
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>win_game</second>
 										</first>
-										<second>72</second>
+										<second>35</second>
 									</item>
 								</second>
 							</item>
@@ -4564,7 +4564,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>101</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4579,7 +4579,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 								</second>
 							</item>
@@ -4614,7 +4614,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>101</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4629,7 +4629,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 								</second>
 							</item>
@@ -4664,7 +4664,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>139</lineNumber>
+						<lineNumber>101</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4679,7 +4679,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>139</second>
+										<second>101</second>
 									</item>
 								</second>
 							</item>
@@ -4786,7 +4786,7 @@
 						<name>new_center_s</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>96</lineNumber>
+						<lineNumber>59</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4801,7 +4801,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>96</second>
+										<second>59</second>
 									</item>
 								</second>
 							</item>
@@ -4837,7 +4837,7 @@
 						<name>tmp_3</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>145</lineNumber>
+						<lineNumber>107</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4852,7 +4852,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>145</second>
+										<second>107</second>
 									</item>
 								</second>
 							</item>
@@ -4887,7 +4887,7 @@
 						<name>tmp_4</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4902,7 +4902,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>148</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -4935,7 +4935,7 @@
 						<name>tmp_5</name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -4950,7 +4950,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>148</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -4985,7 +4985,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>148</lineNumber>
+						<lineNumber>110</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5000,7 +5000,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>148</second>
+										<second>110</second>
 									</item>
 								</second>
 							</item>
@@ -5071,7 +5071,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>102</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5086,7 +5086,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>102</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -5155,7 +5155,7 @@
 						<name></name>
 						<fileName>Gamelogic2/Gamelogic2.cpp</fileName>
 						<fileDirectory>D:\FPGA_WORKSPACES\FPGA_Final_Project\FPGA__Proj</fileDirectory>
-						<lineNumber>150</lineNumber>
+						<lineNumber>112</lineNumber>
 						<contextFuncName>Gamelogic2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -5170,7 +5170,7 @@
 											<first>Gamelogic2/Gamelogic2.cpp</first>
 											<second>Gamelogic2</second>
 										</first>
-										<second>150</second>
+										<second>112</second>
 									</item>
 								</second>
 							</item>

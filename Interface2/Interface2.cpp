@@ -5,8 +5,7 @@
 void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red,  ap_uint<8> *XY_Green,  ap_uint<8> *XY_Blue,
 		 ap_uint<12> center_line, bool right, bool reset_game,  bool right_wins, bool end_game ) {
 #pragma HLS inline
-	// left
-//	if(reset_game){
+
 		if(end_game){
 			if(right_wins){
 				*XY_Red = 135;
@@ -60,11 +59,7 @@ void retBit(ap_uint<10> x, ap_uint<10> y, ap_uint<8> *XY_Red,  ap_uint<8> *XY_Gr
 				*XY_Green = 54;
 				}
 		}
-//	}else{
-//		*XY_Red = 255;
-//		*XY_Blue = 255;
-//		*XY_Green = 255;
-//	}
+
 }
 
 void Interface2( ap_uint<10> x, ap_uint<10> y,  ap_uint<8> *XY_Red,  ap_uint<8> *XY_Green,  ap_uint<8> *XY_Blue,

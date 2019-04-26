@@ -263,7 +263,7 @@
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn0), !map !119
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn0), !map !74
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -278,7 +278,7 @@
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:1  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn1), !map !125
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn1), !map !80
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -293,7 +293,7 @@
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:2  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn2), !map !129
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn2), !map !84
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -308,7 +308,7 @@
 
 <Node id="20" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:3  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn3), !map !133
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i1 %btn3), !map !88
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -323,7 +323,7 @@
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i1 %reset_game_in), !map !137
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1 %reset_game_in), !map !92
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -338,7 +338,7 @@
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset_game_out), !map !141
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %reset_game_out), !map !96
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -353,7 +353,7 @@
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_wins), !map !145
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_wins), !map !100
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -368,7 +368,7 @@
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:7  call void (...)* @_ssdm_op_SpecBitsMap(i1* %end_game), !map !149
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i1* %end_game), !map !104
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -383,7 +383,7 @@
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="12">
 <![CDATA[
-:8  call void (...)* @_ssdm_op_SpecBitsMap(i12* %center_line_out_V), !map !153
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i12* %center_line_out_V), !map !108
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -398,7 +398,7 @@
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="12">
 <![CDATA[
-:9  call void (...)* @_ssdm_op_SpecBitsMap(i12 %center_line_in_V), !map !157
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i12 %center_line_in_V), !map !112
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -413,7 +413,7 @@
 
 <Node id="27" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_out), !map !161
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i1* %right_out), !map !116
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
@@ -428,7 +428,7 @@
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="1">
 <![CDATA[
-:11  call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_in), !map !165
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i1 %right_in), !map !120
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>
