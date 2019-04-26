@@ -22202,6 +22202,10 @@ _ssdm_op_SpecInterface(&center_line_in, "ap_none", 0, 0, "", 0, 0, "", "", "", 0
 
  *reset_game_out = reset_game_in;
 
+ if(reset_game_in){
+  game_over = 0;
+  first_run = 1;
+ }
  if(btn0 || btn1 || btn2 || btn3)
   btn_count += 1;
 

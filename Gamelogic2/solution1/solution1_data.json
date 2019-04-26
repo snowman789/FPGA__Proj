@@ -21,7 +21,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "1",
+    "Latency": "2",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -309,21 +309,21 @@
       "dir": "out",
       "dataWidth": "1",
       "handshakeRef": "ap_none",
-      "firstOutLatency": "37"
+      "firstOutLatency": "38"
     },
     "end_game": {
       "interfaceRef": "end_game",
       "dir": "out",
       "dataWidth": "1",
       "handshakeRef": "ap_vld",
-      "firstOutLatency": "37"
+      "firstOutLatency": "38"
     },
     "center_line_out_V": {
       "interfaceRef": "center_line_out_V",
       "dir": "out",
       "dataWidth": "12",
       "handshakeRef": "ap_none",
-      "firstOutLatency": "37"
+      "firstOutLatency": "38"
     },
     "center_line_in_V": {
       "interfaceRef": "center_line_in_V",
@@ -336,7 +336,7 @@
       "dir": "out",
       "dataWidth": "1",
       "handshakeRef": "ap_none",
-      "firstOutLatency": "37"
+      "firstOutLatency": "38"
     },
     "right_in": {
       "interfaceRef": "right_in",
@@ -349,12 +349,12 @@
     "Hierarchy": {"ModuleName": "Gamelogic2"},
     "Metrics": {"Gamelogic2": {
         "Latency": {
-          "LatencyBest": "1",
-          "LatencyAvg": "13",
-          "LatencyWorst": "37",
-          "PipelineIIMin": "2",
-          "PipelineIIMax": "38",
-          "PipelineII": "2 ~ 38",
+          "LatencyBest": "2",
+          "LatencyAvg": "14",
+          "LatencyWorst": "38",
+          "PipelineIIMin": "3",
+          "PipelineIIMax": "39",
+          "PipelineII": "3 ~ 39",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -365,8 +365,8 @@
         },
         "Area": {
           "DSP48E": "0",
-          "FF": "627",
-          "LUT": "926",
+          "FF": "654",
+          "LUT": "969",
           "BRAM_18K": "0"
         }
       }}
@@ -381,7 +381,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-04-26 14:17:32 -0400",
+    "Time": "2019-04-26 14:40:02 -0400",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

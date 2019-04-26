@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri Apr 26 14:19:40 2019
+// Date        : Fri Apr 26 14:41:38 2019
 // Host        : DESKTOP-6RNCOV7 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               D:/FPGA_WORKSPACES/FPGA_Final_Project/FPGA__Proj/HDMI_game_project/HDMI_game_project.srcs/sources_1/bd/Testing_HDMI/ip/Testing_HDMI_Gamelogic2_0_0/Testing_HDMI_Gamelogic2_0_0_sim_netlist.v
@@ -75,44 +75,45 @@ module Testing_HDMI_Gamelogic2_0_0
   wire right_out;
   wire right_wins;
 
-  (* ap_ST_fsm_state1 = "38'b00000000000000000000000000000000000001" *) 
-  (* ap_ST_fsm_state10 = "38'b00000000000000000000000000001000000000" *) 
-  (* ap_ST_fsm_state11 = "38'b00000000000000000000000000010000000000" *) 
-  (* ap_ST_fsm_state12 = "38'b00000000000000000000000000100000000000" *) 
-  (* ap_ST_fsm_state13 = "38'b00000000000000000000000001000000000000" *) 
-  (* ap_ST_fsm_state14 = "38'b00000000000000000000000010000000000000" *) 
-  (* ap_ST_fsm_state15 = "38'b00000000000000000000000100000000000000" *) 
-  (* ap_ST_fsm_state16 = "38'b00000000000000000000001000000000000000" *) 
-  (* ap_ST_fsm_state17 = "38'b00000000000000000000010000000000000000" *) 
-  (* ap_ST_fsm_state18 = "38'b00000000000000000000100000000000000000" *) 
-  (* ap_ST_fsm_state19 = "38'b00000000000000000001000000000000000000" *) 
-  (* ap_ST_fsm_state2 = "38'b00000000000000000000000000000000000010" *) 
-  (* ap_ST_fsm_state20 = "38'b00000000000000000010000000000000000000" *) 
-  (* ap_ST_fsm_state21 = "38'b00000000000000000100000000000000000000" *) 
-  (* ap_ST_fsm_state22 = "38'b00000000000000001000000000000000000000" *) 
-  (* ap_ST_fsm_state23 = "38'b00000000000000010000000000000000000000" *) 
-  (* ap_ST_fsm_state24 = "38'b00000000000000100000000000000000000000" *) 
-  (* ap_ST_fsm_state25 = "38'b00000000000001000000000000000000000000" *) 
-  (* ap_ST_fsm_state26 = "38'b00000000000010000000000000000000000000" *) 
-  (* ap_ST_fsm_state27 = "38'b00000000000100000000000000000000000000" *) 
-  (* ap_ST_fsm_state28 = "38'b00000000001000000000000000000000000000" *) 
-  (* ap_ST_fsm_state29 = "38'b00000000010000000000000000000000000000" *) 
-  (* ap_ST_fsm_state3 = "38'b00000000000000000000000000000000000100" *) 
-  (* ap_ST_fsm_state30 = "38'b00000000100000000000000000000000000000" *) 
-  (* ap_ST_fsm_state31 = "38'b00000001000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state32 = "38'b00000010000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state33 = "38'b00000100000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state34 = "38'b00001000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state35 = "38'b00010000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state36 = "38'b00100000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state37 = "38'b01000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state38 = "38'b10000000000000000000000000000000000000" *) 
-  (* ap_ST_fsm_state4 = "38'b00000000000000000000000000000000001000" *) 
-  (* ap_ST_fsm_state5 = "38'b00000000000000000000000000000000010000" *) 
-  (* ap_ST_fsm_state6 = "38'b00000000000000000000000000000000100000" *) 
-  (* ap_ST_fsm_state7 = "38'b00000000000000000000000000000001000000" *) 
-  (* ap_ST_fsm_state8 = "38'b00000000000000000000000000000010000000" *) 
-  (* ap_ST_fsm_state9 = "38'b00000000000000000000000000000100000000" *) 
+  (* ap_ST_fsm_state1 = "39'b000000000000000000000000000000000000001" *) 
+  (* ap_ST_fsm_state10 = "39'b000000000000000000000000000001000000000" *) 
+  (* ap_ST_fsm_state11 = "39'b000000000000000000000000000010000000000" *) 
+  (* ap_ST_fsm_state12 = "39'b000000000000000000000000000100000000000" *) 
+  (* ap_ST_fsm_state13 = "39'b000000000000000000000000001000000000000" *) 
+  (* ap_ST_fsm_state14 = "39'b000000000000000000000000010000000000000" *) 
+  (* ap_ST_fsm_state15 = "39'b000000000000000000000000100000000000000" *) 
+  (* ap_ST_fsm_state16 = "39'b000000000000000000000001000000000000000" *) 
+  (* ap_ST_fsm_state17 = "39'b000000000000000000000010000000000000000" *) 
+  (* ap_ST_fsm_state18 = "39'b000000000000000000000100000000000000000" *) 
+  (* ap_ST_fsm_state19 = "39'b000000000000000000001000000000000000000" *) 
+  (* ap_ST_fsm_state2 = "39'b000000000000000000000000000000000000010" *) 
+  (* ap_ST_fsm_state20 = "39'b000000000000000000010000000000000000000" *) 
+  (* ap_ST_fsm_state21 = "39'b000000000000000000100000000000000000000" *) 
+  (* ap_ST_fsm_state22 = "39'b000000000000000001000000000000000000000" *) 
+  (* ap_ST_fsm_state23 = "39'b000000000000000010000000000000000000000" *) 
+  (* ap_ST_fsm_state24 = "39'b000000000000000100000000000000000000000" *) 
+  (* ap_ST_fsm_state25 = "39'b000000000000001000000000000000000000000" *) 
+  (* ap_ST_fsm_state26 = "39'b000000000000010000000000000000000000000" *) 
+  (* ap_ST_fsm_state27 = "39'b000000000000100000000000000000000000000" *) 
+  (* ap_ST_fsm_state28 = "39'b000000000001000000000000000000000000000" *) 
+  (* ap_ST_fsm_state29 = "39'b000000000010000000000000000000000000000" *) 
+  (* ap_ST_fsm_state3 = "39'b000000000000000000000000000000000000100" *) 
+  (* ap_ST_fsm_state30 = "39'b000000000100000000000000000000000000000" *) 
+  (* ap_ST_fsm_state31 = "39'b000000001000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state32 = "39'b000000010000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state33 = "39'b000000100000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state34 = "39'b000001000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state35 = "39'b000010000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state36 = "39'b000100000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state37 = "39'b001000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state38 = "39'b010000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state39 = "39'b100000000000000000000000000000000000000" *) 
+  (* ap_ST_fsm_state4 = "39'b000000000000000000000000000000000001000" *) 
+  (* ap_ST_fsm_state5 = "39'b000000000000000000000000000000000010000" *) 
+  (* ap_ST_fsm_state6 = "39'b000000000000000000000000000000000100000" *) 
+  (* ap_ST_fsm_state7 = "39'b000000000000000000000000000000001000000" *) 
+  (* ap_ST_fsm_state8 = "39'b000000000000000000000000000000010000000" *) 
+  (* ap_ST_fsm_state9 = "39'b000000000000000000000000000000100000000" *) 
   Testing_HDMI_Gamelogic2_0_0_Gamelogic2 inst
        (.ap_clk(ap_clk),
         .ap_done(ap_done),
@@ -135,20 +136,20 @@ module Testing_HDMI_Gamelogic2_0_0
         .right_wins(right_wins));
 endmodule
 
-(* ORIG_REF_NAME = "Gamelogic2" *) (* ap_ST_fsm_state1 = "38'b00000000000000000000000000000000000001" *) (* ap_ST_fsm_state10 = "38'b00000000000000000000000000001000000000" *) 
-(* ap_ST_fsm_state11 = "38'b00000000000000000000000000010000000000" *) (* ap_ST_fsm_state12 = "38'b00000000000000000000000000100000000000" *) (* ap_ST_fsm_state13 = "38'b00000000000000000000000001000000000000" *) 
-(* ap_ST_fsm_state14 = "38'b00000000000000000000000010000000000000" *) (* ap_ST_fsm_state15 = "38'b00000000000000000000000100000000000000" *) (* ap_ST_fsm_state16 = "38'b00000000000000000000001000000000000000" *) 
-(* ap_ST_fsm_state17 = "38'b00000000000000000000010000000000000000" *) (* ap_ST_fsm_state18 = "38'b00000000000000000000100000000000000000" *) (* ap_ST_fsm_state19 = "38'b00000000000000000001000000000000000000" *) 
-(* ap_ST_fsm_state2 = "38'b00000000000000000000000000000000000010" *) (* ap_ST_fsm_state20 = "38'b00000000000000000010000000000000000000" *) (* ap_ST_fsm_state21 = "38'b00000000000000000100000000000000000000" *) 
-(* ap_ST_fsm_state22 = "38'b00000000000000001000000000000000000000" *) (* ap_ST_fsm_state23 = "38'b00000000000000010000000000000000000000" *) (* ap_ST_fsm_state24 = "38'b00000000000000100000000000000000000000" *) 
-(* ap_ST_fsm_state25 = "38'b00000000000001000000000000000000000000" *) (* ap_ST_fsm_state26 = "38'b00000000000010000000000000000000000000" *) (* ap_ST_fsm_state27 = "38'b00000000000100000000000000000000000000" *) 
-(* ap_ST_fsm_state28 = "38'b00000000001000000000000000000000000000" *) (* ap_ST_fsm_state29 = "38'b00000000010000000000000000000000000000" *) (* ap_ST_fsm_state3 = "38'b00000000000000000000000000000000000100" *) 
-(* ap_ST_fsm_state30 = "38'b00000000100000000000000000000000000000" *) (* ap_ST_fsm_state31 = "38'b00000001000000000000000000000000000000" *) (* ap_ST_fsm_state32 = "38'b00000010000000000000000000000000000000" *) 
-(* ap_ST_fsm_state33 = "38'b00000100000000000000000000000000000000" *) (* ap_ST_fsm_state34 = "38'b00001000000000000000000000000000000000" *) (* ap_ST_fsm_state35 = "38'b00010000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state36 = "38'b00100000000000000000000000000000000000" *) (* ap_ST_fsm_state37 = "38'b01000000000000000000000000000000000000" *) (* ap_ST_fsm_state38 = "38'b10000000000000000000000000000000000000" *) 
-(* ap_ST_fsm_state4 = "38'b00000000000000000000000000000000001000" *) (* ap_ST_fsm_state5 = "38'b00000000000000000000000000000000010000" *) (* ap_ST_fsm_state6 = "38'b00000000000000000000000000000000100000" *) 
-(* ap_ST_fsm_state7 = "38'b00000000000000000000000000000001000000" *) (* ap_ST_fsm_state8 = "38'b00000000000000000000000000000010000000" *) (* ap_ST_fsm_state9 = "38'b00000000000000000000000000000100000000" *) 
-(* hls_module = "yes" *) 
+(* ORIG_REF_NAME = "Gamelogic2" *) (* ap_ST_fsm_state1 = "39'b000000000000000000000000000000000000001" *) (* ap_ST_fsm_state10 = "39'b000000000000000000000000000001000000000" *) 
+(* ap_ST_fsm_state11 = "39'b000000000000000000000000000010000000000" *) (* ap_ST_fsm_state12 = "39'b000000000000000000000000000100000000000" *) (* ap_ST_fsm_state13 = "39'b000000000000000000000000001000000000000" *) 
+(* ap_ST_fsm_state14 = "39'b000000000000000000000000010000000000000" *) (* ap_ST_fsm_state15 = "39'b000000000000000000000000100000000000000" *) (* ap_ST_fsm_state16 = "39'b000000000000000000000001000000000000000" *) 
+(* ap_ST_fsm_state17 = "39'b000000000000000000000010000000000000000" *) (* ap_ST_fsm_state18 = "39'b000000000000000000000100000000000000000" *) (* ap_ST_fsm_state19 = "39'b000000000000000000001000000000000000000" *) 
+(* ap_ST_fsm_state2 = "39'b000000000000000000000000000000000000010" *) (* ap_ST_fsm_state20 = "39'b000000000000000000010000000000000000000" *) (* ap_ST_fsm_state21 = "39'b000000000000000000100000000000000000000" *) 
+(* ap_ST_fsm_state22 = "39'b000000000000000001000000000000000000000" *) (* ap_ST_fsm_state23 = "39'b000000000000000010000000000000000000000" *) (* ap_ST_fsm_state24 = "39'b000000000000000100000000000000000000000" *) 
+(* ap_ST_fsm_state25 = "39'b000000000000001000000000000000000000000" *) (* ap_ST_fsm_state26 = "39'b000000000000010000000000000000000000000" *) (* ap_ST_fsm_state27 = "39'b000000000000100000000000000000000000000" *) 
+(* ap_ST_fsm_state28 = "39'b000000000001000000000000000000000000000" *) (* ap_ST_fsm_state29 = "39'b000000000010000000000000000000000000000" *) (* ap_ST_fsm_state3 = "39'b000000000000000000000000000000000000100" *) 
+(* ap_ST_fsm_state30 = "39'b000000000100000000000000000000000000000" *) (* ap_ST_fsm_state31 = "39'b000000001000000000000000000000000000000" *) (* ap_ST_fsm_state32 = "39'b000000010000000000000000000000000000000" *) 
+(* ap_ST_fsm_state33 = "39'b000000100000000000000000000000000000000" *) (* ap_ST_fsm_state34 = "39'b000001000000000000000000000000000000000" *) (* ap_ST_fsm_state35 = "39'b000010000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state36 = "39'b000100000000000000000000000000000000000" *) (* ap_ST_fsm_state37 = "39'b001000000000000000000000000000000000000" *) (* ap_ST_fsm_state38 = "39'b010000000000000000000000000000000000000" *) 
+(* ap_ST_fsm_state39 = "39'b100000000000000000000000000000000000000" *) (* ap_ST_fsm_state4 = "39'b000000000000000000000000000000000001000" *) (* ap_ST_fsm_state5 = "39'b000000000000000000000000000000000010000" *) 
+(* ap_ST_fsm_state6 = "39'b000000000000000000000000000000000100000" *) (* ap_ST_fsm_state7 = "39'b000000000000000000000000000000001000000" *) (* ap_ST_fsm_state8 = "39'b000000000000000000000000000000010000000" *) 
+(* ap_ST_fsm_state9 = "39'b000000000000000000000000000000100000000" *) (* hls_module = "yes" *) 
 module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
    (ap_clk,
     ap_rst,
@@ -197,55 +198,55 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire \ap_CS_fsm[1]_i_6_n_0 ;
   wire \ap_CS_fsm[1]_i_7_n_0 ;
   wire \ap_CS_fsm[1]_i_8_n_0 ;
-  wire \ap_CS_fsm[2]_i_1_n_0 ;
-  wire \ap_CS_fsm[37]_i_10_n_0 ;
-  wire \ap_CS_fsm[37]_i_11_n_0 ;
-  wire \ap_CS_fsm[37]_i_13_n_0 ;
-  wire \ap_CS_fsm[37]_i_14_n_0 ;
-  wire \ap_CS_fsm[37]_i_15_n_0 ;
-  wire \ap_CS_fsm[37]_i_16_n_0 ;
-  wire \ap_CS_fsm[37]_i_17_n_0 ;
-  wire \ap_CS_fsm[37]_i_18_n_0 ;
-  wire \ap_CS_fsm[37]_i_19_n_0 ;
-  wire \ap_CS_fsm[37]_i_20_n_0 ;
-  wire \ap_CS_fsm[37]_i_22_n_0 ;
-  wire \ap_CS_fsm[37]_i_23_n_0 ;
-  wire \ap_CS_fsm[37]_i_24_n_0 ;
-  wire \ap_CS_fsm[37]_i_25_n_0 ;
-  wire \ap_CS_fsm[37]_i_26_n_0 ;
-  wire \ap_CS_fsm[37]_i_27_n_0 ;
-  wire \ap_CS_fsm[37]_i_28_n_0 ;
-  wire \ap_CS_fsm[37]_i_29_n_0 ;
-  wire \ap_CS_fsm[37]_i_30_n_0 ;
-  wire \ap_CS_fsm[37]_i_31_n_0 ;
-  wire \ap_CS_fsm[37]_i_32_n_0 ;
-  wire \ap_CS_fsm[37]_i_33_n_0 ;
-  wire \ap_CS_fsm[37]_i_34_n_0 ;
-  wire \ap_CS_fsm[37]_i_35_n_0 ;
-  wire \ap_CS_fsm[37]_i_36_n_0 ;
-  wire \ap_CS_fsm[37]_i_37_n_0 ;
-  wire \ap_CS_fsm[37]_i_4_n_0 ;
-  wire \ap_CS_fsm[37]_i_5_n_0 ;
-  wire \ap_CS_fsm[37]_i_6_n_0 ;
-  wire \ap_CS_fsm[37]_i_7_n_0 ;
-  wire \ap_CS_fsm[37]_i_8_n_0 ;
-  wire \ap_CS_fsm[37]_i_9_n_0 ;
-  wire \ap_CS_fsm_reg[37]_i_12_n_0 ;
-  wire \ap_CS_fsm_reg[37]_i_12_n_1 ;
-  wire \ap_CS_fsm_reg[37]_i_12_n_2 ;
-  wire \ap_CS_fsm_reg[37]_i_12_n_3 ;
-  wire \ap_CS_fsm_reg[37]_i_21_n_0 ;
-  wire \ap_CS_fsm_reg[37]_i_21_n_1 ;
-  wire \ap_CS_fsm_reg[37]_i_21_n_2 ;
-  wire \ap_CS_fsm_reg[37]_i_21_n_3 ;
-  wire \ap_CS_fsm_reg[37]_i_2_n_0 ;
-  wire \ap_CS_fsm_reg[37]_i_2_n_1 ;
-  wire \ap_CS_fsm_reg[37]_i_2_n_2 ;
-  wire \ap_CS_fsm_reg[37]_i_2_n_3 ;
-  wire \ap_CS_fsm_reg[37]_i_3_n_0 ;
-  wire \ap_CS_fsm_reg[37]_i_3_n_1 ;
-  wire \ap_CS_fsm_reg[37]_i_3_n_2 ;
-  wire \ap_CS_fsm_reg[37]_i_3_n_3 ;
+  wire \ap_CS_fsm[38]_i_10_n_0 ;
+  wire \ap_CS_fsm[38]_i_11_n_0 ;
+  wire \ap_CS_fsm[38]_i_13_n_0 ;
+  wire \ap_CS_fsm[38]_i_14_n_0 ;
+  wire \ap_CS_fsm[38]_i_15_n_0 ;
+  wire \ap_CS_fsm[38]_i_16_n_0 ;
+  wire \ap_CS_fsm[38]_i_17_n_0 ;
+  wire \ap_CS_fsm[38]_i_18_n_0 ;
+  wire \ap_CS_fsm[38]_i_19_n_0 ;
+  wire \ap_CS_fsm[38]_i_20_n_0 ;
+  wire \ap_CS_fsm[38]_i_22_n_0 ;
+  wire \ap_CS_fsm[38]_i_23_n_0 ;
+  wire \ap_CS_fsm[38]_i_24_n_0 ;
+  wire \ap_CS_fsm[38]_i_25_n_0 ;
+  wire \ap_CS_fsm[38]_i_26_n_0 ;
+  wire \ap_CS_fsm[38]_i_27_n_0 ;
+  wire \ap_CS_fsm[38]_i_28_n_0 ;
+  wire \ap_CS_fsm[38]_i_29_n_0 ;
+  wire \ap_CS_fsm[38]_i_30_n_0 ;
+  wire \ap_CS_fsm[38]_i_31_n_0 ;
+  wire \ap_CS_fsm[38]_i_32_n_0 ;
+  wire \ap_CS_fsm[38]_i_33_n_0 ;
+  wire \ap_CS_fsm[38]_i_34_n_0 ;
+  wire \ap_CS_fsm[38]_i_35_n_0 ;
+  wire \ap_CS_fsm[38]_i_36_n_0 ;
+  wire \ap_CS_fsm[38]_i_37_n_0 ;
+  wire \ap_CS_fsm[38]_i_4_n_0 ;
+  wire \ap_CS_fsm[38]_i_5_n_0 ;
+  wire \ap_CS_fsm[38]_i_6_n_0 ;
+  wire \ap_CS_fsm[38]_i_7_n_0 ;
+  wire \ap_CS_fsm[38]_i_8_n_0 ;
+  wire \ap_CS_fsm[38]_i_9_n_0 ;
+  wire \ap_CS_fsm[3]_i_1_n_0 ;
+  wire \ap_CS_fsm_reg[38]_i_12_n_0 ;
+  wire \ap_CS_fsm_reg[38]_i_12_n_1 ;
+  wire \ap_CS_fsm_reg[38]_i_12_n_2 ;
+  wire \ap_CS_fsm_reg[38]_i_12_n_3 ;
+  wire \ap_CS_fsm_reg[38]_i_21_n_0 ;
+  wire \ap_CS_fsm_reg[38]_i_21_n_1 ;
+  wire \ap_CS_fsm_reg[38]_i_21_n_2 ;
+  wire \ap_CS_fsm_reg[38]_i_21_n_3 ;
+  wire \ap_CS_fsm_reg[38]_i_2_n_0 ;
+  wire \ap_CS_fsm_reg[38]_i_2_n_1 ;
+  wire \ap_CS_fsm_reg[38]_i_2_n_2 ;
+  wire \ap_CS_fsm_reg[38]_i_2_n_3 ;
+  wire \ap_CS_fsm_reg[38]_i_3_n_0 ;
+  wire \ap_CS_fsm_reg[38]_i_3_n_1 ;
+  wire \ap_CS_fsm_reg[38]_i_3_n_2 ;
+  wire \ap_CS_fsm_reg[38]_i_3_n_3 ;
   wire \ap_CS_fsm_reg_n_0_[0] ;
   wire \ap_CS_fsm_reg_n_0_[10] ;
   wire \ap_CS_fsm_reg_n_0_[11] ;
@@ -274,7 +275,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire \ap_CS_fsm_reg_n_0_[34] ;
   wire \ap_CS_fsm_reg_n_0_[35] ;
   wire \ap_CS_fsm_reg_n_0_[36] ;
-  wire \ap_CS_fsm_reg_n_0_[3] ;
+  wire \ap_CS_fsm_reg_n_0_[37] ;
   wire \ap_CS_fsm_reg_n_0_[4] ;
   wire \ap_CS_fsm_reg_n_0_[5] ;
   wire \ap_CS_fsm_reg_n_0_[6] ;
@@ -282,186 +283,187 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire \ap_CS_fsm_reg_n_0_[8] ;
   wire \ap_CS_fsm_reg_n_0_[9] ;
   wire ap_CS_fsm_state2;
-  wire [37:0]ap_NS_fsm;
-  wire ap_NS_fsm1;
+  wire ap_CS_fsm_state3;
+  wire [38:0]ap_NS_fsm;
+  wire ap_NS_fsm124_out;
   wire ap_clk;
   wire ap_done;
   wire ap_idle;
   wire ap_rst;
   wire ap_start;
-  wire brmerge1_reg_593;
+  wire brmerge1_reg_679;
   wire btn0;
   wire btn1;
   wire btn2;
   wire btn3;
   wire btn_count;
   wire btn_count0;
-  wire \btn_count_flag_2_reg_160[0]_i_1_n_0 ;
-  wire \btn_count_flag_2_reg_160_reg_n_0_[0] ;
-  wire [31:0]btn_count_loc_fu_278_p3;
-  wire [31:0]btn_count_loc_reg_599;
-  wire \btn_count_loc_reg_599[3]_i_2_n_0 ;
-  wire \btn_count_loc_reg_599_reg[11]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[11]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[11]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[11]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[15]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[15]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[15]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[15]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[19]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[19]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[19]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[19]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[23]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[23]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[23]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[23]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[27]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[27]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[27]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[27]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[31]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[31]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[31]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[3]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[3]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[3]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[3]_i_1_n_3 ;
-  wire \btn_count_loc_reg_599_reg[7]_i_1_n_0 ;
-  wire \btn_count_loc_reg_599_reg[7]_i_1_n_1 ;
-  wire \btn_count_loc_reg_599_reg[7]_i_1_n_2 ;
-  wire \btn_count_loc_reg_599_reg[7]_i_1_n_3 ;
-  wire btn_count_new_2_reg_172;
-  wire \btn_count_new_2_reg_172[11]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[11]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[11]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[11]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[15]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[15]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[15]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[15]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[19]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[19]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[19]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[19]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[23]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[23]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[23]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[23]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[27]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[27]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[27]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[27]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[31]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[31]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[31]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[31]_i_6_n_0 ;
-  wire \btn_count_new_2_reg_172[31]_i_7_n_0 ;
-  wire \btn_count_new_2_reg_172[3]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[3]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[3]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[3]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172[3]_i_6_n_0 ;
-  wire \btn_count_new_2_reg_172[7]_i_2_n_0 ;
-  wire \btn_count_new_2_reg_172[7]_i_3_n_0 ;
-  wire \btn_count_new_2_reg_172[7]_i_4_n_0 ;
-  wire \btn_count_new_2_reg_172[7]_i_5_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[11]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[15]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[19]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[23]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[27]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[31]_i_3_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[3]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_0 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_1 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_2 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_3 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_4 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_5 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_6 ;
-  wire \btn_count_new_2_reg_172_reg[7]_i_1_n_7 ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[0] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[10] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[11] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[12] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[13] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[14] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[15] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[16] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[17] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[18] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[19] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[1] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[20] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[21] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[22] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[23] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[24] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[25] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[26] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[27] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[28] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[29] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[2] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[30] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[31] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[3] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[4] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[5] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[6] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[7] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[8] ;
-  wire \btn_count_new_2_reg_172_reg_n_0_[9] ;
+  wire \btn_count_flag_2_reg_186[0]_i_1_n_0 ;
+  wire \btn_count_flag_2_reg_186_reg_n_0_[0] ;
+  wire [31:0]btn_count_loc_fu_332_p3;
+  wire [31:0]btn_count_loc_reg_685;
+  wire \btn_count_loc_reg_685[3]_i_2_n_0 ;
+  wire \btn_count_loc_reg_685_reg[11]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[11]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[11]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[11]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[15]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[15]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[15]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[15]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[19]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[19]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[19]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[19]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[23]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[23]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[23]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[23]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[27]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[27]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[27]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[27]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[31]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[31]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[31]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[3]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[3]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[3]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[3]_i_1_n_3 ;
+  wire \btn_count_loc_reg_685_reg[7]_i_1_n_0 ;
+  wire \btn_count_loc_reg_685_reg[7]_i_1_n_1 ;
+  wire \btn_count_loc_reg_685_reg[7]_i_1_n_2 ;
+  wire \btn_count_loc_reg_685_reg[7]_i_1_n_3 ;
+  wire btn_count_new_2_reg_198;
+  wire \btn_count_new_2_reg_198[11]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[11]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[11]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[11]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[15]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[15]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[15]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[15]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[19]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[19]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[19]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[19]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[23]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[23]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[23]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[23]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[27]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[27]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[27]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[27]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[31]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[31]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[31]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[31]_i_6_n_0 ;
+  wire \btn_count_new_2_reg_198[31]_i_7_n_0 ;
+  wire \btn_count_new_2_reg_198[3]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[3]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[3]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[3]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198[3]_i_6_n_0 ;
+  wire \btn_count_new_2_reg_198[7]_i_2_n_0 ;
+  wire \btn_count_new_2_reg_198[7]_i_3_n_0 ;
+  wire \btn_count_new_2_reg_198[7]_i_4_n_0 ;
+  wire \btn_count_new_2_reg_198[7]_i_5_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[11]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[15]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[19]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[23]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[27]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[31]_i_3_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[3]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_0 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_1 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_2 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_3 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_4 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_5 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_6 ;
+  wire \btn_count_new_2_reg_198_reg[7]_i_1_n_7 ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[0] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[10] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[11] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[12] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[13] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[14] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[15] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[16] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[17] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[18] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[19] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[1] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[20] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[21] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[22] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[23] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[24] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[25] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[26] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[27] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[28] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[29] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[2] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[30] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[31] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[3] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[4] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[5] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[6] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[7] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[8] ;
+  wire \btn_count_new_2_reg_198_reg_n_0_[9] ;
   wire \btn_count_reg_n_0_[0] ;
   wire \btn_count_reg_n_0_[10] ;
   wire \btn_count_reg_n_0_[11] ;
@@ -498,91 +500,95 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire [11:0]center_line_out_V;
   wire \center_line_out_V[11]_INST_0_i_1_n_0 ;
   wire [11:0]data1;
+  wire [11:1]data3;
   wire end_game;
   wire end_game_INST_0_i_1_n_0;
   wire end_game_INST_0_i_2_n_0;
   wire end_game_ap_vld;
-  wire first_run;
   wire \first_run[0]_i_1_n_0 ;
+  wire first_run_flag_reg_160;
+  wire first_run_loc_reg_174;
+  wire \first_run_loc_reg_174[0]_i_1_n_0 ;
+  wire \first_run_reg_n_0_[0] ;
   wire game_over;
   wire \game_over[0]_i_1_n_0 ;
-  wire \game_over_load_reg_606_reg_n_0_[0] ;
-  wire [11:1]new_center_1_cast_fu_296_p1;
-  wire [13:0]new_center_8_reg_610;
-  wire \new_center_8_reg_610[0]_i_1_n_0 ;
-  wire \new_center_8_reg_610[0]_i_2_n_0 ;
-  wire \new_center_8_reg_610[10]_i_1_n_0 ;
-  wire \new_center_8_reg_610[11]_i_1_n_0 ;
-  wire \new_center_8_reg_610[11]_i_2_n_0 ;
-  wire \new_center_8_reg_610[11]_i_5_n_0 ;
-  wire \new_center_8_reg_610[11]_i_6_n_0 ;
-  wire \new_center_8_reg_610[11]_i_7_n_0 ;
-  wire \new_center_8_reg_610[11]_i_8_n_0 ;
-  wire \new_center_8_reg_610[11]_i_9_n_0 ;
-  wire \new_center_8_reg_610[13]_i_2_n_0 ;
-  wire \new_center_8_reg_610[1]_i_1_n_0 ;
-  wire \new_center_8_reg_610[2]_i_1_n_0 ;
-  wire \new_center_8_reg_610[3]_i_1_n_0 ;
-  wire \new_center_8_reg_610[3]_i_4_n_0 ;
-  wire \new_center_8_reg_610[3]_i_5_n_0 ;
-  wire \new_center_8_reg_610[3]_i_6_n_0 ;
-  wire \new_center_8_reg_610[3]_i_7_n_0 ;
-  wire \new_center_8_reg_610[4]_i_1_n_0 ;
-  wire \new_center_8_reg_610[5]_i_1_n_0 ;
-  wire \new_center_8_reg_610[6]_i_1_n_0 ;
-  wire \new_center_8_reg_610[7]_i_1_n_0 ;
-  wire \new_center_8_reg_610[7]_i_4_n_0 ;
-  wire \new_center_8_reg_610[7]_i_5_n_0 ;
-  wire \new_center_8_reg_610[7]_i_6_n_0 ;
-  wire \new_center_8_reg_610[7]_i_7_n_0 ;
-  wire \new_center_8_reg_610[8]_i_1_n_0 ;
-  wire \new_center_8_reg_610[9]_i_1_n_0 ;
-  wire \new_center_8_reg_610_reg[11]_i_3_n_1 ;
-  wire \new_center_8_reg_610_reg[11]_i_3_n_2 ;
-  wire \new_center_8_reg_610_reg[11]_i_3_n_3 ;
-  wire \new_center_8_reg_610_reg[11]_i_4_n_0 ;
-  wire \new_center_8_reg_610_reg[11]_i_4_n_1 ;
-  wire \new_center_8_reg_610_reg[11]_i_4_n_2 ;
-  wire \new_center_8_reg_610_reg[11]_i_4_n_3 ;
-  wire \new_center_8_reg_610_reg[13]_i_3_n_3 ;
-  wire \new_center_8_reg_610_reg[3]_i_2_n_0 ;
-  wire \new_center_8_reg_610_reg[3]_i_2_n_1 ;
-  wire \new_center_8_reg_610_reg[3]_i_2_n_2 ;
-  wire \new_center_8_reg_610_reg[3]_i_2_n_3 ;
-  wire \new_center_8_reg_610_reg[3]_i_3_n_0 ;
-  wire \new_center_8_reg_610_reg[3]_i_3_n_1 ;
-  wire \new_center_8_reg_610_reg[3]_i_3_n_2 ;
-  wire \new_center_8_reg_610_reg[3]_i_3_n_3 ;
-  wire \new_center_8_reg_610_reg[7]_i_2_n_0 ;
-  wire \new_center_8_reg_610_reg[7]_i_2_n_1 ;
-  wire \new_center_8_reg_610_reg[7]_i_2_n_2 ;
-  wire \new_center_8_reg_610_reg[7]_i_2_n_3 ;
-  wire \new_center_8_reg_610_reg[7]_i_3_n_0 ;
-  wire \new_center_8_reg_610_reg[7]_i_3_n_1 ;
-  wire \new_center_8_reg_610_reg[7]_i_3_n_2 ;
-  wire \new_center_8_reg_610_reg[7]_i_3_n_3 ;
-  wire [13:0]new_center_9_reg_184;
-  wire \new_center_9_reg_184[0]_i_1_n_0 ;
-  wire \new_center_9_reg_184[10]_i_1_n_0 ;
-  wire \new_center_9_reg_184[11]_i_1_n_0 ;
-  wire \new_center_9_reg_184[11]_i_2_n_0 ;
-  wire \new_center_9_reg_184[13]_i_1_n_0 ;
-  wire \new_center_9_reg_184[13]_i_2_n_0 ;
-  wire \new_center_9_reg_184[13]_i_3_n_0 ;
-  wire \new_center_9_reg_184[1]_i_1_n_0 ;
-  wire \new_center_9_reg_184[2]_i_1_n_0 ;
-  wire \new_center_9_reg_184[3]_i_1_n_0 ;
-  wire \new_center_9_reg_184[4]_i_1_n_0 ;
-  wire \new_center_9_reg_184[5]_i_1_n_0 ;
-  wire \new_center_9_reg_184[6]_i_1_n_0 ;
-  wire \new_center_9_reg_184[7]_i_1_n_0 ;
-  wire \new_center_9_reg_184[8]_i_1_n_0 ;
-  wire \new_center_9_reg_184[9]_i_1_n_0 ;
+  wire \game_over_load_reg_692_reg_n_0_[0] ;
+  wire [11:0]new_center_1_cast_fu_349_p1;
+  wire [13:0]new_center_8_reg_696;
+  wire new_center_8_reg_6960;
+  wire \new_center_8_reg_696[0]_i_1_n_0 ;
+  wire \new_center_8_reg_696[0]_i_2_n_0 ;
+  wire \new_center_8_reg_696[10]_i_1_n_0 ;
+  wire \new_center_8_reg_696[11]_i_1_n_0 ;
+  wire \new_center_8_reg_696[11]_i_2_n_0 ;
+  wire \new_center_8_reg_696[11]_i_4_n_0 ;
+  wire \new_center_8_reg_696[11]_i_6_n_0 ;
+  wire \new_center_8_reg_696[11]_i_7_n_0 ;
+  wire \new_center_8_reg_696[11]_i_8_n_0 ;
+  wire \new_center_8_reg_696[11]_i_9_n_0 ;
+  wire \new_center_8_reg_696[13]_i_1_n_0 ;
+  wire \new_center_8_reg_696[13]_i_2_n_0 ;
+  wire \new_center_8_reg_696[1]_i_1_n_0 ;
+  wire \new_center_8_reg_696[2]_i_1_n_0 ;
+  wire \new_center_8_reg_696[3]_i_1_n_0 ;
+  wire \new_center_8_reg_696[3]_i_4_n_0 ;
+  wire \new_center_8_reg_696[3]_i_5_n_0 ;
+  wire \new_center_8_reg_696[3]_i_6_n_0 ;
+  wire \new_center_8_reg_696[3]_i_7_n_0 ;
+  wire \new_center_8_reg_696[4]_i_1_n_0 ;
+  wire \new_center_8_reg_696[5]_i_1_n_0 ;
+  wire \new_center_8_reg_696[6]_i_1_n_0 ;
+  wire \new_center_8_reg_696[7]_i_1_n_0 ;
+  wire \new_center_8_reg_696[7]_i_4_n_0 ;
+  wire \new_center_8_reg_696[7]_i_5_n_0 ;
+  wire \new_center_8_reg_696[7]_i_6_n_0 ;
+  wire \new_center_8_reg_696[7]_i_7_n_0 ;
+  wire \new_center_8_reg_696[8]_i_1_n_0 ;
+  wire \new_center_8_reg_696[9]_i_1_n_0 ;
+  wire \new_center_8_reg_696_reg[11]_i_3_n_0 ;
+  wire \new_center_8_reg_696_reg[11]_i_3_n_1 ;
+  wire \new_center_8_reg_696_reg[11]_i_3_n_2 ;
+  wire \new_center_8_reg_696_reg[11]_i_3_n_3 ;
+  wire \new_center_8_reg_696_reg[11]_i_5_n_1 ;
+  wire \new_center_8_reg_696_reg[11]_i_5_n_2 ;
+  wire \new_center_8_reg_696_reg[11]_i_5_n_3 ;
+  wire \new_center_8_reg_696_reg[13]_i_3_n_3 ;
+  wire \new_center_8_reg_696_reg[3]_i_2_n_0 ;
+  wire \new_center_8_reg_696_reg[3]_i_2_n_1 ;
+  wire \new_center_8_reg_696_reg[3]_i_2_n_2 ;
+  wire \new_center_8_reg_696_reg[3]_i_2_n_3 ;
+  wire \new_center_8_reg_696_reg[3]_i_3_n_0 ;
+  wire \new_center_8_reg_696_reg[3]_i_3_n_1 ;
+  wire \new_center_8_reg_696_reg[3]_i_3_n_2 ;
+  wire \new_center_8_reg_696_reg[3]_i_3_n_3 ;
+  wire \new_center_8_reg_696_reg[7]_i_2_n_0 ;
+  wire \new_center_8_reg_696_reg[7]_i_2_n_1 ;
+  wire \new_center_8_reg_696_reg[7]_i_2_n_2 ;
+  wire \new_center_8_reg_696_reg[7]_i_2_n_3 ;
+  wire \new_center_8_reg_696_reg[7]_i_3_n_0 ;
+  wire \new_center_8_reg_696_reg[7]_i_3_n_1 ;
+  wire \new_center_8_reg_696_reg[7]_i_3_n_2 ;
+  wire \new_center_8_reg_696_reg[7]_i_3_n_3 ;
+  wire [13:0]new_center_9_reg_210;
+  wire \new_center_9_reg_210[0]_i_1_n_0 ;
+  wire \new_center_9_reg_210[10]_i_1_n_0 ;
+  wire \new_center_9_reg_210[11]_i_1_n_0 ;
+  wire \new_center_9_reg_210[13]_i_1_n_0 ;
+  wire \new_center_9_reg_210[13]_i_2_n_0 ;
+  wire \new_center_9_reg_210[13]_i_3_n_0 ;
+  wire \new_center_9_reg_210[1]_i_1_n_0 ;
+  wire \new_center_9_reg_210[2]_i_1_n_0 ;
+  wire \new_center_9_reg_210[3]_i_1_n_0 ;
+  wire \new_center_9_reg_210[4]_i_1_n_0 ;
+  wire \new_center_9_reg_210[5]_i_1_n_0 ;
+  wire \new_center_9_reg_210[6]_i_1_n_0 ;
+  wire \new_center_9_reg_210[7]_i_1_n_0 ;
+  wire \new_center_9_reg_210[8]_i_1_n_0 ;
+  wire \new_center_9_reg_210[9]_i_1_n_0 ;
   wire p_0_in1_out;
   wire [31:0]remd;
   wire reset_game_in;
   wire reset_game_out;
-  wire reset_game_out1;
   wire reset_game_out_preg;
   wire right_in;
   wire right_out;
@@ -590,187 +596,187 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   wire right_wins_INST_0_i_1_n_0;
   wire right_wins_INST_0_i_2_n_0;
   wire start;
-  wire tmp_1_reg_616;
-  wire \tmp_1_reg_616[0]_i_1_n_0 ;
-  wire [31:1]tmp_i_i_fu_501_p2;
-  wire [31:0]tmp_i_i_reg_620;
-  wire tmp_i_i_reg_6200;
-  wire \tmp_i_i_reg_620[13]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[13]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[17]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620[1]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[1]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[1]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[21]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[25]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[29]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620[31]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[31]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[31]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620[31]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[31]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[5]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[5]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[5]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_10_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_2_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_3_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_4_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_5_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_7_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_8_n_0 ;
-  wire \tmp_i_i_reg_620[9]_i_9_n_0 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[13]_i_6_n_7 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[17]_i_6_n_7 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_4 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_5 ;
-  wire \tmp_i_i_reg_620_reg[1]_i_1_n_6 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[21]_i_6_n_7 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[25]_i_6_n_7 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[29]_i_6_n_7 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_2_n_3 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_5_n_2 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_5_n_3 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_5_n_5 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_5_n_6 ;
-  wire \tmp_i_i_reg_620_reg[31]_i_5_n_7 ;
-  wire \tmp_i_i_reg_620_reg[5]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[5]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[5]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[5]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_1_n_0 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_1_n_1 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_1_n_2 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_1_n_3 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_0 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_1 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_2 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_3 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_4 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_5 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_6 ;
-  wire \tmp_i_i_reg_620_reg[9]_i_6_n_7 ;
-  wire [3:0]\NLW_ap_CS_fsm_reg[37]_i_12_O_UNCONNECTED ;
-  wire [3:0]\NLW_ap_CS_fsm_reg[37]_i_2_O_UNCONNECTED ;
-  wire [3:0]\NLW_ap_CS_fsm_reg[37]_i_21_O_UNCONNECTED ;
-  wire [3:0]\NLW_ap_CS_fsm_reg[37]_i_3_O_UNCONNECTED ;
-  wire [3:3]\NLW_btn_count_loc_reg_599_reg[31]_i_1_CO_UNCONNECTED ;
-  wire [3:3]\NLW_btn_count_new_2_reg_172_reg[31]_i_3_CO_UNCONNECTED ;
-  wire [3:3]\NLW_new_center_8_reg_610_reg[11]_i_3_CO_UNCONNECTED ;
-  wire [3:1]\NLW_new_center_8_reg_610_reg[13]_i_3_CO_UNCONNECTED ;
-  wire [3:0]\NLW_new_center_8_reg_610_reg[13]_i_3_O_UNCONNECTED ;
-  wire [0:0]\NLW_new_center_8_reg_610_reg[3]_i_2_O_UNCONNECTED ;
-  wire [3:1]\NLW_tmp_i_i_reg_620_reg[31]_i_2_CO_UNCONNECTED ;
-  wire [3:2]\NLW_tmp_i_i_reg_620_reg[31]_i_2_O_UNCONNECTED ;
-  wire [3:2]\NLW_tmp_i_i_reg_620_reg[31]_i_5_CO_UNCONNECTED ;
-  wire [3:3]\NLW_tmp_i_i_reg_620_reg[31]_i_5_O_UNCONNECTED ;
+  wire tmp_1_reg_702;
+  wire \tmp_1_reg_702[0]_i_1_n_0 ;
+  wire [31:1]tmp_i_i_fu_534_p2;
+  wire [31:0]tmp_i_i_reg_706;
+  wire tmp_i_i_reg_7060;
+  wire \tmp_i_i_reg_706[13]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[13]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[17]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706[1]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[1]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[1]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[21]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[25]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[29]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706[31]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[31]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[31]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706[31]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[31]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[5]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[5]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[5]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_10_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_2_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_3_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_4_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_5_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_7_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_8_n_0 ;
+  wire \tmp_i_i_reg_706[9]_i_9_n_0 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[13]_i_6_n_7 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[17]_i_6_n_7 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_4 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_5 ;
+  wire \tmp_i_i_reg_706_reg[1]_i_1_n_6 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[21]_i_6_n_7 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[25]_i_6_n_7 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[29]_i_6_n_7 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_2_n_3 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_5_n_2 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_5_n_3 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_5_n_5 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_5_n_6 ;
+  wire \tmp_i_i_reg_706_reg[31]_i_5_n_7 ;
+  wire \tmp_i_i_reg_706_reg[5]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[5]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[5]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[5]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_1_n_0 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_1_n_1 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_1_n_2 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_1_n_3 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_0 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_1 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_2 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_3 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_4 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_5 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_6 ;
+  wire \tmp_i_i_reg_706_reg[9]_i_6_n_7 ;
+  wire [3:0]\NLW_ap_CS_fsm_reg[38]_i_12_O_UNCONNECTED ;
+  wire [3:0]\NLW_ap_CS_fsm_reg[38]_i_2_O_UNCONNECTED ;
+  wire [3:0]\NLW_ap_CS_fsm_reg[38]_i_21_O_UNCONNECTED ;
+  wire [3:0]\NLW_ap_CS_fsm_reg[38]_i_3_O_UNCONNECTED ;
+  wire [3:3]\NLW_btn_count_loc_reg_685_reg[31]_i_1_CO_UNCONNECTED ;
+  wire [3:3]\NLW_btn_count_new_2_reg_198_reg[31]_i_3_CO_UNCONNECTED ;
+  wire [3:3]\NLW_new_center_8_reg_696_reg[11]_i_5_CO_UNCONNECTED ;
+  wire [3:1]\NLW_new_center_8_reg_696_reg[13]_i_3_CO_UNCONNECTED ;
+  wire [3:0]\NLW_new_center_8_reg_696_reg[13]_i_3_O_UNCONNECTED ;
+  wire [0:0]\NLW_new_center_8_reg_696_reg[3]_i_3_O_UNCONNECTED ;
+  wire [3:1]\NLW_tmp_i_i_reg_706_reg[31]_i_2_CO_UNCONNECTED ;
+  wire [3:2]\NLW_tmp_i_i_reg_706_reg[31]_i_2_O_UNCONNECTED ;
+  wire [3:2]\NLW_tmp_i_i_reg_706_reg[31]_i_5_CO_UNCONNECTED ;
+  wire [3:3]\NLW_tmp_i_i_reg_706_reg[31]_i_5_O_UNCONNECTED ;
 
   assign ap_ready = ap_done;
   Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb Gamelogic2_urem_3bkb_U1
        (.Q(start),
         .ap_clk(ap_clk),
         .ap_rst(ap_rst),
-        .\dividend0_reg[31] (tmp_i_i_reg_620),
+        .\dividend0_reg[31] (tmp_i_i_reg_706),
         .\remd_reg[31] (remd),
         .right_out(right_out));
   LUT3 #(
     .INIT(8'h40)) 
     \RandSeed[31]_i_1 
-       (.I0(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I1(tmp_1_reg_616),
+       (.I0(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I1(tmp_1_reg_702),
         .I2(ap_done),
         .O(btn_count));
   FDRE #(
@@ -1029,7 +1035,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
         .D(remd[9]),
         .Q(RandSeed[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'hF4)) 
     \ap_CS_fsm[0]_i_1 
@@ -1050,282 +1056,286 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_2 
-       (.I0(\ap_CS_fsm_reg_n_0_[34] ),
-        .I1(\ap_CS_fsm_reg_n_0_[35] ),
-        .I2(\ap_CS_fsm_reg_n_0_[32] ),
-        .I3(\ap_CS_fsm_reg_n_0_[33] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[35] ),
+        .I1(\ap_CS_fsm_reg_n_0_[36] ),
+        .I2(\ap_CS_fsm_reg_n_0_[33] ),
+        .I3(\ap_CS_fsm_reg_n_0_[34] ),
         .I4(ap_done),
-        .I5(\ap_CS_fsm_reg_n_0_[36] ),
+        .I5(\ap_CS_fsm_reg_n_0_[37] ),
         .O(\ap_CS_fsm[1]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_3 
-       (.I0(\ap_CS_fsm_reg_n_0_[28] ),
-        .I1(\ap_CS_fsm_reg_n_0_[29] ),
-        .I2(\ap_CS_fsm_reg_n_0_[26] ),
-        .I3(\ap_CS_fsm_reg_n_0_[27] ),
-        .I4(\ap_CS_fsm_reg_n_0_[31] ),
-        .I5(\ap_CS_fsm_reg_n_0_[30] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[29] ),
+        .I1(\ap_CS_fsm_reg_n_0_[30] ),
+        .I2(\ap_CS_fsm_reg_n_0_[27] ),
+        .I3(\ap_CS_fsm_reg_n_0_[28] ),
+        .I4(\ap_CS_fsm_reg_n_0_[32] ),
+        .I5(\ap_CS_fsm_reg_n_0_[31] ),
         .O(\ap_CS_fsm[1]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_4 
-       (.I0(\ap_CS_fsm_reg_n_0_[22] ),
-        .I1(\ap_CS_fsm_reg_n_0_[23] ),
-        .I2(\ap_CS_fsm_reg_n_0_[20] ),
-        .I3(\ap_CS_fsm_reg_n_0_[21] ),
-        .I4(\ap_CS_fsm_reg_n_0_[25] ),
-        .I5(\ap_CS_fsm_reg_n_0_[24] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[23] ),
+        .I1(\ap_CS_fsm_reg_n_0_[24] ),
+        .I2(\ap_CS_fsm_reg_n_0_[21] ),
+        .I3(\ap_CS_fsm_reg_n_0_[22] ),
+        .I4(\ap_CS_fsm_reg_n_0_[26] ),
+        .I5(\ap_CS_fsm_reg_n_0_[25] ),
         .O(\ap_CS_fsm[1]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT5 #(
     .INIT(32'h00080000)) 
     \ap_CS_fsm[1]_i_5 
        (.I0(ap_start),
         .I1(\ap_CS_fsm_reg_n_0_[0] ),
-        .I2(game_over),
-        .I3(ap_CS_fsm_state2),
+        .I2(ap_CS_fsm_state2),
+        .I3(ap_CS_fsm_state3),
         .I4(\ap_CS_fsm[1]_i_8_n_0 ),
         .O(\ap_CS_fsm[1]_i_5_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_6 
-       (.I0(\ap_CS_fsm_reg_n_0_[16] ),
-        .I1(\ap_CS_fsm_reg_n_0_[17] ),
-        .I2(\ap_CS_fsm_reg_n_0_[14] ),
-        .I3(\ap_CS_fsm_reg_n_0_[15] ),
-        .I4(\ap_CS_fsm_reg_n_0_[19] ),
-        .I5(\ap_CS_fsm_reg_n_0_[18] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[17] ),
+        .I1(\ap_CS_fsm_reg_n_0_[18] ),
+        .I2(\ap_CS_fsm_reg_n_0_[15] ),
+        .I3(\ap_CS_fsm_reg_n_0_[16] ),
+        .I4(\ap_CS_fsm_reg_n_0_[20] ),
+        .I5(\ap_CS_fsm_reg_n_0_[19] ),
         .O(\ap_CS_fsm[1]_i_6_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_7 
-       (.I0(\ap_CS_fsm_reg_n_0_[10] ),
-        .I1(\ap_CS_fsm_reg_n_0_[11] ),
-        .I2(\ap_CS_fsm_reg_n_0_[8] ),
-        .I3(\ap_CS_fsm_reg_n_0_[9] ),
-        .I4(\ap_CS_fsm_reg_n_0_[13] ),
-        .I5(\ap_CS_fsm_reg_n_0_[12] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[11] ),
+        .I1(\ap_CS_fsm_reg_n_0_[12] ),
+        .I2(\ap_CS_fsm_reg_n_0_[9] ),
+        .I3(\ap_CS_fsm_reg_n_0_[10] ),
+        .I4(\ap_CS_fsm_reg_n_0_[14] ),
+        .I5(\ap_CS_fsm_reg_n_0_[13] ),
         .O(\ap_CS_fsm[1]_i_7_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     \ap_CS_fsm[1]_i_8 
-       (.I0(\ap_CS_fsm_reg_n_0_[4] ),
-        .I1(\ap_CS_fsm_reg_n_0_[5] ),
+       (.I0(\ap_CS_fsm_reg_n_0_[5] ),
+        .I1(\ap_CS_fsm_reg_n_0_[6] ),
         .I2(start),
-        .I3(\ap_CS_fsm_reg_n_0_[3] ),
-        .I4(\ap_CS_fsm_reg_n_0_[7] ),
-        .I5(\ap_CS_fsm_reg_n_0_[6] ),
+        .I3(\ap_CS_fsm_reg_n_0_[4] ),
+        .I4(\ap_CS_fsm_reg_n_0_[8] ),
+        .I5(\ap_CS_fsm_reg_n_0_[7] ),
         .O(\ap_CS_fsm[1]_i_8_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT2 #(
-    .INIT(4'h8)) 
+    .INIT(4'h2)) 
     \ap_CS_fsm[2]_i_1 
-       (.I0(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I1(ap_CS_fsm_state2),
-        .O(\ap_CS_fsm[2]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFF4444444)) 
-    \ap_CS_fsm[37]_i_1 
-       (.I0(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I1(ap_CS_fsm_state2),
+       (.I0(ap_CS_fsm_state2),
+        .I1(game_over),
+        .O(new_center_8_reg_6960));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT5 #(
+    .INIT(32'hFFFFF444)) 
+    \ap_CS_fsm[38]_i_1 
+       (.I0(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I1(ap_CS_fsm_state3),
         .I2(game_over),
-        .I3(\ap_CS_fsm_reg_n_0_[0] ),
-        .I4(ap_start),
-        .I5(\ap_CS_fsm_reg_n_0_[36] ),
-        .O(ap_NS_fsm[37]));
+        .I3(ap_CS_fsm_state2),
+        .I4(\ap_CS_fsm_reg_n_0_[37] ),
+        .O(ap_NS_fsm[38]));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_10 
-       (.I0(btn_count_loc_reg_599[26]),
-        .I1(btn_count_loc_reg_599[27]),
-        .O(\ap_CS_fsm[37]_i_10_n_0 ));
+    \ap_CS_fsm[38]_i_10 
+       (.I0(btn_count_loc_reg_685[26]),
+        .I1(btn_count_loc_reg_685[27]),
+        .O(\ap_CS_fsm[38]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_11 
-       (.I0(btn_count_loc_reg_599[24]),
-        .I1(btn_count_loc_reg_599[25]),
-        .O(\ap_CS_fsm[37]_i_11_n_0 ));
+    \ap_CS_fsm[38]_i_11 
+       (.I0(btn_count_loc_reg_685[24]),
+        .I1(btn_count_loc_reg_685[25]),
+        .O(\ap_CS_fsm[38]_i_11_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_13 
-       (.I0(btn_count_loc_reg_599[22]),
-        .I1(btn_count_loc_reg_599[23]),
-        .O(\ap_CS_fsm[37]_i_13_n_0 ));
+    \ap_CS_fsm[38]_i_13 
+       (.I0(btn_count_loc_reg_685[22]),
+        .I1(btn_count_loc_reg_685[23]),
+        .O(\ap_CS_fsm[38]_i_13_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_14 
-       (.I0(btn_count_loc_reg_599[20]),
-        .I1(btn_count_loc_reg_599[21]),
-        .O(\ap_CS_fsm[37]_i_14_n_0 ));
+    \ap_CS_fsm[38]_i_14 
+       (.I0(btn_count_loc_reg_685[20]),
+        .I1(btn_count_loc_reg_685[21]),
+        .O(\ap_CS_fsm[38]_i_14_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_15 
-       (.I0(btn_count_loc_reg_599[18]),
-        .I1(btn_count_loc_reg_599[19]),
-        .O(\ap_CS_fsm[37]_i_15_n_0 ));
+    \ap_CS_fsm[38]_i_15 
+       (.I0(btn_count_loc_reg_685[18]),
+        .I1(btn_count_loc_reg_685[19]),
+        .O(\ap_CS_fsm[38]_i_15_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_16 
-       (.I0(btn_count_loc_reg_599[16]),
-        .I1(btn_count_loc_reg_599[17]),
-        .O(\ap_CS_fsm[37]_i_16_n_0 ));
+    \ap_CS_fsm[38]_i_16 
+       (.I0(btn_count_loc_reg_685[16]),
+        .I1(btn_count_loc_reg_685[17]),
+        .O(\ap_CS_fsm[38]_i_16_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_17 
-       (.I0(btn_count_loc_reg_599[22]),
-        .I1(btn_count_loc_reg_599[23]),
-        .O(\ap_CS_fsm[37]_i_17_n_0 ));
+    \ap_CS_fsm[38]_i_17 
+       (.I0(btn_count_loc_reg_685[22]),
+        .I1(btn_count_loc_reg_685[23]),
+        .O(\ap_CS_fsm[38]_i_17_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_18 
-       (.I0(btn_count_loc_reg_599[20]),
-        .I1(btn_count_loc_reg_599[21]),
-        .O(\ap_CS_fsm[37]_i_18_n_0 ));
+    \ap_CS_fsm[38]_i_18 
+       (.I0(btn_count_loc_reg_685[20]),
+        .I1(btn_count_loc_reg_685[21]),
+        .O(\ap_CS_fsm[38]_i_18_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_19 
-       (.I0(btn_count_loc_reg_599[18]),
-        .I1(btn_count_loc_reg_599[19]),
-        .O(\ap_CS_fsm[37]_i_19_n_0 ));
+    \ap_CS_fsm[38]_i_19 
+       (.I0(btn_count_loc_reg_685[18]),
+        .I1(btn_count_loc_reg_685[19]),
+        .O(\ap_CS_fsm[38]_i_19_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_20 
-       (.I0(btn_count_loc_reg_599[16]),
-        .I1(btn_count_loc_reg_599[17]),
-        .O(\ap_CS_fsm[37]_i_20_n_0 ));
+    \ap_CS_fsm[38]_i_20 
+       (.I0(btn_count_loc_reg_685[16]),
+        .I1(btn_count_loc_reg_685[17]),
+        .O(\ap_CS_fsm[38]_i_20_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_22 
-       (.I0(btn_count_loc_reg_599[14]),
-        .I1(btn_count_loc_reg_599[15]),
-        .O(\ap_CS_fsm[37]_i_22_n_0 ));
+    \ap_CS_fsm[38]_i_22 
+       (.I0(btn_count_loc_reg_685[14]),
+        .I1(btn_count_loc_reg_685[15]),
+        .O(\ap_CS_fsm[38]_i_22_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_23 
-       (.I0(btn_count_loc_reg_599[12]),
-        .I1(btn_count_loc_reg_599[13]),
-        .O(\ap_CS_fsm[37]_i_23_n_0 ));
+    \ap_CS_fsm[38]_i_23 
+       (.I0(btn_count_loc_reg_685[12]),
+        .I1(btn_count_loc_reg_685[13]),
+        .O(\ap_CS_fsm[38]_i_23_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_24 
-       (.I0(btn_count_loc_reg_599[10]),
-        .I1(btn_count_loc_reg_599[11]),
-        .O(\ap_CS_fsm[37]_i_24_n_0 ));
+    \ap_CS_fsm[38]_i_24 
+       (.I0(btn_count_loc_reg_685[10]),
+        .I1(btn_count_loc_reg_685[11]),
+        .O(\ap_CS_fsm[38]_i_24_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_25 
-       (.I0(btn_count_loc_reg_599[8]),
-        .I1(btn_count_loc_reg_599[9]),
-        .O(\ap_CS_fsm[37]_i_25_n_0 ));
+    \ap_CS_fsm[38]_i_25 
+       (.I0(btn_count_loc_reg_685[8]),
+        .I1(btn_count_loc_reg_685[9]),
+        .O(\ap_CS_fsm[38]_i_25_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_26 
-       (.I0(btn_count_loc_reg_599[14]),
-        .I1(btn_count_loc_reg_599[15]),
-        .O(\ap_CS_fsm[37]_i_26_n_0 ));
+    \ap_CS_fsm[38]_i_26 
+       (.I0(btn_count_loc_reg_685[14]),
+        .I1(btn_count_loc_reg_685[15]),
+        .O(\ap_CS_fsm[38]_i_26_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_27 
-       (.I0(btn_count_loc_reg_599[12]),
-        .I1(btn_count_loc_reg_599[13]),
-        .O(\ap_CS_fsm[37]_i_27_n_0 ));
+    \ap_CS_fsm[38]_i_27 
+       (.I0(btn_count_loc_reg_685[12]),
+        .I1(btn_count_loc_reg_685[13]),
+        .O(\ap_CS_fsm[38]_i_27_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_28 
-       (.I0(btn_count_loc_reg_599[10]),
-        .I1(btn_count_loc_reg_599[11]),
-        .O(\ap_CS_fsm[37]_i_28_n_0 ));
+    \ap_CS_fsm[38]_i_28 
+       (.I0(btn_count_loc_reg_685[10]),
+        .I1(btn_count_loc_reg_685[11]),
+        .O(\ap_CS_fsm[38]_i_28_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_29 
-       (.I0(btn_count_loc_reg_599[8]),
-        .I1(btn_count_loc_reg_599[9]),
-        .O(\ap_CS_fsm[37]_i_29_n_0 ));
+    \ap_CS_fsm[38]_i_29 
+       (.I0(btn_count_loc_reg_685[8]),
+        .I1(btn_count_loc_reg_685[9]),
+        .O(\ap_CS_fsm[38]_i_29_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_30 
-       (.I0(btn_count_loc_reg_599[6]),
-        .I1(btn_count_loc_reg_599[7]),
-        .O(\ap_CS_fsm[37]_i_30_n_0 ));
+    \ap_CS_fsm[38]_i_30 
+       (.I0(btn_count_loc_reg_685[6]),
+        .I1(btn_count_loc_reg_685[7]),
+        .O(\ap_CS_fsm[38]_i_30_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_31 
-       (.I0(btn_count_loc_reg_599[4]),
-        .I1(btn_count_loc_reg_599[5]),
-        .O(\ap_CS_fsm[37]_i_31_n_0 ));
+    \ap_CS_fsm[38]_i_31 
+       (.I0(btn_count_loc_reg_685[4]),
+        .I1(btn_count_loc_reg_685[5]),
+        .O(\ap_CS_fsm[38]_i_31_n_0 ));
   LUT2 #(
     .INIT(4'h8)) 
-    \ap_CS_fsm[37]_i_32 
-       (.I0(btn_count_loc_reg_599[2]),
-        .I1(btn_count_loc_reg_599[3]),
-        .O(\ap_CS_fsm[37]_i_32_n_0 ));
+    \ap_CS_fsm[38]_i_32 
+       (.I0(btn_count_loc_reg_685[2]),
+        .I1(btn_count_loc_reg_685[3]),
+        .O(\ap_CS_fsm[38]_i_32_n_0 ));
   LUT2 #(
     .INIT(4'h8)) 
-    \ap_CS_fsm[37]_i_33 
-       (.I0(btn_count_loc_reg_599[0]),
-        .I1(btn_count_loc_reg_599[1]),
-        .O(\ap_CS_fsm[37]_i_33_n_0 ));
+    \ap_CS_fsm[38]_i_33 
+       (.I0(btn_count_loc_reg_685[0]),
+        .I1(btn_count_loc_reg_685[1]),
+        .O(\ap_CS_fsm[38]_i_33_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_34 
-       (.I0(btn_count_loc_reg_599[6]),
-        .I1(btn_count_loc_reg_599[7]),
-        .O(\ap_CS_fsm[37]_i_34_n_0 ));
+    \ap_CS_fsm[38]_i_34 
+       (.I0(btn_count_loc_reg_685[6]),
+        .I1(btn_count_loc_reg_685[7]),
+        .O(\ap_CS_fsm[38]_i_34_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_35 
-       (.I0(btn_count_loc_reg_599[4]),
-        .I1(btn_count_loc_reg_599[5]),
-        .O(\ap_CS_fsm[37]_i_35_n_0 ));
+    \ap_CS_fsm[38]_i_35 
+       (.I0(btn_count_loc_reg_685[4]),
+        .I1(btn_count_loc_reg_685[5]),
+        .O(\ap_CS_fsm[38]_i_35_n_0 ));
   LUT2 #(
     .INIT(4'h2)) 
-    \ap_CS_fsm[37]_i_36 
-       (.I0(btn_count_loc_reg_599[3]),
-        .I1(btn_count_loc_reg_599[2]),
-        .O(\ap_CS_fsm[37]_i_36_n_0 ));
+    \ap_CS_fsm[38]_i_36 
+       (.I0(btn_count_loc_reg_685[3]),
+        .I1(btn_count_loc_reg_685[2]),
+        .O(\ap_CS_fsm[38]_i_36_n_0 ));
   LUT2 #(
     .INIT(4'h2)) 
-    \ap_CS_fsm[37]_i_37 
-       (.I0(btn_count_loc_reg_599[1]),
-        .I1(btn_count_loc_reg_599[0]),
-        .O(\ap_CS_fsm[37]_i_37_n_0 ));
+    \ap_CS_fsm[38]_i_37 
+       (.I0(btn_count_loc_reg_685[1]),
+        .I1(btn_count_loc_reg_685[0]),
+        .O(\ap_CS_fsm[38]_i_37_n_0 ));
   LUT2 #(
     .INIT(4'h2)) 
-    \ap_CS_fsm[37]_i_4 
-       (.I0(btn_count_loc_reg_599[30]),
-        .I1(btn_count_loc_reg_599[31]),
-        .O(\ap_CS_fsm[37]_i_4_n_0 ));
+    \ap_CS_fsm[38]_i_4 
+       (.I0(btn_count_loc_reg_685[30]),
+        .I1(btn_count_loc_reg_685[31]),
+        .O(\ap_CS_fsm[38]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_5 
-       (.I0(btn_count_loc_reg_599[28]),
-        .I1(btn_count_loc_reg_599[29]),
-        .O(\ap_CS_fsm[37]_i_5_n_0 ));
+    \ap_CS_fsm[38]_i_5 
+       (.I0(btn_count_loc_reg_685[28]),
+        .I1(btn_count_loc_reg_685[29]),
+        .O(\ap_CS_fsm[38]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_6 
-       (.I0(btn_count_loc_reg_599[26]),
-        .I1(btn_count_loc_reg_599[27]),
-        .O(\ap_CS_fsm[37]_i_6_n_0 ));
+    \ap_CS_fsm[38]_i_6 
+       (.I0(btn_count_loc_reg_685[26]),
+        .I1(btn_count_loc_reg_685[27]),
+        .O(\ap_CS_fsm[38]_i_6_n_0 ));
   LUT2 #(
     .INIT(4'hE)) 
-    \ap_CS_fsm[37]_i_7 
-       (.I0(btn_count_loc_reg_599[24]),
-        .I1(btn_count_loc_reg_599[25]),
-        .O(\ap_CS_fsm[37]_i_7_n_0 ));
+    \ap_CS_fsm[38]_i_7 
+       (.I0(btn_count_loc_reg_685[24]),
+        .I1(btn_count_loc_reg_685[25]),
+        .O(\ap_CS_fsm[38]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_8 
-       (.I0(btn_count_loc_reg_599[30]),
-        .I1(btn_count_loc_reg_599[31]),
-        .O(\ap_CS_fsm[37]_i_8_n_0 ));
+    \ap_CS_fsm[38]_i_8 
+       (.I0(btn_count_loc_reg_685[30]),
+        .I1(btn_count_loc_reg_685[31]),
+        .O(\ap_CS_fsm[38]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h1)) 
-    \ap_CS_fsm[37]_i_9 
-       (.I0(btn_count_loc_reg_599[28]),
-        .I1(btn_count_loc_reg_599[29]),
-        .O(\ap_CS_fsm[37]_i_9_n_0 ));
+    \ap_CS_fsm[38]_i_9 
+       (.I0(btn_count_loc_reg_685[28]),
+        .I1(btn_count_loc_reg_685[29]),
+        .O(\ap_CS_fsm[38]_i_9_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ap_CS_fsm[3]_i_1 
+       (.I0(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I1(ap_CS_fsm_state3),
+        .O(\ap_CS_fsm[3]_i_1_n_0 ));
   (* FSM_ENCODING = "none" *) 
   FDSE #(
     .INIT(1'b1)) 
@@ -1530,8 +1540,8 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \ap_CS_fsm_reg[2] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(\ap_CS_fsm[2]_i_1_n_0 ),
-        .Q(start),
+        .D(new_center_8_reg_6960),
+        .Q(ap_CS_fsm_state3),
         .R(ap_rst));
   (* FSM_ENCODING = "none" *) 
   FDRE #(
@@ -1602,45 +1612,54 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \ap_CS_fsm_reg[37] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(ap_NS_fsm[37]),
+        .D(\ap_CS_fsm_reg_n_0_[36] ),
+        .Q(\ap_CS_fsm_reg_n_0_[37] ),
+        .R(ap_rst));
+  (* FSM_ENCODING = "none" *) 
+  FDRE #(
+    .INIT(1'b0)) 
+    \ap_CS_fsm_reg[38] 
+       (.C(ap_clk),
+        .CE(1'b1),
+        .D(ap_NS_fsm[38]),
         .Q(ap_done),
         .R(ap_rst));
-  CARRY4 \ap_CS_fsm_reg[37]_i_12 
-       (.CI(\ap_CS_fsm_reg[37]_i_21_n_0 ),
-        .CO({\ap_CS_fsm_reg[37]_i_12_n_0 ,\ap_CS_fsm_reg[37]_i_12_n_1 ,\ap_CS_fsm_reg[37]_i_12_n_2 ,\ap_CS_fsm_reg[37]_i_12_n_3 }),
+  CARRY4 \ap_CS_fsm_reg[38]_i_12 
+       (.CI(\ap_CS_fsm_reg[38]_i_21_n_0 ),
+        .CO({\ap_CS_fsm_reg[38]_i_12_n_0 ,\ap_CS_fsm_reg[38]_i_12_n_1 ,\ap_CS_fsm_reg[38]_i_12_n_2 ,\ap_CS_fsm_reg[38]_i_12_n_3 }),
         .CYINIT(1'b0),
-        .DI({\ap_CS_fsm[37]_i_22_n_0 ,\ap_CS_fsm[37]_i_23_n_0 ,\ap_CS_fsm[37]_i_24_n_0 ,\ap_CS_fsm[37]_i_25_n_0 }),
-        .O(\NLW_ap_CS_fsm_reg[37]_i_12_O_UNCONNECTED [3:0]),
-        .S({\ap_CS_fsm[37]_i_26_n_0 ,\ap_CS_fsm[37]_i_27_n_0 ,\ap_CS_fsm[37]_i_28_n_0 ,\ap_CS_fsm[37]_i_29_n_0 }));
-  CARRY4 \ap_CS_fsm_reg[37]_i_2 
-       (.CI(\ap_CS_fsm_reg[37]_i_3_n_0 ),
-        .CO({\ap_CS_fsm_reg[37]_i_2_n_0 ,\ap_CS_fsm_reg[37]_i_2_n_1 ,\ap_CS_fsm_reg[37]_i_2_n_2 ,\ap_CS_fsm_reg[37]_i_2_n_3 }),
+        .DI({\ap_CS_fsm[38]_i_22_n_0 ,\ap_CS_fsm[38]_i_23_n_0 ,\ap_CS_fsm[38]_i_24_n_0 ,\ap_CS_fsm[38]_i_25_n_0 }),
+        .O(\NLW_ap_CS_fsm_reg[38]_i_12_O_UNCONNECTED [3:0]),
+        .S({\ap_CS_fsm[38]_i_26_n_0 ,\ap_CS_fsm[38]_i_27_n_0 ,\ap_CS_fsm[38]_i_28_n_0 ,\ap_CS_fsm[38]_i_29_n_0 }));
+  CARRY4 \ap_CS_fsm_reg[38]_i_2 
+       (.CI(\ap_CS_fsm_reg[38]_i_3_n_0 ),
+        .CO({\ap_CS_fsm_reg[38]_i_2_n_0 ,\ap_CS_fsm_reg[38]_i_2_n_1 ,\ap_CS_fsm_reg[38]_i_2_n_2 ,\ap_CS_fsm_reg[38]_i_2_n_3 }),
         .CYINIT(1'b0),
-        .DI({\ap_CS_fsm[37]_i_4_n_0 ,\ap_CS_fsm[37]_i_5_n_0 ,\ap_CS_fsm[37]_i_6_n_0 ,\ap_CS_fsm[37]_i_7_n_0 }),
-        .O(\NLW_ap_CS_fsm_reg[37]_i_2_O_UNCONNECTED [3:0]),
-        .S({\ap_CS_fsm[37]_i_8_n_0 ,\ap_CS_fsm[37]_i_9_n_0 ,\ap_CS_fsm[37]_i_10_n_0 ,\ap_CS_fsm[37]_i_11_n_0 }));
-  CARRY4 \ap_CS_fsm_reg[37]_i_21 
+        .DI({\ap_CS_fsm[38]_i_4_n_0 ,\ap_CS_fsm[38]_i_5_n_0 ,\ap_CS_fsm[38]_i_6_n_0 ,\ap_CS_fsm[38]_i_7_n_0 }),
+        .O(\NLW_ap_CS_fsm_reg[38]_i_2_O_UNCONNECTED [3:0]),
+        .S({\ap_CS_fsm[38]_i_8_n_0 ,\ap_CS_fsm[38]_i_9_n_0 ,\ap_CS_fsm[38]_i_10_n_0 ,\ap_CS_fsm[38]_i_11_n_0 }));
+  CARRY4 \ap_CS_fsm_reg[38]_i_21 
        (.CI(1'b0),
-        .CO({\ap_CS_fsm_reg[37]_i_21_n_0 ,\ap_CS_fsm_reg[37]_i_21_n_1 ,\ap_CS_fsm_reg[37]_i_21_n_2 ,\ap_CS_fsm_reg[37]_i_21_n_3 }),
+        .CO({\ap_CS_fsm_reg[38]_i_21_n_0 ,\ap_CS_fsm_reg[38]_i_21_n_1 ,\ap_CS_fsm_reg[38]_i_21_n_2 ,\ap_CS_fsm_reg[38]_i_21_n_3 }),
         .CYINIT(1'b0),
-        .DI({\ap_CS_fsm[37]_i_30_n_0 ,\ap_CS_fsm[37]_i_31_n_0 ,\ap_CS_fsm[37]_i_32_n_0 ,\ap_CS_fsm[37]_i_33_n_0 }),
-        .O(\NLW_ap_CS_fsm_reg[37]_i_21_O_UNCONNECTED [3:0]),
-        .S({\ap_CS_fsm[37]_i_34_n_0 ,\ap_CS_fsm[37]_i_35_n_0 ,\ap_CS_fsm[37]_i_36_n_0 ,\ap_CS_fsm[37]_i_37_n_0 }));
-  CARRY4 \ap_CS_fsm_reg[37]_i_3 
-       (.CI(\ap_CS_fsm_reg[37]_i_12_n_0 ),
-        .CO({\ap_CS_fsm_reg[37]_i_3_n_0 ,\ap_CS_fsm_reg[37]_i_3_n_1 ,\ap_CS_fsm_reg[37]_i_3_n_2 ,\ap_CS_fsm_reg[37]_i_3_n_3 }),
+        .DI({\ap_CS_fsm[38]_i_30_n_0 ,\ap_CS_fsm[38]_i_31_n_0 ,\ap_CS_fsm[38]_i_32_n_0 ,\ap_CS_fsm[38]_i_33_n_0 }),
+        .O(\NLW_ap_CS_fsm_reg[38]_i_21_O_UNCONNECTED [3:0]),
+        .S({\ap_CS_fsm[38]_i_34_n_0 ,\ap_CS_fsm[38]_i_35_n_0 ,\ap_CS_fsm[38]_i_36_n_0 ,\ap_CS_fsm[38]_i_37_n_0 }));
+  CARRY4 \ap_CS_fsm_reg[38]_i_3 
+       (.CI(\ap_CS_fsm_reg[38]_i_12_n_0 ),
+        .CO({\ap_CS_fsm_reg[38]_i_3_n_0 ,\ap_CS_fsm_reg[38]_i_3_n_1 ,\ap_CS_fsm_reg[38]_i_3_n_2 ,\ap_CS_fsm_reg[38]_i_3_n_3 }),
         .CYINIT(1'b0),
-        .DI({\ap_CS_fsm[37]_i_13_n_0 ,\ap_CS_fsm[37]_i_14_n_0 ,\ap_CS_fsm[37]_i_15_n_0 ,\ap_CS_fsm[37]_i_16_n_0 }),
-        .O(\NLW_ap_CS_fsm_reg[37]_i_3_O_UNCONNECTED [3:0]),
-        .S({\ap_CS_fsm[37]_i_17_n_0 ,\ap_CS_fsm[37]_i_18_n_0 ,\ap_CS_fsm[37]_i_19_n_0 ,\ap_CS_fsm[37]_i_20_n_0 }));
+        .DI({\ap_CS_fsm[38]_i_13_n_0 ,\ap_CS_fsm[38]_i_14_n_0 ,\ap_CS_fsm[38]_i_15_n_0 ,\ap_CS_fsm[38]_i_16_n_0 }),
+        .O(\NLW_ap_CS_fsm_reg[38]_i_3_O_UNCONNECTED [3:0]),
+        .S({\ap_CS_fsm[38]_i_17_n_0 ,\ap_CS_fsm[38]_i_18_n_0 ,\ap_CS_fsm[38]_i_19_n_0 ,\ap_CS_fsm[38]_i_20_n_0 }));
   (* FSM_ENCODING = "none" *) 
   FDRE #(
     .INIT(1'b0)) 
     \ap_CS_fsm_reg[3] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(start),
-        .Q(\ap_CS_fsm_reg_n_0_[3] ),
+        .D(\ap_CS_fsm[3]_i_1_n_0 ),
+        .Q(start),
         .R(ap_rst));
   (* FSM_ENCODING = "none" *) 
   FDRE #(
@@ -1648,7 +1667,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \ap_CS_fsm_reg[4] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(\ap_CS_fsm_reg_n_0_[3] ),
+        .D(start),
         .Q(\ap_CS_fsm_reg_n_0_[4] ),
         .R(ap_rst));
   (* FSM_ENCODING = "none" *) 
@@ -1703,840 +1722,839 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
        (.I0(\ap_CS_fsm_reg_n_0_[0] ),
         .I1(ap_start),
         .O(ap_idle));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
-    \brmerge1_reg_593[0]_i_1 
+    \brmerge1_reg_679[0]_i_1 
        (.I0(btn0),
         .I1(btn3),
         .I2(btn2),
         .I3(btn1),
         .O(p_0_in1_out));
-  FDRE \brmerge1_reg_593_reg[0] 
+  FDRE \brmerge1_reg_679_reg[0] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
+        .CE(ap_CS_fsm_state2),
         .D(p_0_in1_out),
-        .Q(brmerge1_reg_593),
+        .Q(brmerge1_reg_679),
         .R(1'b0));
   LUT4 #(
     .INIT(16'hBA00)) 
     \btn_count[31]_i_1 
-       (.I0(\btn_count_flag_2_reg_160_reg_n_0_[0] ),
-        .I1(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I2(tmp_1_reg_616),
+       (.I0(\btn_count_flag_2_reg_186_reg_n_0_[0] ),
+        .I1(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I2(tmp_1_reg_702),
         .I3(ap_done),
         .O(btn_count0));
   LUT6 #(
     .INIT(64'hFEFEFEAEAEAEFEAE)) 
-    \btn_count_flag_2_reg_160[0]_i_1 
-       (.I0(btn_count_new_2_reg_172),
-        .I1(\btn_count_flag_2_reg_160_reg_n_0_[0] ),
-        .I2(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .I3(brmerge1_reg_593),
-        .I4(\new_center_9_reg_184[11]_i_2_n_0 ),
+    \btn_count_flag_2_reg_186[0]_i_1 
+       (.I0(btn_count_new_2_reg_198),
+        .I1(\btn_count_flag_2_reg_186_reg_n_0_[0] ),
+        .I2(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .I3(brmerge1_reg_679),
+        .I4(\new_center_9_reg_210[13]_i_3_n_0 ),
         .I5(p_0_in1_out),
-        .O(\btn_count_flag_2_reg_160[0]_i_1_n_0 ));
-  FDRE \btn_count_flag_2_reg_160_reg[0] 
+        .O(\btn_count_flag_2_reg_186[0]_i_1_n_0 ));
+  FDRE \btn_count_flag_2_reg_186_reg[0] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(\btn_count_flag_2_reg_160[0]_i_1_n_0 ),
-        .Q(\btn_count_flag_2_reg_160_reg_n_0_[0] ),
+        .D(\btn_count_flag_2_reg_186[0]_i_1_n_0 ),
+        .Q(\btn_count_flag_2_reg_186_reg_n_0_[0] ),
         .R(1'b0));
   LUT5 #(
     .INIT(32'h55555556)) 
-    \btn_count_loc_reg_599[3]_i_2 
+    \btn_count_loc_reg_685[3]_i_2 
        (.I0(\btn_count_reg_n_0_[0] ),
         .I1(btn1),
         .I2(btn2),
         .I3(btn3),
         .I4(btn0),
-        .O(\btn_count_loc_reg_599[3]_i_2_n_0 ));
-  FDRE \btn_count_loc_reg_599_reg[0] 
+        .O(\btn_count_loc_reg_685[3]_i_2_n_0 ));
+  FDRE \btn_count_loc_reg_685_reg[0] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[0]),
-        .Q(btn_count_loc_reg_599[0]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[0]),
+        .Q(btn_count_loc_reg_685[0]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[10] 
+  FDRE \btn_count_loc_reg_685_reg[10] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[10]),
-        .Q(btn_count_loc_reg_599[10]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[10]),
+        .Q(btn_count_loc_reg_685[10]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[11] 
+  FDRE \btn_count_loc_reg_685_reg[11] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[11]),
-        .Q(btn_count_loc_reg_599[11]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[11]),
+        .Q(btn_count_loc_reg_685[11]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[11]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[7]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[11]_i_1_n_0 ,\btn_count_loc_reg_599_reg[11]_i_1_n_1 ,\btn_count_loc_reg_599_reg[11]_i_1_n_2 ,\btn_count_loc_reg_599_reg[11]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[11]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[7]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[11]_i_1_n_0 ,\btn_count_loc_reg_685_reg[11]_i_1_n_1 ,\btn_count_loc_reg_685_reg[11]_i_1_n_2 ,\btn_count_loc_reg_685_reg[11]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[11:8]),
+        .O(btn_count_loc_fu_332_p3[11:8]),
         .S({\btn_count_reg_n_0_[11] ,\btn_count_reg_n_0_[10] ,\btn_count_reg_n_0_[9] ,\btn_count_reg_n_0_[8] }));
-  FDRE \btn_count_loc_reg_599_reg[12] 
+  FDRE \btn_count_loc_reg_685_reg[12] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[12]),
-        .Q(btn_count_loc_reg_599[12]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[12]),
+        .Q(btn_count_loc_reg_685[12]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[13] 
+  FDRE \btn_count_loc_reg_685_reg[13] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[13]),
-        .Q(btn_count_loc_reg_599[13]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[13]),
+        .Q(btn_count_loc_reg_685[13]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[14] 
+  FDRE \btn_count_loc_reg_685_reg[14] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[14]),
-        .Q(btn_count_loc_reg_599[14]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[14]),
+        .Q(btn_count_loc_reg_685[14]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[15] 
+  FDRE \btn_count_loc_reg_685_reg[15] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[15]),
-        .Q(btn_count_loc_reg_599[15]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[15]),
+        .Q(btn_count_loc_reg_685[15]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[15]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[11]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[15]_i_1_n_0 ,\btn_count_loc_reg_599_reg[15]_i_1_n_1 ,\btn_count_loc_reg_599_reg[15]_i_1_n_2 ,\btn_count_loc_reg_599_reg[15]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[15]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[11]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[15]_i_1_n_0 ,\btn_count_loc_reg_685_reg[15]_i_1_n_1 ,\btn_count_loc_reg_685_reg[15]_i_1_n_2 ,\btn_count_loc_reg_685_reg[15]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[15:12]),
+        .O(btn_count_loc_fu_332_p3[15:12]),
         .S({\btn_count_reg_n_0_[15] ,\btn_count_reg_n_0_[14] ,\btn_count_reg_n_0_[13] ,\btn_count_reg_n_0_[12] }));
-  FDRE \btn_count_loc_reg_599_reg[16] 
+  FDRE \btn_count_loc_reg_685_reg[16] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[16]),
-        .Q(btn_count_loc_reg_599[16]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[16]),
+        .Q(btn_count_loc_reg_685[16]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[17] 
+  FDRE \btn_count_loc_reg_685_reg[17] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[17]),
-        .Q(btn_count_loc_reg_599[17]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[17]),
+        .Q(btn_count_loc_reg_685[17]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[18] 
+  FDRE \btn_count_loc_reg_685_reg[18] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[18]),
-        .Q(btn_count_loc_reg_599[18]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[18]),
+        .Q(btn_count_loc_reg_685[18]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[19] 
+  FDRE \btn_count_loc_reg_685_reg[19] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[19]),
-        .Q(btn_count_loc_reg_599[19]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[19]),
+        .Q(btn_count_loc_reg_685[19]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[19]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[15]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[19]_i_1_n_0 ,\btn_count_loc_reg_599_reg[19]_i_1_n_1 ,\btn_count_loc_reg_599_reg[19]_i_1_n_2 ,\btn_count_loc_reg_599_reg[19]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[19]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[15]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[19]_i_1_n_0 ,\btn_count_loc_reg_685_reg[19]_i_1_n_1 ,\btn_count_loc_reg_685_reg[19]_i_1_n_2 ,\btn_count_loc_reg_685_reg[19]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[19:16]),
+        .O(btn_count_loc_fu_332_p3[19:16]),
         .S({\btn_count_reg_n_0_[19] ,\btn_count_reg_n_0_[18] ,\btn_count_reg_n_0_[17] ,\btn_count_reg_n_0_[16] }));
-  FDRE \btn_count_loc_reg_599_reg[1] 
+  FDRE \btn_count_loc_reg_685_reg[1] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[1]),
-        .Q(btn_count_loc_reg_599[1]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[1]),
+        .Q(btn_count_loc_reg_685[1]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[20] 
+  FDRE \btn_count_loc_reg_685_reg[20] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[20]),
-        .Q(btn_count_loc_reg_599[20]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[20]),
+        .Q(btn_count_loc_reg_685[20]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[21] 
+  FDRE \btn_count_loc_reg_685_reg[21] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[21]),
-        .Q(btn_count_loc_reg_599[21]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[21]),
+        .Q(btn_count_loc_reg_685[21]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[22] 
+  FDRE \btn_count_loc_reg_685_reg[22] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[22]),
-        .Q(btn_count_loc_reg_599[22]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[22]),
+        .Q(btn_count_loc_reg_685[22]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[23] 
+  FDRE \btn_count_loc_reg_685_reg[23] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[23]),
-        .Q(btn_count_loc_reg_599[23]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[23]),
+        .Q(btn_count_loc_reg_685[23]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[23]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[19]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[23]_i_1_n_0 ,\btn_count_loc_reg_599_reg[23]_i_1_n_1 ,\btn_count_loc_reg_599_reg[23]_i_1_n_2 ,\btn_count_loc_reg_599_reg[23]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[23]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[19]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[23]_i_1_n_0 ,\btn_count_loc_reg_685_reg[23]_i_1_n_1 ,\btn_count_loc_reg_685_reg[23]_i_1_n_2 ,\btn_count_loc_reg_685_reg[23]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[23:20]),
+        .O(btn_count_loc_fu_332_p3[23:20]),
         .S({\btn_count_reg_n_0_[23] ,\btn_count_reg_n_0_[22] ,\btn_count_reg_n_0_[21] ,\btn_count_reg_n_0_[20] }));
-  FDRE \btn_count_loc_reg_599_reg[24] 
+  FDRE \btn_count_loc_reg_685_reg[24] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[24]),
-        .Q(btn_count_loc_reg_599[24]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[24]),
+        .Q(btn_count_loc_reg_685[24]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[25] 
+  FDRE \btn_count_loc_reg_685_reg[25] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[25]),
-        .Q(btn_count_loc_reg_599[25]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[25]),
+        .Q(btn_count_loc_reg_685[25]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[26] 
+  FDRE \btn_count_loc_reg_685_reg[26] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[26]),
-        .Q(btn_count_loc_reg_599[26]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[26]),
+        .Q(btn_count_loc_reg_685[26]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[27] 
+  FDRE \btn_count_loc_reg_685_reg[27] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[27]),
-        .Q(btn_count_loc_reg_599[27]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[27]),
+        .Q(btn_count_loc_reg_685[27]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[27]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[23]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[27]_i_1_n_0 ,\btn_count_loc_reg_599_reg[27]_i_1_n_1 ,\btn_count_loc_reg_599_reg[27]_i_1_n_2 ,\btn_count_loc_reg_599_reg[27]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[27]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[23]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[27]_i_1_n_0 ,\btn_count_loc_reg_685_reg[27]_i_1_n_1 ,\btn_count_loc_reg_685_reg[27]_i_1_n_2 ,\btn_count_loc_reg_685_reg[27]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[27:24]),
+        .O(btn_count_loc_fu_332_p3[27:24]),
         .S({\btn_count_reg_n_0_[27] ,\btn_count_reg_n_0_[26] ,\btn_count_reg_n_0_[25] ,\btn_count_reg_n_0_[24] }));
-  FDRE \btn_count_loc_reg_599_reg[28] 
+  FDRE \btn_count_loc_reg_685_reg[28] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[28]),
-        .Q(btn_count_loc_reg_599[28]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[28]),
+        .Q(btn_count_loc_reg_685[28]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[29] 
+  FDRE \btn_count_loc_reg_685_reg[29] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[29]),
-        .Q(btn_count_loc_reg_599[29]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[29]),
+        .Q(btn_count_loc_reg_685[29]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[2] 
+  FDRE \btn_count_loc_reg_685_reg[2] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[2]),
-        .Q(btn_count_loc_reg_599[2]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[2]),
+        .Q(btn_count_loc_reg_685[2]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[30] 
+  FDRE \btn_count_loc_reg_685_reg[30] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[30]),
-        .Q(btn_count_loc_reg_599[30]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[30]),
+        .Q(btn_count_loc_reg_685[30]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[31] 
+  FDRE \btn_count_loc_reg_685_reg[31] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[31]),
-        .Q(btn_count_loc_reg_599[31]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[31]),
+        .Q(btn_count_loc_reg_685[31]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[31]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[27]_i_1_n_0 ),
-        .CO({\NLW_btn_count_loc_reg_599_reg[31]_i_1_CO_UNCONNECTED [3],\btn_count_loc_reg_599_reg[31]_i_1_n_1 ,\btn_count_loc_reg_599_reg[31]_i_1_n_2 ,\btn_count_loc_reg_599_reg[31]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[31]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[27]_i_1_n_0 ),
+        .CO({\NLW_btn_count_loc_reg_685_reg[31]_i_1_CO_UNCONNECTED [3],\btn_count_loc_reg_685_reg[31]_i_1_n_1 ,\btn_count_loc_reg_685_reg[31]_i_1_n_2 ,\btn_count_loc_reg_685_reg[31]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[31:28]),
+        .O(btn_count_loc_fu_332_p3[31:28]),
         .S({\btn_count_reg_n_0_[31] ,\btn_count_reg_n_0_[30] ,\btn_count_reg_n_0_[29] ,\btn_count_reg_n_0_[28] }));
-  FDRE \btn_count_loc_reg_599_reg[3] 
+  FDRE \btn_count_loc_reg_685_reg[3] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[3]),
-        .Q(btn_count_loc_reg_599[3]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[3]),
+        .Q(btn_count_loc_reg_685[3]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[3]_i_1 
+  CARRY4 \btn_count_loc_reg_685_reg[3]_i_1 
        (.CI(1'b0),
-        .CO({\btn_count_loc_reg_599_reg[3]_i_1_n_0 ,\btn_count_loc_reg_599_reg[3]_i_1_n_1 ,\btn_count_loc_reg_599_reg[3]_i_1_n_2 ,\btn_count_loc_reg_599_reg[3]_i_1_n_3 }),
+        .CO({\btn_count_loc_reg_685_reg[3]_i_1_n_0 ,\btn_count_loc_reg_685_reg[3]_i_1_n_1 ,\btn_count_loc_reg_685_reg[3]_i_1_n_2 ,\btn_count_loc_reg_685_reg[3]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\btn_count_reg_n_0_[0] }),
-        .O(btn_count_loc_fu_278_p3[3:0]),
-        .S({\btn_count_reg_n_0_[3] ,\btn_count_reg_n_0_[2] ,\btn_count_reg_n_0_[1] ,\btn_count_loc_reg_599[3]_i_2_n_0 }));
-  FDRE \btn_count_loc_reg_599_reg[4] 
+        .O(btn_count_loc_fu_332_p3[3:0]),
+        .S({\btn_count_reg_n_0_[3] ,\btn_count_reg_n_0_[2] ,\btn_count_reg_n_0_[1] ,\btn_count_loc_reg_685[3]_i_2_n_0 }));
+  FDRE \btn_count_loc_reg_685_reg[4] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[4]),
-        .Q(btn_count_loc_reg_599[4]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[4]),
+        .Q(btn_count_loc_reg_685[4]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[5] 
+  FDRE \btn_count_loc_reg_685_reg[5] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[5]),
-        .Q(btn_count_loc_reg_599[5]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[5]),
+        .Q(btn_count_loc_reg_685[5]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[6] 
+  FDRE \btn_count_loc_reg_685_reg[6] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[6]),
-        .Q(btn_count_loc_reg_599[6]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[6]),
+        .Q(btn_count_loc_reg_685[6]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[7] 
+  FDRE \btn_count_loc_reg_685_reg[7] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[7]),
-        .Q(btn_count_loc_reg_599[7]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[7]),
+        .Q(btn_count_loc_reg_685[7]),
         .R(1'b0));
-  CARRY4 \btn_count_loc_reg_599_reg[7]_i_1 
-       (.CI(\btn_count_loc_reg_599_reg[3]_i_1_n_0 ),
-        .CO({\btn_count_loc_reg_599_reg[7]_i_1_n_0 ,\btn_count_loc_reg_599_reg[7]_i_1_n_1 ,\btn_count_loc_reg_599_reg[7]_i_1_n_2 ,\btn_count_loc_reg_599_reg[7]_i_1_n_3 }),
+  CARRY4 \btn_count_loc_reg_685_reg[7]_i_1 
+       (.CI(\btn_count_loc_reg_685_reg[3]_i_1_n_0 ),
+        .CO({\btn_count_loc_reg_685_reg[7]_i_1_n_0 ,\btn_count_loc_reg_685_reg[7]_i_1_n_1 ,\btn_count_loc_reg_685_reg[7]_i_1_n_2 ,\btn_count_loc_reg_685_reg[7]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(btn_count_loc_fu_278_p3[7:4]),
+        .O(btn_count_loc_fu_332_p3[7:4]),
         .S({\btn_count_reg_n_0_[7] ,\btn_count_reg_n_0_[6] ,\btn_count_reg_n_0_[5] ,\btn_count_reg_n_0_[4] }));
-  FDRE \btn_count_loc_reg_599_reg[8] 
+  FDRE \btn_count_loc_reg_685_reg[8] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[8]),
-        .Q(btn_count_loc_reg_599[8]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[8]),
+        .Q(btn_count_loc_reg_685[8]),
         .R(1'b0));
-  FDRE \btn_count_loc_reg_599_reg[9] 
+  FDRE \btn_count_loc_reg_685_reg[9] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
-        .D(btn_count_loc_fu_278_p3[9]),
-        .Q(btn_count_loc_reg_599[9]),
+        .CE(ap_CS_fsm_state2),
+        .D(btn_count_loc_fu_332_p3[9]),
+        .Q(btn_count_loc_reg_685[9]),
         .R(1'b0));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[11]_i_2 
+    \btn_count_new_2_reg_198[11]_i_2 
        (.I0(\btn_count_reg_n_0_[11] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[11]),
-        .O(\btn_count_new_2_reg_172[11]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[11]),
+        .O(\btn_count_new_2_reg_198[11]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[11]_i_3 
+    \btn_count_new_2_reg_198[11]_i_3 
        (.I0(\btn_count_reg_n_0_[10] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[10]),
-        .O(\btn_count_new_2_reg_172[11]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[10]),
+        .O(\btn_count_new_2_reg_198[11]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[11]_i_4 
+    \btn_count_new_2_reg_198[11]_i_4 
        (.I0(\btn_count_reg_n_0_[9] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[9]),
-        .O(\btn_count_new_2_reg_172[11]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[9]),
+        .O(\btn_count_new_2_reg_198[11]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[11]_i_5 
+    \btn_count_new_2_reg_198[11]_i_5 
        (.I0(\btn_count_reg_n_0_[8] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[8]),
-        .O(\btn_count_new_2_reg_172[11]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[8]),
+        .O(\btn_count_new_2_reg_198[11]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[15]_i_2 
+    \btn_count_new_2_reg_198[15]_i_2 
        (.I0(\btn_count_reg_n_0_[15] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[15]),
-        .O(\btn_count_new_2_reg_172[15]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[15]),
+        .O(\btn_count_new_2_reg_198[15]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[15]_i_3 
+    \btn_count_new_2_reg_198[15]_i_3 
        (.I0(\btn_count_reg_n_0_[14] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[14]),
-        .O(\btn_count_new_2_reg_172[15]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[14]),
+        .O(\btn_count_new_2_reg_198[15]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[15]_i_4 
+    \btn_count_new_2_reg_198[15]_i_4 
        (.I0(\btn_count_reg_n_0_[13] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[13]),
-        .O(\btn_count_new_2_reg_172[15]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[13]),
+        .O(\btn_count_new_2_reg_198[15]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[15]_i_5 
+    \btn_count_new_2_reg_198[15]_i_5 
        (.I0(\btn_count_reg_n_0_[12] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[12]),
-        .O(\btn_count_new_2_reg_172[15]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[12]),
+        .O(\btn_count_new_2_reg_198[15]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[19]_i_2 
+    \btn_count_new_2_reg_198[19]_i_2 
        (.I0(\btn_count_reg_n_0_[19] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[19]),
-        .O(\btn_count_new_2_reg_172[19]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[19]),
+        .O(\btn_count_new_2_reg_198[19]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[19]_i_3 
+    \btn_count_new_2_reg_198[19]_i_3 
        (.I0(\btn_count_reg_n_0_[18] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[18]),
-        .O(\btn_count_new_2_reg_172[19]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[18]),
+        .O(\btn_count_new_2_reg_198[19]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[19]_i_4 
+    \btn_count_new_2_reg_198[19]_i_4 
        (.I0(\btn_count_reg_n_0_[17] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[17]),
-        .O(\btn_count_new_2_reg_172[19]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[17]),
+        .O(\btn_count_new_2_reg_198[19]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[19]_i_5 
+    \btn_count_new_2_reg_198[19]_i_5 
        (.I0(\btn_count_reg_n_0_[16] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[16]),
-        .O(\btn_count_new_2_reg_172[19]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[16]),
+        .O(\btn_count_new_2_reg_198[19]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[23]_i_2 
+    \btn_count_new_2_reg_198[23]_i_2 
        (.I0(\btn_count_reg_n_0_[23] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[23]),
-        .O(\btn_count_new_2_reg_172[23]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[23]),
+        .O(\btn_count_new_2_reg_198[23]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[23]_i_3 
+    \btn_count_new_2_reg_198[23]_i_3 
        (.I0(\btn_count_reg_n_0_[22] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[22]),
-        .O(\btn_count_new_2_reg_172[23]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[22]),
+        .O(\btn_count_new_2_reg_198[23]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[23]_i_4 
+    \btn_count_new_2_reg_198[23]_i_4 
        (.I0(\btn_count_reg_n_0_[21] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[21]),
-        .O(\btn_count_new_2_reg_172[23]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[21]),
+        .O(\btn_count_new_2_reg_198[23]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[23]_i_5 
+    \btn_count_new_2_reg_198[23]_i_5 
        (.I0(\btn_count_reg_n_0_[20] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[20]),
-        .O(\btn_count_new_2_reg_172[23]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[20]),
+        .O(\btn_count_new_2_reg_198[23]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[27]_i_2 
+    \btn_count_new_2_reg_198[27]_i_2 
        (.I0(\btn_count_reg_n_0_[27] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[27]),
-        .O(\btn_count_new_2_reg_172[27]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[27]),
+        .O(\btn_count_new_2_reg_198[27]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[27]_i_3 
+    \btn_count_new_2_reg_198[27]_i_3 
        (.I0(\btn_count_reg_n_0_[26] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[26]),
-        .O(\btn_count_new_2_reg_172[27]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[26]),
+        .O(\btn_count_new_2_reg_198[27]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[27]_i_4 
+    \btn_count_new_2_reg_198[27]_i_4 
        (.I0(\btn_count_reg_n_0_[25] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[25]),
-        .O(\btn_count_new_2_reg_172[27]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[25]),
+        .O(\btn_count_new_2_reg_198[27]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[27]_i_5 
+    \btn_count_new_2_reg_198[27]_i_5 
        (.I0(\btn_count_reg_n_0_[24] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[24]),
-        .O(\btn_count_new_2_reg_172[27]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[24]),
+        .O(\btn_count_new_2_reg_198[27]_i_5_n_0 ));
   LUT5 #(
     .INIT(32'h0D000000)) 
-    \btn_count_new_2_reg_172[31]_i_1 
-       (.I0(ap_CS_fsm_state2),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \btn_count_new_2_reg_198[31]_i_1 
+       (.I0(ap_CS_fsm_state3),
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .O(btn_count_new_2_reg_172));
-  LUT5 #(
-    .INIT(32'h8080FF80)) 
-    \btn_count_new_2_reg_172[31]_i_2 
-       (.I0(ap_start),
-        .I1(\ap_CS_fsm_reg_n_0_[0] ),
-        .I2(game_over),
-        .I3(ap_CS_fsm_state2),
-        .I4(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .O(\btn_count_new_2_reg_172[31]_i_2_n_0 ));
+        .O(btn_count_new_2_reg_198));
+  LUT4 #(
+    .INIT(16'h88F8)) 
+    \btn_count_new_2_reg_198[31]_i_2 
+       (.I0(ap_CS_fsm_state2),
+        .I1(game_over),
+        .I2(ap_CS_fsm_state3),
+        .I3(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .O(\btn_count_new_2_reg_198[31]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[31]_i_4 
+    \btn_count_new_2_reg_198[31]_i_4 
        (.I0(\btn_count_reg_n_0_[31] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[31]),
-        .O(\btn_count_new_2_reg_172[31]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[31]),
+        .O(\btn_count_new_2_reg_198[31]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[31]_i_5 
+    \btn_count_new_2_reg_198[31]_i_5 
        (.I0(\btn_count_reg_n_0_[30] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[30]),
-        .O(\btn_count_new_2_reg_172[31]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[30]),
+        .O(\btn_count_new_2_reg_198[31]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[31]_i_6 
+    \btn_count_new_2_reg_198[31]_i_6 
        (.I0(\btn_count_reg_n_0_[29] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[29]),
-        .O(\btn_count_new_2_reg_172[31]_i_6_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[29]),
+        .O(\btn_count_new_2_reg_198[31]_i_6_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[31]_i_7 
+    \btn_count_new_2_reg_198[31]_i_7 
        (.I0(\btn_count_reg_n_0_[28] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[28]),
-        .O(\btn_count_new_2_reg_172[31]_i_7_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[28]),
+        .O(\btn_count_new_2_reg_198[31]_i_7_n_0 ));
   LUT6 #(
     .INIT(64'hFFFEFFFE0000FFFE)) 
-    \btn_count_new_2_reg_172[3]_i_2 
+    \btn_count_new_2_reg_198[3]_i_2 
        (.I0(btn1),
         .I1(btn2),
         .I2(btn3),
         .I3(btn0),
-        .I4(ap_CS_fsm_state2),
-        .I5(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .O(\btn_count_new_2_reg_172[3]_i_2_n_0 ));
+        .I4(ap_CS_fsm_state3),
+        .I5(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .O(\btn_count_new_2_reg_198[3]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[3]_i_3 
+    \btn_count_new_2_reg_198[3]_i_3 
        (.I0(\btn_count_reg_n_0_[3] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[3]),
-        .O(\btn_count_new_2_reg_172[3]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[3]),
+        .O(\btn_count_new_2_reg_198[3]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[3]_i_4 
+    \btn_count_new_2_reg_198[3]_i_4 
        (.I0(\btn_count_reg_n_0_[2] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[2]),
-        .O(\btn_count_new_2_reg_172[3]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[2]),
+        .O(\btn_count_new_2_reg_198[3]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[3]_i_5 
+    \btn_count_new_2_reg_198[3]_i_5 
        (.I0(\btn_count_reg_n_0_[1] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[1]),
-        .O(\btn_count_new_2_reg_172[3]_i_5_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[1]),
+        .O(\btn_count_new_2_reg_198[3]_i_5_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[3]_i_6 
+    \btn_count_new_2_reg_198[3]_i_6 
        (.I0(\btn_count_reg_n_0_[0] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[0]),
-        .O(\btn_count_new_2_reg_172[3]_i_6_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[0]),
+        .O(\btn_count_new_2_reg_198[3]_i_6_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[7]_i_2 
+    \btn_count_new_2_reg_198[7]_i_2 
        (.I0(\btn_count_reg_n_0_[7] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[7]),
-        .O(\btn_count_new_2_reg_172[7]_i_2_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[7]),
+        .O(\btn_count_new_2_reg_198[7]_i_2_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[7]_i_3 
+    \btn_count_new_2_reg_198[7]_i_3 
        (.I0(\btn_count_reg_n_0_[6] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[6]),
-        .O(\btn_count_new_2_reg_172[7]_i_3_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[6]),
+        .O(\btn_count_new_2_reg_198[7]_i_3_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[7]_i_4 
+    \btn_count_new_2_reg_198[7]_i_4 
        (.I0(\btn_count_reg_n_0_[5] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[5]),
-        .O(\btn_count_new_2_reg_172[7]_i_4_n_0 ));
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[5]),
+        .O(\btn_count_new_2_reg_198[7]_i_4_n_0 ));
   LUT4 #(
     .INIT(16'hBA8A)) 
-    \btn_count_new_2_reg_172[7]_i_5 
+    \btn_count_new_2_reg_198[7]_i_5 
        (.I0(\btn_count_reg_n_0_[4] ),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(ap_CS_fsm_state2),
-        .I3(btn_count_loc_reg_599[4]),
-        .O(\btn_count_new_2_reg_172[7]_i_5_n_0 ));
-  FDRE \btn_count_new_2_reg_172_reg[0] 
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I2(ap_CS_fsm_state3),
+        .I3(btn_count_loc_reg_685[4]),
+        .O(\btn_count_new_2_reg_198[7]_i_5_n_0 ));
+  FDRE \btn_count_new_2_reg_198_reg[0] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[3]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[0] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[10] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[3]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[0] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[10] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[11]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[10] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[11] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[11]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[10] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[11] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[11]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[11] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[11]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[7]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[11]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[11]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[11] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[11]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[7]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[11]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[11]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[11]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[11]_i_2_n_0 ,\btn_count_new_2_reg_172[11]_i_3_n_0 ,\btn_count_new_2_reg_172[11]_i_4_n_0 ,\btn_count_new_2_reg_172[11]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[12] 
+        .O({\btn_count_new_2_reg_198_reg[11]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[11]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[11]_i_2_n_0 ,\btn_count_new_2_reg_198[11]_i_3_n_0 ,\btn_count_new_2_reg_198[11]_i_4_n_0 ,\btn_count_new_2_reg_198[11]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[12] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[15]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[12] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[13] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[15]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[12] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[13] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[15]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[13] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[14] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[15]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[13] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[14] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[15]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[14] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[15] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[15]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[14] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[15] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[15]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[15] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[15]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[11]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[15]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[15]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[15] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[15]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[11]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[15]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[15]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[15]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[15]_i_2_n_0 ,\btn_count_new_2_reg_172[15]_i_3_n_0 ,\btn_count_new_2_reg_172[15]_i_4_n_0 ,\btn_count_new_2_reg_172[15]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[16] 
+        .O({\btn_count_new_2_reg_198_reg[15]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[15]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[15]_i_2_n_0 ,\btn_count_new_2_reg_198[15]_i_3_n_0 ,\btn_count_new_2_reg_198[15]_i_4_n_0 ,\btn_count_new_2_reg_198[15]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[16] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[19]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[16] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[17] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[19]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[16] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[17] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[19]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[17] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[18] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[19]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[17] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[18] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[19]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[18] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[19] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[19]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[18] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[19] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[19]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[19] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[19]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[15]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[19]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[19]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[19] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[19]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[15]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[19]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[19]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[19]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[19]_i_2_n_0 ,\btn_count_new_2_reg_172[19]_i_3_n_0 ,\btn_count_new_2_reg_172[19]_i_4_n_0 ,\btn_count_new_2_reg_172[19]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[1] 
+        .O({\btn_count_new_2_reg_198_reg[19]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[19]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[19]_i_2_n_0 ,\btn_count_new_2_reg_198[19]_i_3_n_0 ,\btn_count_new_2_reg_198[19]_i_4_n_0 ,\btn_count_new_2_reg_198[19]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[1] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[3]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[1] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[20] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[3]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[1] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[20] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[23]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[20] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[21] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[23]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[20] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[21] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[23]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[21] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[22] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[23]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[21] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[22] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[23]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[22] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[23] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[23]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[22] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[23] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[23]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[23] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[23]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[19]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[23]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[23]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[23] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[23]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[19]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[23]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[23]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[23]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[23]_i_2_n_0 ,\btn_count_new_2_reg_172[23]_i_3_n_0 ,\btn_count_new_2_reg_172[23]_i_4_n_0 ,\btn_count_new_2_reg_172[23]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[24] 
+        .O({\btn_count_new_2_reg_198_reg[23]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[23]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[23]_i_2_n_0 ,\btn_count_new_2_reg_198[23]_i_3_n_0 ,\btn_count_new_2_reg_198[23]_i_4_n_0 ,\btn_count_new_2_reg_198[23]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[24] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[27]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[24] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[25] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[27]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[24] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[25] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[27]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[25] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[26] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[27]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[25] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[26] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[27]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[26] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[27] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[27]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[26] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[27] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[27]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[27] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[27]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[23]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[27]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[27]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[27] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[27]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[23]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[27]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[27]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[27]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[27]_i_2_n_0 ,\btn_count_new_2_reg_172[27]_i_3_n_0 ,\btn_count_new_2_reg_172[27]_i_4_n_0 ,\btn_count_new_2_reg_172[27]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[28] 
+        .O({\btn_count_new_2_reg_198_reg[27]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[27]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[27]_i_2_n_0 ,\btn_count_new_2_reg_198[27]_i_3_n_0 ,\btn_count_new_2_reg_198[27]_i_4_n_0 ,\btn_count_new_2_reg_198[27]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[28] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[31]_i_3_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[28] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[29] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[31]_i_3_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[28] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[29] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[31]_i_3_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[29] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[2] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[31]_i_3_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[29] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[2] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[3]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[2] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[30] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[3]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[2] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[30] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[31]_i_3_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[30] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[31] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[31]_i_3_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[30] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[31] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[31]_i_3_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[31] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[31]_i_3 
-       (.CI(\btn_count_new_2_reg_172_reg[27]_i_1_n_0 ),
-        .CO({\NLW_btn_count_new_2_reg_172_reg[31]_i_3_CO_UNCONNECTED [3],\btn_count_new_2_reg_172_reg[31]_i_3_n_1 ,\btn_count_new_2_reg_172_reg[31]_i_3_n_2 ,\btn_count_new_2_reg_172_reg[31]_i_3_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[31]_i_3_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[31] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[31]_i_3 
+       (.CI(\btn_count_new_2_reg_198_reg[27]_i_1_n_0 ),
+        .CO({\NLW_btn_count_new_2_reg_198_reg[31]_i_3_CO_UNCONNECTED [3],\btn_count_new_2_reg_198_reg[31]_i_3_n_1 ,\btn_count_new_2_reg_198_reg[31]_i_3_n_2 ,\btn_count_new_2_reg_198_reg[31]_i_3_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[31]_i_3_n_4 ,\btn_count_new_2_reg_172_reg[31]_i_3_n_5 ,\btn_count_new_2_reg_172_reg[31]_i_3_n_6 ,\btn_count_new_2_reg_172_reg[31]_i_3_n_7 }),
-        .S({\btn_count_new_2_reg_172[31]_i_4_n_0 ,\btn_count_new_2_reg_172[31]_i_5_n_0 ,\btn_count_new_2_reg_172[31]_i_6_n_0 ,\btn_count_new_2_reg_172[31]_i_7_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[3] 
+        .O({\btn_count_new_2_reg_198_reg[31]_i_3_n_4 ,\btn_count_new_2_reg_198_reg[31]_i_3_n_5 ,\btn_count_new_2_reg_198_reg[31]_i_3_n_6 ,\btn_count_new_2_reg_198_reg[31]_i_3_n_7 }),
+        .S({\btn_count_new_2_reg_198[31]_i_4_n_0 ,\btn_count_new_2_reg_198[31]_i_5_n_0 ,\btn_count_new_2_reg_198[31]_i_6_n_0 ,\btn_count_new_2_reg_198[31]_i_7_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[3] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[3]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[3] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[3]_i_1 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[3]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[3] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[3]_i_1 
        (.CI(1'b0),
-        .CO({\btn_count_new_2_reg_172_reg[3]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_3 }),
-        .CYINIT(\btn_count_new_2_reg_172[3]_i_2_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[3]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_3 }),
+        .CYINIT(\btn_count_new_2_reg_198[3]_i_2_n_0 ),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[3]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[3]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[3]_i_3_n_0 ,\btn_count_new_2_reg_172[3]_i_4_n_0 ,\btn_count_new_2_reg_172[3]_i_5_n_0 ,\btn_count_new_2_reg_172[3]_i_6_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[4] 
+        .O({\btn_count_new_2_reg_198_reg[3]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[3]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[3]_i_3_n_0 ,\btn_count_new_2_reg_198[3]_i_4_n_0 ,\btn_count_new_2_reg_198[3]_i_5_n_0 ,\btn_count_new_2_reg_198[3]_i_6_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[4] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[7]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[4] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[5] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[7]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[4] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[5] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[7]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[5] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[6] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[7]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[5] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[6] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[7]_i_1_n_5 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[6] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[7] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[7]_i_1_n_5 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[6] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[7] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[7]_i_1_n_4 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[7] ),
-        .R(btn_count_new_2_reg_172));
-  CARRY4 \btn_count_new_2_reg_172_reg[7]_i_1 
-       (.CI(\btn_count_new_2_reg_172_reg[3]_i_1_n_0 ),
-        .CO({\btn_count_new_2_reg_172_reg[7]_i_1_n_0 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_1 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_2 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_3 }),
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[7]_i_1_n_4 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[7] ),
+        .R(btn_count_new_2_reg_198));
+  CARRY4 \btn_count_new_2_reg_198_reg[7]_i_1 
+       (.CI(\btn_count_new_2_reg_198_reg[3]_i_1_n_0 ),
+        .CO({\btn_count_new_2_reg_198_reg[7]_i_1_n_0 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_1 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_2 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\btn_count_new_2_reg_172_reg[7]_i_1_n_4 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_5 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_6 ,\btn_count_new_2_reg_172_reg[7]_i_1_n_7 }),
-        .S({\btn_count_new_2_reg_172[7]_i_2_n_0 ,\btn_count_new_2_reg_172[7]_i_3_n_0 ,\btn_count_new_2_reg_172[7]_i_4_n_0 ,\btn_count_new_2_reg_172[7]_i_5_n_0 }));
-  FDRE \btn_count_new_2_reg_172_reg[8] 
+        .O({\btn_count_new_2_reg_198_reg[7]_i_1_n_4 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_5 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_6 ,\btn_count_new_2_reg_198_reg[7]_i_1_n_7 }),
+        .S({\btn_count_new_2_reg_198[7]_i_2_n_0 ,\btn_count_new_2_reg_198[7]_i_3_n_0 ,\btn_count_new_2_reg_198[7]_i_4_n_0 ,\btn_count_new_2_reg_198[7]_i_5_n_0 }));
+  FDRE \btn_count_new_2_reg_198_reg[8] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[11]_i_1_n_7 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[8] ),
-        .R(btn_count_new_2_reg_172));
-  FDRE \btn_count_new_2_reg_172_reg[9] 
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[11]_i_1_n_7 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[8] ),
+        .R(btn_count_new_2_reg_198));
+  FDRE \btn_count_new_2_reg_198_reg[9] 
        (.C(ap_clk),
-        .CE(\btn_count_new_2_reg_172[31]_i_2_n_0 ),
-        .D(\btn_count_new_2_reg_172_reg[11]_i_1_n_6 ),
-        .Q(\btn_count_new_2_reg_172_reg_n_0_[9] ),
-        .R(btn_count_new_2_reg_172));
+        .CE(\btn_count_new_2_reg_198[31]_i_2_n_0 ),
+        .D(\btn_count_new_2_reg_198_reg[11]_i_1_n_6 ),
+        .Q(\btn_count_new_2_reg_198_reg_n_0_[9] ),
+        .R(btn_count_new_2_reg_198));
   FDRE #(
     .INIT(1'b0)) 
     \btn_count_reg[0] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[0] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[0] ),
         .Q(\btn_count_reg_n_0_[0] ),
         .R(btn_count));
   FDRE #(
@@ -2544,7 +2562,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[10] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[10] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[10] ),
         .Q(\btn_count_reg_n_0_[10] ),
         .R(btn_count));
   FDRE #(
@@ -2552,7 +2570,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[11] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[11] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[11] ),
         .Q(\btn_count_reg_n_0_[11] ),
         .R(btn_count));
   FDRE #(
@@ -2560,7 +2578,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[12] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[12] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[12] ),
         .Q(\btn_count_reg_n_0_[12] ),
         .R(btn_count));
   FDRE #(
@@ -2568,7 +2586,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[13] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[13] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[13] ),
         .Q(\btn_count_reg_n_0_[13] ),
         .R(btn_count));
   FDRE #(
@@ -2576,7 +2594,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[14] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[14] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[14] ),
         .Q(\btn_count_reg_n_0_[14] ),
         .R(btn_count));
   FDRE #(
@@ -2584,7 +2602,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[15] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[15] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[15] ),
         .Q(\btn_count_reg_n_0_[15] ),
         .R(btn_count));
   FDRE #(
@@ -2592,7 +2610,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[16] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[16] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[16] ),
         .Q(\btn_count_reg_n_0_[16] ),
         .R(btn_count));
   FDRE #(
@@ -2600,7 +2618,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[17] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[17] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[17] ),
         .Q(\btn_count_reg_n_0_[17] ),
         .R(btn_count));
   FDRE #(
@@ -2608,7 +2626,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[18] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[18] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[18] ),
         .Q(\btn_count_reg_n_0_[18] ),
         .R(btn_count));
   FDRE #(
@@ -2616,7 +2634,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[19] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[19] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[19] ),
         .Q(\btn_count_reg_n_0_[19] ),
         .R(btn_count));
   FDRE #(
@@ -2624,7 +2642,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[1] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[1] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[1] ),
         .Q(\btn_count_reg_n_0_[1] ),
         .R(btn_count));
   FDRE #(
@@ -2632,7 +2650,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[20] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[20] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[20] ),
         .Q(\btn_count_reg_n_0_[20] ),
         .R(btn_count));
   FDRE #(
@@ -2640,7 +2658,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[21] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[21] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[21] ),
         .Q(\btn_count_reg_n_0_[21] ),
         .R(btn_count));
   FDRE #(
@@ -2648,7 +2666,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[22] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[22] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[22] ),
         .Q(\btn_count_reg_n_0_[22] ),
         .R(btn_count));
   FDRE #(
@@ -2656,7 +2674,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[23] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[23] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[23] ),
         .Q(\btn_count_reg_n_0_[23] ),
         .R(btn_count));
   FDRE #(
@@ -2664,7 +2682,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[24] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[24] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[24] ),
         .Q(\btn_count_reg_n_0_[24] ),
         .R(btn_count));
   FDRE #(
@@ -2672,7 +2690,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[25] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[25] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[25] ),
         .Q(\btn_count_reg_n_0_[25] ),
         .R(btn_count));
   FDRE #(
@@ -2680,7 +2698,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[26] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[26] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[26] ),
         .Q(\btn_count_reg_n_0_[26] ),
         .R(btn_count));
   FDRE #(
@@ -2688,7 +2706,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[27] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[27] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[27] ),
         .Q(\btn_count_reg_n_0_[27] ),
         .R(btn_count));
   FDRE #(
@@ -2696,7 +2714,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[28] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[28] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[28] ),
         .Q(\btn_count_reg_n_0_[28] ),
         .R(btn_count));
   FDRE #(
@@ -2704,7 +2722,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[29] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[29] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[29] ),
         .Q(\btn_count_reg_n_0_[29] ),
         .R(btn_count));
   FDRE #(
@@ -2712,7 +2730,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[2] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[2] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[2] ),
         .Q(\btn_count_reg_n_0_[2] ),
         .R(btn_count));
   FDRE #(
@@ -2720,7 +2738,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[30] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[30] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[30] ),
         .Q(\btn_count_reg_n_0_[30] ),
         .R(btn_count));
   FDRE #(
@@ -2728,7 +2746,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[31] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[31] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[31] ),
         .Q(\btn_count_reg_n_0_[31] ),
         .R(btn_count));
   FDRE #(
@@ -2736,7 +2754,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[3] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[3] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[3] ),
         .Q(\btn_count_reg_n_0_[3] ),
         .R(btn_count));
   FDRE #(
@@ -2744,7 +2762,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[4] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[4] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[4] ),
         .Q(\btn_count_reg_n_0_[4] ),
         .R(btn_count));
   FDRE #(
@@ -2752,7 +2770,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[5] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[5] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[5] ),
         .Q(\btn_count_reg_n_0_[5] ),
         .R(btn_count));
   FDRE #(
@@ -2760,7 +2778,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[6] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[6] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[6] ),
         .Q(\btn_count_reg_n_0_[6] ),
         .R(btn_count));
   FDRE #(
@@ -2768,7 +2786,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[7] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[7] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[7] ),
         .Q(\btn_count_reg_n_0_[7] ),
         .R(btn_count));
   FDRE #(
@@ -2776,7 +2794,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[8] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[8] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[8] ),
         .Q(\btn_count_reg_n_0_[8] ),
         .R(btn_count));
   FDRE #(
@@ -2784,145 +2802,145 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     \btn_count_reg[9] 
        (.C(ap_clk),
         .CE(btn_count0),
-        .D(\btn_count_new_2_reg_172_reg_n_0_[9] ),
+        .D(\btn_count_new_2_reg_198_reg_n_0_[9] ),
         .Q(\btn_count_reg_n_0_[9] ),
         .R(btn_count));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[0]_INST_0 
-       (.I0(new_center_9_reg_184[0]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[0]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[0]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[0]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[0]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[10]_INST_0 
-       (.I0(new_center_9_reg_184[10]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[10]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[10]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[10]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[10]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[11]_INST_0 
-       (.I0(new_center_9_reg_184[11]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[11]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[11]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[11]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[11]));
   (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hF7)) 
     \center_line_out_V[11]_INST_0_i_1 
        (.I0(ap_done),
-        .I1(tmp_1_reg_616),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
+        .I1(tmp_1_reg_702),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
         .O(\center_line_out_V[11]_INST_0_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[1]_INST_0 
-       (.I0(new_center_9_reg_184[1]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[1]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[1]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[1]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[1]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[2]_INST_0 
-       (.I0(new_center_9_reg_184[2]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[2]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[2]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[2]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[2]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[3]_INST_0 
-       (.I0(new_center_9_reg_184[3]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[3]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[3]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[3]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[3]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[4]_INST_0 
-       (.I0(new_center_9_reg_184[4]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[4]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[4]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[4]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[4]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[5]_INST_0 
-       (.I0(new_center_9_reg_184[5]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[5]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[5]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[5]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[5]));
   LUT6 #(
     .INIT(64'hAAAABABAFFAABABA)) 
     \center_line_out_V[6]_INST_0 
-       (.I0(first_run),
-        .I1(new_center_8_reg_610[13]),
-        .I2(new_center_8_reg_610[6]),
-        .I3(new_center_9_reg_184[6]),
+       (.I0(first_run_loc_reg_174),
+        .I1(new_center_8_reg_696[13]),
+        .I2(new_center_8_reg_696[6]),
+        .I3(new_center_9_reg_210[6]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(new_center_9_reg_184[13]),
+        .I5(new_center_9_reg_210[13]),
         .O(center_line_out_V[6]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[7]_INST_0 
-       (.I0(new_center_9_reg_184[7]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[7]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[7]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[7]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[7]));
   LUT6 #(
     .INIT(64'hAAAABABAFFAABABA)) 
     \center_line_out_V[8]_INST_0 
-       (.I0(first_run),
-        .I1(new_center_8_reg_610[13]),
-        .I2(new_center_8_reg_610[8]),
-        .I3(new_center_9_reg_184[8]),
+       (.I0(first_run_loc_reg_174),
+        .I1(new_center_8_reg_696[13]),
+        .I2(new_center_8_reg_696[8]),
+        .I3(new_center_9_reg_210[8]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(new_center_9_reg_184[13]),
+        .I5(new_center_9_reg_210[13]),
         .O(center_line_out_V[8]));
   LUT6 #(
     .INIT(64'h00000000222200F0)) 
     \center_line_out_V[9]_INST_0 
-       (.I0(new_center_9_reg_184[9]),
-        .I1(new_center_9_reg_184[13]),
-        .I2(new_center_8_reg_610[9]),
-        .I3(new_center_8_reg_610[13]),
+       (.I0(new_center_9_reg_210[9]),
+        .I1(new_center_9_reg_210[13]),
+        .I2(new_center_8_reg_696[9]),
+        .I3(new_center_8_reg_696[13]),
         .I4(\center_line_out_V[11]_INST_0_i_1_n_0 ),
-        .I5(first_run),
+        .I5(first_run_loc_reg_174),
         .O(center_line_out_V[9]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT5 #(
     .INIT(32'h00FE0000)) 
     end_game_INST_0
        (.I0(center_line_in_V[10]),
         .I1(center_line_in_V[11]),
         .I2(end_game_INST_0_i_1_n_0),
-        .I3(first_run),
+        .I3(first_run_loc_reg_174),
         .I4(ap_done),
         .O(end_game));
   LUT6 #(
@@ -2945,49 +2963,71 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
         .I4(center_line_in_V[7]),
         .I5(center_line_in_V[6]),
         .O(end_game_INST_0_i_2_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT2 #(
     .INIT(4'h2)) 
     end_game_ap_vld_INST_0
        (.I0(ap_done),
-        .I1(first_run),
+        .I1(first_run_loc_reg_174),
         .O(end_game_ap_vld));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT2 #(
-    .INIT(4'h4)) 
+  LUT4 #(
+    .INIT(16'h0AEA)) 
     \first_run[0]_i_1 
-       (.I0(ap_done),
-        .I1(first_run),
+       (.I0(\first_run_reg_n_0_[0] ),
+        .I1(first_run_flag_reg_160),
+        .I2(ap_done),
+        .I3(first_run_loc_reg_174),
         .O(\first_run[0]_i_1_n_0 ));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \first_run_flag_reg_160[0]_i_1 
+       (.I0(\ap_CS_fsm_reg_n_0_[0] ),
+        .I1(ap_start),
+        .O(ap_NS_fsm124_out));
+  FDRE \first_run_flag_reg_160_reg[0] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(reset_game_in),
+        .Q(first_run_flag_reg_160),
+        .R(1'b0));
+  LUT5 #(
+    .INIT(32'hFAAACAAA)) 
+    \first_run_loc_reg_174[0]_i_1 
+       (.I0(first_run_loc_reg_174),
+        .I1(\first_run_reg_n_0_[0] ),
+        .I2(ap_start),
+        .I3(\ap_CS_fsm_reg_n_0_[0] ),
+        .I4(reset_game_in),
+        .O(\first_run_loc_reg_174[0]_i_1_n_0 ));
+  FDRE \first_run_loc_reg_174_reg[0] 
+       (.C(ap_clk),
+        .CE(1'b1),
+        .D(\first_run_loc_reg_174[0]_i_1_n_0 ),
+        .Q(first_run_loc_reg_174),
+        .R(1'b0));
   FDRE #(
     .INIT(1'b1)) 
     \first_run_reg[0] 
        (.C(ap_clk),
         .CE(1'b1),
         .D(\first_run[0]_i_1_n_0 ),
-        .Q(first_run),
+        .Q(\first_run_reg_n_0_[0] ),
         .R(1'b0));
-  LUT6 #(
-    .INIT(64'hFFFFFFFF00FE0000)) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT5 #(
+    .INIT(32'hBFFFAAAA)) 
     \game_over[0]_i_1 
-       (.I0(center_line_in_V[10]),
-        .I1(center_line_in_V[11]),
-        .I2(end_game_INST_0_i_1_n_0),
-        .I3(first_run),
-        .I4(ap_done),
-        .I5(game_over),
+       (.I0(end_game),
+        .I1(reset_game_in),
+        .I2(\ap_CS_fsm_reg_n_0_[0] ),
+        .I3(ap_start),
+        .I4(game_over),
         .O(\game_over[0]_i_1_n_0 ));
-  LUT2 #(
-    .INIT(4'h8)) 
-    \game_over_load_reg_606[0]_i_1 
-       (.I0(\ap_CS_fsm_reg_n_0_[0] ),
-        .I1(ap_start),
-        .O(reset_game_out1));
-  FDRE \game_over_load_reg_606_reg[0] 
+  FDRE \game_over_load_reg_692_reg[0] 
        (.C(ap_clk),
-        .CE(reset_game_out1),
+        .CE(ap_CS_fsm_state2),
         .D(game_over),
-        .Q(\game_over_load_reg_606_reg_n_0_[0] ),
+        .Q(\game_over_load_reg_692_reg_n_0_[0] ),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -2998,590 +3038,656 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
         .Q(game_over),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hCAACCCAACAACCCAC)) 
-    \new_center_8_reg_610[0]_i_1 
-       (.I0(data1[0]),
-        .I1(center_line_in_V[0]),
+    .INIT(64'hEDEDEEEF48484440)) 
+    \new_center_8_reg_696[0]_i_1 
+       (.I0(right_in),
+        .I1(data1[0]),
         .I2(btn0),
-        .I3(right_in),
-        .I4(\new_center_8_reg_610[0]_i_2_n_0 ),
-        .I5(btn3),
-        .O(\new_center_8_reg_610[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+        .I3(btn3),
+        .I4(\new_center_8_reg_696[0]_i_2_n_0 ),
+        .I5(new_center_1_cast_fu_349_p1[0]),
+        .O(\new_center_8_reg_696[0]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT2 #(
     .INIT(4'hE)) 
-    \new_center_8_reg_610[0]_i_2 
+    \new_center_8_reg_696[0]_i_2 
        (.I0(btn1),
         .I1(btn2),
-        .O(\new_center_8_reg_610[0]_i_2_n_0 ));
+        .O(\new_center_8_reg_696[0]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[10]_i_1 
-       (.I0(center_line_in_V[10]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[10]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[10]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[10]),
-        .I4(new_center_1_cast_fu_296_p1[10]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[10]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[10]),
+        .O(\new_center_8_reg_696[10]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[11]_i_1 
-       (.I0(center_line_in_V[11]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[11]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[11]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[11]),
-        .I4(new_center_1_cast_fu_296_p1[11]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+        .I4(p_0_in1_out),
+        .I5(data3[11]),
+        .O(\new_center_8_reg_696[11]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT5 #(
-    .INIT(32'h66636662)) 
-    \new_center_8_reg_610[11]_i_2 
-       (.I0(btn0),
-        .I1(right_in),
-        .I2(btn2),
-        .I3(btn1),
-        .I4(btn3),
-        .O(\new_center_8_reg_610[11]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT5 #(
-    .INIT(32'h999C9998)) 
-    \new_center_8_reg_610[11]_i_5 
-       (.I0(btn0),
-        .I1(right_in),
-        .I2(btn2),
-        .I3(btn1),
-        .I4(btn3),
-        .O(\new_center_8_reg_610[11]_i_5_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \new_center_8_reg_610[11]_i_6 
-       (.I0(center_line_in_V[11]),
-        .O(\new_center_8_reg_610[11]_i_6_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \new_center_8_reg_610[11]_i_7 
-       (.I0(center_line_in_V[10]),
-        .O(\new_center_8_reg_610[11]_i_7_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \new_center_8_reg_610[11]_i_8 
-       (.I0(center_line_in_V[9]),
-        .O(\new_center_8_reg_610[11]_i_8_n_0 ));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \new_center_8_reg_610[11]_i_9 
-       (.I0(center_line_in_V[8]),
-        .O(\new_center_8_reg_610[11]_i_9_n_0 ));
-  LUT3 #(
-    .INIT(8'h08)) 
-    \new_center_8_reg_610[13]_i_1 
-       (.I0(\ap_CS_fsm_reg_n_0_[0] ),
-        .I1(ap_start),
-        .I2(game_over),
-        .O(ap_NS_fsm1));
-  LUT6 #(
-    .INIT(64'h00000000FF0002FC)) 
-    \new_center_8_reg_610[13]_i_2 
-       (.I0(btn3),
+    .INIT(32'hAAAA5654)) 
+    \new_center_8_reg_696[11]_i_2 
+       (.I0(right_in),
         .I1(btn1),
         .I2(btn2),
-        .I3(right_in),
+        .I3(btn3),
         .I4(btn0),
-        .I5(\new_center_8_reg_610_reg[13]_i_3_n_3 ),
-        .O(\new_center_8_reg_610[13]_i_2_n_0 ));
+        .O(\new_center_8_reg_696[11]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT5 #(
+    .INIT(32'h5555A9A8)) 
+    \new_center_8_reg_696[11]_i_4 
+       (.I0(right_in),
+        .I1(btn1),
+        .I2(btn2),
+        .I3(btn3),
+        .I4(btn0),
+        .O(\new_center_8_reg_696[11]_i_4_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \new_center_8_reg_696[11]_i_6 
+       (.I0(data3[11]),
+        .O(\new_center_8_reg_696[11]_i_6_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \new_center_8_reg_696[11]_i_7 
+       (.I0(data3[10]),
+        .O(\new_center_8_reg_696[11]_i_7_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \new_center_8_reg_696[11]_i_8 
+       (.I0(data3[9]),
+        .O(\new_center_8_reg_696[11]_i_8_n_0 ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \new_center_8_reg_696[11]_i_9 
+       (.I0(data3[8]),
+        .O(\new_center_8_reg_696[11]_i_9_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[1]_i_1 
-       (.I0(center_line_in_V[1]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hFFFFDFDD00000000)) 
+    \new_center_8_reg_696[13]_i_1 
+       (.I0(ap_CS_fsm_state2),
+        .I1(game_over),
+        .I2(btn0),
+        .I3(\new_center_8_reg_696[0]_i_2_n_0 ),
+        .I4(right_in),
+        .I5(\new_center_8_reg_696[13]_i_2_n_0 ),
+        .O(\new_center_8_reg_696[13]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h8A8ABA8A)) 
+    \new_center_8_reg_696[13]_i_2 
+       (.I0(new_center_8_reg_696[13]),
+        .I1(game_over),
+        .I2(ap_CS_fsm_state2),
+        .I3(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I4(\new_center_8_reg_696_reg[13]_i_3_n_3 ),
+        .O(\new_center_8_reg_696[13]_i_2_n_0 ));
+  LUT6 #(
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[1]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[1]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[1]),
-        .I4(new_center_1_cast_fu_296_p1[1]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[1]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[1]),
+        .O(\new_center_8_reg_696[1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[2]_i_1 
-       (.I0(center_line_in_V[2]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[2]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[2]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[2]),
-        .I4(new_center_1_cast_fu_296_p1[2]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[2]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[2]),
+        .O(\new_center_8_reg_696[2]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[3]_i_1 
-       (.I0(center_line_in_V[3]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[3]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[3]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[3]),
-        .I4(new_center_1_cast_fu_296_p1[3]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[3]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[3]),
+        .O(\new_center_8_reg_696[3]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[3]_i_4 
-       (.I0(center_line_in_V[3]),
-        .O(\new_center_8_reg_610[3]_i_4_n_0 ));
+    \new_center_8_reg_696[3]_i_4 
+       (.I0(data3[2]),
+        .O(\new_center_8_reg_696[3]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[3]_i_5 
-       (.I0(center_line_in_V[1]),
-        .O(\new_center_8_reg_610[3]_i_5_n_0 ));
+    \new_center_8_reg_696[3]_i_5 
+       (.I0(data3[1]),
+        .O(\new_center_8_reg_696[3]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[3]_i_6 
-       (.I0(center_line_in_V[2]),
-        .O(\new_center_8_reg_610[3]_i_6_n_0 ));
+    \new_center_8_reg_696[3]_i_6 
+       (.I0(data3[3]),
+        .O(\new_center_8_reg_696[3]_i_6_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[3]_i_7 
-       (.I0(center_line_in_V[1]),
-        .O(\new_center_8_reg_610[3]_i_7_n_0 ));
+    \new_center_8_reg_696[3]_i_7 
+       (.I0(data3[1]),
+        .O(\new_center_8_reg_696[3]_i_7_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[4]_i_1 
-       (.I0(center_line_in_V[4]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[4]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[4]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[4]),
-        .I4(new_center_1_cast_fu_296_p1[4]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[4]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[4]),
+        .O(\new_center_8_reg_696[4]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[5]_i_1 
-       (.I0(center_line_in_V[5]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[5]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[5]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[5]),
-        .I4(new_center_1_cast_fu_296_p1[5]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[5]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[5]),
+        .O(\new_center_8_reg_696[5]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[6]_i_1 
-       (.I0(center_line_in_V[6]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[6]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[6]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[6]),
-        .I4(new_center_1_cast_fu_296_p1[6]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[6]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[6]),
+        .O(\new_center_8_reg_696[6]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[7]_i_1 
-       (.I0(center_line_in_V[7]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[7]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[7]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[7]),
-        .I4(new_center_1_cast_fu_296_p1[7]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[7]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[7]),
+        .O(\new_center_8_reg_696[7]_i_1_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[7]_i_4 
-       (.I0(center_line_in_V[7]),
-        .O(\new_center_8_reg_610[7]_i_4_n_0 ));
+    \new_center_8_reg_696[7]_i_4 
+       (.I0(data3[7]),
+        .O(\new_center_8_reg_696[7]_i_4_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[7]_i_5 
-       (.I0(center_line_in_V[6]),
-        .O(\new_center_8_reg_610[7]_i_5_n_0 ));
+    \new_center_8_reg_696[7]_i_5 
+       (.I0(data3[6]),
+        .O(\new_center_8_reg_696[7]_i_5_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[7]_i_6 
-       (.I0(center_line_in_V[5]),
-        .O(\new_center_8_reg_610[7]_i_6_n_0 ));
+    \new_center_8_reg_696[7]_i_6 
+       (.I0(data3[5]),
+        .O(\new_center_8_reg_696[7]_i_6_n_0 ));
   LUT1 #(
     .INIT(2'h1)) 
-    \new_center_8_reg_610[7]_i_7 
-       (.I0(center_line_in_V[4]),
-        .O(\new_center_8_reg_610[7]_i_7_n_0 ));
+    \new_center_8_reg_696[7]_i_7 
+       (.I0(data3[4]),
+        .O(\new_center_8_reg_696[7]_i_7_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[8]_i_1 
-       (.I0(center_line_in_V[8]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[8]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[8]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[8]),
-        .I4(new_center_1_cast_fu_296_p1[8]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[8]_i_1_n_0 ));
+        .I4(p_0_in1_out),
+        .I5(data3[8]),
+        .O(\new_center_8_reg_696[8]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFFF222F222F222)) 
-    \new_center_8_reg_610[9]_i_1 
-       (.I0(center_line_in_V[9]),
-        .I1(p_0_in1_out),
-        .I2(\new_center_8_reg_610[11]_i_2_n_0 ),
+    .INIT(64'hF888FFFFF888F888)) 
+    \new_center_8_reg_696[9]_i_1 
+       (.I0(\new_center_8_reg_696[11]_i_2_n_0 ),
+        .I1(new_center_1_cast_fu_349_p1[9]),
+        .I2(\new_center_8_reg_696[11]_i_4_n_0 ),
         .I3(data1[9]),
-        .I4(new_center_1_cast_fu_296_p1[9]),
-        .I5(\new_center_8_reg_610[11]_i_5_n_0 ),
-        .O(\new_center_8_reg_610[9]_i_1_n_0 ));
-  FDRE \new_center_8_reg_610_reg[0] 
+        .I4(p_0_in1_out),
+        .I5(data3[9]),
+        .O(\new_center_8_reg_696[9]_i_1_n_0 ));
+  FDRE \new_center_8_reg_696_reg[0] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[0]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[0]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[0]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[0]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[10] 
+  FDRE \new_center_8_reg_696_reg[10] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[10]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[10]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[10]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[10]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[11] 
+  FDRE \new_center_8_reg_696_reg[11] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[11]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[11]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[11]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[11]),
         .R(1'b0));
-  CARRY4 \new_center_8_reg_610_reg[11]_i_3 
-       (.CI(\new_center_8_reg_610_reg[7]_i_2_n_0 ),
-        .CO({\NLW_new_center_8_reg_610_reg[11]_i_3_CO_UNCONNECTED [3],\new_center_8_reg_610_reg[11]_i_3_n_1 ,\new_center_8_reg_610_reg[11]_i_3_n_2 ,\new_center_8_reg_610_reg[11]_i_3_n_3 }),
+  CARRY4 \new_center_8_reg_696_reg[11]_i_3 
+       (.CI(\new_center_8_reg_696_reg[7]_i_2_n_0 ),
+        .CO({\new_center_8_reg_696_reg[11]_i_3_n_0 ,\new_center_8_reg_696_reg[11]_i_3_n_1 ,\new_center_8_reg_696_reg[11]_i_3_n_2 ,\new_center_8_reg_696_reg[11]_i_3_n_3 }),
+        .CYINIT(1'b0),
+        .DI(data3[11:8]),
+        .O(new_center_1_cast_fu_349_p1[11:8]),
+        .S({\new_center_8_reg_696[11]_i_6_n_0 ,\new_center_8_reg_696[11]_i_7_n_0 ,\new_center_8_reg_696[11]_i_8_n_0 ,\new_center_8_reg_696[11]_i_9_n_0 }));
+  CARRY4 \new_center_8_reg_696_reg[11]_i_5 
+       (.CI(\new_center_8_reg_696_reg[7]_i_3_n_0 ),
+        .CO({\NLW_new_center_8_reg_696_reg[11]_i_5_CO_UNCONNECTED [3],\new_center_8_reg_696_reg[11]_i_5_n_1 ,\new_center_8_reg_696_reg[11]_i_5_n_2 ,\new_center_8_reg_696_reg[11]_i_5_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(data1[11:8]),
-        .S(center_line_in_V[11:8]));
-  CARRY4 \new_center_8_reg_610_reg[11]_i_4 
-       (.CI(\new_center_8_reg_610_reg[7]_i_3_n_0 ),
-        .CO({\new_center_8_reg_610_reg[11]_i_4_n_0 ,\new_center_8_reg_610_reg[11]_i_4_n_1 ,\new_center_8_reg_610_reg[11]_i_4_n_2 ,\new_center_8_reg_610_reg[11]_i_4_n_3 }),
-        .CYINIT(1'b0),
-        .DI(center_line_in_V[11:8]),
-        .O(new_center_1_cast_fu_296_p1[11:8]),
-        .S({\new_center_8_reg_610[11]_i_6_n_0 ,\new_center_8_reg_610[11]_i_7_n_0 ,\new_center_8_reg_610[11]_i_8_n_0 ,\new_center_8_reg_610[11]_i_9_n_0 }));
-  FDRE \new_center_8_reg_610_reg[13] 
+        .S(data3[11:8]));
+  FDRE \new_center_8_reg_696_reg[13] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[13]_i_2_n_0 ),
-        .Q(new_center_8_reg_610[13]),
+        .CE(1'b1),
+        .D(\new_center_8_reg_696[13]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[13]),
         .R(1'b0));
-  CARRY4 \new_center_8_reg_610_reg[13]_i_3 
-       (.CI(\new_center_8_reg_610_reg[11]_i_4_n_0 ),
-        .CO({\NLW_new_center_8_reg_610_reg[13]_i_3_CO_UNCONNECTED [3:1],\new_center_8_reg_610_reg[13]_i_3_n_3 }),
+  CARRY4 \new_center_8_reg_696_reg[13]_i_3 
+       (.CI(\new_center_8_reg_696_reg[11]_i_3_n_0 ),
+        .CO({\NLW_new_center_8_reg_696_reg[13]_i_3_CO_UNCONNECTED [3:1],\new_center_8_reg_696_reg[13]_i_3_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(\NLW_new_center_8_reg_610_reg[13]_i_3_O_UNCONNECTED [3:0]),
+        .O(\NLW_new_center_8_reg_696_reg[13]_i_3_O_UNCONNECTED [3:0]),
         .S({1'b0,1'b0,1'b0,1'b1}));
-  FDRE \new_center_8_reg_610_reg[1] 
+  FDRE \new_center_8_reg_696_reg[1] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[1]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[1]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[1]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[1]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[2] 
+  FDRE \new_center_8_reg_696_reg[2] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[2]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[2]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[2]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[2]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[3] 
+  FDRE \new_center_8_reg_696_reg[3] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[3]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[3]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[3]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[3]),
         .R(1'b0));
-  CARRY4 \new_center_8_reg_610_reg[3]_i_2 
+  CARRY4 \new_center_8_reg_696_reg[3]_i_2 
        (.CI(1'b0),
-        .CO({\new_center_8_reg_610_reg[3]_i_2_n_0 ,\new_center_8_reg_610_reg[3]_i_2_n_1 ,\new_center_8_reg_610_reg[3]_i_2_n_2 ,\new_center_8_reg_610_reg[3]_i_2_n_3 }),
+        .CO({\new_center_8_reg_696_reg[3]_i_2_n_0 ,\new_center_8_reg_696_reg[3]_i_2_n_1 ,\new_center_8_reg_696_reg[3]_i_2_n_2 ,\new_center_8_reg_696_reg[3]_i_2_n_3 }),
         .CYINIT(1'b0),
-        .DI({center_line_in_V[3],1'b0,center_line_in_V[1],1'b0}),
-        .O({data1[3:1],\NLW_new_center_8_reg_610_reg[3]_i_2_O_UNCONNECTED [0]}),
-        .S({\new_center_8_reg_610[3]_i_4_n_0 ,center_line_in_V[2],\new_center_8_reg_610[3]_i_5_n_0 ,center_line_in_V[0]}));
-  CARRY4 \new_center_8_reg_610_reg[3]_i_3 
+        .DI({1'b0,data3[2:1],1'b0}),
+        .O({new_center_1_cast_fu_349_p1[3:1],data1[0]}),
+        .S({data3[3],\new_center_8_reg_696[3]_i_4_n_0 ,\new_center_8_reg_696[3]_i_5_n_0 ,new_center_1_cast_fu_349_p1[0]}));
+  CARRY4 \new_center_8_reg_696_reg[3]_i_3 
        (.CI(1'b0),
-        .CO({\new_center_8_reg_610_reg[3]_i_3_n_0 ,\new_center_8_reg_610_reg[3]_i_3_n_1 ,\new_center_8_reg_610_reg[3]_i_3_n_2 ,\new_center_8_reg_610_reg[3]_i_3_n_3 }),
+        .CO({\new_center_8_reg_696_reg[3]_i_3_n_0 ,\new_center_8_reg_696_reg[3]_i_3_n_1 ,\new_center_8_reg_696_reg[3]_i_3_n_2 ,\new_center_8_reg_696_reg[3]_i_3_n_3 }),
         .CYINIT(1'b0),
-        .DI({1'b0,center_line_in_V[2:1],1'b0}),
-        .O({new_center_1_cast_fu_296_p1[3:1],data1[0]}),
-        .S({center_line_in_V[3],\new_center_8_reg_610[3]_i_6_n_0 ,\new_center_8_reg_610[3]_i_7_n_0 ,center_line_in_V[0]}));
-  FDRE \new_center_8_reg_610_reg[4] 
+        .DI({data3[3],1'b0,data3[1],1'b0}),
+        .O({data1[3:1],\NLW_new_center_8_reg_696_reg[3]_i_3_O_UNCONNECTED [0]}),
+        .S({\new_center_8_reg_696[3]_i_6_n_0 ,data3[2],\new_center_8_reg_696[3]_i_7_n_0 ,new_center_1_cast_fu_349_p1[0]}));
+  FDRE \new_center_8_reg_696_reg[4] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[4]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[4]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[4]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[4]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[5] 
+  FDRE \new_center_8_reg_696_reg[5] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[5]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[5]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[5]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[5]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[6] 
+  FDRE \new_center_8_reg_696_reg[6] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[6]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[6]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[6]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[6]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[7] 
+  FDRE \new_center_8_reg_696_reg[7] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[7]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[7]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[7]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[7]),
         .R(1'b0));
-  CARRY4 \new_center_8_reg_610_reg[7]_i_2 
-       (.CI(\new_center_8_reg_610_reg[3]_i_2_n_0 ),
-        .CO({\new_center_8_reg_610_reg[7]_i_2_n_0 ,\new_center_8_reg_610_reg[7]_i_2_n_1 ,\new_center_8_reg_610_reg[7]_i_2_n_2 ,\new_center_8_reg_610_reg[7]_i_2_n_3 }),
+  CARRY4 \new_center_8_reg_696_reg[7]_i_2 
+       (.CI(\new_center_8_reg_696_reg[3]_i_2_n_0 ),
+        .CO({\new_center_8_reg_696_reg[7]_i_2_n_0 ,\new_center_8_reg_696_reg[7]_i_2_n_1 ,\new_center_8_reg_696_reg[7]_i_2_n_2 ,\new_center_8_reg_696_reg[7]_i_2_n_3 }),
+        .CYINIT(1'b0),
+        .DI(data3[7:4]),
+        .O(new_center_1_cast_fu_349_p1[7:4]),
+        .S({\new_center_8_reg_696[7]_i_4_n_0 ,\new_center_8_reg_696[7]_i_5_n_0 ,\new_center_8_reg_696[7]_i_6_n_0 ,\new_center_8_reg_696[7]_i_7_n_0 }));
+  CARRY4 \new_center_8_reg_696_reg[7]_i_3 
+       (.CI(\new_center_8_reg_696_reg[3]_i_3_n_0 ),
+        .CO({\new_center_8_reg_696_reg[7]_i_3_n_0 ,\new_center_8_reg_696_reg[7]_i_3_n_1 ,\new_center_8_reg_696_reg[7]_i_3_n_2 ,\new_center_8_reg_696_reg[7]_i_3_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
         .O(data1[7:4]),
-        .S(center_line_in_V[7:4]));
-  CARRY4 \new_center_8_reg_610_reg[7]_i_3 
-       (.CI(\new_center_8_reg_610_reg[3]_i_3_n_0 ),
-        .CO({\new_center_8_reg_610_reg[7]_i_3_n_0 ,\new_center_8_reg_610_reg[7]_i_3_n_1 ,\new_center_8_reg_610_reg[7]_i_3_n_2 ,\new_center_8_reg_610_reg[7]_i_3_n_3 }),
-        .CYINIT(1'b0),
-        .DI(center_line_in_V[7:4]),
-        .O(new_center_1_cast_fu_296_p1[7:4]),
-        .S({\new_center_8_reg_610[7]_i_4_n_0 ,\new_center_8_reg_610[7]_i_5_n_0 ,\new_center_8_reg_610[7]_i_6_n_0 ,\new_center_8_reg_610[7]_i_7_n_0 }));
-  FDRE \new_center_8_reg_610_reg[8] 
+        .S(data3[7:4]));
+  FDRE \new_center_8_reg_696_reg[8] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[8]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[8]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[8]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[8]),
         .R(1'b0));
-  FDRE \new_center_8_reg_610_reg[9] 
+  FDRE \new_center_8_reg_696_reg[9] 
        (.C(ap_clk),
-        .CE(ap_NS_fsm1),
-        .D(\new_center_8_reg_610[9]_i_1_n_0 ),
-        .Q(new_center_8_reg_610[9]),
+        .CE(new_center_8_reg_6960),
+        .D(\new_center_8_reg_696[9]_i_1_n_0 ),
+        .Q(new_center_8_reg_696[9]),
         .R(1'b0));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[0]_i_1 
-       (.I0(new_center_8_reg_610[0]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[0]_i_1 
+       (.I0(new_center_8_reg_696[0]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[0]),
-        .O(\new_center_9_reg_184[0]_i_1_n_0 ));
+        .I5(new_center_1_cast_fu_349_p1[0]),
+        .O(\new_center_9_reg_210[0]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[10]_i_1 
-       (.I0(new_center_8_reg_610[10]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[10]_i_1 
+       (.I0(new_center_8_reg_696[10]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[10]),
-        .O(\new_center_9_reg_184[10]_i_1_n_0 ));
+        .I5(data3[10]),
+        .O(\new_center_9_reg_210[10]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[11]_i_1 
-       (.I0(new_center_8_reg_610[11]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[11]_i_1 
+       (.I0(new_center_8_reg_696[11]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[11]),
-        .O(\new_center_9_reg_184[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT2 #(
-    .INIT(4'hB)) 
-    \new_center_9_reg_184[11]_i_2 
-       (.I0(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I1(ap_CS_fsm_state2),
-        .O(\new_center_9_reg_184[11]_i_2_n_0 ));
-  LUT4 #(
-    .INIT(16'hFF80)) 
-    \new_center_9_reg_184[13]_i_1 
-       (.I0(ap_start),
-        .I1(\ap_CS_fsm_reg_n_0_[0] ),
-        .I2(game_over),
-        .I3(\new_center_9_reg_184[13]_i_3_n_0 ),
-        .O(\new_center_9_reg_184[13]_i_1_n_0 ));
+        .I5(data3[11]),
+        .O(\new_center_9_reg_210[11]_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'h8888F888FFFFFFFF)) 
+    \new_center_9_reg_210[13]_i_1 
+       (.I0(ap_CS_fsm_state2),
+        .I1(game_over),
+        .I2(ap_done),
+        .I3(tmp_1_reg_702),
+        .I4(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I5(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .O(\new_center_9_reg_210[13]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'h08FF080800000000)) 
-    \new_center_9_reg_184[13]_i_2 
+    \new_center_9_reg_210[13]_i_2 
        (.I0(ap_done),
-        .I1(tmp_1_reg_616),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I4(ap_CS_fsm_state2),
-        .I5(new_center_8_reg_610[13]),
-        .O(\new_center_9_reg_184[13]_i_2_n_0 ));
+        .I1(tmp_1_reg_702),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I4(ap_CS_fsm_state3),
+        .I5(new_center_8_reg_696[13]),
+        .O(\new_center_9_reg_210[13]_i_2_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT5 #(
-    .INIT(32'h2F222222)) 
-    \new_center_9_reg_184[13]_i_3 
-       (.I0(ap_CS_fsm_state2),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
-        .I4(ap_done),
-        .O(\new_center_9_reg_184[13]_i_3_n_0 ));
+  LUT2 #(
+    .INIT(4'hB)) 
+    \new_center_9_reg_210[13]_i_3 
+       (.I0(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I1(ap_CS_fsm_state3),
+        .O(\new_center_9_reg_210[13]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[1]_i_1 
-       (.I0(new_center_8_reg_610[1]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[1]_i_1 
+       (.I0(new_center_8_reg_696[1]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[1]),
-        .O(\new_center_9_reg_184[1]_i_1_n_0 ));
+        .I5(data3[1]),
+        .O(\new_center_9_reg_210[1]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[2]_i_1 
-       (.I0(new_center_8_reg_610[2]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[2]_i_1 
+       (.I0(new_center_8_reg_696[2]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[2]),
-        .O(\new_center_9_reg_184[2]_i_1_n_0 ));
+        .I5(data3[2]),
+        .O(\new_center_9_reg_210[2]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[3]_i_1 
-       (.I0(new_center_8_reg_610[3]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[3]_i_1 
+       (.I0(new_center_8_reg_696[3]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[3]),
-        .O(\new_center_9_reg_184[3]_i_1_n_0 ));
+        .I5(data3[3]),
+        .O(\new_center_9_reg_210[3]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[4]_i_1 
-       (.I0(new_center_8_reg_610[4]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[4]_i_1 
+       (.I0(new_center_8_reg_696[4]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[4]),
-        .O(\new_center_9_reg_184[4]_i_1_n_0 ));
+        .I5(data3[4]),
+        .O(\new_center_9_reg_210[4]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[5]_i_1 
-       (.I0(new_center_8_reg_610[5]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[5]_i_1 
+       (.I0(new_center_8_reg_696[5]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[5]),
-        .O(\new_center_9_reg_184[5]_i_1_n_0 ));
+        .I5(data3[5]),
+        .O(\new_center_9_reg_210[5]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[6]_i_1 
-       (.I0(new_center_8_reg_610[6]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[6]_i_1 
+       (.I0(new_center_8_reg_696[6]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[6]),
-        .O(\new_center_9_reg_184[6]_i_1_n_0 ));
+        .I5(data3[6]),
+        .O(\new_center_9_reg_210[6]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[7]_i_1 
-       (.I0(new_center_8_reg_610[7]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[7]_i_1 
+       (.I0(new_center_8_reg_696[7]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[7]),
-        .O(\new_center_9_reg_184[7]_i_1_n_0 ));
+        .I5(data3[7]),
+        .O(\new_center_9_reg_210[7]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[8]_i_1 
-       (.I0(new_center_8_reg_610[8]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[8]_i_1 
+       (.I0(new_center_8_reg_696[8]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[8]),
-        .O(\new_center_9_reg_184[8]_i_1_n_0 ));
+        .I5(data3[8]),
+        .O(\new_center_9_reg_210[8]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hEAEEEEEE2A222222)) 
-    \new_center_9_reg_184[9]_i_1 
-       (.I0(new_center_8_reg_610[9]),
-        .I1(\new_center_9_reg_184[11]_i_2_n_0 ),
-        .I2(\game_over_load_reg_606_reg_n_0_[0] ),
-        .I3(tmp_1_reg_616),
+    \new_center_9_reg_210[9]_i_1 
+       (.I0(new_center_8_reg_696[9]),
+        .I1(\new_center_9_reg_210[13]_i_3_n_0 ),
+        .I2(\game_over_load_reg_692_reg_n_0_[0] ),
+        .I3(tmp_1_reg_702),
         .I4(ap_done),
-        .I5(center_line_in_V[9]),
-        .O(\new_center_9_reg_184[9]_i_1_n_0 ));
-  FDRE \new_center_9_reg_184_reg[0] 
+        .I5(data3[9]),
+        .O(\new_center_9_reg_210[9]_i_1_n_0 ));
+  FDRE \new_center_9_reg_210_reg[0] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[0]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[0]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[0]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[0]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[10] 
+  FDRE \new_center_9_reg_210_reg[10] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[10]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[10]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[10]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[10]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[11] 
+  FDRE \new_center_9_reg_210_reg[11] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[11]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[11]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[11]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[11]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[13] 
+  FDRE \new_center_9_reg_210_reg[13] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[13]_i_2_n_0 ),
-        .Q(new_center_9_reg_184[13]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[13]_i_2_n_0 ),
+        .Q(new_center_9_reg_210[13]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[1] 
+  FDRE \new_center_9_reg_210_reg[1] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[1]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[1]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[1]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[1]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[2] 
+  FDRE \new_center_9_reg_210_reg[2] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[2]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[2]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[2]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[2]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[3] 
+  FDRE \new_center_9_reg_210_reg[3] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[3]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[3]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[3]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[3]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[4] 
+  FDRE \new_center_9_reg_210_reg[4] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[4]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[4]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[4]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[4]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[5] 
+  FDRE \new_center_9_reg_210_reg[5] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[5]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[5]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[5]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[5]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[6] 
+  FDRE \new_center_9_reg_210_reg[6] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[6]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[6]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[6]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[6]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[7] 
+  FDRE \new_center_9_reg_210_reg[7] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[7]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[7]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[7]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[7]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[8] 
+  FDRE \new_center_9_reg_210_reg[8] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[8]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[8]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[8]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[8]),
         .R(1'b0));
-  FDRE \new_center_9_reg_184_reg[9] 
+  FDRE \new_center_9_reg_210_reg[9] 
        (.C(ap_clk),
-        .CE(\new_center_9_reg_184[13]_i_1_n_0 ),
-        .D(\new_center_9_reg_184[9]_i_1_n_0 ),
-        .Q(new_center_9_reg_184[9]),
+        .CE(\new_center_9_reg_210[13]_i_1_n_0 ),
+        .D(\new_center_9_reg_210[9]_i_1_n_0 ),
+        .Q(new_center_9_reg_210[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  FDRE \new_center_cast1_reg_661_reg[0] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[0]),
+        .Q(new_center_1_cast_fu_349_p1[0]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[10] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[10]),
+        .Q(data3[10]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[11] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[11]),
+        .Q(data3[11]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[1] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[1]),
+        .Q(data3[1]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[2] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[2]),
+        .Q(data3[2]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[3] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[3]),
+        .Q(data3[3]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[4] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[4]),
+        .Q(data3[4]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[5] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[5]),
+        .Q(data3[5]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[6] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[6]),
+        .Q(data3[6]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[7] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[7]),
+        .Q(data3[7]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[8] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[8]),
+        .Q(data3[8]),
+        .R(1'b0));
+  FDRE \new_center_cast1_reg_661_reg[9] 
+       (.C(ap_clk),
+        .CE(ap_NS_fsm124_out),
+        .D(center_line_in_V[9]),
+        .Q(data3[9]),
+        .R(1'b0));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'hEA2A)) 
     reset_game_out_INST_0
@@ -3602,7 +3708,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
     .INIT(64'h0000002000000000)) 
     right_wins_INST_0
        (.I0(right_wins_INST_0_i_1_n_0),
-        .I1(first_run),
+        .I1(first_run_loc_reg_174),
         .I2(ap_done),
         .I3(center_line_in_V[11]),
         .I4(center_line_in_V[10]),
@@ -3626,684 +3732,684 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2
         .I4(center_line_in_V[9]),
         .I5(center_line_in_V[8]),
         .O(right_wins_INST_0_i_2_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \tmp_1_reg_616[0]_i_1 
-       (.I0(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .I1(ap_CS_fsm_state2),
-        .I2(tmp_1_reg_616),
-        .O(\tmp_1_reg_616[0]_i_1_n_0 ));
-  FDRE \tmp_1_reg_616_reg[0] 
+    \tmp_1_reg_702[0]_i_1 
+       (.I0(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .I1(ap_CS_fsm_state3),
+        .I2(tmp_1_reg_702),
+        .O(\tmp_1_reg_702[0]_i_1_n_0 ));
+  FDRE \tmp_1_reg_702_reg[0] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(\tmp_1_reg_616[0]_i_1_n_0 ),
-        .Q(tmp_1_reg_616),
+        .D(\tmp_1_reg_702[0]_i_1_n_0 ),
+        .Q(tmp_1_reg_702),
         .R(1'b0));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_10 
+    \tmp_i_i_reg_706[13]_i_10 
        (.I0(RandSeed[9]),
         .I1(RandSeed[7]),
-        .O(\tmp_i_i_reg_620[13]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[13]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_2 
+    \tmp_i_i_reg_706[13]_i_2 
        (.I0(RandSeed[10]),
-        .I1(\tmp_i_i_reg_620_reg[17]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[13]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[17]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[13]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_3 
+    \tmp_i_i_reg_706[13]_i_3 
        (.I0(RandSeed[9]),
-        .I1(\tmp_i_i_reg_620_reg[13]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[13]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[13]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[13]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_4 
+    \tmp_i_i_reg_706[13]_i_4 
        (.I0(RandSeed[8]),
-        .I1(\tmp_i_i_reg_620_reg[13]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[13]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[13]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[13]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_5 
+    \tmp_i_i_reg_706[13]_i_5 
        (.I0(RandSeed[7]),
-        .I1(\tmp_i_i_reg_620_reg[13]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[13]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[13]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[13]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_7 
+    \tmp_i_i_reg_706[13]_i_7 
        (.I0(RandSeed[12]),
         .I1(RandSeed[10]),
-        .O(\tmp_i_i_reg_620[13]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[13]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_8 
+    \tmp_i_i_reg_706[13]_i_8 
        (.I0(RandSeed[11]),
         .I1(RandSeed[9]),
-        .O(\tmp_i_i_reg_620[13]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[13]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[13]_i_9 
+    \tmp_i_i_reg_706[13]_i_9 
        (.I0(RandSeed[10]),
         .I1(RandSeed[8]),
-        .O(\tmp_i_i_reg_620[13]_i_9_n_0 ));
+        .O(\tmp_i_i_reg_706[13]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_10 
+    \tmp_i_i_reg_706[17]_i_10 
        (.I0(RandSeed[13]),
         .I1(RandSeed[11]),
-        .O(\tmp_i_i_reg_620[17]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[17]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_2 
+    \tmp_i_i_reg_706[17]_i_2 
        (.I0(RandSeed[14]),
-        .I1(\tmp_i_i_reg_620_reg[21]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[17]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[21]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[17]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_3 
+    \tmp_i_i_reg_706[17]_i_3 
        (.I0(RandSeed[13]),
-        .I1(\tmp_i_i_reg_620_reg[17]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[17]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[17]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[17]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_4 
+    \tmp_i_i_reg_706[17]_i_4 
        (.I0(RandSeed[12]),
-        .I1(\tmp_i_i_reg_620_reg[17]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[17]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[17]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[17]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_5 
+    \tmp_i_i_reg_706[17]_i_5 
        (.I0(RandSeed[11]),
-        .I1(\tmp_i_i_reg_620_reg[17]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[17]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[17]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[17]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_7 
+    \tmp_i_i_reg_706[17]_i_7 
        (.I0(RandSeed[16]),
         .I1(RandSeed[14]),
-        .O(\tmp_i_i_reg_620[17]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[17]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_8 
+    \tmp_i_i_reg_706[17]_i_8 
        (.I0(RandSeed[15]),
         .I1(RandSeed[13]),
-        .O(\tmp_i_i_reg_620[17]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[17]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[17]_i_9 
+    \tmp_i_i_reg_706[17]_i_9 
        (.I0(RandSeed[14]),
         .I1(RandSeed[12]),
-        .O(\tmp_i_i_reg_620[17]_i_9_n_0 ));
+        .O(\tmp_i_i_reg_706[17]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[1]_i_2 
+    \tmp_i_i_reg_706[1]_i_2 
        (.I0(RandSeed[4]),
         .I1(RandSeed[2]),
-        .O(\tmp_i_i_reg_620[1]_i_2_n_0 ));
+        .O(\tmp_i_i_reg_706[1]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[1]_i_3 
+    \tmp_i_i_reg_706[1]_i_3 
        (.I0(RandSeed[3]),
         .I1(RandSeed[1]),
-        .O(\tmp_i_i_reg_620[1]_i_3_n_0 ));
+        .O(\tmp_i_i_reg_706[1]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[1]_i_4 
+    \tmp_i_i_reg_706[1]_i_4 
        (.I0(RandSeed[2]),
         .I1(RandSeed[0]),
-        .O(\tmp_i_i_reg_620[1]_i_4_n_0 ));
+        .O(\tmp_i_i_reg_706[1]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_10 
+    \tmp_i_i_reg_706[21]_i_10 
        (.I0(RandSeed[17]),
         .I1(RandSeed[15]),
-        .O(\tmp_i_i_reg_620[21]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[21]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_2 
+    \tmp_i_i_reg_706[21]_i_2 
        (.I0(RandSeed[18]),
-        .I1(\tmp_i_i_reg_620_reg[25]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[21]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[25]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[21]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_3 
+    \tmp_i_i_reg_706[21]_i_3 
        (.I0(RandSeed[17]),
-        .I1(\tmp_i_i_reg_620_reg[21]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[21]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[21]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[21]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_4 
+    \tmp_i_i_reg_706[21]_i_4 
        (.I0(RandSeed[16]),
-        .I1(\tmp_i_i_reg_620_reg[21]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[21]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[21]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[21]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_5 
+    \tmp_i_i_reg_706[21]_i_5 
        (.I0(RandSeed[15]),
-        .I1(\tmp_i_i_reg_620_reg[21]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[21]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[21]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[21]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_7 
+    \tmp_i_i_reg_706[21]_i_7 
        (.I0(RandSeed[20]),
         .I1(RandSeed[18]),
-        .O(\tmp_i_i_reg_620[21]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[21]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_8 
+    \tmp_i_i_reg_706[21]_i_8 
        (.I0(RandSeed[19]),
         .I1(RandSeed[17]),
-        .O(\tmp_i_i_reg_620[21]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[21]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[21]_i_9 
+    \tmp_i_i_reg_706[21]_i_9 
        (.I0(RandSeed[18]),
         .I1(RandSeed[16]),
-        .O(\tmp_i_i_reg_620[21]_i_9_n_0 ));
+        .O(\tmp_i_i_reg_706[21]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_10 
+    \tmp_i_i_reg_706[25]_i_10 
        (.I0(RandSeed[21]),
         .I1(RandSeed[19]),
-        .O(\tmp_i_i_reg_620[25]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[25]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_2 
+    \tmp_i_i_reg_706[25]_i_2 
        (.I0(RandSeed[22]),
-        .I1(\tmp_i_i_reg_620_reg[29]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[25]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[29]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[25]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_3 
+    \tmp_i_i_reg_706[25]_i_3 
        (.I0(RandSeed[21]),
-        .I1(\tmp_i_i_reg_620_reg[25]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[25]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[25]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[25]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_4 
+    \tmp_i_i_reg_706[25]_i_4 
        (.I0(RandSeed[20]),
-        .I1(\tmp_i_i_reg_620_reg[25]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[25]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[25]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[25]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_5 
+    \tmp_i_i_reg_706[25]_i_5 
        (.I0(RandSeed[19]),
-        .I1(\tmp_i_i_reg_620_reg[25]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[25]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[25]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[25]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_7 
+    \tmp_i_i_reg_706[25]_i_7 
        (.I0(RandSeed[24]),
         .I1(RandSeed[22]),
-        .O(\tmp_i_i_reg_620[25]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[25]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_8 
+    \tmp_i_i_reg_706[25]_i_8 
        (.I0(RandSeed[23]),
         .I1(RandSeed[21]),
-        .O(\tmp_i_i_reg_620[25]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[25]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[25]_i_9 
+    \tmp_i_i_reg_706[25]_i_9 
        (.I0(RandSeed[22]),
         .I1(RandSeed[20]),
-        .O(\tmp_i_i_reg_620[25]_i_9_n_0 ));
+        .O(\tmp_i_i_reg_706[25]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_10 
+    \tmp_i_i_reg_706[29]_i_10 
        (.I0(RandSeed[25]),
         .I1(RandSeed[23]),
-        .O(\tmp_i_i_reg_620[29]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[29]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_2 
+    \tmp_i_i_reg_706[29]_i_2 
        (.I0(RandSeed[26]),
-        .I1(\tmp_i_i_reg_620_reg[31]_i_5_n_7 ),
-        .O(\tmp_i_i_reg_620[29]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[31]_i_5_n_7 ),
+        .O(\tmp_i_i_reg_706[29]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_3 
+    \tmp_i_i_reg_706[29]_i_3 
        (.I0(RandSeed[25]),
-        .I1(\tmp_i_i_reg_620_reg[29]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[29]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[29]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[29]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_4 
+    \tmp_i_i_reg_706[29]_i_4 
        (.I0(RandSeed[24]),
-        .I1(\tmp_i_i_reg_620_reg[29]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[29]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[29]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[29]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_5 
+    \tmp_i_i_reg_706[29]_i_5 
        (.I0(RandSeed[23]),
-        .I1(\tmp_i_i_reg_620_reg[29]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[29]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[29]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[29]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_7 
+    \tmp_i_i_reg_706[29]_i_7 
        (.I0(RandSeed[28]),
         .I1(RandSeed[26]),
-        .O(\tmp_i_i_reg_620[29]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[29]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_8 
+    \tmp_i_i_reg_706[29]_i_8 
        (.I0(RandSeed[27]),
         .I1(RandSeed[25]),
-        .O(\tmp_i_i_reg_620[29]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[29]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[29]_i_9 
+    \tmp_i_i_reg_706[29]_i_9 
        (.I0(RandSeed[26]),
         .I1(RandSeed[24]),
-        .O(\tmp_i_i_reg_620[29]_i_9_n_0 ));
+        .O(\tmp_i_i_reg_706[29]_i_9_n_0 ));
   LUT2 #(
     .INIT(4'h8)) 
-    \tmp_i_i_reg_620[31]_i_1 
-       (.I0(ap_CS_fsm_state2),
-        .I1(\ap_CS_fsm_reg[37]_i_2_n_0 ),
-        .O(tmp_i_i_reg_6200));
+    \tmp_i_i_reg_706[31]_i_1 
+       (.I0(ap_CS_fsm_state3),
+        .I1(\ap_CS_fsm_reg[38]_i_2_n_0 ),
+        .O(tmp_i_i_reg_7060));
   LUT2 #(
     .INIT(4'h9)) 
-    \tmp_i_i_reg_620[31]_i_3 
-       (.I0(\tmp_i_i_reg_620_reg[31]_i_5_n_5 ),
+    \tmp_i_i_reg_706[31]_i_3 
+       (.I0(\tmp_i_i_reg_706_reg[31]_i_5_n_5 ),
         .I1(RandSeed[28]),
-        .O(\tmp_i_i_reg_620[31]_i_3_n_0 ));
+        .O(\tmp_i_i_reg_706[31]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[31]_i_4 
+    \tmp_i_i_reg_706[31]_i_4 
        (.I0(RandSeed[27]),
-        .I1(\tmp_i_i_reg_620_reg[31]_i_5_n_6 ),
-        .O(\tmp_i_i_reg_620[31]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[31]_i_5_n_6 ),
+        .O(\tmp_i_i_reg_706[31]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h9)) 
-    \tmp_i_i_reg_620[31]_i_6 
+    \tmp_i_i_reg_706[31]_i_6 
        (.I0(RandSeed[29]),
         .I1(RandSeed[31]),
-        .O(\tmp_i_i_reg_620[31]_i_6_n_0 ));
+        .O(\tmp_i_i_reg_706[31]_i_6_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[31]_i_7 
+    \tmp_i_i_reg_706[31]_i_7 
        (.I0(RandSeed[30]),
         .I1(RandSeed[28]),
-        .O(\tmp_i_i_reg_620[31]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[31]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[31]_i_8 
+    \tmp_i_i_reg_706[31]_i_8 
        (.I0(RandSeed[29]),
         .I1(RandSeed[27]),
-        .O(\tmp_i_i_reg_620[31]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[31]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[5]_i_2 
+    \tmp_i_i_reg_706[5]_i_2 
        (.I0(RandSeed[2]),
-        .I1(\tmp_i_i_reg_620_reg[9]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[5]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[9]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[5]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[5]_i_3 
+    \tmp_i_i_reg_706[5]_i_3 
        (.I0(RandSeed[1]),
-        .I1(\tmp_i_i_reg_620_reg[1]_i_1_n_4 ),
-        .O(\tmp_i_i_reg_620[5]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[1]_i_1_n_4 ),
+        .O(\tmp_i_i_reg_706[5]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[5]_i_4 
+    \tmp_i_i_reg_706[5]_i_4 
        (.I0(RandSeed[0]),
-        .I1(\tmp_i_i_reg_620_reg[1]_i_1_n_5 ),
-        .O(\tmp_i_i_reg_620[5]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[1]_i_1_n_5 ),
+        .O(\tmp_i_i_reg_706[5]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_10 
+    \tmp_i_i_reg_706[9]_i_10 
        (.I0(RandSeed[5]),
         .I1(RandSeed[3]),
-        .O(\tmp_i_i_reg_620[9]_i_10_n_0 ));
+        .O(\tmp_i_i_reg_706[9]_i_10_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_2 
+    \tmp_i_i_reg_706[9]_i_2 
        (.I0(RandSeed[6]),
-        .I1(\tmp_i_i_reg_620_reg[13]_i_6_n_7 ),
-        .O(\tmp_i_i_reg_620[9]_i_2_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[13]_i_6_n_7 ),
+        .O(\tmp_i_i_reg_706[9]_i_2_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_3 
+    \tmp_i_i_reg_706[9]_i_3 
        (.I0(RandSeed[5]),
-        .I1(\tmp_i_i_reg_620_reg[9]_i_6_n_4 ),
-        .O(\tmp_i_i_reg_620[9]_i_3_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[9]_i_6_n_4 ),
+        .O(\tmp_i_i_reg_706[9]_i_3_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_4 
+    \tmp_i_i_reg_706[9]_i_4 
        (.I0(RandSeed[4]),
-        .I1(\tmp_i_i_reg_620_reg[9]_i_6_n_5 ),
-        .O(\tmp_i_i_reg_620[9]_i_4_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[9]_i_6_n_5 ),
+        .O(\tmp_i_i_reg_706[9]_i_4_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_5 
+    \tmp_i_i_reg_706[9]_i_5 
        (.I0(RandSeed[3]),
-        .I1(\tmp_i_i_reg_620_reg[9]_i_6_n_6 ),
-        .O(\tmp_i_i_reg_620[9]_i_5_n_0 ));
+        .I1(\tmp_i_i_reg_706_reg[9]_i_6_n_6 ),
+        .O(\tmp_i_i_reg_706[9]_i_5_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_7 
+    \tmp_i_i_reg_706[9]_i_7 
        (.I0(RandSeed[8]),
         .I1(RandSeed[6]),
-        .O(\tmp_i_i_reg_620[9]_i_7_n_0 ));
+        .O(\tmp_i_i_reg_706[9]_i_7_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_8 
+    \tmp_i_i_reg_706[9]_i_8 
        (.I0(RandSeed[7]),
         .I1(RandSeed[5]),
-        .O(\tmp_i_i_reg_620[9]_i_8_n_0 ));
+        .O(\tmp_i_i_reg_706[9]_i_8_n_0 ));
   LUT2 #(
     .INIT(4'h6)) 
-    \tmp_i_i_reg_620[9]_i_9 
+    \tmp_i_i_reg_706[9]_i_9 
        (.I0(RandSeed[6]),
         .I1(RandSeed[4]),
-        .O(\tmp_i_i_reg_620[9]_i_9_n_0 ));
-  FDRE \tmp_i_i_reg_620_reg[0] 
+        .O(\tmp_i_i_reg_706[9]_i_9_n_0 ));
+  FDRE \tmp_i_i_reg_706_reg[0] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
+        .CE(tmp_i_i_reg_7060),
         .D(RandSeed[0]),
-        .Q(tmp_i_i_reg_620[0]),
+        .Q(tmp_i_i_reg_706[0]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[10] 
+  FDRE \tmp_i_i_reg_706_reg[10] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[10]),
-        .Q(tmp_i_i_reg_620[10]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[10]),
+        .Q(tmp_i_i_reg_706[10]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[11] 
+  FDRE \tmp_i_i_reg_706_reg[11] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[11]),
-        .Q(tmp_i_i_reg_620[11]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[11]),
+        .Q(tmp_i_i_reg_706[11]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[12] 
+  FDRE \tmp_i_i_reg_706_reg[12] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[12]),
-        .Q(tmp_i_i_reg_620[12]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[12]),
+        .Q(tmp_i_i_reg_706[12]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[13] 
+  FDRE \tmp_i_i_reg_706_reg[13] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[13]),
-        .Q(tmp_i_i_reg_620[13]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[13]),
+        .Q(tmp_i_i_reg_706[13]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[13]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[9]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[13]_i_1_n_0 ,\tmp_i_i_reg_620_reg[13]_i_1_n_1 ,\tmp_i_i_reg_620_reg[13]_i_1_n_2 ,\tmp_i_i_reg_620_reg[13]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[13]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[9]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[13]_i_1_n_0 ,\tmp_i_i_reg_706_reg[13]_i_1_n_1 ,\tmp_i_i_reg_706_reg[13]_i_1_n_2 ,\tmp_i_i_reg_706_reg[13]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[10:7]),
-        .O(tmp_i_i_fu_501_p2[13:10]),
-        .S({\tmp_i_i_reg_620[13]_i_2_n_0 ,\tmp_i_i_reg_620[13]_i_3_n_0 ,\tmp_i_i_reg_620[13]_i_4_n_0 ,\tmp_i_i_reg_620[13]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[13]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[9]_i_6_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[13]_i_6_n_0 ,\tmp_i_i_reg_620_reg[13]_i_6_n_1 ,\tmp_i_i_reg_620_reg[13]_i_6_n_2 ,\tmp_i_i_reg_620_reg[13]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[13:10]),
+        .S({\tmp_i_i_reg_706[13]_i_2_n_0 ,\tmp_i_i_reg_706[13]_i_3_n_0 ,\tmp_i_i_reg_706[13]_i_4_n_0 ,\tmp_i_i_reg_706[13]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[13]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[9]_i_6_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[13]_i_6_n_0 ,\tmp_i_i_reg_706_reg[13]_i_6_n_1 ,\tmp_i_i_reg_706_reg[13]_i_6_n_2 ,\tmp_i_i_reg_706_reg[13]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[12:9]),
-        .O({\tmp_i_i_reg_620_reg[13]_i_6_n_4 ,\tmp_i_i_reg_620_reg[13]_i_6_n_5 ,\tmp_i_i_reg_620_reg[13]_i_6_n_6 ,\tmp_i_i_reg_620_reg[13]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[13]_i_7_n_0 ,\tmp_i_i_reg_620[13]_i_8_n_0 ,\tmp_i_i_reg_620[13]_i_9_n_0 ,\tmp_i_i_reg_620[13]_i_10_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[14] 
+        .O({\tmp_i_i_reg_706_reg[13]_i_6_n_4 ,\tmp_i_i_reg_706_reg[13]_i_6_n_5 ,\tmp_i_i_reg_706_reg[13]_i_6_n_6 ,\tmp_i_i_reg_706_reg[13]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[13]_i_7_n_0 ,\tmp_i_i_reg_706[13]_i_8_n_0 ,\tmp_i_i_reg_706[13]_i_9_n_0 ,\tmp_i_i_reg_706[13]_i_10_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[14] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[14]),
-        .Q(tmp_i_i_reg_620[14]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[14]),
+        .Q(tmp_i_i_reg_706[14]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[15] 
+  FDRE \tmp_i_i_reg_706_reg[15] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[15]),
-        .Q(tmp_i_i_reg_620[15]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[15]),
+        .Q(tmp_i_i_reg_706[15]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[16] 
+  FDRE \tmp_i_i_reg_706_reg[16] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[16]),
-        .Q(tmp_i_i_reg_620[16]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[16]),
+        .Q(tmp_i_i_reg_706[16]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[17] 
+  FDRE \tmp_i_i_reg_706_reg[17] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[17]),
-        .Q(tmp_i_i_reg_620[17]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[17]),
+        .Q(tmp_i_i_reg_706[17]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[17]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[13]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[17]_i_1_n_0 ,\tmp_i_i_reg_620_reg[17]_i_1_n_1 ,\tmp_i_i_reg_620_reg[17]_i_1_n_2 ,\tmp_i_i_reg_620_reg[17]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[17]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[13]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[17]_i_1_n_0 ,\tmp_i_i_reg_706_reg[17]_i_1_n_1 ,\tmp_i_i_reg_706_reg[17]_i_1_n_2 ,\tmp_i_i_reg_706_reg[17]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[14:11]),
-        .O(tmp_i_i_fu_501_p2[17:14]),
-        .S({\tmp_i_i_reg_620[17]_i_2_n_0 ,\tmp_i_i_reg_620[17]_i_3_n_0 ,\tmp_i_i_reg_620[17]_i_4_n_0 ,\tmp_i_i_reg_620[17]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[17]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[13]_i_6_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[17]_i_6_n_0 ,\tmp_i_i_reg_620_reg[17]_i_6_n_1 ,\tmp_i_i_reg_620_reg[17]_i_6_n_2 ,\tmp_i_i_reg_620_reg[17]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[17:14]),
+        .S({\tmp_i_i_reg_706[17]_i_2_n_0 ,\tmp_i_i_reg_706[17]_i_3_n_0 ,\tmp_i_i_reg_706[17]_i_4_n_0 ,\tmp_i_i_reg_706[17]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[17]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[13]_i_6_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[17]_i_6_n_0 ,\tmp_i_i_reg_706_reg[17]_i_6_n_1 ,\tmp_i_i_reg_706_reg[17]_i_6_n_2 ,\tmp_i_i_reg_706_reg[17]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[16:13]),
-        .O({\tmp_i_i_reg_620_reg[17]_i_6_n_4 ,\tmp_i_i_reg_620_reg[17]_i_6_n_5 ,\tmp_i_i_reg_620_reg[17]_i_6_n_6 ,\tmp_i_i_reg_620_reg[17]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[17]_i_7_n_0 ,\tmp_i_i_reg_620[17]_i_8_n_0 ,\tmp_i_i_reg_620[17]_i_9_n_0 ,\tmp_i_i_reg_620[17]_i_10_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[18] 
+        .O({\tmp_i_i_reg_706_reg[17]_i_6_n_4 ,\tmp_i_i_reg_706_reg[17]_i_6_n_5 ,\tmp_i_i_reg_706_reg[17]_i_6_n_6 ,\tmp_i_i_reg_706_reg[17]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[17]_i_7_n_0 ,\tmp_i_i_reg_706[17]_i_8_n_0 ,\tmp_i_i_reg_706[17]_i_9_n_0 ,\tmp_i_i_reg_706[17]_i_10_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[18] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[18]),
-        .Q(tmp_i_i_reg_620[18]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[18]),
+        .Q(tmp_i_i_reg_706[18]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[19] 
+  FDRE \tmp_i_i_reg_706_reg[19] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[19]),
-        .Q(tmp_i_i_reg_620[19]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[19]),
+        .Q(tmp_i_i_reg_706[19]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[1] 
+  FDRE \tmp_i_i_reg_706_reg[1] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[1]),
-        .Q(tmp_i_i_reg_620[1]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[1]),
+        .Q(tmp_i_i_reg_706[1]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[1]_i_1 
+  CARRY4 \tmp_i_i_reg_706_reg[1]_i_1 
        (.CI(1'b0),
-        .CO({\tmp_i_i_reg_620_reg[1]_i_1_n_0 ,\tmp_i_i_reg_620_reg[1]_i_1_n_1 ,\tmp_i_i_reg_620_reg[1]_i_1_n_2 ,\tmp_i_i_reg_620_reg[1]_i_1_n_3 }),
+        .CO({\tmp_i_i_reg_706_reg[1]_i_1_n_0 ,\tmp_i_i_reg_706_reg[1]_i_1_n_1 ,\tmp_i_i_reg_706_reg[1]_i_1_n_2 ,\tmp_i_i_reg_706_reg[1]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({RandSeed[4:2],1'b0}),
-        .O({\tmp_i_i_reg_620_reg[1]_i_1_n_4 ,\tmp_i_i_reg_620_reg[1]_i_1_n_5 ,\tmp_i_i_reg_620_reg[1]_i_1_n_6 ,tmp_i_i_fu_501_p2[1]}),
-        .S({\tmp_i_i_reg_620[1]_i_2_n_0 ,\tmp_i_i_reg_620[1]_i_3_n_0 ,\tmp_i_i_reg_620[1]_i_4_n_0 ,RandSeed[1]}));
-  FDRE \tmp_i_i_reg_620_reg[20] 
+        .O({\tmp_i_i_reg_706_reg[1]_i_1_n_4 ,\tmp_i_i_reg_706_reg[1]_i_1_n_5 ,\tmp_i_i_reg_706_reg[1]_i_1_n_6 ,tmp_i_i_fu_534_p2[1]}),
+        .S({\tmp_i_i_reg_706[1]_i_2_n_0 ,\tmp_i_i_reg_706[1]_i_3_n_0 ,\tmp_i_i_reg_706[1]_i_4_n_0 ,RandSeed[1]}));
+  FDRE \tmp_i_i_reg_706_reg[20] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[20]),
-        .Q(tmp_i_i_reg_620[20]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[20]),
+        .Q(tmp_i_i_reg_706[20]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[21] 
+  FDRE \tmp_i_i_reg_706_reg[21] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[21]),
-        .Q(tmp_i_i_reg_620[21]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[21]),
+        .Q(tmp_i_i_reg_706[21]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[21]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[17]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[21]_i_1_n_0 ,\tmp_i_i_reg_620_reg[21]_i_1_n_1 ,\tmp_i_i_reg_620_reg[21]_i_1_n_2 ,\tmp_i_i_reg_620_reg[21]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[21]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[17]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[21]_i_1_n_0 ,\tmp_i_i_reg_706_reg[21]_i_1_n_1 ,\tmp_i_i_reg_706_reg[21]_i_1_n_2 ,\tmp_i_i_reg_706_reg[21]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[18:15]),
-        .O(tmp_i_i_fu_501_p2[21:18]),
-        .S({\tmp_i_i_reg_620[21]_i_2_n_0 ,\tmp_i_i_reg_620[21]_i_3_n_0 ,\tmp_i_i_reg_620[21]_i_4_n_0 ,\tmp_i_i_reg_620[21]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[21]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[17]_i_6_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[21]_i_6_n_0 ,\tmp_i_i_reg_620_reg[21]_i_6_n_1 ,\tmp_i_i_reg_620_reg[21]_i_6_n_2 ,\tmp_i_i_reg_620_reg[21]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[21:18]),
+        .S({\tmp_i_i_reg_706[21]_i_2_n_0 ,\tmp_i_i_reg_706[21]_i_3_n_0 ,\tmp_i_i_reg_706[21]_i_4_n_0 ,\tmp_i_i_reg_706[21]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[21]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[17]_i_6_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[21]_i_6_n_0 ,\tmp_i_i_reg_706_reg[21]_i_6_n_1 ,\tmp_i_i_reg_706_reg[21]_i_6_n_2 ,\tmp_i_i_reg_706_reg[21]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[20:17]),
-        .O({\tmp_i_i_reg_620_reg[21]_i_6_n_4 ,\tmp_i_i_reg_620_reg[21]_i_6_n_5 ,\tmp_i_i_reg_620_reg[21]_i_6_n_6 ,\tmp_i_i_reg_620_reg[21]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[21]_i_7_n_0 ,\tmp_i_i_reg_620[21]_i_8_n_0 ,\tmp_i_i_reg_620[21]_i_9_n_0 ,\tmp_i_i_reg_620[21]_i_10_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[22] 
+        .O({\tmp_i_i_reg_706_reg[21]_i_6_n_4 ,\tmp_i_i_reg_706_reg[21]_i_6_n_5 ,\tmp_i_i_reg_706_reg[21]_i_6_n_6 ,\tmp_i_i_reg_706_reg[21]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[21]_i_7_n_0 ,\tmp_i_i_reg_706[21]_i_8_n_0 ,\tmp_i_i_reg_706[21]_i_9_n_0 ,\tmp_i_i_reg_706[21]_i_10_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[22] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[22]),
-        .Q(tmp_i_i_reg_620[22]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[22]),
+        .Q(tmp_i_i_reg_706[22]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[23] 
+  FDRE \tmp_i_i_reg_706_reg[23] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[23]),
-        .Q(tmp_i_i_reg_620[23]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[23]),
+        .Q(tmp_i_i_reg_706[23]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[24] 
+  FDRE \tmp_i_i_reg_706_reg[24] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[24]),
-        .Q(tmp_i_i_reg_620[24]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[24]),
+        .Q(tmp_i_i_reg_706[24]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[25] 
+  FDRE \tmp_i_i_reg_706_reg[25] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[25]),
-        .Q(tmp_i_i_reg_620[25]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[25]),
+        .Q(tmp_i_i_reg_706[25]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[25]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[21]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[25]_i_1_n_0 ,\tmp_i_i_reg_620_reg[25]_i_1_n_1 ,\tmp_i_i_reg_620_reg[25]_i_1_n_2 ,\tmp_i_i_reg_620_reg[25]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[25]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[21]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[25]_i_1_n_0 ,\tmp_i_i_reg_706_reg[25]_i_1_n_1 ,\tmp_i_i_reg_706_reg[25]_i_1_n_2 ,\tmp_i_i_reg_706_reg[25]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[22:19]),
-        .O(tmp_i_i_fu_501_p2[25:22]),
-        .S({\tmp_i_i_reg_620[25]_i_2_n_0 ,\tmp_i_i_reg_620[25]_i_3_n_0 ,\tmp_i_i_reg_620[25]_i_4_n_0 ,\tmp_i_i_reg_620[25]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[25]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[21]_i_6_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[25]_i_6_n_0 ,\tmp_i_i_reg_620_reg[25]_i_6_n_1 ,\tmp_i_i_reg_620_reg[25]_i_6_n_2 ,\tmp_i_i_reg_620_reg[25]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[25:22]),
+        .S({\tmp_i_i_reg_706[25]_i_2_n_0 ,\tmp_i_i_reg_706[25]_i_3_n_0 ,\tmp_i_i_reg_706[25]_i_4_n_0 ,\tmp_i_i_reg_706[25]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[25]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[21]_i_6_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[25]_i_6_n_0 ,\tmp_i_i_reg_706_reg[25]_i_6_n_1 ,\tmp_i_i_reg_706_reg[25]_i_6_n_2 ,\tmp_i_i_reg_706_reg[25]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[24:21]),
-        .O({\tmp_i_i_reg_620_reg[25]_i_6_n_4 ,\tmp_i_i_reg_620_reg[25]_i_6_n_5 ,\tmp_i_i_reg_620_reg[25]_i_6_n_6 ,\tmp_i_i_reg_620_reg[25]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[25]_i_7_n_0 ,\tmp_i_i_reg_620[25]_i_8_n_0 ,\tmp_i_i_reg_620[25]_i_9_n_0 ,\tmp_i_i_reg_620[25]_i_10_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[26] 
+        .O({\tmp_i_i_reg_706_reg[25]_i_6_n_4 ,\tmp_i_i_reg_706_reg[25]_i_6_n_5 ,\tmp_i_i_reg_706_reg[25]_i_6_n_6 ,\tmp_i_i_reg_706_reg[25]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[25]_i_7_n_0 ,\tmp_i_i_reg_706[25]_i_8_n_0 ,\tmp_i_i_reg_706[25]_i_9_n_0 ,\tmp_i_i_reg_706[25]_i_10_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[26] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[26]),
-        .Q(tmp_i_i_reg_620[26]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[26]),
+        .Q(tmp_i_i_reg_706[26]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[27] 
+  FDRE \tmp_i_i_reg_706_reg[27] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[27]),
-        .Q(tmp_i_i_reg_620[27]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[27]),
+        .Q(tmp_i_i_reg_706[27]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[28] 
+  FDRE \tmp_i_i_reg_706_reg[28] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[28]),
-        .Q(tmp_i_i_reg_620[28]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[28]),
+        .Q(tmp_i_i_reg_706[28]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[29] 
+  FDRE \tmp_i_i_reg_706_reg[29] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[29]),
-        .Q(tmp_i_i_reg_620[29]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[29]),
+        .Q(tmp_i_i_reg_706[29]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[29]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[25]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[29]_i_1_n_0 ,\tmp_i_i_reg_620_reg[29]_i_1_n_1 ,\tmp_i_i_reg_620_reg[29]_i_1_n_2 ,\tmp_i_i_reg_620_reg[29]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[29]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[25]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[29]_i_1_n_0 ,\tmp_i_i_reg_706_reg[29]_i_1_n_1 ,\tmp_i_i_reg_706_reg[29]_i_1_n_2 ,\tmp_i_i_reg_706_reg[29]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[26:23]),
-        .O(tmp_i_i_fu_501_p2[29:26]),
-        .S({\tmp_i_i_reg_620[29]_i_2_n_0 ,\tmp_i_i_reg_620[29]_i_3_n_0 ,\tmp_i_i_reg_620[29]_i_4_n_0 ,\tmp_i_i_reg_620[29]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[29]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[25]_i_6_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[29]_i_6_n_0 ,\tmp_i_i_reg_620_reg[29]_i_6_n_1 ,\tmp_i_i_reg_620_reg[29]_i_6_n_2 ,\tmp_i_i_reg_620_reg[29]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[29:26]),
+        .S({\tmp_i_i_reg_706[29]_i_2_n_0 ,\tmp_i_i_reg_706[29]_i_3_n_0 ,\tmp_i_i_reg_706[29]_i_4_n_0 ,\tmp_i_i_reg_706[29]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[29]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[25]_i_6_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[29]_i_6_n_0 ,\tmp_i_i_reg_706_reg[29]_i_6_n_1 ,\tmp_i_i_reg_706_reg[29]_i_6_n_2 ,\tmp_i_i_reg_706_reg[29]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[28:25]),
-        .O({\tmp_i_i_reg_620_reg[29]_i_6_n_4 ,\tmp_i_i_reg_620_reg[29]_i_6_n_5 ,\tmp_i_i_reg_620_reg[29]_i_6_n_6 ,\tmp_i_i_reg_620_reg[29]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[29]_i_7_n_0 ,\tmp_i_i_reg_620[29]_i_8_n_0 ,\tmp_i_i_reg_620[29]_i_9_n_0 ,\tmp_i_i_reg_620[29]_i_10_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[2] 
+        .O({\tmp_i_i_reg_706_reg[29]_i_6_n_4 ,\tmp_i_i_reg_706_reg[29]_i_6_n_5 ,\tmp_i_i_reg_706_reg[29]_i_6_n_6 ,\tmp_i_i_reg_706_reg[29]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[29]_i_7_n_0 ,\tmp_i_i_reg_706[29]_i_8_n_0 ,\tmp_i_i_reg_706[29]_i_9_n_0 ,\tmp_i_i_reg_706[29]_i_10_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[2] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[2]),
-        .Q(tmp_i_i_reg_620[2]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[2]),
+        .Q(tmp_i_i_reg_706[2]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[30] 
+  FDRE \tmp_i_i_reg_706_reg[30] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[30]),
-        .Q(tmp_i_i_reg_620[30]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[30]),
+        .Q(tmp_i_i_reg_706[30]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[31] 
+  FDRE \tmp_i_i_reg_706_reg[31] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[31]),
-        .Q(tmp_i_i_reg_620[31]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[31]),
+        .Q(tmp_i_i_reg_706[31]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[31]_i_2 
-       (.CI(\tmp_i_i_reg_620_reg[29]_i_1_n_0 ),
-        .CO({\NLW_tmp_i_i_reg_620_reg[31]_i_2_CO_UNCONNECTED [3:1],\tmp_i_i_reg_620_reg[31]_i_2_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[31]_i_2 
+       (.CI(\tmp_i_i_reg_706_reg[29]_i_1_n_0 ),
+        .CO({\NLW_tmp_i_i_reg_706_reg[31]_i_2_CO_UNCONNECTED [3:1],\tmp_i_i_reg_706_reg[31]_i_2_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,RandSeed[27]}),
-        .O({\NLW_tmp_i_i_reg_620_reg[31]_i_2_O_UNCONNECTED [3:2],tmp_i_i_fu_501_p2[31:30]}),
-        .S({1'b0,1'b0,\tmp_i_i_reg_620[31]_i_3_n_0 ,\tmp_i_i_reg_620[31]_i_4_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[31]_i_5 
-       (.CI(\tmp_i_i_reg_620_reg[29]_i_6_n_0 ),
-        .CO({\NLW_tmp_i_i_reg_620_reg[31]_i_5_CO_UNCONNECTED [3:2],\tmp_i_i_reg_620_reg[31]_i_5_n_2 ,\tmp_i_i_reg_620_reg[31]_i_5_n_3 }),
+        .O({\NLW_tmp_i_i_reg_706_reg[31]_i_2_O_UNCONNECTED [3:2],tmp_i_i_fu_534_p2[31:30]}),
+        .S({1'b0,1'b0,\tmp_i_i_reg_706[31]_i_3_n_0 ,\tmp_i_i_reg_706[31]_i_4_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[31]_i_5 
+       (.CI(\tmp_i_i_reg_706_reg[29]_i_6_n_0 ),
+        .CO({\NLW_tmp_i_i_reg_706_reg[31]_i_5_CO_UNCONNECTED [3:2],\tmp_i_i_reg_706_reg[31]_i_5_n_2 ,\tmp_i_i_reg_706_reg[31]_i_5_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,RandSeed[30:29]}),
-        .O({\NLW_tmp_i_i_reg_620_reg[31]_i_5_O_UNCONNECTED [3],\tmp_i_i_reg_620_reg[31]_i_5_n_5 ,\tmp_i_i_reg_620_reg[31]_i_5_n_6 ,\tmp_i_i_reg_620_reg[31]_i_5_n_7 }),
-        .S({1'b0,\tmp_i_i_reg_620[31]_i_6_n_0 ,\tmp_i_i_reg_620[31]_i_7_n_0 ,\tmp_i_i_reg_620[31]_i_8_n_0 }));
-  FDRE \tmp_i_i_reg_620_reg[3] 
+        .O({\NLW_tmp_i_i_reg_706_reg[31]_i_5_O_UNCONNECTED [3],\tmp_i_i_reg_706_reg[31]_i_5_n_5 ,\tmp_i_i_reg_706_reg[31]_i_5_n_6 ,\tmp_i_i_reg_706_reg[31]_i_5_n_7 }),
+        .S({1'b0,\tmp_i_i_reg_706[31]_i_6_n_0 ,\tmp_i_i_reg_706[31]_i_7_n_0 ,\tmp_i_i_reg_706[31]_i_8_n_0 }));
+  FDRE \tmp_i_i_reg_706_reg[3] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[3]),
-        .Q(tmp_i_i_reg_620[3]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[3]),
+        .Q(tmp_i_i_reg_706[3]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[4] 
+  FDRE \tmp_i_i_reg_706_reg[4] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[4]),
-        .Q(tmp_i_i_reg_620[4]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[4]),
+        .Q(tmp_i_i_reg_706[4]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[5] 
+  FDRE \tmp_i_i_reg_706_reg[5] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[5]),
-        .Q(tmp_i_i_reg_620[5]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[5]),
+        .Q(tmp_i_i_reg_706[5]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[5]_i_1 
+  CARRY4 \tmp_i_i_reg_706_reg[5]_i_1 
        (.CI(1'b0),
-        .CO({\tmp_i_i_reg_620_reg[5]_i_1_n_0 ,\tmp_i_i_reg_620_reg[5]_i_1_n_1 ,\tmp_i_i_reg_620_reg[5]_i_1_n_2 ,\tmp_i_i_reg_620_reg[5]_i_1_n_3 }),
+        .CO({\tmp_i_i_reg_706_reg[5]_i_1_n_0 ,\tmp_i_i_reg_706_reg[5]_i_1_n_1 ,\tmp_i_i_reg_706_reg[5]_i_1_n_2 ,\tmp_i_i_reg_706_reg[5]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({RandSeed[2:0],1'b0}),
-        .O(tmp_i_i_fu_501_p2[5:2]),
-        .S({\tmp_i_i_reg_620[5]_i_2_n_0 ,\tmp_i_i_reg_620[5]_i_3_n_0 ,\tmp_i_i_reg_620[5]_i_4_n_0 ,\tmp_i_i_reg_620_reg[1]_i_1_n_6 }));
-  FDRE \tmp_i_i_reg_620_reg[6] 
+        .O(tmp_i_i_fu_534_p2[5:2]),
+        .S({\tmp_i_i_reg_706[5]_i_2_n_0 ,\tmp_i_i_reg_706[5]_i_3_n_0 ,\tmp_i_i_reg_706[5]_i_4_n_0 ,\tmp_i_i_reg_706_reg[1]_i_1_n_6 }));
+  FDRE \tmp_i_i_reg_706_reg[6] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[6]),
-        .Q(tmp_i_i_reg_620[6]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[6]),
+        .Q(tmp_i_i_reg_706[6]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[7] 
+  FDRE \tmp_i_i_reg_706_reg[7] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[7]),
-        .Q(tmp_i_i_reg_620[7]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[7]),
+        .Q(tmp_i_i_reg_706[7]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[8] 
+  FDRE \tmp_i_i_reg_706_reg[8] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[8]),
-        .Q(tmp_i_i_reg_620[8]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[8]),
+        .Q(tmp_i_i_reg_706[8]),
         .R(1'b0));
-  FDRE \tmp_i_i_reg_620_reg[9] 
+  FDRE \tmp_i_i_reg_706_reg[9] 
        (.C(ap_clk),
-        .CE(tmp_i_i_reg_6200),
-        .D(tmp_i_i_fu_501_p2[9]),
-        .Q(tmp_i_i_reg_620[9]),
+        .CE(tmp_i_i_reg_7060),
+        .D(tmp_i_i_fu_534_p2[9]),
+        .Q(tmp_i_i_reg_706[9]),
         .R(1'b0));
-  CARRY4 \tmp_i_i_reg_620_reg[9]_i_1 
-       (.CI(\tmp_i_i_reg_620_reg[5]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[9]_i_1_n_0 ,\tmp_i_i_reg_620_reg[9]_i_1_n_1 ,\tmp_i_i_reg_620_reg[9]_i_1_n_2 ,\tmp_i_i_reg_620_reg[9]_i_1_n_3 }),
+  CARRY4 \tmp_i_i_reg_706_reg[9]_i_1 
+       (.CI(\tmp_i_i_reg_706_reg[5]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[9]_i_1_n_0 ,\tmp_i_i_reg_706_reg[9]_i_1_n_1 ,\tmp_i_i_reg_706_reg[9]_i_1_n_2 ,\tmp_i_i_reg_706_reg[9]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[6:3]),
-        .O(tmp_i_i_fu_501_p2[9:6]),
-        .S({\tmp_i_i_reg_620[9]_i_2_n_0 ,\tmp_i_i_reg_620[9]_i_3_n_0 ,\tmp_i_i_reg_620[9]_i_4_n_0 ,\tmp_i_i_reg_620[9]_i_5_n_0 }));
-  CARRY4 \tmp_i_i_reg_620_reg[9]_i_6 
-       (.CI(\tmp_i_i_reg_620_reg[1]_i_1_n_0 ),
-        .CO({\tmp_i_i_reg_620_reg[9]_i_6_n_0 ,\tmp_i_i_reg_620_reg[9]_i_6_n_1 ,\tmp_i_i_reg_620_reg[9]_i_6_n_2 ,\tmp_i_i_reg_620_reg[9]_i_6_n_3 }),
+        .O(tmp_i_i_fu_534_p2[9:6]),
+        .S({\tmp_i_i_reg_706[9]_i_2_n_0 ,\tmp_i_i_reg_706[9]_i_3_n_0 ,\tmp_i_i_reg_706[9]_i_4_n_0 ,\tmp_i_i_reg_706[9]_i_5_n_0 }));
+  CARRY4 \tmp_i_i_reg_706_reg[9]_i_6 
+       (.CI(\tmp_i_i_reg_706_reg[1]_i_1_n_0 ),
+        .CO({\tmp_i_i_reg_706_reg[9]_i_6_n_0 ,\tmp_i_i_reg_706_reg[9]_i_6_n_1 ,\tmp_i_i_reg_706_reg[9]_i_6_n_2 ,\tmp_i_i_reg_706_reg[9]_i_6_n_3 }),
         .CYINIT(1'b0),
         .DI(RandSeed[8:5]),
-        .O({\tmp_i_i_reg_620_reg[9]_i_6_n_4 ,\tmp_i_i_reg_620_reg[9]_i_6_n_5 ,\tmp_i_i_reg_620_reg[9]_i_6_n_6 ,\tmp_i_i_reg_620_reg[9]_i_6_n_7 }),
-        .S({\tmp_i_i_reg_620[9]_i_7_n_0 ,\tmp_i_i_reg_620[9]_i_8_n_0 ,\tmp_i_i_reg_620[9]_i_9_n_0 ,\tmp_i_i_reg_620[9]_i_10_n_0 }));
+        .O({\tmp_i_i_reg_706_reg[9]_i_6_n_4 ,\tmp_i_i_reg_706_reg[9]_i_6_n_5 ,\tmp_i_i_reg_706_reg[9]_i_6_n_6 ,\tmp_i_i_reg_706_reg[9]_i_6_n_7 }),
+        .S({\tmp_i_i_reg_706[9]_i_7_n_0 ,\tmp_i_i_reg_706[9]_i_8_n_0 ,\tmp_i_i_reg_706[9]_i_9_n_0 ,\tmp_i_i_reg_706[9]_i_10_n_0 }));
 endmodule
 
 (* ORIG_REF_NAME = "Gamelogic2_urem_3bkb" *) 
@@ -4454,7 +4560,7 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
   wire \dividend0_reg_n_0_[8] ;
   wire \dividend0_reg_n_0_[9] ;
   wire done0;
-  wire [31:1]grp_fu_512_p0;
+  wire [31:1]grp_fu_545_p0;
   wire [31:0]\remd_reg[31]_0 ;
   wire right_out;
   wire right_out_INST_0_i_1_n_0;
@@ -4493,19 +4599,19 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
   FDRE \dividend0_reg[10] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[10]),
+        .D(grp_fu_545_p0[10]),
         .Q(\dividend0_reg_n_0_[10] ),
         .R(1'b0));
   FDRE \dividend0_reg[11] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[11]),
+        .D(grp_fu_545_p0[11]),
         .Q(\dividend0_reg_n_0_[11] ),
         .R(1'b0));
   FDRE \dividend0_reg[12] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[12]),
+        .D(grp_fu_545_p0[12]),
         .Q(\dividend0_reg_n_0_[12] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[12]_i_1 
@@ -4513,30 +4619,30 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[12]_i_1_n_0 ,\dividend0_reg[12]_i_1_n_1 ,\dividend0_reg[12]_i_1_n_2 ,\dividend0_reg[12]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(grp_fu_512_p0[12:9]),
+        .O(grp_fu_545_p0[12:9]),
         .S(\dividend0_reg[31]_0 [12:9]));
   FDRE \dividend0_reg[13] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[13]),
+        .D(grp_fu_545_p0[13]),
         .Q(\dividend0_reg_n_0_[13] ),
         .R(1'b0));
   FDRE \dividend0_reg[14] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[14]),
+        .D(grp_fu_545_p0[14]),
         .Q(\dividend0_reg_n_0_[14] ),
         .R(1'b0));
   FDRE \dividend0_reg[15] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[15]),
+        .D(grp_fu_545_p0[15]),
         .Q(\dividend0_reg_n_0_[15] ),
         .R(1'b0));
   FDRE \dividend0_reg[16] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[16]),
+        .D(grp_fu_545_p0[16]),
         .Q(\dividend0_reg_n_0_[16] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[16]_i_1 
@@ -4544,36 +4650,36 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[16]_i_1_n_0 ,\dividend0_reg[16]_i_1_n_1 ,\dividend0_reg[16]_i_1_n_2 ,\dividend0_reg[16]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(grp_fu_512_p0[16:13]),
+        .O(grp_fu_545_p0[16:13]),
         .S(\dividend0_reg[31]_0 [16:13]));
   FDRE \dividend0_reg[17] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[17]),
+        .D(grp_fu_545_p0[17]),
         .Q(\dividend0_reg_n_0_[17] ),
         .R(1'b0));
   FDRE \dividend0_reg[18] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[18]),
+        .D(grp_fu_545_p0[18]),
         .Q(\dividend0_reg_n_0_[18] ),
         .R(1'b0));
   FDRE \dividend0_reg[19] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[19]),
+        .D(grp_fu_545_p0[19]),
         .Q(\dividend0_reg_n_0_[19] ),
         .R(1'b0));
   FDRE \dividend0_reg[1] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[1]),
+        .D(grp_fu_545_p0[1]),
         .Q(\dividend0_reg_n_0_[1] ),
         .R(1'b0));
   FDRE \dividend0_reg[20] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[20]),
+        .D(grp_fu_545_p0[20]),
         .Q(\dividend0_reg_n_0_[20] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[20]_i_1 
@@ -4581,30 +4687,30 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[20]_i_1_n_0 ,\dividend0_reg[20]_i_1_n_1 ,\dividend0_reg[20]_i_1_n_2 ,\dividend0_reg[20]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(grp_fu_512_p0[20:17]),
+        .O(grp_fu_545_p0[20:17]),
         .S(\dividend0_reg[31]_0 [20:17]));
   FDRE \dividend0_reg[21] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[21]),
+        .D(grp_fu_545_p0[21]),
         .Q(\dividend0_reg_n_0_[21] ),
         .R(1'b0));
   FDRE \dividend0_reg[22] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[22]),
+        .D(grp_fu_545_p0[22]),
         .Q(\dividend0_reg_n_0_[22] ),
         .R(1'b0));
   FDRE \dividend0_reg[23] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[23]),
+        .D(grp_fu_545_p0[23]),
         .Q(\dividend0_reg_n_0_[23] ),
         .R(1'b0));
   FDRE \dividend0_reg[24] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[24]),
+        .D(grp_fu_545_p0[24]),
         .Q(\dividend0_reg_n_0_[24] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[24]_i_1 
@@ -4612,30 +4718,30 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[24]_i_1_n_0 ,\dividend0_reg[24]_i_1_n_1 ,\dividend0_reg[24]_i_1_n_2 ,\dividend0_reg[24]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(grp_fu_512_p0[24:21]),
+        .O(grp_fu_545_p0[24:21]),
         .S(\dividend0_reg[31]_0 [24:21]));
   FDRE \dividend0_reg[25] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[25]),
+        .D(grp_fu_545_p0[25]),
         .Q(\dividend0_reg_n_0_[25] ),
         .R(1'b0));
   FDRE \dividend0_reg[26] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[26]),
+        .D(grp_fu_545_p0[26]),
         .Q(\dividend0_reg_n_0_[26] ),
         .R(1'b0));
   FDRE \dividend0_reg[27] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[27]),
+        .D(grp_fu_545_p0[27]),
         .Q(\dividend0_reg_n_0_[27] ),
         .R(1'b0));
   FDRE \dividend0_reg[28] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[28]),
+        .D(grp_fu_545_p0[28]),
         .Q(\dividend0_reg_n_0_[28] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[28]_i_1 
@@ -4643,30 +4749,30 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[28]_i_1_n_0 ,\dividend0_reg[28]_i_1_n_1 ,\dividend0_reg[28]_i_1_n_2 ,\dividend0_reg[28]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O(grp_fu_512_p0[28:25]),
+        .O(grp_fu_545_p0[28:25]),
         .S(\dividend0_reg[31]_0 [28:25]));
   FDRE \dividend0_reg[29] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[29]),
+        .D(grp_fu_545_p0[29]),
         .Q(\dividend0_reg_n_0_[29] ),
         .R(1'b0));
   FDRE \dividend0_reg[2] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[2]),
+        .D(grp_fu_545_p0[2]),
         .Q(\dividend0_reg_n_0_[2] ),
         .R(1'b0));
   FDRE \dividend0_reg[30] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[30]),
+        .D(grp_fu_545_p0[30]),
         .Q(\dividend0_reg_n_0_[30] ),
         .R(1'b0));
   FDRE \dividend0_reg[31] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[31]),
+        .D(grp_fu_545_p0[31]),
         .Q(\dividend0_reg_n_0_[31] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[31]_i_1 
@@ -4674,18 +4780,18 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\NLW_dividend0_reg[31]_i_1_CO_UNCONNECTED [3:2],\dividend0_reg[31]_i_1_n_2 ,\dividend0_reg[31]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,1'b0}),
-        .O({\NLW_dividend0_reg[31]_i_1_O_UNCONNECTED [3],grp_fu_512_p0[31:29]}),
+        .O({\NLW_dividend0_reg[31]_i_1_O_UNCONNECTED [3],grp_fu_545_p0[31:29]}),
         .S({1'b0,\dividend0_reg[31]_0 [31:29]}));
   FDRE \dividend0_reg[3] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[3]),
+        .D(grp_fu_545_p0[3]),
         .Q(\dividend0_reg_n_0_[3] ),
         .R(1'b0));
   FDRE \dividend0_reg[4] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[4]),
+        .D(grp_fu_545_p0[4]),
         .Q(\dividend0_reg_n_0_[4] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[4]_i_1 
@@ -4693,30 +4799,30 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[4]_i_1_n_0 ,\dividend0_reg[4]_i_1_n_1 ,\dividend0_reg[4]_i_1_n_2 ,\dividend0_reg[4]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,\dividend0_reg[31]_0 [2],1'b0}),
-        .O(grp_fu_512_p0[4:1]),
+        .O(grp_fu_545_p0[4:1]),
         .S({\dividend0_reg[31]_0 [4:3],\dividend0[4]_i_2_n_0 ,\dividend0_reg[31]_0 [1]}));
   FDRE \dividend0_reg[5] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[5]),
+        .D(grp_fu_545_p0[5]),
         .Q(\dividend0_reg_n_0_[5] ),
         .R(1'b0));
   FDRE \dividend0_reg[6] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[6]),
+        .D(grp_fu_545_p0[6]),
         .Q(\dividend0_reg_n_0_[6] ),
         .R(1'b0));
   FDRE \dividend0_reg[7] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[7]),
+        .D(grp_fu_545_p0[7]),
         .Q(\dividend0_reg_n_0_[7] ),
         .R(1'b0));
   FDRE \dividend0_reg[8] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[8]),
+        .D(grp_fu_545_p0[8]),
         .Q(\dividend0_reg_n_0_[8] ),
         .R(1'b0));
   CARRY4 \dividend0_reg[8]_i_1 
@@ -4724,12 +4830,12 @@ module Testing_HDMI_Gamelogic2_0_0_Gamelogic2_urem_3bkb_div
         .CO({\dividend0_reg[8]_i_1_n_0 ,\dividend0_reg[8]_i_1_n_1 ,\dividend0_reg[8]_i_1_n_2 ,\dividend0_reg[8]_i_1_n_3 }),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,\dividend0_reg[31]_0 [6:5]}),
-        .O(grp_fu_512_p0[8:5]),
+        .O(grp_fu_545_p0[8:5]),
         .S({\dividend0_reg[31]_0 [8:7],\dividend0[8]_i_2_n_0 ,\dividend0[8]_i_3_n_0 }));
   FDRE \dividend0_reg[9] 
        (.C(ap_clk),
         .CE(1'b1),
-        .D(grp_fu_512_p0[9]),
+        .D(grp_fu_545_p0[9]),
         .Q(\dividend0_reg_n_0_[9] ),
         .R(1'b0));
   FDRE \remd_reg[0] 

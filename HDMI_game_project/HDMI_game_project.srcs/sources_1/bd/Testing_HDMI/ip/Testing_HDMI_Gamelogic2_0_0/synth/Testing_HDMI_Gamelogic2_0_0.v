@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:Gamelogic2:1.0
-// IP Revision: 1904261418
+// IP Revision: 1904261440
 
 (* X_CORE_INFO = "Gamelogic2,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "Testing_HDMI_Gamelogic2_0_0,Gamelogic2,{}" *)
-(* CORE_GENERATION_INFO = "Testing_HDMI_Gamelogic2_0_0,Gamelogic2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Gamelogic2,x_ipVersion=1.0,x_ipCoreRevision=1904261418,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "Testing_HDMI_Gamelogic2_0_0,Gamelogic2,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=Gamelogic2,x_ipVersion=1.0,x_ipCoreRevision=1904261440,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module Testing_HDMI_Gamelogic2_0_0 (

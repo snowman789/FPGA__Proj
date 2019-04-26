@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Gamelogic2" xd:componentRef="Gamelogic2" xd:initiationInterval="38" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Gamelogic2" xd:componentRef="Gamelogic2" xd:initiationInterval="39" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
   <xd:arg xd:name="btn0" xd:originalName="btn0" xd:direction="in" xd:interfaceRef="btn0" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="btn1" xd:originalName="btn1" xd:direction="in" xd:interfaceRef="btn1" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
@@ -7,12 +7,12 @@
   <xd:arg xd:name="btn3" xd:originalName="btn3" xd:direction="in" xd:interfaceRef="btn3" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="reset_game_in" xd:originalName="reset_game_in" xd:direction="in" xd:interfaceRef="reset_game_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
   <xd:arg xd:name="*(reset_game_out)" xd:originalName="reset_game_out" xd:direction="out" xd:interfaceRef="reset_game_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
-  <xd:arg xd:name="*(right_wins)" xd:originalName="right_wins" xd:direction="out" xd:interfaceRef="right_wins" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="37"/>
-  <xd:arg xd:name="*(end_game)" xd:originalName="end_game" xd:direction="out" xd:interfaceRef="end_game" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="37"/>
-  <xd:arg xd:name="*(center_line_out)" xd:originalName="center_line_out" xd:direction="out" xd:interfaceRef="center_line_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="37"/>
-  <xd:arg xd:name="center_line_in" xd:originalName="center_line_in" xd:direction="in" xd:interfaceRef="center_line_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="37"/>
-  <xd:arg xd:name="*(right_out)" xd:originalName="right_out" xd:direction="out" xd:interfaceRef="right_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="37"/>
-  <xd:arg xd:name="right_in" xd:originalName="right_in" xd:direction="in" xd:interfaceRef="right_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="37"/>
-  <xd:latencyEstimates xd:best-case="1" xd:worst-case="37" xd:average-case="13"/>
-  <xd:resourceEstimates xd:LUT="926" xd:FF="627" xd:BRAM="0" xd:DSP="0"/>
+  <xd:arg xd:name="*(right_wins)" xd:originalName="right_wins" xd:direction="out" xd:interfaceRef="right_wins" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="38"/>
+  <xd:arg xd:name="*(end_game)" xd:originalName="end_game" xd:direction="out" xd:interfaceRef="end_game" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="38"/>
+  <xd:arg xd:name="*(center_line_out)" xd:originalName="center_line_out" xd:direction="out" xd:interfaceRef="center_line_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="38"/>
+  <xd:arg xd:name="center_line_in" xd:originalName="center_line_in" xd:direction="in" xd:interfaceRef="center_line_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="12" xd:firstOut="38"/>
+  <xd:arg xd:name="*(right_out)" xd:originalName="right_out" xd:direction="out" xd:interfaceRef="right_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="38"/>
+  <xd:arg xd:name="right_in" xd:originalName="right_in" xd:direction="in" xd:interfaceRef="right_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="38"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="38" xd:average-case="14"/>
+  <xd:resourceEstimates xd:LUT="969" xd:FF="654" xd:BRAM="0" xd:DSP="0"/>
 </xd:acceleratorMap>

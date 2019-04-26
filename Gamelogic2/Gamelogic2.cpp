@@ -97,6 +97,10 @@ void Gamelogic2(bool btn0, bool btn1, bool btn2, bool btn3, bool reset_game_in, 
 
 	*reset_game_out = reset_game_in;
 	//flash right
+	if(reset_game_in){
+		game_over = 0;
+		first_run = 1;
+	}
 	if(btn0 || btn1 || btn2 || btn3)
 		btn_count += 1;
 //	if(reset)
